@@ -4,10 +4,13 @@ local prefix = "c!"
 local privatestuff = require('privatestuff')
 
 
-
 json = require('libs/json')
 cj =  io.open("cards.json", "r")
+
+
+
 cdata = json.decode(cj:read("*a"))
+cj:close()
 --generate pull table
 ptable = {}
 for i,v in ipairs(cdata.groups) do
@@ -37,10 +40,55 @@ client:on('messageCreate', function(message)
         content = 'Woah! '.. message.member.mentionString ..' got a **'.. newcard ..'!** The **'.. newcard ..'** has been added to their inventory.',
         file = "card_images/" .. newcard .. ".png"
       }
-    
+    cuser = io.open("savedata/" .. message.member.user.id .. ".json", "r+")
+    if cuser == nil then
+      print("cuser is nil, making file")
+      cuser = io.open("savedata/" .. message.member.user.id .. ".json", "w")
+      cuser:write('{"inventory":{}}')
+      cuser:close()
+      cuser = io.open("savedata/" .. message.member.user.id .. ".json", "r+")
+    else
+      print("cuser is not nil, loading file")
+    end
+    uj = json.decode(cuser:read("*a"))
+    if uj.inventory[newcard] == nil then
+      uj.inventory[newcard] = 1
+    else
+      uj.inventory[newcard] = uj.inventory[newcard] + 1
+    end
+    uj.name = message.member.name
+    print("number of cards is " .. uj.inventory[newcard])
+    cuser:close()
+    cuser = io.open("savedata/" .. message.member.user.id .. ".json", "w")
+    print("writing")
+    cuser:write(json.encode(uj))
+    cuser:close()
 
     
 	end
+	if message.content == prefix..'inventory' then
+    print("someone did !inventory")
+    cuser = io.open("savedata/" .. message.member.user.id .. ".json", "r+")
+    if cuser == nil then
+      print("cuser is nil, making file")
+      cuser = io.open("savedata/" .. message.member.user.id .. ".json", "w")
+      cuser:write('{"inventory":{}}')
+      cuser:close()
+      cuser = io.open("savedata/" .. message.member.user.id .. ".json", "r+")
+    else
+      print("cuser is not nil, loading file")
+    end
+    uj = json.decode(cuser:read("*a"))
+    local invstring = ''
+    for k,v in pairs(uj.inventory) do
+      invstring = invstring .. "**" .. k .. "** x" .. v .. "\n"
+    end
+      
+    message.channel:send("Your inventory contains:\n" .. invstring)
+    cuser:close()
+	end
+  
+  
 end)
 
 client:run(privatestuff.botid)
