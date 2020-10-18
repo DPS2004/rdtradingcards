@@ -33,7 +33,11 @@ client:on('messageCreate', function(message)
     print("someone did !pull")
     message.channel:send('Pulling card...')
     local newcard = ptable[math.random(#ptable)]
-    message.channel:send('Woah! '.. message.member.mentionString ..' got a **'.. newcard ..'!** The **'.. newcard ..'** has been added to their inventory.')
+    message.channel:send {
+        content = 'Woah! '.. message.member.mentionString ..' got a **'.. newcard ..'!** The **'.. newcard ..'** has been added to their inventory.',
+        file = "card_images/" .. newcard .. ".png"
+      }
+    
 
     
 	end

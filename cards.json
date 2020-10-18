@@ -7,15 +7,15 @@
       "cards": [
         {
           "chance": 3,
-          "name": "samurai1.png"
+          "name": "samurai1"
         },
         {
           "chance": 2,
-          "name": "samurai2.png"
+          "name": "samurai2"
         },
         {
           "chance": 1,
-          "name": "samurai3.png"
+          "name": "samurai3"
         }
       ]
     },
@@ -25,15 +25,15 @@
       "cards": [
         {
           "chance": 3,
-          "name": "insomniac1.png"
+          "name": "insomniac1"
         },
         {
           "chance": 2,
-          "name": "insomniac2.png"
+          "name": "insomniac2"
         },
         {
           "chance": 1,
-          "name": "insomniac3.png"
+          "name": "insomniac3"
         }
       ]
     }
