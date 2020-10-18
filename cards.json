@@ -1,0 +1,41 @@
+{
+  "basemult": 10,
+  "groups": [
+    {
+      "groupname": "samurai",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "name": "samurai1.png"
+        },
+        {
+          "chance": 2,
+          "name": "samurai2.png"
+        },
+        {
+          "chance": 1,
+          "name": "samurai3.png"
+        }
+      ]
+    },
+    {
+      "groupname": "insomniac",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "name": "insomniac1.png"
+        },
+        {
+          "chance": 2,
+          "name": "insomniac2.png"
+        },
+        {
+          "chance": 1,
+          "name": "insomniac3.png"
+        }
+      ]
+    }
+  ]
+}
