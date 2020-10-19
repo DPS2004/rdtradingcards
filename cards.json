@@ -80,6 +80,48 @@
       ]
     },
     {
+      "groupname": "hailey",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "name": "hailey1",
+          "tradeable": true
+        },
+        {
+          "chance": 2,
+          "name": "hailey2",
+          "tradeable": true
+        },
+        {
+          "chance": 1,
+          "name": "hailey3",
+          "tradeable": true
+        }
+      ]
+    },
+    {
+      "groupname": "ian",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "name": "ian1",
+          "tradeable": true
+        },
+        {
+          "chance": 2,
+          "name": "ian2",
+          "tradeable": true
+        },
+        {
+          "chance": 1,
+          "name": "ian3",
+          "tradeable": true
+        }
+      ]
+    },
+    {
       "groupname": "insomniac",
       "basechance": 3,
       "cards": [
@@ -96,6 +138,210 @@
         {
           "chance": 1,
           "name": "insomniac3",
+          "tradeable": true
+        }
+      ]
+    },
+    {
+      "groupname": "intern",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "name": "intern1",
+          "tradeable": true
+        },
+        {
+          "chance": 2,
+          "name": "intern2",
+          "tradeable": true
+        },
+        {
+          "chance": 1,
+          "name": "intern3",
+          "tradeable": true
+        }
+      ]
+    },
+      {
+      "groupname": "logan",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "name": "logan1",
+          "tradeable": true
+        },
+        {
+          "chance": 2,
+          "name": "logan2",
+          "tradeable": true
+        },
+        {
+          "chance": 1,
+          "name": "logan3",
+          "tradeable": true
+        }
+      ]
+    },
+    {
+      "groupname": "miner",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "name": "miner1",
+          "tradeable": true
+        },
+        {
+          "chance": 2,
+          "name": "miner2",
+          "tradeable": true
+        },
+        {
+          "chance": 1,
+          "name": "miner3",
+          "tradeable": true
+        }
+      ]
+    },
+    {
+      "groupname": "mrsstevenson",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "name": "mrsstevenson1",
+          "tradeable": true
+        },
+        {
+          "chance": 2,
+          "name": "mrsstevenson2",
+          "tradeable": true
+        },
+        {
+          "chance": 1,
+          "name": "mrsstevenson3",
+          "tradeable": true
+        }
+      ]
+    },
+    {
+      "groupname": "mrstevenson",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "name": "mrstevenson1",
+          "tradeable": true
+        },
+        {
+          "chance": 2,
+          "name": "mrstevenson2",
+          "tradeable": true
+        },
+        {
+          "chance": 1,
+          "name": "mrstevenson3",
+          "tradeable": true
+        }
+      ]
+    },
+    {
+      "groupname": "paige",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "name": "paige1",
+          "tradeable": true
+        },
+        {
+          "chance": 2,
+          "name": "paige2",
+          "tradeable": true
+        },
+        {
+          "chance": 1,
+          "name": "paige3",
+          "tradeable": true
+        }
+      ]
+    },
+    {
+      "groupname": "politician",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "name": "politician1",
+          "tradeable": true
+        },
+        {
+          "chance": 2,
+          "name": "politician2",
+          "tradeable": true
+        },
+        {
+          "chance": 1,
+          "name": "politician3",
+          "tradeable": true
+        }
+      ]
+    },
+    {
+      "groupname": "rooms",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "name": "rooms1",
+          "tradeable": true
+        },
+        {
+          "chance": 2,
+          "name": "rooms2",
+          "tradeable": true
+        },
+        {
+          "chance": 1,
+          "name": "rooms3",
+          "tradeable": true
+        },
+        {
+          "chance": 0.25,
+          "name": "rooms4_1",
+          "tradeable": true
+        },
+        {
+          "chance": 0.5,
+          "name": "rooms4_2",
+          "tradeable": true
+        },
+        {
+          "chance": 0.25,
+          "name": "rooms4_3",
+          "tradeable": true
+        }
+      ]
+    },
+    {
+      "groupname": "rows",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "name": "rows1",
+          "tradeable": true
+        },
+        {
+          "chance": 2,
+          "name": "rows2",
+          "tradeable": true
+        },
+        {
+          "chance": 1,
+          "name": "rows3",
           "tradeable": true
         }
       ]
@@ -119,6 +365,75 @@
           "name": "samurai3",
           "tradeable": true
         }
+      ]
+    },
+    {
+      "groupname": "sound",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "name": "sound1",
+          "tradeable": true
+        },
+        {
+          "chance": 2,
+          "name": "sound2",
+          "tradeable": true
+        },
+        {
+          "chance": 1,
+          "name": "sound3",
+          "tradeable": true
+        }
+      ]
+    },
+    {
+      "groupname": "vfx",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "name": "vfx1",
+          "tradeable": true
+        },
+        {
+          "chance": 2,
+          "name": "vfx2",
+          "tradeable": true
+        },
+        {
+          "chance": 1,
+          "name": "vfx3",
+          "tradeable": true
+        }
+      ]
+    },
+    {
+      "groupname": "pairs",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 1,
+          "name": "samuraipair3",
+          "tradeable": true
+        },
+        {
+          "chance": 1,
+          "name": "stevensonpair3",
+          "tradeable": true
+        },
+        {
+          "chance": 1,
+          "name": "couplepair3",
+          "tradeable": true
+        },
+        {
+          "chance": 1,
+          "name": "doctorpair3",
+          "tradeable": true
+        }
+
       ]
     }
   ]
