@@ -2,9 +2,10 @@ local discordia = require('discordia')
 local client = discordia.Client()
 local prefix = "c!"
 local privatestuff = require('privatestuff')
-
-
 json = require('libs/json')
+dpf = require('libs/dpf')
+
+
 cj =  io.open("cards.json", "r")
 
 
@@ -37,20 +38,11 @@ client:on('messageCreate', function(message)
     message.channel:send('Pulling card...')
     local newcard = ptable[math.random(#ptable)]
     message.channel:send {
-        content = 'Woah! '.. message.member.mentionString ..' got a **'.. newcard ..'!** The **'.. newcard ..'** has been added to their inventory.',
+        content = 'Woah! '.. message.member.mentionString ..' got a **'.. newcard ..'!** The **'.. newcard ..'** card has been added to their inventory.',
         file = "card_images/" .. newcard .. ".png"
       }
-    cuser = io.open("savedata/" .. message.member.user.id .. ".json", "r+")
-    if cuser == nil then
-      print("cuser is nil, making file")
-      cuser = io.open("savedata/" .. message.member.user.id .. ".json", "w")
-      cuser:write('{"inventory":{}}')
-      cuser:close()
-      cuser = io.open("savedata/" .. message.member.user.id .. ".json", "r+")
-    else
-      print("cuser is not nil, loading file")
-    end
-    uj = json.decode(cuser:read("*a"))
+
+    uj = dpf.loadjson("savedata/" .. message.member.user.id .. ".json",{inventory={}})
     if uj.inventory[newcard] == nil then
       uj.inventory[newcard] = 1
     else
@@ -58,48 +50,23 @@ client:on('messageCreate', function(message)
     end
     uj.name = message.member.name
     print("number of cards is " .. uj.inventory[newcard])
-    cuser:close()
-    cuser = io.open("savedata/" .. message.member.user.id .. ".json", "w")
-    print("writing")
-    cuser:write(json.encode(uj))
-    cuser:close()
+    dpf.savejson("savedata/" .. message.member.user.id .. ".json",uj)
 
     
 	end
 	if message.content == prefix..'inventory' then
     print("someone did !inventory")
-    cuser = io.open("savedata/" .. message.member.user.id .. ".json", "r+")
-    if cuser == nil then
-      print("cuser is nil, making file")
-      cuser = io.open("savedata/" .. message.member.user.id .. ".json", "w")
-      cuser:write('{"inventory":{}}')
-      cuser:close()
-      cuser = io.open("savedata/" .. message.member.user.id .. ".json", "r+")
-    else
-      print("cuser is not nil, loading file")
-    end
-    uj = json.decode(cuser:read("*a"))
+    uj = dpf.loadjson("savedata/" .. message.member.user.id .. ".json",{inventory={}})
     local invstring = ''
     for k,v in pairs(uj.inventory) do
       invstring = invstring .. "**" .. k .. "** x" .. v .. "\n"
     end
       
     message.channel:send("Your inventory contains:\n" .. invstring)
-    cuser:close()
 	end
   if message.content:find(prefix.. 'show') then
     print("someone did !show")
-    cuser = io.open("savedata/" .. message.member.user.id .. ".json", "r+")
-    if cuser == nil then
-      print("cuser is nil, making file")
-      cuser = io.open("savedata/" .. message.member.user.id .. ".json", "w")
-      cuser:write('{"inventory":{}}')
-      cuser:close()
-      cuser = io.open("savedata/" .. message.member.user.id .. ".json", "r+")
-    else
-      print("cuser is not nil, loading file")
-    end
-    uj = json.decode(cuser:read("*a"))
+    uj = dpf.loadjson("savedata/" .. message.member.user.id .. ".json",{inventory={}})
     local msg = {}
     for s in message.content:gmatch("%S+") do
       table.insert(msg, s)
@@ -116,7 +83,6 @@ client:on('messageCreate', function(message)
         message.channel:send("Sorry, but you don't have the " .. msg[#msg] .. " card in your inventory.")
       end
     end
-    cuser:close()
     
     
     

@@ -390,3 +390,51 @@
 2020-10-18 22:02:59 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
 2020-10-18 22:02:59 | [INFO]    | Shard 0 : Received HELLO
 2020-10-18 22:02:59 | [INFO]    | Shard 0 : Received READY
+2020-10-18 22:24:07 | [INFO]    | Discordia 2.8.4
+2020-10-18 22:24:07 | [INFO]    | Connecting to Discord...
+2020-10-18 22:24:07 | [INFO]    | Authenticated as RDCards#2517
+2020-10-18 22:24:07 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-10-18 22:24:07 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-10-18 22:24:07 | [INFO]    | Shard 0 : Received HELLO
+2020-10-18 22:24:07 | [INFO]    | Shard 0 : Received READY
+2020-10-18 22:47:21 | [WARNING] | Shard 0 : 1000 - Connection closed
+2020-10-18 22:47:21 | [INFO]    | Shard 0 : Disconnected
+2020-10-18 22:47:22 | [INFO]    | Shard 0 : Reconnecting after 990 ms...
+2020-10-18 22:47:22 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-10-18 22:47:22 | [INFO]    | Shard 0 : Received HELLO
+2020-10-18 22:47:23 | [INFO]    | Shard 0 : Received RESUMED
+2020-10-18 22:54:19 | [INFO]    | Discordia 2.8.4
+2020-10-18 22:54:19 | [INFO]    | Connecting to Discord...
+2020-10-18 22:54:19 | [INFO]    | Authenticated as RDCards#2517
+2020-10-18 22:54:19 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-10-18 22:54:19 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-10-18 22:54:19 | [INFO]    | Shard 0 : Received HELLO
+2020-10-18 22:54:19 | [INFO]    | Shard 0 : Received READY
+2020-10-18 22:55:59 | [INFO]    | Discordia 2.8.4
+2020-10-18 22:55:59 | [INFO]    | Connecting to Discord...
+2020-10-18 22:55:59 | [INFO]    | Authenticated as RDCards#2517
+2020-10-18 22:55:59 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-10-18 22:55:59 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-10-18 22:55:59 | [INFO]    | Shard 0 : Received HELLO
+2020-10-18 22:55:59 | [INFO]    | Shard 0 : Received READY
+2020-10-18 22:56:42 | [INFO]    | Discordia 2.8.4
+2020-10-18 22:56:42 | [INFO]    | Connecting to Discord...
+2020-10-18 22:56:42 | [INFO]    | Authenticated as RDCards#2517
+2020-10-18 22:56:42 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-10-18 22:56:42 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-10-18 22:56:42 | [INFO]    | Shard 0 : Received HELLO
+2020-10-18 22:56:42 | [INFO]    | Shard 0 : Received READY
+2020-10-18 22:57:52 | [INFO]    | Discordia 2.8.4
+2020-10-18 22:57:52 | [INFO]    | Connecting to Discord...
+2020-10-18 22:57:52 | [INFO]    | Authenticated as RDCards#2517
+2020-10-18 22:57:52 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-10-18 22:57:52 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-10-18 22:57:52 | [INFO]    | Shard 0 : Received HELLO
+2020-10-18 22:57:52 | [INFO]    | Shard 0 : Received READY
+2020-10-18 22:59:03 | [INFO]    | Discordia 2.8.4
+2020-10-18 22:59:03 | [INFO]    | Connecting to Discord...
+2020-10-18 22:59:03 | [INFO]    | Authenticated as RDCards#2517
+2020-10-18 22:59:03 | [INFO]    | Launching shard 0 (1 out of 1)...
+2020-10-18 22:59:03 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2020-10-18 22:59:03 | [INFO]    | Shard 0 : Received HELLO
+2020-10-18 22:59:03 | [INFO]    | Shard 0 : Received READY
