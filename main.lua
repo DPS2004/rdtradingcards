@@ -18,7 +18,7 @@ for i,v in ipairs(cdata.groups) do
   for w,x in ipairs(v.cards) do
     print(x.name.. " loaded")
     for y=1,(cdata.basemult*v.basechance*x.chance) do
-      table.insert(ptable,x.name)
+      table.insert(ptable,x.filename)
     end
   end
 end

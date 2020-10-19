@@ -7,22 +7,44 @@
       "cards": [
         {
           "chance": 2,
-          "name": "battleworninsomniac2",
+          "filename": "battleworninsomniac2",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 2,
-          "name": "kotoshokotechno2",
+          "filename": "kotoshokotechno2",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 2,
-          "name": "samuraidubstep2",
+          "filename": "samuraidubstep2",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 2,
-          "name": "intimate2",
+          "filename": "allthetimes2",
+          "name": "todo",
+          "tradeable": true
+        },
+        {
+          "chance": 2,
+          "filename": "oneshiftmore2",
+          "name": "todo",
+          "tradeable": true
+        },
+        {
+          "chance": 2,
+          "filename": "intimate2",
+          "name": "todo",
+          "tradeable": true
+        },
+        {
+          "chance": 1,
+          "filename": "superbattleworninsomniac2",
+          "name": "todo",
           "tradeable": true
         }
       ]
@@ -33,22 +55,27 @@
       "cards": [
         {
           "chance": 3,
-          "name": "cole1",
+          "filename": "cole1",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 2,
-          "name": "cole2",
+          "filename": "cole2",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 1,
-          "name": "cole3",
+          "filename": "cole3",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 1,
-          "name": "cole4",
+          "filename": "cole4",
+          "name": "todo",
+          "name": "todo",
           "tradeable": true
         }
       ]
@@ -59,22 +86,26 @@
       "cards": [
         {
           "chance": 3,
-          "name": "farmer1",
+          "filename": "farmer1",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 2,
-          "name": "farmer2",
+          "filename": "farmer2",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 1,
-          "name": "farmer3",
+          "filename": "farmer3",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 1,
-          "name": "farmer4",
+          "filename": "farmer4",
+          "name": "todo",
           "tradeable": true
         }
       ]
@@ -85,17 +116,20 @@
       "cards": [
         {
           "chance": 3,
-          "name": "hailey1",
+          "filename": "hailey1",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 2,
-          "name": "hailey2",
+          "filename": "hailey2",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 1,
-          "name": "hailey3",
+          "filename": "hailey3",
+          "name": "todo",
           "tradeable": true
         }
       ]
@@ -106,17 +140,20 @@
       "cards": [
         {
           "chance": 3,
-          "name": "ian1",
+          "filename": "ian1",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 2,
-          "name": "ian2",
+          "filename": "ian2",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 1,
-          "name": "ian3",
+          "filename": "ian3",
+          "name": "todo",
           "tradeable": true
         }
       ]
@@ -127,17 +164,20 @@
       "cards": [
         {
           "chance": 3,
-          "name": "insomniac1",
+          "filename": "insomniac1",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 2,
-          "name": "insomniac2",
+          "filename": "insomniac2",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 1,
-          "name": "insomniac3",
+          "filename": "insomniac3",
+          "name": "todo",
           "tradeable": true
         }
       ]
@@ -148,17 +188,20 @@
       "cards": [
         {
           "chance": 3,
-          "name": "intern1",
+          "filename": "intern1",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 2,
-          "name": "intern2",
+          "filename": "intern2",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 1,
-          "name": "intern3",
+          "filename": "intern3",
+          "name": "todo",
           "tradeable": true
         }
       ]
@@ -169,17 +212,20 @@
       "cards": [
         {
           "chance": 3,
-          "name": "logan1",
+          "filename": "logan1",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 2,
-          "name": "logan2",
+          "filename": "logan2",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 1,
-          "name": "logan3",
+          "filename": "logan3",
+          "name": "todo",
           "tradeable": true
         }
       ]
@@ -190,17 +236,20 @@
       "cards": [
         {
           "chance": 3,
-          "name": "miner1",
+          "filename": "miner1",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 2,
-          "name": "miner2",
+          "filename": "miner2",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 1,
-          "name": "miner3",
+          "filename": "miner3",
+          "name": "todo",
           "tradeable": true
         }
       ]
@@ -211,17 +260,20 @@
       "cards": [
         {
           "chance": 3,
-          "name": "mrsstevenson1",
+          "filename": "mrsstevenson1",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 2,
-          "name": "mrsstevenson2",
+          "filename": "mrsstevenson2",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 1,
-          "name": "mrsstevenson3",
+          "filename": "mrsstevenson3",
+          "name": "todo",
           "tradeable": true
         }
       ]
@@ -232,17 +284,20 @@
       "cards": [
         {
           "chance": 3,
-          "name": "mrstevenson1",
+          "filename": "mrstevenson1",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 2,
-          "name": "mrstevenson2",
+          "filename": "mrstevenson2",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 1,
-          "name": "mrstevenson3",
+          "filename": "mrstevenson3",
+          "name": "todo",
           "tradeable": true
         }
       ]
@@ -253,17 +308,20 @@
       "cards": [
         {
           "chance": 3,
-          "name": "paige1",
+          "filename": "paige1",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 2,
-          "name": "paige2",
+          "filename": "paige2",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 1,
-          "name": "paige3",
+          "filename": "paige3",
+          "name": "todo",
           "tradeable": true
         }
       ]
@@ -274,17 +332,20 @@
       "cards": [
         {
           "chance": 3,
-          "name": "politician1",
+          "filename": "politician1",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 2,
-          "name": "politician2",
+          "filename": "politician2",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 1,
-          "name": "politician3",
+          "filename": "politician3",
+          "name": "todo",
           "tradeable": true
         }
       ]
@@ -295,32 +356,38 @@
       "cards": [
         {
           "chance": 3,
-          "name": "rooms1",
+          "filename": "rooms1",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 2,
-          "name": "rooms2",
+          "filename": "rooms2",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 1,
-          "name": "rooms3",
+          "filename": "rooms3",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 0.25,
-          "name": "rooms4_1",
+          "filename": "rooms4_1",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 0.5,
-          "name": "rooms4_2",
+          "filename": "rooms4_2",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 0.25,
-          "name": "rooms4_3",
+          "filename": "rooms4_3",
+          "name": "todo",
           "tradeable": true
         }
       ]
@@ -331,17 +398,20 @@
       "cards": [
         {
           "chance": 3,
-          "name": "rows1",
+          "filename": "rows1",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 2,
-          "name": "rows2",
+          "filename": "rows2",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 1,
-          "name": "rows3",
+          "filename": "rows3",
+          "name": "todo",
           "tradeable": true
         }
       ]
@@ -352,17 +422,20 @@
       "cards": [
         {
           "chance": 3,
-          "name": "samurai1",
+          "filename": "samurai1",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 2,
-          "name": "samurai2",
+          "filename": "samurai2",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 1,
-          "name": "samurai3",
+          "filename": "samurai3",
+          "name": "todo",
           "tradeable": true
         }
       ]
@@ -373,17 +446,20 @@
       "cards": [
         {
           "chance": 3,
-          "name": "sound1",
+          "filename": "sound1",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 2,
-          "name": "sound2",
+          "filename": "sound2",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 1,
-          "name": "sound3",
+          "filename": "sound3",
+          "name": "todo",
           "tradeable": true
         }
       ]
@@ -394,17 +470,20 @@
       "cards": [
         {
           "chance": 3,
-          "name": "vfx1",
+          "filename": "vfx1",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 2,
-          "name": "vfx2",
+          "filename": "vfx2",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 1,
-          "name": "vfx3",
+          "filename": "vfx3",
+          "name": "todo",
           "tradeable": true
         }
       ]
@@ -415,22 +494,26 @@
       "cards": [
         {
           "chance": 1,
-          "name": "samuraipair3",
+          "filename": "samuraipair3",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 1,
-          "name": "stevensonpair3",
+          "filename": "stevensonpair3",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 1,
-          "name": "couplepair3",
+          "filename": "couplepair3",
+          "name": "todo",
           "tradeable": true
         },
         {
           "chance": 1,
-          "name": "doctorpair3",
+          "filename": "doctorpair3",
+          "name": "todo",
           "tradeable": true
         }
 
