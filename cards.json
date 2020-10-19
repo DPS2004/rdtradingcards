@@ -8,43 +8,43 @@
         {
           "chance": 2,
           "filename": "battleworninsomniac2",
-          "name": "todo",
+          "name": "Battleworn Insomniac",
           "tradeable": true
         },
         {
           "chance": 2,
           "filename": "kotoshokotechno2",
-          "name": "todo",
+          "name": "Koto Shoko Techno",
           "tradeable": true
         },
         {
           "chance": 2,
           "filename": "samuraidubstep2",
-          "name": "todo",
+          "name": "Samurai Dubstep",
           "tradeable": true
         },
         {
           "chance": 2,
           "filename": "allthetimes2",
-          "name": "todo",
+          "name": "All The Times",
           "tradeable": true
         },
         {
           "chance": 2,
           "filename": "oneshiftmore2",
-          "name": "todo",
+          "name": "One Shift More",
           "tradeable": true
         },
         {
           "chance": 2,
           "filename": "intimate2",
-          "name": "todo",
+          "name": "Intimate",
           "tradeable": true
         },
         {
           "chance": 1,
           "filename": "superbattleworninsomniac2",
-          "name": "todo",
+          "name": "Super Battleworn Insomniac",
           "tradeable": true
         }
       ]
@@ -56,26 +56,25 @@
         {
           "chance": 3,
           "filename": "cole1",
-          "name": "todo",
+          "name": "Cole Brew (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
           "filename": "cole2",
-          "name": "todo",
+          "name": "Cole Brew (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
           "filename": "cole3",
-          "name": "todo",
+          "name": "Cole Brew (Ultra Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
           "filename": "cole4",
-          "name": "todo",
-          "name": "todo",
+          "name": "Cole Brew (Discontinued)",
           "tradeable": true
         }
       ]
@@ -87,25 +86,25 @@
         {
           "chance": 3,
           "filename": "farmer1",
-          "name": "todo",
+          "name": "Farmer (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
           "filename": "farmer2",
-          "name": "todo",
+          "name": "Farmer (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
           "filename": "farmer3",
-          "name": "todo",
+          "name": "Farmer (Ultra Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
           "filename": "farmer4",
-          "name": "todo",
+          "name": "Farmer (Discontinued)",
           "tradeable": true
         }
       ]
@@ -117,19 +116,19 @@
         {
           "chance": 3,
           "filename": "hailey1",
-          "name": "todo",
+          "name": "Hailey (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
           "filename": "hailey2",
-          "name": "todo",
+          "name": "Hailey (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
           "filename": "hailey3",
-          "name": "todo",
+          "name": "Hailey (Ultra Rare)",
           "tradeable": true
         }
       ]
@@ -141,19 +140,19 @@
         {
           "chance": 3,
           "filename": "ian1",
-          "name": "todo",
+          "name": "Ian (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
           "filename": "ian2",
-          "name": "todo",
+          "name": "Ian (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
           "filename": "ian3",
-          "name": "todo",
+          "name": "Ian (Ultra Rare)",
           "tradeable": true
         }
       ]
@@ -165,19 +164,19 @@
         {
           "chance": 3,
           "filename": "insomniac1",
-          "name": "todo",
+          "name": "Insomniac (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
           "filename": "insomniac2",
-          "name": "todo",
+          "name": "Insomniac (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
           "filename": "insomniac3",
-          "name": "todo",
+          "name": "Insomniac (Ultra Rare)",
           "tradeable": true
         }
       ]
@@ -189,19 +188,19 @@
         {
           "chance": 3,
           "filename": "intern1",
-          "name": "todo",
+          "name": "Intern (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
           "filename": "intern2",
-          "name": "todo",
+          "name": "Intern (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
           "filename": "intern3",
-          "name": "todo",
+          "name": "Intern (Ultra Rare)",
           "tradeable": true
         }
       ]
@@ -213,19 +212,19 @@
         {
           "chance": 3,
           "filename": "logan1",
-          "name": "todo",
+          "name": "Logan (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
           "filename": "logan2",
-          "name": "todo",
+          "name": "Logan (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
           "filename": "logan3",
-          "name": "todo",
+          "name": "Logan (Ultra Rare)",
           "tradeable": true
         }
       ]
@@ -237,19 +236,19 @@
         {
           "chance": 3,
           "filename": "miner1",
-          "name": "todo",
+          "name": "Miner (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
           "filename": "miner2",
-          "name": "todo",
+          "name": "Miner (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
           "filename": "miner3",
-          "name": "todo",
+          "name": "Miner (Ultra Rare)",
           "tradeable": true
         }
       ]
@@ -261,19 +260,19 @@
         {
           "chance": 3,
           "filename": "mrsstevenson1",
-          "name": "todo",
+          "name": "Mrs. Stevenson (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
           "filename": "mrsstevenson2",
-          "name": "todo",
+          "name": "Mrs. Stevenson (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
           "filename": "mrsstevenson3",
-          "name": "todo",
+          "name": "Mrs. Stevenson (Ultra Rare)",
           "tradeable": true
         }
       ]
@@ -285,19 +284,19 @@
         {
           "chance": 3,
           "filename": "mrstevenson1",
-          "name": "todo",
+          "name": "Mr. Stevenson (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
           "filename": "mrstevenson2",
-          "name": "todo",
+          "name": "Mr. Stevenson (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
           "filename": "mrstevenson3",
-          "name": "todo",
+          "name": "Mr. Stevenson (Ultra Rare)",
           "tradeable": true
         }
       ]
@@ -309,19 +308,19 @@
         {
           "chance": 3,
           "filename": "paige1",
-          "name": "todo",
+          "name": "Paige (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
           "filename": "paige2",
-          "name": "todo",
+          "name": "Paige (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
           "filename": "paige3",
-          "name": "todo",
+          "name": "Paige (Ultra Rare)",
           "tradeable": true
         }
       ]
@@ -333,19 +332,19 @@
         {
           "chance": 3,
           "filename": "politician1",
-          "name": "todo",
+          "name": "Politician (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
           "filename": "politician2",
-          "name": "todo",
+          "name": "Politician (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
           "filename": "politician3",
-          "name": "todo",
+          "name": "Politician (Ultra Rare)",
           "tradeable": true
         }
       ]
@@ -357,37 +356,37 @@
         {
           "chance": 3,
           "filename": "rooms1",
-          "name": "todo",
+          "name": "Rooms (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
           "filename": "rooms2",
-          "name": "todo",
+          "name": "Rooms (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
           "filename": "rooms3",
-          "name": "todo",
+          "name": "Rooms (Ultra Rare)",
           "tradeable": true
         },
         {
           "chance": 0.25,
           "filename": "rooms4_1",
-          "name": "todo",
+          "name": "Rooms (Discontinued Rare)",
           "tradeable": true
         },
         {
           "chance": 0.5,
           "filename": "rooms4_2",
-          "name": "todo",
+          "name": "Rooms (Discontinued Super Rare)",
           "tradeable": true
         },
         {
           "chance": 0.25,
           "filename": "rooms4_3",
-          "name": "todo",
+          "name": "Rooms (Discontinued Ultra Rare)",
           "tradeable": true
         }
       ]
@@ -399,19 +398,19 @@
         {
           "chance": 3,
           "filename": "rows1",
-          "name": "todo",
+          "name": "Rows (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
           "filename": "rows2",
-          "name": "todo",
+          "name": "Rows (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
           "filename": "rows3",
-          "name": "todo",
+          "name": "Rows (Ultra Rare)",
           "tradeable": true
         }
       ]
@@ -423,19 +422,19 @@
         {
           "chance": 3,
           "filename": "samurai1",
-          "name": "todo",
+          "name": "Samurai (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
           "filename": "samurai2",
-          "name": "todo",
+          "name": "Samurai (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
           "filename": "samurai3",
-          "name": "todo",
+          "name": "Samurai (Ultra Rare)",
           "tradeable": true
         }
       ]
@@ -447,19 +446,19 @@
         {
           "chance": 3,
           "filename": "sound1",
-          "name": "todo",
+          "name": "Sound (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
           "filename": "sound2",
-          "name": "todo",
+          "name": "Sound (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
           "filename": "sound3",
-          "name": "todo",
+          "name": "Sound (Ultra Sound (Rare)Rare)",
           "tradeable": true
         }
       ]
@@ -471,19 +470,19 @@
         {
           "chance": 3,
           "filename": "vfx1",
-          "name": "todo",
+          "name": "VFX (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
           "filename": "vfx2",
-          "name": "todo",
+          "name": "VFX (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
           "filename": "vfx3",
-          "name": "todo",
+          "name": "VFX (Ultra Rare)",
           "tradeable": true
         }
       ]
@@ -495,25 +494,25 @@
         {
           "chance": 1,
           "filename": "samuraipair3",
-          "name": "todo",
+          "name": "The Samurai Group",
           "tradeable": true
         },
         {
           "chance": 1,
           "filename": "stevensonpair3",
-          "name": "todo",
+          "name": "The Stevenson Group",
           "tradeable": true
         },
         {
           "chance": 1,
           "filename": "couplepair3",
-          "name": "todo",
+          "name": "The Couple Group",
           "tradeable": true
         },
         {
           "chance": 1,
           "filename": "doctorpair3",
-          "name": "todo",
+          "name": "The Doctor Group",
           "tradeable": true
         }
 
