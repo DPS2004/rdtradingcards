@@ -20,6 +20,29 @@
       ]
     },
     {
+      "groupname": "official levels",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 2,
+          "name": "battleworninsomniac2"
+        },
+        {
+          "chance": 2,
+          "name": "kotoshokotechno2"
+        },
+        {
+          "chance": 2,
+          "name": "samuraidubstep2"
+        },
+        {
+          "chance": 2,
+          "name": "intimate2"
+        },
+
+      ]
+    },
+    {
       "groupname": "insomniac",
       "basechance": 3,
       "cards": [
