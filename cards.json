@@ -7,19 +7,23 @@
       "cards": [
         {
           "chance": 2,
-          "name": "battleworninsomniac2"
+          "name": "battleworninsomniac2",
+          "tradeable": true
         },
         {
           "chance": 2,
-          "name": "kotoshokotechno2"
+          "name": "kotoshokotechno2",
+          "tradeable": true
         },
         {
           "chance": 2,
-          "name": "samuraidubstep2"
+          "name": "samuraidubstep2",
+          "tradeable": true
         },
         {
           "chance": 2,
-          "name": "intimate2"
+          "name": "intimate2",
+          "tradeable": true
         }
       ]
     },
@@ -29,19 +33,23 @@
       "cards": [
         {
           "chance": 3,
-          "name": "cole1"
+          "name": "cole1",
+          "tradeable": true
         },
         {
           "chance": 2,
-          "name": "cole2"
+          "name": "cole2",
+          "tradeable": true
         },
         {
           "chance": 1,
-          "name": "cole3"
+          "name": "cole3",
+          "tradeable": true
         },
         {
           "chance": 1,
-          "name": "cole4"
+          "name": "cole4",
+          "tradeable": true
         }
       ]
     },
@@ -51,19 +59,23 @@
       "cards": [
         {
           "chance": 3,
-          "name": "farmer1"
+          "name": "farmer1",
+          "tradeable": true
         },
         {
           "chance": 2,
-          "name": "farmer2"
+          "name": "farmer2",
+          "tradeable": true
         },
         {
           "chance": 1,
-          "name": "farmer3"
+          "name": "farmer3",
+          "tradeable": true
         },
         {
           "chance": 1,
-          "name": "farmer4"
+          "name": "farmer4",
+          "tradeable": true
         }
       ]
     },
@@ -73,15 +85,18 @@
       "cards": [
         {
           "chance": 3,
-          "name": "insomniac1"
+          "name": "insomniac1",
+          "tradeable": true
         },
         {
           "chance": 2,
-          "name": "insomniac2"
+          "name": "insomniac2",
+          "tradeable": true
         },
         {
           "chance": 1,
-          "name": "insomniac3"
+          "name": "insomniac3",
+          "tradeable": true
         }
       ]
     },
@@ -91,15 +106,18 @@
       "cards": [
         {
           "chance": 3,
-          "name": "samurai1"
+          "name": "samurai1",
+          "tradeable": true
         },
         {
           "chance": 2,
-          "name": "samurai2"
+          "name": "samurai2",
+          "tradeable": true
         },
         {
           "chance": 1,
-          "name": "samurai3"
+          "name": "samurai3",
+          "tradeable": true
         }
       ]
     }

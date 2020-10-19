@@ -15,7 +15,7 @@ cj:close()
 ptable = {}
 for i,v in ipairs(cdata.groups) do
   for w,x in ipairs(v.cards) do
-    print(x.name.. "loaded")
+    print(x.name.. " loaded")
     for y=1,(cdata.basemult*v.basechance*x.chance) do
       table.insert(ptable,x.name)
     end
@@ -87,7 +87,40 @@ client:on('messageCreate', function(message)
     message.channel:send("Your inventory contains:\n" .. invstring)
     cuser:close()
 	end
-  
+  if message.content:find(prefix.. 'show') then
+    print("someone did !show")
+    cuser = io.open("savedata/" .. message.member.user.id .. ".json", "r+")
+    if cuser == nil then
+      print("cuser is nil, making file")
+      cuser = io.open("savedata/" .. message.member.user.id .. ".json", "w")
+      cuser:write('{"inventory":{}}')
+      cuser:close()
+      cuser = io.open("savedata/" .. message.member.user.id .. ".json", "r+")
+    else
+      print("cuser is not nil, loading file")
+    end
+    uj = json.decode(cuser:read("*a"))
+    local msg = {}
+    for s in message.content:gmatch("%S+") do
+      table.insert(msg, s)
+    end
+    if #msg == 2 then
+      if uj.inventory[msg[#msg]] then
+        print("user has card")
+      message.channel:send {
+        content = 'Here it is! Your '.. msg[#msg] .. ' card.',
+        file = "card_images/" .. msg[#msg] .. ".png"
+      }
+      else
+        print("user doesnt have card")
+        message.channel:send("Sorry, but you don't have the " .. msg[#msg] .. " card in your inventory.")
+      end
+    end
+    cuser:close()
+    
+    
+    
+  end
   
 end)
 
