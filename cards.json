@@ -2,24 +2,6 @@
   "basemult": 10,
   "groups": [
     {
-      "groupname": "samurai",
-      "basechance": 3,
-      "cards": [
-        {
-          "chance": 3,
-          "name": "samurai1"
-        },
-        {
-          "chance": 2,
-          "name": "samurai2"
-        },
-        {
-          "chance": 1,
-          "name": "samurai3"
-        }
-      ]
-    },
-    {
       "groupname": "official levels",
       "basechance": 3,
       "cards": [
@@ -43,6 +25,50 @@
       ]
     },
     {
+      "groupname": "cole",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "name": "cole1"
+        },
+        {
+          "chance": 2,
+          "name": "cole2"
+        },
+        {
+          "chance": 1,
+          "name": "cole3"
+        },
+        {
+          "chance": 1,
+          "name": "cole4"
+        },
+      ]
+    },
+    {
+      "groupname": "farmer",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "name": "farmer1"
+        },
+        {
+          "chance": 2,
+          "name": "farmer2"
+        },
+        {
+          "chance": 1,
+          "name": "farmer3"
+        },
+        {
+          "chance": 1,
+          "name": "farmer4"
+        },
+      ]
+    },
+    {
       "groupname": "insomniac",
       "basechance": 3,
       "cards": [
@@ -59,6 +85,24 @@
           "name": "insomniac3"
         }
       ]
-    }
+    },
+    {
+      "groupname": "samurai",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "name": "samurai1"
+        },
+        {
+          "chance": 2,
+          "name": "samurai2"
+        },
+        {
+          "chance": 1,
+          "name": "samurai3"
+        }
+      ]
+    },
   ]
 }
