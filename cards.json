@@ -7,43 +7,43 @@
       "cards": [
         {
           "chance": 2,
-          "filename": "battleworninsomniac2",
+          "filename": "battleworninsomniac",
           "name": "Battleworn Insomniac",
           "tradeable": true
         },
         {
           "chance": 2,
-          "filename": "kotoshokotechno2",
+          "filename": "kotoshokotechno",
           "name": "Koto Shoko Techno",
           "tradeable": true
         },
         {
           "chance": 2,
-          "filename": "samuraidubstep2",
+          "filename": "samuraidubstep",
           "name": "Samurai Dubstep",
           "tradeable": true
         },
         {
           "chance": 2,
-          "filename": "allthetimes2",
+          "filename": "allthetimes",
           "name": "All The Times",
           "tradeable": true
         },
         {
           "chance": 2,
-          "filename": "oneshiftmore2",
+          "filename": "oneshiftmore",
           "name": "One Shift More",
           "tradeable": true
         },
         {
           "chance": 2,
-          "filename": "intimate2",
+          "filename": "intimate",
           "name": "Intimate",
           "tradeable": true
         },
         {
           "chance": 1,
-          "filename": "superbattleworninsomniac2",
+          "filename": "superbattleworninsomniac",
           "name": "Super Battleworn Insomniac",
           "tradeable": true
         }
@@ -55,25 +55,25 @@
       "cards": [
         {
           "chance": 3,
-          "filename": "cole1",
+          "filename": "coler",
           "name": "Cole Brew (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
-          "filename": "cole2",
+          "filename": "colesr",
           "name": "Cole Brew (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
-          "filename": "cole3",
+          "filename": "coleur",
           "name": "Cole Brew (Ultra Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
-          "filename": "cole4",
+          "filename": "coledc",
           "name": "Cole Brew (Discontinued)",
           "tradeable": true
         }
@@ -85,25 +85,25 @@
       "cards": [
         {
           "chance": 3,
-          "filename": "farmer1",
+          "filename": "farmerr",
           "name": "Farmer (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
-          "filename": "farmer2",
+          "filename": "farmersr",
           "name": "Farmer (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
-          "filename": "farmer3",
+          "filename": "farmerur",
           "name": "Farmer (Ultra Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
-          "filename": "farmer4",
+          "filename": "farmerdc",
           "name": "Farmer (Discontinued)",
           "tradeable": true
         }
@@ -115,19 +115,19 @@
       "cards": [
         {
           "chance": 3,
-          "filename": "hailey1",
+          "filename": "haileyr",
           "name": "Hailey (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
-          "filename": "hailey2",
+          "filename": "haileysr",
           "name": "Hailey (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
-          "filename": "hailey3",
+          "filename": "haileyur",
           "name": "Hailey (Ultra Rare)",
           "tradeable": true
         }
@@ -139,19 +139,19 @@
       "cards": [
         {
           "chance": 3,
-          "filename": "ian1",
+          "filename": "ianr",
           "name": "Ian (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
-          "filename": "ian2",
+          "filename": "iansr",
           "name": "Ian (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
-          "filename": "ian3",
+          "filename": "ianur",
           "name": "Ian (Ultra Rare)",
           "tradeable": true
         }
@@ -163,19 +163,19 @@
       "cards": [
         {
           "chance": 3,
-          "filename": "insomniac1",
+          "filename": "insomniacr",
           "name": "Insomniac (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
-          "filename": "insomniac2",
+          "filename": "insomniacsr",
           "name": "Insomniac (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
-          "filename": "insomniac3",
+          "filename": "insomniacur",
           "name": "Insomniac (Ultra Rare)",
           "tradeable": true
         }
@@ -187,19 +187,19 @@
       "cards": [
         {
           "chance": 3,
-          "filename": "intern1",
+          "filename": "internr",
           "name": "Intern (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
-          "filename": "intern2",
+          "filename": "internsr",
           "name": "Intern (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
-          "filename": "intern3",
+          "filename": "internur",
           "name": "Intern (Ultra Rare)",
           "tradeable": true
         }
@@ -211,19 +211,19 @@
       "cards": [
         {
           "chance": 3,
-          "filename": "logan1",
+          "filename": "loganr",
           "name": "Logan (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
-          "filename": "logan2",
+          "filename": "logansr",
           "name": "Logan (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
-          "filename": "logan3",
+          "filename": "loganur",
           "name": "Logan (Ultra Rare)",
           "tradeable": true
         }
@@ -235,19 +235,19 @@
       "cards": [
         {
           "chance": 3,
-          "filename": "miner1",
+          "filename": "minerr",
           "name": "Miner (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
-          "filename": "miner2",
+          "filename": "minersr",
           "name": "Miner (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
-          "filename": "miner3",
+          "filename": "minerur",
           "name": "Miner (Ultra Rare)",
           "tradeable": true
         }
@@ -259,19 +259,19 @@
       "cards": [
         {
           "chance": 3,
-          "filename": "mrsstevenson1",
+          "filename": "mrsstevensonr",
           "name": "Mrs. Stevenson (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
-          "filename": "mrsstevenson2",
+          "filename": "mrsstevensonsr",
           "name": "Mrs. Stevenson (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
-          "filename": "mrsstevenson3",
+          "filename": "mrsstevensonur",
           "name": "Mrs. Stevenson (Ultra Rare)",
           "tradeable": true
         }
@@ -283,19 +283,19 @@
       "cards": [
         {
           "chance": 3,
-          "filename": "mrstevenson1",
+          "filename": "mrstevensonr",
           "name": "Mr. Stevenson (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
-          "filename": "mrstevenson2",
+          "filename": "mrstevensonsr",
           "name": "Mr. Stevenson (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
-          "filename": "mrstevenson3",
+          "filename": "mrstevensonur",
           "name": "Mr. Stevenson (Ultra Rare)",
           "tradeable": true
         }
@@ -307,19 +307,19 @@
       "cards": [
         {
           "chance": 3,
-          "filename": "paige1",
+          "filename": "paiger",
           "name": "Paige (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
-          "filename": "paige2",
+          "filename": "paigesr",
           "name": "Paige (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
-          "filename": "paige3",
+          "filename": "paigeur",
           "name": "Paige (Ultra Rare)",
           "tradeable": true
         }
@@ -331,19 +331,19 @@
       "cards": [
         {
           "chance": 3,
-          "filename": "politician1",
+          "filename": "politicianr",
           "name": "Politician (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
-          "filename": "politician2",
+          "filename": "politiciansr",
           "name": "Politician (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
-          "filename": "politician3",
+          "filename": "politicianur",
           "name": "Politician (Ultra Rare)",
           "tradeable": true
         }
@@ -355,37 +355,37 @@
       "cards": [
         {
           "chance": 3,
-          "filename": "rooms1",
+          "filename": "roomsr",
           "name": "Rooms (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
-          "filename": "rooms2",
+          "filename": "roomssr",
           "name": "Rooms (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
-          "filename": "rooms3",
+          "filename": "roomsur",
           "name": "Rooms (Ultra Rare)",
           "tradeable": true
         },
         {
           "chance": 0.25,
-          "filename": "rooms4_1",
+          "filename": "roomsdc_r",
           "name": "Rooms (Discontinued Rare)",
           "tradeable": true
         },
         {
           "chance": 0.5,
-          "filename": "rooms4_2",
+          "filename": "roomsdc_sr",
           "name": "Rooms (Discontinued Super Rare)",
           "tradeable": true
         },
         {
           "chance": 0.25,
-          "filename": "rooms4_3",
+          "filename": "roomsdc_ur",
           "name": "Rooms (Discontinued Ultra Rare)",
           "tradeable": true
         }
@@ -397,19 +397,19 @@
       "cards": [
         {
           "chance": 3,
-          "filename": "rows1",
+          "filename": "rowsr",
           "name": "Rows (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
-          "filename": "rows2",
+          "filename": "rowssr",
           "name": "Rows (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
-          "filename": "rows3",
+          "filename": "rowsur",
           "name": "Rows (Ultra Rare)",
           "tradeable": true
         }
@@ -421,19 +421,19 @@
       "cards": [
         {
           "chance": 3,
-          "filename": "samurai1",
+          "filename": "samurair",
           "name": "Samurai (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
-          "filename": "samurai2",
+          "filename": "samuraisr",
           "name": "Samurai (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
-          "filename": "samurai3",
+          "filename": "samuraiur",
           "name": "Samurai (Ultra Rare)",
           "tradeable": true
         }
@@ -445,19 +445,19 @@
       "cards": [
         {
           "chance": 3,
-          "filename": "sound1",
+          "filename": "soundr",
           "name": "Sound (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
-          "filename": "sound2",
+          "filename": "soundsr",
           "name": "Sound (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
-          "filename": "sound3",
+          "filename": "soundur",
           "name": "Sound (Ultra Rare)",
           "tradeable": true
         }
@@ -469,49 +469,49 @@
       "cards": [
         {
           "chance": 3,
-          "filename": "vfx1",
+          "filename": "vfxr",
           "name": "VFX (Rare)",
           "tradeable": true
         },
         {
           "chance": 2,
-          "filename": "vfx2",
+          "filename": "vfxsr",
           "name": "VFX (Super Rare)",
           "tradeable": true
         },
         {
           "chance": 1,
-          "filename": "vfx3",
+          "filename": "vfxur",
           "name": "VFX (Ultra Rare)",
           "tradeable": true
         }
       ]
     },
     {
-      "groupname": "pairs",
+      "groupname": "groups",
       "basechance": 3,
       "cards": [
         {
           "chance": 1,
-          "filename": "samuraipair3",
+          "filename": "samuraigroup",
           "name": "The Samurai Group",
           "tradeable": true
         },
         {
           "chance": 1,
-          "filename": "stevensonpair3",
+          "filename": "stevensongroup",
           "name": "The Stevenson Group",
           "tradeable": true
         },
         {
           "chance": 1,
-          "filename": "couplepair3",
+          "filename": "couplegroup",
           "name": "The Couple Group",
           "tradeable": true
         },
         {
           "chance": 1,
-          "filename": "doctorpair3",
+          "filename": "doctorgroup",
           "name": "The Doctor Group",
           "tradeable": true
         }
