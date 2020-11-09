@@ -31,6 +31,7 @@ for i,v in ipairs(cdata.groups) do
 end
 
 
+
 function fntoname(x)
   print("finding "..x)
   for i,v in ipairs(cdb) do
@@ -49,6 +50,16 @@ function nametofn(x)
       local match = v.filename
       return v.filename
     end
+  end
+end
+
+function resetclocks()
+  for i,v in ipairs(scandir("savedata")) do
+    cuj = dpf.loadjson("savedata/"..v,{inventory={},lastpull=-24})
+    if cuj.lastpull then
+      cuj.lastpull = -24
+    end
+    dpf.savejson("savedata/"..v,cuj)
   end
 end
 
@@ -87,9 +98,23 @@ client:on('ready', function()
 end)
 
 client:on('messageCreate', function(message)
+  if message.content:find(prefix) then
+
+  end
 	if message.content == prefix..'ping' then
 		message.channel:send('pong')
     print(message.member.name .. " did !ping")
+	end
+	if message.content == prefix..'resetclock' then
+    if message.member:hasRole(privatestuff.modroleid) then
+      for i,v in ipairs(scandir("savedata")) do
+        resetclocks()
+      end
+      message.channel:send('All user cooldowns have been reset.')
+    else
+      
+      message.channel:send('Sorry but only moderators can use this command!')
+    end
 	end
 	if message.content == prefix..'uptime' then
     local time = sw:getTime()
@@ -276,7 +301,7 @@ client:on('messageCreate', function(message)
           
           
         else
-          message.channel:send("Sorry, but I could not find the " .. fntoname(mt[1]) .. " card in the database. Make sure that you spelled it right!")
+          message.channel:send("Sorry, but I could not find the " .. mt[1] .. " card in the database. Make sure that you spelled it right!")
         end
       else
         message.channel:send("Sorry, you cannot trade with yourself!")
@@ -354,5 +379,9 @@ client:on('reactionAdd', function(reaction, userid)
 
 
 end)
+
+resetclocks()
+
+
 
 client:run(privatestuff.botid)
