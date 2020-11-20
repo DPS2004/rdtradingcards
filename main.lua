@@ -7,6 +7,8 @@ dpf = require('libs/dpf')
 utils = require('libs/utils')
 
 
+defaultjson = {inventory={},storage={},lastpull=-24}
+
 debug = true
 
 cj =  io.open("cards.json", "r")
@@ -55,7 +57,7 @@ end
 
 function resetclocks()
   for i,v in ipairs(scandir("savedata")) do
-    cuj = dpf.loadjson("savedata/"..v,{inventory={},lastpull=-24})
+    cuj = dpf.loadjson("savedata/"..v,defaultjson)
     if cuj.lastpull then
       cuj.lastpull = -24
     end
@@ -86,7 +88,7 @@ end
 
 function usernametojson(x)
   for i,v in ipairs(scandir("savedata")) do
-    cuj = dpf.loadjson("savedata/"..v,{inventory={},lastpull=-24})
+    cuj = dpf.loadjson("savedata/"..v,defaultjson)
     if cuj.name == x then
       return "savedata/"..v
     end
@@ -98,143 +100,100 @@ client:on('ready', function()
 end)
 
 client:on('messageCreate', function(message)
-  if message.content:find(prefix) then
-
-  end
-	if message.content == prefix..'ping' then
-		message.channel:send('pong')
-    print(message.member.name .. " did !ping")
-	end
-	if message.content == prefix..'resetclock' then
-    if message.member:hasRole(privatestuff.modroleid) then
-      for i,v in ipairs(scandir("savedata")) do
-        resetclocks()
-      end
-      message.channel:send('All user cooldowns have been reset.')
-    else
-      
-      message.channel:send('Sorry but only moderators can use this command!')
+  if message.member.user.id ~= "767445265871142933" and message.member.username ~= "RDCards" then --failsafe to avoid recursion
+    if message.content == prefix..'ping' then
+      message.channel:send('pong')
+      print(message.member.name .. " did !ping")
     end
-	end
-	if message.content == prefix..'uptime' then
-    local time = sw:getTime()
-		message.channel:send('this bot has been running for' .. math.floor(time:toMinutes()) .. ' minutes.')
-    print(message.member.name .. " did !ping")
-	end
-	if message.content == prefix..'testcards' then
-    if debug then
-      message.channel:send('ok, testing. There are '.. #cdb ..'cards in the database.')
-      print(message.member.name .. " did !testcards")
-      for i,v in ipairs(cdb) do
-        message.channel:send {
-          content = 'TESTCARDS: '.. v.name,
-        }
-        message.channel:send {
-          file = "card_images/" .. v.filename .. ".png"
-        }
-      end
-    else
-      message.channel:send('Not so fast, buckaroo.')
-    end
-	end
-	if message.content == prefix..'pull' then
-    local time = sw:getTime()
-		--message.channel:send('haha wowie! discord user '.. message.member.mentionString .. ' whos discord ID happens to be ' .. message.member.user.id ..' you got a card good job my broski')
-    print(message.member.name .. " did !pull")
-    local uj = dpf.loadjson("savedata/" .. message.member.user.id .. ".json",{inventory={},lastpull=-24})
-    if uj.lastpull + 10 <= time:toMinutes() then
-      message.channel:send('Pulling card...')
-      local newcard = ptable[math.random(#ptable)]
-      local ncn = fntoname(newcard)
-      print(ncn)
-      message.channel:send {
-          content = 'Woah! '.. message.member.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to their inventory.',
-          file = "card_images/" .. newcard .. ".png"
-        }
-
-      local uj = dpf.loadjson("savedata/" .. message.member.user.id .. ".json",{inventory={},lastpull=-24})
-      if uj.inventory[newcard] == nil then
-        uj.inventory[newcard] = 1
+    if message.content == prefix..'resetclock' then
+      if message.member:hasRole(privatestuff.modroleid) then
+        for i,v in ipairs(scandir("savedata")) do
+          resetclocks()
+        end
+        message.channel:send('All user cooldowns have been reset.')
       else
-        uj.inventory[newcard] = uj.inventory[newcard] + 1
+        
+        message.channel:send('Sorry but only moderators can use this command!')
       end
-      uj.name = message.member.username .. "#".. message.member.discriminator
-      uj.id = message.member.user.id
-      uj.lastpull = time:toMinutes()
-      print(message.member.username .. "#" .. message.member.discriminator .. " is the username")
-      print("number of cards is " .. uj.inventory[newcard])
-      dpf.savejson("savedata/" .. message.member.user.id .. ".json",uj)
-    else
-      message.channel:send('Please wait ' .. math.ceil(uj.lastpull + 10 - time:toMinutes()) .. ' minutes before pulling again.')
     end
-
-    
-	end
-	if message.content == prefix..'inventory' then
-    print(message.member.name .. " did !inventory")
-    local uj = dpf.loadjson("savedata/" .. message.member.user.id .. ".json",{inventory={},lastpull=-24})
-    local invstring = ''
-    for k,v in pairs(uj.inventory) do
-      invstring = invstring .. "**" .. (fntoname(k) or "ERROR!!!!!!!!") .. "** x" .. v .. "\n"
+    if message.content == prefix..'uptime' then
+      local time = sw:getTime()
+      message.channel:send('this bot has been running for' .. math.floor(time:toMinutes()) .. ' minutes.')
+      print(message.member.name .. " did !ping")
     end
-      
-    message.channel:send("Your inventory contains:\n" .. invstring)
-	end
-  if message.content:find(prefix.. 'show ') then
-    print(message.member.name .. " did !show")
-    local uj = dpf.loadjson("savedata/" .. message.member.user.id .. ".json",{inventory={},lastpull=-24})
-    local request = string.sub(message.content, 8)
-    print(request)
-    local curfilename = texttofn(request)
-    
-    print(curfilename)
-    if curfilename ~= nil then
-      if uj.inventory[curfilename] then
-        print("user has card")
-        message.channel:send {
-          content = 'Here it is! Your **'.. fntoname(curfilename) .. '** card. The shorthand form is **' .. curfilename .. '**.',
-          file = "card_images/" .. curfilename .. ".png"
-        }
-      else
-        print("user doesnt have card")
-        message.channel:send("Sorry, but you don't have the **" .. fntoname(curfilename) .. "** card in your inventory.")
-      end
-    else
-      message.channel:send("Sorry, but I could not find the " .. request .. " card in the database. Make sure that you spelled it right!")
-    end
-    
-    -- whole lotta code to display a png image lmao
-    
-  end
-	if  message.content:find(prefix.. 'give ') then -- format is c!give DPS2004#5143/farmer (rare)
-    print(message.member.name .. " did !give")
-    local mt = string.split(string.sub(message.content, 8),"/")
-    
-    local uj = dpf.loadjson("savedata/" .. message.member.user.id .. ".json",{inventory={},lastpull=-24})
-    local uj2f = usernametojson(mt[1])
-    if uj2f then
-      local uj2 = dpf.loadjson(uj2f,{inventory={},lastpull=-24})
-      local curfilename = texttofn(mt[2])
-      if curfilename ~= nil then
-        if uj.inventory[curfilename] ~= nil then
-          print(uj.inventory[curfilename] .. "before")
-          uj.inventory[curfilename] = uj.inventory[curfilename] - 1
-          print(uj.inventory[curfilename] .. "after")
-          if uj.inventory[curfilename] == 0 then
-            uj.inventory[curfilename] = nil
-          end
-          dpf.savejson("savedata/" .. message.member.user.id .. ".json",uj)
-          print("user had card, removed from original user")
-          if uj2.inventory[curfilename] == nil then
-            uj2.inventory[curfilename] = 1
-          else
-            uj2.inventory[curfilename] = uj2.inventory[curfilename] + 1
-          end
-          dpf.savejson(uj2f,uj2)
-          print("saved user2 json with new card")
-          
+    if message.content == prefix..'testcards' then
+      if debug then
+        message.channel:send('ok, testing. There are '.. #cdb ..'cards in the database.')
+        print(message.member.name .. " did !testcards")
+        for i,v in ipairs(cdb) do
           message.channel:send {
-            content = 'You have gifted your **' .. fntoname(curfilename) .. '** card to @' .. uj2.name .. ' .'
+            content = 'TESTCARDS: '.. v.name,
+          }
+          message.channel:send {
+            file = "card_images/" .. v.filename .. ".png"
+          }
+        end
+      else
+        message.channel:send('Not so fast, buckaroo.')
+      end
+    end
+    if message.content == prefix..'pull' then
+      local time = sw:getTime()
+      --message.channel:send('haha wowie! discord user '.. message.member.mentionString .. ' whos discord ID happens to be ' .. message.member.user.id ..' you got a card good job my broski')
+      print(message.member.name .. " did !pull")
+      local uj = dpf.loadjson("savedata/" .. message.member.user.id .. ".json",defaultjson)
+      if uj.lastpull + 10 <= time:toMinutes() then
+        message.channel:send('Pulling card...')
+        local newcard = ptable[math.random(#ptable)]
+        local ncn = fntoname(newcard)
+        print(ncn)
+        message.channel:send {
+            content = 'Woah! '.. message.member.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to their inventory.',
+            file = "card_images/" .. newcard .. ".png"
+          }
+
+        local uj = dpf.loadjson("savedata/" .. message.member.user.id .. ".json",defaultjson)
+        if uj.inventory[newcard] == nil then
+          uj.inventory[newcard] = 1
+        else
+          uj.inventory[newcard] = uj.inventory[newcard] + 1
+        end
+        uj.name = message.member.username .. "#".. message.member.discriminator
+        uj.id = message.member.user.id
+        uj.lastpull = time:toMinutes()
+        print(message.member.username .. "#" .. message.member.discriminator .. " is the username")
+        print("number of cards is " .. uj.inventory[newcard])
+        dpf.savejson("savedata/" .. message.member.user.id .. ".json",uj)
+      else
+        message.channel:send('Please wait ' .. math.ceil(uj.lastpull + 10 - time:toMinutes()) .. ' minutes before pulling again.')
+      end
+
+      
+    end
+    if message.content == prefix..'inventory' then
+      print(message.member.name .. " did !inventory")
+      local uj = dpf.loadjson("savedata/" .. message.member.user.id .. ".json",defaultjson)
+      local invstring = ''
+      for k,v in pairs(uj.inventory) do
+        invstring = invstring .. "**" .. (fntoname(k) or "ERROR!!!!!!!!") .. "** x" .. v .. "\n"
+      end
+        
+      message.channel:send("Your inventory contains:\n" .. invstring)
+    end
+    if message.content:find(prefix.. 'show ') then
+      print(message.member.name .. " did !show")
+      local uj = dpf.loadjson("savedata/" .. message.member.user.id .. ".json",defaultjson)
+      local request = string.sub(message.content, 8)
+      print(request)
+      local curfilename = texttofn(request)
+      
+      print(curfilename)
+      if curfilename ~= nil then
+        if uj.inventory[curfilename] then
+          print("user has card")
+          message.channel:send {
+            content = 'Here it is! Your **'.. fntoname(curfilename) .. '** card. The shorthand form is **' .. curfilename .. '**.',
+            file = "card_images/" .. curfilename .. ".png"
           }
         else
           print("user doesnt have card")
@@ -243,74 +202,115 @@ client:on('messageCreate', function(message)
       else
         message.channel:send("Sorry, but I could not find the " .. request .. " card in the database. Make sure that you spelled it right!")
       end
-    else
-      message.channel:send("Sorry, but I could not find a user named " .. mt[1] .. " in the database. Make sure that you have spelled it right, and that they have at least pulled a card to register!")
+      
+      -- whole lotta code to display a png image lmao
+      
     end
-    
-	end
-  if  message.content:find(prefix.. 'trade ') then
-    print(message.member.name .. " did !trade")
-    local mt = string.split(string.sub(message.content, 9),"/")
-    
-    local ujf = ("savedata/" .. message.member.user.id .. ".json")
-    
-    local uj2f = usernametojson(mt[2])
-    --print(ujf2 .. "bleh")
-    print("checking if user 2 exists")
-    if uj2f then
-      print("check if users are different people")
-      if uj2f ~= ujf then
-        --check if the items exist
-        print("checking if item 1 exists")
-        local uj = dpf.loadjson(ujf, {inventory={},lastpull=-24})
-        local uj2 = dpf.loadjson(uj2f, {inventory={},lastpull=-24})
-        local item1 = texttofn(mt[1])
-        if item1 then
-          print("checking if item 2 exists")
-          local item2 = texttofn(mt[3])
-          if item2 then
-            --check if items are in the players inventories
-            print("checking if u1 has i1")
-            if uj.inventory[item1] then
-              print("checking if u2 has i2")
-              if uj2.inventory[item2] then
-                --BOTH ITEMS EXIST, AND ARE IN THE RIGHT PLACES.
-                print("success!!!!!")
-                local newmessage = message.channel:send("<@".. uj2.id ..">, <@" .. uj.id .. "> wants to trade their **" .. fntoname(item1) .. "** for your **" .. fntoname(item2) .. "**. React to this post with :white_check_mark: to accept and :x: to deny.")
-                local tf = dpf.loadjson("savedata/trades.json",{})
-                tf[newmessage.id] ={ujf = ujf, uj2f=uj2f,item1=item1, item2=item2}
-                dpf.savejson("savedata/trades.json",tf)
+    if  message.content:find(prefix.. 'give ') then -- format is c!give DPS2004#5143/farmer (rare)
+      print(message.member.name .. " did !give")
+      local mt = string.split(string.sub(message.content, 8),"/")
+      
+      local uj = dpf.loadjson("savedata/" .. message.member.user.id .. ".json",defaultjson)
+      local uj2f = usernametojson(mt[1])
+      if uj2f then
+        local uj2 = dpf.loadjson(uj2f,defaultjson)
+        local curfilename = texttofn(mt[2])
+        if curfilename ~= nil then
+          if uj.inventory[curfilename] ~= nil then
+            print(uj.inventory[curfilename] .. "before")
+            uj.inventory[curfilename] = uj.inventory[curfilename] - 1
+            print(uj.inventory[curfilename] .. "after")
+            if uj.inventory[curfilename] == 0 then
+              uj.inventory[curfilename] = nil
+            end
+            dpf.savejson("savedata/" .. message.member.user.id .. ".json",uj)
+            print("user had card, removed from original user")
+            if uj2.inventory[curfilename] == nil then
+              uj2.inventory[curfilename] = 1
+            else
+              uj2.inventory[curfilename] = uj2.inventory[curfilename] + 1
+            end
+            dpf.savejson(uj2f,uj2)
+            print("saved user2 json with new card")
+            
+            message.channel:send {
+              content = 'You have gifted your **' .. fntoname(curfilename) .. '** card to @' .. uj2.name .. ' .'
+            }
+          else
+            print("user doesnt have card")
+            message.channel:send("Sorry, but you don't have the **" .. fntoname(curfilename) .. "** card in your inventory.")
+          end
+        else
+          message.channel:send("Sorry, but I could not find the " .. request .. " card in the database. Make sure that you spelled it right!")
+        end
+      else
+        message.channel:send("Sorry, but I could not find a user named " .. mt[1] .. " in the database. Make sure that you have spelled it right, and that they have at least pulled a card to register!")
+      end
+      
+    end
+    if  message.content:find(prefix.. 'trade ') then
+      print(message.member.name .. " did !trade")
+      local mt = string.split(string.sub(message.content, 9),"/")
+      
+      local ujf = ("savedata/" .. message.member.user.id .. ".json")
+      
+      local uj2f = usernametojson(mt[2])
+      --print(ujf2 .. "bleh")
+      print("checking if user 2 exists")
+      if uj2f then
+        print("check if users are different people")
+        if uj2f ~= ujf then
+          --check if the items exist
+          print("checking if item 1 exists")
+          local uj = dpf.loadjson(ujf, defaultjson)
+          local uj2 = dpf.loadjson(uj2f, defaultjson)
+          local item1 = texttofn(mt[1])
+          if item1 then
+            print("checking if item 2 exists")
+            local item2 = texttofn(mt[3])
+            if item2 then
+              --check if items are in the players inventories
+              print("checking if u1 has i1")
+              if uj.inventory[item1] then
+                print("checking if u2 has i2")
+                if uj2.inventory[item2] then
+                  --BOTH ITEMS EXIST, AND ARE IN THE RIGHT PLACES.
+                  print("success!!!!!")
+                  local newmessage = message.channel:send("<@".. uj2.id ..">, <@" .. uj.id .. "> wants to trade their **" .. fntoname(item1) .. "** for your **" .. fntoname(item2) .. "**. React to this post with :white_check_mark: to accept and :x: to deny.")
+                  local tf = dpf.loadjson("savedata/trades.json",{})
+                  tf[newmessage.id] ={ujf = ujf, uj2f=uj2f,item1=item1, item2=item2}
+                  dpf.savejson("savedata/trades.json",tf)
+                  
+                  
+                else
+                  message.channel:send("Sorry, but ".. uj2.name .. "doesn't have the **" .. fntoname(item2) .. "** card in their inventory.")
+                end
+                
                 
                 
               else
-                message.channel:send("Sorry, but ".. uj2.name .. "doesn't have the **" .. fntoname(item2) .. "** card in their inventory.")
+                message.channel:send("Sorry, but you don't have the **" .. fntoname(item1) .. "** card in your inventory.")
               end
               
               
               
             else
-              message.channel:send("Sorry, but you don't have the **" .. fntoname(item1) .. "** card in your inventory.")
+            
+              message.channel:send("Sorry, but I could not find the " .. mt[3] .. " card in the database. Make sure that you spelled it right!")
             end
             
             
-            
           else
-          
-            message.channel:send("Sorry, but I could not find the " .. mt[3] .. " card in the database. Make sure that you spelled it right!")
+            message.channel:send("Sorry, but I could not find the " .. mt[1] .. " card in the database. Make sure that you spelled it right!")
           end
-          
-          
         else
-          message.channel:send("Sorry, but I could not find the " .. mt[1] .. " card in the database. Make sure that you spelled it right!")
+          message.channel:send("Sorry, you cannot trade with yourself!")
         end
       else
-        message.channel:send("Sorry, you cannot trade with yourself!")
+        message.channel:send("Sorry, but I could not find a user named " .. mt[2] .. " in the database. Make sure that you have spelled it right, and that they have at least pulled a card to register!")
       end
-    else
-      message.channel:send("Sorry, but I could not find a user named " .. mt[2] .. " in the database. Make sure that you have spelled it right, and that they have at least pulled a card to register!")
     end
   end
-  
 end)
 
 
@@ -323,9 +323,9 @@ client:on('reactionAdd', function(reaction, userid)
     local uj2f = tf[reaction.message.id].uj2f
     local item1 = tf[reaction.message.id].item1
     local item2 = tf[reaction.message.id].item2
-    local uj = dpf.loadjson(ujf, {inventory={},lastpull=-24})
+    local uj = dpf.loadjson(ujf, defaultjson)
     print("loaded uj")
-    local uj2 = dpf.loadjson(uj2f, {inventory={},lastpull=-24})
+    local uj2 = dpf.loadjson(uj2f, defaultjson)
     print("loaded uj2")
     if uj2.id == userid then
       print('user2 has reacted')
