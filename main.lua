@@ -18,6 +18,7 @@ end
 -- import all the commands
 cmd = {}
 cmd.ping = require('commands/ping')
+cmd.help = require('commands/help')
 cmd.resetclock = require('commands/resetclock')
 cmd.uptime = require('commands/uptime')
 cmd.testcards = require('commands/testcards')
@@ -26,6 +27,11 @@ cmd.inventory = require('commands/inventory')
 cmd.show = require('commands/show')
 cmd.give = require('commands/give')
 cmd.trade = require('commands/trade')
+
+
+-- import reaction commands
+cmdre = {}
+cmdre.trade = require('reactions/trade')
 
 _G['defaultjson'] = {inventory={},storage={},lastpull=-24}
 
@@ -132,6 +138,16 @@ client:on('messageCreate', function(message)
       cmd.ping.run(message,mt)
     end
     
+    if string.sub(message.content, 0, 4+3) == prefix.. 'help' then 
+      local mt = string.split(string.sub(message.content, 4+4),"/")
+      local nmt = {}
+      for i,v in ipairs(mt) do
+        v = trim(v)
+        nmt[i]=v
+      end
+      cmd.help.run(message,mt)
+    end
+    
     if string.sub(message.content, 0, 10+3) == prefix.. 'resetclock' then 
       local mt = string.split(string.sub(message.content, 10+4),"/")
       local nmt = {}
@@ -211,64 +227,14 @@ end)
 
 
 client:on('reactionAdd', function(reaction, userid)
-  local tf = dpf.loadjson("savedata/events.json",{})
+  local ef = dpf.loadjson("savedata/events.json",{})
   print('a reaction with an emoji named '.. reaction.emojiName .. ' was added to a message with the id of ' .. reaction.message.id ..' by a user with the id of' .. userid)
-  if tf[reaction.message.id] then
+  eom = ef[reaction.message.id]
+  if eom then
     print('it is an event message being reacted to')
-    if tf[reaction.message.id].etype == "trade" then
-      print('it is a trade message being reacted to')
-      local ujf = tf[reaction.message.id].ujf
-      local uj2f = tf[reaction.message.id].uj2f
-      local item1 = tf[reaction.message.id].item1
-      local item2 = tf[reaction.message.id].item2
-      local uj = dpf.loadjson(ujf, defaultjson)
-      print("loaded uj")
-      local uj2 = dpf.loadjson(uj2f, defaultjson)
-      print("loaded uj2")
-      if uj2.id == userid then
-        print('user2 has reacted')
-        if reaction.emojiName == "✅" then
-          print('user2 has accepted')
-          print("removing item1 from user1")
-          uj.inventory[item1] = uj.inventory[item1] - 1
-          if uj.inventory[item1] == 0 then
-            uj.inventory[item1] = nil
-          end
-          print("removing item2 from user2")
-          uj2.inventory[item2] = uj2.inventory[item2] - 1
-          if uj2.inventory[item2] == 0 then
-            uj2.inventory[item2] = nil
-          end
-          print("giving item1 to user2")
-          if uj2.inventory[item1] == nil then
-            uj2.inventory[item1] = 1
-          else
-            uj2.inventory[item1] = uj2.inventory[item1] + 1
-          end        
-          print("giving item2 to user1")
-          if uj.inventory[item2] == nil then
-            uj.inventory[item2] = 1
-          else
-            uj.inventory[item2] = uj.inventory[item2] + 1
-          end
-          
-          tf[reaction.message.id] = nil
-          reaction.message.channel:send("The trade between <@".. uj2.id .."> and <@" .. uj.id .. "> has completed.")
-          dpf.savejson("savedata/events.json",tf)
-          dpf.savejson(uj2f,uj2)
-          dpf.savejson(ujf,uj)
-        end
-        if reaction.emojiName == "❌" then
-          print('user2 has denied')
-          tf[reaction.message.id] = nil
-          local newmessage = reaction.message.channel:send("<@".. uj2.id .."> has successfully denied the trade with <@" .. uj.id .. ">.")
-          dpf.savejson("savedata/events.json",tf)
-          
-        end
-      else
-        print("its not uj2 reacting")
-      end
-    elseif tf[reaction.message.id].etype == "store" then
+    if eom.etype == "trade" then
+      cmdre.trade.run(ef, eom, reaction, userid)
+    elseif eom == "store" then
       print('it is a storage message being reacted to')
     end
     
