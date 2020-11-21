@@ -1,3 +1,7 @@
+-- ok i know ths code is hot stinky garbage but it *works*, god damn-it.
+
+
+-- it works most of the time. most of the time.
 local discordia = require('discordia')
 local client = discordia.Client()
 _G["prefix"] = "c!"
@@ -5,6 +9,9 @@ _G["privatestuff"] = require('privatestuff')
 _G["json"] = require('libs/json')
 _G["dpf"] = require('libs/dpf')
 _G["utils"] = require('libs/utils')
+_G["trim"] = function (s)
+   return s:match "^%s*(.-)%s*$"
+end
 
 
 
@@ -12,6 +19,11 @@ _G["utils"] = require('libs/utils')
 cmd = {}
 cmd.ping = require('commands/ping')
 cmd.resetclock = require('commands/resetclock')
+cmd.uptime = require('commands/uptime')
+cmd.testcards = require('commands/testcards')
+cmd.pull = require('commands/pull')
+cmd.inventory = require('commands/inventory')
+cmd.show = require('commands/show')
 
 _G['defaultjson'] = {inventory={},storage={},lastpull=-24}
 
@@ -108,105 +120,71 @@ end)
 client:on('messageCreate', function(message)
   if message.member.user.id ~= "767445265871142933" and message.member.username ~= "RDCards" then --failsafe to avoid recursion
     
-    if message.content:find(prefix.. 'ping') and string.sub(message.content, 0, 4+3) == prefix.. 'ping' then 
+    if string.sub(message.content, 0, 4+3) == prefix.. 'ping' then 
       local mt = string.split(string.sub(message.content, 4+4),"/")
+      local nmt = {}
+      for i,v in ipairs(mt) do
+        v = trim(v)
+        nmt[i]=v
+      end
       cmd.ping.run(message,mt)
     end
     
-    if message.content:find(prefix.. 'resetclock') and string.sub(message.content, 0, 10+3) == prefix.. 'resetclock' then 
+    if string.sub(message.content, 0, 10+3) == prefix.. 'resetclock' then 
       local mt = string.split(string.sub(message.content, 10+4),"/")
+      local nmt = {}
+      for i,v in ipairs(mt) do
+        v = trim(v)
+        nmt[i]=v
+      end
       cmd.resetclock.run(message,mt)
     end
+    if string.sub(message.content, 0, 6+3) == prefix.. 'uptime' then 
+      local mt = string.split(string.sub(message.content, 6+4),"/")
+      local nmt = {}
+      for i,v in ipairs(mt) do
+        v = trim(v)
+        nmt[i]=v
+      end
+      cmd.uptime.run(message,mt)
+    end
+    if string.sub(message.content, 0, 9+3) == prefix.. 'testcards' then 
+      local mt = string.split(string.sub(message.content, 9+4),"/")
+      local nmt = {}
+      for i,v in ipairs(mt) do
+        v = trim(v)
+        nmt[i]=v
+      end
+      cmd.testcards.run(message,mt)
+    end
+
+    if string.sub(message.content, 0, 4+3) == prefix.. 'pull' then 
+      local mt = string.split(string.sub(message.content, 4+4),"/")
+      local nmt = {}
+      for i,v in ipairs(mt) do
+        v = trim(v)
+        nmt[i]=v
+      end
+      cmd.pull.run(message,mt)      
+    end
     
-    if message.content == prefix..'uptime' then
-      local time = sw:getTime()
-      message.channel:send('this bot has been running for' .. math.floor(time:toMinutes()) .. ' minutes.')
-      print(message.member.name .. " did !uptime")
-    end
-    if message.content == prefix..'testcards' then
-      if debug then
-        message.channel:send('ok, testing. There are '.. #cdb ..'cards in the database.')
-        print(message.member.name .. " did !testcards")
-        for i,v in ipairs(cdb) do
-          message.channel:send {
-            content = 'TESTCARDS: '.. v.name,
-          }
-          message.channel:send {
-            file = "card_images/" .. v.filename .. ".png"
-          }
-        end
-      else
-        message.channel:send('Not so fast, buckaroo.')
+    if string.sub(message.content, 0, 9+3) == prefix.. 'inventory' then 
+      local mt = string.split(string.sub(message.content, 9+4),"/")
+      local nmt = {}
+      for i,v in ipairs(mt) do
+        v = trim(v)
+        nmt[i]=v
       end
+      cmd.inventory.run(message,mt)
     end
-    if message.content == prefix..'pull' then
-      local time = sw:getTime()
-      --message.channel:send('haha wowie! discord user '.. message.member.mentionString .. ' whos discord ID happens to be ' .. message.member.user.id ..' you got a card good job my broski')
-      print(message.member.name .. " did !pull")
-      local uj = dpf.loadjson("savedata/" .. message.member.user.id .. ".json",defaultjson)
-      if uj.lastpull + 10 <= time:toMinutes() then
-        message.channel:send('Pulling card...')
-        local newcard = ptable[math.random(#ptable)]
-        local ncn = fntoname(newcard)
-        print(ncn)
-        message.channel:send {
-            content = 'Woah! '.. message.member.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to their inventory.',
-            file = "card_images/" .. newcard .. ".png"
-          }
-
-        local uj = dpf.loadjson("savedata/" .. message.member.user.id .. ".json",defaultjson)
-        if uj.inventory[newcard] == nil then
-          uj.inventory[newcard] = 1
-        else
-          uj.inventory[newcard] = uj.inventory[newcard] + 1
-        end
-        uj.name = message.member.username .. "#".. message.member.discriminator
-        uj.id = message.member.user.id
-        uj.lastpull = time:toMinutes()
-        print(message.member.username .. "#" .. message.member.discriminator .. " is the username")
-        print("number of cards is " .. uj.inventory[newcard])
-        dpf.savejson("savedata/" .. message.member.user.id .. ".json",uj)
-      else
-        message.channel:send('Please wait ' .. math.ceil(uj.lastpull + 10 - time:toMinutes()) .. ' minutes before pulling again.')
+    if string.sub(message.content, 0, 4+3) == prefix.. 'show ' then 
+      local mt = string.split(string.sub(message.content, 4+4),"/")
+      local nmt = {}
+      for i,v in ipairs(mt) do
+        v = trim(v)
+        nmt[i]=v
       end
-
-      
-    end
-    if message.content == prefix..'inventory' then
-      print(message.member.name .. " did !inventory")
-      local uj = dpf.loadjson("savedata/" .. message.member.user.id .. ".json",defaultjson)
-      local invstring = ''
-      for k,v in pairs(uj.inventory) do
-        invstring = invstring .. "**" .. (fntoname(k) or "ERROR!!!!!!!!") .. "** x" .. v .. "\n"
-      end
-        
-      message.channel:send("Your inventory contains:\n" .. invstring)
-    end
-    if message.content:find(prefix.. 'show ') then
-      print(message.member.name .. " did !show")
-      local uj = dpf.loadjson("savedata/" .. message.member.user.id .. ".json",defaultjson)
-      local request = string.sub(message.content, 8)
-      print(request)
-      local curfilename = texttofn(request)
-      
-      print(curfilename)
-      if curfilename ~= nil then
-        if uj.inventory[curfilename] then
-          print("user has card")
-          message.channel:send {
-            content = 'Here it is! Your **'.. fntoname(curfilename) .. '** card. The shorthand form is **' .. curfilename .. '**.',
-            file = "card_images/" .. curfilename .. ".png"
-          }
-        else
-          print("user doesnt have card")
-          message.channel:send("Sorry, but you don't have the **" .. fntoname(curfilename) .. "** card in your inventory.")
-        end
-      else
-        message.channel:send("Sorry, but I could not find the " .. request .. " card in the database. Make sure that you spelled it right!")
-      end
-      
-      -- whole lotta code to display a png image lmao
-      
+      cmd.show.run(message,nmt)      
     end
     if  message.content:find(prefix.. 'give ') and string.sub(message.content, 0, 7) == prefix.. 'give ' then -- format is c!give DPS2004#5143/farmer (rare)
       print(message.member.name .. " did !give")
