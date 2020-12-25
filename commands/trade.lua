@@ -30,6 +30,7 @@ function command.run(message, mt)
                 --BOTH ITEMS EXIST, AND ARE IN THE RIGHT PLACES.
                 print("success!!!!!")
                 local newmessage = message.channel:send("<@".. uj2.id ..">, <@" .. uj.id .. "> wants to trade their **" .. fntoname(item1) .. "** for your **" .. fntoname(item2) .. "**. React to this post with :white_check_mark: to accept and :x: to deny.")
+                addreacts(newmessage)
                 local tf = dpf.loadjson("savedata/events.json",{})
                 tf[newmessage.id] ={ujf = ujf, uj2f=uj2f,item1=item1, item2=item2,etype = "trade"}
                 dpf.savejson("savedata/events.json",tf)

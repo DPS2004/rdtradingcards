@@ -13,34 +13,38 @@ function reaction.run(ef, eom, reaction, userid)
     print('user2 has reacted')
     if reaction.emojiName == "✅" then
       print('user2 has accepted')
-      print("removing item1 from user1")
-      uj.inventory[item1] = uj.inventory[item1] - 1
-      if uj.inventory[item1] == 0 then
-        uj.inventory[item1] = nil
-      end
-      print("removing item2 from user2")
-      uj2.inventory[item2] = uj2.inventory[item2] - 1
-      if uj2.inventory[item2] == 0 then
-        uj2.inventory[item2] = nil
-      end
-      print("giving item1 to user2")
-      if uj2.inventory[item1] == nil then
-        uj2.inventory[item1] = 1
+      if uj.inventory[item1] and uj2.inventory[item2] then
+        print("removing item1 from user1")
+        uj.inventory[item1] = uj.inventory[item1] - 1
+        if uj.inventory[item1] == 0 then
+          uj.inventory[item1] = nil
+        end
+        print("removing item2 from user2")
+        uj2.inventory[item2] = uj2.inventory[item2] - 1
+        if uj2.inventory[item2] == 0 then
+          uj2.inventory[item2] = nil
+        end
+        print("giving item1 to user2")
+        if uj2.inventory[item1] == nil then
+          uj2.inventory[item1] = 1
+        else
+          uj2.inventory[item1] = uj2.inventory[item1] + 1
+        end        
+        print("giving item2 to user1")
+        if uj.inventory[item2] == nil then
+          uj.inventory[item2] = 1
+        else
+          uj.inventory[item2] = uj.inventory[item2] + 1
+        end
+        
+        ef[reaction.message.id] = nil
+        reaction.message.channel:send("The trade between <@".. uj2.id .."> and <@" .. uj.id .. "> has completed.")
+        dpf.savejson("savedata/events.json",ef)
+        dpf.savejson(uj2f,uj2)
+        dpf.savejson(ujf,uj)
       else
-        uj2.inventory[item1] = uj2.inventory[item1] + 1
-      end        
-      print("giving item2 to user1")
-      if uj.inventory[item2] == nil then
-        uj.inventory[item2] = 1
-      else
-        uj.inventory[item2] = uj.inventory[item2] + 1
+        local newmessage = reaction.message.channel:send("An error has occured. Please make sure that both parties still have the cards in their inventories!")
       end
-      
-      ef[reaction.message.id] = nil
-      reaction.message.channel:send("The trade between <@".. uj2.id .."> and <@" .. uj.id .. "> has completed.")
-      dpf.savejson("savedata/events.json",ef)
-      dpf.savejson(uj2f,uj2)
-      dpf.savejson(ujf,uj)
     end
     if reaction.emojiName == "❌" then
       print('user2 has denied')

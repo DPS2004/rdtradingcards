@@ -27,11 +27,14 @@ cmd.inventory = require('commands/inventory')
 cmd.show = require('commands/show')
 cmd.give = require('commands/give')
 cmd.trade = require('commands/trade')
+cmd.store = require('commands/store')
+cmd.storage = require('commands/storage')
 
 
 -- import reaction commands
 cmdre = {}
 cmdre.trade = require('reactions/trade')
+cmdre.store = require('reactions/store')
 
 _G['defaultjson'] = {inventory={},storage={},lastpull=-24}
 
@@ -119,6 +122,11 @@ _G['usernametojson'] = function (x)
       return "savedata/"..v
     end
   end
+end
+
+_G['addreacts'] = function (x)
+  x:addReaction("✅")
+  x:addReaction("❌")
 end
 
 client:on('ready', function()
@@ -222,25 +230,47 @@ client:on('messageCreate', function(message)
       end
       cmd.trade.run(message,nmt)      
     end
+    if string.sub(message.content, 0, 5+3) == prefix.. 'store ' then 
+      local mt = string.split(string.sub(message.content, 5+4),"/")
+      local nmt = {}
+      for i,v in ipairs(mt) do
+        v = trim(v)
+        nmt[i]=v
+      end
+      cmd.store.run(message,nmt)      
+    end
+    if string.sub(message.content, 0, 7+3) == prefix.. 'storage' then 
+      local mt = string.split(string.sub(message.content, 7+4),"/")
+      local nmt = {}
+      for i,v in ipairs(mt) do
+        v = trim(v)
+        nmt[i]=v
+      end
+      cmd.storage.run(message,mt)
+    end
   end
+
 end)
 
 
 client:on('reactionAdd', function(reaction, userid)
-  local ef = dpf.loadjson("savedata/events.json",{})
-  print('a reaction with an emoji named '.. reaction.emojiName .. ' was added to a message with the id of ' .. reaction.message.id ..' by a user with the id of' .. userid)
-  eom = ef[reaction.message.id]
-  if eom then
-    print('it is an event message being reacted to')
-    if eom.etype == "trade" then
-      cmdre.trade.run(ef, eom, reaction, userid)
-    elseif eom == "store" then
-      print('it is a storage message being reacted to')
+  if userid ~= "767445265871142933" then
+    local ef = dpf.loadjson("savedata/events.json",{})
+    print('a reaction with an emoji named '.. reaction.emojiName .. ' was added to a message with the id of ' .. reaction.message.id ..' by a user with the id of' .. userid)
+    eom = ef[reaction.message.id]
+    if eom then
+      print('it is an event message being reacted to')
+      if eom.etype == "trade" then
+        cmdre.trade.run(ef, eom, reaction, userid)
+      elseif eom.etype == "store" then
+        print('it is a storage message being reacted to')
+        cmdre.store.run(ef, eom, reaction, userid)
+      end
+      
+      
+      
+      
     end
-    
-    
-    
-    
   end
 
 
