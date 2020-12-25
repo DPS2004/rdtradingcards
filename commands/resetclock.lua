@@ -5,8 +5,8 @@ dpf = require('libs/dpf')
 utils = require('libs/utils')
   print(prefix)
 function command.run(message, mt)
-
-  if message.member:hasRole(privatestuff.modroleid) then   -- this might be wrong???? i'm not sure
+  local cmember = message.guild:getMember(message.author)
+  if cmember:hasRole(privatestuff.modroleid) then
     for i,v in ipairs(scandir("savedata")) do
       resetclocks()
     end
