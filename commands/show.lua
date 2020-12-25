@@ -1,8 +1,8 @@
 command = {}
 function command.run(message, mt)
-  print(message.member.name .. " did !show")
+  print(message.author.name .. " did !show")
   if #mt == 1 then
-    local uj = dpf.loadjson("savedata/" .. message.member.user.id .. ".json",defaultjson)
+    local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
     local request = mt[1]
     print(request)
     local curfilename = texttofn(request)

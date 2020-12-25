@@ -1,12 +1,12 @@
 command = {}
 function command.run(message, mt)
-  print(message.member.name .. " did !give")
+  print(message.author.name .. " did !give")
   if #mt == 2 then
-    local uj = dpf.loadjson("savedata/" .. message.member.user.id .. ".json",defaultjson)
+    local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
     local uj2f = usernametojson(mt[1])
     if uj2f then
       local uj2 = dpf.loadjson(uj2f,defaultjson)
-      if uj2.id ~= message.member.user.id then
+      if uj2.id ~= message.author.id then
         local curfilename = texttofn(mt[2])
         if curfilename ~= nil then
           if uj.inventory[curfilename] ~= nil then
@@ -16,7 +16,7 @@ function command.run(message, mt)
             if uj.inventory[curfilename] == 0 then
               uj.inventory[curfilename] = nil
             end
-            dpf.savejson("savedata/" .. message.member.user.id .. ".json",uj)
+            dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
             print("user had card, removed from original user")
             if uj2.inventory[curfilename] == nil then
               uj2.inventory[curfilename] = 1

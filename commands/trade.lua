@@ -2,10 +2,10 @@ command = {}
 function command.run(message, mt)
 
   if #mt == 3 then
-    print(message.member.name .. " did !trade")
+    print(message.author.name .. " did !trade")
     local mt = string.split(string.sub(message.content, 9),"/")
     print(string.sub(message.content, 0, 8))
-    local ujf = ("savedata/" .. message.member.user.id .. ".json")
+    local ujf = ("savedata/" .. message.author.id .. ".json")
     
     local uj2f = usernametojson(mt[2])
     --print(ujf2 .. "bleh")

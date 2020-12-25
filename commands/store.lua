@@ -2,9 +2,9 @@ command = {}
 function command.run(message, mt)
 
   if #mt == 1 then
-    print(message.member.name .. " did !store")
+    print(message.author.name .. " did !store")
     print(string.sub(message.content, 0, 8))
-    local ujf = ("savedata/" .. message.member.user.id .. ".json")
+    local ujf = ("savedata/" .. message.author.id .. ".json")
 
     local uj = dpf.loadjson(ujf, defaultjson)
     local item1 = texttofn(mt[1])

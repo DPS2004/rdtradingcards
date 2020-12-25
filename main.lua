@@ -134,7 +134,7 @@ client:on('ready', function()
 end)
 
 client:on('messageCreate', function(message)
-  if message.member.user.id ~= "767445265871142933" and message.member.username ~= "RDCards" then --failsafe to avoid recursion
+  if message.author.id ~= "767445265871142933" then --failsafe to avoid recursion
     
     if string.sub(message.content, 0, 4+3) == prefix.. 'ping' then 
       local mt = string.split(string.sub(message.content, 4+4),"/")
