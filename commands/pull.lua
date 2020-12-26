@@ -29,6 +29,7 @@ local time = sw:getTime()
   else
     message.channel:send('Please wait ' .. math.ceil(uj.lastpull + 10 - time:toMinutes()) .. ' minutes before pulling again.')
   end
+  cmd.checkcollectors.run(message,mt)
 end
 return command
   

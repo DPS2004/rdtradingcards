@@ -27,6 +27,7 @@ function command.run(message, mt)
   else
     message.channel:send("Sorry, but the c!store command expects 1 argument. Please see c!help for more details.")
   end
+  cmd.checkcollectors.run(message,mt)
 end
 return command
   

@@ -17,7 +17,7 @@ end
 
 
 -- import all the commands
-cmd = {}
+_G['cmd'] = {}
 cmd.ping = require('commands/ping')
 cmd.help = require('commands/help')
 cmd.resetclock = require('commands/resetclock')
