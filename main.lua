@@ -31,6 +31,7 @@ cmd.trade = require('commands/trade')
 cmd.store = require('commands/store')
 cmd.storage = require('commands/storage')
 cmd.checkcollectors = require('commands/checkcollectors')
+cmd.checkmedals = require('commands/checkmedals')
 
 
 -- import reaction commands

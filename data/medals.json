@@ -1,0 +1,10 @@
+{
+  "itainteasybeinggreen": {
+    name: "It Ain't Easy Being Green",
+    description: "Collect one of every Room card with the Discontinued rarity!"
+  },
+  "unlucky": {
+    name: "Unlucky",
+    description: "Collect 10 exact copies of a card!"
+  }
+}
