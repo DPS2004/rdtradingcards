@@ -9,6 +9,7 @@ _G["privatestuff"] = require('privatestuff')
 _G["json"] = require('libs/json')
 _G["dpf"] = require('libs/dpf')
 _G["utils"] = require('libs/utils')
+_G["inspect"] = require('libs/inspect')
 _G["trim"] = function (s)
    return s:match "^%s*(.-)%s*$"
 end
@@ -29,6 +30,7 @@ cmd.give = require('commands/give')
 cmd.trade = require('commands/trade')
 cmd.store = require('commands/store')
 cmd.storage = require('commands/storage')
+cmd.checkcollectors = require('commands/checkcollectors')
 
 
 -- import reaction commands
@@ -40,7 +42,7 @@ _G['defaultjson'] = {inventory={},storage={},lastpull=-24}
 
 _G['debug'] = true
 
-cj =  io.open("cards.json", "r")
+cj =  io.open("data/cards.json", "r")
 
 _G['sw'] = discordia.Stopwatch()
 sw:start()
@@ -60,8 +62,13 @@ for i,v in ipairs(cdata.groups) do
     print(x.name.. " loaded!")
   end
 end
+print("here is cdb")
+print(inspect(cdb))
+print("here is ptable")
+print(inspect(ptable))
 
-
+print("loading collector's info")
+_G['coll'] = dpf.loadjson("data/coll.json",defaultjson)
 
 _G['fntoname'] = function (x)
   print("finding "..x)

@@ -9,7 +9,7 @@ function command.run(message, mt)
     
     print(curfilename)
     if curfilename ~= nil then
-      if uj.inventory[curfilename] then
+      if uj.inventory[curfilename] or uj.storage[curfilename] then
         print("user has card")
         message.channel:send {
           content = 'Here it is! Your **'.. fntoname(curfilename) .. '** card. The shorthand form is **' .. curfilename .. '**.',
@@ -17,7 +17,7 @@ function command.run(message, mt)
         }
       else
         print("user doesnt have card")
-        message.channel:send("Sorry, but you don't have the **" .. fntoname(curfilename) .. "** card in your inventory.")
+        message.channel:send("Sorry, but you don't have the **" .. fntoname(curfilename) .. "** card in your inventory or your storage.")
       end
     else
       message.channel:send("Sorry, but I could not find the " .. request .. " card in the database. Make sure that you spelled it right!")

@@ -1,0 +1,107 @@
+[
+  {
+    "require": [
+      "coler",
+      "colesr",
+      "coleur"
+    ],
+    "recieve": "colec"
+  },
+  {
+    "require": [
+      "farmerr",
+      "farmersr",
+      "farmerur"
+    ],
+    "recieve": "farmerc"
+  },
+  {
+    "require": [
+      "haileyr",
+      "haileysr",
+      "haileyur"
+    ],
+    "recieve": "haileyc"
+  },
+  {
+    "require": [
+      "ianr",
+      "iansr",
+      "ianur"
+    ],
+    "recieve": "ianc"
+  },
+  {
+    "require": [
+      "insomniacr",
+      "insomniacsr",
+      "insomniacur"
+    ],
+    "recieve": "insomniacc"
+  },
+  {
+    "require": [
+      "internr",
+      "internsr",
+      "internur"
+    ],
+    "recieve": "internc"
+  },
+  {
+    "require": [
+      "loganr",
+      "logansr",
+      "loganur"
+    ],
+    "recieve": "loganc"
+  },
+  {
+    "require": [
+      "minerr",
+      "minersr",
+      "minerur"
+    ],
+    "recieve": "minerc"
+  },
+  {
+    "require": [
+      "mrsstevensonr",
+      "mrsstevensonsr",
+      "mrsstevensonur"
+    ],
+    "recieve": "mrsstevensonc"
+  },
+  {
+    "require": [
+      "mrstevensonr",
+      "mrstevensonsr",
+      "mrstevensonur"
+    ],
+    "recieve": "mrstevensonc"
+  },
+  {
+    "require": [
+      "paiger",
+      "paigesr",
+      "paigeur"
+    ],
+    "recieve": "paigec"
+  },
+  {
+    "require": [
+      "politicianr",
+      "politiciansr",
+      "politicianur"
+    ],
+    "recieve": "politicianc"
+  },
+  {
+    "require": [
+      "samurair",
+      "samuraisr",
+      "samuraiur"
+    ],
+    "recieve": "samuraic"
+  },
+
+]
