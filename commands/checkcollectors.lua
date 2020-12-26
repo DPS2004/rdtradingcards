@@ -1,5 +1,8 @@
 command = {}
-function command.run(message, mt)
+function command.run(message, mt,mc)
+  if not mc then
+    mc = message.channel
+  end
   print("checking collector's drops for ".. message.author.name)
   local ujf = ("savedata/" .. message.author.id .. ".json")
   local uj = dpf.loadjson(ujf, defaultjson)
@@ -21,7 +24,7 @@ function command.run(message, mt)
           uj.storage[newcard] = uj.storage[newcard] + 1
         end
         local ncn = fntoname(newcard)
-        message.channel:send {
+        mc:send {
           content = 'Congratulations! After collecting and storing some other cards, '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to their storage.',
           file = "card_images/" .. newcard .. ".png"
         }

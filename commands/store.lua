@@ -14,7 +14,7 @@ function command.run(message, mt)
         local newmessage = message.channel:send("<@" .. uj.id .. ">, do you want to put your **" .. fntoname(item1) .. "** into storage? This cannot be undone. React to this post with :white_check_mark: to confirm and :x: to deny.")
         addreacts(newmessage)
         local tf = dpf.loadjson("savedata/events.json",{})
-        tf[newmessage.id] ={ujf = ujf, item1=item1,etype = "store"}
+        tf[newmessage.id] ={ujf = ujf, item1=item1,etype = "store",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
         dpf.savejson("savedata/events.json",tf)
       else
         message.channel:send("Sorry, but you don't have the **" .. fntoname(item1) .. "** card in your inventory.")
@@ -27,7 +27,6 @@ function command.run(message, mt)
   else
     message.channel:send("Sorry, but the c!store command expects 1 argument. Please see c!help for more details.")
   end
-  cmd.checkcollectors.run(message,mt)
 end
 return command
   
