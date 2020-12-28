@@ -7,4 +7,8 @@
     name: "Unlucky",
     description: "Collect 10 exact copies of a card!"
   }
+  "easytogetdebugmedal": {
+    name: "Easy to get debug medal lol",
+    description: "just get a rare cole lmao"
+  }
 }

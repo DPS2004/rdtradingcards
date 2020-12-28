@@ -39,7 +39,7 @@ cmdre = {}
 cmdre.trade = require('reactions/trade')
 cmdre.store = require('reactions/store')
 
-_G['defaultjson'] = {inventory={},storage={},lastpull=-24}
+_G['defaultjson'] = {inventory={},storage={},medals={},lastpull=-24}
 
 _G['debug'] = true
 
@@ -70,6 +70,8 @@ print(inspect(ptable))
 
 print("loading collector's info")
 _G['coll'] = dpf.loadjson("data/coll.json",defaultjson)
+_G['medaldb'] = dpf.loadjson("data/medals.json",defaultjson)
+_G['medalrequires'] = dpf.loadjson("data/medalrequires.json",defaultjson)
 
 _G['fntoname'] = function (x)
   print("finding "..x)

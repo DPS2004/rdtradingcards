@@ -25,6 +25,19 @@
       end
     ",
     "recieve": "unlucky"
+  },  
+  {
+    "require": "
+      function checkrequirements(uj)
+        if uj.storage["coler"] then
+          return true
+        else
+          return false
+        end
+      end
+    ",
+    "recieve": "easytogetdebugmedal"
   },
+
 
 ]

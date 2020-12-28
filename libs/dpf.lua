@@ -9,7 +9,9 @@ function dpf.loadjson(f,w)
     cf:close()
     cf = io.open(f, "r+")
   end
-  return dpf.json.decode(cf:read("*a"))
+  local filejson = dpf.json.decode(cf:read("*a"))
+  cf:close()
+  return filejson
 end
 
 function dpf.savejson(f,w)
