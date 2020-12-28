@@ -70,9 +70,11 @@ print(inspect(ptable))
 
 print("loading collector's info")
 _G['coll'] = dpf.loadjson("data/coll.json",defaultjson)
+print("loading medaldb")
 _G['medaldb'] = dpf.loadjson("data/medals.json",defaultjson)
+print("loading medal requires")
 _G['medalrequires'] = dpf.loadjson("data/medalrequires.json",defaultjson)
-
+print("loading functions")
 _G['fntoname'] = function (x)
   print("finding "..x)
   for i,v in ipairs(cdb) do

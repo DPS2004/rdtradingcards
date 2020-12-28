@@ -1,43 +1,16 @@
 [
   {
-    "require": "
-      function checkrequirements(uj)
-        if uj.storage['roomsdc_r'] and uj.storage['roomsdc_sr'] and uj.storage['roomsdc_sr'] then
-          return true
-        else
-          return false
-        end
-      end
-    ",
+    "require": "function checkrequirements(uj) if uj.storage['roomsdc_r'] and uj.storage['roomsdc_sr'] and uj.storage['roomsdc_sr'] then return true else return false end end return checkrequirements",
     "recieve": "itainteasybeinggreen"
   },
   {
-    "require": "
-      function checkrequirements(uj)
-        local result = false
-        for i,v in ipairs(uj.storage) do
-          if v >= 10 then
-            result = true
-          end
-        end
-        return result
-        
-      end
-    ",
+    "require": "function checkrequirements(uj) local result = false for i,v in ipairs(uj.storage) do if v >= 10 then result = true end end return result end return checkrequirements",
     "recieve": "unlucky"
   },  
   {
-    "require": "
-      function checkrequirements(uj)
-        if uj.storage["coler"] then
-          return true
-        else
-          return false
-        end
-      end
-    ",
+    "require": "function checkrequirements(uj) print(inspect(uj)) if uj.storage['coler'] then return true else return false end end return checkrequirements",
     "recieve": "easytogetdebugmedal"
-  },
+  }
 
 
 ]

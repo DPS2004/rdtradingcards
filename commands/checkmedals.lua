@@ -7,9 +7,11 @@ function command.run(message, mt,mc)
   local ujf = ("savedata/" .. message.author.id .. ".json")
   local uj = dpf.loadjson(ujf, defaultjson)
   for i,v in ipairs(medalrequires) do
-    if loadstring(v.require)() then
+    print(inspect(v.require))
+    local rfunc = loadstring(v.require)()
+    if rfunc(uj) then
       print("user can have "..v.recieve)
-      if not uj.medals[v.revieve] then
+      if not uj.medals[v.recieve] then
         print("user does not have it yet!")
         uj.medals[v.recieve] = true
         mc:send {
