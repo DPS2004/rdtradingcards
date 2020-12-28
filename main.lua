@@ -32,6 +32,7 @@ cmd.store = require('commands/store')
 cmd.storage = require('commands/storage')
 cmd.checkcollectors = require('commands/checkcollectors')
 cmd.checkmedals = require('commands/checkmedals')
+cmd.reloaddb = require('commands/reloaddb')
 
 
 -- import reaction commands
@@ -43,11 +44,11 @@ _G['defaultjson'] = {inventory={},storage={},medals={},lastpull=-24}
 
 _G['debug'] = true
 
-cj =  io.open("data/cards.json", "r")
+
 
 _G['sw'] = discordia.Stopwatch()
 sw:start()
-
+cj =  io.open("data/cards.json", "r")
 _G['cdata'] = json.decode(cj:read("*a"))
 cj:close()
 --generate pull table
@@ -261,6 +262,15 @@ client:on('messageCreate', function(message)
         nmt[i]=v
       end
       cmd.storage.run(message,mt)
+    end
+    if string.sub(message.content, 0, 8+3) == prefix.. 'reloaddb' then 
+      local mt = string.split(string.sub(message.content, 8+4),"/")
+      local nmt = {}
+      for i,v in ipairs(mt) do
+        v = trim(v)
+        nmt[i]=v
+      end
+      cmd.reloaddb.run(message,mt)
     end
   end
 

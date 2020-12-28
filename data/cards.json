@@ -9,43 +9,50 @@
           "chance": 2,
           "filename": "battleworninsomniac",
           "name": "Battleworn Insomniac",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Super Rare"
         },
         {
           "chance": 2,
           "filename": "kotoshokotechno",
           "name": "Koto Shoko Techno",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Super Rare"
         },
         {
           "chance": 2,
           "filename": "samuraidubstep",
           "name": "Samurai Dubstep",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Super Rare"
         },
         {
           "chance": 2,
           "filename": "allthetimes",
           "name": "All The Times",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Super Rare"
         },
         {
           "chance": 2,
           "filename": "oneshiftmore",
           "name": "One Shift More",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Super Rare"
         },
         {
           "chance": 2,
           "filename": "intimate",
           "name": "Intimate",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Super Rare"
         },
         {
           "chance": 1,
           "filename": "superbattleworninsomniac",
           "name": "Super Battleworn Insomniac",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Ultra Rare"
         }
       ]
     },
@@ -63,13 +70,15 @@
           "chance": 2,
           "filename": "colesr",
           "name": "Cole Brew (Super Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Super Rare"
         },
         {
           "chance": 1,
           "filename": "coleur",
           "name": "Cole Brew (Ultra Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Ultra Rare"
         },
         {
           "chance": 1,
@@ -99,13 +108,15 @@
           "chance": 2,
           "filename": "farmersr",
           "name": "Farmer (Super Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Super Rare"
         },
         {
           "chance": 1,
           "filename": "farmerur",
           "name": "Farmer (Ultra Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Ultra Rare"
         },
         {
           "chance": 1,
@@ -135,13 +146,15 @@
           "chance": 2,
           "filename": "haileysr",
           "name": "Hailey (Super Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Super Rare"
         },
         {
           "chance": 1,
           "filename": "haileyur",
           "name": "Hailey (Ultra Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Ultra Rare"
         },
         {
           "chance": 0,
@@ -165,13 +178,15 @@
           "chance": 2,
           "filename": "iansr",
           "name": "Ian (Super Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Super Rare"
         },
         {
           "chance": 1,
           "filename": "ianur",
           "name": "Ian (Ultra Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Ultra Rare"
         },
         {
           "chance": 0,
@@ -195,13 +210,15 @@
           "chance": 2,
           "filename": "insomniacsr",
           "name": "Insomniac (Super Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Super Rare"
         },
         {
           "chance": 1,
           "filename": "insomniacur",
           "name": "Insomniac (Ultra Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Ultra Rare"
         },
         {
           "chance": 0,
@@ -225,13 +242,15 @@
           "chance": 2,
           "filename": "internsr",
           "name": "Intern (Super Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Super Rare"
         },
         {
           "chance": 1,
           "filename": "internur",
           "name": "Intern (Ultra Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Ultra Rare"
         },
         {
           "chance": 0,
@@ -255,13 +274,15 @@
           "chance": 2,
           "filename": "logansr",
           "name": "Logan (Super Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Super Rare"
         },
         {
           "chance": 1,
           "filename": "loganur",
           "name": "Logan (Ultra Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Ultra Rare"
         },
         {
           "chance": 0,
@@ -285,13 +306,15 @@
           "chance": 2,
           "filename": "minersr",
           "name": "Miner (Super Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Super Rare"
         },
         {
           "chance": 1,
           "filename": "minerur",
           "name": "Miner (Ultra Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Ultra Rare"
         },
         {
           "chance": 0,
@@ -315,13 +338,15 @@
           "chance": 2,
           "filename": "mrsstevensonsr",
           "name": "Mrs. Stevenson (Super Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Super Rare"
         },
         {
           "chance": 1,
           "filename": "mrsstevensonur",
           "name": "Mrs. Stevenson (Ultra Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Ultra Rare"
         },
         {
           "chance": 0,
@@ -345,13 +370,15 @@
           "chance": 2,
           "filename": "mrstevensonsr",
           "name": "Mr. Stevenson (Super Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Super Rare"
         },
         {
           "chance": 1,
           "filename": "mrstevensonur",
           "name": "Mr. Stevenson (Ultra Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Ultra Rare"
         },
         {
           "chance": 0,
@@ -375,13 +402,15 @@
           "chance": 2,
           "filename": "paigesr",
           "name": "Paige (Super Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Super Rare"
         },
         {
           "chance": 1,
           "filename": "paigeur",
           "name": "Paige (Ultra Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Ultra Rare"
         },
         {
           "chance": 0,
@@ -405,13 +434,15 @@
           "chance": 2,
           "filename": "politiciansr",
           "name": "Politician (Super Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Super Rare"
         },
         {
           "chance": 1,
           "filename": "politicianur",
           "name": "Politician (Ultra Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Ultra Rare"
         },
         {
           "chance": 0,
@@ -435,13 +466,15 @@
           "chance": 2,
           "filename": "roomssr",
           "name": "Rooms (Super Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Super Rare"
         },
         {
           "chance": 1,
           "filename": "roomsur",
           "name": "Rooms (Ultra Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Ultra Rare"
         },
         {
           "chance": 0.25,
@@ -477,13 +510,15 @@
           "chance": 2,
           "filename": "rowssr",
           "name": "Rows (Super Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Super Rare"
         },
         {
           "chance": 1,
           "filename": "rowsur",
           "name": "Rows (Ultra Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Ultra Rare"
         }
       ]
     },
@@ -501,13 +536,15 @@
           "chance": 2,
           "filename": "samuraisr",
           "name": "Samurai (Super Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Super Rare"
         },
         {
           "chance": 1,
           "filename": "samuraiur",
           "name": "Samurai (Ultra Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Ultra Rare"
         },
         {
           "chance": 0,
@@ -531,13 +568,15 @@
           "chance": 2,
           "filename": "soundsr",
           "name": "Sound (Super Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Super Rare"
         },
         {
           "chance": 1,
           "filename": "soundur",
           "name": "Sound (Ultra Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Ultra Rare"
         }
       ]
     },
@@ -555,13 +594,15 @@
           "chance": 2,
           "filename": "vfxsr",
           "name": "VFX (Super Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Super Rare"
         },
         {
           "chance": 1,
           "filename": "vfxur",
           "name": "VFX (Ultra Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Ultra Rare"
         }
       ]
     },
@@ -573,25 +614,29 @@
           "chance": 1,
           "filename": "samuraigroup",
           "name": "The Samurai Group",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Ultra Rare"
         },
         {
           "chance": 1,
           "filename": "stevensongroup",
           "name": "The Stevenson Group",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Ultra Rare"
         },
         {
           "chance": 1,
           "filename": "couplegroup",
           "name": "The Couple Group",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Ultra Rare"
         },
         {
           "chance": 1,
           "filename": "doctorgroup",
           "name": "The Doctor Group",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Ultra Rare"
         }
 
       ]

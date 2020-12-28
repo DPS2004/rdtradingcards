@@ -1,9 +1,4 @@
-command = {}
-privatestuff = require('privatestuff')
-json = require('libs/json')
-dpf = require('libs/dpf')
-utils = require('libs/utils')
-  print(prefix)
+
 function command.run(message, mt)
   local cmember = message.guild:getMember(message.author)
   if cmember:hasRole(privatestuff.modroleid) then
