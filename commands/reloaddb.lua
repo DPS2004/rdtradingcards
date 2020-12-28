@@ -30,7 +30,6 @@ function command.run(message, mt)
     print("loading medal requires")
     _G['medalrequires'] = dpf.loadjson("data/medalrequires.json",defaultjson)
     print("loading functions")
-    _G['fntoname'] = function (x)
     message.channel:send('All databases have been reloaded.')
   else
     
