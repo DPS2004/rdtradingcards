@@ -206,14 +206,16 @@ client:on('messageCreate', function(message)
       cmd.pull.run(message,mt)      
     end
     
-    if string.sub(message.content, 0, 9+3) == prefix.. 'inventory' then 
+    if string.sub(message.content, 0, 9+2) == prefix.. 'inventory' then 
+      print("wow its inventory")
       local mt = string.split(string.sub(message.content, 9+4),"/")
       local nmt = {}
       for i,v in ipairs(mt) do
         v = trim(v)
         nmt[i]=v
       end
-      cmd.inventory.run(message,mt)
+      print(inspect(nmt))
+      cmd.inventory.run(message,nmt)
     end
     if string.sub(message.content, 0, 4+3) == prefix.. 'show ' then 
       local mt = string.split(string.sub(message.content, 4+4),"/")
