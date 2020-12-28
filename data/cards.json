@@ -54,7 +54,7 @@
       "basechance": 3,
       "cards": [
         {
-          "chance": 3,
+          "chance": 10,
           "filename": "coler",
           "name": "Cole Brew (Rare)",
           "tradeable": true
