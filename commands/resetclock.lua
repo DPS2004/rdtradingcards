@@ -1,5 +1,7 @@
-
+print("loading the resetclock command!")
+local command = {}
 function command.run(message, mt)
+  
   local cmember = message.guild:getMember(message.author)
   if cmember:hasRole(privatestuff.modroleid) then
     for i,v in ipairs(scandir("savedata")) do

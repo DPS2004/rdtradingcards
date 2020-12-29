@@ -1,4 +1,4 @@
-command = {}
+local command = {}
 function command.run(message, mt)
 
   if #mt == 3 then

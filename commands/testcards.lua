@@ -1,4 +1,4 @@
-command = {}
+local command = {}
 function command.run(message, mt)
   if debug then
     message.channel:send('ok, testing. There are '.. #cdb ..'cards in the database.')

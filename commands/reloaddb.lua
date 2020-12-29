@@ -1,4 +1,4 @@
-command = {}
+local command = {}
 function command.run(message, mt)
   local cmember = message.guild:getMember(message.author)
   if cmember:hasRole(privatestuff.modroleid) then

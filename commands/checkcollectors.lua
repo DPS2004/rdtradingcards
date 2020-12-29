@@ -1,4 +1,4 @@
-command = {}
+local command = {}
 function command.run(message, mt,mc)
   if not mc then
     mc = message.channel

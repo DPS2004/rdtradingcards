@@ -1,4 +1,4 @@
-command = {}
+local command = {}
 function command.run(message, mt)
   print(message.author.name .. " did !storage")
   print(#mt)

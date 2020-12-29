@@ -1,4 +1,4 @@
-command = {}
+local command = {}
 function command.run(message, mt)
 local time = sw:getTime()
   --message.channel:send('haha wowie! discord user '.. message.author.mentionString .. ' whos discord ID happens to be ' .. message.author.id ..' you got a card good job my broski')
