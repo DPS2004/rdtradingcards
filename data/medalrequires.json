@@ -8,7 +8,7 @@
     "recieve": "unlucky"
   },  
   {
-    "require": "function checkrequirements(uj) print(inspect(uj)) if uj.storage['coler'] then return false else return false end end return checkrequirements",
+    "require": "function checkrequirements(uj) print(inspect(uj)) if uj.storage['samurair'] then return false else return false end end return checkrequirements",
     "recieve": "easytogetdebugmedal"
   }
 

@@ -34,6 +34,7 @@ cmd.storage = require('commands/storage')
 cmd.checkcollectors = require('commands/checkcollectors')
 cmd.checkmedals = require('commands/checkmedals')
 cmd.reloaddb = require('commands/reloaddb')
+cmd.medals = require('commands/medals')
 
 
 -- import reaction commands
@@ -270,7 +271,19 @@ client:on('messageCreate', function(message)
       end
       cmd.reloaddb.run(message,mt)
     end
+    if string.sub(message.content, 0, 6+2) == prefix.. 'medals' then 
+      print("wow its medals")
+      local mt = string.split(string.sub(message.content, 6+4),"/")
+      local nmt = {}
+      for i,v in ipairs(mt) do
+        v = trim(v)
+        nmt[i]=v
+      end
+      print(inspect(nmt))
+      cmd.medals.run(message,nmt)
+    end
   end
+
 
 end)
 
