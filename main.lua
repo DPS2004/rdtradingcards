@@ -130,7 +130,7 @@ _G['scandir'] = function (directory)
   local pfile = assert(io.popen(("find '%s' -maxdepth 1 -print0"):format(directory), 'r'))
   local list = pfile:read('*a')
   pfile:close()
-  for filename in s:gmatch('[^\0]+')
+  for filename in s:gmatch('[^\0]+') do
     i = i + 1
     t[i] = filename
   end
