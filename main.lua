@@ -156,6 +156,7 @@ client:on('messageCreate', function(message)
     end
     
     if string.sub(message.content, 0, 4+3) == prefix.. 'help' then 
+      print("this is a call for help")
       local mt = string.split(string.sub(message.content, 4+4),"/")
       local nmt = {}
       for i,v in ipairs(mt) do
@@ -166,6 +167,7 @@ client:on('messageCreate', function(message)
     end
     
     if string.sub(message.content, 0, 10+3) == prefix.. 'resetclock' then 
+      print("hee hoo clocks go reset")
       local mt = string.split(string.sub(message.content, 10+4),"/")
       local nmt = {}
       for i,v in ipairs(mt) do
