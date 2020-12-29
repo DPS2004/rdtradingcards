@@ -126,15 +126,11 @@ _G['scandir'] = function (directory)
 --        t[i] = filename
 --    end
 --    return t
-  local i, t = 0, {}
-  local pfile = assert(io.popen(("find '%s' -maxdepth 1 -print0"):format(directory), 'r'))
-  local list = pfile:read('*a')
-  pfile:close()
-  for filename in s:gmatch('[^\0]+') do
-    i = i + 1
-    t[i] = filename
+  local p = io.popen('find "'..dir..'" -type f')  --Open directory look for files, save data in p. By giving '-type f' as parameter, it returns all files.     
+  local t = {}
+  for file in p:lines() do                         --Loop through all files
+    table.insert(t,file)
   end
-  return t
 end
 
 _G['usernametojson'] = function (x)
