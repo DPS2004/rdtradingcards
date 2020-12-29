@@ -120,12 +120,21 @@ end
 
 -- Lua implementation of PHP scandir function
 _G['scandir'] = function (directory)
-    local i, t, popen = 0, {}, io.popen
-    for filename in popen('dir "'..directory..'" /b'):lines() do
-        i = i + 1
-        t[i] = filename
-    end
-    return t
+--    local i, t, popen = 0, {}, io.popen
+--    for filename in popen('dir "'..directory..'" /b'):lines() do
+--        i = i + 1
+--        t[i] = filename
+--    end
+--    return t
+  local i, t = 0, {}
+  local pfile = assert(io.popen(("find '%s' -maxdepth 1 -print0"):format(directory), 'r'))
+  local list = pfile:read('*a')
+  pfile:close()
+  for filename in s:gmatch('[^\0]+')
+    i = i + 1
+    t[i] = filename
+  end
+  return t
 end
 
 _G['usernametojson'] = function (x)
