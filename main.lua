@@ -7,6 +7,7 @@ local client = discordia.Client()
 _G["prefix"] = "c!"
 _G["privatestuff"] = require('privatestuff')
 _G["json"] = require('libs/json')
+_G["fs"] = require('fs')
 _G["dpf"] = require('libs/dpf')
 _G["utils"] = require('libs/utils')
 _G["inspect"] = require('libs/inspect')
@@ -120,17 +121,7 @@ end
 
 -- Lua implementation of PHP scandir function
 _G['scandir'] = function (directory)
---    local i, t, popen = 0, {}, io.popen
---    for filename in popen('dir "'..directory..'" /b'):lines() do
---        i = i + 1
---        t[i] = filename
---    end
---    return t
-  local p = io.popen('find "'..dir..'" -type f')  --Open directory look for files, save data in p. By giving '-type f' as parameter, it returns all files.     
-  local t = {}
-  for file in p:lines() do                         --Loop through all files
-    table.insert(t,file)
-  end
+  return fs.readdirSync(directory)
 end
 
 _G['usernametojson'] = function (x)
