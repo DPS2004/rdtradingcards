@@ -9,10 +9,10 @@ function command.run(message, mt)
     
     print(curfilename)
     if curfilename ~= nil then
-      if uj.inventory[curfilename] or uj.storage[curfilename] then
-        print("user has card")
+      if uj.medals[curfilename] then
+        print("user has medal")
         message.channel:send {
-          content = 'Here it is! Your **'.. medalfntoname(curfilename) .. '** card. The shorthand form is **' .. curfilename .. '**.',
+          content = 'Here it is! Your **'.. medalfntoname(curfilename) .. '** card. The description on the back reads: ```'..medaldb[curfilename].description ... '``` The shorthand form is **' .. curfilename .. '**.',
           file = "medal_images/" .. curfilename .. ".png"
         }
       else

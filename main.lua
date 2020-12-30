@@ -135,7 +135,7 @@ _G['medalnametofn'] = function (x)
 end
 _G['medalfntoname'] = function (x)
   print("finding "..x)
-  for k,v in ipairs(medaldb) do
+  for k,v in pairs(medaldb) do
     if string.lower(k) == string.lower(x) then
       local match = v.name
       print(x.." = "..v.name)
