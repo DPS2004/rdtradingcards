@@ -35,6 +35,7 @@ cmd.checkcollectors = require('commands/checkcollectors')
 cmd.checkmedals = require('commands/checkmedals')
 cmd.reloaddb = require('commands/reloaddb')
 cmd.medals = require('commands/medals')
+cmd.crash = require('commands/crash')
 
 
 -- import reaction commands
@@ -108,7 +109,8 @@ _G['resetclocks'] = function ()
     dpf.savejson("savedata/"..v,cuj)
   end
 end
-
+--really cool and good code goes here
+--variable = "string" .. nilvalue
 
 _G['texttofn'] = function (x)
   local cfn = nametofn(x)
@@ -147,143 +149,160 @@ print("yay got past load ready")
 client:on('messageCreate', function(message)
   if message.author.id ~= "767445265871142933" then --failsafe to avoid recursion
     
-    if string.sub(message.content, 0, 4+3) == prefix.. 'ping' then 
-      local mt = string.split(string.sub(message.content, 4+4),"/")
-      local nmt = {}
-      for i,v in ipairs(mt) do
-        v = trim(v)
-        nmt[i]=v
+    local status, err = pcall(function ()
+      if string.sub(message.content, 0, 4+3) == prefix.. 'ping' then 
+        local mt = string.split(string.sub(message.content, 4+4),"/")
+        local nmt = {}
+        for i,v in ipairs(mt) do
+          v = trim(v)
+          nmt[i]=v
+        end
+        cmd.ping.run(message,mt)
       end
-      cmd.ping.run(message,mt)
-    end
-    
-    if string.sub(message.content, 0, 4+3) == prefix.. 'help' then 
-      print("this is a call for help")
-      local mt = string.split(string.sub(message.content, 4+4),"/")
-      local nmt = {}
-      for i,v in ipairs(mt) do
-        v = trim(v)
-        nmt[i]=v
+      
+      if string.sub(message.content, 0, 4+3) == prefix.. 'help' then 
+        print("this is a call for help")
+        local mt = string.split(string.sub(message.content, 4+4),"/")
+        local nmt = {}
+        for i,v in ipairs(mt) do
+          v = trim(v)
+          nmt[i]=v
+        end
+        cmd.help.run(message,mt)
       end
-      cmd.help.run(message,mt)
-    end
-    
-    if string.sub(message.content, 0, 10+3) == prefix.. 'resetclock' then 
-      print("hee hoo clocks go reset")
-      local mt = string.split(string.sub(message.content, 10+4),"/")
-      local nmt = {}
-      for i,v in ipairs(mt) do
-        v = trim(v)
-        nmt[i]=v
+      
+      if string.sub(message.content, 0, 10+3) == prefix.. 'resetclock' then 
+        print("hee hoo clocks go reset")
+        local mt = string.split(string.sub(message.content, 10+4),"/")
+        local nmt = {}
+        for i,v in ipairs(mt) do
+          v = trim(v)
+          nmt[i]=v
+        end
+        cmd.resetclock.run(message,mt)
       end
-      cmd.resetclock.run(message,mt)
-    end
-    if string.sub(message.content, 0, 6+3) == prefix.. 'uptime' then 
-      local mt = string.split(string.sub(message.content, 6+4),"/")
-      local nmt = {}
-      for i,v in ipairs(mt) do
-        v = trim(v)
-        nmt[i]=v
+      if string.sub(message.content, 0, 6+3) == prefix.. 'uptime' then 
+        local mt = string.split(string.sub(message.content, 6+4),"/")
+        local nmt = {}
+        for i,v in ipairs(mt) do
+          v = trim(v)
+          nmt[i]=v
+        end
+        cmd.uptime.run(message,mt)
       end
-      cmd.uptime.run(message,mt)
-    end
-    if string.sub(message.content, 0, 9+3) == prefix.. 'testcards' then 
-      local mt = string.split(string.sub(message.content, 9+4),"/")
-      local nmt = {}
-      for i,v in ipairs(mt) do
-        v = trim(v)
-        nmt[i]=v
+      if string.sub(message.content, 0, 9+3) == prefix.. 'testcards' then 
+        local mt = string.split(string.sub(message.content, 9+4),"/")
+        local nmt = {}
+        for i,v in ipairs(mt) do
+          v = trim(v)
+          nmt[i]=v
+        end
+        cmd.testcards.run(message,mt)
       end
-      cmd.testcards.run(message,mt)
-    end
 
-    if string.sub(message.content, 0, 4+3) == prefix.. 'pull' then 
-      local mt = string.split(string.sub(message.content, 4+4),"/")
-      local nmt = {}
-      for i,v in ipairs(mt) do
-        v = trim(v)
-        nmt[i]=v
+      if string.sub(message.content, 0, 4+3) == prefix.. 'pull' then 
+        local mt = string.split(string.sub(message.content, 4+4),"/")
+        local nmt = {}
+        for i,v in ipairs(mt) do
+          v = trim(v)
+          nmt[i]=v
+        end
+        cmd.pull.run(message,mt)      
       end
-      cmd.pull.run(message,mt)      
-    end
-    
-    if string.sub(message.content, 0, 9+2) == prefix.. 'inventory' then 
-      print("wow its inventory")
-      local mt = string.split(string.sub(message.content, 9+4),"/")
-      local nmt = {}
-      for i,v in ipairs(mt) do
-        v = trim(v)
-        nmt[i]=v
+      
+      if string.sub(message.content, 0, 9+2) == prefix.. 'inventory' then 
+        print("wow its inventory")
+        local mt = string.split(string.sub(message.content, 9+4),"/")
+        local nmt = {}
+        for i,v in ipairs(mt) do
+          v = trim(v)
+          nmt[i]=v
+        end
+        print(inspect(nmt))
+        cmd.inventory.run(message,nmt)
       end
-      print(inspect(nmt))
-      cmd.inventory.run(message,nmt)
-    end
-    if string.sub(message.content, 0, 4+3) == prefix.. 'show ' then 
-      local mt = string.split(string.sub(message.content, 4+4),"/")
-      local nmt = {}
-      for i,v in ipairs(mt) do
-        v = trim(v)
-        nmt[i]=v
+      if string.sub(message.content, 0, 4+3) == prefix.. 'show ' then 
+        local mt = string.split(string.sub(message.content, 4+4),"/")
+        local nmt = {}
+        for i,v in ipairs(mt) do
+          v = trim(v)
+          nmt[i]=v
+        end
+        cmd.show.run(message,nmt)      
       end
-      cmd.show.run(message,nmt)      
-    end
-    if string.sub(message.content, 0, 4+3) == prefix.. 'give ' then 
-      local mt = string.split(string.sub(message.content, 4+4),"/")
-      local nmt = {}
-      for i,v in ipairs(mt) do
-        v = trim(v)
-        nmt[i]=v
+      if string.sub(message.content, 0, 4+3) == prefix.. 'give ' then 
+        local mt = string.split(string.sub(message.content, 4+4),"/")
+        local nmt = {}
+        for i,v in ipairs(mt) do
+          v = trim(v)
+          nmt[i]=v
+        end
+        cmd.give.run(message,nmt)      
       end
-      cmd.give.run(message,nmt)      
-    end
-    if string.sub(message.content, 0, 5+3) == prefix.. 'trade ' then 
-      local mt = string.split(string.sub(message.content, 5+4),"/")
-      local nmt = {}
-      for i,v in ipairs(mt) do
-        v = trim(v)
-        nmt[i]=v
+      if string.sub(message.content, 0, 5+3) == prefix.. 'trade ' then 
+        local mt = string.split(string.sub(message.content, 5+4),"/")
+        local nmt = {}
+        for i,v in ipairs(mt) do
+          v = trim(v)
+          nmt[i]=v
+        end
+        cmd.trade.run(message,nmt)      
       end
-      cmd.trade.run(message,nmt)      
-    end
-    if string.sub(message.content, 0, 5+3) == prefix.. 'store ' then 
-      local mt = string.split(string.sub(message.content, 5+4),"/")
-      local nmt = {}
-      for i,v in ipairs(mt) do
-        v = trim(v)
-        nmt[i]=v
+      if string.sub(message.content, 0, 5+3) == prefix.. 'store ' then 
+        local mt = string.split(string.sub(message.content, 5+4),"/")
+        local nmt = {}
+        for i,v in ipairs(mt) do
+          v = trim(v)
+          nmt[i]=v
+        end
+        cmd.store.run(message,nmt)      
       end
-      cmd.store.run(message,nmt)      
-    end
-    if string.sub(message.content, 0, 7+3) == prefix.. 'storage' then 
-      local mt = string.split(string.sub(message.content, 7+4),"/")
-      local nmt = {}
-      for i,v in ipairs(mt) do
-        v = trim(v)
-        nmt[i]=v
+      if string.sub(message.content, 0, 7+3) == prefix.. 'storage' then 
+        local mt = string.split(string.sub(message.content, 7+4),"/")
+        local nmt = {}
+        for i,v in ipairs(mt) do
+          v = trim(v)
+          nmt[i]=v
+        end
+        cmd.storage.run(message,mt)
       end
-      cmd.storage.run(message,mt)
-    end
-    if string.sub(message.content, 0, 8+3) == prefix.. 'reloaddb' then 
-      local mt = string.split(string.sub(message.content, 8+4),"/")
-      local nmt = {}
-      for i,v in ipairs(mt) do
-        v = trim(v)
-        nmt[i]=v
+      if string.sub(message.content, 0, 8+3) == prefix.. 'reloaddb' then 
+        local mt = string.split(string.sub(message.content, 8+4),"/")
+        local nmt = {}
+        for i,v in ipairs(mt) do
+          v = trim(v)
+          nmt[i]=v
+        end
+        cmd.reloaddb.run(message,mt)
       end
-      cmd.reloaddb.run(message,mt)
-    end
-    if string.sub(message.content, 0, 6+2) == prefix.. 'medals' then 
-      print("wow its medals")
-      local mt = string.split(string.sub(message.content, 6+4),"/")
-      local nmt = {}
-      for i,v in ipairs(mt) do
-        v = trim(v)
-        nmt[i]=v
+      if string.sub(message.content, 0, 6+2) == prefix.. 'medals' then 
+        print("wow its medals")
+        local mt = string.split(string.sub(message.content, 6+4),"/")
+        local nmt = {}
+        for i,v in ipairs(mt) do
+          v = trim(v)
+          nmt[i]=v
+        end
+        print(inspect(nmt))
+        cmd.medals.run(message,nmt)
       end
-      print(inspect(nmt))
-      cmd.medals.run(message,nmt)
+      if string.sub(message.content, 0, 5+3) == prefix.. 'crash' then 
+        print("this is a call for crash")
+        local mt = string.split(string.sub(message.content, 5+4),"/")
+        local nmt = {}
+        for i,v in ipairs(mt) do
+          v = trim(v)
+          nmt[i]=v
+        end
+        cmd.crash.run(message,mt)
+      end
+    end)
+    if not status then
+      print("uh oh")
+      message.channel:send("Oops! An error has occured! Error message: ```" .. err .. "``` (<@290582109750427648> please fix this thanks)")
     end
   end
+
 
 
 end)
