@@ -109,6 +109,7 @@ _G['resetclocks'] = function ()
   end
 end
 
+
 _G['texttofn'] = function (x)
   local cfn = nametofn(x)
   if cfn == nil then
@@ -142,7 +143,7 @@ end
 client:on('ready', function()
 	print('Logged in as '.. client.user.username)
 end)
-
+print("yay got past load ready")
 client:on('messageCreate', function(message)
   if message.author.id ~= "767445265871142933" then --failsafe to avoid recursion
     
@@ -286,7 +287,7 @@ client:on('messageCreate', function(message)
 
 
 end)
-
+print("ok commands loaded, doing reactions")
 
 client:on('reactionAdd', function(reaction, userid)
   if userid ~= "767445265871142933" then
@@ -310,7 +311,7 @@ client:on('reactionAdd', function(reaction, userid)
 
 
 end)
-
+print("resettingclocks")
 resetclocks()
 
 
