@@ -36,6 +36,7 @@ cmd.checkmedals = require('commands/checkmedals')
 cmd.reloaddb = require('commands/reloaddb')
 cmd.medals = require('commands/medals')
 cmd.crash = require('commands/crash')
+cmd.showmedal = require('commands/showmedal')
 
 
 -- import reaction commands
@@ -78,7 +79,9 @@ print("loading medaldb")
 _G['medaldb'] = dpf.loadjson("data/medals.json",defaultjson)
 print("loading medal requires")
 _G['medalrequires'] = dpf.loadjson("data/medalrequires.json",defaultjson)
+
 print("loading functions")
+
 _G['fntoname'] = function (x)
   print("finding "..x)
   for i,v in ipairs(cdb) do
@@ -122,6 +125,37 @@ _G['texttofn'] = function (x)
   end
   return cfn
 end
+_G['medalnametofn'] = function (x)
+  for k,v in pairs(medaldb) do
+    if string.lower(v.name) == string.lower(x) then
+      local match = k
+      return k
+    end
+  end
+end
+_G['medalfntoname'] = function (x)
+  print("finding "..x)
+  for k,v in ipairs(medaldb) do
+    if string.lower(k) == string.lower(x) then
+      local match = v.name
+      print(x.." = "..v.name)
+      return v.name
+    end
+  end
+  
+end
+
+_G['medaltexttofn'] = function (x)
+  local cfn = medalnametofn(x)
+  if cfn == nil then
+    cfn = medalfntoname(x)
+    if cfn ~= nil then
+      cfn = string.lower(x)
+    end
+  end
+  return cfn
+end
+
 
 -- Lua implementation of PHP scandir function
 _G['scandir'] = function (directory)
@@ -295,6 +329,15 @@ client:on('messageCreate', function(message)
           nmt[i]=v
         end
         cmd.crash.run(message,mt)
+      end
+      if string.sub(message.content, 0, 9+3) == prefix.. 'showmedal ' then 
+        local mt = string.split(string.sub(message.content, 9+4),"/")
+        local nmt = {}
+        for i,v in ipairs(mt) do
+          v = trim(v)
+          nmt[i]=v
+        end
+        cmd.showmedal.run(message,nmt)      
       end
     end)
     if not status then
