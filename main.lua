@@ -192,9 +192,7 @@ client:on('messageCreate', function(message)
           nmt[i]=v
         end
         cmd.ping.run(message,mt)
-      end
-      
-      if string.sub(message.content, 0, 4+3) == prefix.. 'help' then 
+      elseif string.sub(message.content, 0, 4+3) == prefix.. 'help' then 
         print("this is a call for help")
         local mt = string.split(string.sub(message.content, 4+4),"/")
         local nmt = {}
@@ -203,9 +201,7 @@ client:on('messageCreate', function(message)
           nmt[i]=v
         end
         cmd.help.run(message,mt)
-      end
-      
-      if string.sub(message.content, 0, 10+3) == prefix.. 'resetclock' then 
+      elseif string.sub(message.content, 0, 10+3) == prefix.. 'resetclock' then 
         print("hee hoo clocks go reset")
         local mt = string.split(string.sub(message.content, 10+4),"/")
         local nmt = {}
@@ -214,8 +210,7 @@ client:on('messageCreate', function(message)
           nmt[i]=v
         end
         cmd.resetclock.run(message,mt)
-      end
-      if string.sub(message.content, 0, 6+3) == prefix.. 'uptime' then 
+      elseif string.sub(message.content, 0, 6+3) == prefix.. 'uptime' then 
         local mt = string.split(string.sub(message.content, 6+4),"/")
         local nmt = {}
         for i,v in ipairs(mt) do
@@ -223,8 +218,7 @@ client:on('messageCreate', function(message)
           nmt[i]=v
         end
         cmd.uptime.run(message,mt)
-      end
-      if string.sub(message.content, 0, 9+3) == prefix.. 'testcards' then 
+      elseif string.sub(message.content, 0, 9+3) == prefix.. 'testcards' then 
         local mt = string.split(string.sub(message.content, 9+4),"/")
         local nmt = {}
         for i,v in ipairs(mt) do
@@ -232,9 +226,7 @@ client:on('messageCreate', function(message)
           nmt[i]=v
         end
         cmd.testcards.run(message,mt)
-      end
-
-      if string.sub(message.content, 0, 4+3) == prefix.. 'pull' then 
+      elseif string.sub(message.content, 0, 4+3) == prefix.. 'pull' then 
         local mt = string.split(string.sub(message.content, 4+4),"/")
         local nmt = {}
         for i,v in ipairs(mt) do
@@ -242,9 +234,7 @@ client:on('messageCreate', function(message)
           nmt[i]=v
         end
         cmd.pull.run(message,mt)      
-      end
-      
-      if string.sub(message.content, 0, 9+2) == prefix.. 'inventory' then 
+      elseif string.sub(message.content, 0, 9+2) == prefix.. 'inventory' then 
         print("wow its inventory")
         local mt = string.split(string.sub(message.content, 9+4),"/")
         local nmt = {}
@@ -254,8 +244,17 @@ client:on('messageCreate', function(message)
         end
         print(inspect(nmt))
         cmd.inventory.run(message,nmt)
-      end
-      if string.sub(message.content, 0, 4+3) == prefix.. 'show ' then 
+      elseif string.sub(message.content, 0, 3+2) == prefix.. 'inv' then 
+        print("wow its inv")
+        local mt = string.split(string.sub(message.content, 3+4),"/")
+        local nmt = {}
+        for i,v in ipairs(mt) do
+          v = trim(v)
+          nmt[i]=v
+        end
+        print(inspect(nmt))
+        cmd.inventory.run(message,nmt)
+      elseif string.sub(message.content, 0, 4+3) == prefix.. 'show ' then 
         local mt = string.split(string.sub(message.content, 4+4),"/")
         local nmt = {}
         for i,v in ipairs(mt) do
@@ -263,8 +262,7 @@ client:on('messageCreate', function(message)
           nmt[i]=v
         end
         cmd.show.run(message,nmt)      
-      end
-      if string.sub(message.content, 0, 4+3) == prefix.. 'give ' then 
+      elseif string.sub(message.content, 0, 4+3) == prefix.. 'give ' then 
         local mt = string.split(string.sub(message.content, 4+4),"/")
         local nmt = {}
         for i,v in ipairs(mt) do
@@ -272,8 +270,7 @@ client:on('messageCreate', function(message)
           nmt[i]=v
         end
         cmd.give.run(message,nmt)      
-      end
-      if string.sub(message.content, 0, 5+3) == prefix.. 'trade ' then 
+      elseif string.sub(message.content, 0, 5+3) == prefix.. 'trade ' then 
         local mt = string.split(string.sub(message.content, 5+4),"/")
         local nmt = {}
         for i,v in ipairs(mt) do
@@ -281,8 +278,7 @@ client:on('messageCreate', function(message)
           nmt[i]=v
         end
         cmd.trade.run(message,nmt)      
-      end
-      if string.sub(message.content, 0, 5+3) == prefix.. 'store ' then 
+      elseif string.sub(message.content, 0, 5+3) == prefix.. 'store ' then 
         local mt = string.split(string.sub(message.content, 5+4),"/")
         local nmt = {}
         for i,v in ipairs(mt) do
@@ -290,8 +286,7 @@ client:on('messageCreate', function(message)
           nmt[i]=v
         end
         cmd.store.run(message,nmt)      
-      end
-      if string.sub(message.content, 0, 7+3) == prefix.. 'storage' then 
+      elseif string.sub(message.content, 0, 7+3) == prefix.. 'storage' then 
         local mt = string.split(string.sub(message.content, 7+4),"/")
         local nmt = {}
         for i,v in ipairs(mt) do
@@ -299,8 +294,7 @@ client:on('messageCreate', function(message)
           nmt[i]=v
         end
         cmd.storage.run(message,mt)
-      end
-      if string.sub(message.content, 0, 8+3) == prefix.. 'reloaddb' then 
+      elseif string.sub(message.content, 0, 8+3) == prefix.. 'reloaddb' then 
         local mt = string.split(string.sub(message.content, 8+4),"/")
         local nmt = {}
         for i,v in ipairs(mt) do
@@ -308,8 +302,7 @@ client:on('messageCreate', function(message)
           nmt[i]=v
         end
         cmd.reloaddb.run(message,mt)
-      end
-      if string.sub(message.content, 0, 6+2) == prefix.. 'medals' then 
+      elseif string.sub(message.content, 0, 6+2) == prefix.. 'medals' then 
         print("wow its medals")
         local mt = string.split(string.sub(message.content, 6+4),"/")
         local nmt = {}
@@ -319,8 +312,7 @@ client:on('messageCreate', function(message)
         end
         print(inspect(nmt))
         cmd.medals.run(message,nmt)
-      end
-      if string.sub(message.content, 0, 5+3) == prefix.. 'crash' then 
+      elseif string.sub(message.content, 0, 5+3) == prefix.. 'crash' then 
         print("this is a call for crash")
         local mt = string.split(string.sub(message.content, 5+4),"/")
         local nmt = {}
@@ -329,8 +321,7 @@ client:on('messageCreate', function(message)
           nmt[i]=v
         end
         cmd.crash.run(message,mt)
-      end
-      if string.sub(message.content, 0, 9+3) == prefix.. 'showmedal ' then 
+      elseif string.sub(message.content, 0, 9+3) == prefix.. 'showmedal ' then 
         local mt = string.split(string.sub(message.content, 9+4),"/")
         local nmt = {}
         for i,v in ipairs(mt) do
