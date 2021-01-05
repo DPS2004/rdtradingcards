@@ -15,7 +15,7 @@ function command.run(message, mt,mc)
         print("user does not have it yet!")
         uj.medals[v.recieve] = true
         mc:send {
-          content = 'Congratulations! After collecting and storing some other cards, '.. message.author.mentionString ..' got the **"'.. medaldb[v.recieve].name ..'"** medal!',
+          content = 'Congratulations! After collecting and storing some cards, '.. message.author.mentionString ..' got the **"'.. medaldb[v.recieve].name ..'"** medal!',
           file = "medal_images/" .. v.recieve .. ".png"
         }
       end

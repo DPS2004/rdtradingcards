@@ -4,7 +4,7 @@
     "recieve": "itainteasybeinggreen"
   },
   {
-    "require": "function checkrequirements(uj) local result = false for i,v in ipairs(uj.storage) do if v >= 10 then result = true end end return result end return checkrequirements",
+    "require": "function checkrequirements(uj) print('pepis') local result = false for k,v in pairs(uj.storage) do print(k) print(v) if v >= 10 then result = true end end return result end return checkrequirements",
     "recieve": "unlucky"
   },  
   {
