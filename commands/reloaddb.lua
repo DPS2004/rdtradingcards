@@ -8,6 +8,7 @@ function command.run(message, mt,overwrite)
     authcheck = cmember:hasRole(privatestuff.modroleid)
   end
   if authcheck then
+    _G["privatestuff"] = dofile('privatestuff.lua')
     cmd.ping = dofile('commands/ping.lua')
     cmd.help = dofile('commands/help.lua')
     cmd.resetclock = dofile('commands/resetclock.lua')

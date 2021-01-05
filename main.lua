@@ -5,7 +5,6 @@
 local discordia = require('discordia')
 local client = discordia.Client()
 _G["prefix"] = "c!"
-_G["privatestuff"] = require('privatestuff')
 _G["json"] = require('libs/json')
 _G["fs"] = require('fs')
 _G["dpf"] = require('libs/dpf')
