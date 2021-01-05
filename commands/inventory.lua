@@ -46,7 +46,7 @@ function command.run(message, mt)
       invstring = invstring .. invtable[i]
     end
   end
-  message.channel:send("Your inventory contains:\n" .. invstring .. "(page ".. pagenumber .. " of " .. maxpn .. ")")
+  message.channel:send("<@".. message.author.id ..">, your inventory contains:\n" .. invstring .. "(page ".. pagenumber .. " of " .. maxpn .. ")")
 end
 return command
   

@@ -19,162 +19,12 @@ end
 
 -- import all the commands
 _G['cmd'] = {}
-cmd.ping = require('commands/ping')
-cmd.help = require('commands/help')
-cmd.resetclock = require('commands/resetclock')
-cmd.uptime = require('commands/uptime')
-cmd.testcards = require('commands/testcards')
-cmd.pull = require('commands/pull')
-cmd.inventory = require('commands/inventory')
-cmd.show = require('commands/show')
-cmd.give = require('commands/give')
-cmd.trade = require('commands/trade')
-cmd.store = require('commands/store')
-cmd.storage = require('commands/storage')
-cmd.checkcollectors = require('commands/checkcollectors')
-cmd.checkmedals = require('commands/checkmedals')
-cmd.reloaddb = require('commands/reloaddb')
-cmd.medals = require('commands/medals')
-cmd.crash = require('commands/crash')
-cmd.showmedal = require('commands/showmedal')
-
-
--- import reaction commands
-cmdre = {}
-cmdre.trade = require('reactions/trade')
-cmdre.store = require('reactions/store')
-
-_G['defaultjson'] = {inventory={},storage={},medals={},lastpull=-24}
-
-_G['debug'] = true
-
-
-
+local rdb = dofile('commands/reloaddb.lua')
+rdb.run(nil,nil,true)
+print("exited rdb.run")
 _G['sw'] = discordia.Stopwatch()
 sw:start()
-cj =  io.open("data/cards.json", "r")
-_G['cdata'] = json.decode(cj:read("*a"))
-cj:close()
---generate pull table
-_G['ptable'] = {}
-_G['cdb'] = {}
-for i,v in ipairs(cdata.groups) do
-  for w,x in ipairs(v.cards) do
-    
-    for y=1,(cdata.basemult*v.basechance*x.chance) do
-      table.insert(ptable,x.filename)
-    end
-    table.insert(cdb,x)
-    print(x.name.. " loaded!")
-  end
-end
-print("here is cdb")
-print(inspect(cdb))
-print("here is ptable")
-print(inspect(ptable))
 
-print("loading collector's info")
-_G['coll'] = dpf.loadjson("data/coll.json",defaultjson)
-print("loading medaldb")
-_G['medaldb'] = dpf.loadjson("data/medals.json",defaultjson)
-print("loading medal requires")
-_G['medalrequires'] = dpf.loadjson("data/medalrequires.json",defaultjson)
-
-print("loading functions")
-
-_G['fntoname'] = function (x)
-  print("finding "..x)
-  for i,v in ipairs(cdb) do
-    if string.lower(v.filename) == string.lower(x) then
-      local match = v.name
-      print(x.." = "..v.name)
-      return v.name
-    end
-  end
-  
-end
-
-_G['nametofn'] = function (x)
-  for i,v in ipairs(cdb) do
-    if string.lower(v.name) == string.lower(x) then
-      local match = v.filename
-      return v.filename
-    end
-  end
-end
-
-_G['resetclocks'] = function ()
-  for i,v in ipairs(scandir("savedata")) do
-    cuj = dpf.loadjson("savedata/"..v,defaultjson)
-    if cuj.lastpull then
-      cuj.lastpull = -24
-    end
-    dpf.savejson("savedata/"..v,cuj)
-  end
-end
---really cool and good code goes here
---variable = "string" .. nilvalue
-
-_G['texttofn'] = function (x)
-  local cfn = nametofn(x)
-  if cfn == nil then
-    cfn = fntoname(x)
-    if cfn ~= nil then
-      cfn = string.lower(x)
-    end
-  end
-  return cfn
-end
-_G['medalnametofn'] = function (x)
-  for k,v in pairs(medaldb) do
-    if string.lower(v.name) == string.lower(x) then
-      local match = k
-      return k
-    end
-  end
-end
-_G['medalfntoname'] = function (x)
-  print("finding "..x)
-  for k,v in pairs(medaldb) do
-    if string.lower(k) == string.lower(x) then
-      local match = v.name
-      print(x.." = "..v.name)
-      return v.name
-    end
-  end
-  
-end
-
-_G['medaltexttofn'] = function (x)
-  local cfn = medalnametofn(x)
-  if cfn == nil then
-    cfn = medalfntoname(x)
-    if cfn ~= nil then
-      cfn = string.lower(x)
-    end
-  end
-  return cfn
-end
-
-
--- Lua implementation of PHP scandir function
-_G['scandir'] = function (directory)
-  return fs.readdirSync(directory)
-end
-
-_G['usernametojson'] = function (x)
-  for i,v in ipairs(scandir("savedata")) do
-    cuj = dpf.loadjson("savedata/"..v,defaultjson)
-    if cuj.name == x then
-      return "savedata/"..v
-    end
-  end
-end
-
-_G['addreacts'] = function (x)
-  x:addReaction("✅")
-  x:addReaction("❌")
-end
 
 client:on('ready', function()
 	print('Logged in as '.. client.user.username)
@@ -182,7 +32,6 @@ end)
 print("yay got past load ready")
 client:on('messageCreate', function(message)
   if message.author.id ~= "767445265871142933" then --failsafe to avoid recursion
-    
     local status, err = pcall(function ()
       if string.sub(message.content, 0, 4+3) == prefix.. 'ping' then 
         local mt = string.split(string.sub(message.content, 4+4),"/")
@@ -285,8 +134,9 @@ client:on('messageCreate', function(message)
           v = trim(v)
           nmt[i]=v
         end
-        cmd.store.run(message,nmt)      
-      elseif string.sub(message.content, 0, 7+3) == prefix.. 'storage' then 
+        cmd.store.run(message,nmt)     
+      
+      elseif string.sub(message.content, 0, 7+3) == prefix.. 'storage ' or string.sub(message.content, 0, 7+3) == prefix.. 'storage' then 
         local mt = string.split(string.sub(message.content, 7+4),"/")
         local nmt = {}
         for i,v in ipairs(mt) do
