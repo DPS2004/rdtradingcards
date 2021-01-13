@@ -7,6 +7,18 @@
     "name": "Unlucky",
     "description": "Collect 10 exact copies of a card!"
   },
+  "bronzecollector": {
+    "name": "Bronze Collector",
+    "description": "Collect 20 cards with the type of 'Rare'!"
+  },
+  "silversaver": {
+    "name": "Silver Saver",
+    "description": "Collect 20 cards with the type of 'Super Rare'!"
+  },
+  "goldhoarder": {
+    "name": "Gold Hoarder",
+    "description": "Collect 20 cards with the type of 'Ultra Rare'!"
+  },
   "easytogetdebugmedal": {
     "name": "Easy to get debug medal lol",
     "description": "just get a rare samurai lmao"
