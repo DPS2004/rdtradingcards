@@ -20,6 +20,10 @@
     "recieve": "goldhoarder"
   }, 
   {
+    "require": "function checkrequirements(uj) if uj.storage['roomsr'] and uj.storage['roomssr'] and uj.storage['roomsur'] and uj.storage['rowsr'] and uj.storage['rowssr'] and uj.storage['rowsur'] and uj.storage['vfxr'] and uj.storage['vfxsr'] and uj.storage['vfxur'] and uj.storage['soundr'] and uj.storage['soundsr'] and uj.storage['soundur'] then return true else return false end end return checkrequirements",
+    "recieve": "editorenthusiast"
+  },
+  {
     "require": "function checkrequirements(uj) print(inspect(uj)) if uj.storage['samurair'] then return false else return false end end return checkrequirements",
     "recieve": "easytogetdebugmedal"
   }
