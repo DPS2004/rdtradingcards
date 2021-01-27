@@ -34,7 +34,7 @@ function command.run(message, mt)
             message.channel:send("Sorry, but you don't have the **" .. mt[2] .. "** card in your inventory.")
           end
         else
-          message.channel:send("Sorry, but I could not find the " .. request .. " card in the database. Make sure that you spelled it right!")
+          message.channel:send("Sorry, but I could not find the " .. mt[2] .. " card in the database. Make sure that you spelled it right!")
         end
       else
         message.channel:send("Sorry, but you cannot give something to yourself!")
