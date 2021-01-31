@@ -675,6 +675,20 @@
         }
 
       ]
+    },
+    {
+      "groupname": "special cards",
+      "basechance": 0,
+      "cards": [
+        {
+          "chance": 0,
+          "filename": "ssss45",
+          "name": "Shaun's Server Statistics Sampling #45",
+          "tradeable": true,
+          "type": "Ultra Rare"
+        }
+
+      ]
     }
   ]
 }
