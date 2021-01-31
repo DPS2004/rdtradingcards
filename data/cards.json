@@ -452,7 +452,8 @@
           "chance": 3,
           "filename": "politicianr",
           "name": "Politician (Rare)",
-          "tradeable": true
+          "tradeable": true,
+          "type": "Rare"
         },
         {
           "chance": 2,
