@@ -757,6 +757,92 @@
       ]
     },
     {
+      "groupname": "custom level cards",
+      "basechance": 0,
+      "cards": [
+        {
+          "chance": 2,
+          "filename": "alienalien",
+          "name": "Alien Alien",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description":"(Level by fartiliumstation)"
+        },
+        {
+          "chance": 2,
+          "filename": "ayakashi",
+          "name": "AYAKASHI",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description":"(Level by noonhead)"
+        },
+        {
+          "chance": 2,
+          "filename": "circles",
+          "name": "Circles",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description":"(Level by Nocallia)"
+        },
+        {
+          "chance": 2,
+          "filename": "specialdelivery",
+          "name": "Special Delivery",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description":"(Level by CV35W)"
+        },
+        {
+          "chance": 2,
+          "filename": "ghostsplay",
+          "name": "Ghosts Play to the Audience",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description":"(Level by thefinals)"
+        },
+        {
+          "chance": 2,
+          "filename": "creativeexercise",
+          "name": "Creative Exercise",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description":"(Level by Szprycha)"
+        },
+        {
+          "chance": 2,
+          "filename": "square",
+          "name": "Square",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description":"(Level by Kneeckoh)"
+        },
+        {
+          "chance": 2,
+          "filename": "flowerthief",
+          "name": "Goodbye, Ms. Flower Thief",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description":"(Level by thefinals)"
+        },
+        {
+          "chance": 2,
+          "filename": "mylevel",
+          "name": "My Level",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description":"(Level by auth)"
+        },
+        {
+          "chance": 2,
+          "filename": "mylevelcrystalline",
+          "name": "My Level, Crystalline",
+          "tradeable": false,
+          "type": "Collector's",
+          "description":"(Level by auth, Noche, and notDonte)"
+        }
+      ]
+    }
+    {
       "groupname": "special cards",
       "basechance": 0,
       "cards": [

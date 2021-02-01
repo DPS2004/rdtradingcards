@@ -103,5 +103,12 @@
     ],
     "recieve": "samuraic"
   },
+  {
+    "require": [
+      "mylevel",
+      "crystalline"
+    ],
+    "recieve": "mylevelcrystalline"
+  }
 
 ]
