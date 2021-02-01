@@ -153,6 +153,19 @@ function command.run(message, mt,overwrite)
       end
       return ctype
     end
+    
+    _G['getcarddescription'] = function (x)
+      print("getting description for " .. x)
+      cdescription = nil
+      for i,v in ipairs(cdb) do
+        
+        if v.filename == x then
+          print(v.description)
+          cdescription = v.description
+        end
+      end
+      return cdescription
+    end
 
 
     -- Lua implementation of PHP scandir function

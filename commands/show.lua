@@ -13,8 +13,13 @@ function command.run(message, mt)
         print("user has card")
         message.channel:send {
           content = 'Here it is! Your **'.. fntoname(curfilename) .. '** card. The shorthand form is **' .. curfilename .. '**.',
+          
           file = "card_images/" .. curfilename .. ".png"
         }
+        local description = getcarddescription(curfilename)
+        if description then
+          message.channel:send('The description on the back reads: `'..description..'`')
+        end
       else
         print("user doesnt have card")
         message.channel:send("Sorry, but you don't have the **" .. fntoname(curfilename) .. "** card in your inventory or your storage.")
