@@ -34,6 +34,9 @@ function command.run(message, mt)
     pagenumber = maxpn
   end
   print("pagenumber " .. pagenumber)
+  if pagenumber >= 100 then
+    pagenumber = 100
+  end
   local invtable = {}
   local invstring = ''
   for k,v in pairs(uj.storage) do

@@ -834,6 +834,14 @@
         },
         {
           "chance": 2,
+          "filename": "crystalline",
+          "name": "Crystalline",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description":"(Level by Noche)"
+        },
+        {
+          "chance": 2,
           "filename": "mylevelcrystalline",
           "name": "My Level, Crystalline",
           "tradeable": false,
