@@ -33,9 +33,16 @@ local time = sw:getTime()
       local newcard = ptable[math.random(#ptable)]
       local ncn = fntoname(newcard)
       print(ncn)
+      local extension = ""
+      local animated = getcardanimated(newcard)
+      if animated then
+        extension = ".gif"
+      else
+        extension = ".png"
+      end
       message.channel:send {
           content = 'Woah! '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to their inventory.',
-          file = "card_images/" .. newcard .. ".png"
+          file = "card_images/" .. newcard .. extension
         }
 
       local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)

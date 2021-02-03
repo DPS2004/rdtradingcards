@@ -11,7 +11,7 @@
           "name": "Battleworn Insomniac",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Level by 7th Beat Games)"
+          "description": "(Level by 7th Beat Games)"
         },
         {
           "chance": 2,
@@ -19,7 +19,7 @@
           "name": "Samurai Techno",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Level by 7th Beat Games)"
+          "description": "(Level by 7th Beat Games)"
         },
         {
           "chance": 2,
@@ -27,7 +27,7 @@
           "name": "Samurai Dubstep",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Level by 7th Beat Games)"
+          "description": "(Level by 7th Beat Games)"
         },
         {
           "chance": 2,
@@ -35,7 +35,7 @@
           "name": "All The Times",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Level by 7th Beat Games)"
+          "description": "(Level by 7th Beat Games)"
         },
         {
           "chance": 2,
@@ -43,7 +43,7 @@
           "name": "One Shift More",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Level by 7th Beat Games)"
+          "description": "(Level by 7th Beat Games)"
         },
         {
           "chance": 2,
@@ -51,7 +51,7 @@
           "name": "Intimate",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Level by 7th Beat Games)"
+          "description": "(Level by 7th Beat Games)"
         },
         {
           "chance": 1,
@@ -59,7 +59,7 @@
           "name": "Super Battleworn Insomniac",
           "tradeable": true,
           "type": "Ultra Rare",
-          "description":"(Level by 7th Beat Games)"
+          "description": "(Level by 7th Beat Games)"
         }
       ]
     },
@@ -73,7 +73,7 @@
           "name": "Cole Brew (Rare)",
           "tradeable": true,
           "type": "Rare",
-          "description":"(Art by Winston Lee)"
+          "description": "(Art by Winston Lee)"
         },
         {
           "chance": 2,
@@ -81,7 +81,7 @@
           "name": "Cole Brew (Super Rare)",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 1,
@@ -89,7 +89,7 @@
           "name": "Cole Brew (Ultra Rare)",
           "tradeable": true,
           "type": "Ultra Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 1,
@@ -97,7 +97,7 @@
           "name": "Cole Brew (Discontinued)",
           "tradeable": true,
           "type": "Discontinued",
-          "description":"(Art by Winston Lee)"
+          "description": "(Art by Winston Lee)"
         },
         {
           "chance": 0,
@@ -105,7 +105,7 @@
           "name": "Cole Brew (Collector's)",
           "tradeable": false,
           "type": "Collector's",
-          "description":"(Art by Kyle Labriola)"
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Cole (Art by Kyle Labriola)"
         }
       ]
     },
@@ -119,7 +119,7 @@
           "name": "Farmer (Rare)",
           "tradeable": true,
           "type": "Rare",
-          "description":"(Art by Winston Lee)"
+          "description": "(Art by Winston Lee)"
         },
         {
           "chance": 2,
@@ -127,7 +127,7 @@
           "name": "Farmer (Super Rare)",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 1,
@@ -135,7 +135,7 @@
           "name": "Farmer (Ultra Rare)",
           "tradeable": true,
           "type": "Ultra Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 1,
@@ -143,7 +143,7 @@
           "name": "Farmer (Discontinued)",
           "tradeable": true,
           "type": "Discontinued",
-          "description":"(Art by Winston Lee)"
+          "description": "(Art by Winston Lee)"
         },
         {
           "chance": 0,
@@ -151,7 +151,7 @@
           "name": "Farmer (Collector's)",
           "tradeable": false,
           "type": "Collector's",
-          "description":"(Art by Kyle Labriola)"
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Farmer (Art by Kyle Labriola)"
         }
       ]
     },
@@ -165,7 +165,7 @@
           "name": "Hailey (Rare)",
           "tradeable": true,
           "type": "Rare",
-          "description":"(Art by Winston Lee)"
+          "description": "(Art by Winston Lee)"
         },
         {
           "chance": 2,
@@ -173,7 +173,7 @@
           "name": "Hailey (Super Rare)",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 1,
@@ -181,7 +181,7 @@
           "name": "Hailey (Ultra Rare)",
           "tradeable": true,
           "type": "Ultra Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 0,
@@ -189,7 +189,7 @@
           "name": "Hailey (Collector's)",
           "tradeable": false,
           "type": "Collector's",
-          "description":"(Art by Kyle Labriola)"
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Hailey (Art by Kyle Labriola)"
         }
       ]
     },
@@ -203,7 +203,7 @@
           "name": "Ian (Rare)",
           "tradeable": true,
           "type": "Rare",
-          "description":"(Art by Winston Lee)"
+          "description": "(Art by Winston Lee)"
         },
         {
           "chance": 2,
@@ -211,7 +211,7 @@
           "name": "Ian (Super Rare)",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 1,
@@ -219,7 +219,7 @@
           "name": "Ian (Ultra Rare)",
           "tradeable": true,
           "type": "Ultra Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 0,
@@ -227,7 +227,7 @@
           "name": "Ian (Collector's)",
           "tradeable": false,
           "type": "Collector's",
-          "description":"(Art by Kyle Labriola)"
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Ian (Art by Kyle Labriola)"
         }
       ]
     },
@@ -241,7 +241,7 @@
           "name": "Insomniac (Rare)",
           "tradeable": true,
           "type": "Rare",
-          "description":"(Art by Winston Lee)"
+          "description": "(Art by Winston Lee)"
         },
         {
           "chance": 2,
@@ -249,7 +249,7 @@
           "name": "Insomniac (Super Rare)",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 1,
@@ -257,7 +257,7 @@
           "name": "Insomniac (Ultra Rare)",
           "tradeable": true,
           "type": "Ultra Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 0,
@@ -265,7 +265,7 @@
           "name": "Insomniac (Collector's)",
           "tradeable": false,
           "type": "Collector's",
-          "description":"(Art by Kyle Labriola)"
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of the Insomniac (Art by Kyle Labriola)"
         }
       ]
     },
@@ -279,7 +279,7 @@
           "name": "Intern (Rare)",
           "tradeable": true,
           "type": "Rare",
-          "description":"(Art by Winston Lee)"
+          "description": "(Art by Winston Lee)"
         },
         {
           "chance": 2,
@@ -287,7 +287,7 @@
           "name": "Intern (Super Rare)",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 1,
@@ -295,7 +295,7 @@
           "name": "Intern (Ultra Rare)",
           "tradeable": true,
           "type": "Ultra Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 0,
@@ -303,11 +303,11 @@
           "name": "Intern (Collector's)",
           "tradeable": false,
           "type": "Collector's",
-          "description":"(Art by Kyle Labriola)"
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of the Intern (Art by Kyle Labriola)"
         }
       ]
     },
-      {
+    {
       "groupname": "logan",
       "basechance": 3,
       "cards": [
@@ -317,7 +317,7 @@
           "name": "Logan (Rare)",
           "tradeable": true,
           "type": "Rare",
-          "description":"(Art by Winston Lee)"
+          "description": "(Art by Winston Lee)"
         },
         {
           "chance": 2,
@@ -325,7 +325,7 @@
           "name": "Logan (Super Rare)",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 1,
@@ -333,7 +333,7 @@
           "name": "Logan (Ultra Rare)",
           "tradeable": true,
           "type": "Ultra Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 0,
@@ -341,7 +341,7 @@
           "name": "Logan (Collector's)",
           "tradeable": false,
           "type": "Collector's",
-          "description":"(Art by Kyle Labriola)"
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Logan (Art by Kyle Labriola)"
         }
       ]
     },
@@ -355,7 +355,7 @@
           "name": "Miner (Rare)",
           "tradeable": true,
           "type": "Rare",
-          "description":"(Art by Winston Lee)"
+          "description": "(Art by Winston Lee)"
         },
         {
           "chance": 2,
@@ -363,7 +363,7 @@
           "name": "Miner (Super Rare)",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 1,
@@ -371,7 +371,7 @@
           "name": "Miner (Ultra Rare)",
           "tradeable": true,
           "type": "Ultra Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 0,
@@ -379,7 +379,7 @@
           "name": "Miner (Collector's)",
           "tradeable": false,
           "type": "Collector's",
-          "description":"(Art by Kyle Labriola)"
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Miner (Art by Kyle Labriola)"
         }
       ]
     },
@@ -393,7 +393,7 @@
           "name": "Mrs. Stevenson (Rare)",
           "tradeable": true,
           "type": "Rare",
-          "description":"(Art by Winston Lee)"
+          "description": "(Art by Winston Lee)"
         },
         {
           "chance": 2,
@@ -401,7 +401,7 @@
           "name": "Mrs. Stevenson (Super Rare)",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 1,
@@ -409,7 +409,7 @@
           "name": "Mrs. Stevenson (Ultra Rare)",
           "tradeable": true,
           "type": "Ultra Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 0,
@@ -417,7 +417,7 @@
           "name": "Mrs. Stevenson (Collector's)",
           "tradeable": false,
           "type": "Collector's",
-          "description":"(Art by Kyle Labriola)"
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Mrs. Stevenson (Art by Kyle Labriola)"
         }
       ]
     },
@@ -431,7 +431,7 @@
           "name": "Mr. Stevenson (Rare)",
           "tradeable": true,
           "type": "Rare",
-          "description":"(Art by Winston Lee)"
+          "description": "(Art by Winston Lee)"
         },
         {
           "chance": 2,
@@ -439,7 +439,7 @@
           "name": "Mr. Stevenson (Super Rare)",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 1,
@@ -447,7 +447,7 @@
           "name": "Mr. Stevenson (Ultra Rare)",
           "tradeable": true,
           "type": "Ultra Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 0,
@@ -455,7 +455,7 @@
           "name": "Mr. Stevenson (Collector's)",
           "tradeable": false,
           "type": "Collector's",
-          "description":"(Art by Kyle Labriola)"
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Mr. Stevenson (Art by Kyle Labriola)"
         }
       ]
     },
@@ -469,7 +469,7 @@
           "name": "Paige (Rare)",
           "tradeable": true,
           "type": "Rare",
-          "description":"(Art by Winston Lee)"
+          "description": "(Art by Winston Lee)"
         },
         {
           "chance": 2,
@@ -477,7 +477,7 @@
           "name": "Paige (Super Rare)",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 1,
@@ -485,7 +485,7 @@
           "name": "Paige (Ultra Rare)",
           "tradeable": true,
           "type": "Ultra Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 0,
@@ -493,7 +493,7 @@
           "name": "Paige (Collector's)",
           "tradeable": false,
           "type": "Collector's",
-          "description":"(Art by Kyle Labriola)"
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Paige (Art by Kyle Labriola)"
         }
       ]
     },
@@ -507,7 +507,7 @@
           "name": "Politician (Rare)",
           "tradeable": true,
           "type": "Rare",
-          "description":"(Art by Winston Lee)"
+          "description": "(Art by Winston Lee)"
         },
         {
           "chance": 2,
@@ -515,7 +515,7 @@
           "name": "Politician (Super Rare)",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 1,
@@ -523,7 +523,7 @@
           "name": "Politician (Ultra Rare)",
           "tradeable": true,
           "type": "Ultra Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 0,
@@ -531,7 +531,7 @@
           "name": "Politician (Collector's)",
           "tradeable": false,
           "type": "Collector's",
-          "description":"(Art by Kyle Labriola)"
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of the Politician (Art by Kyle Labriola)"
         }
       ]
     },
@@ -545,7 +545,7 @@
           "name": "Rooms (Rare)",
           "tradeable": true,
           "type": "Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 2,
@@ -553,7 +553,7 @@
           "name": "Rooms (Super Rare)",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 1,
@@ -561,7 +561,7 @@
           "name": "Rooms (Ultra Rare)",
           "tradeable": true,
           "type": "Ultra Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 0.25,
@@ -569,7 +569,7 @@
           "name": "Rooms (Discontinued Rare)",
           "tradeable": true,
           "type": "Discontinued",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 0.5,
@@ -577,7 +577,7 @@
           "name": "Rooms (Discontinued Super Rare)",
           "tradeable": true,
           "type": "Discontinued",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 0.25,
@@ -585,7 +585,7 @@
           "name": "Rooms (Discontinued Ultra Rare)",
           "tradeable": true,
           "type": "Discontinued",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         }
       ]
     },
@@ -599,7 +599,7 @@
           "name": "Rows (Rare)",
           "tradeable": true,
           "type": "Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 2,
@@ -607,7 +607,7 @@
           "name": "Rows (Super Rare)",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 1,
@@ -615,7 +615,7 @@
           "name": "Rows (Ultra Rare)",
           "tradeable": true,
           "type": "Ultra Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         }
       ]
     },
@@ -629,7 +629,7 @@
           "name": "Samurai (Rare)",
           "tradeable": true,
           "type": "Rare",
-          "description":"(Art by Winston Lee)"
+          "description": "(Art by Winston Lee)"
         },
         {
           "chance": 2,
@@ -637,7 +637,7 @@
           "name": "Samurai (Super Rare)",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 1,
@@ -645,7 +645,7 @@
           "name": "Samurai (Ultra Rare)",
           "tradeable": true,
           "type": "Ultra Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 0,
@@ -653,7 +653,7 @@
           "name": "Samurai (Collector's)",
           "tradeable": false,
           "type": "Collector's",
-          "description":"(Art by Kyle Labriola)"
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Samurai (Art by Kyle Labriola)"
         }
       ]
     },
@@ -667,7 +667,7 @@
           "name": "Sound (Rare)",
           "tradeable": true,
           "type": "Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 2,
@@ -675,7 +675,7 @@
           "name": "Sound (Super Rare)",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 1,
@@ -683,7 +683,7 @@
           "name": "Sound (Ultra Rare)",
           "tradeable": true,
           "type": "Ultra Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         }
       ]
     },
@@ -697,7 +697,7 @@
           "name": "VFX (Rare)",
           "tradeable": true,
           "type": "Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 2,
@@ -705,7 +705,7 @@
           "name": "VFX (Super Rare)",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 1,
@@ -713,7 +713,7 @@
           "name": "VFX (Ultra Rare)",
           "tradeable": true,
           "type": "Ultra Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         }
       ]
     },
@@ -727,7 +727,7 @@
           "name": "The Samurai Group",
           "tradeable": true,
           "type": "Ultra Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 1,
@@ -735,7 +735,7 @@
           "name": "The Stevenson Group",
           "tradeable": true,
           "type": "Ultra Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 1,
@@ -743,7 +743,7 @@
           "name": "The Couple Group",
           "tradeable": true,
           "type": "Ultra Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
         },
         {
           "chance": 1,
@@ -751,14 +751,45 @@
           "name": "The Doctor Group",
           "tradeable": true,
           "type": "Ultra Rare",
-          "description":"(Art by Kyle Labriola)"
+          "description": "(Art by Kyle Labriola)"
+        },
+        {
+          "chance": 0,
+          "filename": "samuraigroupc",
+          "name": "The Samurai Group (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires Samurai (Collector's) and The Samurai Group (Art by Kyle Labriola)"
+        },
+        {
+          "chance": 0,
+          "filename": "stevensongroupc",
+          "name": "The Stevenson Group (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires Mrs. Stevenson (Collector's), Mr. Stevenson (Collector's), and The Stevenson Group (Art by Kyle Labriola)"
+        },
+        {
+          "chance": 0,
+          "filename": "couplegroupc",
+          "name": "The Couple Group (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires Logan (Collector's), Hailey (Collector's), and The Couple Group (Art by Kyle Labriola)"
+        },
+        {
+          "chance": 0,
+          "filename": "doctorgroupc",
+          "name": "The Doctor Group (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires Paige (Collector's), Ian (Collector's), and The Doctor Group (Art by Kyle Labriola)"
         }
-
       ]
     },
     {
       "groupname": "custom level cards",
-      "basechance": 0,
+      "basechance": 3,
       "cards": [
         {
           "chance": 2,
@@ -766,7 +797,7 @@
           "name": "Alien Alien",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Level by fartiliumstation)"
+          "description": "(Level by fartiliumstation)"
         },
         {
           "chance": 2,
@@ -774,7 +805,7 @@
           "name": "AYAKASHI",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Level by noonhead)"
+          "description": "(Level by noonhead)"
         },
         {
           "chance": 2,
@@ -782,7 +813,7 @@
           "name": "Circles",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Level by Nocallia)"
+          "description": "(Level by Nocallia)"
         },
         {
           "chance": 2,
@@ -790,7 +821,15 @@
           "name": "Special Delivery",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Level by CV35W)"
+          "description": "(Level by CV35W)"
+        },
+        {
+          "chance": 2,
+          "filename": "rollermobster",
+          "name": "Roller Mobster",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Some J Name,Het,DPS2004, andSamario)"
         },
         {
           "chance": 2,
@@ -798,7 +837,7 @@
           "name": "Ghosts Play to the Audience",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Level by thefinals)"
+          "description": "(Level by thefinals)"
         },
         {
           "chance": 2,
@@ -806,7 +845,7 @@
           "name": "Creative Exercise",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Level by Szprycha)"
+          "description": "(Level by Szprycha)"
         },
         {
           "chance": 2,
@@ -814,7 +853,40 @@
           "name": "Square",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Level by Kneeckoh)"
+          "description": "(Level by Kneeckoh)"
+        },
+        {
+          "chance": 2,
+          "filename": "disperagioia",
+          "name": "Disperagioia",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Samario)"
+        },
+        {
+          "chance": 2,
+          "filename": "superstrongcavity",
+          "name": "Super Strong Cavity Reconstructor Drill Chu",
+          "tradeable": true,
+          "animated": true,
+          "type": "Super Rare",
+          "description": "(Level by thefinals)"
+        },
+        {
+          "chance": 2,
+          "filename": "theoracle",
+          "name": "The Oracle",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by DPS2004 and Xeno)"
+        },
+        {
+          "chance": 2,
+          "filename": "momotaro",
+          "name": "Momotaro",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by CV35W)"
         },
         {
           "chance": 2,
@@ -822,7 +894,7 @@
           "name": "Goodbye, Ms. Flower Thief",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Level by thefinals)"
+          "description": "(Level by thefinals)"
         },
         {
           "chance": 2,
@@ -830,7 +902,7 @@
           "name": "My Level",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Level by auth)"
+          "description": "(Level by auth)"
         },
         {
           "chance": 2,
@@ -838,7 +910,7 @@
           "name": "Crystalline",
           "tradeable": true,
           "type": "Super Rare",
-          "description":"(Level by Noche)"
+          "description": "(Level by Noche)"
         },
         {
           "chance": 2,
@@ -846,7 +918,7 @@
           "name": "My Level, Crystalline",
           "tradeable": false,
           "type": "Collector's",
-          "description":"(Level by auth, Noche, and notDonte)"
+          "description": "(Level by auth, Noche, and notDonte)"
         }
       ]
     },
@@ -860,9 +932,8 @@
           "name": "Shaun's Server Statistics Sampling #45",
           "tradeable": true,
           "type": "Special",
-          "description":"(this field intentionally left blank)"
+          "description": "(this field intentionally left blank)"
         }
-
       ]
     }
   ]

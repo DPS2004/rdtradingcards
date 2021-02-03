@@ -109,6 +109,37 @@
       "crystalline"
     ],
     "recieve": "mylevelcrystalline"
+  },
+  {
+    "require": [
+      "samuraic",
+      "samuraigroup"
+    ],
+    "recieve": "samuraigroupc"
+  },
+  {
+    "require": [
+      "mrsstevensonc",
+      "mrstevensonc",
+      "stevensongroup"
+    ],
+    "recieve": "stevensongroupc"
+  },
+  {
+    "require": [
+      "loganc",
+      "haileyc",
+      "couplegroup"
+    ],
+    "recieve": "couplegroupc"
+  },
+  {
+    "require": [
+      "paigec",
+      "ianc",
+      "doctorgroup"
+    ],
+    "recieve": "doctorgroupc"
   }
 
 ]

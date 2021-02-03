@@ -28,7 +28,7 @@ function command.run(message, mt,overwrite)
     cmd.crash = dofile('commands/crash.lua')
     cmd.showmedal = dofile('commands/showmedal.lua')
     cmd.runlua = dofile('commands/runlua.lua')
-
+    cmd.generategive = dofile('commands/generategive.lua')
 
     -- import reaction commands
     cmdre = {}
@@ -39,11 +39,14 @@ function command.run(message, mt,overwrite)
 
     _G['debug'] = false
     cj =  io.open("data/cards.json", "r")
+
     _G['cdata'] = json.decode(cj:read("*a"))
     cj:close()
+
     --generate pull table
     _G['ptable'] = {}
     _G['cdb'] = {}
+    
     for i,v in ipairs(cdata.groups) do
       for w,x in ipairs(v.cards) do
         
@@ -54,6 +57,7 @@ function command.run(message, mt,overwrite)
         print(x.name.. " loaded!")
       end
     end
+    
     print("here is cdb")
     print(inspect(cdb))
     print("here is ptable")
@@ -166,6 +170,24 @@ function command.run(message, mt,overwrite)
       end
       return cdescription
     end
+    
+    
+    _G['getcardanimated'] = function (x)
+      print("getting animated for " .. x)
+      local canimated = nil
+      for i,v in ipairs(cdb) do
+        
+        if v.filename == x then
+          print(v.animated)
+          canimated = v.animated
+          if canimated == nil then
+            canimated = false
+          end
+        end
+      end
+      print("returning" .. tostring(canimated))
+      return canimated
+    end
 
 
     -- Lua implementation of PHP scandir function
@@ -186,7 +208,7 @@ function command.run(message, mt,overwrite)
       x:addReaction("✅")
       x:addReaction("❌")
     end
-    
+    print("handlemessage")
     _G['handlemessage'] = function (message)
       if message.author.id ~= "767445265871142933" then --failsafe to avoid recursion
         local status, err = pcall(function ()
@@ -344,6 +366,14 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.runlua.run(message,nmt)   
+          elseif string.sub(message.content, 0, 12+3) == prefix.. 'generategive ' then 
+            local mt = string.split(string.sub(message.content, 12+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            cmd.generategive.run(message,nmt) 
           end
         end)
         if not status then

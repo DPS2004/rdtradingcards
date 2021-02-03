@@ -9,12 +9,20 @@ function command.run(message, mt)
     
     print(curfilename)
     if curfilename ~= nil then
+      local extension = ""
+      local animated = getcardanimated(curfilename)
+      if animated then
+        extension = ".gif"
+      else
+        extension = ".png"
+      end
       if uj.inventory[curfilename] or uj.storage[curfilename] then
         print("user has card")
+        
         message.channel:send {
           content = 'Here it is! Your **'.. fntoname(curfilename) .. '** card. The shorthand form is **' .. curfilename .. '**.',
           
-          file = "card_images/" .. curfilename .. ".png"
+          file = "card_images/" .. curfilename .. extension
         }
         local description = getcarddescription(curfilename)
         if description then
