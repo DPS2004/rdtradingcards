@@ -789,7 +789,7 @@
     },
     {
       "groupname": "custom level cards",
-      "basechance": 3,
+      "basechance": 6,
       "cards": [
         {
           "chance": 2,
@@ -913,7 +913,7 @@
           "description": "(Level by Noche)"
         },
         {
-          "chance": 2,
+          "chance": 0,
           "filename": "mylevelcrystalline",
           "name": "My Level, Crystalline",
           "tradeable": false,
