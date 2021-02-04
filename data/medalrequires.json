@@ -1,6 +1,6 @@
 [
   {
-    "require": "function checkrequirements(uj) if uj.storage['roomsdc_r'] and uj.storage['roomsdc_sr'] and uj.storage['roomsdc_sr'] then return true else return false end end return checkrequirements",
+    "require": "function checkrequirements(uj) if uj.storage['roomsdc_r'] and uj.storage['roomsdc_sr'] and uj.storage['roomsdc_ur'] then return true else return false end end return checkrequirements",
     "recieve": "itainteasybeinggreen"
   },
   {
