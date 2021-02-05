@@ -789,7 +789,7 @@
     },
     {
       "groupname": "custom level cards",
-      "basechance": 6,
+      "basechance": 4,
       "cards": [
         {
           "chance": 2,
