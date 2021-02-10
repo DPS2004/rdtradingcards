@@ -29,6 +29,7 @@ function command.run(message, mt,overwrite)
     cmd.showmedal = dofile('commands/showmedal.lua')
     cmd.runlua = dofile('commands/runlua.lua')
     cmd.generategive = dofile('commands/generategive.lua')
+    cmd.search = dofile('commands/search.lua')
 
     -- import reaction commands
     cmdre = {}
@@ -374,6 +375,14 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.generategive.run(message,nmt) 
+          elseif string.sub(message.content, 0, 6+3) == prefix.. 'search ' then 
+            local mt = string.split(string.sub(message.content, 6+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            cmd.search.run(message,nmt)   
           end
         end)
         if not status then
