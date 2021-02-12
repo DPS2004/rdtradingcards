@@ -2,7 +2,7 @@
   "basemult": 10,
   "groups": [
     {
-      "groupname": "CURRENT ABNORMAL RATES / UNRELEASED CARDS: bigbadbird, inima",
+      "groupname": "CURRENT ABNORMAL RATES / UNRELEASED CARDS: bigbadbird, inima, alovelynight",
       "basechance": 0,
       "cards": []
     },
@@ -926,6 +926,14 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by Noche)"
+        },
+        {
+          "chance": 0,
+          "filename": "alovelynight",
+          "name": "A Lovely Night",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by fartiliumstation)"
         },
         {
           "chance": 0,
