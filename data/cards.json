@@ -2,6 +2,11 @@
   "basemult": 10,
   "groups": [
     {
+      "groupname": "CURRENT ABNORMAL RATES / UNRELEASED CARDS: bigbadbird, inima",
+      "basechance": 0,
+      "cards": []
+    },
+    {
       "groupname": "official levels",
       "basechance": 3,
       "cards": [
@@ -62,6 +67,11 @@
           "description": "(Level by 7th Beat Games)"
         }
       ]
+    },
+    {
+      "groupname": "----------------------------------------CANON CHARACTERS------------------------------------------------",
+      "basechance": 0,
+      "cards": []
     },
     {
       "groupname": "cole",
@@ -536,6 +546,49 @@
       ]
     },
     {
+      "groupname": "samurai",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "samurair",
+          "name": "Samurai (Rare)",
+          "tradeable": true,
+          "type": "Rare",
+          "description": "(Art by Winston Lee)"
+        },
+        {
+          "chance": 2,
+          "filename": "samuraisr",
+          "name": "Samurai (Super Rare)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Art by Kyle Labriola)"
+        },
+        {
+          "chance": 1,
+          "filename": "samuraiur",
+          "name": "Samurai (Ultra Rare)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by Kyle Labriola)"
+        },
+        {
+          "chance": 0,
+          "filename": "samuraic",
+          "name": "Samurai (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Samurai (Art by Kyle Labriola)"
+        }
+      ]
+    },
+    {
+      "groupname": "----------------------------------------EDITOR STUFF------------------------------------------------",
+      "basechance": 0,
+      "cards": []
+    },
+    {
       "groupname": "rooms",
       "basechance": 3,
       "cards": [
@@ -616,44 +669,6 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)"
-        }
-      ]
-    },
-    {
-      "groupname": "samurai",
-      "basechance": 3,
-      "cards": [
-        {
-          "chance": 3,
-          "filename": "samurair",
-          "name": "Samurai (Rare)",
-          "tradeable": true,
-          "type": "Rare",
-          "description": "(Art by Winston Lee)"
-        },
-        {
-          "chance": 2,
-          "filename": "samuraisr",
-          "name": "Samurai (Super Rare)",
-          "tradeable": true,
-          "type": "Super Rare",
-          "description": "(Art by Kyle Labriola)"
-        },
-        {
-          "chance": 1,
-          "filename": "samuraiur",
-          "name": "Samurai (Ultra Rare)",
-          "tradeable": true,
-          "type": "Ultra Rare",
-          "description": "(Art by Kyle Labriola)"
-        },
-        {
-          "chance": 0,
-          "filename": "samuraic",
-          "name": "Samurai (Collector's)",
-          "tradeable": false,
-          "type": "Collector's",
-          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Samurai (Art by Kyle Labriola)"
         }
       ]
     },
@@ -933,6 +948,87 @@
           "tradeable": true,
           "type": "Special",
           "description": "(this field intentionally left blank)"
+        }
+      ]
+    },
+    {
+      "groupname": "----------------------------------------RDRPG------------------------------------------------",
+      "basechance": 0,
+      "cards": []
+    },
+    {
+      "groupname": "big bad bird",
+      "basechance": 0,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "bigbadbirdr",
+          "name": "Big Bad Bird (Rare)",
+          "tradeable": true,
+          "type": "Rare",
+          "description": "(Art by ???????? TODO find artist)"
+        },
+        {
+          "chance": 2,
+          "filename": "bigbadbirdsr",
+          "name": "Big Bad Bird (Super Rare)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Art by Noche)"
+        },
+        {
+          "chance": 1,
+          "filename": "bigbadbirdur",
+          "name": "Big Bad Bird (Ultra Rare)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by Noche)"
+        },
+        {
+          "chance": 0,
+          "filename": "bigbadbirdc",
+          "name": "Big Bad Bird (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Big Bad Bird (Art by Noche)"
+        }
+      ]
+    },
+    {
+      "groupname": "inima",
+      "basechance": 0,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "inimar",
+          "name": "Inima (Rare)",
+          "tradeable": true,
+          "type": "Rare",
+          "description": "(Art by ???????? TODO find artist)"
+        },
+        {
+          "chance": 2,
+          "filename": "inimasr",
+          "name": "Inima (Super Rare)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Art by Kin)"
+        },
+        {
+          "chance": 1,
+          "filename": "inimaur",
+          "name": "Inima (Ultra Rare)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by Kin)"
+        },
+        {
+          "chance": 0,
+          "filename": "inimac",
+          "name": "Inima (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Inima (Art by Kin)"
         }
       ]
     }
