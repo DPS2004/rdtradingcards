@@ -105,6 +105,41 @@
   },
   {
     "require": [
+      "luciar",
+      "luciasr",
+      "luciaur"
+    ],
+    "recieve": "luciac"
+  },
+  {
+    "require": [
+      "nicoler",
+      "nicolesr",
+      "nicoleur"
+    ],
+    "recieve": "nicolec"
+  },
+    
+  {
+    "require": [
+      "bigbadbirdr",
+      "bigbadbirdsr",
+      "bigbadbirdur"
+    ],
+    "recieve": "bigbadbirdc"
+  },
+  
+  {
+    "require": [
+      "inimar",
+      "inimasr",
+      "inimaur"
+    ],
+    "recieve": "inimac"
+  },
+  
+  {
+    "require": [
       "mylevel",
       "crystalline"
     ],

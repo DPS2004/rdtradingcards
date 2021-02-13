@@ -2,7 +2,7 @@
   "basemult": 10,
   "groups": [
     {
-      "groupname": "CURRENT ABNORMAL RATES / UNRELEASED CARDS: bigbadbird, inima, alovelynight",
+      "groupname": "CURRENT ABNORMAL RATES / UNRELEASED CARDS: bigbadbird, inima, alovelynight, nicole, lucia",
       "basechance": 0,
       "cards": []
     },
@@ -580,6 +580,82 @@
           "tradeable": false,
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Samurai (Art by Kyle Labriola)"
+        }
+      ]
+    },
+    {
+      "groupname": "nicole",
+      "basechance": 0,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "nicoler",
+          "name": "Nicole Ting (Rare)",
+          "tradeable": true,
+          "type": "Rare",
+          "description": "(Art by Winston Lee)"
+        },
+        {
+          "chance": 2,
+          "filename": "nicolesr",
+          "name": "Nicole Ting (Super Rare)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Art by Kyle Labriola, edited by Lumina)"
+        },
+        {
+          "chance": 1,
+          "filename": "nicoleur",
+          "name": "Nicole Ting (Ultra Rare)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by Kyle Labriola, edited by Lumina)"
+        },
+        {
+          "chance": 0,
+          "filename": "nicolec",
+          "name": "Nicole Ting (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Nicole Ting (Art by Lumina, based on art by Kyle Labriola)"
+        }
+      ]
+    },
+    {
+      "groupname": "lucia",
+      "basechance": 0,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "luciar",
+          "name": "Lucia Moon (Rare)",
+          "tradeable": true,
+          "type": "Rare",
+          "description": "(Art by Adipemdragon)"
+        },
+        {
+          "chance": 2,
+          "filename": "luciasr",
+          "name": "Lucia Moon (Super Rare)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Art by Kyle Labriola, edited by Lumina)"
+        },
+        {
+          "chance": 1,
+          "filename": "luciaur",
+          "name": "Lucia Moon (Ultra Rare)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by Kyle Labriola, edited by Lumina)"
+        },
+        {
+          "chance": 0,
+          "filename": "luciac",
+          "name": "Lucia Moon (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Lucia Moon (Art by Lumina, based on art by Kyle Labriola)"
         }
       ]
     },
