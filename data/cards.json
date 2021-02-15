@@ -2,7 +2,7 @@
   "basemult": 10,
   "groups": [
     {
-      "groupname": "CURRENT ABNORMAL RATES / UNRELEASED CARDS: bigbadbird, inima, alovelynight, nicole, lucia",
+      "groupname": "CURRENT ABNORMAL RATES / UNRELEASED CARDS: nicole, lucia, bigbadbird, inima, alovelynight, hideandseek, 514, pancakefever",
       "basechance": 0,
       "cards": []
     },
@@ -1010,6 +1010,30 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by fartiliumstation)"
+        },
+        {
+          "chance": 0,
+          "filename": "hideandseek",
+          "name": "Hide and Seek",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by MarioMak967)"
+        },
+        {
+          "chance": 0,
+          "filename": "514",
+          "name": "514",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by void)"
+        },
+        {
+          "chance": 0,
+          "filename": "pancakefever",
+          "name": "Pancake Fever",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Kin, Xeno, MarioMak967, and Econ)"
         },
         {
           "chance": 0,
