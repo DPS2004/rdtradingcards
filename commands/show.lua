@@ -11,8 +11,11 @@ function command.run(message, mt)
     if curfilename ~= nil then
       local extension = ""
       local animated = getcardanimated(curfilename)
+      local pico8 = getcardpico(curfilename)
       if animated then
         extension = ".gif"
+      elseif pico8 then
+        extension = ".p8.png"
       else
         extension = ".png"
       end

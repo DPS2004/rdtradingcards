@@ -2,7 +2,7 @@
   "basemult": 10,
   "groups": [
     {
-      "groupname": "CURRENT ABNORMAL RATES / UNRELEASED CARDS: nicole, lucia, bigbadbird, inima, alovelynight, hideandseek, 514, pancakefever",
+      "groupname": "CURRENT ABNORMAL RATES / UNRELEASED CARDS: nicole, lucia, bigbadbird, inima, alovelynight, hideandseek, 514, pancakefever, pixelplantation, pico8",
       "basechance": 0,
       "cards": []
     },
@@ -880,7 +880,7 @@
     },
     {
       "groupname": "custom level cards",
-      "basechance": 4,
+      "basechance": 3,
       "cards": [
         {
           "chance": 2,
@@ -1037,6 +1037,22 @@
         },
         {
           "chance": 0,
+          "filename": "pixelplantation",
+          "name": "Pixel Plantation",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Kin)"
+        },
+        {
+          "chance": 0,
+          "filename": "chirp",
+          "name": "Chirp",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Nocallia)"
+        },
+        {
+          "chance": 0,
           "filename": "mylevelcrystalline",
           "name": "My Level, Crystalline",
           "tradeable": false,
@@ -1056,6 +1072,30 @@
           "tradeable": true,
           "type": "Special",
           "description": "(this field intentionally left blank)"
+        }
+      ]
+    },
+    {
+      "groupname": "pico8",
+      "basechance": 0,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "rhythmstacker",
+          "name": "Rhythm Stacker",
+          "tradeable": true,
+          "type": "PICO-8",
+          "pico": true,
+          "description": "(Game by auburn. Playable with the PICO-8 app or online at https://auburnsummer.itch.io/rhythm-stacker . The password is rhythmdoctah)"
+        },
+        {
+          "chance": 2,
+          "filename": "acofoi",
+          "name": "A Chance of Fire or Ice",
+          "tradeable": true,
+          "type": "PICO-8",
+          "pico": true,
+          "description": "(Game by auburn. Playable with the PICO-8 app or online at https://auburnsummer.itch.io/acofoi . The password is meaculpa)"
         }
       ]
     },
@@ -1140,5 +1180,6 @@
         }
       ]
     }
+
   ]
 }
