@@ -30,6 +30,7 @@ function command.run(message, mt,overwrite)
     cmd.runlua = dofile('commands/runlua.lua')
     cmd.generategive = dofile('commands/generategive.lua')
     cmd.search = dofile('commands/search.lua')
+    cmd.tell = dofile('commands/tell.lua')
 
     -- import reaction commands
     cmdre = {}
@@ -399,7 +400,15 @@ function command.run(message, mt,overwrite)
               v = trim(v)
               nmt[i]=v
             end
-            cmd.search.run(message,nmt)   
+            cmd.search.run(message,nmt)  
+          elseif string.sub(message.content, 0, 4+3) == prefix.. 'tell ' then 
+            local mt = string.split(string.sub(message.content, 4+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            cmd.tell.run(message,nmt)      
           end
         end)
         if not status then
