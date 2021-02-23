@@ -2,7 +2,7 @@
   "basemult": 10,
   "groups": [
     {
-      "groupname": "CURRENT ABNORMAL RATES / UNRELEASED CARDS: nicole, lucia, bigbadbird, inima, alovelynight, hideandseek, 514, pancakefever, pixelplantation, pico8",
+      "groupname": "CURRENT ABNORMAL RATES / UNRELEASED CARDS: nicole, lucia, bigbadbird, inima, alovelynight, hideandseek, 514, pancakefever, pixelplantation, chirp, feedthemachine, pico8",
       "basechance": 0,
       "cards": []
     },
@@ -1050,6 +1050,79 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by Nocallia)"
+        },
+        {
+          "chance": 0,
+          "filename": "aighgrayn",
+          "name": "Aigh Grayn",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Kin, Xeno, MarioMak967, and Econ)"
+        },
+        {
+          "chance": 0,
+          "filename": "feedthemachine",
+          "name": "Feed the Machine",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by MarioMak967)"
+        },
+        {
+          "chance": 0,
+          "filename": "discord",
+          "name": "Discord",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Bayou)"
+        },
+        {
+          "chance": 0,
+          "filename": "reverence",
+          "name": "Reverence",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by InfectiousStepocity)"
+        },
+        {
+          "chance": 0,
+          "filename": "rpg",
+          "name": "Role-Playing Game",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Lin Gamerz and Xeno)"
+        },
+        {
+          "chance": 0,
+          "filename": "rrr",
+          "name": "Rodney's Rhythm Rounds!",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Emdyion, Samario, DPS2004, thefinals, Some J Name, and Xeno)"
+        },
+        {
+          "chance": 0,
+          "filename": "someonelikeme",
+          "name": "Someone Like Me",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Emdyion)"
+        },
+        {
+          "chance": 0,
+          "filename": "wlae",
+          "name": "Walk Like An Egyptian",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by CV35W)"
+        },
+        {
+          "chance": 0,
+          "filename": "underworld",
+          "name": "Underworld",
+          "tradeable": true,
+          "animated": true,
+          "type": "Super Rare",
+          "description": "(Level by Kin, Xeno, and MarioMak967)"
         },
         {
           "chance": 0,
