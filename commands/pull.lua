@@ -34,8 +34,8 @@ local time = sw:getTime()
       local ncn = fntoname(newcard)
       print(ncn)
       local extension = ""
-      local pico8 = getcardpico(ncn)
-      local animated = getcardanimated(ncn)
+      local pico8 = getcardpico(newcard)
+      local animated = getcardanimated(newcard)
       if animated then
         extension = ".gif"
       elseif pico8 then
