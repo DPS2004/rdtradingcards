@@ -35,7 +35,7 @@ local time = sw:getTime()
       print(ncn)
       local extension = ""
       local pico8 = getcardpico(ncn)
-      local animated = getcardpico(ncn)
+      local animated = getcardanimated(ncn)
       if animated then
         extension = ".gif"
       elseif pico8 then
