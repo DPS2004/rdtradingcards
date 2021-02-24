@@ -1147,6 +1147,14 @@
         },
         {
           "chance": 2,
+          "filename": "musclemuseum",
+          "name": "Muscle Museum",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by notDonte and Xeno)"
+        },
+        {
+          "chance": 2,
           "filename": "wlae",
           "name": "Walk Like An Egyptian",
           "tradeable": true,
