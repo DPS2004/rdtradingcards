@@ -2,7 +2,7 @@
   "basemult": 10,
   "groups": [
     {
-      "groupname": "CURRENT ABNORMAL RATES / UNRELEASED CARDS: nicole, lucia, bigbadbird, inima, alovelynight, hideandseek, 514, pancakefever, pixelplantation, chirp, feedthemachine, pico8",
+      "groupname": "CURRENT ABNORMAL RATES / UNRELEASED CARDS: ",
       "basechance": 0,
       "cards": []
     },
@@ -585,7 +585,7 @@
     },
     {
       "groupname": "nicole",
-      "basechance": 0,
+      "basechance": 3,
       "cards": [
         {
           "chance": 3,
@@ -623,7 +623,7 @@
     },
     {
       "groupname": "lucia",
-      "basechance": 0,
+      "basechance": 3,
       "cards": [
         {
           "chance": 3,
@@ -656,6 +656,44 @@
           "tradeable": false,
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Lucia Moon (Art by Lumina, based on art by Kyle Labriola)"
+        }
+      ]
+    },
+    {
+      "groupname": "yo",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "yor",
+          "name": "Yo (Rare)",
+          "tradeable": true,
+          "type": "Rare",
+          "description": "(Art by Winston Lee)"
+        },
+        {
+          "chance": 2,
+          "filename": "yosr",
+          "name": "Yo (Super Rare)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Art by DeadlySprinklez)"
+        },
+        {
+          "chance": 0,
+          "filename": "your",
+          "name": "Yo (Ultra Rare)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by DeadlySprinklez)"
+        },
+        {
+          "chance": 0,
+          "filename": "yoc",
+          "name": "Yo (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Yo (Art by Lumina, based on art by Kyle Labriola)"
         }
       ]
     },
@@ -1004,7 +1042,7 @@
           "description": "(Level by Noche)"
         },
         {
-          "chance": 0,
+          "chance": 2,
           "filename": "alovelynight",
           "name": "A Lovely Night",
           "tradeable": true,
@@ -1012,7 +1050,7 @@
           "description": "(Level by fartiliumstation)"
         },
         {
-          "chance": 0,
+          "chance": 2,
           "filename": "hideandseek",
           "name": "Hide and Seek",
           "tradeable": true,
@@ -1020,7 +1058,7 @@
           "description": "(Level by MarioMak967)"
         },
         {
-          "chance": 0,
+          "chance": 2,
           "filename": "514",
           "name": "514",
           "tradeable": true,
@@ -1028,7 +1066,7 @@
           "description": "(Level by void)"
         },
         {
-          "chance": 0,
+          "chance": 2,
           "filename": "pancakefever",
           "name": "Pancake Fever",
           "tradeable": true,
@@ -1036,7 +1074,7 @@
           "description": "(Level by Kin, Xeno, MarioMak967, and Econ)"
         },
         {
-          "chance": 0,
+          "chance": 2,
           "filename": "pixelplantation",
           "name": "Pixel Plantation",
           "tradeable": true,
@@ -1044,7 +1082,7 @@
           "description": "(Level by Kin)"
         },
         {
-          "chance": 0,
+          "chance": 2,
           "filename": "chirp",
           "name": "Chirp",
           "tradeable": true,
@@ -1052,7 +1090,7 @@
           "description": "(Level by Nocallia)"
         },
         {
-          "chance": 0,
+          "chance": 2,
           "filename": "aighgrayn",
           "name": "Aigh Grayn",
           "tradeable": true,
@@ -1060,7 +1098,7 @@
           "description": "(Level by Kin, Xeno, MarioMak967, and Econ)"
         },
         {
-          "chance": 0,
+          "chance": 2,
           "filename": "feedthemachine",
           "name": "Feed the Machine",
           "tradeable": true,
@@ -1068,7 +1106,7 @@
           "description": "(Level by MarioMak967)"
         },
         {
-          "chance": 0,
+          "chance": 2,
           "filename": "discord",
           "name": "Discord",
           "tradeable": true,
@@ -1076,7 +1114,7 @@
           "description": "(Level by Bayou)"
         },
         {
-          "chance": 0,
+          "chance": 2,
           "filename": "reverence",
           "name": "Reverence",
           "tradeable": true,
@@ -1084,7 +1122,7 @@
           "description": "(Level by InfectiousStepocity)"
         },
         {
-          "chance": 0,
+          "chance": 2,
           "filename": "rpg",
           "name": "Role-Playing Game",
           "tradeable": true,
@@ -1092,7 +1130,7 @@
           "description": "(Level by Lin Gamerz and Xeno)"
         },
         {
-          "chance": 0,
+          "chance": 2,
           "filename": "rrr",
           "name": "Rodney's Rhythm Rounds!",
           "tradeable": true,
@@ -1100,7 +1138,7 @@
           "description": "(Level by Emdyion, Samario, DPS2004, thefinals, Some J Name, and Xeno)"
         },
         {
-          "chance": 0,
+          "chance": 2,
           "filename": "someonelikeme",
           "name": "Someone Like Me",
           "tradeable": true,
@@ -1108,7 +1146,7 @@
           "description": "(Level by Emdyion)"
         },
         {
-          "chance": 0,
+          "chance": 2,
           "filename": "wlae",
           "name": "Walk Like An Egyptian",
           "tradeable": true,
@@ -1116,13 +1154,29 @@
           "description": "(Level by CV35W)"
         },
         {
-          "chance": 0,
+          "chance": 2,
           "filename": "underworld",
           "name": "Underworld",
           "tradeable": true,
           "animated": true,
           "type": "Super Rare",
           "description": "(Level by Kin, Xeno, and MarioMak967)"
+        },
+        {
+          "chance": 2,
+          "filename": "baddream",
+          "name": "Bad Dream",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Noche)"
+        },
+        {
+          "chance": 2,
+          "filename": "whydontyouplaythem",
+          "name": "Why Don't You Play Them?",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Colon)"
         },
         {
           "chance": 0,
@@ -1150,10 +1204,10 @@
     },
     {
       "groupname": "pico8",
-      "basechance": 0,
+      "basechance": 4,
       "cards": [
         {
-          "chance": 3,
+          "chance": 2,
           "filename": "rhythmstacker",
           "name": "Rhythm Stacker",
           "tradeable": true,
@@ -1179,7 +1233,7 @@
     },
     {
       "groupname": "big bad bird",
-      "basechance": 0,
+      "basechance": 3,
       "cards": [
         {
           "chance": 3,
@@ -1217,7 +1271,7 @@
     },
     {
       "groupname": "inima",
-      "basechance": 0,
+      "basechance": 3,
       "cards": [
         {
           "chance": 3,

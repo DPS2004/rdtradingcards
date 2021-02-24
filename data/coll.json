@@ -119,6 +119,14 @@
     ],
     "recieve": "nicolec"
   },
+  {
+    "require": [
+      "yor",
+      "yosr",
+      "your"
+    ],
+    "recieve": "yoc"
+  },
     
   {
     "require": [
