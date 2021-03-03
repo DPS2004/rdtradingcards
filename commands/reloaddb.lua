@@ -31,6 +31,8 @@ function command.run(message, mt,overwrite)
     cmd.generategive = dofile('commands/generategive.lua')
     cmd.search = dofile('commands/search.lua')
     cmd.tell = dofile('commands/tell.lua')
+    cmd.beans = dofile('commands/beans.lua')
+    cmd.updatename = dofile('commands/updatename.lua')
 
     -- import reaction commands
     cmdre = {}
@@ -408,7 +410,25 @@ function command.run(message, mt,overwrite)
               v = trim(v)
               nmt[i]=v
             end
-            cmd.tell.run(message,nmt)      
+            cmd.tell.run(message,nmt) 
+          elseif string.sub(message.content, 0, 5+2) == prefix.. 'beans' then 
+            local mt = string.split(string.sub(message.content, 5+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            print(inspect(nmt))
+            cmd.beans.run(message,nmt)
+          elseif string.sub(message.content, 0, 10+2) == prefix.. 'updatename' then 
+            local mt = string.split(string.sub(message.content, 10+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            print(inspect(nmt))
+            cmd.updatename.run(message,nmt)
           end
         end)
         if not status then

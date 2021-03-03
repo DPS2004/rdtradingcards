@@ -54,7 +54,9 @@ local time = sw:getTime()
       else
         uj.inventory[newcard] = uj.inventory[newcard] + 1
       end
-      uj.name = message.author.name .. "#".. message.author.discriminator
+      if not uj.name then
+        uj.name = message.author.name .. "#".. message.author.discriminator
+      end
       uj.id = message.author.id
       uj.lastpull = time:toHours()
       print(message.author.name .. "#" .. message.author.discriminator .. " is the username")
