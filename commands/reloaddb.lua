@@ -8,6 +8,7 @@ function command.run(message, mt,overwrite)
     authcheck = cmember:hasRole(privatestuff.modroleid)
   end
   if authcheck then
+    print("authcheck passed")
     _G["privatestuff"] = dofile('privatestuff.lua')
     cmd.ping = dofile('commands/ping.lua')
     cmd.help = dofile('commands/help.lua')
@@ -37,15 +38,20 @@ function command.run(message, mt,overwrite)
     cmd.smell = dofile('commands/smell.lua')
     cmd.look = dofile('commands/look.lua')
     cmd.use = dofile('commands/use.lua')
+    
+    print("done loading commands")
 
     -- import reaction commands
     cmdre = {}
     cmdre.trade = dofile('reactions/trade.lua')
     cmdre.store = dofile('reactions/store.lua')
+    
+    print("done loading reactions")
 
     _G['defaultjson'] = {inventory={},storage={},medals={},lastpull=-24,lastprayer=-7}
 
     _G['debug'] = false
+    print("loading cards")
     cj =  io.open("data/cards.json", "r")
 
     _G['cdata'] = json.decode(cj:read("*a"))
