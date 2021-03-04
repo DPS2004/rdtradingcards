@@ -24,7 +24,12 @@ function command.run(message, mt)
 
         beginnings = {
           "You pull out your **____** card and smell it.",
-          "You pull out your **____** card and give it a whiff."
+          "You pull out your **____** card and give it a whiff.",
+          "You take out your **____** card and put it up your nose.",
+          "You whip out your **____** card and shove it in your face.",
+          "You pull out your **____** card and a doctah pops out.",
+          "You pry out your crumpled **____** card. It has lines eminating off it.",
+          "Your **____** card is not encased in a peanut."
         }
         random_beginning = beginnings[math.random(#beginnings)]
         message.channel:send(random_beginning:gsub("____", fntoname(curfilename)))
@@ -35,7 +40,7 @@ function command.run(message, mt)
             "The smell fondly reminds you of **____**",
             "It reeks of **____**",
             "Actually, you taste it. The card tastes like **____**",
-            "A foreign voice enters your mind, it talks about **____**",
+            "A foreign voice enters your mind. It talks about **____**",
             --"The Panda smites you with the power of **____**",
             "A nostalgic memory of **____** passes over you",
             "You suddenly have an intense feeling of yearning for **____**",
