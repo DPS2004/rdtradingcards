@@ -35,6 +35,8 @@ function command.run(message, mt,overwrite)
     cmd.updatename = dofile('commands/updatename.lua')
     cmd.pray = dofile('commands/pray.lua')
 	cmd.smell = dofile('commands/smell.lua')
+    cmd.look = dofile('commands/look.lua')
+    cmd.use = dofile('commands/use.lua')
 
     -- import reaction commands
     cmdre = {}
@@ -464,6 +466,22 @@ function command.run(message, mt,overwrite)
             end
             print(inspect(nmt))
             cmd.pray.run(message,nmt)
+          elseif string.sub(message.content, 0, 4+3) == prefix.. 'look ' then 
+            local mt = string.split(string.sub(message.content, 4+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            cmd.look.run(message,nmt)
+          elseif string.sub(message.content, 0, 3+3) == prefix.. 'use ' then 
+            local mt = string.split(string.sub(message.content, 3+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            cmd.use.run(message,nmt)
           end
         end)
         if not status then
