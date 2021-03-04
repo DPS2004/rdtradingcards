@@ -33,13 +33,14 @@ function command.run(message, mt,overwrite)
     cmd.tell = dofile('commands/tell.lua')
     cmd.beans = dofile('commands/beans.lua')
     cmd.updatename = dofile('commands/updatename.lua')
+    cmd.pray = dofile('commands/pray.lua')
 
     -- import reaction commands
     cmdre = {}
     cmdre.trade = dofile('reactions/trade.lua')
     cmdre.store = dofile('reactions/store.lua')
 
-    _G['defaultjson'] = {inventory={},storage={},medals={},lastpull=-24}
+    _G['defaultjson'] = {inventory={},storage={},medals={},lastpull=-24,lastprayer=-7}
 
     _G['debug'] = false
     cj =  io.open("data/cards.json", "r")
@@ -102,6 +103,7 @@ function command.run(message, mt,overwrite)
         cuj = dpf.loadjson("savedata/"..v,defaultjson)
         if cuj.lastpull then
           cuj.lastpull = -24
+          cuj.lastprayer = -24
         end
         dpf.savejson("savedata/"..v,cuj)
       end
@@ -429,6 +431,16 @@ function command.run(message, mt,overwrite)
             end
             print(inspect(nmt))
             cmd.updatename.run(message,nmt)
+          
+          elseif string.sub(message.content, 0, 4+2) == prefix.. 'pray' then 
+            local mt = string.split(string.sub(message.content, 4+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            print(inspect(nmt))
+            cmd.pray.run(message,nmt)
           end
         end)
         if not status then
