@@ -94,7 +94,7 @@
         {
           "chance": 1,
           "filename": "artexercise",
-          "name": "Art Exercise"
+          "name": "Art Exercise",
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
@@ -103,7 +103,7 @@
         {
           "chance": 1,
           "filename": "helpinghands",
-          "name": "Helping Hands"
+          "name": "Helping Hands",
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
@@ -117,6 +117,15 @@
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Cluttered Files"
+        },
+        {
+          "chance": 1,
+          "filename": "op10no4",
+          "name": "Op.10 No.4",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Revolution"
         },
         {
           "chance": 1,
@@ -206,7 +215,7 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "TODO"
+          "smell": "Mist"
         },
         {
           "chance": 2,
@@ -233,7 +242,7 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "TODO"
+          "smell": "Electricity"
         },
         {
           "chance": 2,

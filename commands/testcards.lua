@@ -5,7 +5,7 @@ function command.run(message, mt)
     print(message.author.name .. " did !testcards")
     for i,v in ipairs(cdb) do
       message.channel:send {
-        content = 'TESTCARDS: '.. v.name .. ' smells like ' getcardsmell(v.filename)
+        content = 'TESTCARDS: '.. v.name .. ' smells like ' .. getcardsmell(v.filename)
       }
       message.channel:send {
         file = "card_images/" .. v.filename .. ".png"
