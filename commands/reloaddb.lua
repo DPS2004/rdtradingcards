@@ -34,6 +34,7 @@ function command.run(message, mt,overwrite)
     cmd.beans = dofile('commands/beans.lua')
     cmd.updatename = dofile('commands/updatename.lua')
     cmd.pray = dofile('commands/pray.lua')
+	cmd.smell = dofile('commands/smell.lua')
 
     -- import reaction commands
     cmdre = {}
@@ -177,6 +178,20 @@ function command.run(message, mt,overwrite)
       return cdescription
     end
     
+	
+    _G['getcardsmell'] = function (x)
+      print("getting smell for " .. x)
+      csmell = nil
+      for i,v in ipairs(cdb) do
+        
+        if v.filename == x then
+          print(v.smell)
+          csmell = v.smell
+        end
+      end
+      return csmell 
+    end
+	
     
     _G['getcardanimated'] = function (x)
       print("getting animated for " .. x)
@@ -313,6 +328,14 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.show.run(message,nmt)      
+		  elseif string.sub(message.content, 0, 5+3) == prefix.. 'smell ' then 
+            local mt = string.split(string.sub(message.content, 5+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            cmd.smell.run(message,nmt)     
           elseif string.sub(message.content, 0, 4+3) == prefix.. 'give ' then 
             local mt = string.split(string.sub(message.content, 4+4),"/")
             local nmt = {}
