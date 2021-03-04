@@ -29,11 +29,11 @@
           "smell": "The Past"
         },
         {
-          "chance": 2,
+          "chance": 1,
           "filename": "samuraidubstep",
           "name": "Samurai Dubstep",
           "tradeable": true,
-          "type": "Super Rare",
+          "type": "Ultra Rare",
           "smell": "The Future"
         },
         {
@@ -71,6 +71,187 @@
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Super Glitchiness"
+        },
+        {
+          "chance": 1,
+          "filename": "cny",
+          "name": "Chinese New Year",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Celebration"
+        },
+        {
+          "chance": 1,
+          "filename": "beanshopper",
+          "name": "Beans Hopper",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "animated": true,
+          "description": "Samurai is jumping over a box of beans (Level by GDColon)",
+          "smell": "Beans"
+        },
+        {
+          "chance": 1,
+          "filename": "artexercise",
+          "name": "Art Exercise"
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Pencil Lead"
+        },
+        {
+          "chance": 1,
+          "filename": "helpinghands",
+          "name": "Helping Hands"
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Tears"
+        },
+        {
+          "chance": 1,
+          "filename": "wishicouldcareless",
+          "name": "wish i could care less",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Cluttered Files"
+        },
+        {
+          "chance": 1,
+          "filename": "intimatenight",
+          "name": "Intimate (Night Shift)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Role Reversal"
+        },
+        {
+          "chance": 1,
+          "filename": "songoftheseanight",
+          "name": "Song of the Sea (Night Shift)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Smooth Jazz"
+        },
+        {
+          "chance": 1,
+          "filename": "distantduetnight",
+          "name": "Distant Duet (Night Shift)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Mutual Loneliness"
+        },
+        {
+          "chance": 1,
+          "filename": "steinwayreprise",
+          "name": "Steinway Reprise",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Intense Piano"
+        },
+        {
+          "chance": 1,
+          "filename": "rhythmdogtor",
+          "name": "Rhythm Dogtor",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "The Vet's Office"
+        },
+        {
+          "chance": 1,
+          "filename": "bombsniffingpomeranian",
+          "name": "Bomb-Sniffing Pomeranian",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Fighting Game Tournaments"
+        },
+        {
+          "chance": 2,
+          "filename": "sleepygarden",
+          "name": "Sleepy Garden",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "School Dances"
+        },
+        {
+          "chance": 2,
+          "filename": "knowyou",
+          "name": "Know You",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "The Cosmos"
+        },
+        {
+          "chance": 2,
+          "filename": "puffpiece",
+          "name": "Puff Piece",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Nicotine"
+        },
+        {
+          "chance": 2,
+          "filename": "invisible",
+          "name": "Invisible",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "TODO"
+        },
+        {
+          "chance": 2,
+          "filename": "steinway",
+          "name": "Steinway",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Piano"
+        },
+        {
+          "chance": 2,
+          "filename": "distantduet",
+          "name": "Distant Duet",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Loneliness"
+        },
+        {
+          "chance": 2,
+          "filename": "svt",
+          "name": "Superventricular Tachycardia",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "TODO"
+        },
+        {
+          "chance": 2,
+          "filename": "lofi",
+          "name": "lo-fi hip-hop beats to treat patients to",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Music Production"
+        },
+        {
+          "chance": 2,
+          "filename": "songofthesea",
+          "name": "Song of the Sea",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Improvisation"
         }
       ]
     },

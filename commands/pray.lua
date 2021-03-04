@@ -6,10 +6,10 @@ local time = sw:getTime()
   if true then --ssss override
 
     if not uj.lastprayer then
-      uj.lastprayer = -7
+      uj.lastprayer = -3
     end
-    if uj.lastprayer + 7 <= time:toDays()then
-      message.channel:send('The card gods have listened to your plight. A token appears in your pocket.')
+    if uj.lastprayer + 3 <= time:toDays()then
+      message.channel:send('The Card Gods have listened to your plight. A **Token** appears in your pocket.')
       
       
       local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
@@ -27,7 +27,7 @@ local time = sw:getTime()
       uj.lastprayer = time:toDays()
       dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
     else
-      message.channel:send('Please wait ' .. math.ceil((uj.lastprayer + 7.00 - time:toDays())*10)/10 .. ' days before praying again.')
+      message.channel:send('Please wait ' .. math.ceil((uj.lastprayer + 3.00 - time:toDays())*10)/10 .. ' days before praying again.')
     end
   end
 end

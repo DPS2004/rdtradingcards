@@ -1,9 +1,10 @@
-local function adduse()
+local function adduse(uj)
   if uj.timesused == nil then
     uj.timesused = 1
   else
-    uj.timesused = uj.timesprayed + 1
+    uj.timesused = uj.timesused + 1
   end
+  return uj
 end
 
 local command = {}
@@ -16,9 +17,9 @@ function command.run(message, mt)
       if uj.tokens == nil then
         uj.tokens = 0
       end
-      if uj.tokens > 0 then
+      if uj.tokens > 1 then
         local newmessage = message.channel:send {
-          content = 'Will you put a **Token** into the **Strange Machine?** (tokens remaining: ' .. uj.tokens .. ')'
+          content = 'Will you put two **Tokens** into the **Strange Machine?** (tokens remaining: ' .. uj.tokens .. ')'
         }
         addreacts(newmessage)
         
@@ -28,7 +29,7 @@ function command.run(message, mt)
         
       else
         message.channel:send {
-          content = 'You try to turn the crank, but it does not budge. There is a slot above it. If only you had something to put in there...'
+          content = 'You try to turn the crank, but it does not budge. There is a slot above it that looks like it could fit two **Tokens**...'
         }
       end
     elseif string.lower(mt[1]) == "token"  then 
@@ -44,19 +45,19 @@ function command.run(message, mt)
         
         content = 'You flip a **Token** in the air. It lands on **' .. cflip .. '**.'
       }
-      adduse()
+      uj = adduse(uj)
     elseif string.lower(mt[1]) == "panda"  then       
       message.channel:send {
         
         content = ':flushed:'
       }
-      adduse()
+      uj = adduse(uj)
     elseif string.lower(mt[1]) == "throne" then       
       message.channel:send {
         
         content = 'It appears that the **Throne** is already in use by the **Panda**.'
       }
-      adduse()
+      uj = adduse(uj)
 
 
 
@@ -70,6 +71,7 @@ function command.run(message, mt)
   else
     message.channel:send("Sorry, but the c!use command expects 1 argument. Please see c!help for more details.")
   end
+  dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
 end
 return command
   

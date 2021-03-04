@@ -1,0 +1,23 @@
+{
+  "nothing" : {
+    "name": "Nothing",
+    "description": "Does nothing (default item)"
+  },
+  "rustysword": {
+    "name": "Rusty Sword",
+    "description": "Makes cards containing Samurai or Insomniac more likey to be pulled."
+  },
+  "cafemixtape": {
+    "name": "Cafe Mixtape",
+    "description": "Makes cards containing Cole Brew or Nicole Ting more likey to be pulled."
+  },
+  "oversisedstethoscope": {
+    "name": "Oversised Stethoscope",
+    "description": "Makes cards containing Paige or Ian more likey to be pulled."
+  },
+  "valentinesdaycard": {
+    "name": "Valentines Day Card",
+    "description": "Makes cards containing Logan or Hailey more likey to be pulled."
+  }
+
+}
