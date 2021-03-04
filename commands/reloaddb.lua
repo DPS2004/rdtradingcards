@@ -496,6 +496,24 @@ function command.run(message, mt,overwrite)
         end
       end
     end
+    print("handlereaction")
+    _G['handlereaction'] = function (reaction, userid)
+      
+      if userid ~= "767445265871142933" then
+        local ef = dpf.loadjson("savedata/events.json",{})
+        print('a reaction with an emoji named '.. reaction.emojiName .. ' was added to a message with the id of ' .. reaction.message.id ..' by a user with the id of' .. userid)
+        eom = ef[reaction.message.id]
+        if eom then
+          print('it is an event message being reacted to')
+          if eom.etype == "trade" then
+            cmdre.trade.run(ef, eom, reaction, userid)
+          elseif eom.etype == "store" then
+            print('it is a storage message being reacted to')
+            cmdre.store.run(ef, eom, reaction, userid)
+          end
+        end
+      end
+    end
     print("done loading")
     
     if not overwrite then

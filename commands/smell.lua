@@ -27,9 +27,9 @@ function command.run(message, mt)
           "You pull out your **____** card and give it a whiff.",
           "You take out your **____** card and put it up your nose.",
           "You whip out your **____** card and shove it in your face.",
-          "You pull out your **____** card and a doctah pops out.",
-          "You pry out your crumpled **____** card. It has lines eminating off it.",
-          "Your **____** card is not encased in a peanut."
+          --"You pull out your **____** card and a doctah pops out.",
+          "You pry out your crumpled **____** card. It has lines eminating off it."
+          --"Your **____** card is not encased in a peanut."
         }
         random_beginning = beginnings[math.random(#beginnings)]
         message.channel:send(random_beginning:gsub("____", fntoname(curfilename)))
@@ -50,6 +50,8 @@ function command.run(message, mt)
 
           message.channel:send(random_description:gsub("____", smell))
         end
+      elseif string.lower(request) == "panda" then
+        message.channel:send("The **Panda** smells of bamboo and needs to shower.")
       else
         print("user doesnt have card")
         message.channel:send("Sorry, but you don't have the **" .. fntoname(curfilename) .. "** card in your inventory or your storage.")

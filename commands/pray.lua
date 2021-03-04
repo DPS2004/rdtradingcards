@@ -1,7 +1,6 @@
 local command = {}
 function command.run(message, mt)
 local time = sw:getTime()
-  --message.channel:send('haha wowie! discord user '.. message.author.mentionString .. ' whos discord ID happens to be ' .. message.author.id ..' you got a card good job my broski')
   print(message.author.name .. " did !pull")
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
   if true then --ssss override
@@ -18,6 +17,11 @@ local time = sw:getTime()
         uj.tokens = 1
       else
         uj.tokens = uj.tokens + 1
+      end
+      if uj.timesprayed == nil then
+        uj.timesprayed = 1
+      else
+        uj.timesprayed = uj.timesprayed + 1
       end
       uj.id = message.author.id
       uj.lastprayer = time:toDays()
