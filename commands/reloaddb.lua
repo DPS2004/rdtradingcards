@@ -34,7 +34,7 @@ function command.run(message, mt,overwrite)
     cmd.beans = dofile('commands/beans.lua')
     cmd.updatename = dofile('commands/updatename.lua')
     cmd.pray = dofile('commands/pray.lua')
-	cmd.smell = dofile('commands/smell.lua')
+    cmd.smell = dofile('commands/smell.lua')
     cmd.look = dofile('commands/look.lua')
     cmd.use = dofile('commands/use.lua')
 
@@ -329,15 +329,7 @@ function command.run(message, mt,overwrite)
               v = trim(v)
               nmt[i]=v
             end
-            cmd.show.run(message,nmt)      
-		  elseif string.sub(message.content, 0, 5+3) == prefix.. 'smell ' then 
-            local mt = string.split(string.sub(message.content, 5+4),"/")
-            local nmt = {}
-            for i,v in ipairs(mt) do
-              v = trim(v)
-              nmt[i]=v
-            end
-            cmd.smell.run(message,nmt)     
+            cmd.show.run(message,nmt)         
           elseif string.sub(message.content, 0, 4+3) == prefix.. 'give ' then 
             local mt = string.split(string.sub(message.content, 4+4),"/")
             local nmt = {}
@@ -482,6 +474,14 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.use.run(message,nmt)
+          elseif string.sub(message.content, 0, 5+3) == prefix.. 'smell ' then 
+            local mt = string.split(string.sub(message.content, 5+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            cmd.smell.run(message,nmt)  
           end
         end)
         if not status then

@@ -6,7 +6,7 @@ function command.run(message, mt)
     local request = mt[1]
     print(request)
     local curfilename = texttofn(request)
-    
+
     print(curfilename)
     if curfilename ~= nil then
       local extension = ""
@@ -21,24 +21,28 @@ function command.run(message, mt)
       end
       if uj.inventory[curfilename] or uj.storage[curfilename] then
         print("user has card")
-        
-		beginnings = {"You pull out your ____ card and smell it.",
-					  "You pull out your ____ card and give it a whiff."}
-		random_beginning = beginnings[math.random(#beginnings)]
-		message.channel:send(random_beginning:gsub("____", fntoname(curfilename)))
-		
+
+        beginnings = {
+          "You pull out your **____** card and smell it.",
+          "You pull out your **____** card and give it a whiff."
+        }
+        random_beginning = beginnings[math.random(#beginnings)]
+        message.channel:send(random_beginning:gsub("____", fntoname(curfilename)))
+
         local smell = getcardsmell(curfilename)
         if smell then
-		  descriptions = {"The smell fondly reminds you of ____", 
-						  "It reeks of ____",
-						  "Actually, you taste it. The card tastes like ____",
-						  "A foreign voice enters your mind, it talks about ____",
-						  "The Panda smites you with the power of ____",
-						  "A nostalgic memory of ____ passes over you",
-						  "You suddenly have an intense feeling of yearning for ____",
-						  "Dramatic Message Here, Description: ____"}
-		  random_description = descriptions[math.random(#descriptions)]
-		
+          descriptions = {
+            "The smell fondly reminds you of **____**",
+            "It reeks of **____**",
+            "Actually, you taste it. The card tastes like **____**",
+            "A foreign voice enters your mind, it talks about **____**",
+            --"The Panda smites you with the power of **____**",
+            "A nostalgic memory of **____** passes over you",
+            "You suddenly have an intense feeling of yearning for **____**",
+            "Dramatic Message Here, Description: **____**"
+          }
+          random_description = descriptions[math.random(#descriptions)]
+
           message.channel:send(random_description:gsub("____", smell))
         end
       else
@@ -48,11 +52,9 @@ function command.run(message, mt)
     else
       message.channel:send("Sorry, but I could not find the " .. request .. " card in the database. Make sure that you spelled it right!")
     end
-  
-  -- whole lotta code to display a png image lmao
+
   else
     message.channel:send("Sorry, but the c!smell command expects 1 argument. Please see c!help for more details.")
   end
 end
 return command
-  
