@@ -7,11 +7,15 @@ function command.run(message, mt)
     local ujf = ("savedata/" .. message.author.id .. ".json")
 
     local uj = dpf.loadjson(ujf, defaultjson)
+    if not uj.equipped then
+      uj.equipped = "nothing"
+    end
     if not uj.items then
       uj.items = {nothing=true}
       uj.equipped = "nothing"
-      dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
+      
     end
+    
     if not uj.lastequip then
       uj.lastequip = -24
     end

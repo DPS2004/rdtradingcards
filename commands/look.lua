@@ -17,7 +17,7 @@ function command.run(message, mt)
       }
     elseif string.lower(mt[1]) == "strange machine" or string.lower(mt[1]) == "machine" then 
       message.channel:send {
-        content = 'The **Strange Machine** appears to have a slot for a **Token**, and a crank. The crank is worn, as if it has been **Used** many times.'
+        content = 'The **Strange Machine** appears to have a slot for two **Tokens**, and a crank. The crank is worn, as if it has been **Used** many times.'
       }
     elseif string.lower(mt[1]) == "token"  then 
       message.channel:send {

@@ -53,6 +53,7 @@ function command.run(message, mt,overwrite)
     cmdre.store = dofile('reactions/store.lua')
     cmdre.shred = dofile('reactions/shred.lua')
     cmdre.equip = dofile('reactions/equip.lua')
+    cmdre.usemachine = dofile('reactions/usemachine.lua')
     
     print("done loading reactions")
 
@@ -89,8 +90,16 @@ function command.run(message, mt,overwrite)
     _G['coll'] = dpf.loadjson("data/coll.json",defaultjson)
     print("loading medaldb")
     _G['medaldb'] = dpf.loadjson("data/medals.json",defaultjson)
-    print('loading itemdb')
+    print('loading itemdb')    
     _G['itemdb'] = dpf.loadjson("data/items.json",defaultjson)
+    
+    print("generating item pull table")
+    _G['itempt'] = {}
+    for k,v in pairs(itemdb) do
+      table.insert(itempt,k)
+    end
+    print(inspect(itempt))
+    
     print("loading medal requires")
     _G['medalrequires'] = dpf.loadjson("data/medalrequires.json",defaultjson)
 
@@ -626,6 +635,9 @@ function command.run(message, mt,overwrite)
           elseif eom.etype == "equip" then
             print('it is an equip message being reacted to')
             cmdre.equip.run(ef, eom, reaction, userid)
+          elseif eom.etype == "usemachine" then
+            print('it is a use machine message being reacted to')
+            cmdre.usemachine.run(ef, eom, reaction, userid)
           end
         end
       end
