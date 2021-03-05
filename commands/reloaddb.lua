@@ -42,6 +42,7 @@ function command.run(message, mt,overwrite)
     cmd.use = dofile('commands/use.lua')
     cmd.items = dofile('commands/items.lua')
     cmd.showitem = dofile('commands/showitem.lua')
+    cmd.equip = dofile('commands/equip.lua')
     
     print("done loading commands")
 
@@ -50,6 +51,7 @@ function command.run(message, mt,overwrite)
     cmdre.trade = dofile('reactions/trade.lua')
     cmdre.store = dofile('reactions/store.lua')
     cmdre.shred = dofile('reactions/shred.lua')
+    cmdre.equip = dofile('reactions/equip.lua')
     
     print("done loading reactions")
 
@@ -120,6 +122,7 @@ function command.run(message, mt,overwrite)
         if cuj.lastpull then
           cuj.lastpull = -24
           cuj.lastprayer = -24
+          cuj.lastequip = -24
         end
         dpf.savejson("savedata/"..v,cuj)
       end
@@ -577,6 +580,14 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.showitem.run(message,nmt) 
+          elseif string.sub(message.content, 0, 5+3) == prefix.. 'equip ' then 
+            local mt = string.split(string.sub(message.content, 5+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            cmd.equip.run(message,nmt)
           end
         end)
         if not status then
@@ -602,6 +613,9 @@ function command.run(message, mt,overwrite)
           elseif eom.etype == "shred" then
             print('it is a shred message being reacted to')
             cmdre.shred.run(ef, eom, reaction, userid)
+          elseif eom.etype == "equip" then
+            print('it is an equip message being reacted to')
+            cmdre.equip.run(ef, eom, reaction, userid)
           end
         end
       end

@@ -18,7 +18,7 @@ function command.run(message, mt)
       if uj.items[curfilename] then
         message.channel:send {
           content = 'Here it is! Your **'.. itemfntoname(curfilename) .. '**.\nThe description reads: ```'..itemdb[curfilename].description .. '``` The shorthand form is **' .. curfilename .. '**.',
-          --file = "medal_images/" .. curfilename .. ".png"
+          file = "items/" .. curfilename .. ".png"
         }
       else
         message.channel:send("Sorry, but you don't have the **" .. itemfntoname(curfilename) .. "** item.")
