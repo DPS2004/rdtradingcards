@@ -18,7 +18,7 @@ function command.run(message, mt)
     if item1 then
       if uj.inventory[item1] then
         print("success!!!!!")
-        if not uj.equipped == "brokenmouse" then
+        if uj.equipped ~= "brokenmouse" then
           local newmessage = message.channel:send("<@" .. uj.id .. ">, do you want to put your **" .. fntoname(item1) .. "** into storage? This cannot be undone. React to this post with :white_check_mark: to confirm and :x: to deny.")
           addreacts(newmessage)
           local tf = dpf.loadjson("savedata/events.json",{})
