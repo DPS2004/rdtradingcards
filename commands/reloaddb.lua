@@ -62,6 +62,9 @@ function command.run(message, mt,overwrite)
     _G['debug'] = false
     print("loading cards")
     cj =  io.open("data/cards.json", "r")
+    
+    print('loading itemdb')    
+    _G['itemdb'] = dpf.loadjson("data/items.json",defaultjson)
 
     _G['cdata'] = json.decode(cj:read("*a"))
     cj:close()
@@ -69,17 +72,29 @@ function command.run(message, mt,overwrite)
     --generate pull table
     _G['ptable'] = {}
     _G['cdb'] = {}
-    
+    for k,q in pairs(itemdb) do
+      ptable[k] = {}
+      for i,v in ipairs(cdata.groups) do
+        for w,x in ipairs(v.cards) do
+          local cmult = 1
+          if x.bonuses[k] then
+            cmult = 10 -- might tweak this??
+          end
+          for y=1,(cdata.basemult*v.basechance*x.chance*cmult) do
+            table.insert(ptable[k],x.filename)
+          end
+          table.insert(cdb,x)
+          print(x.name.. " loaded!")
+        end
+      end
+    end
     for i,v in ipairs(cdata.groups) do
       for w,x in ipairs(v.cards) do
-        
-        for y=1,(cdata.basemult*v.basechance*x.chance) do
-          table.insert(ptable,x.filename)
-        end
         table.insert(cdb,x)
         print(x.name.. " loaded!")
       end
     end
+    --dpf.savejson("savedata/pulltable.json",ptable)
     
     print("here is cdb")
     print(inspect(cdb))

@@ -1648,6 +1648,7 @@
           "description": "(Level by DPS2004 and Xeno)",
           "smell": "Mummies",
           "bonuses": {
+            "deluxebirdseed": true
           }
         },
         {

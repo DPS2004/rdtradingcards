@@ -6,9 +6,13 @@ local time = sw:getTime()
   local cooldown = 11.5
   
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
+  if not uj.equipped then
+    uj.equipped = "nothing"
+  end
   if uj.equipped == "stoppedwatch" then
     cooldown = 10
   end
+  
   if message.channel.id == privatestuff.specialchannelid then --ssss override
       message.channel:send('Pulling card...')
       local newcard = "ssss45"
@@ -35,7 +39,7 @@ local time = sw:getTime()
   
     if uj.lastpull + cooldown <= time:toHours() then
       message.channel:send('Pulling card...')
-      local newcard = ptable[math.random(#ptable)]
+      local newcard = ptable[uj.equipped][math.random(#ptable[uj.equipped])]
       local ncn = fntoname(newcard)
       print(ncn)
       local extension = ""
