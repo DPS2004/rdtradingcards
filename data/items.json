@@ -19,6 +19,14 @@
     "name": "Valentines Day Card",
     "description": "Makes cards containing Logan or Hailey more likey to be pulled."
   },
+  "hardcandy": {
+    "name": "Hard Candy",
+    "description": "Makes cards containing Mr. Stevenson or Mrs. Stevenson more likey to be pulled."
+  },
+  "deluxebirdseed": {
+    "name": "Deluxe Birdseed",
+    "description": "Makes cards containing a bird more likey to be pulled."
+  },
   "brokenmouse": {
     "name": "Broken Mouse",
     "description": "Skips yes/no prompt for storing cards, equipping items, and using the strange machine"

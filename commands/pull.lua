@@ -3,7 +3,12 @@ function command.run(message, mt)
 local time = sw:getTime()
   --message.channel:send('haha wowie! discord user '.. message.author.mentionString .. ' whos discord ID happens to be ' .. message.author.id ..' you got a card good job my broski')
   print(message.author.name .. " did !pull")
+  local cooldown = 11.5
+  
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
+  if uj.equipped == "stoppedwatch" then
+    cooldown = 10
+  end
   if message.channel.id == privatestuff.specialchannelid then --ssss override
       message.channel:send('Pulling card...')
       local newcard = "ssss45"
@@ -28,7 +33,7 @@ local time = sw:getTime()
       dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
   else
   
-    if uj.lastpull + 11.5 <= time:toHours() then
+    if uj.lastpull + cooldown <= time:toHours() then
       message.channel:send('Pulling card...')
       local newcard = ptable[math.random(#ptable)]
       local ncn = fntoname(newcard)
@@ -63,7 +68,7 @@ local time = sw:getTime()
       print("number of cards is " .. uj.inventory[newcard])
       dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
     else
-      message.channel:send('Please wait ' .. math.ceil((uj.lastpull + 11.5 - time:toHours())*10)/10 .. ' hours before pulling again.')
+      message.channel:send('Please wait ' .. math.ceil((uj.lastpull + cooldown - time:toHours())*10)/10 .. ' hours before pulling again.')
     end
   end
   cmd.checkcollectors.run(message,mt)

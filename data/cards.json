@@ -17,7 +17,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Gltichiness"
+          "smell": "Gltichiness",
+          "bonuses": {
+            "rustysword": true
+          }
         },
         {
           "chance": 2,
@@ -26,7 +29,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "The Past"
+          "smell": "The Past",
+          "bonuses": {
+            "rustysword": true
+          }
         },
         {
           "chance": 1,
@@ -34,7 +40,10 @@
           "name": "Samurai Dubstep",
           "tradeable": true,
           "type": "Ultra Rare",
-          "smell": "The Future"
+          "smell": "The Future",
+          "bonuses": {
+            "rustysword": true
+          }
         },
         {
           "chance": 2,
@@ -43,7 +52,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Coffee Beans"
+          "smell": "Coffee Beans",
+          "bonuses": {
+            "cafemixtape": true
+          }
         },
         {
           "chance": 2,
@@ -52,7 +64,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Understaffing"
+          "smell": "Understaffing",
+          "bonuses": {
+            "oversizedstethoscope": true
+          }
         },
         {
           "chance": 2,
@@ -61,7 +76,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Love"
+          "smell": "Love",
+          "bonuses": {
+            "valentinesdaycard": true
+          }
         },
         {
           "chance": 1,
@@ -70,7 +88,10 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Super Glitchiness"
+          "smell": "Super Glitchiness",
+          "bonuses": {
+            "rustysword": true
+          }
         },
         {
           "chance": 1,
@@ -79,7 +100,11 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Celebration"
+          "smell": "Celebration",
+          "bonuses": {
+            "rustysword": true,
+            "valentinesdaycard": true
+          }
         },
         {
           "chance": 1,
@@ -89,7 +114,10 @@
           "type": "Ultra Rare",
           "animated": true,
           "description": "Samurai is jumping over a box of beans (Level by GDColon)",
-          "smell": "Beans"
+          "smell": "Beans",
+          "bonuses": {
+            "rustysword": true
+          }
         },
         {
           "chance": 1,
@@ -98,7 +126,9 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Pencil Lead"
+          "smell": "Pencil Lead",
+          "bonuses": {
+          }
         },
         {
           "chance": 1,
@@ -107,7 +137,10 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Tears"
+          "smell": "Tears",
+          "bonuses": {
+            "oversizedstethoscope": true
+          }
         },
         {
           "chance": 1,
@@ -116,7 +149,10 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Cluttered Files"
+          "smell": "Cluttered Files",
+          "bonuses": {
+            "cafemixtape": true
+          }
         },
         {
           "chance": 1,
@@ -125,7 +161,11 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Revolution"
+          "smell": "Revolution",
+          "bonuses": {
+            "rustysword": true,
+            "valentinesdaycard": true
+          }
         },
         {
           "chance": 1,
@@ -134,7 +174,10 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Role Reversal"
+          "smell": "Role Reversal",
+          "bonuses": {
+            "valentinesdaycard": true
+          }
         },
         {
           "chance": 1,
@@ -143,7 +186,10 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Smooth Jazz"
+          "smell": "Smooth Jazz",
+          "bonuses": {
+            "cafemixtape": true
+          }
         },
         {
           "chance": 1,
@@ -152,7 +198,10 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Mutual Loneliness"
+          "smell": "Mutual Loneliness",
+          "bonuses": {
+            "hardcandy": true
+          }
         },
         {
           "chance": 1,
@@ -161,7 +210,11 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Intense Piano"
+          "smell": "Intense Piano",
+          "bonuses": {
+            "hardcandy": true,
+            "deluxebirdseed": true
+          }
         },
         {
           "chance": 1,
@@ -170,7 +223,9 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "The Vet's Office"
+          "smell": "The Vet's Office",
+          "bonuses": {
+          }
         },
         {
           "chance": 1,
@@ -179,7 +234,10 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Fighting Game Tournaments"
+          "smell": "Fighting Game Tournaments",
+          "bonuses": {
+            "cafemixtape": true
+          }
         },
         {
           "chance": 2,
@@ -188,7 +246,11 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "School Dances"
+          "smell": "School Dances",
+          "bonuses": {
+            "valentinesdaycard": true,
+            "deluxebirdseed": true
+          }
         },
         {
           "chance": 2,
@@ -197,7 +259,11 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "The Cosmos"
+          "smell": "The Cosmos",
+          "bonuses": {
+            "valentinesdaycard": true,
+            "cafemixtape": true
+          }
         },
         {
           "chance": 2,
@@ -206,7 +272,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Nicotine"
+          "smell": "Nicotine",
+          "bonuses": {
+            "cafemixtape": true
+          }
         },
         {
           "chance": 2,
@@ -215,7 +284,11 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Mist"
+          "smell": "Mist",
+          "bonuses": {
+            "rustysword": true,
+            "valentinesdaycard": true
+          }
         },
         {
           "chance": 2,
@@ -224,7 +297,11 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Piano"
+          "smell": "Piano",
+          "bonuses": {
+            "hardcandy": true,
+            "deluxebirdseed": true
+          }
         },
         {
           "chance": 2,
@@ -233,7 +310,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Loneliness"
+          "smell": "Loneliness",
+          "bonuses": {
+            "hardcandy": true
+          }
         },
         {
           "chance": 2,
@@ -242,7 +322,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Electricity"
+          "smell": "Electricity",
+          "bonuses": {
+            "cafemixtape": true
+          }
         },
         {
           "chance": 2,
@@ -251,7 +334,11 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Music Production"
+          "smell": "Music Production",
+          "bonuses": {
+            "cafemixtape": true,
+            "rustysword": true
+          }
         },
         {
           "chance": 2,
@@ -260,7 +347,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Improvisation"
+          "smell": "Improvisation",
+          "bonuses": {
+            "cafemixtape": true
+          }
         }
       ]
     },
@@ -280,7 +370,10 @@
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Winston Lee)",
-          "smell": "lofi beats"
+          "smell": "lofi beats",
+          "bonuses": {
+            "cafemixtape": true
+          }
         },
         {
           "chance": 2,
@@ -289,7 +382,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "lofi beats"
+          "smell": "lofi beats",
+          "bonuses": {
+            "cafemixtape": true
+          }
         },
         {
           "chance": 1,
@@ -298,7 +394,10 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "lofi beats"
+          "smell": "lofi beats",
+          "bonuses": {
+            "cafemixtape": true
+          }
         },
         {
           "chance": 1,
@@ -307,7 +406,10 @@
           "tradeable": true,
           "type": "Discontinued",
           "description": "(Art by Winston Lee)",
-          "smell": "lofi beats"
+          "smell": "lofi beats",
+          "bonuses": {
+            "cafemixtape": true
+          }
         },
         {
           "chance": 0,
@@ -316,7 +418,10 @@
           "tradeable": false,
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Cole (Art by Kyle Labriola)",
-          "smell": "lofi beats"
+          "smell": "lofi beats",
+          "bonuses": {
+            "cafemixtape": true
+          }
         }
       ]
     },
@@ -331,7 +436,9 @@
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Winston Lee)",
-          "smell": "Haybales"
+          "smell": "Haybales",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -340,7 +447,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Haybales"
+          "smell": "Haybales",
+          "bonuses": {
+          }
         },
         {
           "chance": 1,
@@ -349,7 +458,9 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Haybales"
+          "smell": "Haybales",
+          "bonuses": {
+          }
         },
         {
           "chance": 1,
@@ -358,7 +469,9 @@
           "tradeable": true,
           "type": "Discontinued",
           "description": "(Art by Winston Lee)",
-          "smell": "Game Development"
+          "smell": "Game Development",
+          "bonuses": {
+          }
         },
         {
           "chance": 0,
@@ -367,7 +480,9 @@
           "tradeable": false,
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Farmer (Art by Kyle Labriola)",
-          "smell": "Haybales"
+          "smell": "Haybales",
+          "bonuses": {
+          }
         }
       ]
     },
@@ -382,7 +497,10 @@
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Winston Lee)",
-          "smell": "Trains"
+          "smell": "Trains",
+          "bonuses": {
+            "valentinesdaycard": true
+          }
         },
         {
           "chance": 2,
@@ -391,7 +509,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Trains"
+          "smell": "Trains",
+          "bonuses": {
+            "valentinesdaycard": true
+          }
         },
         {
           "chance": 1,
@@ -400,7 +521,10 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Trains"
+          "smell": "Trains",
+          "bonuses": {
+            "valentinesdaycard": true
+          }
         },
         {
           "chance": 0,
@@ -409,7 +533,10 @@
           "tradeable": false,
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Hailey (Art by Kyle Labriola)",
-          "smell": "Trains"
+          "smell": "Trains",
+          "bonuses": {
+            "valentinesdaycard": true
+          }
         }
       ]
     },
@@ -424,7 +551,10 @@
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Winston Lee)",
-          "smell": "Gaming"
+          "smell": "Gaming",
+          "bonuses": {
+            "oversizedstethoscope": true
+          }
         },
         {
           "chance": 2,
@@ -433,7 +563,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Gaming"
+          "smell": "Gaming",
+          "bonuses": {
+            "oversizedstethoscope": true
+          }
         },
         {
           "chance": 1,
@@ -442,7 +575,10 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Gaming"
+          "smell": "Gaming",
+          "bonuses": {
+            "oversizedstethoscope": true
+          }
         },
         {
           "chance": 0,
@@ -451,7 +587,10 @@
           "tradeable": false,
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Ian (Art by Kyle Labriola)",
-          "smell": "Gaming"
+          "smell": "Gaming",
+          "bonuses": {
+            "oversizedstethoscope": true
+          }
         }
       ]
     },
@@ -466,7 +605,10 @@
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Winston Lee)",
-          "smell": "WiFi"
+          "smell": "WiFi",
+          "bonuses": {
+            "rustysword": true
+          }
         },
         {
           "chance": 2,
@@ -475,7 +617,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "WiFi"
+          "smell": "WiFi",
+          "bonuses": {
+            "rustysword": true
+          }
         },
         {
           "chance": 1,
@@ -484,7 +629,10 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "WiFi"
+          "smell": "WiFi",
+          "bonuses": {
+            "rustysword": true
+          }
         },
         {
           "chance": 0,
@@ -493,7 +641,10 @@
           "tradeable": false,
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of the Insomniac (Art by Kyle Labriola)",
-          "smell": "WiFi"
+          "smell": "WiFi",
+          "bonuses": {
+            "rustysword": true
+          }
         }
       ]
     },
@@ -508,7 +659,9 @@
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Winston Lee)",
-          "smell": "Fingernails"
+          "smell": "Fingernails",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -517,7 +670,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Fingernails"
+          "smell": "Fingernails",
+          "bonuses": {
+          }
         },
         {
           "chance": 1,
@@ -526,7 +681,9 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Fingernails"
+          "smell": "Fingernails",
+          "bonuses": {
+          }
         },
         {
           "chance": 0,
@@ -535,7 +692,9 @@
           "tradeable": false,
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of the Intern (Art by Kyle Labriola)",
-          "smell": "Fingernails"
+          "smell": "Fingernails",
+          "bonuses": {
+          }
         }
       ]
     },
@@ -550,7 +709,10 @@
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Winston Lee)",
-          "smell": "Young Love"
+          "smell": "Young Love",
+          "bonuses": {
+            "valentinesdaycard": true
+          }
         },
         {
           "chance": 2,
@@ -559,7 +721,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Young Love"
+          "smell": "Young Love",
+          "bonuses": {
+            "valentinesdaycard": true
+          }
         },
         {
           "chance": 1,
@@ -568,7 +733,10 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Young Love"
+          "smell": "Young Love",
+          "bonuses": {
+            "valentinesdaycard": true
+          }
         },
         {
           "chance": 0,
@@ -577,7 +745,10 @@
           "tradeable": false,
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Logan (Art by Kyle Labriola)",
-          "smell": "Young Love"
+          "smell": "Young Love",
+          "bonuses": {
+            "valentinesdaycard": true
+          }
         }
       ]
     },
@@ -592,7 +763,9 @@
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Winston Lee)",
-          "smell": "Coal"
+          "smell": "Coal",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -601,7 +774,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Coal"
+          "smell": "Coal",
+          "bonuses": {
+          }
         },
         {
           "chance": 1,
@@ -610,7 +785,9 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Coal"
+          "smell": "Coal",
+          "bonuses": {
+          }
         },
         {
           "chance": 0,
@@ -619,7 +796,9 @@
           "tradeable": false,
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Miner (Art by Kyle Labriola)",
-          "smell": "Coal"
+          "smell": "Coal",
+          "bonuses": {
+          }
         }
       ]
     },
@@ -634,7 +813,10 @@
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Winston Lee)",
-          "smell": "Old Women"
+          "smell": "Old Women",
+          "bonuses": {
+            "hardcandy": true
+          }
         },
         {
           "chance": 2,
@@ -643,7 +825,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Old Women"
+          "smell": "Old Women",
+          "bonuses": {
+            "hardcandy": true
+          }
         },
         {
           "chance": 1,
@@ -652,7 +837,10 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Old Women"
+          "smell": "Old Women",
+          "bonuses": {
+            "hardcandy": true
+          }
         },
         {
           "chance": 0,
@@ -661,7 +849,10 @@
           "tradeable": false,
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Mrs. Stevenson (Art by Kyle Labriola)",
-          "smell": "Old Women"
+          "smell": "Old Women",
+          "bonuses": {
+            "hardcandy": true
+          }
         }
       ]
     },
@@ -676,7 +867,10 @@
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Winston Lee)",
-          "smell": "Old Men"
+          "smell": "Old Men",
+          "bonuses": {
+            "hardcandy": true
+          }
         },
         {
           "chance": 2,
@@ -685,7 +879,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Old Men"
+          "smell": "Old Men",
+          "bonuses": {
+            "hardcandy": true
+          }
         },
         {
           "chance": 1,
@@ -694,7 +891,10 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Old Men"
+          "smell": "Old Men",
+          "bonuses": {
+            "hardcandy": true
+          }
         },
         {
           "chance": 0,
@@ -703,7 +903,10 @@
           "tradeable": false,
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Mr. Stevenson (Art by Kyle Labriola)",
-          "smell": "Old Men"
+          "smell": "Old Men",
+          "bonuses": {
+            "hardcandy": true
+          }
         }
       ]
     },
@@ -718,7 +921,10 @@
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Winston Lee)",
-          "smell": "Sweat and Tears"
+          "smell": "Sweat and Tears",
+          "bonuses": {
+            "oversizedstethoscope": true
+          }
         },
         {
           "chance": 2,
@@ -727,7 +933,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Sweat and Tears"
+          "smell": "Sweat and Tears",
+          "bonuses": {
+            "oversizedstethoscope": true
+          }
         },
         {
           "chance": 1,
@@ -736,7 +945,10 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Sweat and Tears"
+          "smell": "Sweat and Tears",
+          "bonuses": {
+            "oversizedstethoscope": true
+          }
         },
         {
           "chance": 0,
@@ -745,7 +957,10 @@
           "tradeable": false,
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Paige (Art by Kyle Labriola)",
-          "smell": "Sweat and Tears"
+          "smell": "Sweat and Tears",
+          "bonuses": {
+            "oversizedstethoscope": true
+          }
         }
       ]
     },
@@ -760,7 +975,9 @@
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Winston Lee)",
-          "smell": "Democracy"
+          "smell": "Democracy",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -769,7 +986,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Democracy"
+          "smell": "Democracy",
+          "bonuses": {
+          }
         },
         {
           "chance": 1,
@@ -778,7 +997,9 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Democracy"
+          "smell": "Democracy",
+          "bonuses": {
+          }
         },
         {
           "chance": 0,
@@ -787,7 +1008,9 @@
           "tradeable": false,
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of the Politician (Art by Kyle Labriola)",
-          "smell": "Democracy"
+          "smell": "Democracy",
+          "bonuses": {
+          }
         }
       ]
     },
@@ -802,7 +1025,10 @@
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Winston Lee)",
-          "smell": "Metal"
+          "smell": "Metal",
+          "bonuses": {
+            "rustysword": true
+          }
         },
         {
           "chance": 2,
@@ -811,7 +1037,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Metal"
+          "smell": "Metal",
+          "bonuses": {
+            "rustysword": true
+          }
         },
         {
           "chance": 1,
@@ -820,7 +1049,10 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Metal"
+          "smell": "Metal",
+          "bonuses": {
+            "rustysword": true
+          }
         },
         {
           "chance": 0,
@@ -829,7 +1061,10 @@
           "tradeable": false,
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Samurai (Art by Kyle Labriola)",
-          "smell": "Samurai"
+          "smell": "Samurai",
+          "bonuses": {
+            "rustysword": true
+          }
         }
       ]
     },
@@ -844,7 +1079,10 @@
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Winston Lee)",
-          "smell": "Minimum Wage"
+          "smell": "Minimum Wage",
+          "bonuses": {
+            "cafemixtape": true
+          }
         },
         {
           "chance": 2,
@@ -853,7 +1091,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola, edited by Lumina)",
-          "smell": "Minimum Wage"
+          "smell": "Minimum Wage",
+          "bonuses": {
+            "cafemixtape": true
+          }
         },
         {
           "chance": 1,
@@ -862,7 +1103,10 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola, edited by Lumina)",
-          "smell": "Minimum Wage"
+          "smell": "Minimum Wage",
+          "bonuses": {
+            "cafemixtape": true
+          }
         },
         {
           "chance": 0,
@@ -871,7 +1115,10 @@
           "tradeable": false,
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Nicole Ting (Art by Lumina, based on art by Kyle Labriola)",
-          "smell": "Minimum Wage"
+          "smell": "Minimum Wage",
+          "bonuses": {
+            "cafemixtape": true
+          }
         }
       ]
     },
@@ -886,7 +1133,9 @@
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Adipemdragon)",
-          "smell": "Imagination"
+          "smell": "Imagination",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -895,7 +1144,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola, edited by Lumina)",
-          "smell": "Imagination"
+          "smell": "Imagination",
+          "bonuses": {
+          }
         },
         {
           "chance": 1,
@@ -904,7 +1155,9 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola, edited by Lumina)",
-          "smell": "Imagination"
+          "smell": "Imagination",
+          "bonuses": {
+          }
         },
         {
           "chance": 0,
@@ -913,7 +1166,9 @@
           "tradeable": false,
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Lucia Moon (Art by Lumina, based on art by Kyle Labriola)",
-          "smell": "Imagination"
+          "smell": "Imagination",
+          "bonuses": {
+          }
         }
       ]
     },
@@ -928,7 +1183,9 @@
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Winston Lee)",
-          "smell": "Freestyle Rap"
+          "smell": "Freestyle Rap",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -937,7 +1194,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Art by DeadlySprinklez)",
-          "smell": "Freestyle Rap"
+          "smell": "Freestyle Rap",
+          "bonuses": {
+          }
         },
         {
           "chance": 0,
@@ -946,7 +1205,9 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by DeadlySprinklez)",
-          "smell": "Freestyle Rap"
+          "smell": "Freestyle Rap",
+          "bonuses": {
+          }
         },
         {
           "chance": 0,
@@ -955,7 +1216,9 @@
           "tradeable": false,
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Yo (Art by Lumina, based on art by Kyle Labriola)",
-          "smell": "Freestyle Rap"
+          "smell": "Freestyle Rap",
+          "bonuses": {
+          }
         }
       ]
     },
@@ -975,7 +1238,9 @@
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Time Bending"
+          "smell": "Time Bending",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -984,7 +1249,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Time Bending"
+          "smell": "Time Bending",
+          "bonuses": {
+          }
         },
         {
           "chance": 1,
@@ -993,7 +1260,9 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Time Bending"
+          "smell": "Time Bending",
+          "bonuses": {
+          }
         },
         {
           "chance": 0.25,
@@ -1002,7 +1271,9 @@
           "tradeable": true,
           "type": "Discontinued",
           "description": "(Art by Kyle Labriola)",
-          "smell": "3000 Pixels"
+          "smell": "3000 Pixels",
+          "bonuses": {
+          }
         },
         {
           "chance": 0.5,
@@ -1011,7 +1282,9 @@
           "tradeable": true,
           "type": "Discontinued",
           "description": "(Art by Kyle Labriola)",
-          "smell": "3000 Pixels"
+          "smell": "3000 Pixels",
+          "bonuses": {
+          }
         },
         {
           "chance": 0.25,
@@ -1020,7 +1293,9 @@
           "tradeable": true,
           "type": "Discontinued",
           "description": "(Art by Kyle Labriola)",
-          "smell": "3000 Pixels"
+          "smell": "3000 Pixels",
+          "bonuses": {
+          }
         }
       ]
     },
@@ -1035,7 +1310,9 @@
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Overcharting"
+          "smell": "Overcharting",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -1044,7 +1321,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Overcharting"
+          "smell": "Overcharting",
+          "bonuses": {
+          }
         },
         {
           "chance": 1,
@@ -1053,7 +1332,9 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Overcharting"
+          "smell": "Overcharting",
+          "bonuses": {
+          }
         }
       ]
     },
@@ -1068,7 +1349,9 @@
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Kneecaps"
+          "smell": "Kneecaps",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -1077,7 +1360,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Kneecaps"
+          "smell": "Kneecaps",
+          "bonuses": {
+          }
         },
         {
           "chance": 1,
@@ -1086,7 +1371,9 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Kneecaps"
+          "smell": "Kneecaps",
+          "bonuses": {
+          }
         }
       ]
     },
@@ -1101,7 +1388,9 @@
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Too Much Gray"
+          "smell": "Too Much Gray",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -1110,7 +1399,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Too Much Gray"
+          "smell": "Too Much Gray",
+          "bonuses": {
+          }
         },
         {
           "chance": 1,
@@ -1119,7 +1410,9 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Too Much Gray"
+          "smell": "Too Much Gray",
+          "bonuses": {
+          }
         }
       ]
     },
@@ -1134,7 +1427,10 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Butterflies"
+          "smell": "Butterflies",
+          "bonuses": {
+            "rustysword": true
+          }
         },
         {
           "chance": 1,
@@ -1143,7 +1439,10 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Old Age"
+          "smell": "Old Age",
+          "bonuses": {
+            "hardcandy": true
+          }
         },
         {
           "chance": 1,
@@ -1152,7 +1451,10 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Blushing"
+          "smell": "Blushing",
+          "bonuses": {
+            "valentinesdaycard": true
+          }
         },
         {
           "chance": 1,
@@ -1161,7 +1463,10 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Overworking"
+          "smell": "Overworking",
+          "bonuses": {
+            "oversizedstethoscope": true
+          }
         },
         {
           "chance": 0,
@@ -1170,7 +1475,10 @@
           "tradeable": false,
           "type": "Collector's",
           "description": "Requires Samurai (Collector's) and The Samurai Group (Art by Kyle Labriola)",
-          "smell": "Butterflies"
+          "smell": "Butterflies",
+          "bonuses": {
+            "rustysword": true
+          }
         },
         {
           "chance": 0,
@@ -1179,7 +1487,10 @@
           "tradeable": false,
           "type": "Collector's",
           "description": "Requires Mrs. Stevenson (Collector's), Mr. Stevenson (Collector's), and The Stevenson Group (Art by Kyle Labriola)",
-          "smell": "Old Age"
+          "smell": "Old Age",
+          "bonuses": {
+            "hardcandy": true
+          }
         },
         {
           "chance": 0,
@@ -1188,7 +1499,10 @@
           "tradeable": false,
           "type": "Collector's",
           "description": "Requires Logan (Collector's), Hailey (Collector's), and The Couple Group (Art by Kyle Labriola)",
-          "smell": "Blushing"
+          "smell": "Blushing",
+          "bonuses": {
+            "valentinesdaycard": true
+          }
         },
         {
           "chance": 0,
@@ -1197,7 +1511,10 @@
           "tradeable": false,
           "type": "Collector's",
           "description": "Requires Paige (Collector's), Ian (Collector's), and The Doctor Group (Art by Kyle Labriola)",
-          "smell": "Overworking"
+          "smell": "Overworking",
+          "bonuses": {
+            "oversizedstethoscope": true
+          }
         }
       ]
     },
@@ -1212,7 +1529,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by fartiliumstation)",
-          "smell": "Otherworldly Beings"
+          "smell": "Otherworldly Beings",
+          "bonuses": {
+            "valentinesdaycard": true
+          }
         },
         {
           "chance": 2,
@@ -1221,7 +1541,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by noonhead)",
-          "smell": "Two Halves of a Whole"
+          "smell": "Two Halves of a Whole",
+          "bonuses": {
+            "rustysword": true
+          }
         },
         {
           "chance": 2,
@@ -1230,7 +1553,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by Nocallia)",
-          "smell": "Elliptical Orbits"
+          "smell": "Elliptical Orbits",
+          "bonuses": {
+            "valentinesdaycard": true
+          }
         },
         {
           "chance": 2,
@@ -1239,7 +1565,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by CV35W)",
-          "smell": "Murder"
+          "smell": "Murder",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -1248,7 +1576,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by Some J Name, Het, DPS2004, and Samario)",
-          "smell": "Freshly Cooked Lobster"
+          "smell": "Freshly Cooked Lobster",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -1257,7 +1587,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by thefinals)",
-          "smell": "Ectoplasm"
+          "smell": "Ectoplasm",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -1266,7 +1598,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by Szprycha)",
-          "smell": "16 Bits"
+          "smell": "16 Bits",
+          "bonuses": {
+            "rustysword": true
+          }
         },
         {
           "chance": 2,
@@ -1275,7 +1610,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by Kneeckoh)",
-          "smell": "Quadrilateral Shapes"
+          "smell": "Quadrilateral Shapes",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -1284,7 +1621,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by Samario)",
-          "smell": "[undefined]"
+          "smell": "[undefined]",
+          "bonuses": {
+            "oversizedstethoscope": true
+          }
         },
         {
           "chance": 2,
@@ -1294,7 +1634,10 @@
           "animated": true,
           "type": "Super Rare",
           "description": "(Level by thefinals)",
-          "smell": "Fluoride"
+          "smell": "Fluoride",
+          "bonuses": {
+            "valentinesdaycard": true
+          }
         },
         {
           "chance": 2,
@@ -1303,7 +1646,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by DPS2004 and Xeno)",
-          "smell": "Mummies"
+          "smell": "Mummies",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -1312,7 +1657,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by CV35W)",
-          "smell": "Spiderwebs"
+          "smell": "Spiderwebs",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -1321,7 +1668,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by thefinals)",
-          "smell": "Pollen"
+          "smell": "Pollen",
+          "bonuses": {
+            "valentinesdaycard": true
+          }
         },
         {
           "chance": 2,
@@ -1330,7 +1680,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by auth)",
-          "smell": "Emergency Services"
+          "smell": "Emergency Services",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -1339,7 +1691,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by Noche)",
-          "smell": "Crystals"
+          "smell": "Crystals",
+          "bonuses": {
+            "oversizedstethoscope": true
+          }
         },
         {
           "chance": 2,
@@ -1348,7 +1703,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by fartiliumstation)",
-          "smell": "Hollywood"
+          "smell": "Hollywood",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -1357,7 +1714,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by MarioMak967)",
-          "smell": "Mahogany"
+          "smell": "Mahogany",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -1366,7 +1725,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by void)",
-          "smell": "Dabbing"
+          "smell": "Dabbing",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -1375,7 +1736,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by Kin, Xeno, MarioMak967, and Econ)",
-          "smell": "Maple Syrup"
+          "smell": "Maple Syrup",
+          "bonuses": {
+            "deluxebirdseed": true
+          }
         },
         {
           "chance": 2,
@@ -1384,7 +1748,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by Kin)",
-          "smell": "Potted Plants"
+          "smell": "Potted Plants",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -1393,7 +1759,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by Nocallia)",
-          "smell": "Airplane Peanuts"
+          "smell": "Airplane Peanuts",
+          "bonuses": {
+            "valentinesdaycard": true
+          }
         },
         {
           "chance": 2,
@@ -1402,7 +1771,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by Kin, Xeno, MarioMak967, and Econ)",
-          "smell": "High-end Audio Equipment"
+          "smell": "High-end Audio Equipment",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -1411,7 +1782,11 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by MarioMak967)",
-          "smell": "The Industrial Revolution"
+          "smell": "The Industrial Revolution",
+          "bonuses": {
+            "valentinesdaycard": true,
+            "rustysword": true
+          }
         },
         {
           "chance": 2,
@@ -1420,7 +1795,12 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by Bayou)",
-          "smell": "Flamewars"
+          "smell": "Flamewars",
+          "bonuses": {
+            "valentinesdaycard": true,
+            "rustysword": true,
+            "cafemixtape": true
+          }
         },
         {
           "chance": 2,
@@ -1429,7 +1809,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by InfectiousStepocity)",
-          "smell": "16ths"
+          "smell": "16ths",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -1438,7 +1820,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by Lin Gamerz and Xeno)",
-          "smell": "Tryhards"
+          "smell": "Tryhards",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -1447,7 +1831,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by Emdyion, Samario, DPS2004, thefinals, Some J Name, and Xeno)",
-          "smell": "Fun:tm:"
+          "smell": "Fun:tm:",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -1456,7 +1842,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by Emdyion)",
-          "smell": "Dubstep"
+          "smell": "Dubstep",
+          "bonuses": {
+            "cafemixtape": true
+          }
         },
         {
           "chance": 2,
@@ -1465,7 +1854,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by notDonte and Xeno)",
-          "smell": "Protein Shakes"
+          "smell": "Protein Shakes",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -1474,7 +1865,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by CV35W)",
-          "smell": "Guitar Solos"
+          "smell": "Guitar Solos",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -1484,7 +1877,9 @@
           "animated": true,
           "type": "Super Rare",
           "description": "(Level by Kin, Xeno, and MarioMak967)",
-          "smell": "The 7th Layer of Hell"
+          "smell": "The 7th Layer of Hell",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -1493,7 +1888,11 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by Noche)",
-          "smell": "nightmarenightmarenightmarenightmare"
+          "smell": "nightmarenightmarenightmarenightmare",
+          "bonuses": {
+            "rustysword": true,
+            "oversizedstethoscope": true
+          }
         },
         {
           "chance": 2,
@@ -1502,7 +1901,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by Colon)",
-          "smell": "FlingSmash for the Nintendo Wii"
+          "smell": "FlingSmash for the Nintendo Wii",
+          "bonuses": {
+            "cafemixtape": true
+          }
         },
         {
           "chance": 0,
@@ -1511,7 +1913,10 @@
           "tradeable": false,
           "type": "Collector's",
           "description": "(Level by auth, Noche, and notDonte)",
-          "smell": "Pure Crystals"
+          "smell": "Pure Crystals",
+          "bonuses": {
+            "oversizedstethoscope": true
+          }
         }
       ]
     },
@@ -1526,7 +1931,9 @@
           "tradeable": true,
           "type": "Special",
           "description": "(this field intentionally left blank)",
-          "smell": "THE ONE"
+          "smell": "THE ONE",
+          "bonuses": {
+          }
         }
       ]
     },
@@ -1542,7 +1949,9 @@
           "type": "PICO-8",
           "pico": true,
           "description": "(Game by auburn. Playable with the PICO-8 app or online at https://auburnsummer.itch.io/rhythm-stacker . The password is rhythmdoctah)",
-          "smell": "Pancakes"
+          "smell": "Pancakes",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -1552,7 +1961,9 @@
           "type": "PICO-8",
           "pico": true,
           "description": "(Game by auburn. Playable with the PICO-8 app or online at https://auburnsummer.itch.io/acofoi . The password is meaculpa)",
-          "smell": "Indecisiveness"
+          "smell": "Indecisiveness",
+          "bonuses": {
+          }
         }
       ]
     },
@@ -1572,7 +1983,10 @@
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Noche)",
-          "smell": "Fall Damage"
+          "smell": "Fall Damage",
+          "bonuses": {
+            "deluxebirdseed": true
+          }
         },
         {
           "chance": 2,
@@ -1581,7 +1995,10 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Art by Noche)",
-          "smell": "Fall Damage"
+          "smell": "Fall Damage",
+          "bonuses": {
+            "deluxebirdseed": true
+          }
         },
         {
           "chance": 1,
@@ -1590,7 +2007,10 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Noche)",
-          "smell": "Fall Damage"
+          "smell": "Fall Damage",
+          "bonuses": {
+            "deluxebirdseed": true
+          }
         },
         {
           "chance": 0,
@@ -1599,7 +2019,10 @@
           "tradeable": false,
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Big Bad Bird (Art by Noche)",
-          "smell": "Fall Damage"
+          "smell": "Fall Damage",
+          "bonuses": {
+            "deluxebirdseed": true
+          }
         }
       ]
     },
@@ -1614,7 +2037,9 @@
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by AdipemDragon)",
-          "smell": "Icicles"
+          "smell": "Icicles",
+          "bonuses": {
+          }
         },
         {
           "chance": 2,
@@ -1623,7 +2048,9 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Art by Kin)",
-          "smell": "Icicles"
+          "smell": "Icicles",
+          "bonuses": {
+          }
         },
         {
           "chance": 1,
@@ -1632,7 +2059,9 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Kin)",
-          "smell": "Icicles"
+          "smell": "Icicles",
+          "bonuses": {
+          }
         },
         {
           "chance": 0,
@@ -1641,7 +2070,9 @@
           "tradeable": false,
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Inima (Art by Kin)",
-          "smell": "Icicles"
+          "smell": "Icicles",
+          "bonuses": {
+          }
         }
       ]
     }
