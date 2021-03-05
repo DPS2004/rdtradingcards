@@ -43,6 +43,7 @@ function command.run(message, mt,overwrite)
     cmd.items = dofile('commands/items.lua')
     cmd.showitem = dofile('commands/showitem.lua')
     cmd.equip = dofile('commands/equip.lua')
+    cmd.yeetalltokens = dofile('commands/yeetalltokens.lua')
     
     print("done loading commands")
 
@@ -454,6 +455,15 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.crash.run(message,mt)
+          elseif string.sub(message.content, 0, 13+3) == prefix.. 'yeetalltokens' then 
+            print("this is a call for crash")
+            local mt = string.split(string.sub(message.content, 13+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            cmd.yeetalltokens.run(message,mt)
           elseif string.sub(message.content, 0, 9+3) == prefix.. 'showmedal ' then 
             local mt = string.split(string.sub(message.content, 9+4),"/")
             local nmt = {}
