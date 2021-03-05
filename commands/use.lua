@@ -17,12 +17,12 @@ function command.run(message, mt)
       if uj.tokens == nil then
         uj.tokens = 0
       end
-      if uj.tokens > 1 then
+      if uj.tokens >= 2 then
         local newmessage = message.channel:send {
           content = 'Will you put two **Tokens** into the **Strange Machine?** (tokens remaining: ' .. uj.tokens .. ')'
         }
         addreacts(newmessage)
-        
+        message.channel:send("IF YOU ARE SEEING THIS, SOMETHING HAS GONE WRONG!!!! <@290582109750427648>")
         local tf = dpf.loadjson("savedata/events.json",{})
         tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "usemachine",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
         dpf.savejson("savedata/events.json",tf)
@@ -61,9 +61,11 @@ function command.run(message, mt)
 
 
 
+
     else
       message.channel:send("Sorry, but I don't know how to use " .. mt[1] .. ".")
     end
+    
 
 
 

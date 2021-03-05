@@ -15,7 +15,8 @@ function command.run(message, mt)
   local numkey = 0
   
   if not uj.items then
-    uj.items = {nothing=true}
+    uj.items = {}
+    uj.items["nothing"] = true
     uj.equipped = "nothing"
     dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
   end

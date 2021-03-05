@@ -55,7 +55,7 @@ function command.run(message, mt,overwrite)
     
     print("done loading reactions")
 
-    _G['defaultjson'] = {inventory={},storage={},medals={},items={},lastpull=-24,lastprayer=-7}
+    _G['defaultjson'] = {inventory={},storage={},medals={},items={nothing=true},lastpull=-24,lastprayer=-7}
 
     _G['debug'] = false
     print("loading cards")

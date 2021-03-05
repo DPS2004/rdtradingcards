@@ -10,6 +10,7 @@ function command.run(message, mt)
     if not uj.items then
       uj.items = {nothing=true}
       uj.equipped = "nothing"
+      dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
     end
     if not uj.lastequip then
       uj.lastequip = -24

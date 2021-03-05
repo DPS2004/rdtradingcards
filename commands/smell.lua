@@ -43,19 +43,20 @@ function command.run(message, mt)
             "A foreign voice enters your mind. It talks about **____**",
             --"The Panda smites you with the power of **____**",
             "A nostalgic memory of **____** passes over you",
-            "You suddenly have an intense feeling of yearning for **____**",
-            "Dramatic Message Here, Description: **____**"
+            "You suddenly have an intense feeling of yearning for **____**"
+            --"Dramatic Message Here, Description: **____**"
           }
           random_description = descriptions[math.random(#descriptions)]
 
           message.channel:send(random_description:gsub("____", smell))
         end
-      elseif string.lower(request) == "panda" then
-        message.channel:send("The **Panda** smells of bamboo and needs to shower.")
+      
       else
         print("user doesnt have card")
         message.channel:send("Sorry, but you don't have the **" .. fntoname(curfilename) .. "** card in your inventory or your storage.")
       end
+    elseif string.lower(request) == "panda" then
+        message.channel:send("The **Panda** smells of bamboo and needs to shower.")
     else
       message.channel:send("Sorry, but I could not find the " .. request .. " card in the database. Make sure that you spelled it right!")
     end
