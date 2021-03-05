@@ -18,6 +18,22 @@
   "valentinesdaycard": {
     "name": "Valentines Day Card",
     "description": "Makes cards containing Logan or Hailey more likey to be pulled."
+  },
+  "brokenmouse": {
+    "name": "Broken Mouse",
+    "description": "Skips yes/no prompt for storing cards, equipping items, and using the strange machine"
+  },
+  "stoppedwatch": {
+    "name": "Stopped Watch",
+    "description": "Brings the c!pull timer down to 10 hours."
+  },
+  "faithfulnecklace": {
+    "name": "Faithful Necklace",
+    "description": "Brings the c!pray timer down to 2.5 days."
+  },
+    "coolhat": {
+    "name": "Cool Hat",
+    "description": "Makes you look cooler."
   }
 
 }

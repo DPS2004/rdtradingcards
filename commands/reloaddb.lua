@@ -32,12 +32,16 @@ function command.run(message, mt,overwrite)
     cmd.generategive = dofile('commands/generategive.lua')
     cmd.search = dofile('commands/search.lua')
     cmd.tell = dofile('commands/tell.lua')
+    cmd.tellimage = dofile('commands/tellimage.lua')
     cmd.beans = dofile('commands/beans.lua')
     cmd.updatename = dofile('commands/updatename.lua')
     cmd.pray = dofile('commands/pray.lua')
     cmd.smell = dofile('commands/smell.lua')
+    cmd.shred = dofile('commands/shred.lua')
     cmd.look = dofile('commands/look.lua')
     cmd.use = dofile('commands/use.lua')
+    cmd.items = dofile('commands/items.lua')
+    cmd.showitem = dofile('commands/showitem.lua')
     
     print("done loading commands")
 
@@ -45,10 +49,11 @@ function command.run(message, mt,overwrite)
     cmdre = {}
     cmdre.trade = dofile('reactions/trade.lua')
     cmdre.store = dofile('reactions/store.lua')
+    cmdre.shred = dofile('reactions/shred.lua')
     
     print("done loading reactions")
 
-    _G['defaultjson'] = {inventory={},storage={},medals={},lastpull=-24,lastprayer=-7}
+    _G['defaultjson'] = {inventory={},storage={},medals={},items={},lastpull=-24,lastprayer=-7}
 
     _G['debug'] = false
     print("loading cards")
@@ -81,6 +86,8 @@ function command.run(message, mt,overwrite)
     _G['coll'] = dpf.loadjson("data/coll.json",defaultjson)
     print("loading medaldb")
     _G['medaldb'] = dpf.loadjson("data/medals.json",defaultjson)
+    print('loading itemdb')
+    _G['itemdb'] = dpf.loadjson("data/items.json",defaultjson)
     print("loading medal requires")
     _G['medalrequires'] = dpf.loadjson("data/medalrequires.json",defaultjson)
 
@@ -173,6 +180,54 @@ function command.run(message, mt,overwrite)
       return ctype
     end
     
+    ---aaaaaa
+    _G['itemnametofn'] = function (x)
+      for k,v in pairs(itemdb) do
+        if string.lower(v.name) == string.lower(x) then
+          local match = k
+          return k
+        end
+      end
+    end
+    _G['itemfntoname'] = function (x)
+      print("finding "..x)
+      for k,v in pairs(itemdb) do
+        if string.lower(k) == string.lower(x) then
+          local match = v.name
+          print(x.." = "..v.name)
+          return v.name
+        end
+      end
+      
+    end
+
+    _G['itemtexttofn'] = function (x)
+      local cfn = itemnametofn(x)
+      if cfn == nil then
+        cfn = itemfntoname(x)
+        if cfn ~= nil then
+          cfn = string.lower(x)
+        end
+      end
+      return cfn
+    end
+    
+    _G['getcardtype'] = function (x)
+      ctype = nil
+      for i,v in ipairs(cdb) do
+        
+        if v.filename == x then
+          print(v.filename)
+          ctype = v.type
+        end
+      end
+      return ctype
+    end
+    
+    
+    
+    
+    --- end aaaa
     _G['getcarddescription'] = function (x)
       print("getting description for " .. x)
       cdescription = nil
@@ -436,6 +491,14 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.tell.run(message,nmt) 
+          elseif string.sub(message.content, 0, 9+3) == prefix.. 'tellimage ' then 
+            local mt = string.split(string.sub(message.content, 9+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            cmd.tellimage.run(message,nmt) 
           elseif string.sub(message.content, 0, 5+2) == prefix.. 'beans' then 
             local mt = string.split(string.sub(message.content, 5+4),"/")
             local nmt = {}
@@ -488,6 +551,32 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.smell.run(message,nmt)  
+          elseif string.sub(message.content, 0, 5+3) == prefix.. 'shred ' then 
+            local mt = string.split(string.sub(message.content, 5+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            cmd.shred.run(message,nmt)
+          elseif string.sub(message.content, 0, 5+2) == prefix.. 'items' then 
+            print("wow its medals")
+            local mt = string.split(string.sub(message.content, 5+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            print(inspect(nmt))
+            cmd.items.run(message,nmt)
+          elseif string.sub(message.content, 0, 8+3) == prefix.. 'showitem ' then 
+            local mt = string.split(string.sub(message.content, 8+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            cmd.showitem.run(message,nmt) 
           end
         end)
         if not status then
@@ -510,6 +599,9 @@ function command.run(message, mt,overwrite)
           elseif eom.etype == "store" then
             print('it is a storage message being reacted to')
             cmdre.store.run(ef, eom, reaction, userid)
+          elseif eom.etype == "shred" then
+            print('it is a shred message being reacted to')
+            cmdre.shred.run(ef, eom, reaction, userid)
           end
         end
       end

@@ -12,7 +12,7 @@ function command.run(message, mt)
       if uj.medals[curfilename] then
         print("user has medal")
         message.channel:send {
-          content = 'Here it is! Your **'.. medalfntoname(curfilename) .. '** medal.\n The description on the back reads: ```'..medaldb[curfilename].description .. '``` The shorthand form is **' .. curfilename .. '**.',
+          content = 'Here it is! Your **'.. medalfntoname(curfilename) .. '** medal.\nThe description on the back reads: ```'..medaldb[curfilename].description .. '``` The shorthand form is **' .. curfilename .. '**.',
           file = "medal_images/" .. curfilename .. ".png"
         }
       else
