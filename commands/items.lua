@@ -35,7 +35,11 @@ function command.run(message, mt)
   local invstring = ''
   for k,v in pairs(uj.items) do
     if v then
-      table.insert(invtable, "**" .. itemdb[k].name .. "**\n")
+      local eqstring = ""
+      if uj.equipped == k then
+        eqstring = " (equipped)"
+      end
+      table.insert(invtable, "**" .. itemdb[k].name .. "**" .. eqstring .. "\n")
     end
   end
   table.sort(invtable)
