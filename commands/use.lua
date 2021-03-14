@@ -18,6 +18,9 @@ function command.run(message, mt)
         uj.tokens = 0
       end
       local numitems = 0
+      if uj.items == nil then 
+        uj.items = {nothing=true}
+      end
       for k,v in pairs(uj.items) do
         numitems = numitems + 1
       end
@@ -78,11 +81,28 @@ function command.run(message, mt)
         content = 'You flip a **Token** in the air. It lands on **' .. cflip .. '**.'
       }
       uj = adduse(uj)
-    elseif string.lower(mt[1]) == "panda"  then       
-      message.channel:send {
-        
-        content = ':flushed:'
-      }
+    elseif string.lower(mt[1]) == "panda"  then    
+      if uj.equipped == "coolhat" then
+        if not uj.storage.ssss45 then
+          message.channel:send {
+            
+            content = "The **Panda** takes one look at your **Cool Hat**, and puts an **Shaun's Server Statistics Sampling #45** card into your storage out of respect."
+          }
+          uj.storage.ssss45 = 1
+          dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
+        else
+          
+          message.channel:send {
+            
+            content = ':pensive:'
+          }
+        end
+      else
+        message.channel:send {
+          
+          content = ':flushed:'
+        }
+      end
       uj = adduse(uj)
     elseif string.lower(mt[1]) == "throne" then       
       message.channel:send {
