@@ -44,6 +44,7 @@ function command.run(message, mt,overwrite)
     cmd.showitem = dofile('commands/showitem.lua')
     cmd.equip = dofile('commands/equip.lua')
     cmd.yeetalltokens = dofile('commands/yeetalltokens.lua')
+    cmd.survey = dofile('commands/survey.lua')
     
     print("done loading commands")
 
@@ -622,6 +623,15 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.equip.run(message,nmt)
+          elseif string.sub(message.content, 0, 6+2) == prefix.. 'survey' then 
+            local mt = string.split(string.sub(message.content, 6+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            print(inspect(nmt))
+            cmd.survey.run(message,nmt)
           end
         end)
         if not status then
