@@ -42,7 +42,7 @@ function command.run(message, mt)
   for k,v in pairs(uj.storage) do
     table.insert(invtable, "**" .. (fntoname(k) or k) .. "** x" .. v .. "\n")
   end
-  table.sort(invtable)
+  table.sort(invtable, function(a,b) return string.lower(a)<string.lower(b) end)
   for i=(pagenumber-1)*10+1,(pagenumber)*10 do
     print(i)
     if invtable[i] then

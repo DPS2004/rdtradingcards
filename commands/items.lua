@@ -42,7 +42,7 @@ function command.run(message, mt)
       table.insert(invtable, "**" .. itemdb[k].name .. "**" .. eqstring .. "\n")
     end
   end
-  table.sort(invtable)
+  table.sort(invtable, function(a,b) return string.lower(a)<string.lower(b) end)
   for i=(pagenumber-1)*10+1,(pagenumber)*10 do
     print(i)
     if invtable[i] then
