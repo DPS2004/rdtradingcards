@@ -49,7 +49,7 @@ function command.run(message, mt)
       invstring = invstring .. invtable[i]
     end
   end
-  message.channel:send("You have the following items:\n" .. invstring .. "(page ".. pagenumber .. " of " .. maxpn .. ")\nIn addition to your equippable items, you also have " .. uj.tokens .. " **Tokens**.")
+  message.channel:send(""<@".. message.author.id ..">, you have the following items:\n" .. invstring .. "(page ".. pagenumber .. " of " .. maxpn .. ")\nIn addition to your equippable items, you also have " .. uj.tokens .. " **Tokens**.")
 end
 return command
   
