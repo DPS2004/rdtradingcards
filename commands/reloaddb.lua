@@ -45,6 +45,7 @@ function command.run(message, mt,overwrite)
     cmd.equip = dofile('commands/equip.lua')
     cmd.yeetalltokens = dofile('commands/yeetalltokens.lua')
     cmd.survey = dofile('commands/survey.lua')
+    cmd.granttoken = dofile('commands/granttoken.lua')
     
     print("done loading commands")
 
@@ -632,6 +633,14 @@ function command.run(message, mt,overwrite)
             end
             print(inspect(nmt))
             cmd.survey.run(message,nmt)
+          elseif string.sub(message.content, 0, 10+3) == prefix.. 'granttoken ' then 
+            local mt = string.split(string.sub(message.content, 10+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            cmd.granttoken.run(message,nmt)
           end
         end)
         if not status then
