@@ -641,7 +641,26 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.granttoken.run(message,nmt)
+          elseif string.sub(message.content, 0, 7+2) == prefix.. 'machine' then 
+            print("wow its medals")
+            local mt = string.split(string.sub(message.content, 7+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            print(inspect(nmt))
+            cmd.use.run(message,{"machine"})
+          elseif string.sub(message.content, 0, 1+3) == prefix.. 'p' then 
+            local mt = string.split(string.sub(message.content, 1+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            cmd.pull.run(message,mt)      
           end
+
         end)
         if not status then
           print("uh oh")

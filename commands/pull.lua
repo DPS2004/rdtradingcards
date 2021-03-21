@@ -53,7 +53,7 @@ local time = sw:getTime()
         extension = ".png"
       end
       message.channel:send {
-          content = 'Woah! '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to their inventory.',
+          content = 'Woah! '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to their inventory. The shorthand form of this card is **'.. newcard .. '**.',
           file = "card_images/" .. newcard .. extension
         }
 
