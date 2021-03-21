@@ -19,7 +19,7 @@ function command.run(message, mt)
       message.channel:send {
         content = 'The **Strange Machine** appears to have a slot for two **Tokens**, and a crank. The crank is worn, as if it has been **Used** many times.'
       }
-    elseif string.lower(mt[1]) == "card factory" or string.lower(mt[1]) == "factory" or string.lower(mt[1]) == "cardfactory" then 
+    elseif string.lower(mt[1]) == "card factory" or string.lower(mt[1]) == "factory" or string.lower(mt[1]) == "cardfactory" or string.lower(mt[1]) == "the card factory" then 
       message.channel:send {
         content = ':eye:`the card factory looks back`:eye:'
       }
