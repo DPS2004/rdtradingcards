@@ -19,6 +19,10 @@ function command.run(message, mt)
       message.channel:send {
         content = 'The **Strange Machine** appears to have a slot for two **Tokens**, and a crank. The crank is worn, as if it has been **Used** many times.'
       }
+    elseif string.lower(mt[1]) == "card factory" or string.lower(mt[1]) == "factory" or string.lower(mt[1]) == "cardfactory" then 
+      message.channel:send {
+        content = ':eye:`the card factory looks back`:eye:'
+      }
     elseif string.lower(mt[1]) == "token"  then 
       message.channel:send {
         content = 'You do not know how, but lots of these **Tokens** have been showing up recently. If only there were somewhere to **Use** them...',
