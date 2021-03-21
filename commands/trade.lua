@@ -37,7 +37,7 @@ function command.run(message, mt)
                 
                 
               else
-                message.channel:send("Sorry, but ".. uj2.name .. "doesn't have the **" .. fntoname(item2) .. "** card in their inventory.")
+                message.channel:send("Sorry, but ".. uj2.name .. " doesn't have the **" .. fntoname(item2) .. "** card in their inventory.")
               end
               
               

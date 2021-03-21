@@ -1199,7 +1199,7 @@
           }
         },
         {
-          "chance": 0,
+          "chance": 1,
           "filename": "your",
           "name": "Yo (Ultra Rare)",
           "tradeable": true,

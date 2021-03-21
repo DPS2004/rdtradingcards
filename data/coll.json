@@ -122,7 +122,8 @@
   {
     "require": [
       "yor",
-      "yosr"
+      "yosr",
+      "your"
     ],
     "recieve": "yoc"
   },
