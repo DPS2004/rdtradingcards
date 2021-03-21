@@ -20,6 +20,11 @@ function reaction.run(ef, eom, reaction, userid)
         else
           uj.storage[item1] = uj.storage[item1] + 1
         end
+        if uj.timesstored == nil then
+          uj.timesstored = 1
+        else
+          uj.timesstored = uj.timesstored + 1
+        end
         
         ef[reaction.message.id] = nil
         reaction.message.channel:send("<@" .. uj.id .. "> successfully put their **" .. fntoname(item1) .. "** card in storage.")

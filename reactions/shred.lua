@@ -14,7 +14,11 @@ function reaction.run(ef, eom, reaction, userid)
         if uj.inventory[item1] == 0 then
           uj.inventory[item1] = nil
         end     
-
+        if uj.timesshredded == nil then
+          uj.timesshredded = 1
+        else
+          uj.timesshredded = uj.timesshredded + 1
+        end
         
         ef[reaction.message.id] = nil
         reaction.message.channel:send("<@" .. uj.id .. "> successfully shredded their **" .. fntoname(item1) .. "** card.")

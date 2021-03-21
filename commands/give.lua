@@ -16,6 +16,16 @@ function command.run(message, mt)
             if uj.inventory[curfilename] == 0 then
               uj.inventory[curfilename] = nil
             end
+            if uj.timescardgiven == nil then
+              uj.timescardgiven = 1
+            else
+              uj.timescardgiven = uj.timescardgiven + 1
+            end
+            if uj2.timescardreceived == nil then
+              uj2.timescardreceived = 1
+            else
+              uj2.timescardreceived = uj2.timescardreceived + 1
+            end
             dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
             print("user had card, removed from original user")
             if uj2.inventory[curfilename] == nil then

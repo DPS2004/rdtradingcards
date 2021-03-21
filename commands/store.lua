@@ -37,7 +37,11 @@ function command.run(message, mt)
           else
             uj.storage[item1] = uj.storage[item1] + 1
           end
-          
+          if uj.timesstored == nil then
+            uj.timesstored = 1
+          else
+            uj.timesstored = uj.timesstored + 1
+          end
           
           message.channel:send("<@" .. uj.id .. "> successfully put their **" .. fntoname(item1) .. "** card in storage.")
           dpf.savejson(ujf,uj)

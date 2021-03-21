@@ -29,6 +29,11 @@ local time = sw:getTime()
       else
         uj.inventory[newcard] = uj.inventory[newcard] + 1
       end
+      if uj.timespulled == nil then
+        uj.timespulled = 1
+      else
+        uj.timespulled = uj.timespulled + 1
+      end
       uj.name = message.author.name .. "#".. message.author.discriminator
       uj.id = message.author.id
       uj.lastpull = time:toHours()
@@ -62,6 +67,11 @@ local time = sw:getTime()
         uj.inventory[newcard] = 1
       else
         uj.inventory[newcard] = uj.inventory[newcard] + 1
+      end
+      if uj.timespulled == nil then
+        uj.timespulled = 1
+      else
+        uj.timespulled = uj.timespulled + 1
       end
       if not uj.name then
         uj.name = message.author.name .. "#".. message.author.discriminator

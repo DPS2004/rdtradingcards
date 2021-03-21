@@ -36,6 +36,16 @@ function reaction.run(ef, eom, reaction, userid)
         else
           uj.inventory[item2] = uj.inventory[item2] + 1
         end
+        if uj.timestraded == nil then
+          uj.timestraded = 1
+        else
+          uj.timestraded = uj.timestraded + 1
+        end
+        if uj2.timestraded == nil then
+          uj2.timestraded = 1
+        else
+          uj2.timestraded = uj2.timestraded + 1
+        end
         
         ef[reaction.message.id] = nil
         reaction.message.channel:send("The trade between <@".. uj2.id .."> and <@" .. uj.id .. "> has completed.")
