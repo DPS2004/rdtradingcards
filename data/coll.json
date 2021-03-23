@@ -145,6 +145,14 @@
     ],
     "recieve": "inimac"
   },
+  {
+    "require": [
+      "fhottor",
+      "fhottosr",
+      "fhottour"
+    ],
+    "recieve": "fhottoc"
+  },
   
   {
     "require": [
