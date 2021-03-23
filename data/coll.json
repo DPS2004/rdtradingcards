@@ -127,6 +127,14 @@
     ],
     "recieve": "yoc"
   },
+  {
+    "require": [
+      "ottor",
+      "ottosr",
+      "ottour"
+    ],
+    "recieve": "ottoc"
+  },
     
   {
     "require": [

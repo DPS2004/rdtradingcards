@@ -2,7 +2,7 @@
   "basemult": 10,
   "groups": [
     {
-      "groupname": "CURRENT ABNORMAL RATES / UNRELEASED CARDS: fhotto",
+      "groupname": "CURRENT ABNORMAL RATES / UNRELEASED CARDS: fhotto, otto",
       "basechance": 0,
       "cards": []
     },
@@ -1217,6 +1217,56 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Yo (Art by Lumina, based on art by Kyle Labriola)",
           "smell": "Freestyle Rap",
+          "bonuses": {
+          }
+        }
+      ]
+    },
+    {
+      "groupname": "otto",
+      "basechance": 0,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "ottor",
+          "name": "Otto (Rare)",
+          "tradeable": true,
+          "type": "Rare",
+          "description": "(Art by Giacomo)",
+          "smell": "Computer Chips",
+          "bonuses": {
+          }
+        },
+        {
+          "chance": 2,
+          "filename": "ottosr",
+          "name": "Otto (Super Rare)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Art by Axobotl)",
+          "smell": "Computer Chips",
+          "bonuses": {
+          }
+        },
+        {
+          "chance": 1,
+          "filename": "ottour",
+          "name": "Otto (Ultra Rare)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by Lumina)",
+          "smell": "Computer Chips",
+          "bonuses": {
+          }
+        },
+        {
+          "chance": 0,
+          "filename": "ottoc",
+          "name": "Otto (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Otto (Art by Lumina)",
+          "smell": "Computer Chips",
           "bonuses": {
           }
         }
