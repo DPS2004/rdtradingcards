@@ -2,7 +2,7 @@
   "basemult": 10,
   "groups": [
     {
-      "groupname": "CURRENT ABNORMAL RATES / UNRELEASED CARDS: ",
+      "groupname": "CURRENT ABNORMAL RATES / UNRELEASED CARDS: fhotto",
       "basechance": 0,
       "cards": []
     },
@@ -2072,6 +2072,56 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Inima (Art by Kin)",
           "smell": "Icicles",
+          "bonuses": {
+          }
+        }
+      ]
+    },
+    {
+      "groupname": "fhotto",
+      "basechance": 0,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "fhottor",
+          "name": "Fire Hazard Otto (Rare)",
+          "tradeable": true,
+          "type": "Rare",
+          "description": "(Art by AdipemDragon)",
+          "smell": "Abandoned Factories",
+          "bonuses": {
+          }
+        },
+        {
+          "chance": 2,
+          "filename": "fhottosr",
+          "name": "Fire Hazard Otto (Super Rare)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Art by Plant Guy)",
+          "smell": "Abandoned Factories",
+          "bonuses": {
+          }
+        },
+        {
+          "chance": 1,
+          "filename": "fhottour",
+          "name": "Fire Hazard Otto (Ultra Rare)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by Plant Guy)",
+          "smell": "Abandoned Factories",
+          "bonuses": {
+          }
+        },
+        {
+          "chance": 0,
+          "filename": "fhottoc",
+          "name": "Fire Hazard Otto (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Inima (Art by Plant Guy)",
+          "smell": "Abandoned Factories",
           "bonuses": {
           }
         }

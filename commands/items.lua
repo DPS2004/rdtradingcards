@@ -7,7 +7,18 @@ function command.run(message, mt)
     mt[1] = "1"
   end
   print(mt[1])
-  local pagenumber = math.floor(tonumber(mt[1]))
+  local pagenumber = 1
+  if tonumber(mt[1]) then
+    local tnresult = tonumber(mt[1])
+    print("tonumber returns not nil, specifically " .. tnresult)
+    print(type(tnresult))
+    pagenumber = math.floor(tnresult)
+    print("math.floor 1 = " .. math.floor(1))
+    
+  else
+    print("tonumber returns nil")
+    pagenumber = 1
+  end
   
   if pagenumber < 1 then
     pagenumber = 1
