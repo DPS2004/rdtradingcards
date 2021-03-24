@@ -17,10 +17,18 @@ function command.run(message, mt)
         }
       else
         print("user doesnt have medal")
-        message.channel:send("Sorry, but you don't have the **" .. medalfntoname(curfilename) .. "** medal in your inventory or your storage.")
+        if nopeeking then
+          message.channel:send("Sorry, but I either could not find the " .. request .. " medal in the database, or you do not have it. Make sure that you spelled it right!")
+        else
+          message.channel:send("Sorry, but you don't have the **" .. medalfntoname(curfilename) .. "** medal in your inventory or your storage.")
+        end
       end
     else
-      message.channel:send("Sorry, but I could not find the " .. request .. " medal in the database. Make sure that you spelled it right!")
+      if nopeeking then
+        message.channel:send("Sorry, but I either could not find the " .. request .. " medal in the database, or you do not have it. Make sure that you spelled it right!")
+      else
+        message.channel:send("Sorry, but I could not find the " .. request .. " medal in the database. Make sure that you spelled it right!")
+      end
     end
   
   -- whole lotta code to display a png image lmao

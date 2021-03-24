@@ -41,10 +41,18 @@ function command.run(message, mt)
             }
           else
             print("user doesnt have card")
-            message.channel:send("Sorry, but you don't have the **" .. mt[2] .. "** card in your inventory.")
+            if nopeeking then
+              message.channel:send("Sorry, but I either could not find the " .. mt[2] .. " card in the database, or you do not have it. Make sure that you spelled it right!")
+            else
+              message.channel:send("Sorry, but you don't have the **" .. mt[2] .. "** card in your inventory.")
+            end
           end
         else
-          message.channel:send("Sorry, but I could not find the " .. mt[2] .. " card in the database. Make sure that you spelled it right!")
+          if nopeeking then
+            message.channel:send("Sorry, but I either could not find the " .. mt[2] .. " card in the database, or you do not have it. Make sure that you spelled it right!")
+          else
+            message.channel:send("Sorry, but I could not find the " .. mt[2] .. " card in the database. Make sure that you spelled it right!")
+          end
         end
       else
         message.channel:send("Sorry, but you cannot give something to yourself!")

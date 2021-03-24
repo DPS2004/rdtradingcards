@@ -12,11 +12,17 @@ function command.run(message, mt)
       
       local invnum = uj.inventory[curfilename] or 0
       local stornum = uj.storage[curfilename] or 0
-      
-      message.channel:send("Here is how many **" .. fntoname(curfilename) .. "** cards you have:\n**In your inventory:** ".. invnum .."x\n**In your storage:** ".. stornum.."x")
-      
+      if nopeeking and invnum + stornum == 0 then
+        message.channel:send("Sorry, but I either could not find the " .. request .. " card in the database, or you do not have it. Make sure that you spelled it right!")
+      else
+        message.channel:send("Here is how many **" .. fntoname(curfilename) .. "** cards you have:\n**In your inventory:** ".. invnum .."x\n**In your storage:** ".. stornum.."x")
+      end
     else
-      message.channel:send("Sorry, but I could not find the " .. request .. " card in the database. Make sure that you spelled it right!")
+      if nopeeking then
+        message.channel:send("Sorry, but I either could not find the " .. request .. " card in the database, or you do not have it. Make sure that you spelled it right!")
+      else
+        message.channel:send("Sorry, but I could not find the " .. request .. " card in the database. Make sure that you spelled it right!")
+      end
     end
   
   else
