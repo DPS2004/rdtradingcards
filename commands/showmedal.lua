@@ -1,6 +1,6 @@
 local command = {}
 function command.run(message, mt)
-  print(message.author.name .. " did !show")
+  print(message.author.name .. " did !showmedal")
   if #mt == 1 then
     local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
     local request = mt[1]

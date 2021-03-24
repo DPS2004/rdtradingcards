@@ -2,7 +2,7 @@ local command = {}
 function command.run(message, mt)
   local time = sw:getTime()
   if #mt == 1 then
-    print(message.author.name .. " did !showitem")
+    print(message.author.name .. " did !equip")
     print(string.sub(message.content, 0, 8))
     local ujf = ("savedata/" .. message.author.id .. ".json")
 
@@ -62,7 +62,7 @@ function command.run(message, mt)
     end
           
   else
-    message.channel:send("Sorry, but the c!showitem command expects 1 argument. Please see c!help for more details.")
+    message.channel:send("Sorry, but the c!equip command expects 1 argument. Please see c!help for more details.")
   end
 end
 return command

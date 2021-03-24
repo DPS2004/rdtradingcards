@@ -68,18 +68,24 @@ function command.run(message, mt)
         message.channel:send('You already have every item that is currently available.')
       end
     elseif string.lower(mt[1]) == "token"  then 
-      local rnum = math.random(0,1)
-      local cflip = ":doctah:"
-      if rnum == 0 then
-        cflip = "heads"
-      else
-        cflip = "tails"
-      end
-      
-      message.channel:send {
+      if uj.tokens > 0 then
+        local rnum = math.random(0,1)
+        local cflip = ":doctah:"
+        if rnum == 0 then
+          cflip = "heads"
+        else
+          cflip = "tails"
+        end
         
-        content = 'You flip a **Token** in the air. It lands on **' .. cflip .. '**.'
-      }
+        message.channel:send {
+          
+          content = 'You flip a **Token** in the air. It lands on **' .. cflip .. '**.'
+        }
+      else
+        message.channel:send {
+          
+          content = 'Sadly, you do not have any **Tokens**.'
+        }
       uj = adduse(uj)
     elseif string.lower(mt[1]) == "panda"  then    
       if uj.equipped == "coolhat" then

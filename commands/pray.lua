@@ -1,7 +1,7 @@
 local command = {}
 function command.run(message, mt)
 local time = sw:getTime()
-  print(message.author.name .. " did !pull")
+  print(message.author.name .. " did !pray")
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
   local cooldown = 3
   if uj.equipped == "faithfulnecklace" then

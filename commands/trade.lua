@@ -79,7 +79,7 @@ function command.run(message, mt)
       message.channel:send("Sorry, but I could not find a user named " .. mt[2] .. " in the database. Make sure that you have spelled it right, and that they have at least pulled a card to register!")
     end
   else
-    message.channel:send("Sorry, but the c!trade command expects 3 argument. Please see c!help for more details.")
+    message.channel:send("Sorry, but the c!trade command expects 3 arguments. Please see c!help for more details.")
   end
 end
 return command

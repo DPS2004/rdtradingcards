@@ -33,7 +33,7 @@ function command.run(message, mt)
     end
           
   else
-    message.channel:send("Sorry, but the c!store command expects 1 argument. Please see c!help for more details.")
+    message.channel:send("Sorry, but the c!shred command expects 1 argument. Please see c!help for more details.")
   end
 end
 return command
