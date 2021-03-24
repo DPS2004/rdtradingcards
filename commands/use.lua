@@ -86,6 +86,7 @@ function command.run(message, mt)
           
           content = 'Sadly, you do not have any **Tokens**.'
         }
+      end
       uj = adduse(uj)
     elseif string.lower(mt[1]) == "panda"  then    
       if uj.equipped == "coolhat" then
