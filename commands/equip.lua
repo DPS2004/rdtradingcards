@@ -24,13 +24,13 @@ function command.run(message, mt)
     if uj.lastequip + 24 <= time:toHours()then
       local request = mt[1]
       local curfilename = itemtexttofn(request)
-      if curfilename then
+      if uj.equipped ~= curfilename then
         if uj.items[curfilename] then
           --woo hoo
           print(uj.equipped)
           if uj.equipped ~= "brokenmouse" then
             
-            local newmessage = message.channel:send("Would you like to changed your equipped item from **" .. itemfntoname(uj.equipped) .. "** to **" .. itemfntoname(curfilename) .. "**? This can be done once every 24 hours.")
+            local newmessage = message.channel:send("Would you like to change your equipped item from **" .. itemfntoname(uj.equipped) .. "** to **" .. itemfntoname(curfilename) .. "**? This can be done once every 24 hours.")
             addreacts(newmessage)
             local tf = dpf.loadjson("savedata/events.json",{})
             tf[newmessage.id] ={ujf = ujf, newequip = curfilename ,etype = "equip",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
@@ -42,6 +42,8 @@ function command.run(message, mt)
             dpf.savejson(ujf,uj)
             print('saved equipped as ' .. curfilename)
           end
+        elseif uj.equipped == curfilename then
+          message.channel:send("You already have the **" .. itemfntoname(curfilename) .. "** item equipped!")
         else
           if nopeeking then
             message.channel:send("Sorry, but I either could not find the " .. request .. " item in the database, or you do not have it. Make sure that you spelled it right!")
