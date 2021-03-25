@@ -70,7 +70,7 @@ function command.run(message, mt)
         if durationtext ~= "" then
           durationtext = durationtext .. " and "
         end
-        durationtext = durationtext .. minutesleft * 60 % 60 .. " minutes"
+        durationtext = durationtext .. minutesleft % 60 .. " minutes"
       end
       message.channel:send('Please wait ' .. durationtext .. ' before changing your equipped item. ')
     end
