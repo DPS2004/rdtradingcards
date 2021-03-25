@@ -86,13 +86,13 @@ local time = sw:getTime()
       local minutesleft = math.ceil(uj.lastpull * 60 - time:toMinutes() + cooldown * 60)
       local durationtext = ""
       if math.floor(minutesleft / 60) > 0 then
-        durationtext = math.floor(minutesleft / 60) .. " hours"
+        durationtext = math.floor(minutesleft / 60) .. " hour(s)"
       end
       if minutesleft % 60 > 0 then
         if durationtext ~= "" then
           durationtext = durationtext .. " and "
         end
-        durationtext = durationtext .. minutesleft % 60 .. " minutes"
+        durationtext = durationtext .. minutesleft % 60 .. " minute(s)"
       end
       message.channel:send('Please wait ' .. durationtext .. ' before pulling again.')
     end
