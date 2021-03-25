@@ -82,7 +82,19 @@ local time = sw:getTime()
       print("number of cards is " .. uj.inventory[newcard])
       dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
     else
-      message.channel:send('Please wait ' .. math.ceil((uj.lastpull + cooldown - time:toHours())*10)/10 .. ' hours before pulling again.')
+      --extremely jank implementation, please make this cleaner if possible
+      local minutesleft = math.ceil(uj.lastpull * 60 - time:toMinutes() + cooldown * 60)
+      local durationtext = ""
+      if math.floor(minutesleft / 60) > 0 then
+        durationtext = math.floor(minutesleft / 60) .. " hour(s)"
+      end
+      if minutesleft % 60 > 0 then
+        if durationtext ~= "" then
+          durationtext = durationtext .. " and "
+        end
+        durationtext = durationtext .. minutesleft % 60 .. " minute(s)"
+      end
+      message.channel:send('Please wait ' .. durationtext .. ' before pulling again.')
     end
   end
   cmd.checkcollectors.run(message,mt)

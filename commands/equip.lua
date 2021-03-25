@@ -60,7 +60,19 @@ function command.run(message, mt)
         end
       end
     else
-      message.channel:send('Please wait ' .. math.ceil((uj.lastequip + 24.00 - time:toHours())*10)/10 .. ' hours before changing your equipped item.')
+      --extremely jank implementation, please make this cleaner if possible
+      local minutesleft = math.ceil(uj.lastequip * 60 - time:toMinutes() + 1440.00)
+      local durationtext = ""
+      if math.floor(minutesleft / 60) > 0 then
+        durationtext = math.floor(minutesleft / 60) .. " hour(s)"
+      end
+      if minutesleft % 60 > 0 then
+        if durationtext ~= "" then
+          durationtext = durationtext .. " and "
+        end
+        durationtext = durationtext .. minutesleft % 60 .. " minute(s)"
+      end
+      message.channel:send('Please wait ' .. durationtext .. ' before changing your equipped item. ')
     end
           
   else
