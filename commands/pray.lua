@@ -12,7 +12,7 @@ local time = sw:getTime()
     if not uj.lastprayer then
       uj.lastprayer = -3
     end
-    if uj.lastprayer + cooldown <= time:toDays()then
+    if uj.lastprayer + cooldown <= time:toDays() then
       message.channel:send('The Card Gods have listened to your plight. A **Token** appears in your pocket.')
       
       
@@ -31,7 +31,19 @@ local time = sw:getTime()
       uj.lastprayer = time:toDays()
       dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
     else
-      message.channel:send('Please wait ' .. math.ceil((uj.lastprayer + cooldown - time:toDays())*10)/10 .. ' days before praying again.')
+      --extremely jank implementation, please make this cleaner if possible
+      local minutesleft = math.ceil(uj.lastprayer * 1440 - time:toMinutes() + cooldown * 1440)
+      local durationtext = ""
+      if math.floor(minutesleft / 60) > 0 then
+        durationtext = math.floor(minutesleft / 60) .. " hours"
+      end
+      if minutesleft % 60 > 0 then
+        if durationtext ~= "" then
+          durationtext = durationtext .. " and "
+        end
+        durationtext = durationtext .. minutesleft * 60 % 60 .. " minutes"
+      end
+      message.channel:send('Please wait ' .. durationtext .. ' before praying again.')
     end
   end
 end
