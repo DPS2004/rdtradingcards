@@ -6,11 +6,15 @@ function command.run(message, mt)
     mt[1] = nil
   end
   if mt[1] then
-    if not usernametojson(mt[1]) then
-      uj.name = mt[1]
-      message.channel:send("Your name for trading and gifting has now been changed to " .. uj.name .. "!")
+    if mt[1] ~= uj.name then
+      if not usernametojson(mt[1]) then
+        uj.name = mt[1]
+        message.channel:send("Your name for trading and gifting has now been changed to " .. uj.name .. "!")
+      else
+        message.channel:send("Sorry, but someone else is already using that name.")
+      end
     else
-      message.channel:send("Sorry, but someone else is already using that name.")
+      message.channel:send("Your name is already " .. uj.name .. "!")
     end
     
   else
