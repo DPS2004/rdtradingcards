@@ -101,7 +101,7 @@ function command.run(message, mt,overwrite)
     print("here is cdb")
     print(inspect(cdb))
     print("here is ptable")
-    print(inspect(ptable))
+    --print(inspect(ptable))
 
     print("loading collector's info")
     _G['coll'] = dpf.loadjson("data/coll.json",defaultjson)

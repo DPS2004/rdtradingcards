@@ -28,6 +28,10 @@ function command.run(message, mt)
         content = 'You do not know how, but lots of these **Tokens** have been showing up recently. If only there were somewhere to **Use** them...',
         file = 'assets/token.png'
       }
+--    elseif string.lower(mt[1]) == "lab" or string.lower(mt[1]) == "abandoned lab" then 
+--      message.channel:send {
+--        content = ':eye:`the card factory looks back`:eye:'
+--      }
 
 
 
