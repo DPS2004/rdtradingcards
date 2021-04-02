@@ -31,8 +31,6 @@ function reaction.run(ef, eom, reaction, userid)
   else
     print("its not uj1 reacting")
   end
-  cmd.checkcollectors.run(eom.ogmessage,mt,reaction.message.channel)
-  cmd.checkmedals.run(eom.ogmessage,mt,reaction.message.channel)
 end
 return reaction
   

@@ -97,7 +97,6 @@ local time = sw:getTime()
       message.channel:send('Please wait ' .. durationtext .. ' before pulling again.')
     end
   end
-  cmd.checkcollectors.run(message,mt)
 end
 return command
   

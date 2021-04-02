@@ -45,6 +45,8 @@ function command.run(message, mt)
           
           message.channel:send("<@" .. uj.id .. "> successfully put their **" .. fntoname(item1) .. "** card in storage.")
           dpf.savejson(ujf,uj)
+          cmd.checkcollectors.run(message,mt)
+          cmd.checkmedals.run(message,mt)
         end
       else
         if nopeeking then
