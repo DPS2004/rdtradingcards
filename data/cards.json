@@ -1990,7 +1990,7 @@
     },
     {
       "groupname": "memes",
-      "basechance": 100,
+      "basechance": 4,
       "cards": [
         {
           "chance": 3,
