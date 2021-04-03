@@ -329,6 +329,9 @@ function command.run(message, mt,overwrite)
     _G['usernametojson'] = function (x)
       for i,v in ipairs(scandir("savedata")) do
         cuj = dpf.loadjson("savedata/"..v,defaultjson)
+        if cuj.id == x then --prioritize id over name
+          return "savedata/"..v
+        end
         if cuj.name == x then
           return "savedata/"..v
         end
