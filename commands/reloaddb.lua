@@ -34,7 +34,7 @@ function command.run(message, mt,overwrite)
     cmd.tell = dofile('commands/tell.lua')
     cmd.tellimage = dofile('commands/tellimage.lua')
     cmd.beans = dofile('commands/beans.lua')
-    cmd.updatename = dofile('commands/updatename.lua')
+    cmd.nickname = dofile('commands/nickname.lua')
     cmd.pray = dofile('commands/pray.lua')
     cmd.smell = dofile('commands/smell.lua')
     cmd.shred = dofile('commands/shred.lua')
@@ -46,6 +46,7 @@ function command.run(message, mt,overwrite)
     cmd.yeetalltokens = dofile('commands/yeetalltokens.lua')
     cmd.survey = dofile('commands/survey.lua')
     cmd.granttoken = dofile('commands/granttoken.lua')
+    cmd.addallnicknames = dofile('commands/addallnicknames.lua')
     
     print("done loading commands")
 
@@ -329,11 +330,15 @@ function command.run(message, mt,overwrite)
     _G['usernametojson'] = function (x)
       for i,v in ipairs(scandir("savedata")) do
         cuj = dpf.loadjson("savedata/"..v,defaultjson)
-        if cuj.id == x then --prioritize id over name
+        if cuj.id == x then --prioritize id over nickname
           return "savedata/"..v
         end
-        if cuj.name == x then
-          return "savedata/"..v
+        if cuj.names then
+          for j,w in pairs(cuj.names) do
+            if j == x then
+              return "savedata/"..v
+            end
+          end
         end
       end
     end
@@ -550,15 +555,15 @@ function command.run(message, mt,overwrite)
             end
             print(inspect(nmt))
             cmd.beans.run(message,nmt)
-          elseif string.sub(message.content, 0, 10+2) == prefix.. 'updatename' then 
-            local mt = string.split(string.sub(message.content, 10+4),"/")
+          elseif string.sub(message.content, 0, 8+2) == prefix.. 'nickname' then 
+            local mt = string.split(string.sub(message.content, 8+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
               v = trim(v)
               nmt[i]=v
             end
             print(inspect(nmt))
-            cmd.updatename.run(message,nmt)
+            cmd.nickname.run(message,nmt)
           
           elseif string.sub(message.content, 0, 4+2) == prefix.. 'pray' then 
             local mt = string.split(string.sub(message.content, 4+4),"/")
@@ -661,7 +666,24 @@ function command.run(message, mt,overwrite)
               v = trim(v)
               nmt[i]=v
             end
-            cmd.pull.run(message,mt)      
+            cmd.pull.run(message,mt)
+          elseif string.sub(message.content, 0, 4+2) == prefix.. 'name' then 
+            local mt = string.split(string.sub(message.content, 4+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            print(inspect(nmt))
+            cmd.nickname.run(message,nmt)
+          elseif string.sub(message.content, 0, 15+3) == prefix.. 'addallnicknames' then 
+            local mt = string.split(string.sub(message.content, 15+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            cmd.addallnicknames.run(message,mt)
           end
 
         end)
