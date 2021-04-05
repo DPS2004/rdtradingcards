@@ -113,7 +113,7 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "animated": true,
-          "description": "Samurai is jumping over a box of beans (Level by GDColon)",
+          "description": "Samurai is jumping over a box of beans (Level by Colon)",
           "smell": "Beans",
           "bonuses": {
             "rustysword": true
@@ -1989,6 +1989,146 @@
       ]
     },
     {
+      "groupname": "memes",
+      "basechance": 4,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "beansr",
+          "name": "Beans (Rare)",
+          "tradeable": true,
+          "type": "Meme",
+          "description": "(Art by Winston Lee)",
+          "smell": ":beans:",
+          "bonuses": {
+          }
+        },
+        {
+          "chance": 3,
+          "filename": "oeufr",
+          "name": "Oeuf (Rare)",
+          "tradeable": true,
+          "type": "Meme",
+          "description": "(Art by Winston Lee, edited by Szprycha)",
+          "smell": "Eggs",
+          "bonuses": {
+          }
+        },
+        {
+          "chance": 1,
+          "filename": "oeufur",
+          "name": "Oeuf (Ultra Rare)",
+          "tradeable": true,
+          "type": "Meme",
+          "description": "(Art by Kyle Labriola, edited by DeadlySprinklez)",
+          "smell": "Eggs",
+          "bonuses": {
+          }
+        },
+        {
+          "chance": 3,
+          "filename": "doctahr",
+          "name": "Doctah (Rare)",
+          "tradeable": true,
+          "type": "Meme",
+          "description": "(Art by Fizzd)",
+          "smell": "Malpractice",
+          "bonuses": {
+          }
+        },
+        {
+          "chance": 1,
+          "filename": "doctahur",
+          "name": "Doctah (Ultra Rare)",
+          "tradeable": true,
+          "type": "Meme",
+          "description": "(Art by Lumina, based on art by Fizzd)",
+          "smell": "Malpractice",
+          "bonuses": {
+          }
+        },
+        {
+          "chance": 3,
+          "filename": "iantrashcanr",
+          "name": "Ian in a Trash Can (Rare)",
+          "tradeable": true,
+          "type": "Meme",
+          "description": "(Art by Winston Lee, edited by Axobotl)",
+          "smell": "Dumpster Diving",
+          "bonuses": {
+          }
+        },
+        {
+          "chance": 1,
+          "filename": "iantrashcanur",
+          "name": "Ian in a Trash Can (Ultra Rare)",
+          "tradeable": true,
+          "type": "Meme",
+          "description": "(Art by Dr Levi)",
+          "smell": "Dumpster Diving",
+          "bonuses": {
+          }
+        },
+        {
+          "chance": 3,
+          "filename": "wallclockr",
+          "name": "Wall Clock (Rare)",
+          "tradeable": true,
+          "type": "Meme",
+          "description": "(Art by Giacomo)",
+          "smell": "Accuracy",
+          "bonuses": {
+          }
+        },
+        {
+          "chance": 1,
+          "filename": "wallclockur",
+          "name": "Wall Clock (Ultra Rare)",
+          "tradeable": true,
+          "type": "Meme",
+          "description": "(Art by DPS2004)",
+          "smell": "Accuracy",
+          "bonuses": {
+          }
+        },
+        {
+          "chance": 3,
+          "filename": "logunr",
+          "name": "Logun (Rare)",
+          "tradeable": true,
+          "type": "Meme",
+          "description": "(Art by Winston Lee, edited by Kin)",
+          "smell": "Bad Opinions",
+          "bonuses": {
+          }
+        },
+        {
+          "chance": 2,
+          "filename": "logunsr",
+          "name": "Logun (Super Rare)",
+          "tradeable": true,
+          "type": "Meme",
+          "description": "(Art by Het)",
+          "smell": "Bad Opinions",
+          "bonuses": {
+          }
+        },
+        {
+          "chance": 1,
+          "filename": "logunur",
+          "name": "Logun (Ultra Rare)",
+          "tradeable": true,
+          "type": "Meme",
+          "description": "(Art by Het)",
+          "smell": "Bad Opinions",
+          "bonuses": {
+          }
+        }
+        
+      ]
+    },
+    
+    {
       "groupname": "pico8",
       "basechance": 4,
       "cards": [
@@ -1999,7 +2139,7 @@
           "tradeable": true,
           "type": "PICO-8",
           "pico": true,
-          "description": "(Game by auburn. Playable with the PICO-8 app or online at https://auburnsummer.itch.io/rhythm-stacker . The password is rhythmdoctah)",
+          "description": "(Cart by auburn. Playable with the PICO-8 app or online at https://auburnsummer.itch.io/rhythm-stacker . The password is rhythmdoctah)",
           "smell": "Pancakes",
           "bonuses": {
           }
@@ -2011,7 +2151,7 @@
           "tradeable": true,
           "type": "PICO-8",
           "pico": true,
-          "description": "(Game by auburn. Playable with the PICO-8 app or online at https://auburnsummer.itch.io/acofoi . The password is meaculpa)",
+          "description": "(Cart by auburn. Playable with the PICO-8 app or online at https://auburnsummer.itch.io/acofoi . The password is meaculpa)",
           "smell": "Indecisiveness",
           "bonuses": {
           }

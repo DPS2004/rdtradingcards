@@ -101,7 +101,7 @@ function command.run(message, mt,overwrite)
     print("here is cdb")
     print(inspect(cdb))
     print("here is ptable")
-    print(inspect(ptable))
+    --print(inspect(ptable))
 
     print("loading collector's info")
     _G['coll'] = dpf.loadjson("data/coll.json",defaultjson)
@@ -329,6 +329,9 @@ function command.run(message, mt,overwrite)
     _G['usernametojson'] = function (x)
       for i,v in ipairs(scandir("savedata")) do
         cuj = dpf.loadjson("savedata/"..v,defaultjson)
+        if cuj.id == x then --prioritize id over name
+          return "savedata/"..v
+        end
         if cuj.name == x then
           return "savedata/"..v
         end
