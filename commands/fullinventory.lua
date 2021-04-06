@@ -1,5 +1,6 @@
 local command = {}
 function command.run(message, mt)
+  message:addReaction("✅")
   print(message.author.name .. " did !fullinventory")
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
   local numkey = 0
