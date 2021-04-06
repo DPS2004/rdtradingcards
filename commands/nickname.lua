@@ -3,6 +3,12 @@ function command.run(message, mt)
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
   print(message.author.name .. " did !nickname")
   local maxnicknames = 3
+  
+  if not uj.names then
+    uj.names = {}
+    uj.names[message.author.name .. "#" .. message.author.discriminator] = true
+    dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
+  end
 
   local numnames = 0
   for k,v in pairs(uj.names) do
@@ -10,17 +16,10 @@ function command.run(message, mt)
   end
 
   if mt[1] == "" then
-    local nicknamestring = ""
-    for k,v in pairs(uj.names) do
-      nicknamestring = nicknamestring .. k .. "/"
-    end
-    nicknamestring = nicknamestring:sub(1, -2)
-    if numnames == 1 then
-      message.channel:send("Your nickname for trading and gifting is " .. nicknamestring)
-    else
-      message.channel:send("Your nicknames for trading and gifting are " .. nicknamestring)
-    end
-  elseif mt[1] == "add" then
+    mt[1] = "check"
+    mt[2] = uj.id
+  end
+  if mt[1] == "add" then
     if mt[2] then
       if not usernametojson(mt[2]) then
         if mt[2] ~= uj.id then
@@ -56,8 +55,38 @@ function command.run(message, mt)
     uj.names = {}
     uj.names[message.author.name .. "#" .. message.author.discriminator] = true
     message.channel:send("Your nickname for trading and gifting has been reset to " .. message.author.name .. "#" .. message.author.discriminator .. "!")
-  -- elseif mt[1] == "check" then
-  --   todo: add nickname check functionality
+  elseif mt[1] == "check" then
+    local nicknamestring = ""
+    if not mt[2] then
+      mt[2] = uj.id
+    end
+    local uj2f = usernametojson(mt[2])
+    if uj2f then
+      local uj2 = dpf.loadjson(uj2f,defaultjson)
+      for k,v in pairs(uj2.names) do
+        nicknamestring = nicknamestring .. k .. "/"
+      end
+      nicknamestring = nicknamestring:sub(1, -2)
+      if string.find(usernametojson(mt[2]), uj.id, 10) then
+        if numnames == 1 then
+          message.channel:send("Your nickname for trading and gifting is " .. nicknamestring)
+        else
+          message.channel:send("Your nicknames for trading and gifting are " .. nicknamestring)
+        end
+      else
+        local numnames2 = 0
+        for k,v in pairs(uj2.names) do
+          numnames2 = numnames2 + 1
+        end
+        if numnames2 == 1 then
+          message.channel:send(mt[2] .. " is their only name for trading and gifting.")
+        else
+          message.channel:send(mt[2] .. "'s nicknames for trading and gifting are " .. nicknamestring)
+        end
+      end
+    else
+      message.channel:send("Sorry, but I could not find a user named " .. mt[2] .. " in the database. Make sure that you have spelled it right, and that they have at least pulled a card to register!")
+    end
   end
 
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
