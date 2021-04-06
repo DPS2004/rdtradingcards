@@ -34,7 +34,8 @@ local time = sw:getTime()
       else
         uj.timespulled = uj.timespulled + 1
       end
-      uj.name = message.author.name .. "#".. message.author.discriminator
+      uj.names = {}
+      uj.names[message.author.name .. "#" .. message.author.discriminator] = true
       uj.id = message.author.id
       uj.lastpull = time:toHours()
       print(message.author.name .. "#" .. message.author.discriminator .. " is the username")
@@ -73,8 +74,9 @@ local time = sw:getTime()
       else
         uj.timespulled = uj.timespulled + 1
       end
-      if not uj.name then
-        uj.name = message.author.name .. "#".. message.author.discriminator
+      if not uj.names then
+        uj.names = {}
+        uj.names[message.author.name .. "#" .. message.author.discriminator] = true
       end
       uj.id = message.author.id
       uj.lastpull = time:toHours()
@@ -86,13 +88,19 @@ local time = sw:getTime()
       local minutesleft = math.ceil(uj.lastpull * 60 - time:toMinutes() + cooldown * 60)
       local durationtext = ""
       if math.floor(minutesleft / 60) > 0 then
-        durationtext = math.floor(minutesleft / 60) .. " hour(s)"
+        durationtext = math.floor(minutesleft / 60) .. " hour"
+        if math.floor(minutesleft / 60) ~= 1 then
+          durationtext = durationtext .. "s"
+        end
       end
       if minutesleft % 60 > 0 then
         if durationtext ~= "" then
           durationtext = durationtext .. " and "
         end
-        durationtext = durationtext .. minutesleft % 60 .. " minute(s)"
+        durationtext = durationtext .. minutesleft % 60 .. " minute"
+        if minutesleft % 60 ~= 1 then
+          durationtext = durationtext .. "s"
+        end
       end
       message.channel:send('Please wait ' .. durationtext .. ' before pulling again.')
     end
