@@ -21,7 +21,7 @@ function command.run(message, mt)
           print("saved user2 json with new card")
           
           message.channel:send {
-            content = 'You have given **' .. fntoname(curfilename) .. '** card to @' .. uj2.name .. ' .'
+            content = 'You have given **' .. fntoname(curfilename) .. '** card to <@' .. uj2.id .. '> .'
           }
 
         else
