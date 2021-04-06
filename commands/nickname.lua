@@ -21,21 +21,21 @@ function command.run(message, mt)
   end
   if mt[1] == "add" then
     if mt[2] then
-      if not usernametojson(mt[2]) then
-        if mt[2] ~= uj.id then
+      if mt[2] ~= uj.id then
+        if not usernametojson(mt[2]) then
           if numnames < maxnicknames then
             uj.names[mt[2]] = true
             message.channel:send("You have added " .. mt[2] .. " as your trading and gifting nickname!")
           else
             message.channel:send("Sorry, but you cannot have more than " .. maxnicknames .. " nicknames.")
           end
+        elseif string.find(usernametojson(mt[2]), uj.id, 10) then
+          message.channel:send("You already have " .. mt[2] .. " as a nickname!")
         else
-          message.channel:send("You cannot set your ID as a nickname!")
+          message.channel:send("Sorry, but someone else is already using that name.")
         end
-      elseif string.find(usernametojson(mt[2]), uj.id, 10) then
-        message.channel:send("You already have " .. mt[2] .. " as a nickname!")
       else
-        message.channel:send("Sorry, but someone else is already using that name.")
+        message.channel:send("You cannot set your ID as a nickname!")
       end
     end
   elseif mt[1] == "remove" then
