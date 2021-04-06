@@ -2,6 +2,7 @@ reaction = {}
 function reaction.run(ef, eom, reaction, userid)
   local ujf = eom.ujf
   local item1 = eom.item1
+  local numcards = eom.numcards
   local uj = dpf.loadjson(ujf, defaultjson)
   print("loaded uj")
   if uj.id == userid then
@@ -9,27 +10,35 @@ function reaction.run(ef, eom, reaction, userid)
     if reaction.emojiName == "✅" then
       print('user1 has accepted')
       if uj.inventory[item1] then
-        print("removing item1 from user1")
-        uj.inventory[item1] = uj.inventory[item1] - 1
-        if uj.inventory[item1] == 0 then
-          uj.inventory[item1] = nil
-        end     
-        print("giving item1 to user1 storage")
-        if uj.storage[item1] == nil then
-          uj.storage[item1] = 1
+        if uj.inventory[item1] >= numcards then
+          print("removing item1 from user1")
+          uj.inventory[item1] = uj.inventory[item1] - numcards
+          if uj.inventory[item1] == 0 then
+            uj.inventory[item1] = nil
+          end     
+          print("giving item1 to user1 storage")
+          if uj.storage[item1] == nil then
+            uj.storage[item1] = numcards
+          else
+            uj.storage[item1] = uj.storage[item1] + numcards
+          end
+          if uj.timesstored == nil then
+            uj.timesstored = numcards
+          else
+            uj.timesstored = uj.timesstored + numcards
+          end
+          
+          ef[reaction.message.id] = nil
+          local isplural = ""
+          if numcards ~= 1 then
+            isplural = "s"
+          end
+          reaction.message.channel:send("<@" .. uj.id .. "> successfully put their " .. numcards .. " **" .. fntoname(item1) .. "** card" .. isplural .. " into storage.")
+          dpf.savejson("savedata/events.json",ef)
+          dpf.savejson(ujf,uj)
         else
-          uj.storage[item1] = uj.storage[item1] + 1
+          reaction.message.channel:send("Sorry, but you do not have enough **" .. fntoname(item1) .. "** cards in your inventory.")
         end
-        if uj.timesstored == nil then
-          uj.timesstored = 1
-        else
-          uj.timesstored = uj.timesstored + 1
-        end
-        
-        ef[reaction.message.id] = nil
-        reaction.message.channel:send("<@" .. uj.id .. "> successfully put their **" .. fntoname(item1) .. "** card in storage.")
-        dpf.savejson("savedata/events.json",ef)
-        dpf.savejson(ujf,uj)
       else
         local newmessage = reaction.message.channel:send("An error has occured. Please make sure that you still have the card in your inventory!")
       end

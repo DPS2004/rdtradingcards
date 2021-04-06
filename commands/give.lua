@@ -1,44 +1,56 @@
 local command = {}
 function command.run(message, mt)
   print(message.author.name .. " did !give")
-  if #mt == 2 then
+  if #mt == 2 or #mt == 3 then
     local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
     local uj2f = usernametojson(mt[1])
     if uj2f then
       local uj2 = dpf.loadjson(uj2f,defaultjson)
       if uj2.id ~= message.author.id then
+        local numcards = 1
+        if(mt[3]) then
+          if tonumber(mt[3]) then
+            numcards = math.floor(mt[3])
+          end
+        end
         local curfilename = texttofn(mt[2])
-        if curfilename ~= nil then
-          if uj.inventory[curfilename] ~= nil then
+        if curfilename then
+          if uj.inventory[curfilename] >= numcards then
             print(uj.inventory[curfilename] .. "before")
-            uj.inventory[curfilename] = uj.inventory[curfilename] - 1
+            uj.inventory[curfilename] = uj.inventory[curfilename] - numcards
             print(uj.inventory[curfilename] .. "after")
             if uj.inventory[curfilename] == 0 then
               uj.inventory[curfilename] = nil
             end
             if uj.timescardgiven == nil then
-              uj.timescardgiven = 1
+              uj.timescardgiven = numcards
             else
-              uj.timescardgiven = uj.timescardgiven + 1
+              uj.timescardgiven = uj.timescardgiven + numcards
             end
             if uj2.timescardreceived == nil then
-              uj2.timescardreceived = 1
+              uj2.timescardreceived = numcards
             else
-              uj2.timescardreceived = uj2.timescardreceived + 1
+              uj2.timescardreceived = uj2.timescardreceived + numcards
             end
             dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
             print("user had card, removed from original user")
             if uj2.inventory[curfilename] == nil then
-              uj2.inventory[curfilename] = 1
+              uj2.inventory[curfilename] = numcards
             else
-              uj2.inventory[curfilename] = uj2.inventory[curfilename] + 1
+              uj2.inventory[curfilename] = uj2.inventory[curfilename] + numcards
             end
             dpf.savejson(uj2f,uj2)
             print("saved user2 json with new card")
-            
+            local isplural = ""
+            if numcards ~= 1 then
+              isplural = "s"
+            end
             message.channel:send {
-              content = 'You have gifted your **' .. fntoname(curfilename) .. '** card to <@' .. uj2.id .. '>.'
+              content = 'You have gifted ' .. numcards .. ' **' .. fntoname(curfilename) .. '** card' .. isplural ..' to <@' .. uj2.id .. '>.'
             }
+          elseif uj.inventory[curfilename] < numcards then
+            print("user doesn't have enough cards")
+            message.channel:send("Sorry, but you do not have enough **" .. fntoname(curfilename) .. "** cards in your inventory.")
           else
             print("user doesnt have card")
             if nopeeking then
@@ -61,7 +73,7 @@ function command.run(message, mt)
       message.channel:send("Sorry, but I could not find a user named " .. mt[1] .. " in the database. Make sure that you have spelled it right, and that they have at least pulled a card to register!")
     end
   else
-    message.channel:send("Sorry, but the c!give command expects 2 arguments. Please see c!help for more details.")
+    message.channel:send("Sorry, but the c!give command expects 2 or 3 arguments. Please see c!help for more details.")
   end
 end
 return command
