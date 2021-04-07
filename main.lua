@@ -13,6 +13,7 @@ _G["inspect"] = require('libs/inspect')
 _G["trim"] = function (s)
    return s:match "^%s*(.-)%s*$"
 end
+_G["attachmentchannel"] = "829197797789532181"
 
 
 

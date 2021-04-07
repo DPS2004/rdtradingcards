@@ -201,18 +201,6 @@ function command.run(message, mt,overwrite)
       return cfn
     end
     
-    _G['getcardtype'] = function (x)
-      ctype = nil
-      for i,v in ipairs(cdb) do
-        
-        if v.filename == x then
-          print(v.filename)
-          ctype = v.type
-        end
-      end
-      return ctype
-    end
-    
     ---aaaaaa
     _G['itemnametofn'] = function (x)
       for k,v in pairs(itemdb) do
@@ -246,7 +234,7 @@ function command.run(message, mt,overwrite)
     end
     
     _G['getcardtype'] = function (x)
-      ctype = nil
+      local ctype = nil
       for i,v in ipairs(cdb) do
         
         if v.filename == x then
@@ -263,7 +251,7 @@ function command.run(message, mt,overwrite)
     --- end aaaa
     _G['getcarddescription'] = function (x)
       print("getting description for " .. x)
-      cdescription = nil
+      local cdescription = nil
       for i,v in ipairs(cdb) do
         
         if v.filename == x then
@@ -277,7 +265,7 @@ function command.run(message, mt,overwrite)
 	
     _G['getcardsmell'] = function (x)
       print("getting smell for " .. x)
-      csmell = nil
+      local csmell = nil
       for i,v in ipairs(cdb) do
         
         if v.filename == x then
@@ -286,6 +274,18 @@ function command.run(message, mt,overwrite)
         end
       end
       return csmell 
+    end
+
+    _G['getcardembed'] = function (x)
+      local cembed = nil
+      for i,v in ipairs(cdb) do
+        
+        if v.filename == x then
+          print(v.smell)
+          cembed = v.embed
+        end
+      end
+      return cembed
     end
 	
     

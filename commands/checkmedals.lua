@@ -10,18 +10,16 @@ function command.run(message, mt,mc)
     print(inspect(v.require))
     local rfunc = loadstring(v.require)()
     if rfunc(uj) then
-      print("user can have "..v.recieve)
-      if not uj.medals[v.recieve] then
+      print("user can have "..v.receive)
+      if not uj.medals[v.receive] then
         print("user does not have it yet!")
-        uj.medals[v.recieve] = true
-        mc:send {
-          content = 'Congratulations! After collecting and storing some cards, '.. message.author.mentionString ..' got the **"'.. medaldb[v.recieve].name ..'"** medal!',
-          file = "medal_images/" .. v.recieve .. ".png"
-        }
+        uj.medals[v.receive] = true
+        mc:send('Congratulations! After collecting and storing some cards, '.. message.author.mentionString ..' got the **"'.. medaldb[v.receive].name ..'"** medal!')
+        mc:send('https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. medaldb[v.receive].embed .. '/' .. v.receive .. '.png')
       end
     else
-      print("user cannot have "..v.recieve)
-      uj.medals[v.recieve]=false
+      print("user cannot have "..v.receive)
+      uj.medals[v.receive]=false
     end
   end
   dpf.savejson(ujf,uj)
