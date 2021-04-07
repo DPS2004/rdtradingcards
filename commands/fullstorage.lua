@@ -8,18 +8,17 @@ function command.run(message, mt)
     numkey = numkey + 1
   end
   local storetable = {}
-  local storestring = ''
+  local storestring = 'Your storage contains:\n'
   local prevstorestring = ''
   for k,v in pairs(uj.storage) do
     table.insert(storetable, "**" .. (fntoname(k) or k) .. "** x" .. v .. "\n")
   end
   table.sort(storetable, function(a,b) return string.lower(a)<string.lower(b) end)
-  message.author:send("Your storage contains:")
   for i = 1, numkey do
     storestring = storestring .. storetable[i]
-    if #storestring >= 2000 then
+    if #storestring > 2000 then
       message.author:send(prevstorestring)
-      storestring = ''
+      storestring = storetable[i]
     end
     prevstorestring = storestring
   end

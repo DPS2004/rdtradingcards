@@ -8,18 +8,17 @@ function command.run(message, mt)
     numkey = numkey + 1
   end
   local invtable = {}
-  local invstring = ''
+  local invstring = 'Your inventory contains:\n'
   local previnvstring = ''
   for k,v in pairs(uj.inventory) do
     table.insert(invtable, "**" .. (fntoname(k) or k) .. "** x" .. v .. "\n")
   end
   table.sort(invtable, function(a,b) return string.lower(a)<string.lower(b) end)
-  message.author:send("Your inventory contains:")
   for i = 1, numkey do
     invstring = invstring .. invtable[i]
-    if #invstring >= 2000 then
+    if #invstring > 2000 then
       message.author:send(previnvstring)
-      invstring = ''
+      invstring = invtable[i]
     end
     previnvstring = invstring
   end
