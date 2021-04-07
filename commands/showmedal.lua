@@ -11,10 +11,8 @@ function command.run(message, mt)
     if curfilename ~= nil then
       if uj.medals[curfilename] then
         print("user has medal")
-        message.channel:send {
-          content = 'Here it is! Your **'.. medalfntoname(curfilename) .. '** medal.\nThe description on the back reads: ```'..medaldb[curfilename].description .. '``` The shorthand form is **' .. curfilename .. '**.',
-          file = "medal_images/" .. curfilename .. ".png"
-        }
+        message.channel:send('Here it is! Your **'.. medalfntoname(curfilename) .. '** medal.\nThe description on the back reads: ```'..medaldb[curfilename].description .. '``` The shorthand form is **' .. curfilename .. '**.')
+        message.channel:send('https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. medaldb[curfilename].embed .. '/' .. curfilename .. '.png')
       else
         print("user doesnt have medal")
         if nopeeking then

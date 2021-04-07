@@ -5,7 +5,7 @@
       "colesr",
       "coleur"
     ],
-    "recieve": "colec"
+    "receive": "colec"
   },
   {
     "require": [
@@ -13,7 +13,7 @@
       "farmersr",
       "farmerur"
     ],
-    "recieve": "farmerc"
+    "receive": "farmerc"
   },
   {
     "require": [
@@ -21,7 +21,7 @@
       "haileysr",
       "haileyur"
     ],
-    "recieve": "haileyc"
+    "receive": "haileyc"
   },
   {
     "require": [
@@ -29,7 +29,7 @@
       "iansr",
       "ianur"
     ],
-    "recieve": "ianc"
+    "receive": "ianc"
   },
   {
     "require": [
@@ -37,7 +37,7 @@
       "insomniacsr",
       "insomniacur"
     ],
-    "recieve": "insomniacc"
+    "receive": "insomniacc"
   },
   {
     "require": [
@@ -45,7 +45,7 @@
       "internsr",
       "internur"
     ],
-    "recieve": "internc"
+    "receive": "internc"
   },
   {
     "require": [
@@ -53,7 +53,7 @@
       "logansr",
       "loganur"
     ],
-    "recieve": "loganc"
+    "receive": "loganc"
   },
   {
     "require": [
@@ -61,7 +61,7 @@
       "minersr",
       "minerur"
     ],
-    "recieve": "minerc"
+    "receive": "minerc"
   },
   {
     "require": [
@@ -69,7 +69,7 @@
       "mrsstevensonsr",
       "mrsstevensonur"
     ],
-    "recieve": "mrsstevensonc"
+    "receive": "mrsstevensonc"
   },
   {
     "require": [
@@ -77,7 +77,7 @@
       "mrstevensonsr",
       "mrstevensonur"
     ],
-    "recieve": "mrstevensonc"
+    "receive": "mrstevensonc"
   },
   {
     "require": [
@@ -85,7 +85,7 @@
       "paigesr",
       "paigeur"
     ],
-    "recieve": "paigec"
+    "receive": "paigec"
   },
   {
     "require": [
@@ -93,7 +93,7 @@
       "politiciansr",
       "politicianur"
     ],
-    "recieve": "politicianc"
+    "receive": "politicianc"
   },
   {
     "require": [
@@ -101,7 +101,7 @@
       "samuraisr",
       "samuraiur"
     ],
-    "recieve": "samuraic"
+    "receive": "samuraic"
   },
   {
     "require": [
@@ -109,7 +109,7 @@
       "luciasr",
       "luciaur"
     ],
-    "recieve": "luciac"
+    "receive": "luciac"
   },
   {
     "require": [
@@ -117,7 +117,7 @@
       "nicolesr",
       "nicoleur"
     ],
-    "recieve": "nicolec"
+    "receive": "nicolec"
   },
   {
     "require": [
@@ -125,7 +125,7 @@
       "yosr",
       "your"
     ],
-    "recieve": "yoc"
+    "receive": "yoc"
   },
   {
     "require": [
@@ -133,7 +133,7 @@
       "ottosr",
       "ottour"
     ],
-    "recieve": "ottoc"
+    "receive": "ottoc"
   },
     
   {
@@ -142,7 +142,7 @@
       "bigbadbirdsr",
       "bigbadbirdur"
     ],
-    "recieve": "bigbadbirdc"
+    "receive": "bigbadbirdc"
   },
   
   {
@@ -151,7 +151,7 @@
       "inimasr",
       "inimaur"
     ],
-    "recieve": "inimac"
+    "receive": "inimac"
   },
   {
     "require": [
@@ -159,7 +159,7 @@
       "fhottosr",
       "fhottour"
     ],
-    "recieve": "fhottoc"
+    "receive": "fhottoc"
   },
   
   {
@@ -167,14 +167,14 @@
       "mylevel",
       "crystalline"
     ],
-    "recieve": "mylevelcrystalline"
+    "receive": "mylevelcrystalline"
   },
   {
     "require": [
       "samuraic",
       "samuraigroup"
     ],
-    "recieve": "samuraigroupc"
+    "receive": "samuraigroupc"
   },
   {
     "require": [
@@ -182,7 +182,7 @@
       "mrstevensonc",
       "stevensongroup"
     ],
-    "recieve": "stevensongroupc"
+    "receive": "stevensongroupc"
   },
   {
     "require": [
@@ -190,7 +190,7 @@
       "haileyc",
       "couplegroup"
     ],
-    "recieve": "couplegroupc"
+    "receive": "couplegroupc"
   },
   {
     "require": [
@@ -198,7 +198,7 @@
       "ianc",
       "doctorgroup"
     ],
-    "recieve": "doctorgroupc"
+    "receive": "doctorgroupc"
   }
 
 ]

@@ -58,10 +58,9 @@ local time = sw:getTime()
       else
         extension = ".png"
       end
-      message.channel:send {
-          content = 'Woah! '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to their inventory. The shorthand form of this card is **'.. newcard .. '**.',
-          file = "card_images/" .. newcard .. extension
-        }
+      message.channel:send('Woah! '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to their inventory. The shorthand form of this card is **'.. newcard .. '**.')
+      message.channel:send('https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. getcardembed(newcard) .. '/' .. newcard .. extension)
+
 
       local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
       if uj.inventory[newcard] == nil then

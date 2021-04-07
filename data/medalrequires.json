@@ -1,35 +1,35 @@
 [
   {
     "require": "function checkrequirements(uj) if uj.storage['roomsdc_r'] and uj.storage['roomsdc_sr'] and uj.storage['roomsdc_ur'] then return true else return false end end return checkrequirements",
-    "recieve": "itainteasybeinggreen"
+    "receive": "itainteasybeinggreen"
   },
   {
     "require": "function checkrequirements(uj) print('pepis') local result = false for k,v in pairs(uj.storage) do print(k) print(v) if v >= 10 then result = true end end return result end return checkrequirements",
-    "recieve": "unlucky"
+    "receive": "unlucky"
   },  
   {
     "require": "function checkrequirements(uj) print('checking rares') local result = false local rarecount = 0 for k, v in pairs(uj.storage) do print(k) if getcardtype(k) == 'Rare' then rarecount = rarecount + v end end print('rarecount is ' .. rarecount) if rarecount >= 20 then result = true end return result end return checkrequirements",
-    "recieve": "bronzecollector"
+    "receive": "bronzecollector"
   }, 
   {
     "require": "function checkrequirements(uj) print('checking superrares') local result = false local rarecount = 0 for k, v in pairs(uj.storage) do print(k) if getcardtype(k) == 'Super Rare' then rarecount = rarecount + v end end print('superrarecount is ' .. rarecount) if rarecount >= 20 then result = true end return result end return checkrequirements",
-    "recieve": "silversaver"
+    "receive": "silversaver"
   }, 
   {
     "require": "function checkrequirements(uj) print('checking ultrarares') local result = false local rarecount = 0 for k, v in pairs(uj.storage) do print(k) if getcardtype(k) == 'Ultra Rare' then rarecount = rarecount + v end end print('ultrararecount is ' .. rarecount) if rarecount >= 20 then result = true end return result end return checkrequirements",
-    "recieve": "goldhoarder"
+    "receive": "goldhoarder"
   }, 
   {
     "require": "function checkrequirements(uj) if uj.storage['roomsr'] and uj.storage['roomssr'] and uj.storage['roomsur'] and uj.storage['rowsr'] and uj.storage['rowssr'] and uj.storage['rowsur'] and uj.storage['vfxr'] and uj.storage['vfxsr'] and uj.storage['vfxur'] and uj.storage['soundr'] and uj.storage['soundsr'] and uj.storage['soundur'] then return true else return false end end return checkrequirements",
-    "recieve": "editorenthusiast"
+    "receive": "editorenthusiast"
   },
   {
     "require": "function checkrequirements(uj) if uj.storage['beansr'] and uj.storage['oeufr'] and uj.storage['oeufur'] and uj.storage['doctahr'] and uj.storage['doctahur'] and uj.storage['iantrashcanr'] and uj.storage['iantrashcanur'] and uj.storage['wallclockr'] and uj.storage['wallclockur'] and uj.storage['logunr'] and uj.storage['logunsr'] and uj.storage['logunur'] then return true else return false end end return checkrequirements",
-    "recieve": "mememaestro"
+    "receive": "mememaestro"
   },
   {
     "require": "function checkrequirements(uj) print(inspect(uj)) if uj.storage['samurair'] then return false else return false end end return checkrequirements",
-    "recieve": "easytogetdebugmedal"
+    "receive": "easytogetdebugmedal"
   }
 
 

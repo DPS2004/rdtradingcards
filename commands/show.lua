@@ -21,12 +21,8 @@ function command.run(message, mt)
       end
       if uj.inventory[curfilename] or uj.storage[curfilename] then
         print("user has card")
-        
-        message.channel:send {
-          content = 'Here it is! Your **'.. fntoname(curfilename) .. '** card. The shorthand form is **' .. curfilename .. '**.',
-          
-          file = "card_images/" .. curfilename .. extension
-        }
+        message.channel:send('Here it is! Your **'.. fntoname(curfilename) .. '** card. The shorthand form is **' .. curfilename .. '**.')
+        message.channel:send('https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. getcardembed(curfilename) .. '/' .. curfilename .. extension)
         local description = getcarddescription(curfilename)
         if description then
           message.channel:send('The description on the back reads: `'..description..'`')

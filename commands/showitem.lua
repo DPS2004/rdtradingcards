@@ -16,10 +16,8 @@ function command.run(message, mt)
     local curfilename = itemtexttofn(request)
     if curfilename then
       if uj.items[curfilename] then
-        message.channel:send {
-          content = 'Here it is! Your **'.. itemfntoname(curfilename) .. '**.\nThe description reads: ```'..itemdb[curfilename].description .. '``` The shorthand form is **' .. curfilename .. '**.',
-          file = "items/" .. curfilename .. ".png"
-        }
+        message.channel:send('Here it is! Your **'.. itemfntoname(curfilename) .. '**.\nThe description reads: ```'..itemdb[curfilename].description .. '``` The shorthand form is **' .. curfilename .. '**.')
+        message.channel:send('https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. itemdb[curfilename].embed .. '/' .. curfilename .. '.png')
       else
         if nopeeking then
           message.channel:send("Sorry, but I either could not find the " .. request .. " item in the database, or you do not have it. Make sure that you spelled it right!")
