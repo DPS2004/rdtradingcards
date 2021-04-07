@@ -7,9 +7,9 @@ function command.run(message, mt,mc)
   local ujf = ("savedata/" .. message.author.id .. ".json")
   local uj = dpf.loadjson(ujf, defaultjson)
   for i,v in ipairs(coll) do
-    print("checking for " .. v.recieve)
-    if not uj.storage[v.recieve] then
-      print("user does not have " .. v.recieve)
+    print("checking for " .. v.receive)
+    if not uj.storage[v.receive] then
+      print("user does not have " .. v.receive)
       local allcards = true
       for w,x in ipairs(v.require) do
         if not uj.storage[x] then
@@ -17,22 +17,20 @@ function command.run(message, mt,mc)
         end
       end
       if allcards then
-        local newcard = v.recieve
+        local newcard = v.receive
         if uj.storage[newcard] == nil then
           uj.storage[newcard] = 1
         else
           uj.storage[newcard] = uj.storage[newcard] + 1
         end
         local ncn = fntoname(newcard)
-        mc:send {
-          content = 'Congratulations! After collecting and storing some other cards, '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to their storage.',
-          file = "card_images/" .. newcard .. ".png"
-        }
+        mc:send('Congratulations! After collecting and storing some other cards, '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to their storage.')
+        mc:send('https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. getcardembed(newcard) .. '/' .. newcard .. extension)
       else
         print("no card for you lol")
       end
     else
-      print("user already has " .. v.recieve)
+      print("user already has " .. v.receive)
     end
   end
   dpf.savejson(ujf,uj)

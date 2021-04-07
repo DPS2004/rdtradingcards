@@ -1,47 +1,58 @@
 {
   "nothing" : {
     "name": "Nothing",
-    "description": "Does nothing (default item)"
+    "description": "Does nothing (default item)",
+    "embed": "829203129881985094"
   },
   "rustysword": {
     "name": "Rusty Sword",
-    "description": "Makes cards containing Samurai or Insomniac more likely to be pulled."
+    "description": "Makes cards containing Samurai or Insomniac more likely to be pulled.",
+    "embed": "829203136656572486"
   },
   "cafemixtape": {
     "name": "Cafe Mixtape",
-    "description": "Makes cards containing Cole Brew or Nicole Ting more likely to be pulled."
+    "description": "Makes cards containing Cole Brew or Nicole Ting more likely to be pulled.",
+    "embed": "829203111897727046"
   },
   "oversizedstethoscope": {
     "name": "Oversized Stethoscope",
-    "description": "Makes cards containing Paige or Ian more likely to be pulled."
+    "description": "Makes cards containing Paige or Ian more likely to be pulled.",
+    "embed": "829203133455532073"
   },
   "valentinesdaycard": {
     "name": "Valentines Day Card",
-    "description": "Makes cards containing Logan or Hailey more likely to be pulled."
+    "description": "Makes cards containing Logan or Hailey more likely to be pulled.",
+    "embed": "829203143723843594"
   },
   "hardcandy": {
     "name": "Hard Candy",
-    "description": "Makes cards containing Mr. Stevenson or Mrs. Stevenson more likely to be pulled."
+    "description": "Makes cards containing Mr. Stevenson or Mrs. Stevenson more likely to be pulled.",
+    "embed": "829203126372139028"
   },
   "deluxebirdseed": {
     "name": "Deluxe Birdseed",
-    "description": "Makes cards containing a bird more likely to be pulled."
+    "description": "Makes cards containing a bird more likely to be pulled.",
+    "embed": "829203119036301373"
   },
   "brokenmouse": {
     "name": "Broken Mouse",
-    "description": "Skips yes/no prompt for storing cards, equipping items, and using the strange machine"
+    "description": "Skips yes/no prompt for storing cards, equipping items, and using the strange machine",
+    "embed": "829203107950493716"
   },
   "stoppedwatch": {
     "name": "Stopped Watch",
-    "description": "Brings the c!pull timer down to 10 hours."
+    "description": "Brings the c!pull timer down to 10 hours.",
+    "embed": "829203140405624832"
   },
   "faithfulnecklace": {
     "name": "Faithful Necklace",
-    "description": "Brings the c!pray timer down to 2.5 days."
+    "description": "Brings the c!pray timer down to 2.5 days.",
+    "embed": "829203123024297984"
   },
     "coolhat": {
     "name": "Cool Hat",
-    "description": "Makes you look cooler."
+    "description": "Makes you look cooler.",
+    "embed": "829203115609292810"
   }
 
 }

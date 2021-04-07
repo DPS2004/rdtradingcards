@@ -20,7 +20,8 @@
           "smell": "Gltichiness",
           "bonuses": {
             "rustysword": true
-          }
+          },
+          "embed": "829200407825612820"
         },
         {
           "chance": 2,
@@ -32,7 +33,8 @@
           "smell": "The Past",
           "bonuses": {
             "rustysword": true
-          }
+          },
+          "embed": "829201904554475520"
         },
         {
           "chance": 1,
@@ -43,7 +45,8 @@
           "smell": "The Future",
           "bonuses": {
             "rustysword": true
-          }
+          },
+          "embed": "829202580198129674"
         },
         {
           "chance": 2,
@@ -55,7 +58,8 @@
           "smell": "Coffee Beans",
           "bonuses": {
             "cafemixtape": true
-          }
+          },
+          "embed": "829200326049267722"
         },
         {
           "chance": 2,
@@ -67,7 +71,8 @@
           "smell": "Understaffing",
           "bonuses": {
             "oversizedstethoscope": true
-          }
+          },
+          "embed": "829202293370126396"
         },
         {
           "chance": 2,
@@ -79,7 +84,8 @@
           "smell": "Love",
           "bonuses": {
             "valentinesdaycard": true
-          }
+          },
+          "embed": "829201863832371251"
         },
         {
           "chance": 1,
@@ -91,7 +97,8 @@
           "smell": "Super Glitchiness",
           "bonuses": {
             "rustysword": true
-          }
+          },
+          "embed": "829202833034444830"
         },
         {
           "chance": 1,
@@ -104,7 +111,8 @@
           "bonuses": {
             "rustysword": true,
             "valentinesdaycard": true
-          }
+          },
+          "embed": "829201394611126282"
         },
         {
           "chance": 1,
@@ -117,7 +125,8 @@
           "smell": "Beans",
           "bonuses": {
             "rustysword": true
-          }
+          },
+          "embed": "829200730547421194"
         },
         {
           "chance": 1,
@@ -128,7 +137,8 @@
           "description": "(Level by 7th Beat Games)",
           "smell": "Pencil Lead",
           "bonuses": {
-          }
+          },
+          "embed": "829200373872721990"
         },
         {
           "chance": 1,
@@ -140,7 +150,8 @@
           "smell": "Tears",
           "bonuses": {
             "oversizedstethoscope": true
-          }
+          },
+          "embed": "829201655026286602"
         },
         {
           "chance": 1,
@@ -152,7 +163,8 @@
           "smell": "Cluttered Files",
           "bonuses": {
             "cafemixtape": true
-          }
+          },
+          "embed": "829202980468949032"
         },
         {
           "chance": 1,
@@ -165,7 +177,8 @@
           "bonuses": {
             "rustysword": true,
             "valentinesdaycard": true
-          }
+          },
+          "embed": "829202304678887424"
         },
         {
           "chance": 1,
@@ -177,7 +190,8 @@
           "smell": "Role Reversal",
           "bonuses": {
             "valentinesdaycard": true
-          }
+          },
+          "embed": "829201870689140767"
         },
         {
           "chance": 1,
@@ -189,7 +203,8 @@
           "smell": "Smooth Jazz",
           "bonuses": {
             "cafemixtape": true
-          }
+          },
+          "embed": "829202724540907540"
         },
         {
           "chance": 1,
@@ -201,7 +216,8 @@
           "smell": "Mutual Loneliness",
           "bonuses": {
             "hardcandy": true
-          }
+          },
+          "embed": "829201469806608444"
         },
         {
           "chance": 1,
@@ -214,7 +230,8 @@
           "bonuses": {
             "hardcandy": true,
             "deluxebirdseed": true
-          }
+          },
+          "embed": "829202794279075850"
         },
         {
           "chance": 1,
@@ -225,7 +242,8 @@
           "description": "(Level by 7th Beat Games)",
           "smell": "The Vet's Office",
           "bonuses": {
-          }
+          },
+          "embed": "829202450056609862"
         },
         {
           "chance": 1,
@@ -237,7 +255,8 @@
           "smell": "Fighting Game Tournaments",
           "bonuses": {
             "cafemixtape": true
-          }
+          },
+          "embed": "829200749698875402"
         },
         {
           "chance": 2,
@@ -250,7 +269,8 @@
           "bonuses": {
             "valentinesdaycard": true,
             "deluxebirdseed": true
-          }
+          },
+          "embed": "829202693674369024"
         },
         {
           "chance": 2,
@@ -263,7 +283,8 @@
           "bonuses": {
             "valentinesdaycard": true,
             "cafemixtape": true
-          }
+          },
+          "embed": "829201891489349692"
         },
         {
           "chance": 2,
@@ -275,7 +296,8 @@
           "smell": "Nicotine",
           "bonuses": {
             "cafemixtape": true
-          }
+          },
+          "embed": "829202429437542410"
         },
         {
           "chance": 2,
@@ -288,7 +310,8 @@
           "bonuses": {
             "rustysword": true,
             "valentinesdaycard": true
-          }
+          },
+          "embed": "829201878784671775"
         },
         {
           "chance": 2,
@@ -301,7 +324,8 @@
           "bonuses": {
             "hardcandy": true,
             "deluxebirdseed": true
-          }
+          },
+          "embed": "829202786901688360"
         },
         {
           "chance": 2,
@@ -313,7 +337,8 @@
           "smell": "Loneliness",
           "bonuses": {
             "hardcandy": true
-          }
+          },
+          "embed": "829201466777403423"
         },
         {
           "chance": 2,
@@ -325,7 +350,8 @@
           "smell": "Electricity",
           "bonuses": {
             "cafemixtape": true
-          }
+          },
+          "embed": "829202848108904478"
         },
         {
           "chance": 2,
@@ -338,7 +364,8 @@
           "bonuses": {
             "cafemixtape": true,
             "rustysword": true
-          }
+          },
+          "embed": "829201917720133682"
         },
         {
           "chance": 2,
@@ -350,7 +377,8 @@
           "smell": "Improvisation",
           "bonuses": {
             "cafemixtape": true
-          }
+          },
+          "embed": "829202713731530752"
         }
       ]
     },
@@ -373,7 +401,8 @@
           "smell": "lofi beats",
           "bonuses": {
             "cafemixtape": true
-          }
+          },
+          "embed": "829200744153612308"
         },
         {
           "chance": 2,
@@ -385,7 +414,8 @@
           "smell": "lofi beats",
           "bonuses": {
             "cafemixtape": true
-          }
+          },
+          "embed": "829200772579196948"
         },
         {
           "chance": 1,
@@ -397,7 +427,8 @@
           "smell": "lofi beats",
           "bonuses": {
             "cafemixtape": true
-          }
+          },
+          "embed": "829201399824646154"
         },
         {
           "chance": 1,
@@ -409,7 +440,8 @@
           "smell": "lofi beats",
           "bonuses": {
             "cafemixtape": true
-          }
+          },
+          "embed": "829200743529185311"
         },
         {
           "chance": 0,
@@ -421,7 +453,8 @@
           "smell": "lofi beats",
           "bonuses": {
             "cafemixtape": true
-          }
+          },
+          "embed": "829200745173352448"
         }
       ]
     },
@@ -438,7 +471,8 @@
           "description": "(Art by Winston Lee)",
           "smell": "Haybales",
           "bonuses": {
-          }
+          },
+          "embed": "829201524118781982"
         },
         {
           "chance": 2,
@@ -449,7 +483,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Haybales",
           "bonuses": {
-          }
+          },
+          "embed": "829201531168489542"
         },
         {
           "chance": 1,
@@ -460,7 +495,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Haybales",
           "bonuses": {
-          }
+          },
+          "embed": "829201538429485066"
         },
         {
           "chance": 1,
@@ -471,7 +507,8 @@
           "description": "(Art by Winston Lee)",
           "smell": "Game Development",
           "bonuses": {
-          }
+          },
+          "embed": "829201518547697684"
         },
         {
           "chance": 0,
@@ -482,7 +519,8 @@
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Farmer (Art by Kyle Labriola)",
           "smell": "Haybales",
           "bonuses": {
-          }
+          },
+          "embed": "829201514341728286"
         }
       ]
     },
@@ -500,7 +538,8 @@
           "smell": "Trains",
           "bonuses": {
             "valentinesdaycard": true
-          }
+          },
+          "embed": "829201624349933598"
         },
         {
           "chance": 2,
@@ -512,7 +551,8 @@
           "smell": "Trains",
           "bonuses": {
             "valentinesdaycard": true
-          }
+          },
+          "embed": "829201634667659314"
         },
         {
           "chance": 1,
@@ -524,7 +564,8 @@
           "smell": "Trains",
           "bonuses": {
             "valentinesdaycard": true
-          }
+          },
+          "embed": "829201643165712434"
         },
         {
           "chance": 0,
@@ -536,7 +577,8 @@
           "smell": "Trains",
           "bonuses": {
             "valentinesdaycard": true
-          }
+          },
+          "embed": "829201618921586768"
         }
       ]
     },
@@ -554,7 +596,8 @@
           "smell": "Gaming",
           "bonuses": {
             "oversizedstethoscope": true
-          }
+          },
+          "embed": "829201680271933460"
         },
         {
           "chance": 2,
@@ -566,7 +609,8 @@
           "smell": "Gaming",
           "bonuses": {
             "oversizedstethoscope": true
-          }
+          },
+          "embed": "829201689441337384"
         },
         {
           "chance": 1,
@@ -578,7 +622,8 @@
           "smell": "Gaming",
           "bonuses": {
             "oversizedstethoscope": true
-          }
+          },
+          "embed": "829201722266222602"
         },
         {
           "chance": 0,
@@ -590,7 +635,8 @@
           "smell": "Gaming",
           "bonuses": {
             "oversizedstethoscope": true
-          }
+          },
+          "embed": "829201675729371206"
         }
       ]
     },
@@ -608,7 +654,8 @@
           "smell": "WiFi",
           "bonuses": {
             "rustysword": true
-          }
+          },
+          "embed": "829201803999707176"
         },
         {
           "chance": 2,
@@ -620,7 +667,8 @@
           "smell": "WiFi",
           "bonuses": {
             "rustysword": true
-          }
+          },
+          "embed": "829201811939917884"
         },
         {
           "chance": 1,
@@ -632,7 +680,8 @@
           "smell": "WiFi",
           "bonuses": {
             "rustysword": true
-          }
+          },
+          "embed": "829201820550692884"
         },
         {
           "chance": 0,
@@ -644,7 +693,8 @@
           "smell": "WiFi",
           "bonuses": {
             "rustysword": true
-          }
+          },
+          "embed": "829201798559957022"
         }
       ]
     },
@@ -661,7 +711,8 @@
           "description": "(Art by Winston Lee)",
           "smell": "Fingernails",
           "bonuses": {
-          }
+          },
+          "embed": "829201832449671168"
         },
         {
           "chance": 2,
@@ -672,7 +723,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Fingernails",
           "bonuses": {
-          }
+          },
+          "embed": "829201837969375242"
         },
         {
           "chance": 1,
@@ -683,7 +735,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Fingernails",
           "bonuses": {
-          }
+          },
+          "embed": "829201845477572618"
         },
         {
           "chance": 0,
@@ -694,7 +747,8 @@
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of the Intern (Art by Kyle Labriola)",
           "smell": "Fingernails",
           "bonuses": {
-          }
+          },
+          "embed": "829201827823222824"
         }
       ]
     },
@@ -712,7 +766,8 @@
           "smell": "Young Love",
           "bonuses": {
             "valentinesdaycard": true
-          }
+          },
+          "embed": "829201931989811219"
         },
         {
           "chance": 2,
@@ -724,7 +779,8 @@
           "smell": "Young Love",
           "bonuses": {
             "valentinesdaycard": true
-          }
+          },
+          "embed": "829201967398125618"
         },
         {
           "chance": 1,
@@ -736,7 +792,8 @@
           "smell": "Young Love",
           "bonuses": {
             "valentinesdaycard": true
-          }
+          },
+          "embed": "829201974314139648"
         },
         {
           "chance": 0,
@@ -748,7 +805,8 @@
           "smell": "Young Love",
           "bonuses": {
             "valentinesdaycard": true
-          }
+          },
+          "embed": "829201928134852628"
         }
       ]
     },
@@ -765,7 +823,8 @@
           "description": "(Art by Winston Lee)",
           "smell": "Coal",
           "bonuses": {
-          }
+          },
+          "embed": "829202081428406282"
         },
         {
           "chance": 2,
@@ -776,7 +835,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Coal",
           "bonuses": {
-          }
+          },
+          "embed": "829202087949762600"
         },
         {
           "chance": 1,
@@ -787,7 +847,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Coal",
           "bonuses": {
-          }
+          },
+          "embed": "829202094220509234"
         },
         {
           "chance": 0,
@@ -798,7 +859,8 @@
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Miner (Art by Kyle Labriola)",
           "smell": "Coal",
           "bonuses": {
-          }
+          },
+          "embed": "829202076215148565"
         }
       ]
     },
@@ -816,7 +878,8 @@
           "smell": "Old Women",
           "bonuses": {
             "hardcandy": true
-          }
+          },
+          "embed": "829202123958255646"
         },
         {
           "chance": 2,
@@ -828,7 +891,8 @@
           "smell": "Old Women",
           "bonuses": {
             "hardcandy": true
-          }
+          },
+          "embed": "829202131646677022"
         },
         {
           "chance": 1,
@@ -840,7 +904,8 @@
           "smell": "Old Women",
           "bonuses": {
             "hardcandy": true
-          }
+          },
+          "embed": "829202138725875752"
         },
         {
           "chance": 0,
@@ -852,7 +917,8 @@
           "smell": "Old Women",
           "bonuses": {
             "hardcandy": true
-          }
+          },
+          "embed": "829202119789772810"
         }
       ]
     },
@@ -870,7 +936,8 @@
           "smell": "Old Men",
           "bonuses": {
             "hardcandy": true
-          }
+          },
+          "embed": "829202159534997514"
         },
         {
           "chance": 2,
@@ -882,7 +949,8 @@
           "smell": "Old Men",
           "bonuses": {
             "hardcandy": true
-          }
+          },
+          "embed": "829202166366601296"
         },
         {
           "chance": 1,
@@ -894,7 +962,8 @@
           "smell": "Old Men",
           "bonuses": {
             "hardcandy": true
-          }
+          },
+          "embed": "829202174058954792"
         },
         {
           "chance": 0,
@@ -906,7 +975,8 @@
           "smell": "Old Men",
           "bonuses": {
             "hardcandy": true
-          }
+          },
+          "embed": "829202154199580722"
         }
       ]
     },
@@ -924,7 +994,8 @@
           "smell": "Sweat and Tears",
           "bonuses": {
             "oversizedstethoscope": true
-          }
+          },
+          "embed": "829202353567563776"
         },
         {
           "chance": 2,
@@ -936,7 +1007,8 @@
           "smell": "Sweat and Tears",
           "bonuses": {
             "oversizedstethoscope": true
-          }
+          },
+          "embed": "829202361544343592"
         },
         {
           "chance": 1,
@@ -948,7 +1020,8 @@
           "smell": "Sweat and Tears",
           "bonuses": {
             "oversizedstethoscope": true
-          }
+          },
+          "embed": "829202369166311444"
         },
         {
           "chance": 0,
@@ -960,7 +1033,8 @@
           "smell": "Sweat and Tears",
           "bonuses": {
             "oversizedstethoscope": true
-          }
+          },
+          "embed": "829202348417089556"
         }
       ]
     },
@@ -977,7 +1051,8 @@
           "description": "(Art by Winston Lee)",
           "smell": "Democracy",
           "bonuses": {
-          }
+          },
+          "embed": "829202401713717268"
         },
         {
           "chance": 2,
@@ -988,7 +1063,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Democracy",
           "bonuses": {
-          }
+          },
+          "embed": "829202407238008904"
         },
         {
           "chance": 1,
@@ -999,7 +1075,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Democracy",
           "bonuses": {
-          }
+          },
+          "embed": "829202413432733746"
         },
         {
           "chance": 0,
@@ -1010,7 +1087,8 @@
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of the Politician (Art by Kyle Labriola)",
           "smell": "Democracy",
           "bonuses": {
-          }
+          },
+          "embed": "829202395971715082"
         }
       ]
     },
@@ -1028,7 +1106,8 @@
           "smell": "Metal",
           "bonuses": {
             "rustysword": true
-          }
+          },
+          "embed": "829202667460886548"
         },
         {
           "chance": 2,
@@ -1040,7 +1119,8 @@
           "smell": "Metal",
           "bonuses": {
             "rustysword": true
-          }
+          },
+          "embed": "829202674778898442"
         },
         {
           "chance": 1,
@@ -1052,7 +1132,8 @@
           "smell": "Metal",
           "bonuses": {
             "rustysword": true
-          }
+          },
+          "embed": "829202682064404480"
         },
         {
           "chance": 0,
@@ -1064,7 +1145,8 @@
           "smell": "Samurai",
           "bonuses": {
             "rustysword": true
-          }
+          },
+          "embed": "829202563370057748"
         }
       ]
     },
@@ -1082,7 +1164,8 @@
           "smell": "Minimum Wage",
           "bonuses": {
             "cafemixtape": true
-          }
+          },
+          "embed": "829202238424743996"
         },
         {
           "chance": 2,
@@ -1094,7 +1177,8 @@
           "smell": "Minimum Wage",
           "bonuses": {
             "cafemixtape": true
-          }
+          },
+          "embed": "829202246206095380"
         },
         {
           "chance": 1,
@@ -1106,7 +1190,8 @@
           "smell": "Minimum Wage",
           "bonuses": {
             "cafemixtape": true
-          }
+          },
+          "embed": "829202262349447169"
         },
         {
           "chance": 0,
@@ -1118,7 +1203,8 @@
           "smell": "Minimum Wage",
           "bonuses": {
             "cafemixtape": true
-          }
+          },
+          "embed": "829202231559061534"
         }
       ]
     },
@@ -1135,7 +1221,8 @@
           "description": "(Art by Adipemdragon)",
           "smell": "Imagination",
           "bonuses": {
-          }
+          },
+          "embed": "829202052985913354"
         },
         {
           "chance": 2,
@@ -1146,7 +1233,8 @@
           "description": "(Art by Kyle Labriola, edited by Lumina)",
           "smell": "Imagination",
           "bonuses": {
-          }
+          },
+          "embed": "829202060981436446"
         },
         {
           "chance": 1,
@@ -1157,7 +1245,8 @@
           "description": "(Art by Kyle Labriola, edited by Lumina)",
           "smell": "Imagination",
           "bonuses": {
-          }
+          },
+          "embed": "829202070208118784"
         },
         {
           "chance": 0,
@@ -1168,7 +1257,8 @@
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Lucia Moon (Art by Lumina, based on art by Kyle Labriola)",
           "smell": "Imagination",
           "bonuses": {
-          }
+          },
+          "embed": "829202045797924864"
         }
       ]
     },
@@ -1185,7 +1275,8 @@
           "description": "(Art by Winston Lee)",
           "smell": "Freestyle Rap",
           "bonuses": {
-          }
+          },
+          "embed": "829203012345004093"
         },
         {
           "chance": 2,
@@ -1196,7 +1287,8 @@
           "description": "(Art by DeadlySprinklez)",
           "smell": "Freestyle Rap",
           "bonuses": {
-          }
+          },
+          "embed": "829203019974574080"
         },
         {
           "chance": 1,
@@ -1207,7 +1299,8 @@
           "description": "(Art by DeadlySprinklez)",
           "smell": "Freestyle Rap",
           "bonuses": {
-          }
+          },
+          "embed": "829203033362923530"
         },
         {
           "chance": 0,
@@ -1218,7 +1311,8 @@
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Yo (Art by Lumina, based on art by Kyle Labriola)",
           "smell": "Freestyle Rap",
           "bonuses": {
-          }
+          },
+          "embed": "829203005357555762"
         }
       ]
     },
@@ -1235,7 +1329,8 @@
           "description": "(Art by Giacomo)",
           "smell": "Computer Chips",
           "bonuses": {
-          }
+          },
+          "embed": "829202327361552444"
         },
         {
           "chance": 2,
@@ -1246,7 +1341,8 @@
           "description": "(Art by Axobotl)",
           "smell": "Computer Chips",
           "bonuses": {
-          }
+          },
+          "embed": "829202332351856671"
         },
         {
           "chance": 1,
@@ -1257,7 +1353,8 @@
           "description": "(Art by Lumina)",
           "smell": "Computer Chips",
           "bonuses": {
-          }
+          },
+          "embed": "829202342809174036"
         },
         {
           "chance": 0,
@@ -1268,7 +1365,8 @@
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Otto (Art by Lumina)",
           "smell": "Computer Chips",
           "bonuses": {
-          }
+          },
+          "embed": "829202317097041950"
         }
       ]
     },
@@ -1290,7 +1388,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Time Bending",
           "bonuses": {
-          }
+          },
+          "embed": "829202506919313428"
         },
         {
           "chance": 2,
@@ -1301,7 +1400,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Time Bending",
           "bonuses": {
-          }
+          },
+          "embed": "829202512145547264"
         },
         {
           "chance": 1,
@@ -1312,7 +1412,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Time Bending",
           "bonuses": {
-          }
+          },
+          "embed": "829202521355976715"
         },
         {
           "chance": 0.25,
@@ -1323,7 +1424,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "3000 Pixels",
           "bonuses": {
-          }
+          },
+          "embed": "829202489177014292"
         },
         {
           "chance": 0.5,
@@ -1334,7 +1436,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "3000 Pixels",
           "bonuses": {
-          }
+          },
+          "embed": "829202494223417354"
         },
         {
           "chance": 0.25,
@@ -1345,7 +1448,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "3000 Pixels",
           "bonuses": {
-          }
+          },
+          "embed": "829202501214666772"
         }
       ]
     },
@@ -1362,7 +1466,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Overcharting",
           "bonuses": {
-          }
+          },
+          "embed": "829202527185797160"
         },
         {
           "chance": 2,
@@ -1373,7 +1478,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Overcharting",
           "bonuses": {
-          }
+          },
+          "embed": "829202531665969192"
         },
         {
           "chance": 1,
@@ -1384,7 +1490,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Overcharting",
           "bonuses": {
-          }
+          },
+          "embed": "829202537780609064"
         }
       ]
     },
@@ -1401,7 +1508,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Kneecaps",
           "bonuses": {
-          }
+          },
+          "embed": "829202730912055346"
         },
         {
           "chance": 2,
@@ -1412,7 +1520,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Kneecaps",
           "bonuses": {
-          }
+          },
+          "embed": "829202736829825034"
         },
         {
           "chance": 1,
@@ -1423,7 +1532,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Kneecaps",
           "bonuses": {
-          }
+          },
+          "embed": "829202743481729064"
         }
       ]
     },
@@ -1440,7 +1550,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Too Much Gray",
           "bonuses": {
-          }
+          },
+          "embed": "829202925557383199"
         },
         {
           "chance": 2,
@@ -1451,7 +1562,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Too Much Gray",
           "bonuses": {
-          }
+          },
+          "embed": "829202931021643796"
         },
         {
           "chance": 1,
@@ -1462,7 +1574,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Too Much Gray",
           "bonuses": {
-          }
+          },
+          "embed": "829202938240958514"
         }
       ]
     },
@@ -1480,7 +1593,8 @@
           "smell": "Butterflies",
           "bonuses": {
             "rustysword": true
-          }
+          },
+          "embed": "829202610333417512"
         },
         {
           "chance": 1,
@@ -1492,7 +1606,8 @@
           "smell": "Old Age",
           "bonuses": {
             "hardcandy": true
-          }
+          },
+          "embed": "829202800045981716"
         },
         {
           "chance": 1,
@@ -1504,7 +1619,8 @@
           "smell": "Blushing",
           "bonuses": {
             "valentinesdaycard": true
-          }
+          },
+          "embed": "829201406501322772"
         },
         {
           "chance": 1,
@@ -1516,7 +1632,8 @@
           "smell": "Overworking",
           "bonuses": {
             "oversizedstethoscope": true
-          }
+          },
+          "embed": "829201486566391868"
         },
         {
           "chance": 0,
@@ -1528,7 +1645,8 @@
           "smell": "Butterflies",
           "bonuses": {
             "rustysword": true
-          }
+          },
+          "embed": "829202630349684787"
         },
         {
           "chance": 0,
@@ -1540,7 +1658,8 @@
           "smell": "Old Age",
           "bonuses": {
             "hardcandy": true
-          }
+          },
+          "embed": "829202816202702878"
         },
         {
           "chance": 0,
@@ -1552,7 +1671,8 @@
           "smell": "Blushing",
           "bonuses": {
             "valentinesdaycard": true
-          }
+          },
+          "embed": "829200777599909918"
         },
         {
           "chance": 0,
@@ -1564,7 +1684,8 @@
           "smell": "Overworking",
           "bonuses": {
             "oversizedstethoscope": true
-          }
+          },
+          "embed": "829201507349561379"
         }
       ]
     },
@@ -1582,7 +1703,8 @@
           "smell": "Otherworldly Beings",
           "bonuses": {
             "valentinesdaycard": true
-          }
+          },
+          "embed": "829200317018144778"
         },
         {
           "chance": 2,
@@ -1594,7 +1716,8 @@
           "smell": "Two Halves of a Whole",
           "bonuses": {
             "rustysword": true
-          }
+          },
+          "embed": "829200384974520320"
         },
         {
           "chance": 2,
@@ -1606,7 +1729,8 @@
           "smell": "Elliptical Orbits",
           "bonuses": {
             "valentinesdaycard": true
-          }
+          },
+          "embed": "829200777166979092"
         },
         {
           "chance": 2,
@@ -1617,7 +1741,8 @@
           "description": "(Level by CV35W)",
           "smell": "Murder",
           "bonuses": {
-          }
+          },
+          "embed": "829202751841107978"
         },
         {
           "chance": 2,
@@ -1628,7 +1753,8 @@
           "description": "(Level by Some J Name, Het, DPS2004, and Samario)",
           "smell": "Freshly Cooked Lobster",
           "bonuses": {
-          }
+          },
+          "embed": "829202480369500160"
         },
         {
           "chance": 2,
@@ -1639,7 +1765,8 @@
           "description": "(Level by thefinals)",
           "smell": "Ectoplasm",
           "bonuses": {
-          }
+          },
+          "embed": "829201610488020993"
         },
         {
           "chance": 2,
@@ -1651,7 +1778,8 @@
           "smell": "16 Bits",
           "bonuses": {
             "rustysword": true
-          }
+          },
+          "embed": "829201415947812905"
         },
         {
           "chance": 2,
@@ -1662,7 +1790,8 @@
           "description": "(Level by Kneeckoh)",
           "smell": "Quadrilateral Shapes",
           "bonuses": {
-          }
+          },
+          "embed": "829202768963174400"
         },
         {
           "chance": 2,
@@ -1674,7 +1803,8 @@
           "smell": "[undefined]",
           "bonuses": {
             "oversizedstethoscope": true
-          }
+          },
+          "embed": "829201454807515196"
         },
         {
           "chance": 2,
@@ -1687,7 +1817,8 @@
           "smell": "Fluoride",
           "bonuses": {
             "valentinesdaycard": true
-          }
+          },
+          "embed": "829202842149453834"
         },
         {
           "chance": 2,
@@ -1699,7 +1830,8 @@
           "smell": "Mummies",
           "bonuses": {
             "deluxebirdseed": true
-          }
+          },
+          "embed": "829202865654333470"
         },
         {
           "chance": 2,
@@ -1710,7 +1842,8 @@
           "description": "(Level by CV35W)",
           "smell": "Spiderwebs",
           "bonuses": {
-          }
+          },
+          "embed": "829202105188220988"
         },
         {
           "chance": 2,
@@ -1722,7 +1855,8 @@
           "smell": "Pollen",
           "bonuses": {
             "valentinesdaycard": true
-          }
+          },
+          "embed": "829201602497609728"
         },
         {
           "chance": 2,
@@ -1733,7 +1867,8 @@
           "description": "(Level by auth)",
           "smell": "Emergency Services",
           "bonuses": {
-          }
+          },
+          "embed": "829202203809677322"
         },
         {
           "chance": 2,
@@ -1745,7 +1880,8 @@
           "smell": "Crystals",
           "bonuses": {
             "oversizedstethoscope": true
-          }
+          },
+          "embed": "829201426176933898"
         },
         {
           "chance": 2,
@@ -1756,7 +1892,8 @@
           "description": "(Level by fartiliumstation)",
           "smell": "Hollywood",
           "bonuses": {
-          }
+          },
+          "embed": "829200336619175987"
         },
         {
           "chance": 2,
@@ -1767,7 +1904,8 @@
           "description": "(Level by MarioMak967)",
           "smell": "Mahogany",
           "bonuses": {
-          }
+          },
+          "embed": "829201667860856843"
         },
         {
           "chance": 2,
@@ -1778,7 +1916,8 @@
           "description": "(Level by void)",
           "smell": "Dabbing",
           "bonuses": {
-          }
+          },
+          "embed": "829197843687931934"
         },
         {
           "chance": 2,
@@ -1790,7 +1929,8 @@
           "smell": "Maple Syrup",
           "bonuses": {
             "deluxebirdseed": true
-          }
+          },
+          "embed": "829202380876808222"
         },
         {
           "chance": 2,
@@ -1801,7 +1941,8 @@
           "description": "(Level by Kin)",
           "smell": "Potted Plants",
           "bonuses": {
-          }
+          },
+          "embed": "829202389634383872"
         },
         {
           "chance": 2,
@@ -1813,7 +1954,8 @@
           "smell": "Airplane Peanuts",
           "bonuses": {
             "valentinesdaycard": true
-          }
+          },
+          "embed": "829201385253634108"
         },
         {
           "chance": 2,
@@ -1824,7 +1966,8 @@
           "description": "(Level by Kin, Xeno, MarioMak967, and Econ)",
           "smell": "High-end Audio Equipment",
           "bonuses": {
-          }
+          },
+          "embed": "829200305966809088"
         },
         {
           "chance": 2,
@@ -1837,7 +1980,8 @@
           "bonuses": {
             "valentinesdaycard": true,
             "rustysword": true
-          }
+          },
+          "embed": "829201557450129448"
         },
         {
           "chance": 2,
@@ -1851,7 +1995,8 @@
             "valentinesdaycard": true,
             "rustysword": true,
             "cafemixtape": true
-          }
+          },
+          "embed": "829201445685166100"
         },
         {
           "chance": 2,
@@ -1862,7 +2007,8 @@
           "description": "(Level by InfectiousStepocity)",
           "smell": "16ths",
           "bonuses": {
-          }
+          },
+          "embed": "829202441458548796"
         },
         {
           "chance": 2,
@@ -1873,7 +2019,8 @@
           "description": "(Level by Lin Gamerz and Xeno)",
           "smell": "Tryhards",
           "bonuses": {
-          }
+          },
+          "embed": "829202545892524082"
         },
         {
           "chance": 2,
@@ -1884,7 +2031,8 @@
           "description": "(Level by Emdyion, Samario, DPS2004, thefinals, Some J Name, and Xeno)",
           "smell": "Fun:tm:",
           "bonuses": {
-          }
+          },
+          "embed": "829202555467857990"
         },
         {
           "chance": 2,
@@ -1896,7 +2044,8 @@
           "smell": "Dubstep",
           "bonuses": {
             "cafemixtape": true
-          }
+          },
+          "embed": "829202705138319380"
         },
         {
           "chance": 2,
@@ -1907,7 +2056,8 @@
           "description": "(Level by notDonte and Xeno)",
           "smell": "Protein Shakes",
           "bonuses": {
-          }
+          },
+          "embed": "829202194602393600"
         },
         {
           "chance": 2,
@@ -1918,7 +2068,8 @@
           "description": "(Level by CV35W)",
           "smell": "Guitar Solos",
           "bonuses": {
-          }
+          },
+          "embed": "829202990795587604"
         },
         {
           "chance": 2,
@@ -1930,7 +2081,8 @@
           "description": "(Level by Kin, Xeno, and MarioMak967)",
           "smell": "The 7th Layer of Hell",
           "bonuses": {
-          }
+          },
+          "embed": "829202919563067392"
         },
         {
           "chance": 2,
@@ -1943,7 +2095,8 @@
           "bonuses": {
             "rustysword": true,
             "oversizedstethoscope": true
-          }
+          },
+          "embed": "829200410504986694"
         },
         {
           "chance": 2,
@@ -1955,7 +2108,8 @@
           "smell": "FlingSmash for the Nintendo Wii",
           "bonuses": {
             "cafemixtape": true
-          }
+          },
+          "embed": "829202971593408522"
         },
         {
           "chance": 0,
@@ -1967,7 +2121,8 @@
           "smell": "Pure Crystals",
           "bonuses": {
             "oversizedstethoscope": true
-          }
+          },
+          "embed": "829202217264611348"
         }
       ]
     },
@@ -1984,7 +2139,8 @@
           "description": "(this field intentionally left blank)",
           "smell": "THE ONE",
           "bonuses": {
-          }
+          },
+          "embed": "829202779016658994"
         }
       ]
     },
@@ -2001,7 +2157,8 @@
           "description": "(Art by Winston Lee)",
           "smell": ":beans:",
           "bonuses": {
-          }
+          },
+          "embed": "829200733840605254"
         },
         {
           "chance": 3,
@@ -2012,7 +2169,8 @@
           "description": "(Art by Winston Lee, edited by Szprycha)",
           "smell": "Eggs",
           "bonuses": {
-          }
+          },
+          "embed": "829202269656186930"
         },
         {
           "chance": 1,
@@ -2023,7 +2181,8 @@
           "description": "(Art by Kyle Labriola, edited by DeadlySprinklez)",
           "smell": "Eggs",
           "bonuses": {
-          }
+          },
+          "embed": "829202280716304384"
         },
         {
           "chance": 3,
@@ -2034,7 +2193,8 @@
           "description": "(Art by Fizzd)",
           "smell": "Malpractice",
           "bonuses": {
-          }
+          },
+          "embed": "829201476747526144"
         },
         {
           "chance": 1,
@@ -2045,7 +2205,8 @@
           "description": "(Art by Lumina, based on art by Fizzd)",
           "smell": "Malpractice",
           "bonuses": {
-          }
+          },
+          "embed": "829201484137627648"
         },
         {
           "chance": 3,
@@ -2056,7 +2217,8 @@
           "description": "(Art by Winston Lee, edited by Axobotl)",
           "smell": "Dumpster Diving",
           "bonuses": {
-          }
+          },
+          "embed": "829201700006527006"
         },
         {
           "chance": 1,
@@ -2067,7 +2229,8 @@
           "description": "(Art by Dr Levi)",
           "smell": "Dumpster Diving",
           "bonuses": {
-          }
+          },
+          "embed": "829201715412598804"
         },
         {
           "chance": 3,
@@ -2078,7 +2241,8 @@
           "description": "(Art by Giacomo)",
           "smell": "Accuracy",
           "bonuses": {
-          }
+          },
+          "embed": "829202946058223656"
         },
         {
           "chance": 1,
@@ -2089,7 +2253,8 @@
           "description": "(Art by DPS2004)",
           "smell": "Accuracy",
           "bonuses": {
-          }
+          },
+          "embed": "829202955785207818"
         },
         {
           "chance": 3,
@@ -2100,7 +2265,8 @@
           "description": "(Art by Winston Lee, edited by Kin)",
           "smell": "Bad Opinions",
           "bonuses": {
-          }
+          },
+          "embed": "829201982429331456"
         },
         {
           "chance": 2,
@@ -2111,7 +2277,8 @@
           "description": "(Art by Het)",
           "smell": "Bad Opinions",
           "bonuses": {
-          }
+          },
+          "embed": "829202023110934538"
         },
         {
           "chance": 1,
@@ -2122,7 +2289,8 @@
           "description": "(Art by Het)",
           "smell": "Bad Opinions",
           "bonuses": {
-          }
+          },
+          "embed": "829202036000161812"
         }
         
       ]
@@ -2142,7 +2310,8 @@
           "description": "(Cart by auburn. Playable with the PICO-8 app or online at https://auburnsummer.itch.io/rhythm-stacker . The password is rhythmdoctah)",
           "smell": "Pancakes",
           "bonuses": {
-          }
+          },
+          "embed": "829202454527606814"
         },
         {
           "chance": 2,
@@ -2154,7 +2323,8 @@
           "description": "(Cart by auburn. Playable with the PICO-8 app or online at https://auburnsummer.itch.io/acofoi . The password is meaculpa)",
           "smell": "Indecisiveness",
           "bonuses": {
-          }
+          },
+          "embed": "829200274178572318"
         }
       ]
     },
@@ -2177,7 +2347,8 @@
           "smell": "Fall Damage",
           "bonuses": {
             "deluxebirdseed": true
-          }
+          },
+          "embed": "829200734246666280"
         },
         {
           "chance": 2,
@@ -2189,7 +2360,8 @@
           "smell": "Fall Damage",
           "bonuses": {
             "deluxebirdseed": true
-          }
+          },
+          "embed": "829200735148179456"
         },
         {
           "chance": 1,
@@ -2201,7 +2373,8 @@
           "smell": "Fall Damage",
           "bonuses": {
             "deluxebirdseed": true
-          }
+          },
+          "embed": "829200741028855828"
         },
         {
           "chance": 0,
@@ -2213,7 +2386,8 @@
           "smell": "Fall Damage",
           "bonuses": {
             "deluxebirdseed": true
-          }
+          },
+          "embed": "829200734674616390"
         }
       ]
     },
@@ -2230,7 +2404,8 @@
           "description": "(Art by AdipemDragon)",
           "smell": "Icicles",
           "bonuses": {
-          }
+          },
+          "embed": "829201772270583858"
         },
         {
           "chance": 2,
@@ -2241,7 +2416,8 @@
           "description": "(Art by Kin)",
           "smell": "Icicles",
           "bonuses": {
-          }
+          },
+          "embed": "829201779350568990"
         },
         {
           "chance": 1,
@@ -2252,7 +2428,8 @@
           "description": "(Art by Kin)",
           "smell": "Icicles",
           "bonuses": {
-          }
+          },
+          "embed": "829201792439943199"
         },
         {
           "chance": 0,
@@ -2263,7 +2440,8 @@
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Inima (Art by Kin)",
           "smell": "Icicles",
           "bonuses": {
-          }
+          },
+          "embed": "829201742738620436"
         }
       ]
     },
@@ -2280,7 +2458,8 @@
           "description": "(Art by AdipemDragon)",
           "smell": "Abandoned Factories",
           "bonuses": {
-          }
+          },
+          "embed": "829201571261710376"
         },
         {
           "chance": 2,
@@ -2291,7 +2470,8 @@
           "description": "(Art by Plant Guy)",
           "smell": "Abandoned Factories",
           "bonuses": {
-          }
+          },
+          "embed": "829201580800475146"
         },
         {
           "chance": 1,
@@ -2302,7 +2482,8 @@
           "description": "(Art by Plant Guy)",
           "smell": "Abandoned Factories",
           "bonuses": {
-          }
+          },
+          "embed": "829201592703385610"
         },
         {
           "chance": 0,
@@ -2313,7 +2494,8 @@
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Inima (Art by Plant Guy)",
           "smell": "Abandoned Factories",
           "bonuses": {
-          }
+          },
+          "embed": "829201569643233300"
         }
       ]
     }
