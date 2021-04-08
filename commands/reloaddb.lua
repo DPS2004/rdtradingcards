@@ -353,7 +353,7 @@ function command.run(message, mt,overwrite)
     _G['handlemessage'] = function (message)
       if message.author.id ~= "767445265871142933" then --failsafe to avoid recursion
         local status, err = pcall(function ()
-          if string.sub(message.content, 0, 4+3) == prefix.. 'ping' then 
+          if string.lower(string.sub(message.content, 0, 4+3)) == prefix.. 'ping' then 
             local mt = string.split(string.sub(message.content, 4+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -361,7 +361,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.ping.run(message,mt)
-          elseif string.sub(message.content, 0, 4+3) == prefix.. 'help' then 
+          elseif string.lower(string.sub(message.content, 0, 4+3)) == prefix.. 'help' then 
             print("this is a call for help")
             local mt = string.split(string.sub(message.content, 4+4),"/")
             local nmt = {}
@@ -370,7 +370,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.help.run(message,mt)
-          elseif string.sub(message.content, 0, 10+3) == prefix.. 'resetclock' then 
+          elseif string.lower(string.sub(message.content, 0, 10+3)) == prefix.. 'resetclock' then 
             print("hee hoo clocks go reset")
             local mt = string.split(string.sub(message.content, 10+4),"/")
             local nmt = {}
@@ -379,7 +379,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.resetclock.run(message,mt)
-          elseif string.sub(message.content, 0, 6+3) == prefix.. 'uptime' then 
+          elseif string.lower(string.sub(message.content, 0, 6+3)) == prefix.. 'uptime' then 
             local mt = string.split(string.sub(message.content, 6+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -387,7 +387,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.uptime.run(message,mt)
-          elseif string.sub(message.content, 0, 9+3) == prefix.. 'testcards' then 
+          elseif string.lower(string.sub(message.content, 0, 9+3)) == prefix.. 'testcards' then 
             local mt = string.split(string.sub(message.content, 9+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -395,7 +395,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.testcards.run(message,mt)
-          elseif string.sub(message.content, 0, 4+3) == prefix.. 'pull' then 
+          elseif string.lower(string.sub(message.content, 0, 4+3)) == prefix.. 'pull' then 
             local mt = string.split(string.sub(message.content, 4+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -403,7 +403,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.pull.run(message,mt)      
-          elseif string.sub(message.content, 0, 9+2) == prefix.. 'inventory' then 
+          elseif string.lower(string.sub(message.content, 0, 9+2)) == prefix.. 'inventory' then 
             print("wow its inventory")
             local mt = string.split(string.sub(message.content, 9+4),"/")
             local nmt = {}
@@ -413,7 +413,7 @@ function command.run(message, mt,overwrite)
             end
             print(inspect(nmt))
             cmd.inventory.run(message,nmt)
-          elseif string.sub(message.content, 0, 3+2) == prefix.. 'inv' then 
+          elseif string.lower(string.sub(message.content, 0, 3+2)) == prefix.. 'inv' then 
             print("wow its inv")
             local mt = string.split(string.sub(message.content, 3+4),"/")
             local nmt = {}
@@ -423,7 +423,7 @@ function command.run(message, mt,overwrite)
             end
             print(inspect(nmt))
             cmd.inventory.run(message,nmt)
-          elseif string.sub(message.content, 0, 4+3) == prefix.. 'show ' then 
+          elseif string.lower(string.sub(message.content, 0, 4+3)) == prefix.. 'show ' then 
             local mt = string.split(string.sub(message.content, 4+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -431,7 +431,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.show.run(message,nmt)         
-          elseif string.sub(message.content, 0, 4+3) == prefix.. 'give ' then 
+          elseif string.lower(string.sub(message.content, 0, 4+3)) == prefix.. 'give ' then 
             local mt = string.split(string.sub(message.content, 4+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -439,7 +439,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.give.run(message,nmt)      
-          elseif string.sub(message.content, 0, 5+3) == prefix.. 'trade ' then 
+          elseif string.lower(string.sub(message.content, 0, 5+3)) == prefix.. 'trade ' then 
             local mt = string.split(string.sub(message.content, 5+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -447,7 +447,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.trade.run(message,nmt)      
-          elseif string.sub(message.content, 0, 5+3) == prefix.. 'store ' then 
+          elseif string.lower(string.sub(message.content, 0, 5+3)) == prefix.. 'store ' then 
             local mt = string.split(string.sub(message.content, 5+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -456,7 +456,7 @@ function command.run(message, mt,overwrite)
             end
             cmd.store.run(message,nmt)     
           
-          elseif string.sub(message.content, 0, 7+3) == prefix.. 'storage ' or string.sub(message.content, 0, 7+3) == prefix.. 'storage' then 
+          elseif string.lower(string.sub(message.content, 0, 7+3)) == prefix.. 'storage ' or string.lower(string.sub(message.content, 0, 7+3)) == prefix.. 'storage' then 
             local mt = string.split(string.sub(message.content, 7+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -464,7 +464,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.storage.run(message,mt)
-          elseif string.sub(message.content, 0, 8+3) == prefix.. 'reloaddb' then 
+          elseif string.lower(string.sub(message.content, 0, 8+3)) == prefix.. 'reloaddb' then 
             local mt = string.split(string.sub(message.content, 8+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -472,7 +472,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.reloaddb.run(message,mt)
-          elseif string.sub(message.content, 0, 6+2) == prefix.. 'medals' then 
+          elseif string.lower(string.sub(message.content, 0, 6+2)) == prefix.. 'medals' then 
             print("wow its medals")
             local mt = string.split(string.sub(message.content, 6+4),"/")
             local nmt = {}
@@ -482,7 +482,7 @@ function command.run(message, mt,overwrite)
             end
             print(inspect(nmt))
             cmd.medals.run(message,nmt)
-          elseif string.sub(message.content, 0, 5+3) == prefix.. 'crash' then 
+          elseif string.lower(string.sub(message.content, 0, 5+3)) == prefix.. 'crash' then 
             print("this is a call for crash")
             local mt = string.split(string.sub(message.content, 5+4),"/")
             local nmt = {}
@@ -491,7 +491,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.crash.run(message,mt)
-          elseif string.sub(message.content, 0, 13+3) == prefix.. 'yeetalltokens' then 
+          elseif string.lower(string.sub(message.content, 0, 13+3)) == prefix.. 'yeetalltokens' then 
             print("this is a call for crash")
             local mt = string.split(string.sub(message.content, 13+4),"/")
             local nmt = {}
@@ -500,7 +500,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.yeetalltokens.run(message,mt)
-          elseif string.sub(message.content, 0, 9+3) == prefix.. 'showmedal ' then 
+          elseif string.lower(string.sub(message.content, 0, 9+3)) == prefix.. 'showmedal ' then 
             local mt = string.split(string.sub(message.content, 9+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -508,7 +508,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.showmedal.run(message,nmt)    
-          elseif string.sub(message.content, 0, 6+3) == prefix.. 'runlua ' then 
+          elseif string.lower(string.sub(message.content, 0, 6+3)) == prefix.. 'runlua ' then 
             local mt = string.split(string.sub(message.content, 6+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -516,7 +516,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.runlua.run(message,nmt)   
-          elseif string.sub(message.content, 0, 12+3) == prefix.. 'generategive ' then 
+          elseif string.lower(string.sub(message.content, 0, 12+3)) == prefix.. 'generategive ' then 
             local mt = string.split(string.sub(message.content, 12+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -524,7 +524,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.generategive.run(message,nmt) 
-          elseif string.sub(message.content, 0, 6+3) == prefix.. 'search ' then 
+          elseif string.lower(string.sub(message.content, 0, 6+3)) == prefix.. 'search ' then 
             local mt = string.split(string.sub(message.content, 6+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -532,7 +532,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.search.run(message,nmt)  
-          elseif string.sub(message.content, 0, 4+3) == prefix.. 'tell ' then 
+          elseif string.lower(string.sub(message.content, 0, 4+3)) == prefix.. 'tell ' then 
             local mt = string.split(string.sub(message.content, 4+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -540,7 +540,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.tell.run(message,nmt) 
-          elseif string.sub(message.content, 0, 9+3) == prefix.. 'tellimage ' then 
+          elseif string.lower(string.sub(message.content, 0, 9+3)) == prefix.. 'tellimage ' then 
             local mt = string.split(string.sub(message.content, 9+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -548,7 +548,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.tellimage.run(message,nmt) 
-          elseif string.sub(message.content, 0, 5+2) == prefix.. 'beans' then 
+          elseif string.lower(string.sub(message.content, 0, 5+2)) == prefix.. 'beans' then 
             local mt = string.split(string.sub(message.content, 5+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -557,7 +557,7 @@ function command.run(message, mt,overwrite)
             end
             print(inspect(nmt))
             cmd.beans.run(message,nmt)
-          elseif string.sub(message.content, 0, 8+2) == prefix.. 'nickname' then 
+          elseif string.lower(string.sub(message.content, 0, 8+2)) == prefix.. 'nickname' then 
             local mt = string.split(string.sub(message.content, 8+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -567,7 +567,7 @@ function command.run(message, mt,overwrite)
             print(inspect(nmt))
             cmd.nickname.run(message,nmt)
           
-          elseif string.sub(message.content, 0, 4+2) == prefix.. 'pray' then 
+          elseif string.lower(string.sub(message.content, 0, 4+2)) == prefix.. 'pray' then 
             local mt = string.split(string.sub(message.content, 4+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -576,7 +576,7 @@ function command.run(message, mt,overwrite)
             end
             print(inspect(nmt))
             cmd.pray.run(message,nmt)
-          elseif string.sub(message.content, 0, 4+3) == prefix.. 'look ' then 
+          elseif string.lower(string.sub(message.content, 0, 4+3)) == prefix.. 'look ' then 
             local mt = string.split(string.sub(message.content, 4+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -584,7 +584,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.look.run(message,nmt)
-          elseif string.sub(message.content, 0, 3+3) == prefix.. 'use ' then 
+          elseif string.lower(string.sub(message.content, 0, 3+3)) == prefix.. 'use ' then 
             local mt = string.split(string.sub(message.content, 3+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -592,7 +592,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.use.run(message,nmt)
-          elseif string.sub(message.content, 0, 5+3) == prefix.. 'smell ' then 
+          elseif string.lower(string.sub(message.content, 0, 5+3)) == prefix.. 'smell ' then 
             local mt = string.split(string.sub(message.content, 5+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -600,7 +600,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.smell.run(message,nmt)  
-          elseif string.sub(message.content, 0, 5+3) == prefix.. 'shred ' then 
+          elseif string.lower(string.sub(message.content, 0, 5+3)) == prefix.. 'shred ' then 
             local mt = string.split(string.sub(message.content, 5+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -608,7 +608,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.shred.run(message,nmt)
-          elseif string.sub(message.content, 0, 5+2) == prefix.. 'items' then 
+          elseif string.lower(string.sub(message.content, 0, 5+2)) == prefix.. 'items' then 
             print("wow its medals")
             local mt = string.split(string.sub(message.content, 5+4),"/")
             local nmt = {}
@@ -618,7 +618,7 @@ function command.run(message, mt,overwrite)
             end
             print(inspect(nmt))
             cmd.items.run(message,nmt)
-          elseif string.sub(message.content, 0, 8+3) == prefix.. 'showitem ' then 
+          elseif string.lower(string.sub(message.content, 0, 8+3)) == prefix.. 'showitem ' then 
             local mt = string.split(string.sub(message.content, 8+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -626,7 +626,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.showitem.run(message,nmt) 
-          elseif string.sub(message.content, 0, 5+3) == prefix.. 'equip ' then 
+          elseif string.lower(string.sub(message.content, 0, 5+3)) == prefix.. 'equip ' then 
             local mt = string.split(string.sub(message.content, 5+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -634,7 +634,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.equip.run(message,nmt)
-          elseif string.sub(message.content, 0, 6+2) == prefix.. 'survey' then 
+          elseif string.lower(string.sub(message.content, 0, 6+2)) == prefix.. 'survey' then 
             local mt = string.split(string.sub(message.content, 6+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -643,7 +643,7 @@ function command.run(message, mt,overwrite)
             end
             print(inspect(nmt))
             cmd.survey.run(message,nmt)
-          elseif string.sub(message.content, 0, 10+3) == prefix.. 'granttoken ' then 
+          elseif string.lower(string.sub(message.content, 0, 10+3)) == prefix.. 'granttoken ' then 
             local mt = string.split(string.sub(message.content, 10+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -651,7 +651,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.granttoken.run(message,nmt)
-          elseif string.sub(message.content, 0, 7+2) == prefix.. 'machine' then 
+          elseif string.lower(string.sub(message.content, 0, 7+2)) == prefix.. 'machine' then 
             print("wow its medals")
             local mt = string.split(string.sub(message.content, 7+4),"/")
             local nmt = {}
@@ -661,7 +661,7 @@ function command.run(message, mt,overwrite)
             end
             print(inspect(nmt))
             cmd.use.run(message,{"machine"})
-          elseif string.sub(message.content, 0, 1+3) == prefix.. 'p' then 
+          elseif string.lower(string.sub(message.content, 0, 1+3)) == prefix.. 'p' then 
             local mt = string.split(string.sub(message.content, 1+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -669,7 +669,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.pull.run(message,mt)
-          elseif string.sub(message.content, 0, 4+2) == prefix.. 'name' then 
+          elseif string.lower(string.sub(message.content, 0, 4+2)) == prefix.. 'name' then 
             local mt = string.split(string.sub(message.content, 4+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -678,7 +678,7 @@ function command.run(message, mt,overwrite)
             end
             print(inspect(nmt))
             cmd.nickname.run(message,nmt)
-          elseif string.sub(message.content, 0, 15+3) == prefix.. 'addallnicknames' then 
+          elseif string.lower(string.sub(message.content, 0, 15+3)) == prefix.. 'addallnicknames' then 
             local mt = string.split(string.sub(message.content, 15+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -686,7 +686,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.addallnicknames.run(message,mt)
-          elseif string.sub(message.content, 0, 13+3) == prefix.. 'fullinventory' then 
+          elseif string.lower(string.sub(message.content, 0, 13+3)) == prefix.. 'fullinventory' then 
             local mt = string.split(string.sub(message.content, 13+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -694,7 +694,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.fullinventory.run(message,mt)
-          elseif string.sub(message.content, 0, 7+3) == prefix.. 'fullinv' then 
+          elseif string.lower(string.sub(message.content, 0, 7+3)) == prefix.. 'fullinv' then 
             local mt = string.split(string.sub(message.content, 7+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
@@ -702,7 +702,7 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.fullinventory.run(message,mt)
-          elseif string.sub(message.content, 0, 11+3) == prefix.. 'fullstorage' then 
+          elseif string.lower(string.sub(message.content, 0, 11+3)) == prefix.. 'fullstorage' then 
             local mt = string.split(string.sub(message.content, 11+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
