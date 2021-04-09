@@ -2169,6 +2169,7 @@
           "description": "(Art by Winston Lee, edited by Szprycha)",
           "smell": "Eggs",
           "bonuses": {
+            "rustysword": true
           },
           "embed": "829202269656186930"
         },
@@ -2181,6 +2182,7 @@
           "description": "(Art by Kyle Labriola, edited by DeadlySprinklez)",
           "smell": "Eggs",
           "bonuses": {
+            "rustysword": true
           },
           "embed": "829202280716304384"
         },
@@ -2217,6 +2219,7 @@
           "description": "(Art by Winston Lee, edited by Axobotl)",
           "smell": "Dumpster Diving",
           "bonuses": {
+            "oversizedstethoscope": true
           },
           "embed": "829201700006527006"
         },
@@ -2229,6 +2232,7 @@
           "description": "(Art by Dr Levi)",
           "smell": "Dumpster Diving",
           "bonuses": {
+            "oversizedstethoscope": true
           },
           "embed": "829201715412598804"
         },
@@ -2265,6 +2269,7 @@
           "description": "(Art by Winston Lee, edited by Kin)",
           "smell": "Bad Opinions",
           "bonuses": {
+            "valentinesdaycard": true
           },
           "embed": "829201982429331456"
         },
@@ -2277,6 +2282,7 @@
           "description": "(Art by Het)",
           "smell": "Bad Opinions",
           "bonuses": {
+            "valentinesdaycard": true
           },
           "embed": "829202023110934538"
         },
@@ -2289,6 +2295,7 @@
           "description": "(Art by Het)",
           "smell": "Bad Opinions",
           "bonuses": {
+            "valentinesdaycard": true
           },
           "embed": "829202036000161812"
         }
