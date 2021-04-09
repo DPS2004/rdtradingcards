@@ -24,15 +24,15 @@ function command.run(message, mt)
             numcards = math.floor(mt[2])
           end
         end
-        if uj.equipped ~= "brokenmouse" then
-          local newmessage = message.channel:send("<@" .. uj.id .. ">, do you want to put your " .. numcards .. " **" .. fntoname(item1) .. "** into storage? This cannot be undone. React to this post with :white_check_mark: to confirm and :x: to deny.")
-          addreacts(newmessage)
-          local tf = dpf.loadjson("savedata/events.json",{})
-          tf[newmessage.id] ={numcards = numcards, ujf = ujf, item1=item1,etype = "store",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
-          dpf.savejson("savedata/events.json",tf)
-          
-        else
-          if uj.inventory[item1] >= numcards then
+        if uj.inventory[item1] >= numcards then
+          if uj.equipped ~= "brokenmouse" then
+            local newmessage = message.channel:send("<@" .. uj.id .. ">, do you want to put your " .. numcards .. " **" .. fntoname(item1) .. "** into storage? This cannot be undone. React to this post with :white_check_mark: to confirm and :x: to deny.")
+            addreacts(newmessage)
+            local tf = dpf.loadjson("savedata/events.json",{})
+            tf[newmessage.id] ={numcards = numcards, ujf = ujf, item1=item1,etype = "store",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
+            dpf.savejson("savedata/events.json",tf)
+            
+          else
             uj.inventory[item1] = uj.inventory[item1] - numcards
             if uj.inventory[item1] == 0 then
               uj.inventory[item1] = nil
@@ -56,9 +56,9 @@ function command.run(message, mt)
             dpf.savejson(ujf,uj)
             cmd.checkcollectors.run(message,mt)
             cmd.checkmedals.run(message,mt)
-          else
-            message.channel:send("Sorry, but you do not have enough **" .. fntoname(item1) .. "** cards in your inventory.")
           end
+        else
+          message.channel:send("Sorry, but you do not have enough **" .. fntoname(item1) .. "** cards in your inventory.")
         end
       else
         if nopeeking then
