@@ -60,7 +60,11 @@ function command.run(message, mt)
       invstring = invstring .. invtable[i]
     end
   end
-  message.channel:send("<@".. message.author.id ..">, you have the following items:\n" .. invstring .. "(page ".. pagenumber .. " of " .. maxpn .. ")\nIn addition to your equippable items, you also have " .. uj.tokens .. " **Tokens**.")
+  local isplural = ""
+  if uj.tokens ~= 1 then
+    isplural = "s"
+  end
+  message.channel:send("<@".. message.author.id ..">, you have the following items:\n" .. invstring .. "(page ".. pagenumber .. " of " .. maxpn .. ")\nIn addition to your equippable items, you also have " .. uj.tokens .. " **Token" .. isplural .. "**.")
 end
 return command
   
