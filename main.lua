@@ -2,8 +2,8 @@
 
 
 -- it works most of the time. most of the time.
-local discordia = require('discordia')
-local client = discordia.Client()
+_G["discordia"] = require('discordia')
+_G["client"] = discordia.Client()
 _G["prefix"] = "c!"
 _G["json"] = require('libs/json')
 _G["fs"] = require('fs')

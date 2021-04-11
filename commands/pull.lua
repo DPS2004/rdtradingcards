@@ -58,10 +58,20 @@ local time = sw:getTime()
       else
         extension = ".png"
       end
-      message.channel:send('Woah! '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to their inventory. The shorthand form of this card is **'.. newcard .. '**.')
-      message.channel:send('https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. getcardembed(newcard) .. '/' .. newcard .. extension)
-
-
+      local embedtitle = "Woah!"
+      if newcard == "yor" or newcard == "yosr" or newcard == "your" then
+        embedtitle = "Yo!"
+      end
+      -- message.channel:send('Woah! '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to their inventory. The shorthand form of this card is **'.. newcard .. '**.')
+      -- message.channel:send('https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. getcardembed(newcard) .. '/' .. newcard .. extension)
+      message.channel:send{embed = {
+        color = 0x85c5ff,
+        title = embedtitle,
+        description = message.author.mentionString ..' got a **'.. ncn ..'** card! The **'.. ncn ..'** card has been added to their inventory. The shorthand form of this card is **'.. newcard .. '**.',
+        image = {
+          url ='https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. getcardembed(newcard) .. '/' .. newcard .. extension
+        }
+      }}
       local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
       if uj.inventory[newcard] == nil then
         uj.inventory[newcard] = 1

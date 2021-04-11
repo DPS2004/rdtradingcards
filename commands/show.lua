@@ -21,12 +21,23 @@ function command.run(message, mt)
       end
       if uj.inventory[curfilename] or uj.storage[curfilename] then
         print("user has card")
-        message.channel:send('Here it is! Your **'.. fntoname(curfilename) .. '** card. The shorthand form is **' .. curfilename .. '**.')
-        message.channel:send('https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. getcardembed(curfilename) .. '/' .. curfilename .. extension)
-        local description = getcarddescription(curfilename)
-        if description then
-          message.channel:send('The description on the back reads: `'..description..'`')
+        local embeddescription = ""
+        if getcarddescription(curfilename) then
+          embeddescription = "The description on the back reads:\n" .. getcarddescription(curfilename)
         end
+        -- message.channel:send('Here it is! Your **'.. fntoname(curfilename) .. '** card. The shorthand form is **' .. curfilename .. '**.')
+        -- message.channel:send('https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. getcardembed(curfilename) .. '/' .. curfilename .. extension)
+        message.channel:send{embed = {
+          color = 0x85c5ff,
+          title = "Showing card...",
+          description = 'Here it is! Your **'.. fntoname(curfilename) .. '** card. The shorthand form is **' .. curfilename .. '**.',
+          image = {
+            url = 'https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. getcardembed(curfilename) .. '/' .. curfilename .. extension
+          },
+          footer = {
+            text = embeddescription
+          }
+        }}
       else
         print("user doesnt have card")
         if nopeeking then

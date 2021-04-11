@@ -24,8 +24,16 @@ function command.run(message, mt,mc)
           uj.storage[newcard] = uj.storage[newcard] + 1
         end
         local ncn = fntoname(newcard)
-        mc:send('Congratulations! After collecting and storing some other cards, '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to their storage.')
-        mc:send('https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. getcardembed(newcard) .. '/' .. newcard .. extension)
+        -- mc:send('Congratulations! After collecting and storing some other cards, '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to their storage.')
+        -- mc:send('https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. getcardembed(newcard) .. '/' .. newcard .. extension)
+        message.channel:send{embed = {
+          color = 0x85c5ff,
+          title = "Congratulations!",
+          description = 'After collecting and storing some other cards, '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to their storage.',
+          image = {
+            url = 'https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. getcardembed(newcard) .. '/' .. newcard .. '.png'
+          }
+        }}
       else
         print("no card for you lol")
       end

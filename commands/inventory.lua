@@ -58,7 +58,19 @@ function command.run(message, mt)
       message.channel:send("<@".. message.author.id ..'>, your inventory contains:\n**"imagine putting in ram sticks when you can just download them" - Hexakon** x1\n**"DON\'T "sfdjhgksfdj" ME, I AM IN PAIN :NotLikeShift:" - Econ** x1\n**"if i die blame firefox" - KubeBow** x1\n"**It\'s like feeding seagulls but the birds are us and the breadcrumbs are small editor previews" - CV35W** x1\n**"what kind of baguette fuckery is this" - TNTz** x1\n**"i just hid loss in rd and i feel great" - giacomo** x1\n(page 2 of 2)')
     end
   else
-    message.channel:send("<@".. message.author.id ..">, your inventory contains:\n" .. invstring .. "(page ".. pagenumber .. " of " .. maxpn .. ")")
+    -- message.channel:send("<@".. message.author.id ..">, your inventory contains:\n" .. invstring .. "(page ".. pagenumber .. " of " .. maxpn .. ")")
+    message.channel:send{
+      content = message.author.mentionString .. ", your inventory contains:",
+      embed = {
+        color = 0x85c5ff,
+        title = message.author.name .. "'s Inventory",
+        description = invstring,
+        footer = {
+          text =  "(Page " .. pagenumber .. " of " .. maxpn .. ")",
+          icon_url = message.author.avatarURL
+        }
+      }
+    }
   end
 end
 return command
