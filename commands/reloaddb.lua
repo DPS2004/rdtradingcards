@@ -88,8 +88,6 @@ function command.run(message, mt,overwrite)
           for y=1,(cdata.basemult*v.basechance*x.chance*cmult) do
             table.insert(ptable[k],x.filename)
           end
-          table.insert(cdb,x)
-          print(x.name.. " loaded!")
         end
       end
     end
