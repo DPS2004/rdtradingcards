@@ -63,8 +63,12 @@ function command.run(message, mt,overwrite)
     print("done loading reactions")
 
     _G['defaultjson'] = {inventory={},storage={},medals={},items={nothing=true},lastpull=-24,lastprayer=-7}
+    
+    _G['defaultglobalsave'] = {tokensdonated=0,boxpool={"ssss45","roomsdc_ur","roomsdc_r","underworld","enchantedlove","wallclockur","rhythmdogtor","moai","coolbird","beanshopper","cardboardworld","acofoi","rollermobster","inimaur","fhottour","superstrongcavity","soundsr","pancakefever","nicoleur","feedthemachine"},lablookindex=0,lablooktext="hellocanyouhearme"}
 
     _G['debug'] = false
+    
+    _G["attachmentchannel"] = "829197797789532181"
     print("loading cards")
     cj =  io.open("data/cards.json", "r")
     
