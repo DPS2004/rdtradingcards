@@ -48,7 +48,19 @@ function command.run(message, mt)
       invstring = invstring .. invtable[i]
     end
   end
-  message.channel:send("You have the following medals:\n" .. invstring .. "(page ".. pagenumber .. " of " .. maxpn .. ")")
+  -- message.channel:send("You have the following medals:\n" .. invstring .. "(page ".. pagenumber .. " of " .. maxpn .. ")")
+  message.channel:send{
+    content = message.author.mentionString .. ", you have the following medals:",
+    embed = {
+      color = 0x85c5ff,
+      title = message.author.name .. "'s Medals",
+      description = invstring,
+      footer = {
+        text =  "(Page " .. pagenumber .. " of " .. maxpn .. ")",
+        icon_url = message.author.avatarURL
+      }
+    }
+  }
 end
 return command
   

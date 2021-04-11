@@ -64,7 +64,19 @@ function command.run(message, mt)
   if uj.tokens ~= 1 then
     isplural = "s"
   end
-  message.channel:send("<@".. message.author.id ..">, you have the following items:\n" .. invstring .. "(page ".. pagenumber .. " of " .. maxpn .. ")\nIn addition to your equippable items, you also have " .. uj.tokens .. " **Token" .. isplural .. "**.")
+  -- message.channel:send("<@".. message.author.id ..">, you have the following items:\n" .. invstring .. "(page ".. pagenumber .. " of " .. maxpn .. ")\nIn addition to your equippable items, you also have " .. uj.tokens .. " **Token" .. isplural .. "**.")
+  message.channel:send{
+    content = message.author.mentionString .. ", you have the following items:",
+    embed = {
+      color = 0x85c5ff,
+      title = message.author.name .. "'s Items",
+      description = invstring,
+      footer = {
+        text =  "(Page " .. pagenumber .. " of " .. maxpn .. ")",
+        icon_url = message.author.avatarURL
+      }
+    }
+  }
 end
 return command
   
