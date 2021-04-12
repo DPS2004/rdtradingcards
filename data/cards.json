@@ -124,7 +124,8 @@
           "description": "Samurai is jumping over a box of beans (Level by Colon)",
           "smell": "Beans",
           "bonuses": {
-            "rustysword": true
+            "rustysword": true,
+            "paddedstickersheet": true
           },
           "embed": "829200730547421194"
         },
@@ -1741,6 +1742,7 @@
           "description": "(Level by CV35W)",
           "smell": "Murder",
           "bonuses": {
+            "paddedstickersheet": true
           },
           "embed": "829202751841107978"
         },
@@ -1777,7 +1779,8 @@
           "description": "(Level by Szprycha)",
           "smell": "16 Bits",
           "bonuses": {
-            "rustysword": true
+            "rustysword": true,
+            "paddedstickersheet": true
           },
           "embed": "829201415947812905"
         },
@@ -1829,7 +1832,7 @@
           "description": "(Level by DPS2004 and Xeno)",
           "smell": "Mummies",
           "bonuses": {
-            "deluxebirdseed": true
+            "paddedstickersheet": true
           },
           "embed": "829202865654333470"
         },
@@ -1842,6 +1845,7 @@
           "description": "(Level by CV35W)",
           "smell": "Spiderwebs",
           "bonuses": {
+            "paddedstickersheet": true
           },
           "embed": "829202105188220988"
         },
@@ -1892,6 +1896,7 @@
           "description": "(Level by fartiliumstation)",
           "smell": "Hollywood",
           "bonuses": {
+            "paddedstickersheet": true
           },
           "embed": "829200336619175987"
         },
@@ -1916,6 +1921,7 @@
           "description": "(Level by void)",
           "smell": "Dabbing",
           "bonuses": {
+            "paddedstickersheet": true
           },
           "embed": "829197843687931934"
         },
@@ -1928,7 +1934,8 @@
           "description": "(Level by Kin, Xeno, MarioMak967, and Econ)",
           "smell": "Maple Syrup",
           "bonuses": {
-            "deluxebirdseed": true
+            "deluxebirdseed": true,
+            "paddedstickersheet": true
           },
           "embed": "829202380876808222"
         },
@@ -1941,6 +1948,7 @@
           "description": "(Level by Kin)",
           "smell": "Potted Plants",
           "bonuses": {
+            "paddedstickersheet": true
           },
           "embed": "829202389634383872"
         },
@@ -1979,7 +1987,8 @@
           "smell": "The Industrial Revolution",
           "bonuses": {
             "valentinesdaycard": true,
-            "rustysword": true
+            "rustysword": true,
+            "paddedstickersheet": true
           },
           "embed": "829201557450129448"
         },
@@ -2056,6 +2065,7 @@
           "description": "(Level by notDonte and Xeno)",
           "smell": "Protein Shakes",
           "bonuses": {
+            "paddedstickersheet": true
           },
           "embed": "829202194602393600"
         },
@@ -2068,6 +2078,7 @@
           "description": "(Level by CV35W)",
           "smell": "Guitar Solos",
           "bonuses": {
+            "paddedstickersheet": true
           },
           "embed": "829202990795587604"
         },
@@ -2123,7 +2134,157 @@
             "oversizedstethoscope": true
           },
           "embed": "829202217264611348"
-        }
+        },
+        {
+          "chance": 2,
+          "filename": "sugarpills",
+          "name": "Sugar Pills",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by DPS2004 and Xeno)",
+          "smell": "The Placebo Effect",
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "831155010997977158"
+        },
+        {
+          "chance": 2,
+          "filename": "cardboardworld",
+          "name": "Through A Cardboard World",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by megaminerzero)",
+          "smell": "The Post Office",
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "831155010997977158"
+        },
+        {
+          "chance": 2,
+          "filename": "cardboardworld",
+          "name": "Through A Cardboard World",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by megaminerzero)",
+          "smell": "The Post Office",
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "831155026395004968"
+        },
+        {
+          "chance": 2,
+          "filename": "madness",
+          "name": "Madness",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Samario)",
+          "smell": "Nevada",
+          "bonuses": {
+            "rustysword": true,
+            "cafemixtape": true,
+            "deluxebirdseed": true
+          },
+          "embed": "831155038126473266"
+        },
+        {
+          "chance": 2,
+          "filename": "properrhythm",
+          "name": "Proper Rhythm",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by yoshikirby26, based on the level by CV35W, go back UNBEATABLE on kickstarter! https://www.kickstarter.com/projects/dcellgames/unbeatable)",
+          "smell": "Ink Ribbons",
+          "bonuses": {
+            "valentinesdaycard": true,
+            "oversizedstethoscope": true
+          },
+          "embed": "831155051208114196"
+        },
+        {
+          "chance": 2,
+          "filename": "coolbird",
+          "name": "theme of really cool bird",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by DPS2004)",
+          "smell": "Sick Flips",
+          "bonuses": {
+            "deluxebirdseed": true,
+            "paddedstickersheet": true
+          },
+          "embed": "831155073710293062"
+        },
+        {
+          "chance": 2,
+          "filename": "fistedcosmo",
+          "name": "Fisted Cosmo",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Plant Guy)",
+          "smell": "Invasion",
+          "bonuses": {
+            "rustysword": true,
+            "paddedstickersheet": true
+          },
+          "embed": "831155075392208997"
+        },
+        {
+          "chance": 2,
+          "filename": "inthehalls",
+          "name": "In The Halls of the Usurper (Kubbi Remix)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by JackArbor and Kin)",
+          "smell": "Propeller Rats",
+          "bonuses": {
+            "paddedstickersheet": true
+          },
+          "embed": "831155078831407134"
+        },
+        {
+          "chance": 2,
+          "filename": "setmefree",
+          "name": "Set Me Free",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Hyphex)",
+          "smell": "Common Core",
+          "bonuses": {
+            "cafemixtape": true
+          },
+          "embed": "831155078937313280"
+        },
+        {
+          "chance": 2,
+          "filename": "moai",
+          "name": "MOAI",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by ddrr0077)",
+          "smell": "Easter Island",
+          "bonuses": {
+            "rustysword": true,
+            "paddedstickersheet": true
+          },
+          "embed": "831155092010172446"
+        },
+        {
+          "chance": 2,
+          "filename": "enchantedlove",
+          "name": "Enchanted Love",
+          "tradeable": true,
+          "animated": true,
+          "type": "Super Rare",
+          "description": "(Level by Kin)",
+          "smell": "Lilypads",
+          "bonuses": {
+            "valentinesdaycard": true
+          },
+          "embed": "829202919563067392"
+        },
       ]
     },
     {
