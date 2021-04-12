@@ -2159,19 +2159,6 @@
           "bonuses": {
             "rustysword": true
           },
-          "embed": "831155010997977158"
-        },
-        {
-          "chance": 2,
-          "filename": "cardboardworld",
-          "name": "Through A Cardboard World",
-          "tradeable": true,
-          "type": "Super Rare",
-          "description": "(Level by megaminerzero)",
-          "smell": "The Post Office",
-          "bonuses": {
-            "rustysword": true
-          },
           "embed": "831155026395004968"
         },
         {
@@ -2283,8 +2270,8 @@
           "bonuses": {
             "valentinesdaycard": true
           },
-          "embed": "829202919563067392"
-        },
+          "embed": "831155101553000458"
+        }
       ]
     },
     {

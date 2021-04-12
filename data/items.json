@@ -52,12 +52,12 @@
   "paddedstickersheet": {
     "name": "Padded Sticker Sheet",
     "description": "Makes cards containing a custom character (being used as a traditional row) more likely to be pulled.",
-    "embed": "829203123024297984"
+    "embed": "831162613932097576"
   },
   "coolhat": {
     "name": "Cool Hat",
     "description": "Makes you look cooler.",
-    "embed": "831162613932097576"
+    "embed": "829203115609292810"
   }
 
 }
