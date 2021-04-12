@@ -26,7 +26,7 @@ function command.run(message, mt,mc)
         local ncn = fntoname(newcard)
         -- mc:send('Congratulations! After collecting and storing some other cards, '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to their storage.')
         -- mc:send('https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. getcardembed(newcard) .. '/' .. newcard .. extension)
-        message.channel:send{embed = {
+        mc:send{embed = {
           color = 0x85c5ff,
           title = "Congratulations!",
           description = 'After collecting and storing some other cards, '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to their storage.',
