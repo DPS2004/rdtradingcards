@@ -8,7 +8,9 @@ function command.run(message, mt)
     numkey = numkey + 1
   end
   local invtable = {}
-  local invstring = 'Your inventory contains:\n'
+  local contentstring = 'Your inventory contains:'
+  local titlestring = 'Full Inventory'
+  local invstring = ''
   local previnvstring = ''
   for k,v in pairs(uj.inventory) do
     table.insert(invtable, "**" .. (fntoname(k) or k) .. "** x" .. v .. "\n")
@@ -16,13 +18,29 @@ function command.run(message, mt)
   table.sort(invtable, function(a,b) return string.lower(a)<string.lower(b) end)
   for i = 1, numkey do
     invstring = invstring .. invtable[i]
-    if #invstring > 2000 then
-      message.author:send(previnvstring)
+    if #invstring > 2048 then
+      message.author:send{
+        content = contentstring,
+        embed = {
+          color = 0x85c5ff,
+          title = titlestring,
+          description = previnvstring
+        },
+      }
       invstring = invtable[i]
+      contentstring = ''
+      titlestring = 'Full Inventory (cont.)'
     end
     previnvstring = invstring
   end
-  message.author:send(invstring)
+  message.author:send{
+    content = contentstring,
+    embed = {
+      color = 0x85c5ff,
+      title = titlestring,
+      description = previnvstring
+    },
+  }
 end
 return command
   
