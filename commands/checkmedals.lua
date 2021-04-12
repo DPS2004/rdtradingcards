@@ -14,8 +14,16 @@ function command.run(message, mt,mc)
       if not uj.medals[v.receive] then
         print("user does not have it yet!")
         uj.medals[v.receive] = true
-        mc:send('Congratulations! After collecting and storing some cards, '.. message.author.mentionString ..' got the **"'.. medaldb[v.receive].name ..'"** medal!')
-        mc:send('https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. medaldb[v.receive].embed .. '/' .. v.receive .. '.png')
+        -- mc:send('Congratulations! After collecting and storing some cards, '.. message.author.mentionString ..' got the **"'.. medaldb[v.receive].name ..'"** medal!')
+        -- mc:send('https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. medaldb[v.receive].embed .. '/' .. v.receive .. '.png')
+        mc:send{embed = {
+          color = 0x85c5ff,
+          title = "Congratulations!",
+          description = 'After collecting and storing some cards, '.. message.author.mentionString ..' got the **"'.. medaldb[v.receive].name ..'"** medal!',
+          image = {
+            url = 'https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. medaldb[v.receive].embed .. '/' .. v.receive .. '.png'
+          }
+        }}
       end
     else
       print("user cannot have "..v.receive)
