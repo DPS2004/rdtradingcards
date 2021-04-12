@@ -31,14 +31,11 @@ function command.run(message, mt)
   print("maxpn " .. numkey/10)
 
   if pagenumber > maxpn then
-    if not message.channel.id == privatestuff.specialchannelid then
+    if message.channel.id ~= privatestuff.specialchannelid then
       pagenumber = maxpn
     end
   end
   print("pagenumber " .. pagenumber)
-  if pagenumber >= 100 then
-    pagenumber = 100
-  end
   local invtable = {}
   local invstring = ''
   for k,v in pairs(uj.inventory) do
