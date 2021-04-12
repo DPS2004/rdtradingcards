@@ -49,10 +49,15 @@
     "description": "Brings the c!pray timer down to 2.5 days.",
     "embed": "829203123024297984"
   },
-    "coolhat": {
+  "paddedstickersheet": {
+    "name": "Padded Sticker Sheet",
+    "description": "Makes cards containing a custom character (being used as a traditional row) more likely to be pulled.",
+    "embed": "829203123024297984"
+  },
+  "coolhat": {
     "name": "Cool Hat",
     "description": "Makes you look cooler.",
-    "embed": "829203115609292810"
+    "embed": "831162613932097576"
   }
 
 }
