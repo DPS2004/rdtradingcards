@@ -47,3 +47,5 @@ resetclocks()
 
 
 client:run(privatestuff.botid)
+
+client:setGame("with cards | c!help")

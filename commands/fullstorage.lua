@@ -8,7 +8,9 @@ function command.run(message, mt)
     numkey = numkey + 1
   end
   local storetable = {}
-  local storestring = 'Your storage contains:\n'
+  local contentstring = 'Your storage contains:'
+  local titlestring = 'Full Storage'
+  local storestring = ''
   local prevstorestring = ''
   for k,v in pairs(uj.storage) do
     table.insert(storetable, "**" .. (fntoname(k) or k) .. "** x" .. v .. "\n")
@@ -16,13 +18,29 @@ function command.run(message, mt)
   table.sort(storetable, function(a,b) return string.lower(a)<string.lower(b) end)
   for i = 1, numkey do
     storestring = storestring .. storetable[i]
-    if #storestring > 2000 then
-      message.author:send(prevstorestring)
+    if #storestring > 2048 then
+      message.author:send{
+        content = contentstring,
+        embed = {
+          color = 0x85c5ff,
+          title = titlestring,
+          description = prevstorestring
+        },
+      }
       storestring = storetable[i]
+      contentstring = ''
+      titlestring = 'Full Storage (cont.)'
     end
     prevstorestring = storestring
   end
-  message.author:send(storestring)
+  message.author:send{
+    content = contentstring,
+    embed = {
+      color = 0x85c5ff,
+      title = titlestring,
+      description = storestring
+    },
+  }
 end
 return command
   
