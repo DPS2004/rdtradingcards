@@ -76,7 +76,7 @@ function command.run(message, mt)
               url = 'https://cdn.discordapp.com/attachments/829197797789532181/831225534834802769/pyrhole6.png'
             }
           }}
-        else then
+        else
           message.channel:send{embed = {
             color = 0x85c5ff,
             title = "Looking at Pyrowmid...",
@@ -116,7 +116,7 @@ function command.run(message, mt)
             url = 'https://cdn.discordapp.com/attachments/829197797789532181/829255830485598258/token.png'
           }
         }}
-      elseif string.lower(mt[1]) == "hole"
+      elseif string.lower(mt[1]) == "hole" then
       
       
         if wj.worldstate == "prehole" then
@@ -177,7 +177,7 @@ function command.run(message, mt)
               url = 'https://cdn.discordapp.com/attachments/829197797789532181/831507288165449728/holeclose6.png'
             }
           }}
-        else then
+        else
           message.channel:send{embed = {
             color = 0x85c5ff,
             title = "Looking at Hole...",
