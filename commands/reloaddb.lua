@@ -356,6 +356,7 @@ function command.run(message, mt,overwrite)
     print("handlemessage")
     _G['handlemessage'] = function (message)
       if message.author.id ~= "767445265871142933" then --failsafe to avoid recursion
+        print("in handlemessage")
         local status, err = pcall(function ()
           if string.lower(string.sub(message.content, 0, 4+3)) == prefix.. 'ping' then 
             local mt = string.split(string.sub(message.content, 4+4),"/")
