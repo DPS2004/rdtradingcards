@@ -49,6 +49,7 @@ function command.run(message, mt,overwrite)
     cmd.addallnicknames = dofile('commands/addallnicknames.lua')
     cmd.fullinventory = dofile('commands/fullinventory.lua')
     cmd.fullstorage = dofile('commands/fullstorage.lua')
+    cmd.setworldstate = dofile('commands/setworldstate.lua')
     
     print("done loading commands")
 
@@ -59,12 +60,13 @@ function command.run(message, mt,overwrite)
     cmdre.shred = dofile('reactions/shred.lua')
     cmdre.equip = dofile('reactions/equip.lua')
     cmdre.usemachine = dofile('reactions/usemachine.lua')
+    cmdre.usehole = dofile('reactions/usehole.lua')
     
     print("done loading reactions")
 
     _G['defaultjson'] = {inventory={},storage={},medals={},items={nothing=true},lastpull=-24,lastprayer=-7}
     
-    _G['defaultglobalsave'] = {tokensdonated=0,boxpool={"ssss45","roomsdc_ur","roomsdc_r","underworld","enchantedlove","wallclockur","rhythmdogtor","moai","coolbird","beanshopper","cardboardworld","acofoi","rollermobster","inimaur","fhottour","superstrongcavity","soundsr","pancakefever","nicoleur","feedthemachine"},lablookindex=0,lablooktext="hellocanyouhearme"}
+    _G['defaultworldsave'] = {tokensdonated=0,boxpool={"ssss45","roomsdc_ur","roomsdc_r","underworld","enchantedlove","wallclockur","rhythmdogtor","moai","coolbird","beanshopper","cardboardworld","acofoi","rollermobster","inimaur","fhottour","superstrongcavity","soundsr","pancakefever","nicoleur","feedthemachine"},lablookindex=0,lablooktext="hellocanyouhearme",worldstate = "prehole"}
 
     _G['debug'] = false
     
@@ -712,6 +714,14 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.fullstorage.run(message,mt)
+          elseif string.lower(string.sub(message.content, 0, 13+3)) == prefix.. 'setworldstate ' then 
+            local mt = string.split(string.sub(message.content, 13+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            cmd.setworldstate.run(message,mt)
           end
 
         end)
@@ -744,6 +754,9 @@ function command.run(message, mt,overwrite)
           elseif eom.etype == "usemachine" then
             print('it is a use machine message being reacted to')
             cmdre.usemachine.run(ef, eom, reaction, userid)
+          elseif eom.etype == "usehole" then
+            print('it is a use hole message being reacted to')
+            cmdre.usehole.run(ef, eom, reaction, userid)
           end
         end
       end

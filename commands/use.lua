@@ -11,6 +11,7 @@ local command = {}
 function command.run(message, mt)
   print(message.author.name .. " did !use")
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
+  local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
   if #mt == 1 or mt[1] == "" then
 
     if string.lower(mt[1]) == "strange machine" or string.lower(mt[1]) == "machine" then 
@@ -66,6 +67,32 @@ function command.run(message, mt)
         end
       else
         message.channel:send('You already have every item that is currently available.')
+      end
+      
+    elseif string.lower(mt[1]) == "hole" then
+      if uj.tokens == nil then
+        uj.tokens = 0
+      end
+      
+      
+      if wj.worldstate == "labopen" or wj.worldstate == "largesthole" then
+        local newmessage = message.channel:send {
+          content = 'The **Hole** is not accepting donations at this time.'
+        }
+      else
+        if uj.tokens > 0 then
+          local newmessage = message.channel:send {
+            content = 'Will you put a **Token** into the **Hole?** (tokens remaining: ' .. uj.tokens .. ')'
+          }
+          addreacts(newmessage)
+          local tf = dpf.loadjson("savedata/events.json",{})
+          tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "usehole",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
+          dpf.savejson("savedata/events.json",tf)
+        else
+          local newmessage = message.channel:send {
+            content = 'You have no **Tokens** to offer to the **Hole.**'
+          }
+        end
       end
     elseif string.lower(mt[1]) == "token"  then 
       if uj.tokens > 0 then
