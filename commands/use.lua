@@ -146,14 +146,39 @@ function command.run(message, mt)
       uj = adduse(uj)
 
     elseif string.lower(mt[1]) == "ladder" then
-      message.channel:send{embed = {
-        color = 0x85c5ff,
-        title = "Using the ladder...",
-        description = 'You attempt to climb down the **Ladder**. Unfortunately, the **Hole** is still too small for you to fit through. You cannot wiggle your way out of it.',
-        image = {
-          url = 'https://cdn.discordapp.com/attachments/829197797789532181/831868583696269312/nowigglezone.png'
-        }
-      }}
+      if wj.worldstate == "labopen" then
+        if not wj.labdiscovered then
+          wj.labdiscovered = true
+          message.channel:send{embed = {
+            color = 0x85c5ff,
+            title = "NEW AREA DISCOVERED: LAB",
+            description = 'As you climb down the **Ladder**, you begin to hear the sound of a large computer whirring. Reaching the bottom reveals the source, a huge terminal, in the middle of an **Abandoned Lab.**',
+            image = {
+              url = 'https://cdn.discordapp.com/attachments/829197797789532181/831868583696269312/nowigglezone.png'
+            }
+          }}
+
+        else
+          message.channel:send{embed = {
+            color = 0x85c5ff,
+            title = "Using the ladder...",
+            description = 'You attempt to climb down the **Ladder**. Unfortunately, the **Hole** is still too small for you to fit through. You cannot wiggle your way out of it.',
+            image = {
+              url = 'https://cdn.discordapp.com/attachments/829197797789532181/831868583696269312/nowigglezone.png'
+            }
+          }}
+        end
+        
+      else
+        message.channel:send{embed = {
+          color = 0x85c5ff,
+          title = "Using the ladder...",
+          description = 'You attempt to climb down the **Ladder**. Unfortunately, the **Hole** is still too small for you to fit through. You cannot wiggle your way out of it.',
+          image = {
+            url = 'https://cdn.discordapp.com/attachments/829197797789532181/831868583696269312/nowigglezone.png'
+          }
+        }}
+      end
 
 
     else
@@ -167,6 +192,7 @@ function command.run(message, mt)
   else
     message.channel:send("Sorry, but the c!use command expects 1 argument. Please see c!help for more details.")
   end
+  dpf.savejson("savedata/worldsave.json", wj)
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
 end
 return command

@@ -126,9 +126,42 @@ function command.run(message, mt,overwrite)
     
     print("loading medal requires")
     _G['medalrequires'] = dpf.loadjson("data/medalrequires.json",defaultjson)
-
+    
+    
+    _G['labimages'] = {
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907762081497118/lab0.png", --use embeds, they said
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907763076333588/lab1.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907764762574868/lab2.png", --it will be easy, they said
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907766682517544/lab3.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907771020214292/lab4.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907771716075632/lab5.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907773830791198/lab6.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907776657227816/lab7.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907779236724786/lab8.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907782151110656/lab9.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907809926316052/lab10.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907816570224700/lab11.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907820299485215/lab12.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907824485400626/lab13.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907829383823401/lab14.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907832977948712/lab15.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907838213357638/lab16.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907842084175872/lab17.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907846848380958/lab18.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907851671830538/lab19.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907856558194708/lab20.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907860207239168/lab21.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907864444534834/lab22.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907869049356338/lab23.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907874141765683/lab24.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907878990381076/lab25.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907882618323015/lab26.png" --h      
+    }
+    
+    
+    
     print("loading functions")
-
+    
     _G['fntoname'] = function (x)
       print("finding "..x)
       for i,v in ipairs(cdb) do
