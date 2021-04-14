@@ -2,7 +2,7 @@
   "basemult": 10,
   "groups": [
     {
-      "groupname": "CURRENT ABNORMAL RATES / UNRELEASED CARDS: fhotto, otto",
+      "groupname": "CURRENT ABNORMAL RATES / UNRELEASED CARDS:",
       "basechance": 0,
       "cards": []
     },
@@ -638,6 +638,64 @@
             "oversizedstethoscope": true
           },
           "embed": "829201675729371206"
+        }
+      ]
+    },
+    {
+      "groupname": "edega",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "edegar",
+          "name": "Edega (Rare)",
+          "tradeable": true,
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "Paperwork",
+          "bonuses": {
+            "oversizedstethoscope": true
+          },
+          "embed": "832012123068563466"
+        },
+        {
+          "chance": 2,
+          "filename": "edegasr",
+          "name": "Edega (Super Rare)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Art by Dr Levi)",
+          "smell": "Paperwork",
+          "bonuses": {
+            "oversizedstethoscope": true
+          },
+          "embed": "832012202310369342"
+        },
+        {
+          "chance": 1,
+          "filename": "edegaur",
+          "name": "Edega (Ultra Rare)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by Dr Levi)",
+          "smell": "Paperwork",
+          "bonuses": {
+            "oversizedstethoscope": true
+          },
+          "embed": "832012133910839336"
+        },
+        {
+          "chance": 0,
+          "filename": "edegac",
+          "name": "Edega (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Edega (Art by Dr Levi)",
+          "smell": "Paperwork",
+          "bonuses": {
+            "oversizedstethoscope": true
+          },
+          "embed": "832012135009484850"
         }
       ]
     },
@@ -1319,7 +1377,7 @@
     },
     {
       "groupname": "otto",
-      "basechance": 0,
+      "basechance": 3,
       "cards": [
         {
           "chance": 3,
@@ -2558,6 +2616,60 @@
         }
       ]
     },
+        {
+      "groupname": "draemon",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "draemonr",
+          "name": "Draemon (Rare)",
+          "tradeable": true,
+          "type": "Rare",
+          "description": "(Art by AdipemDragon)",
+          "smell": "Unconventional Gameplay",
+          "bonuses": {
+          },
+          "embed": "830814942231789578"
+        },
+        {
+          "chance": 2,
+          "filename": "draemonsr",
+          "name": "Draemon (Super Rare)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Art by Noche)",
+          "smell": "Unconventional Gameplay",
+          "bonuses": {
+          },
+          "embed": "830815043016196106"
+        },
+        {
+          "chance": 1,
+          "filename": "draemonur",
+          "name": "Draemon (Ultra Rare)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by Plant Guy)",
+          "smell": "Unconventional Gameplay",
+          "bonuses": {
+          },
+          "embed": "830815056899080232"
+        },
+        {
+          "chance": 0,
+          "filename": "draemonc",
+          "name": "Draemon (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Draemon (Art by Plant Guy)",
+          "smell": "Unconventional Gameplay",
+          "bonuses": {
+          },
+          "embed": "830815068093415445"
+        }
+      ]
+    },
     {
       "groupname": "inima",
       "basechance": 3,
@@ -2614,7 +2726,7 @@
     },
     {
       "groupname": "fhotto",
-      "basechance": 0,
+      "basechance": 3,
       "cards": [
         {
           "chance": 3,

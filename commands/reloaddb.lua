@@ -63,6 +63,7 @@ function command.run(message, mt,overwrite)
     cmdre.usehole = dofile('reactions/usehole.lua')
     cmdre.spideruse = dofile('reactions/spideruse.lua')
     cmdre.spiderlook = dofile('reactions/spiderlook.lua')
+    cmdre.getladder = dofile('reactions/getladder.lua')
     
     print("done loading reactions")
 
@@ -419,7 +420,7 @@ function command.run(message, mt,overwrite)
     print("handlemessage")
     _G['handlemessage'] = function (message)
       if message.author.id ~= "767445265871142933" then --failsafe to avoid recursion
-        print("in handlemessage")
+        --print("in handlemessage")
         local status, err = pcall(function ()
           if string.lower(string.sub(message.content, 0, 4+3)) == prefix.. 'ping' then 
             local mt = string.split(string.sub(message.content, 4+4),"/")
@@ -835,6 +836,9 @@ function command.run(message, mt,overwrite)
           elseif eom.etype == "spiderlook" then
             print('it is a look spider message being reacted to')
             cmdre.spiderlook.run(ef, eom, reaction, userid)
+          elseif eom.etype == "getladder" then
+            print('getladder')
+            cmdre.getladder.run(ef, eom, reaction, userid)
           end
         end
       end

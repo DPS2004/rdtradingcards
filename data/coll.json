@@ -129,6 +129,14 @@
   },
   {
     "require": [
+      "edegar",
+      "edegasr",
+      "edegaur"
+    ],
+    "receive": "edegac"
+  },
+  {
+    "require": [
       "ottor",
       "ottosr",
       "ottour"
@@ -161,7 +169,14 @@
     ],
     "receive": "fhottoc"
   },
-  
+  {
+    "require": [
+      "draemonr",
+      "draemonsr",
+      "draemonur"
+    ],
+    "receive": "draemonc"
+  },
   {
     "require": [
       "mylevel",
