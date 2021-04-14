@@ -154,7 +154,7 @@ function command.run(message, mt)
             title = "NEW AREA DISCOVERED: LAB",
             description = 'As you climb down the **Ladder**, you begin to hear the sound of a large computer whirring. Reaching the bottom reveals the source, a huge terminal, in the middle of an **Abandoned Lab.**',
             image = {
-              url = 'https://cdn.discordapp.com/attachments/829197797789532181/831868583696269312/nowigglezone.png'
+              url = 'https://cdn.discordapp.com/attachments/829197797789532181/831907381830746162/labfade.gif'
             }
           }}
 
@@ -162,9 +162,9 @@ function command.run(message, mt)
           message.channel:send{embed = {
             color = 0x85c5ff,
             title = "Using the ladder...",
-            description = 'You attempt to climb down the **Ladder**. Unfortunately, the **Hole** is still too small for you to fit through. You cannot wiggle your way out of it.',
+            description = 'As you climb down the **Ladder**, you begin to hear the sound of a large computer whirring. Reaching the bottom reveals the source, a huge terminal, in the middle of an **Abandoned Lab.**',
             image = {
-              url = 'https://cdn.discordapp.com/attachments/829197797789532181/831868583696269312/nowigglezone.png'
+              url = 'https://cdn.discordapp.com/attachments/829197797789532181/831907381830746162/labfade.gif'
             }
           }}
         end
@@ -179,8 +179,21 @@ function command.run(message, mt)
           }
         }}
       end
+    elseif string.lower(mt[1]) == "spider" or string.lower(mt[1]) == "spiderweb" or string.lower(mt[1]) == "web" or string.lower(mt[1]) == "spider web" and wj.labdiscovered then       
+      
+        
+      local newmessage = message.channel:send {
+        content = 'Are you okay with seeing a spider?'
+      }
+      addreacts(newmessage)
 
+      local tf = dpf.loadjson("savedata/events.json",{})
+      tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "spideruse",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
+      
+      
 
+      dpf.savejson("savedata/events.json",tf)
+      
     else
       message.channel:send("Sorry, but I don't know how to use " .. mt[1] .. ".")
     end

@@ -61,6 +61,8 @@ function command.run(message, mt,overwrite)
     cmdre.equip = dofile('reactions/equip.lua')
     cmdre.usemachine = dofile('reactions/usemachine.lua')
     cmdre.usehole = dofile('reactions/usehole.lua')
+    cmdre.spideruse = dofile('reactions/spideruse.lua')
+    cmdre.spiderlook = dofile('reactions/spiderlook.lua')
     
     print("done loading reactions")
 
@@ -157,7 +159,35 @@ function command.run(message, mt,overwrite)
       "https://cdn.discordapp.com/attachments/829197797789532181/831907878990381076/lab25.png",
       "https://cdn.discordapp.com/attachments/829197797789532181/831907882618323015/lab26.png" --h      
     }
-    
+    _G['letters'] = {
+      " ",
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "m",
+      "n",
+      "o",
+      "p",
+      "q",
+      "r",
+      "s",
+      "t",
+      "u",
+      "v",
+      "w",
+      "x",
+      "y",
+      "z"
+    }
     
     
     print("loading functions")
@@ -799,6 +829,12 @@ function command.run(message, mt,overwrite)
           elseif eom.etype == "usehole" then
             print('it is a use hole message being reacted to')
             cmdre.usehole.run(ef, eom, reaction, userid)
+          elseif eom.etype == "spideruse" then
+            print('it is a use spider message being reacted to')
+            cmdre.spideruse.run(ef, eom, reaction, userid)
+          elseif eom.etype == "spiderlook" then
+            print('it is a look spider message being reacted to')
+            cmdre.spiderlook.run(ef, eom, reaction, userid)
           end
         end
       end

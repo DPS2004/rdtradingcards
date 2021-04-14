@@ -188,11 +188,31 @@ function command.run(message, mt)
           }}
         
         end
+      elseif string.lower(mt[1]) == "spider" or string.lower(mt[1]) == "spiderweb" or string.lower(mt[1]) == "web" or string.lower(mt[1]) == "spider web" and wj.labdiscovered then       
+        
+          
+        local newmessage = message.channel:send {
+          content = 'Are you okay with seeing a spider?'
+        }
+        addreacts(newmessage)
 
-  --  elseif string.lower(mt[1]) == "lab" or string.lower(mt[1]) == "abandoned lab" then 
-  --    message.channel:send {
-  --      content = ':eye:`the card factory looks back`:eye:'
-  --    }
+        local tf = dpf.loadjson("savedata/events.json",{})
+        tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "spiderlook",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
+        
+        
+
+        dpf.savejson("savedata/events.json",tf)
+        
+      
+      elseif string.lower(mt[1]) == "lab" or string.lower(mt[1]) == "abandoned lab" and wj.labdiscovered  then 
+        message.channel:send{embed = {
+          color = 0x85c5ff,
+          title = "Looking at Lab...",
+          description = 'The **Abandoned Lab** was revealed after a **Hole** appeared next to the **Pyrowmid**. Judging by the presence of a Spider Web, it has not been used for quite some time, but the technology here looks relatively modern. The **Database** and the connected **Terminal** juxtapose the cheery **Cat Poster**. The **Table** on the other side of the room is caked in dust. (TODO: make the lights cycle through message)',
+          image = {
+            url = 'https://cdn.discordapp.com/attachments/829197797789532181/831907776657227816/lab7.png'
+          }
+        }}
       else
         message.channel:send("Sorry, but I cannot find " .. mt[1] .. ".")
       end
