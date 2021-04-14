@@ -145,7 +145,15 @@ function command.run(message, mt)
       }
       uj = adduse(uj)
 
-
+    elseif string.lower(mt[1]) == "ladder" then
+      message.channel:send{embed = {
+        color = 0x85c5ff,
+        title = "Using the ladder...",
+        description = 'You attempt to climb down the **Ladder**. Unfortunately, the **Hole** is still too small for you to fit through. You cannot wiggle your way out of it.',
+        image = {
+          url = 'https://cdn.discordapp.com/attachments/829197797789532181/831868583696269312/nowigglezone.png'
+        }
+      }}
 
 
     else

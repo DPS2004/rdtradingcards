@@ -723,6 +723,14 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.setworldstate.run(message,mt)
+          elseif string.lower(string.sub(message.content, 0, 6+3)) == prefix.. 'ladder' then 
+            local mt = string.split(string.sub(message.content, 6+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            cmd.use.run(message,{"ladder"})
           end
 
         end)
