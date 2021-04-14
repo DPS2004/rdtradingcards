@@ -39,7 +39,7 @@ function reaction.run(ef, eom, reaction, userid)
           content = '***The ground rumbles...***'
         }
       end
-      if wj.worldstate == "medium" and wj.tokensdonated >= 9 then
+      if wj.worldstate == "mediumhole" and wj.tokensdonated >= 9 then
         wj.worldstate = "largehole"
         local newmessage = reaction.message.channel:send {
           content = '***The ground rumbles...***'

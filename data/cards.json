@@ -2260,6 +2260,18 @@
         },
         {
           "chance": 2,
+          "filename": "patchworkstaccato",
+          "name": "Patchwork Staccato",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by lugi, Qerewe, and Seven)",
+          "smell": "Fabric",
+          "bonuses": {
+          },
+          "embed": "831712853559214142"
+        },
+        {
+          "chance": 2,
           "filename": "enchantedlove",
           "name": "Enchanted Love",
           "tradeable": true,

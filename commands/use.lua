@@ -75,7 +75,7 @@ function command.run(message, mt)
       end
       
       
-      if wj.worldstate == "labopen" or wj.worldstate == "largesthole" then
+      if wj.worldstate == "labopen" or wj.worldstate == "largesthole" or wj.worldstate == "prehole" then
         local newmessage = message.channel:send {
           content = 'The **Hole** is not accepting donations at this time.'
         }
