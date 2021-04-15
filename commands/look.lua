@@ -188,7 +188,7 @@ function command.run(message, mt)
           }}
         
         end
-      elseif string.lower(mt[1]) == "spider" or string.lower(mt[1]) == "spiderweb" or string.lower(mt[1]) == "web" or string.lower(mt[1]) == "spider web" and wj.labdiscovered then       
+      elseif (string.lower(mt[1]) == "spider" or string.lower(mt[1]) == "spiderweb" or string.lower(mt[1]) == "web" or string.lower(mt[1]) == "spider web") and wj.labdiscovered then       
         
           
         local newmessage = message.channel:send {
@@ -204,7 +204,7 @@ function command.run(message, mt)
         dpf.savejson("savedata/events.json",tf)
         
       
-      elseif string.lower(mt[1]) == "lab" or string.lower(mt[1]) == "abandoned lab" and wj.labdiscovered  then 
+      elseif (string.lower(mt[1]) == "lab" or string.lower(mt[1]) == "abandoned lab") and wj.labdiscovered  then 
         message.channel:send{embed = {
           color = 0x85c5ff,
           title = "Looking at Lab...",

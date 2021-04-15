@@ -196,7 +196,7 @@ function command.run(message, mt)
           }
         }}
       end
-    elseif string.lower(mt[1]) == "spider" or string.lower(mt[1]) == "spiderweb" or string.lower(mt[1]) == "web" or string.lower(mt[1]) == "spider web" and wj.labdiscovered then       
+    elseif (string.lower(mt[1]) == "spider" or string.lower(mt[1]) == "spiderweb" or string.lower(mt[1]) == "web" or string.lower(mt[1]) == "spider web") and wj.labdiscovered then       
       
         
       local newmessage = message.channel:send {
