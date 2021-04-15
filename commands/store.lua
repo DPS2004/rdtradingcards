@@ -19,8 +19,8 @@ function command.run(message, mt)
       if uj.inventory[item1] then
         print("success!!!!!")
         local numcards = 1
-        if(mt[2]) then
-          if tonumber(mt[2]) then
+        if tonumber(mt[2]) then
+          if tonumber(mt[2]) > 1 then
             numcards = math.floor(mt[2])
           end
         end

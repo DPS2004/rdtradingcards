@@ -8,8 +8,8 @@ function command.run(message, mt)
       local uj2 = dpf.loadjson(uj2f,defaultjson)
       if uj2.id ~= message.author.id then
         local numcards = 1
-        if(mt[3]) then
-          if tonumber(mt[3]) then
+        if tonumber(mt[3]) then
+          if tonumber(mt[3]) > 1 then
             numcards = math.floor(mt[3])
           end
         end
