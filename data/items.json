@@ -36,8 +36,13 @@
   },
   "brokenmouse": {
     "name": "Broken Mouse",
-    "description": "Skips yes/no prompt for storing cards, equipping items, and using the strange machine",
+    "description": "Makes for a good paperweight.",
     "embed": "829203107950493716"
+  },
+  "fixedmouse": {
+    "name": "Fixed Mouse",
+    "description": "Very rarely lets you **Double Click**, and pull two cards at once.",
+    "embed": "832305270800515192"
   },
   "stoppedwatch": {
     "name": "Stopped Watch",
@@ -52,7 +57,7 @@
   "paddedstickersheet": {
     "name": "Padded Sticker Sheet",
     "description": "Makes cards containing a custom character (being used as a traditional row) more likely to be pulled.",
-    "embed": "831162613932097576"
+    "embed": "832305236181909514"
   },
   "coolhat": {
     "name": "Cool Hat",

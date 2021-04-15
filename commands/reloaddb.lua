@@ -124,7 +124,9 @@ function command.run(message, mt,overwrite)
     print("generating item pull table")
     _G['itempt'] = {}
     for k,v in pairs(itemdb) do
-      table.insert(itempt,k)
+      if k ~= "fixedmouse" then
+        table.insert(itempt,k)
+      end
     end
     print(inspect(itempt))
     

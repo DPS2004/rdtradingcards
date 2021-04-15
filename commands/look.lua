@@ -2,6 +2,14 @@ local command = {}
 function command.run(message, mt)
   print(message.author.name .. " did !look")
   local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
+  
+  local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
+  if uj.timeslooked == nil then
+    uj.timeslooked = 1
+  else
+    uj.timeslooked = uj.timeslooked + 1
+  end
+  
   if #mt == 1 or mt[1] == "" then
     if texttofn(mt[1]) then
       cmd.show.run(message, mt)
@@ -219,6 +227,17 @@ function command.run(message, mt)
             url = 'https://cdn.discordapp.com/attachments/829197797789532181/831907776657227816/lab7.png'
           }
         }}
+      elseif (string.lower(mt[1]) == "table") and wj.labdiscovered  then 
+        message.channel:send{embed = {
+          color = 0x85c5ff,
+          title = "Looking at Table...",
+          description = 'The **Table**',
+        }}
+      
+      
+      
+      
+      
       elseif (string.lower(mt[1]) == "ladder") and wj.labdiscovered  then 
         message.channel:send{embed = {
           color = 0x85c5ff,
@@ -230,11 +249,13 @@ function command.run(message, mt)
         }}
       else
         message.channel:send("Sorry, but I cannot find " .. mt[1] .. ".")
+        uj.timeslooked = uj.timeslooked - 1
       end
     end
   else
     message.channel:send("Sorry, but the c!look command expects 1 argument. Please see c!help for more details.")
   end
+  dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
 end
 return command
   
