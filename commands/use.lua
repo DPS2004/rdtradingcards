@@ -215,6 +215,12 @@ function command.run(message, mt)
       else
         message.channel:send("Sorry, but I don't know how to use " .. mt[1] .. ".")
       end
+    elseif (string.lower(mt[1]) == "table") and wj.labdiscovered  then 
+      message.channel:send{embed = {
+        color = 0x85c5ff,
+        title = "Using Table...",
+        description = 'You dust off the **Table**. But as soon as you look away, the **Table** is covered in dust again.',
+      }}
       
     else
       message.channel:send("Sorry, but the c!use command expects 1 argument. Please see c!help for more details.")
