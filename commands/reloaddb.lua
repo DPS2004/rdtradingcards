@@ -51,6 +51,7 @@ function command.run(message, mt,overwrite)
     cmd.fullstorage = dofile('commands/fullstorage.lua')
     cmd.setworldstate = dofile('commands/setworldstate.lua')
     cmd.givetoken = dofile('commands/givetoken.lua')
+    cmd.skipprompts = dofile('commands/skipprompts.lua')
     
     print("done loading commands")
 
@@ -806,6 +807,14 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.givetoken.run(message,nmt)
+          elseif string.lower(string.sub(message.content, 0, 11+3)) == prefix.. 'skipprompts' then 
+            local mt = string.split(string.sub(message.content, 11+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            cmd.skipprompts.run(message,mt)
           end
 
         end)

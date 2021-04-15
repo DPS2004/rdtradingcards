@@ -29,7 +29,7 @@ function command.run(message, mt)
           if uj.equipped ~= curfilename then
             --woo hoo
             print(uj.equipped)
-            if uj.equipped ~= "brokenmouse" then
+            if not uj.skipprompts then
             
               local newmessage = message.channel:send("Would you like to change your equipped item from **" .. itemfntoname(uj.equipped) .. "** to **" .. itemfntoname(curfilename) .. "**? This can be done once every 24 hours.")
               addreacts(newmessage)

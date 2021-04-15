@@ -30,7 +30,7 @@ function command.run(message, mt)
           if numitems < #itempt then
             if uj.tokens >= 2 then
         
-              if uj.equipped ~= "brokenmouse" then
+              if not uj.skipprompts then
                 local newmessage = message.channel:send {
                   content = 'Will you put two **Tokens** into the **Strange Machine?** (tokens remaining: ' .. uj.tokens .. ')'
                 }
