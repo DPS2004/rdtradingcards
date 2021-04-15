@@ -98,9 +98,15 @@ function command.run(message, mt)
           content = 'The **Throne**, like the walls of the **Pyrowmid** are made of Rows (Rare) cards. It is unknown how it is being held together.'
         }
       elseif string.lower(mt[1]) == "strange machine" or string.lower(mt[1]) == "machine" then 
-        message.channel:send {
-          content = 'The **Strange Machine** appears to have a slot for two **Tokens**, and a crank. The crank is worn, as if it has been **Used** many times.'
-        }
+        if wj.worldstate == "largesthole" then
+          message.channel:send {
+            content = 'The **Strange Machine** appears to have a slot for four **Tokens**, and a crank. The crank is worn, as if it has been **Used** many times. The machine is shaking vigorously.'
+          }          
+        else
+          message.channel:send {
+            content = 'The **Strange Machine** appears to have a slot for two **Tokens**, and a crank. The crank is worn, as if it has been **Used** many times.'
+          }
+        end
       elseif string.lower(mt[1]) == "card factory" or string.lower(mt[1]) == "factory" or string.lower(mt[1]) == "cardfactory" or string.lower(mt[1]) == "the card factory" then 
         message.channel:send {
           content = ':eye:`the card factory looks back`:eye:'
@@ -211,6 +217,15 @@ function command.run(message, mt)
           description = 'The **Abandoned Lab** was revealed after a **Hole** appeared next to the **Pyrowmid**. Judging by the presence of a Spider Web, it has not been used for quite some time, but the technology here looks relatively modern. The **Database** and the connected **Terminal** juxtapose the cheery **Cat Poster**. The **Table** on the other side of the room is caked in dust. (TODO: make the lights cycle through message)',
           image = {
             url = 'https://cdn.discordapp.com/attachments/829197797789532181/831907776657227816/lab7.png'
+          }
+        }}
+      elseif (string.lower(mt[1]) == "ladder") and wj.labdiscovered  then 
+        message.channel:send{embed = {
+          color = 0x85c5ff,
+          title = "Looking at Ladder...",
+          description = 'The **Ladder** feels too big to fit in a capsule, but that\'s where it came from. It is currently propped up in the **Hole**',
+          image = {
+            url = 'https://cdn.discordapp.com/attachments/829197797789532181/831507279164997642/holeclosefinal.png'
           }
         }}
       else
