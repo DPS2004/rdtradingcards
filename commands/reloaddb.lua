@@ -50,6 +50,7 @@ function command.run(message, mt,overwrite)
     cmd.fullinventory = dofile('commands/fullinventory.lua')
     cmd.fullstorage = dofile('commands/fullstorage.lua')
     cmd.setworldstate = dofile('commands/setworldstate.lua')
+    cmd.givetoken = dofile('commands/givetoken.lua')
     
     print("done loading commands")
 
@@ -110,7 +111,7 @@ function command.run(message, mt,overwrite)
     
     print("here is cdb")
     print(inspect(cdb))
-    print("here is ptable")
+    -- print("here is ptable")
     --print(inspect(ptable))
 
     print("loading collector's info")
@@ -795,6 +796,14 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.use.run(message,{"ladder"})
+          elseif string.lower(string.sub(message.content, 0, 9+3)) == prefix.. 'givetoken ' then 
+            local mt = string.split(string.sub(message.content, 9+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            cmd.givetoken.run(message,nmt)
           end
 
         end)
