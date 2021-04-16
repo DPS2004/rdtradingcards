@@ -143,6 +143,14 @@
     ],
     "receive": "ottoc"
   },
+  {
+    "require": [
+      "heartchickr",
+      "heartchicksr",
+      "heartchickur"
+    ],
+    "receive": "heartchickc"
+  },
     
   {
     "require": [

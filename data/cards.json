@@ -1429,6 +1429,62 @@
         }
       ]
     },
+    
+    {
+      "groupname": "heartchick",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "heartchickr",
+          "name": "Heart Chick (Rare)",
+          "tradeable": true,
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "Broken Glass",
+          "bonuses": {
+          },
+          "embed": "832647184163143751"
+        },
+        {
+          "chance": 2,
+          "filename": "heartchicksr",
+          "name": "Heart Chick (Super Rare)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Art by Lumina)",
+          "smell": "Broken Glass",
+          "bonuses": {
+          },
+          "embed": "832647186780782700"
+        },
+        {
+          "chance": 1,
+          "filename": "heartchickur",
+          "name": "Heart Chick (Ultra Rare)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by Kyle Labriola)",
+          "smell": "Broken Glass",
+          "bonuses": {
+          },
+          "embed": "832648380047163392"
+        },
+        {
+          "chance": 0,
+          "filename": "heartchickc",
+          "name": "Heart Chick (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Heart Chick (Art by Lumina)",
+          "smell": "Broken Glass",
+          "bonuses": {
+          },
+          "embed": "832647183089401866"
+        }
+      ]
+    },
+    
     {
       "groupname": "----------------------------------------EDITOR STUFF------------------------------------------------",
       "basechance": 0,
@@ -2770,7 +2826,7 @@
           "name": "Fire Hazard Otto (Collector's)",
           "tradeable": false,
           "type": "Collector's",
-          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Inima (Art by Plant Guy)",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Fire Hazard Otto (Art by Plant Guy)",
           "smell": "Abandoned Factories",
           "bonuses": {
           },
