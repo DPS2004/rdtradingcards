@@ -2,6 +2,7 @@ reaction = {}
 function reaction.run(ef, eom, reaction, userid)
   local ujf = eom.ujf
   local item1 = eom.item1
+  local numcards = eom.numcards
   local uj = dpf.loadjson(ujf, defaultjson)
   print("loaded uj")
   if uj.id == userid then
@@ -10,18 +11,22 @@ function reaction.run(ef, eom, reaction, userid)
       print('user1 has accepted')
       if uj.inventory[item1] then
         print("removing item1 from user1")
-        uj.inventory[item1] = uj.inventory[item1] - 1
+        uj.inventory[item1] = uj.inventory[item1] - numcards
         if uj.inventory[item1] == 0 then
           uj.inventory[item1] = nil
         end     
         if uj.timesshredded == nil then
-          uj.timesshredded = 1
+          uj.timesshredded = numcards
         else
-          uj.timesshredded = uj.timesshredded + 1
+          uj.timesshredded = uj.timesshredded + numcards
         end
         
         ef[reaction.message.id] = nil
-        reaction.message.channel:send("<@" .. uj.id .. "> successfully shredded their **" .. fntoname(item1) .. "** card.")
+        local isplural = ""
+        if numcards ~= 1 then
+          isplural = "s"
+        end
+        reaction.message.channel:send("<@" .. uj.id .. "> successfully shredded their " .. numcards .. " **" .. fntoname(item1) .. "** card" .. isplural .. ".")
         dpf.savejson("savedata/events.json",ef)
         dpf.savejson(ujf,uj)
       else

@@ -9,3 +9,7 @@ luvit
 lit.exe
 luvi.exe
 luvit.exe
+
+# random files that you guys probably don't want
+.directory
+.idea/
