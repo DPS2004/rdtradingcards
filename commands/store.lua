@@ -25,8 +25,12 @@ function command.run(message, mt)
           end
         end
         if uj.inventory[item1] >= numcards then
+          local isplural = ""
+          if numcards ~= 1 then
+            isplural = "s"
+          end
           if not uj.skipprompts then
-            local newmessage = message.channel:send("<@" .. uj.id .. ">, do you want to put your " .. numcards .. " **" .. fntoname(item1) .. "** into storage? This cannot be undone. React to this post with :white_check_mark: to confirm and :x: to deny.")
+            local newmessage = message.channel:send("<@" .. uj.id .. ">, do you want to put your " .. numcards .. " **" .. fntoname(item1) .. "** card" .. isplural ..  " into storage? This cannot be undone. React to this post with :white_check_mark: to confirm and :x: to deny.")
             addreacts(newmessage)
             local tf = dpf.loadjson("savedata/events.json",{})
             tf[newmessage.id] ={numcards = numcards, ujf = ujf, item1=item1,etype = "store",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
@@ -47,10 +51,6 @@ function command.run(message, mt)
               uj.timesstored = numcards
             else
               uj.timesstored = uj.timesstored + numcards
-            end
-            local isplural = ""
-            if numcards ~= 1 then
-              isplural = "s"
             end
             message.channel:send("<@" .. uj.id .. "> successfully put their " .. numcards .. " **" .. fntoname(item1) .. "** card" .. isplural .. " into storage.")
             dpf.savejson(ujf,uj)
