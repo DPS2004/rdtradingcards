@@ -211,16 +211,39 @@ function command.run(message, mt)
         
 
         dpf.savejson("savedata/events.json",tf)
+      elseif (string.lower(mt[1]) == "table") and wj.labdiscovered  then 
+        message.channel:send{embed = {
+          color = 0x85c5ff,
+          title = "Using Table...",
+          description = 'You dust off the **Table**. But as soon as you look away, the **Table** is covered in dust again.',
+        }}
+      elseif (string.lower(mt[1]) == "mouse hole" or string.lower(mt[1]) == "mouse" or string.lower(mt[1]) == "mousehole") and wj.labdiscovered  then 
+        if uj.equipped == "brokenmouse" then
+          newmessage = message.channel:send{embed = {
+            color = 0x85c5ff,
+            title = "Using Mouse Hole...",
+            description = 'Do you want to put your **Broken Mouse** into the **Mouse Hole?**',
+          }}
+          local tf = dpf.loadjson("savedata/events.json",{})
+          
+          addreacts(newmessage)
+          tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "usemousehole",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
+          
+          dpf.savejson("savedata/events.json",tf)
+        else
+          newmessage = message.channel:send{embed = {
+            color = 0x85c5ff,
+            title = "Using Mouse Hole...",
+            description = 'You do not have anything to put into the **Mouse Hole.**',
+          }}
+          
+          
+        end 
         
       else
         message.channel:send("Sorry, but I don't know how to use " .. mt[1] .. ".")
       end
-    elseif (string.lower(mt[1]) == "table") and wj.labdiscovered  then 
-      message.channel:send{embed = {
-        color = 0x85c5ff,
-        title = "Using Table...",
-        description = 'You dust off the **Table**. But as soon as you look away, the **Table** is covered in dust again.',
-      }}
+    
       
     else
       message.channel:send("Sorry, but the c!use command expects 1 argument. Please see c!help for more details.")
