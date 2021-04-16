@@ -79,6 +79,50 @@ local time = sw:getTime()
         else
           uj.inventory[newcard] = uj.inventory[newcard] + 1
         end
+        
+        if uj.equipped == "fixedmouse" then
+          if math.random(1,6) == 1 then
+            --doubleclick
+            newcard = ptable[uj.equipped][math.random(#ptable[uj.equipped])]
+            ncn = fntoname(newcard)
+            print(ncn)
+            extension = ""
+            pico8 = getcardpico(newcard)
+            animated = getcardanimated(newcard)
+            if animated then
+              extension = ".gif"
+            elseif pico8 then
+              extension = ".p8.png"
+            else
+              extension = ".png"
+            end
+
+
+            message.channel:send{embed = {
+              color = 0x85c5ff,
+              title = "Doubleclick!",
+              description = 'Because of the **Fixed Mouse**, ' .. message.author.mentionString ..' got a **'.. ncn ..'** card! The **'.. ncn ..'** card has been added to their inventory. The shorthand form of this card is **'.. newcard .. '**.',
+              image = {
+                url ='https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. getcardembed(newcard) .. '/' .. newcard .. extension
+              }
+            }}
+            if uj.inventory[newcard] == nil then
+              uj.inventory[newcard] = 1
+            else
+              uj.inventory[newcard] = uj.inventory[newcard] + 1
+            end
+            
+            
+            
+          end
+          
+          
+          
+          
+        end
+        
+        
+        
         if uj.timespulled == nil then
           uj.timespulled = 1
         else
