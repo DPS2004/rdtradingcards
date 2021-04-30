@@ -15,9 +15,17 @@ function reaction.run(ef, eom, reaction, userid)
       while true do --this is bad!
         newitem = itempt[math.random(#itempt)]
         if not uj.items[newitem] then
-          print("found one!")
-          print(newitem)
-          break
+          if newitem == "brokenmouse" then
+            if not uj.items["fixedmouse"] then
+              print("found one!")
+              print(newitem)
+              break
+            end
+          else
+            print("found one!")
+            print(newitem)
+            break
+          end
         end
         loops = loops + 1
         print(loops)

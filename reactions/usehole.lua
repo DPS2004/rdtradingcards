@@ -27,31 +27,31 @@ function reaction.run(ef, eom, reaction, userid)
       
       wj.tokensdonated = wj.tokensdonated + 1
       
-      if wj.worldstate == "tinyhole" and wj.tokensdonated >= 3 then
+      if wj.worldstate == "tinyhole" and wj.tokensdonated >= 5 then
         wj.worldstate = "smallhole"
         local newmessage = reaction.message.channel:send {
           content = '***The ground rumbles...***'
         }
       end
-      if wj.worldstate == "smallhole" and wj.tokensdonated >= 6 then
+      if wj.worldstate == "smallhole" and wj.tokensdonated >= 10 then
         wj.worldstate = "mediumhole"
         local newmessage = reaction.message.channel:send {
           content = '***The ground rumbles...***'
         }
       end
-      if wj.worldstate == "mediumhole" and wj.tokensdonated >= 9 then
+      if wj.worldstate == "mediumhole" and wj.tokensdonated >= 15 then
         wj.worldstate = "largehole"
         local newmessage = reaction.message.channel:send {
           content = '***The ground rumbles...***'
         }
       end      
-      if wj.worldstate == "largehole" and wj.tokensdonated >= 12 then
+      if wj.worldstate == "largehole" and wj.tokensdonated >= 20 then
         wj.worldstate = "largerhole"
         local newmessage = reaction.message.channel:send {
           content = '***The ground rumbles...***'
         }
       end
-      if wj.worldstate == "largerhole" and wj.tokensdonated >= 15 then
+      if wj.worldstate == "largerhole" and wj.tokensdonated >= 30 then
         wj.worldstate = "largesthole"
         local newmessage = reaction.message.channel:send {
           content = '***The ground rumbles... and so does the Strange Machine***'

@@ -125,6 +125,7 @@
           "smell": "Beans",
           "bonuses": {
             "rustysword": true,
+            "duncecap": true,
             "paddedstickersheet": true
           },
           "embed": "829200730547421194"
@@ -243,6 +244,7 @@
           "description": "(Level by 7th Beat Games)",
           "smell": "The Vet's Office",
           "bonuses": {
+            "duncecap": true
           },
           "embed": "829202450056609862"
         },
@@ -1503,6 +1505,7 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Time Bending",
           "bonuses": {
+            "scribblednotepad": true
           },
           "embed": "829202506919313428"
         },
@@ -1515,6 +1518,7 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Time Bending",
           "bonuses": {
+            "scribblednotepad": true
           },
           "embed": "829202512145547264"
         },
@@ -1539,6 +1543,7 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "3000 Pixels",
           "bonuses": {
+            "scribblednotepad": true
           },
           "embed": "832348353274576947"
         },
@@ -1551,6 +1556,7 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "3000 Pixels",
           "bonuses": {
+            "scribblednotepad": true
           },
           "embed": "832348378263715850"
         },
@@ -1563,6 +1569,7 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "3000 Pixels",
           "bonuses": {
+            "scribblednotepad": true
           },
           "embed": "832348409393446972"
         }
@@ -1581,6 +1588,7 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Overcharting",
           "bonuses": {
+            "scribblednotepad": true
           },
           "embed": "829202527185797160"
         },
@@ -1593,6 +1601,7 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Overcharting",
           "bonuses": {
+            "scribblednotepad": true
           },
           "embed": "829202531665969192"
         },
@@ -1605,6 +1614,7 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Overcharting",
           "bonuses": {
+            "scribblednotepad": true
           },
           "embed": "829202537780609064"
         }
@@ -1623,6 +1633,7 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Kneecaps",
           "bonuses": {
+            "scribblednotepad": true
           },
           "embed": "829202730912055346"
         },
@@ -1635,6 +1646,7 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Kneecaps",
           "bonuses": {
+            "scribblednotepad": true
           },
           "embed": "829202736829825034"
         },
@@ -1647,6 +1659,7 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Kneecaps",
           "bonuses": {
+            "scribblednotepad": true
           },
           "embed": "829202743481729064"
         }
@@ -1665,6 +1678,7 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Too Much Gray",
           "bonuses": {
+            "scribblednotepad": true
           },
           "embed": "829202925557383199"
         },
@@ -1677,6 +1691,7 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Too Much Gray",
           "bonuses": {
+            "scribblednotepad": true
           },
           "embed": "829202931021643796"
         },
@@ -1689,6 +1704,7 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Too Much Gray",
           "bonuses": {
+            "scribblednotepad": true
           },
           "embed": "829202938240958514"
         }
@@ -1869,6 +1885,7 @@
           "description": "(Level by Some J Name, Het, DPS2004, and Samario)",
           "smell": "Freshly Cooked Lobster",
           "bonuses": {
+            "duncecap": true
           },
           "embed": "829202480369500160"
         },
@@ -2431,6 +2448,7 @@
           "description": "(Art by Winston Lee)",
           "smell": ":beans:",
           "bonuses": {
+            "duncecap": true
           },
           "embed": "829200733840605254"
         },
@@ -2443,7 +2461,8 @@
           "description": "(Art by Winston Lee, edited by Szprycha)",
           "smell": "Eggs",
           "bonuses": {
-            "rustysword": true
+            "rustysword": true,
+            "duncecap": true
           },
           "embed": "829202269656186930"
         },
@@ -2456,7 +2475,8 @@
           "description": "(Art by Kyle Labriola, edited by DeadlySprinklez)",
           "smell": "Eggs",
           "bonuses": {
-            "rustysword": true
+            "rustysword": true,
+            "duncecap": true
           },
           "embed": "829202280716304384"
         },
@@ -2469,6 +2489,7 @@
           "description": "(Art by Fizzd)",
           "smell": "Malpractice",
           "bonuses": {
+            "duncecap": true
           },
           "embed": "829201476747526144"
         },
@@ -2481,6 +2502,7 @@
           "description": "(Art by Lumina, based on art by Fizzd)",
           "smell": "Malpractice",
           "bonuses": {
+            "duncecap": true
           },
           "embed": "829201484137627648"
         },
@@ -2493,7 +2515,8 @@
           "description": "(Art by Winston Lee, edited by Axobotl)",
           "smell": "Dumpster Diving",
           "bonuses": {
-            "oversizedstethoscope": true
+            "oversizedstethoscope": true,
+            "duncecap": true
           },
           "embed": "829201700006527006"
         },
@@ -2506,7 +2529,8 @@
           "description": "(Art by Dr Levi)",
           "smell": "Dumpster Diving",
           "bonuses": {
-            "oversizedstethoscope": true
+            "oversizedstethoscope": true,
+            "duncecap": true
           },
           "embed": "829201715412598804"
         },
@@ -2519,6 +2543,7 @@
           "description": "(Art by Giacomo)",
           "smell": "Accuracy",
           "bonuses": {
+            "duncecap": true
           },
           "embed": "829202946058223656"
         },
@@ -2531,6 +2556,7 @@
           "description": "(Art by DPS2004)",
           "smell": "Accuracy",
           "bonuses": {
+            "duncecap": true
           },
           "embed": "829202955785207818"
         },
@@ -2543,7 +2569,8 @@
           "description": "(Art by Winston Lee, edited by Kin)",
           "smell": "Bad Opinions",
           "bonuses": {
-            "valentinesdaycard": true
+            "valentinesdaycard": true,
+            "duncecap": true
           },
           "embed": "829201982429331456"
         },
@@ -2556,7 +2583,8 @@
           "description": "(Art by Het)",
           "smell": "Bad Opinions",
           "bonuses": {
-            "valentinesdaycard": true
+            "valentinesdaycard": true,
+            "duncecap": true
           },
           "embed": "829202023110934538"
         },
@@ -2569,7 +2597,8 @@
           "description": "(Art by Het)",
           "smell": "Bad Opinions",
           "bonuses": {
-            "valentinesdaycard": true
+            "valentinesdaycard": true,
+            "duncecap": true
           },
           "embed": "829202036000161812"
         }

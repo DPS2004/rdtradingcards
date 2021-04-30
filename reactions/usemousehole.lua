@@ -15,7 +15,7 @@ function reaction.run(ef, eom, reaction, userid)
       uj.items.fixedmouse = true
       uj.equipped = "fixedmouse"
       local newmessage = reaction.message.channel:send {
-        content = 'You start to push your **Broken Mouse** into the hole, but two grey furry hands pull it in the rest of the way. You can hear the mouse using a saw to open up the screwdriver, which seems terribly unsafe! After a few minutes of tinkering, the mouse pushes out a **Fixed Mouse**, complete with a green sticker denoting its newfound functionality. You put the **Fixed Mouse** with your other items.'
+        content = 'You start to push your **Broken Mouse** into the hole, but two grey furry hands pull it in the rest of the way. You can hear the mouse using a saw to open up the **Broken Mouse**, which seems terribly unsafe! After a few minutes of tinkering, the mouse pushes out a **Fixed Mouse**, complete with a green sticker denoting its newfound functionality. You put the **Fixed Mouse** with your other items.'
       }
       dpf.savejson(ujf,uj)
       ef[reaction.message.id] = nil

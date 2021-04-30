@@ -59,6 +59,16 @@
     "description": "Makes cards containing a custom character (being used as a traditional row) more likely to be pulled.",
     "embed": "832305236181909514"
   },
+  "duncecap": {
+    "name": "Dunce Cap",
+    "description": "Makes meme cards or humorous cards more likely to be pulled.",
+    "embed": "837679401884844092"
+  },
+  "scribblednotepad": {
+    "name": "Scribbled-in Notepad",
+    "description": "Makes editor cards or more likely to be pulled.",
+    "embed": "837683791753248848"
+  },
   "coolhat": {
     "name": "Cool Hat",
     "description": "Makes you look cooler.",
