@@ -52,6 +52,7 @@ function command.run(message, mt,overwrite)
     cmd.setworldstate = dofile('commands/setworldstate.lua')
     cmd.givetoken = dofile('commands/givetoken.lua')
     cmd.skipprompts = dofile('commands/skipprompts.lua')
+    cmd.renamefile = dofile('commands/renamefile.lua')
     
     print("done loading commands")
 
@@ -816,7 +817,16 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.skipprompts.run(message,mt)
+          elseif string.lower(string.sub(message.content, 0, 10+3)) == prefix.. 'renamefile ' then 
+            local mt = string.split(string.sub(message.content, 10+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            cmd.renamefile.run(message,nmt)
           end
+          
 
         end)
         if not status then

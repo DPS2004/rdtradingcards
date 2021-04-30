@@ -148,7 +148,7 @@ function command.run(message, mt)
           if not uj.storage.ssss45 then
             message.channel:send {
               
-              content = "The **Panda** takes one look at your **Cool Hat**, and puts an **Shaun's Server Statistics Sampling #45** card into your storage out of respect."
+              content = "The **Panda** takes one look at your **Cool Hat**, and puts a **Shaun's Server Statistics Sampling #45** card into your storage out of respect."
             }
             uj.storage.ssss45 = 1
             dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
