@@ -224,9 +224,13 @@ function command.run(message, mt)
           title = "Looking at Lab...",
           description = 'The **Abandoned Lab** was revealed after a **Hole** appeared next to the **Pyrowmid**. Judging by the presence of a Spider Web, it has not been used for quite some time, but the technology here looks relatively modern. The **Database** and the connected **Terminal** juxtapose the cheery **Cat Poster**. The **Table** on the other side of the room is caked in dust. (TODO: make the lights cycle through message)',
           image = {
-            url = 'https://cdn.discordapp.com/attachments/829197797789532181/831907776657227816/lab7.png'
+            url = labimages[getletterindex(string.sub(wj.lablooktext, wj.lablookindex + 1, wj.lablookindex + 1))]
           }
         }}
+        wj.lablookindex = wj.lablookindex + 1
+        
+        wj.lablookindex = wj.lablookindex % string.len(wj.lablooktext)
+        dpf.savejson("savedata/worldsave.json", wj)
       
       elseif (string.lower(mt[1]) == "table") and wj.labdiscovered  then 
         message.channel:send{embed = {

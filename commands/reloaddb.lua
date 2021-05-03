@@ -200,6 +200,17 @@ function command.run(message, mt,overwrite)
     
     print("loading functions")
     
+    _G['getletterindex'] = function (x)
+      print("finding letterindex of "..x)
+      for i,v in ipairs(letters) do
+        if v == x then
+          return i
+        end
+      end
+      
+    end
+    
+    
     _G['fntoname'] = function (x)
       print("finding "..x)
       for i,v in ipairs(cdb) do
