@@ -222,7 +222,42 @@ function command.run(message, mt)
         message.channel:send{embed = {
           color = 0x85c5ff,
           title = "Looking at Lab...",
-          description = 'The **Abandoned Lab** was revealed after a **Hole** appeared next to the **Pyrowmid**. Judging by the presence of a Spider Web, it has not been used for quite some time, but the technology here looks relatively modern. The **Database** and the connected **Terminal** juxtapose the cheery **Cat Poster**. The **Table** on the other side of the room is caked in dust. (TODO: make the lights cycle through message)',
+          description = 'The **Abandoned Lab** was revealed after a **Hole** appeared next to the **Pyrowmid**. Judging by the presence of a Spider Web, it has not been used for quite some time, but the technology here looks relatively modern. The **Database** and the connected **Terminal** juxtapose the cheery **Cat Poster**. The **Table** on the other side of the room is caked in dust.',
+          image = {
+            url = labimages[getletterindex(string.sub(wj.lablooktext, wj.lablookindex + 1, wj.lablookindex + 1))]
+          }
+        }}
+        wj.lablookindex = wj.lablookindex + 1
+        
+        wj.lablookindex = wj.lablookindex % string.len(wj.lablooktext)
+        dpf.savejson("savedata/worldsave.json", wj)
+        
+      elseif (string.lower(mt[1]) == "terminal") and wj.labdiscovered  then  --FONT IS MS GOTHIC AT 24PX, 8PX FOR SMALL FONT
+        if wj.worldstate == "labopen" then
+          message.channel:send{embed = {
+            color = 0x85c5ff,
+            title = "Looking at Terminal...",
+            description = 'The monitor of the **Terminal** is currently on. It is asking for a password.',
+            image = {
+              url = "https://cdn.discordapp.com/attachments/829197797789532181/838832581147361310/terminal1.png"
+            }
+          }}
+        else
+          message.channel:send{embed = {
+            color = 0x85c5ff,
+            title = "Looking at Terminal...",
+            description = 'The monitor of the **Terminal** is currently on. A command prompt is freely available.',
+            image = {
+              url = "https://cdn.discordapp.com/attachments/829197797789532181/838836625391484979/terminal2.gif"
+            }
+          }}
+        end
+      
+      elseif (string.lower(mt[1]) == "database") and wj.labdiscovered  then 
+        message.channel:send{embed = {
+          color = 0x85c5ff,
+          title = "Looking at Database...",
+          description = 'The **Database** towers over you, its lights constantly flashing. What could they mean?',
           image = {
             url = labimages[getletterindex(string.sub(wj.lablooktext, wj.lablookindex + 1, wj.lablookindex + 1))]
           }
@@ -241,8 +276,8 @@ function command.run(message, mt)
       
       
       elseif (string.lower(mt[1]) == "poster" or string.lower(mt[1]) == "catposter" or string.lower(mt[1]) == "cat poster") and wj.labdiscovered  then 
-        local postermessage = {'The **Cat Poster** depicts a cat hanging from a branch. It looks quite pleased to be there.', 'The **Cat Poster** is a poster of a cat dangling from a tree branch. The cat looks like it is almost ready to let go.', 'The **Cat Poster**, despite its name, contains no cats. There never was a cat here.','The **Cat Poster** looks back.','The **Cat Poster** shows a scene of a cat with a top hat doing a funny little dance on top of a branch. It truly is impossible to not be charmed by it.',"The **Cat Poster** is really less of a poster and more of an anatomical image of a cat. It would not look out of place in a vet's office.", 'The **Cat Poster** looks very worn out. You can barely make out the cat and the branch.', 'The **Cat Poster** contains a map of the area with certain spots marked on it. Once could only presume that cats could be found at these locations.','The **Cat Poster** is a sheet of A4 paper that says "cat" on it. The letters are in the most plain and boring font imaginable.'}
-        local posterimage = {"https://cdn.discordapp.net/attachments/829197797789532181/838790920761638982/poster1.png","https://cdn.discordapp.net/attachments/829197797789532181/838790936162992238/poster2.png","https://cdn.discordapp.net/attachments/829197797789532181/838790956483346462/poster3.png","https://cdn.discordapp.net/attachments/829197797789532181/838791958905618462/poster4.png","https://cdn.discordapp.net/attachments/829197797789532181/838791028785020968/poster5.png","https://cdn.discordapp.com/attachments/829197797789532181/838799811813441607/poster6.png","https://cdn.discordapp.net/attachments/829197797789532181/838791029133017109/poster7.png","https://cdn.discordapp.net/attachments/829197797789532181/838791030954393660/poster8.png","https://cdn.discordapp.com/attachments/829197797789532181/838799792267067462/poster9.png"}
+        local postermessage = {'The **Cat Poster** depicts a cat hanging from a branch. It looks quite pleased to be there.', 'The **Cat Poster** is a poster of a cat dangling from a tree branch. The cat looks like it is almost ready to let go.', 'The **Cat Poster**, despite its name, contains no cats. There never was a cat here.','The **Cat Poster** looks back.','The **Cat Poster** shows a scene of a cat with a top hat doing a funny little dance on top of a branch. It truly is impossible to not be charmed by it.',"The **Cat Poster** is really less of a poster and more of an anatomical image of a cat. It would not look out of place in a vet's office.", 'The **Cat Poster** looks very worn out. You can barely make out the cat and the branch.', 'The **Cat Poster** contains a map of the area with certain spots marked on it. Once could only presume that cats could be found at these locations.','The **Cat Poster** is a sheet of A4 paper that says "cat" on it. The letters are in the most plain and boring font imaginable.', "The `cat` **Poster** is a printout of the wikipedia article on the Unix `cat` command. How Informative!" }
+        local posterimage = {"https://cdn.discordapp.net/attachments/829197797789532181/838790920761638982/poster1.png","https://cdn.discordapp.net/attachments/829197797789532181/838790936162992238/poster2.png","https://cdn.discordapp.net/attachments/829197797789532181/838790956483346462/poster3.png","https://cdn.discordapp.net/attachments/829197797789532181/838791958905618462/poster4.png","https://cdn.discordapp.net/attachments/829197797789532181/838791028785020968/poster5.png","https://cdn.discordapp.com/attachments/829197797789532181/838799811813441607/poster6.png","https://cdn.discordapp.net/attachments/829197797789532181/838791029133017109/poster7.png","https://cdn.discordapp.net/attachments/829197797789532181/838791030954393660/poster8.png","https://cdn.discordapp.com/attachments/829197797789532181/838799792267067462/poster9.png","https://cdn.discordapp.com/attachments/829197797789532181/838864622878588989/poster10.png"}
         local cposter = math.random(1, #postermessage)
         
         message.channel:send{embed = {

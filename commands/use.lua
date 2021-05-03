@@ -103,7 +103,7 @@ function command.run(message, mt)
         end
         
         
-        if wj.worldstate == "labopen" or wj.worldstate == "largesthole" or wj.worldstate == "prehole" then
+        if wj.worldstate == "labopen" or wj.worldstate == "largesthole" or wj.worldstate == "terminalopen" or wj.worldstate == "prehole" then
           local newmessage = message.channel:send {
             content = 'The **Hole** is not accepting donations at this time.'
           }
@@ -174,7 +174,7 @@ function command.run(message, mt)
         uj = adduse(uj)
       
       elseif string.lower(mt[1]) == "ladder" then
-        if wj.worldstate == "labopen" then
+        if wj.worldstate == "labopen" or wj.worldstate == "terminalopen" then
           if not wj.labdiscovered then
             wj.labdiscovered = true
             message.channel:send{embed = {
@@ -277,11 +277,38 @@ function command.run(message, mt)
             description = 'You do not have any cards to put into the **Peculiar Box**',
           }}
         end
+
       else
         message.channel:send("Sorry, but I don't know how to use " .. mt[1] .. ".")
       end
     
-      
+    elseif (string.lower(mt[1]) == "terminal") and wj.labdiscovered  then 
+      if wj.worldstate == "labopen" then
+        if string.lower(mt[2]) == "gnuthca" then
+          message.channel:send{embed = {
+            color = 0x85c5ff,
+            title = "Using Terminal...",
+            image = {
+              url = "https://cdn.discordapp.com/attachments/829197797789532181/838841498757234728/terminal3.png"
+            }
+          }}
+          wj.worldstate = "terminalopen"
+        else
+          message.channel:send{embed = {
+            color = 0x85c5ff,
+            title = "Using Terminal...",
+            image = {
+              url = "https://cdn.discordapp.com/attachments/829197797789532181/838841479698579587/terminal4.png"
+            }
+          }}
+        end
+      else
+        message.channel:send{embed = {
+          color = 0x85c5ff,
+          title = "Using Terminal...",
+          description = 'todo'
+        }}
+      end
     else
       message.channel:send("Sorry, but the c!use command expects 1 argument. Please see c!help for more details.")
     end
