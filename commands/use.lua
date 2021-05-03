@@ -13,7 +13,7 @@ function command.run(message, mt)
   if message.guild then
     local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
     local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
-    if #mt == 1 or mt[1] == "" then
+    if #mt >= 1 or mt[1] == "" then
 
       if string.lower(mt[1]) == "strange machine" or string.lower(mt[1]) == "machine" then 
         if uj.tokens == nil then
@@ -277,38 +277,39 @@ function command.run(message, mt)
             description = 'You do not have any cards to put into the **Peculiar Box**',
           }}
         end
+      elseif (string.lower(mt[1]) == "terminal") and wj.labdiscovered  then 
+        if wj.worldstate == "labopen" then
+          if string.lower(mt[2]) == "gnuthca" then
+            message.channel:send{embed = {
+              color = 0x85c5ff,
+              title = "Using Terminal...",
+              image = {
+                url = "https://cdn.discordapp.com/attachments/829197797789532181/838841498757234728/terminal3.png"
+              }
+            }}
+            wj.worldstate = "terminalopen"
+          else
+            message.channel:send{embed = {
+              color = 0x85c5ff,
+              title = "Using Terminal...",
+              image = {
+                url = "https://cdn.discordapp.com/attachments/829197797789532181/838841479698579587/terminal4.png"
+              }
+            }}
+          end
+        else
+          message.channel:send{embed = {
+            color = 0x85c5ff,
+            title = "Using Terminal...",
+            description = 'todo'
+          }}
+        end
 
       else
         message.channel:send("Sorry, but I don't know how to use " .. mt[1] .. ".")
       end
     
-    elseif (string.lower(mt[1]) == "terminal") and wj.labdiscovered  then 
-      if wj.worldstate == "labopen" then
-        if string.lower(mt[2]) == "gnuthca" then
-          message.channel:send{embed = {
-            color = 0x85c5ff,
-            title = "Using Terminal...",
-            image = {
-              url = "https://cdn.discordapp.com/attachments/829197797789532181/838841498757234728/terminal3.png"
-            }
-          }}
-          wj.worldstate = "terminalopen"
-        else
-          message.channel:send{embed = {
-            color = 0x85c5ff,
-            title = "Using Terminal...",
-            image = {
-              url = "https://cdn.discordapp.com/attachments/829197797789532181/838841479698579587/terminal4.png"
-            }
-          }}
-        end
-      else
-        message.channel:send{embed = {
-          color = 0x85c5ff,
-          title = "Using Terminal...",
-          description = 'todo'
-        }}
-      end
+    
     else
       message.channel:send("Sorry, but the c!use command expects 1 argument. Please see c!help for more details.")
     end
