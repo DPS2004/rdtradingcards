@@ -68,6 +68,7 @@ function command.run(message, mt,overwrite)
     cmdre.spiderlook = dofile('reactions/spiderlook.lua')
     cmdre.getladder = dofile('reactions/getladder.lua')
     cmdre.usemousehole = dofile('reactions/usemousehole.lua')
+    cmdre.usebox = dofile('reactions/usebox.lua')
     
     print("done loading reactions")
 
@@ -873,6 +874,9 @@ function command.run(message, mt,overwrite)
           elseif eom.etype == "usemousehole" then
             print('usemousehole')
             cmdre.usemousehole.run(ef, eom, reaction, userid)
+          elseif eom.etype == "usebox" then
+            print('usebox')
+            cmdre.usebox.run(ef, eom, reaction, userid)
           end
         end
       end

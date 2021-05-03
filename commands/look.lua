@@ -241,6 +241,12 @@ function command.run(message, mt)
           title = "Looking at Mouse Hole...",
           description = 'The **Mouse Hole** is directly underneath a yellow sign that says "I.T.". The hole is just about wide enough to fit a computer mouse into.',
         }}
+      elseif (string.lower(mt[1]) == "peculiar box" or string.lower(mt[1]) == "box" or string.lower(mt[1]) == "peculiarbox") and wj.labdiscovered  then 
+        message.channel:send{embed = {
+          color = 0x85c5ff,
+          title = "Looking at Peculiar Box...",
+          description = 'The **Peculiar Box** rests on top of the **Table**. The opening on the top of it almost beckons for a **Trading Card** to be placed inside.',
+        }}
       
       
       

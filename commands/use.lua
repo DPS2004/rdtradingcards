@@ -249,7 +249,26 @@ function command.run(message, mt)
           
           
         end 
-        
+      elseif  (string.lower(mt[1]) == "peculiar box" or string.lower(mt[1]) == "box" or string.lower(mt[1]) == "peculiarbox") and wj.labdiscovered  then 
+        if uj.inventory ~= {} then
+          newmessage = message.channel:send{embed = {
+            color = 0x85c5ff,
+            title = "Using Peculiar Box...",
+            description = 'Will you put a random **Trading Card** from your inventory in the **Peculiar Box?**.',
+          }}
+          local tf = dpf.loadjson("savedata/events.json",{})
+          
+          addreacts(newmessage)
+          tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "usebox",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
+          
+          dpf.savejson("savedata/events.json",tf)
+        else
+          newmessage = message.channel:send{embed = {
+            color = 0x85c5ff,
+            title = "Using Peculiar Box...",
+            description = 'You do not have any cards to put into the **Peculiar Box**',
+          }}
+        end
       else
         message.channel:send("Sorry, but I don't know how to use " .. mt[1] .. ".")
       end
