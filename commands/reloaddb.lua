@@ -837,6 +837,36 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.renamefile.run(message,nmt)
+          elseif string.lower(string.sub(message.content, 0, 5+2)) == prefix.. 'stats' then 
+            print("terminal command shortcut")
+            local mt = string.split(string.sub(message.content, 5+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            print(inspect(nmt))
+            cmd.use.run(message,{"terminal","stats"})
+          elseif string.lower(string.sub(message.content, 0, 7+2)) == prefix.. 'upgrade' then 
+            print("terminal command shortcut")
+            local mt = string.split(string.sub(message.content, 7+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            print(inspect(nmt))
+            cmd.use.run(message,{"terminal","upgrade"})
+          elseif string.lower(string.sub(message.content, 0, 7+2)) == prefix.. 'credits' then 
+            print("terminal command shortcut")
+            local mt = string.split(string.sub(message.content, 7+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            print(inspect(nmt))
+            cmd.use.run(message,{"terminal","credits"})
           end
           
 

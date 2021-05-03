@@ -20,9 +20,52 @@ function reaction.run(ef, eom, reaction, userid)
         uj.timesused = uj.timesused + 1
       end
       
-      local newmessage = reaction.message.channel:send {
-        content = 'A **Token** has been dropped into the **Hole.** Thank you for your generosity!'
-      }
+      if uj.tokensdonated == nil then
+        uj.tokensdonated = 1
+      else
+        uj.tokensdonated = uj.tokensdonated + 1
+      end
+      if not wj.labdiscovered then
+        local newmessage = reaction.message.channel:send {
+          content = 'A **Token** has been dropped into the **Hole.** Thank you for your generosity!'
+        }
+      else
+        local upgradeimages = {
+          "https://cdn.discordapp.com/attachments/829197797789532181/838908505192661022/upgrade1.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/838908506496958464/upgrade2.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/838908508841836564/upgrade3.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/838908510972280842/upgrade4.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/838908513119109130/upgrade5.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/838908515179036742/upgrade6.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/838908517477253181/upgrade7.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/838908519876263967/upgrade8.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/838908522040918066/upgrade9.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/838908524389203998/upgrade10.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/838908548205379624/upgrade11.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/838908558963376128/upgrade12.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/838908564105723925/upgrade13.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/838908567347003392/upgrade14.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/838908570355236914/upgrade15.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/838908575879135242/upgrade16.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/838908579901734963/upgrade17.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/838908584078999583/upgrade18.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/838908589674332180/upgrade19.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/838908616329265212/upgrade20.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/838910126554742814/upgrade21.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/838910145491894292/upgrade22.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/838910782556733511/upgrade23.png"
+        }  
+        local newmessage = reaction.message.channel:send {
+          reaction.message.channel:send{embed = {
+            color = 0x85c5ff,
+            title = "Using Terminal...",
+            description = 'The **Terminal** whirrs happily.',
+            image = {
+              url = upgradeimages[math.random(1,#upgradeimages)]
+            }
+          }}
+        }
+      end
       dpf.savejson(ujf,uj)
       
       wj.tokensdonated = wj.tokensdonated + 1
@@ -65,8 +108,11 @@ function reaction.run(ef, eom, reaction, userid)
     end
     if reaction.emojiName == "❌" then
       print('user1 has denied')
-      
-      local newmessage = reaction.message.channel:send("You decide to not put a **Token** into the **Hole.** (how rude!)")
+      if not wj.labdiscovered then
+        local newmessage = reaction.message.channel:send("You decide to not put a **Token** into the **Hole.** (how rude!)")
+      else
+        local newmessage = reaction.message.channel:send("You decide to not put a **Token** into the **Terminal.** (how rude!)")
+      end
       ef[reaction.message.id] = nil
       dpf.savejson("savedata/events.json",ef)
       

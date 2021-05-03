@@ -352,6 +352,9 @@ function command.run(message, mt)
             if not uj.timescardgiven then
               uj.timescardgiven = 0
             end
+            if not uj.tokensdonated then
+              uj.tokensdonated = 0
+            end
             if not uj.timescardreceived then
               uj.timescardreceived = 0
             end
@@ -365,7 +368,7 @@ function command.run(message, mt)
             message.channel:send{embed = {
               color = 0x85c5ff,
               title = "Using Terminal...",
-              description = 'The **Terminal** prints out a slip of paper. It reads:\n`Times Pulled: ' .. uj.timespulled .. '\nTimes Used: ' .. uj.timesused .. '\nTimes Looked: ' .. uj.timeslooked .. '\nTimes Prayed: ' .. uj.timesprayed .. '\nTimes Shredded: ' .. uj.timesshredded .. '\nTimes Stored: ' .. uj.timesstored .. '\nTimes Traded: ' .. uj.timestraded .. '\nTimes Peculiar Box has been Used: ' .. uj.timesusedbox .. '\nCards Given: ' .. uj.timescardgiven .. '\nCards Received: ' .. uj.timescardreceived .. easteregg .. '`'
+              description = 'The **Terminal** prints out a slip of paper. It reads:\n`Times Pulled: ' .. uj.timespulled .. '\nTimes Used: ' .. uj.timesused .. '\nTimes Looked: ' .. uj.timeslooked .. '\nTimes Prayed: ' .. uj.timesprayed .. '\nTimes Shredded: ' .. uj.timesshredded .. '\nTimes Stored: ' .. uj.timesstored .. '\nTimes Traded: ' .. uj.timestraded .. '\nTimes Peculiar Box has been Used: ' .. uj.timesusedbox .. '\nTokens Donated: ' .. uj.tokensdonated .. '\nCards Given: ' .. uj.timescardgiven .. '\nCards Received: ' .. uj.timescardreceived .. easteregg .. '`'
 
 
             }}
@@ -378,6 +381,34 @@ function command.run(message, mt)
 
 
             }}
+          elseif string.lower(mt[2]) == "upgrade" then
+            if uj.tokens > 0 then
+              local newmessage = message.channel:send{embed = {
+                  color = 0x85c5ff,
+                  title = "Using Terminal...",
+                  description = 'Will you put a **Token** into the **Terminal?** (tokens remaining: ' .. uj.tokens .. ')',
+                  image = {
+                    url = "https://cdn.discordapp.com/attachments/829197797789532181/838894186472275988/terminal5.png"
+                  }
+
+
+                }}
+              addreacts(newmessage)
+              local tf = dpf.loadjson("savedata/events.json",{})
+              tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "usehole",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
+              dpf.savejson("savedata/events.json",tf)
+            else
+              message.channel:send{embed = {
+                color = 0x85c5ff,
+                title = "Using Terminal...",
+                description = 'Unfortunately, you have no **Tokens** to your name.',
+                image = {
+                  url = "https://cdn.discordapp.com/attachments/829197797789532181/838894186472275988/terminal5.png"
+                }
+
+
+              }}
+            end
           
           else
             message.channel:send{embed = {
