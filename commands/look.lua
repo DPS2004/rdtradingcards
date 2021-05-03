@@ -235,6 +235,21 @@ function command.run(message, mt)
           description = 'The dusty **Table** has a **Peculiar Box** on it, emitting a soft hum. Underneath the table is a **Mouse Hole**, with a sign reading "I.T." above it.',
         }}
       
+      
+      elseif (string.lower(mt[1]) == "poster" or string.lower(mt[1]) == "catposter" or string.lower(mt[1]) == "cat poster") and wj.labdiscovered  then 
+        local postermessage = {'The **Cat Poster** depicts a cat hanging from a branch. It looks quite pleased to be there.', 'The **Cat Poster** is a poster of a cat dangling from a tree branch. The cat looks like it is almost ready to let go.', 'The **Cat Poster**, despite its name, contains no cats. There never was a cat here.','The **Cat Poster** looks back.','The **Cat Poster** shows a scene of a cat with a top hat doing a funny little dance on top of a branch. It truly is impossible to not be charmed by it.',"The **Cat Poster** is really less of a poster and more of a medical chart of a cat. It would not look out of place in a vet's office.", 'The **Cat Poster** looks very worn out. You can barely make out the cat and the branch.', 'The **Cat Poster** contains a map of the area with certain spots marked on it. Once could only presume that cats could be found at these locations.','The **Cat Poster** is a sheet of A4 paper that says "cat" on it. The letters are in the most plain and boring font imaginable.'}
+        local posterimage = {"https://media.discordapp.net/attachments/829197797789532181/838790920761638982/poster1.png","https://media.discordapp.net/attachments/829197797789532181/838790936162992238/poster2.png","https://media.discordapp.net/attachments/829197797789532181/838790956483346462/poster3.png","https://media.discordapp.net/attachments/829197797789532181/838791958905618462/poster4.png","https://media.discordapp.net/attachments/829197797789532181/838791028785020968/poster5.png","https://media.discordapp.net/attachments/829197797789532181/838791029095661568/poster6.png","https://media.discordapp.net/attachments/829197797789532181/838791029133017109/poster7.png","https://media.discordapp.net/attachments/829197797789532181/838791030954393660/poster8.png","https://media.discordapp.net/attachments/829197797789532181/838791186931777546/poster9.png"}
+        local cposter = math.random(1, #postermessage)
+        
+        message.channel:send{embed = {
+          color = 0x85c5ff,
+          title = "Looking at Cat Poster...",
+          description = postermessage[cposter],
+          image = {
+            url = posterimage[cposter]
+          }
+        }}
+      
       elseif (string.lower(mt[1]) == "mouse hole" or string.lower(mt[1]) == "mouse" or string.lower(mt[1]) == "mousehole") and wj.labdiscovered  then 
         message.channel:send{embed = {
           color = 0x85c5ff,
