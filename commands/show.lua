@@ -9,16 +9,6 @@ function command.run(message, mt)
     
     print(curfilename)
     if curfilename ~= nil then
-      local extension = ""
-      local animated = getcardanimated(curfilename)
-      local pico8 = getcardpico(curfilename)
-      if animated then
-        extension = ".gif"
-      elseif pico8 then
-        extension = ".p8.png"
-      else
-        extension = ".png"
-      end
       if uj.inventory[curfilename] or uj.storage[curfilename] then
         print("user has card")
         local embeddescription = ""
@@ -32,7 +22,7 @@ function command.run(message, mt)
           title = "Showing card...",
           description = 'Here it is! Your **'.. fntoname(curfilename) .. '** card. The shorthand form is **' .. curfilename .. '**.',
           image = {
-            url = 'https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. getcardembed(curfilename) .. '/' .. curfilename .. extension
+            url = getcardembed(curfilename)
           },
           footer = {
             text = embeddescription

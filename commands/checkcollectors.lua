@@ -31,7 +31,7 @@ function command.run(message, mt,mc)
           title = "Congratulations!",
           description = 'After collecting and storing some other cards, '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to their storage.',
           image = {
-            url = 'https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. getcardembed(newcard) .. '/' .. newcard .. '.png'
+            url = getcardembed(newcard)
           }
         }}
       else

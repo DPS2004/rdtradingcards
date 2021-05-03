@@ -18,7 +18,7 @@ function command.run(message, mt)
           title = "Showing medal...",
           description = 'Here it is! Your **'.. medalfntoname(curfilename) .. '** medal. The shorthand form is **' .. curfilename .. '**.',
           image = {
-            url = 'https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. medaldb[curfilename].embed .. '/' .. curfilename .. '.png'
+            url = medaldb[curfilename].embed
           },
           footer = {
             text = 'The description on the back reads:\n' .. medaldb[curfilename].description

@@ -21,7 +21,7 @@ function command.run(message, mt,mc)
           title = "Congratulations!",
           description = 'After collecting and storing some cards, '.. message.author.mentionString ..' got the **"'.. medaldb[v.receive].name ..'"** medal!',
           image = {
-            url = 'https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. medaldb[v.receive].embed .. '/' .. v.receive .. '.png'
+            url = medaldb[v.receive].embed
           }
         }}
       end

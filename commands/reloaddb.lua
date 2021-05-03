@@ -364,39 +364,39 @@ function command.run(message, mt,overwrite)
     end
 	
     
-    _G['getcardanimated'] = function (x)
-      print("getting animated for " .. x)
-      local canimated = nil
-      for i,v in ipairs(cdb) do
+    -- _G['getcardanimated'] = function (x)
+    --   print("getting animated for " .. x)
+    --   local canimated = nil
+    --   for i,v in ipairs(cdb) do
         
-        if v.filename == x then
-          print(v.animated)
-          canimated = v.animated
-          if canimated == nil then
-            canimated = false
-          end
-        end
-      end
+    --     if v.filename == x then
+    --       print(v.animated)
+    --       canimated = v.animated
+    --       if canimated == nil then
+    --         canimated = false
+    --       end
+    --     end
+    --   end
   
-      print("returning" .. tostring(canimated))
-      return canimated
-    end
-    _G['getcardpico'] = function (x)
-      print("getting pico for " .. x)
-      local cpico = nil
-      for i,v in ipairs(cdb) do
+    --   print("returning" .. tostring(canimated))
+    --   return canimated
+    -- end
+    -- _G['getcardpico'] = function (x)
+    --   print("getting pico for " .. x)
+    --   local cpico = nil
+    --   for i,v in ipairs(cdb) do
         
-        if v.filename == x then
-          print(v.pico)
-          cpico = v.pico
-          if cpico == nil then
-            cpico = false
-          end
-        end
-      end
-      print("returning" .. tostring(cpico))
-      return cpico
-    end
+    --     if v.filename == x then
+    --       print(v.pico)
+    --       cpico = v.pico
+    --       if cpico == nil then
+    --         cpico = false
+    --       end
+    --     end
+    --   end
+    --   print("returning" .. tostring(cpico))
+    --   return cpico
+    -- end
 
 
     -- Lua implementation of PHP scandir function

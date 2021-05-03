@@ -23,7 +23,7 @@ function command.run(message, mt)
           title = "Showing item...",
           description = 'Here it is! Your **'.. itemfntoname(curfilename) .. '**. The shorthand form is **' .. curfilename .. '**.',
           image = {
-            url = 'https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. itemdb[curfilename].embed .. '/' .. curfilename .. '.png'
+            url = itemdb[curfilename].embed
           },
           footer = {
             text = 'The description on the back reads:\n' .. itemdb[curfilename].description

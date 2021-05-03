@@ -49,16 +49,6 @@ local time = sw:getTime()
         local newcard = ptable[uj.equipped][math.random(#ptable[uj.equipped])]
         local ncn = fntoname(newcard)
         print(ncn)
-        local extension = ""
-        local pico8 = getcardpico(newcard)
-        local animated = getcardanimated(newcard)
-        if animated then
-          extension = ".gif"
-        elseif pico8 then
-          extension = ".p8.png"
-        else
-          extension = ".png"
-        end
         local embedtitle = "Woah!"
         if newcard == "yor" or newcard == "yosr" or newcard == "your" then
           embedtitle = "Yo!"
@@ -70,7 +60,7 @@ local time = sw:getTime()
           title = embedtitle,
           description = message.author.mentionString ..' got a **'.. ncn ..'** card! The **'.. ncn ..'** card has been added to their inventory. The shorthand form of this card is **'.. newcard .. '**.',
           image = {
-            url ='https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. getcardembed(newcard) .. '/' .. newcard .. extension
+            url = getcardembed(newcard)
           }
         }}
         local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
@@ -86,24 +76,13 @@ local time = sw:getTime()
             newcard = ptable[uj.equipped][math.random(#ptable[uj.equipped])]
             ncn = fntoname(newcard)
             print(ncn)
-            extension = ""
-            pico8 = getcardpico(newcard)
-            animated = getcardanimated(newcard)
-            if animated then
-              extension = ".gif"
-            elseif pico8 then
-              extension = ".p8.png"
-            else
-              extension = ".png"
-            end
-
 
             message.channel:send{embed = {
               color = 0x85c5ff,
               title = "Doubleclick!",
               description = 'Because of the **Fixed Mouse**, ' .. message.author.mentionString ..' got a **'.. ncn ..'** card! The **'.. ncn ..'** card has been added to their inventory. The shorthand form of this card is **'.. newcard .. '**.',
               image = {
-                url ='https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. getcardembed(newcard) .. '/' .. newcard .. extension
+                url = getcardembed(newcard)
               }
             }}
             if uj.inventory[newcard] == nil then

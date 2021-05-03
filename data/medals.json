@@ -2,41 +2,41 @@
   "itainteasybeinggreen": {
     "name": "It Ain't Easy Being Green",
     "description": "Collect one of every Room card with the Discontinued rarity!",
-    "embed": "829203444443250729"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203444443250729/itainteasybeinggreen.png"
   },
   "unlucky": {
     "name": "Unlucky",
     "description": "Collect 10 exact copies of a card!",
-    "embed": "829203446161997834"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203446161997834/unlucky.png"
   },
   "bronzecollector": {
     "name": "Bronze Collector",
     "description": "Collect 20 cards with the type of 'Rare'!",
-    "embed": "829203371642585108"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203371642585108/bronzecollector.png"
   },
   "silversaver": {
     "name": "Silver Saver",
     "description": "Collect 20 cards with the type of 'Super Rare'!",
-    "embed": "829203446653255730"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203446653255730/silversaver.png"
   },
   "goldhoarder": {
     "name": "Gold Hoarder",
     "description": "Collect 20 cards with the type of 'Ultra Rare'!",
-    "embed": "829203428244848650"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203428244848650/goldhoarder.png"
   },
   "editorenthusiast": {
     "name": "Editor Enthusiast",
     "description": "Collect all non-DC rarites of the Sound, VFX, Rows, and Rooms cards!",
-    "embed": "829203387882668032"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203387882668032/editorenthusiast.png"
   },
   "mememaestro": {
     "name": "Meme Maestro",
     "description": "Collect all 12 meme cards!",
-    "embed": "829203516270182430"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203516270182430/mememaestro.png"
   },
   "easytogetdebugmedal": {
     "name": "Easy to get debug medal lol",
     "description": "just get a rare samurai lmao",
-    "embed": "829203387421294612"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203387421294612/easytogetdebugmedal.png"
   }
 }

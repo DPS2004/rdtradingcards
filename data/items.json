@@ -2,77 +2,77 @@
   "nothing" : {
     "name": "Nothing",
     "description": "Does nothing (default item)",
-    "embed": "829203129881985094"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203129881985094/nothing.png"
   },
   "rustysword": {
     "name": "Rusty Sword",
     "description": "Makes cards containing Samurai or Insomniac more likely to be pulled.",
-    "embed": "829203136656572486"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203136656572486/rustysword.png"
   },
   "cafemixtape": {
     "name": "Cafe Mixtape",
     "description": "Makes cards containing Cole Brew or Nicole Ting more likely to be pulled.",
-    "embed": "829203111897727046"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203111897727046/cafemixtape.png"
   },
   "oversizedstethoscope": {
     "name": "Oversized Stethoscope",
     "description": "Makes cards containing medical staff more likely to be pulled.",
-    "embed": "829203133455532073"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203133455532073/oversizedstethoscope.png"
   },
   "valentinesdaycard": {
     "name": "Valentines Day Card",
     "description": "Makes cards containing Logan or Hailey more likely to be pulled.",
-    "embed": "829203143723843594"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203143723843594/valentinesdaycard.png"
   },
   "hardcandy": {
     "name": "Hard Candy",
     "description": "Makes cards containing Mr. Stevenson or Mrs. Stevenson more likely to be pulled.",
-    "embed": "829203126372139028"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203126372139028/hardcandy.png"
   },
   "deluxebirdseed": {
     "name": "Deluxe Birdseed",
     "description": "Makes cards containing a bird more likely to be pulled.",
-    "embed": "829203119036301373"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203119036301373/deluxebirdseed.png"
   },
   "brokenmouse": {
     "name": "Broken Mouse",
     "description": "Makes for a good paperweight.",
-    "embed": "829203107950493716"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203107950493716/brokenmouse.png"
   },
   "fixedmouse": {
     "name": "Fixed Mouse",
     "description": "Very rarely lets you **Double Click**, and pull two cards at once.",
-    "embed": "832305270800515192"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832305270800515192/fixedmouse.png"
   },
   "stoppedwatch": {
     "name": "Stopped Watch",
     "description": "Brings the c!pull timer down to 10 hours.",
-    "embed": "829203140405624832"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203140405624832/stoppedwatch.png"
   },
   "faithfulnecklace": {
     "name": "Faithful Necklace",
     "description": "Brings the c!pray timer down to 2.5 days.",
-    "embed": "829203123024297984"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203123024297984/faithfulnecklace.png"
   },
   "paddedstickersheet": {
     "name": "Padded Sticker Sheet",
     "description": "Makes cards containing a custom character (being used as a traditional row) more likely to be pulled.",
-    "embed": "832305236181909514"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832305236181909514/paddedstickersheet.png"
   },
   "duncecap": {
     "name": "Dunce Cap",
     "description": "Makes meme cards or humorous cards more likely to be pulled.",
-    "embed": "837679401884844092"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/837679401884844092/duncecap.png"
   },
   "scribblednotepad": {
     "name": "Scribbled-in Notepad",
     "description": "Makes editor cards or more likely to be pulled.",
-    "embed": "837683791753248848"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/837683791753248848/scribblednotepad.png"
   },
   "coolhat": {
     "name": "Cool Hat",
     "description": "Makes you look cooler.",
-    "embed": "829203115609292810"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203115609292810/coolhat.png"
   }
 
 }

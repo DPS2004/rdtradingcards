@@ -9,20 +9,10 @@ function command.run(message, mt)
 
     print(curfilename)
     if curfilename ~= nil then
-      local extension = ""
-      local animated = getcardanimated(curfilename)
-      local pico8 = getcardpico(curfilename)
-      if animated then
-        extension = ".gif"
-      elseif pico8 then
-        extension = ".p8.png"
-      else
-        extension = ".png"
-      end
       if uj.inventory[curfilename] or uj.storage[curfilename] then
         print("user has card")
 
-        beginnings = {
+        local beginnings = {
           "You pull out your **____** card and smell it.",
           "You pull out your **____** card and give it a whiff.",
           "You take out your **____** card and put it up your nose.",
@@ -31,12 +21,12 @@ function command.run(message, mt)
           "You pry out your crumpled **____** card. It has lines eminating off it."
           --"Your **____** card is not encased in a peanut."
         }
-        random_beginning = beginnings[math.random(#beginnings)]
+        local random_beginning = beginnings[math.random(#beginnings)]
         message.channel:send(random_beginning:gsub("____", fntoname(curfilename)))
 
         local smell = getcardsmell(curfilename)
         if smell then
-          descriptions = {
+          local descriptions = {
             "The smell fondly reminds you of **____**",
             "It reeks of **____**",
             "Actually, you taste it. The card tastes like **____**",
@@ -46,7 +36,7 @@ function command.run(message, mt)
             "You suddenly have an intense feeling of yearning for **____**"
             --"Dramatic Message Here, Description: **____**"
           }
-          random_description = descriptions[math.random(#descriptions)]
+          local random_description = descriptions[math.random(#descriptions)]
 
           message.channel:send(random_description:gsub("____", smell))
         end
