@@ -278,7 +278,12 @@ function command.run(message, mt)
           }}
         end
       elseif (string.lower(mt[1]) == "terminal") and wj.labdiscovered  then 
+        uj = adduse(uj)
+        if not mt[2] then
+          mt[2] = ""
+        end
         if wj.worldstate == "labopen" then
+          
           if string.lower(mt[2]) == "gnuthca" then
             message.channel:send{embed = {
               color = 0x85c5ff,
@@ -298,11 +303,92 @@ function command.run(message, mt)
             }}
           end
         else
-          message.channel:send{embed = {
-            color = 0x85c5ff,
-            title = "Using Terminal...",
-            description = 'todo'
-          }}
+          if string.lower(mt[2]) == "gnuthca" then
+            message.channel:send{embed = {
+              color = 0x85c5ff,
+              title = "Using Terminal...",
+              description = '`ERROR: USER ALREADY LOGGED IN`',
+              image = {
+                url = "https://cdn.discordapp.com/attachments/829197797789532181/838836625391484979/terminal2.gif"
+              }
+            }}
+          elseif string.lower(mt[2]) == "cat" then
+            message.channel:send{embed = {
+              color = 0x85c5ff,
+              title = "Using Terminal...",
+              description = '`=^•_•^=`',
+              image = {
+                url = "https://cdn.discordapp.com/attachments/829197797789532181/838840001310752788/terminalcat.gif"
+              }
+            }}
+          elseif string.lower(mt[2]) == "help" then
+            message.channel:send{embed = {
+              color = 0x85c5ff,
+              title = "Using Terminal...",
+              description = '`AVAILABLE COMMANDS: \nHELP\nSTATS\nUPGRADE\nCREDITS`',
+              image = {
+                url = "https://cdn.discordapp.com/attachments/829197797789532181/838836625391484979/terminal2.gif"
+              }
+            }}
+          elseif string.lower(mt[2]) == "stats" then
+            if not uj.timespulled then
+              uj.timespulled = 0
+            end            
+            if not uj.timesshredded then
+              uj.timesshredded = 0
+            end
+            if not uj.timesprayed then
+              uj.timesprayed = 0
+            end
+            if not uj.timesstored then
+              uj.timesstored = 0
+            end
+            if not uj.timestraded then
+              uj.timestraded = 0
+            end
+            if not uj.timesusedbox then
+              uj.timesusedbox = 0
+            end
+            if not uj.timescardgiven then
+              uj.timescardgiven = 0
+            end
+            if not uj.timescardreceived then
+              uj.timescardreceived = 0
+            end
+            if not uj.timeslooked then
+              uj.timeslooked = 0
+            end
+            local easteregg = ""
+            if math.random(1,100) == 1 then
+              easteregg = "Remember, the Factory is watching!\n"
+            end
+            message.channel:send{embed = {
+              color = 0x85c5ff,
+              title = "Using Terminal...",
+              description = 'The **Terminal** prints out a slip of paper. It reads:\n`Times Pulled: ' .. uj.timespulled .. '\nTimes Used: ' .. uj.timesused .. '\nTimes Looked: ' .. uj.timeslooked .. '\nTimes Prayed: ' .. uj.timesprayed .. '\nTimes Shredded: ' .. uj.timesshredded .. '\nTimes Stored: ' .. uj.timesstored .. '\nTimes Traded: ' .. uj.timestraded .. '\nTimes Peculiar Box has been Used: ' .. uj.timesusedbox .. '\nCards Given: ' .. uj.timescardgiven .. '\nCards Received: ' .. uj.timescardreceived .. easteregg .. '`'
+
+
+            }}
+            
+          elseif string.lower(mt[2]) == "credits" then
+            message.channel:send{embed = {
+              color = 0x85c5ff,
+              title = "Credits",
+              description = 'https://docs.google.com/document/d/1WgUqA8HNlBtjaM4Gpp4vTTEZf9t60EuJ34jl2TleThQ/edit?usp=sharing'
+
+
+            }}
+          
+          else
+            message.channel:send{embed = {
+              color = 0x85c5ff,
+              title = "Using Terminal...",
+              description = '`COMMAND "' .. mt[2] ..  '" NOT RECOGNIZED`',
+              image = {
+                url = "https://cdn.discordapp.com/attachments/829197797789532181/838836625391484979/terminal2.gif"
+              }
+            }}
+          end
         end
 
       else
