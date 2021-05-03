@@ -227,6 +227,14 @@ function command.run(message, mt)
           title = "Using Table...",
           description = 'You dust off the **Table**. But as soon as you look away, the **Table** is covered in dust again.',
         }}
+      elseif (string.lower(mt[1]) == "poster" or string.lower(mt[1]) == "catposter" or string.lower(mt[1]) == "cat poster") and wj.labdiscovered  then 
+        message.channel:send{embed = {
+          color = 0x85c5ff,
+          title = "What poster?",
+          image = {
+            url = 'https://media.discordapp.net/attachments/829197797789532181/838793078574809098/blankwall.png'
+          }
+        }}
       elseif (string.lower(mt[1]) == "mouse hole" or string.lower(mt[1]) == "mouse" or string.lower(mt[1]) == "mousehole") and wj.labdiscovered  then 
         if uj.equipped == "brokenmouse" then
           newmessage = message.channel:send{embed = {
