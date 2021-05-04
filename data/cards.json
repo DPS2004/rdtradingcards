@@ -546,7 +546,7 @@
           "type": "Alternate",
           "description": "(Art by Winston Lee)",
           "smell": "THRASH METAL",
-          "season": 1,
+          "season": 5,
           "bonuses": {
             "cafemixtape": true
           },
@@ -983,6 +983,18 @@
           "season": 5,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162624151126027/interndc.png"
+        },
+        {
+          "chance": 1,
+          "filename": "internalt",
+          "name": "Intern (Alternate)",
+          "tradeable": true,
+          "type": "Alternate",
+          "description": "(Art by Winston Lee)",
+          "smell": "Toenails",
+          "season": 5,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839232954513621022/internalt.png"
         },
         {
           "chance": 0,
