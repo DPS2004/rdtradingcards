@@ -2414,7 +2414,47 @@
             "valentinesdaycard": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/831155101553000458/enchantedlove.gif"
-        }
+        },
+        {
+          "chance": 2,
+          "filename": "retrofunky",
+          "name": "Retro Funky (SUNDANCE Remix)",
+          "tradeable": true,
+          "animated": true,
+          "type": "Super Rare",
+          "description": "(Level by MarioMak967)",
+          "smell": "Stay-Puft",
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/838954510172553236/retrofunky.gif"
+        },
+        {
+          "chance": 2,
+          "filename": "kickstarts",
+          "name": "Kickstarts",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Fritzy)",
+          "smell": "Crowdfunding",
+          "bonuses": {
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/838954671740813312/kickstarts.png"
+        },
+        {
+          "chance": 2,
+          "filename": "machinegun",
+          "name": "Machine gun",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by lugi)",
+          "smell": "Current Events",
+          "bonuses": {
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/838954744046157854/machinegun.png"
+        },
       ]
     },
     {
