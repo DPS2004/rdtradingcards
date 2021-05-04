@@ -90,6 +90,11 @@ local time = sw:getTime()
             else
               uj.inventory[newcard] = uj.inventory[newcard] + 1
             end
+            if uj.timesdoubleclicked == nil then
+              uj.timesdoubleclicked = 1
+            else
+              uj.timesdoubleclicked = uj.timesdoubleclicked + 1
+            end
             
             
             
