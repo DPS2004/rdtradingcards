@@ -138,8 +138,7 @@
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Pencil Lead",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200373872721990/artexercise.png"
         },
         {
@@ -462,7 +461,7 @@
             "cafemixtape": true,
             "okamiiscollar": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200744153612308/coler.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839163428576034856/coler.png"
         },
         {
           "chance": 2,
@@ -501,7 +500,7 @@
           "bonuses": {
             "cafemixtape": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200743529185311/coledc.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839163452689219598/coledc.png"
         },
         {
           "chance": 0,
@@ -533,7 +532,7 @@
           "bonuses": {
             "okamiiscollar": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201524118781982/farmerr.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839163216042786866/farmerr.png"
         },
         {
           "chance": 2,
@@ -543,8 +542,7 @@
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Haybales",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201531168489542/farmersr.png"
         },
         {
@@ -555,8 +553,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Haybales",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201538429485066/farmerur.png"
         },
         {
@@ -567,9 +564,8 @@
           "type": "Discontinued",
           "description": "(Art by Winston Lee)",
           "smell": "Game Development",
-          "bonuses": {
-          },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201518547697684/farmerdc.png"
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839163230022271047/farmerdc.png"
         },
         {
           "chance": 0,
@@ -579,8 +575,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Farmer (Art by Kyle Labriola)",
           "smell": "Haybales",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201514341728286/farmerc.png"
         }
       ]
@@ -601,7 +596,7 @@
             "valentinesdaycard": true,
             "okamiiscollar": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201624349933598/haileyr.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839163069405986836/haileyr.png"
         },
         {
           "chance": 2,
@@ -628,6 +623,19 @@
             "valentinesdaycard": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201643165712434/haileyur.png"
+        },
+        {
+          "chance": 1,
+          "filename": "haileydc",
+          "name": "Hailey (Discontinued)",
+          "tradeable": true,
+          "type": "Discontinued",
+          "description": "(Art by Winston Lee)",
+          "smell": "Trains",
+          "bonuses": {
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839163086031814767/haileydc.png"
         },
         {
           "chance": 0,
@@ -660,7 +668,7 @@
             "oversizedstethoscope": true,
             "okamiiscollar": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201680271933460/ianr.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162915617374228/ianr.png"
         },
         {
           "chance": 2,
@@ -778,7 +786,7 @@
             "rustysword": true,
             "okamiiscollar": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201803999707176/insomniacr.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162801967726603/insomniacr.png"
         },
         {
           "chance": 2,
@@ -805,6 +813,19 @@
             "rustysword": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201820550692884/insomniacur.png"
+        },
+        {
+          "chance": 1,
+          "filename": "insomniacdc",
+          "name": "Insomniac (Discontinued)",
+          "tradeable": true,
+          "type": "Discontinued",
+          "description": "(Art by Winston Lee)",
+          "smell": "WiFi",
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162815780618291/insomniacdc.png"
         },
         {
           "chance": 0,
@@ -836,7 +857,7 @@
           "bonuses": {
             "okamiiscollar": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201832449671168/internr.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162606311964762/internr.png"
         },
         {
           "chance": 2,
@@ -846,8 +867,7 @@
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Fingernails",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201837969375242/internsr.png"
         },
         {
@@ -858,9 +878,19 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Fingernails",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201845477572618/internur.png"
+        },
+        {
+          "chance": 1,
+          "filename": "interndc",
+          "name": "Intern (Discontinued)",
+          "tradeable": true,
+          "type": "Discontinued",
+          "description": "(Art by Winston Lee)",
+          "smell": "Dithering",
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162624151126027/interndc.png"
         },
         {
           "chance": 0,
@@ -870,8 +900,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of the Intern (Art by Kyle Labriola)",
           "smell": "Fingernails",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201827823222824/internc.png"
         }
       ]
@@ -892,7 +921,7 @@
             "valentinesdaycard": true,
             "okamiiscollar": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201931989811219/loganr.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162416591798323/loganr.png"
         },
         {
           "chance": 2,
@@ -919,6 +948,19 @@
             "valentinesdaycard": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201974314139648/loganur.png"
+        },
+        {
+          "chance": 1,
+          "filename": "logandc",
+          "name": "Logan (Discontinued)",
+          "tradeable": true,
+          "type": "Discontinued",
+          "description": "(Art by Winston Lee)",
+          "smell": "Young Love",
+          "bonuses": {
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162445271924787/logandc.png"
         },
         {
           "chance": 0,
@@ -950,7 +992,7 @@
           "bonuses": {
             "okamiiscollar": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202081428406282/minerr.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839170156877447198/minerr.png"
         },
         {
           "chance": 2,
@@ -960,8 +1002,7 @@
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Coal",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202087949762600/minersr.png"
         },
         {
@@ -972,9 +1013,19 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Coal",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202094220509234/minerur.png"
+        },
+        {
+          "chance": 1,
+          "filename": "minerdc",
+          "name": "Miner (Discontinued)",
+          "tradeable": true,
+          "type": "Discontinued",
+          "description": "(Art by Winston Lee)",
+          "smell": "Coal",
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162170129514506/minerdc.png"
         },
         {
           "chance": 0,
@@ -984,8 +1035,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Miner (Art by Kyle Labriola)",
           "smell": "Coal",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202076215148565/minerc.png"
         }
       ]
@@ -1006,7 +1056,7 @@
             "hardcandy": true,
             "okamiiscollar": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202123958255646/mrsstevensonr.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839161314005745734/mrsstevensonr.png"
         },
         {
           "chance": 2,
@@ -1033,6 +1083,19 @@
             "hardcandy": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202138725875752/mrsstevensonur.png"
+        },
+        {
+          "chance": 1,
+          "filename": "mrsstevensondc",
+          "name": "Mrs. Stevenson (Discontinued)",
+          "tradeable": true,
+          "type": "Discontinued",
+          "description": "(Art by Winston Lee)",
+          "smell": "Old Women",
+          "bonuses": {
+            "hardcandy": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839161328199270430/mrsstevensondc.png"
         },
         {
           "chance": 0,
@@ -1065,7 +1128,7 @@
             "hardcandy": true,
             "okamiiscollar": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202159534997514/mrstevensonr.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839161114775650314/mrstevensonr.png"
         },
         {
           "chance": 2,
@@ -1092,6 +1155,19 @@
             "hardcandy": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202174058954792/mrstevensonur.png"
+        },
+        {
+          "chance": 1,
+          "filename": "mrstevensondc",
+          "name": "Mr. Stevenson (Discontinued)",
+          "tradeable": true,
+          "type": "Discontinued",
+          "description": "(Art by Winston Lee)",
+          "smell": "Old Men",
+          "bonuses": {
+            "hardcandy": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839161132719276032/mrstevensondc.png"
         },
         {
           "chance": 0,
@@ -1124,7 +1200,7 @@
             "oversizedstethoscope": true,
             "okamiiscollar": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202353567563776/paiger.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839160822864543804/paiger.png"
         },
         {
           "chance": 2,
@@ -1182,7 +1258,7 @@
           "bonuses": {
             "okamiiscollar": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202401713717268/politicianr.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839160716299731024/politicianr.png"
         },
         {
           "chance": 2,
@@ -1192,8 +1268,7 @@
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Democracy",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202407238008904/politiciansr.png"
         },
         {
@@ -1204,8 +1279,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Democracy",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202413432733746/politicianur.png"
         },
         {
@@ -1216,8 +1290,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of the Politician (Art by Kyle Labriola)",
           "smell": "Democracy",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202395971715082/politicianc.png"
         }
       ]
@@ -1238,7 +1311,7 @@
             "rustysword": true,
             "okamiiscollar": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202667460886548/samurair.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839160070368526366/samurair.png"
         },
         {
           "chance": 2,
@@ -1265,6 +1338,19 @@
             "rustysword": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202682064404480/samuraiur.png"
+        },
+        {
+          "chance": 1,
+          "filename": "samuraidc",
+          "name": "Samurai (Discontinued)",
+          "tradeable": true,
+          "type": "Discontinued",
+          "description": "(Art by Winston Lee)",
+          "smell": "Metal",
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839160092858253332/samuraidc.png"
         },
         {
           "chance": 0,
@@ -1297,7 +1383,7 @@
             "cafemixtape": true,
             "okamiiscollar": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202238424743996/nicoler.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839160949796896898/nicoler.png"
         },
         {
           "chance": 2,
@@ -1355,7 +1441,7 @@
           "bonuses": {
             "okamiiscollar": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202052985913354/luciar.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162341920210984/luciar.png"
         },
         {
           "chance": 2,
@@ -1365,8 +1451,7 @@
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola, edited by Lumina)",
           "smell": "Imagination",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202060981436446/luciasr.png"
         },
         {
@@ -1377,8 +1462,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola, edited by Lumina)",
           "smell": "Imagination",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202070208118784/luciaur.png"
         },
         {
@@ -1389,8 +1473,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Lucia Moon (Art by Lumina, based on art by Kyle Labriola)",
           "smell": "Imagination",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202045797924864/luciac.png"
         }
       ]
@@ -1420,8 +1503,7 @@
           "type": "Super Rare",
           "description": "(Art by DeadlySprinklez)",
           "smell": "Freestyle Rap",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203019974574080/yosr.png"
         },
         {
@@ -1432,8 +1514,7 @@
           "type": "Ultra Rare",
           "description": "(Art by DeadlySprinklez)",
           "smell": "Freestyle Rap",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203033362923530/your.png"
         },
         {
@@ -1444,8 +1525,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Yo (Art by Lumina, based on art by Kyle Labriola)",
           "smell": "Freestyle Rap",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203005357555762/yoc.png"
         }
       ]
@@ -1475,8 +1555,7 @@
           "type": "Super Rare",
           "description": "(Art by Axobotl)",
           "smell": "Computer Chips",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202332351856671/ottosr.png"
         },
         {
@@ -1487,8 +1566,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Lumina)",
           "smell": "Computer Chips",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202342809174036/ottour.png"
         },
         {
@@ -1499,13 +1577,11 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Otto (Art by Lumina)",
           "smell": "Computer Chips",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202317097041950/ottoc.png"
         }
       ]
     },
-    
     {
       "groupname": "heartchick",
       "basechance": 3,
@@ -1531,8 +1607,7 @@
           "type": "Super Rare",
           "description": "(Art by Lumina)",
           "smell": "Broken Glass",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832647186780782700/heartchicksr.png"
         },
         {
@@ -1543,8 +1618,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Broken Glass",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832648380047163392/heartchickur.png"
         },
         {
@@ -1555,13 +1629,11 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Heart Chick (Art by Lumina)",
           "smell": "Broken Glass",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832647183089401866/heartchickc.png"
         }
       ]
     },
-    
     {
       "groupname": "----------------------------------------EDITOR STUFF------------------------------------------------",
       "basechance": 0,
@@ -1606,8 +1678,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Time Bending",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202521355976715/roomsur.png"
         },
         {
@@ -1976,8 +2047,7 @@
           "type": "Super Rare",
           "description": "(Level by thefinals)",
           "smell": "Ectoplasm",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201610488020993/ghostsplay.png"
         },
         {
@@ -2002,8 +2072,7 @@
           "type": "Super Rare",
           "description": "(Level by Kneeckoh)",
           "smell": "Quadrilateral Shapes",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202768963174400/square.png"
         },
         {
@@ -2080,8 +2149,7 @@
           "type": "Super Rare",
           "description": "(Level by auth)",
           "smell": "Emergency Services",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202203809677322/mylevel.png"
         },
         {
@@ -2118,8 +2186,7 @@
           "type": "Super Rare",
           "description": "(Level by MarioMak967)",
           "smell": "Mahogany",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201667860856843/hideandseek.png"
         },
         {
@@ -2183,8 +2250,7 @@
           "type": "Super Rare",
           "description": "(Level by Kin, Xeno, MarioMak967, and Econ)",
           "smell": "High-end Audio Equipment",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200305966809088/aighgrayn.png"
         },
         {
@@ -2225,8 +2291,7 @@
           "type": "Super Rare",
           "description": "(Level by InfectiousStepocity)",
           "smell": "16ths",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202441458548796/reverence.png"
         },
         {
@@ -2237,8 +2302,7 @@
           "type": "Super Rare",
           "description": "(Level by Lin Gamerz and Xeno)",
           "smell": "Tryhards",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202545892524082/rpg.png"
         },
         {
@@ -2249,8 +2313,7 @@
           "type": "Super Rare",
           "description": "(Level by Emdyion, Samario, DPS2004, thefinals, Some J Name, and Xeno)",
           "smell": "Fun:tm:",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202555467857990/rrr.png"
         },
         {
@@ -2301,8 +2364,7 @@
           "type": "Super Rare",
           "description": "(Level by Kin, Xeno, and MarioMak967)",
           "smell": "The 7th Layer of Hell",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202919563067392/underworld.gif"
         },
         {
@@ -2476,8 +2538,7 @@
           "type": "Super Rare",
           "description": "(Level by lugi, Qerewe, and Seven)",
           "smell": "Fabric",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/831712853559214142/patchworkstaccato.png"
         },
         {
@@ -2546,7 +2607,7 @@
             "paddedstickersheet": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839152086812983366/pharamatara.png"
-        },
+        }
       ]
     },
     {
@@ -2561,8 +2622,7 @@
           "type": "Special",
           "description": "(this field intentionally left blank)",
           "smell": "THE ONE",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202779016658994/ssss45.png"
         }
       ]
@@ -2734,10 +2794,8 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202036000161812/logunur.png"
         }
-        
       ]
     },
-    
     {
       "groupname": "pico8",
       "basechance": 4,
@@ -2751,8 +2809,7 @@
           "pico": true,
           "description": "(Cart by auburn. Playable with the PICO-8 app or online at https://auburnsummer.itch.io/rhythm-stacker . The password is rhythmdoctah)",
           "smell": "Pancakes",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202454527606814/rhythmstacker.p8.png"
         },
         {
@@ -2764,8 +2821,7 @@
           "pico": true,
           "description": "(Cart by auburn. Playable with the PICO-8 app or online at https://auburnsummer.itch.io/acofoi . The password is meaculpa)",
           "smell": "Indecisiveness",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200274178572318/acofoi.p8.png"
         }
       ]
@@ -2834,7 +2890,7 @@
         }
       ]
     },
-        {
+    {
       "groupname": "draemon",
       "basechance": 3,
       "cards": [
@@ -2859,8 +2915,7 @@
           "type": "Super Rare",
           "description": "(Art by Noche)",
           "smell": "Unconventional Gameplay",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/830815043016196106/draemonsr.png"
         },
         {
@@ -2871,8 +2926,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Plant Guy)",
           "smell": "Unconventional Gameplay",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/830815056899080232/draemonur.png"
         },
         {
@@ -2883,8 +2937,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Draemon (Art by Plant Guy)",
           "smell": "Unconventional Gameplay",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/830815068093415445/draemonc.png"
         }
       ]
@@ -2914,8 +2967,7 @@
           "type": "Super Rare",
           "description": "(Art by Kin)",
           "smell": "Icicles",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201779350568990/inimasr.png"
         },
         {
@@ -2926,8 +2978,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kin)",
           "smell": "Icicles",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201792439943199/inimaur.png"
         },
         {
@@ -2938,8 +2989,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Inima (Art by Kin)",
           "smell": "Icicles",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201742738620436/inimac.png"
         }
       ]
@@ -2969,8 +3019,7 @@
           "type": "Super Rare",
           "description": "(Art by Plant Guy)",
           "smell": "Abandoned Factories",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201580800475146/fhottosr.png"
         },
         {
@@ -2981,8 +3030,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Plant Guy)",
           "smell": "Abandoned Factories",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201592703385610/fhottour.png"
         },
         {
@@ -2993,8 +3041,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Fire Hazard Otto (Art by Plant Guy)",
           "smell": "Abandoned Factories",
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201569643233300/fhottoc.png"
         }
       ]
