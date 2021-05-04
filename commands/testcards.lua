@@ -8,7 +8,7 @@ function command.run(message, mt)
         content = 'TESTCARDS: '.. v.name .. ' smells like ' .. getcardsmell(v.filename)
       }
       message.channel:send {
-        file = "card_images/" .. v.filename .. ".png"
+        content = v.embed
       }
     end
   else
