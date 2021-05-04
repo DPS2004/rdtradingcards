@@ -262,6 +262,48 @@
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200749698875402/bombsniffingpomeranian.png"
         },
         {
+          "chance": 1,
+          "filename": "unreachable",
+          "name": "Unreachable",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Drum&Bass",
+          "bonuses": {
+            "cafemixtape": true,
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839142546219335690/unreachable.png"
+        },
+        {
+          "chance": 1,
+          "filename": "lounge",
+          "name": "Lounge",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Venting",
+          "bonuses": {
+            "valentinesdaycard": true,
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839142847134433331/lounge.png"
+        },
+        {
+          "chance": 1,
+          "filename": "classynight",
+          "name": "Classy (Night Shift)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Aristocracy",
+          "bonuses": {
+            "valentinesdaycard": true,
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839143947929780224/classynight.png"
+        },
+        {
           "chance": 2,
           "filename": "sleepygarden",
           "name": "Sleepy Garden",
@@ -274,6 +316,20 @@
             "deluxebirdseed": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202693674369024/sleepygarden.png"
+        },
+        {
+          "chance": 2,
+          "filename": "classy",
+          "name": "Classy",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Bureaucracy",
+          "bonuses": {
+            "valentinesdaycard": true,
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839143334370869278/classy.png"
         },
         {
           "chance": 2,

@@ -867,6 +867,18 @@ function command.run(message, mt,overwrite)
             end
             print(inspect(nmt))
             cmd.use.run(message,{"terminal","credits"})
+          elseif string.lower(string.sub(message.content, 0, 8+2)) == prefix.. 'terminal' then 
+            print("terminal command shortcut")
+            local mt = string.split(string.sub(message.content, 8+4),"/")
+            local nmt = {}
+            nmt[1] = "terminal"
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i+1]=v
+            end
+            
+            print(inspect(nmt))
+            cmd.use.run(message,nmt)
           end
           
 
