@@ -16,12 +16,9 @@ function command.run(message, mt)
         message.channel:send{embed = {
           color = 0x85c5ff,
           title = "Showing medal...",
-          description = 'Here it is! Your **'.. medalfntoname(curfilename) .. '** medal. The shorthand form is **' .. curfilename .. '**.',
+          description = 'Here it is! Your **'.. medalfntoname(curfilename) .. '** medal. The shorthand form is **' .. curfilename .. '**.\n\n*The description on the back reads:*\n> ' .. medaldb[curfilename].description,
           image = {
             url = medaldb[curfilename].embed
-          },
-          footer = {
-            text = 'The description on the back reads:\n' .. medaldb[curfilename].description
           }
         }}
       else

@@ -21,12 +21,9 @@ function command.run(message, mt)
         message.channel:send{embed = {
           color = 0x85c5ff,
           title = "Showing item...",
-          description = 'Here it is! Your **'.. itemfntoname(curfilename) .. '**. The shorthand form is **' .. curfilename .. '**.',
+          description = 'Here it is! Your **'.. itemfntoname(curfilename) .. '**. The shorthand form is **' .. curfilename .. '**.\n\n*The description reads:*\n> ' .. itemdb[curfilename].description,
           image = {
             url = itemdb[curfilename].embed
-          },
-          footer = {
-            text = 'The description on the back reads:\n' .. itemdb[curfilename].description
           }
         }}
       else

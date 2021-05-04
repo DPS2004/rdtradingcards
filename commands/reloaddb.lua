@@ -143,7 +143,7 @@ function command.run(message, mt,overwrite)
       "https://cdn.discordapp.com/attachments/829197797789532181/831907763076333588/lab1.png",
       "https://cdn.discordapp.com/attachments/829197797789532181/831907764762574868/lab2.png", --it will be easy, they said
       "https://cdn.discordapp.com/attachments/829197797789532181/831907766682517544/lab3.png",
-      "https://cdn.discordapp.com/attachments/829197797789532181/831907771020214292/lab4.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907771020214292/lab4.png", --i'm so sorry, dps
       "https://cdn.discordapp.com/attachments/829197797789532181/831907771716075632/lab5.png",
       "https://cdn.discordapp.com/attachments/829197797789532181/831907773830791198/lab6.png",
       "https://cdn.discordapp.com/attachments/829197797789532181/831907776657227816/lab7.png",
@@ -416,10 +416,13 @@ function command.run(message, mt,overwrite)
     end
 
     _G['usernametojson'] = function (x)
+      print(x)
       for i,v in ipairs(scandir("savedata")) do
         cuj = dpf.loadjson("savedata/"..v,defaultjson)
-        if cuj.id == x then --prioritize id over nickname
-          return "savedata/"..v
+        if cuj.id then
+          if cuj.id == x or ("<@!" .. cuj.id .. ">") == x then --prioritize id and mentions over nickname
+            return "savedata/"..v
+          end
         end
         if cuj.names then
           for j,w in pairs(cuj.names) do
