@@ -325,6 +325,34 @@
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839143947929780224/classynight.png"
         },
         {
+          "chance": 1,
+          "filename": "fgirlfriend",
+          "name": "My Future Girlfriend",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "TV Remotes",
+          "season": 5,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839273404200386600/fgirlfriend.png"
+        },
+        {
+          "chance": 1,
+          "filename": "rollerdisco",
+          "name": "Rollerdisco Rumble",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Demoscene",
+          "season": 5,
+          "bonuses": {
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839273511914962974/rollerdisco.png"
+        },
+        {
           "chance": 2,
           "filename": "sleepygarden",
           "name": "Sleepy Garden",
@@ -353,6 +381,20 @@
             "rustysword": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839143334370869278/classy.png"
+        },
+        {
+          "chance": 2,
+          "filename": "trainingdoctor",
+          "name": "Training Doctor's Train Ride Performance",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Pebbles",
+          "season": 5,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839272847213068298/trainingdoctor.png"
         },
         {
           "chance": 2,
