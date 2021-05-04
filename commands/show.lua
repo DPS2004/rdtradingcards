@@ -13,19 +13,17 @@ function command.run(message, mt)
         print("user has card")
         local embeddescription = ""
         if getcarddescription(curfilename) then
-          embeddescription = "The description on the back reads:\n" .. getcarddescription(curfilename)
+          embeddescription = "\n\n*The description on the back reads:*\n> " .. getcarddescription(curfilename)
         end
         -- message.channel:send('Here it is! Your **'.. fntoname(curfilename) .. '** card. The shorthand form is **' .. curfilename .. '**.')
         -- message.channel:send('https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. getcardembed(curfilename) .. '/' .. curfilename .. extension)
         message.channel:send{embed = {
           color = 0x85c5ff,
           title = "Showing card...",
-          description = 'Here it is! Your **'.. fntoname(curfilename) .. '** card. The shorthand form is **' .. curfilename .. '**.',
+          description = 
+          'Here it is! Your **'.. fntoname(curfilename) .. '** card. The shorthand form is **' .. curfilename .. '**.' .. embeddescription,
           image = {
             url = getcardembed(curfilename)
-          },
-          footer = {
-            text = embeddescription
           }
         }}
       else
