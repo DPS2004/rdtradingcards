@@ -403,7 +403,8 @@
           "description": "(Art by Winston Lee)",
           "smell": "lofi beats",
           "bonuses": {
-            "cafemixtape": true
+            "cafemixtape": true,
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200744153612308/coler.png"
         },
@@ -474,6 +475,7 @@
           "description": "(Art by Winston Lee)",
           "smell": "Haybales",
           "bonuses": {
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201524118781982/farmerr.png"
         },
@@ -540,7 +542,8 @@
           "description": "(Art by Winston Lee)",
           "smell": "Trains",
           "bonuses": {
-            "valentinesdaycard": true
+            "valentinesdaycard": true,
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201624349933598/haileyr.png"
         },
@@ -598,7 +601,8 @@
           "description": "(Art by Winston Lee)",
           "smell": "Gaming",
           "bonuses": {
-            "oversizedstethoscope": true
+            "oversizedstethoscope": true,
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201680271933460/ianr.png"
         },
@@ -656,7 +660,8 @@
           "description": "(Art by Winston Lee)",
           "smell": "Paperwork",
           "bonuses": {
-            "oversizedstethoscope": true
+            "oversizedstethoscope": true,
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832012123068563466/edegar.png"
         },
@@ -714,7 +719,8 @@
           "description": "(Art by Winston Lee)",
           "smell": "WiFi",
           "bonuses": {
-            "rustysword": true
+            "rustysword": true,
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201803999707176/insomniacr.png"
         },
@@ -772,6 +778,7 @@
           "description": "(Art by Winston Lee)",
           "smell": "Fingernails",
           "bonuses": {
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201832449671168/internr.png"
         },
@@ -826,7 +833,8 @@
           "description": "(Art by Winston Lee)",
           "smell": "Young Love",
           "bonuses": {
-            "valentinesdaycard": true
+            "valentinesdaycard": true,
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201931989811219/loganr.png"
         },
@@ -884,6 +892,7 @@
           "description": "(Art by Winston Lee)",
           "smell": "Coal",
           "bonuses": {
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202081428406282/minerr.png"
         },
@@ -938,7 +947,8 @@
           "description": "(Art by Winston Lee)",
           "smell": "Old Women",
           "bonuses": {
-            "hardcandy": true
+            "hardcandy": true,
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202123958255646/mrsstevensonr.png"
         },
@@ -996,7 +1006,8 @@
           "description": "(Art by Winston Lee)",
           "smell": "Old Men",
           "bonuses": {
-            "hardcandy": true
+            "hardcandy": true,
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202159534997514/mrstevensonr.png"
         },
@@ -1054,7 +1065,8 @@
           "description": "(Art by Winston Lee)",
           "smell": "Sweat and Tears",
           "bonuses": {
-            "oversizedstethoscope": true
+            "oversizedstethoscope": true,
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202353567563776/paiger.png"
         },
@@ -1112,6 +1124,7 @@
           "description": "(Art by Winston Lee)",
           "smell": "Democracy",
           "bonuses": {
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202401713717268/politicianr.png"
         },
@@ -1166,7 +1179,8 @@
           "description": "(Art by Winston Lee)",
           "smell": "Metal",
           "bonuses": {
-            "rustysword": true
+            "rustysword": true,
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202667460886548/samurair.png"
         },
@@ -1224,7 +1238,8 @@
           "description": "(Art by Winston Lee)",
           "smell": "Minimum Wage",
           "bonuses": {
-            "cafemixtape": true
+            "cafemixtape": true,
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202238424743996/nicoler.png"
         },
@@ -1282,6 +1297,7 @@
           "description": "(Art by Adipemdragon)",
           "smell": "Imagination",
           "bonuses": {
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202052985913354/luciar.png"
         },
@@ -1336,6 +1352,7 @@
           "description": "(Art by Winston Lee)",
           "smell": "Freestyle Rap",
           "bonuses": {
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203012345004093/yor.png"
         },
@@ -1390,6 +1407,7 @@
           "description": "(Art by Giacomo)",
           "smell": "Computer Chips",
           "bonuses": {
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202327361552444/ottor.png"
         },
@@ -1445,6 +1463,7 @@
           "description": "(Art by Winston Lee)",
           "smell": "Broken Glass",
           "bonuses": {
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832647184163143751/heartchickr.png"
         },
@@ -1505,7 +1524,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Time Bending",
           "bonuses": {
-            "scribblednotepad": true
+            "scribblednotepad": true,
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202506919313428/roomsr.png"
         },
@@ -1588,7 +1608,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Overcharting",
           "bonuses": {
-            "scribblednotepad": true
+            "scribblednotepad": true,
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202527185797160/rowsr.png"
         },
@@ -1633,7 +1654,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Kneecaps",
           "bonuses": {
-            "scribblednotepad": true
+            "scribblednotepad": true,
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202730912055346/soundr.png"
         },
@@ -1678,7 +1700,8 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Too Much Gray",
           "bonuses": {
-            "scribblednotepad": true
+            "scribblednotepad": true,
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202925557383199/vfxr.png"
         },
@@ -2696,7 +2719,8 @@
           "description": "(Art by Noche)",
           "smell": "Fall Damage",
           "bonuses": {
-            "deluxebirdseed": true
+            "deluxebirdseed": true,
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200734246666280/bigbadbirdr.png"
         },
@@ -2754,6 +2778,7 @@
           "description": "(Art by AdipemDragon)",
           "smell": "Unconventional Gameplay",
           "bonuses": {
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/830814942231789578/draemonr.png"
         },
@@ -2808,6 +2833,7 @@
           "description": "(Art by AdipemDragon)",
           "smell": "Icicles",
           "bonuses": {
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201772270583858/inimar.png"
         },
@@ -2862,6 +2888,7 @@
           "description": "(Art by AdipemDragon)",
           "smell": "Abandoned Factories",
           "bonuses": {
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201571261710376/fhottor.png"
         },
