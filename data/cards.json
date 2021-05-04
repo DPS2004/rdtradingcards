@@ -2534,6 +2534,19 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/838954744046157854/machinegun.png"
         },
+        {
+          "chance": 2,
+          "filename": "pharamatara",
+          "name": "Pharamatara",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Some J Name, Het, and DPS2004)",
+          "smell": "Marching Orders",
+          "bonuses": {
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839152086812983366/pharamatara.png"
+        },
       ]
     },
     {

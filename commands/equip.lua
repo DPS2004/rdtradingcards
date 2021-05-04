@@ -21,7 +21,7 @@ function command.run(message, mt)
     end
     
     dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
-    if uj.lastequip + 24 <= time:toHours()then
+    if uj.lastequip + 6 <= time:toHours()then
       local request = mt[1]
       local curfilename = itemtexttofn(request)
       if curfilename then
@@ -31,7 +31,7 @@ function command.run(message, mt)
             print(uj.equipped)
             if not uj.skipprompts then
             
-              local newmessage = message.channel:send("Would you like to change your equipped item from **" .. itemfntoname(uj.equipped) .. "** to **" .. itemfntoname(curfilename) .. "**? This can be done once every 24 hours.")
+              local newmessage = message.channel:send("Would you like to change your equipped item from **" .. itemfntoname(uj.equipped) .. "** to **" .. itemfntoname(curfilename) .. "**? This can be done once every 6 hours.")
               addreacts(newmessage)
               local tf = dpf.loadjson("savedata/events.json",{})
               tf[newmessage.id] ={ujf = ujf, newequip = curfilename ,etype = "equip",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
@@ -63,7 +63,7 @@ function command.run(message, mt)
       end
     else
       --extremely jank implementation, please make this cleaner if possible
-      local minutesleft = math.ceil(uj.lastequip * 60 - time:toMinutes() + 1440.00)
+      local minutesleft = math.ceil(uj.lastequip * 60 - time:toMinutes() + 360.00)
       local durationtext = ""
       if math.floor(minutesleft / 60) > 0 then
         durationtext = math.floor(minutesleft / 60) .. " hour"
