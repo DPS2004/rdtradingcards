@@ -18,6 +18,7 @@
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Gltichiness",
+          "season": 1,
           "bonuses": {
             "rustysword": true
           },
@@ -31,6 +32,7 @@
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "The Past",
+          "season": 1,
           "bonuses": {
             "rustysword": true
           },
@@ -43,6 +45,7 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "smell": "The Future",
+          "season": 1,
           "bonuses": {
             "rustysword": true
           },
@@ -56,6 +59,7 @@
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Coffee Beans",
+          "season": 1,
           "bonuses": {
             "cafemixtape": true
           },
@@ -69,6 +73,7 @@
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Understaffing",
+          "season": 1,
           "bonuses": {
             "oversizedstethoscope": true
           },
@@ -82,6 +87,7 @@
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Love",
+          "season": 1,
           "bonuses": {
             "valentinesdaycard": true
           },
@@ -95,6 +101,7 @@
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Super Glitchiness",
+          "season": 1,
           "bonuses": {
             "rustysword": true
           },
@@ -108,6 +115,7 @@
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Celebration",
+          "season": 4,
           "bonuses": {
             "rustysword": true,
             "valentinesdaycard": true
@@ -123,6 +131,7 @@
           "animated": true,
           "description": "Samurai is jumping over a box of beans (Level by Colon)",
           "smell": "Beans",
+          "season": 4,
           "bonuses": {
             "rustysword": true,
             "duncecap": true,
@@ -138,6 +147,7 @@
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Pencil Lead",
+          "season": 4,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200373872721990/artexercise.png"
         },
@@ -149,6 +159,7 @@
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Tears",
+          "season": 4,
           "bonuses": {
             "oversizedstethoscope": true
           },
@@ -162,6 +173,7 @@
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Cluttered Files",
+          "season": 4,
           "bonuses": {
             "cafemixtape": true
           },
@@ -175,6 +187,7 @@
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Revolution",
+          "season": 4,
           "bonuses": {
             "rustysword": true,
             "valentinesdaycard": true
@@ -189,6 +202,7 @@
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Role Reversal",
+          "season": 4,
           "bonuses": {
             "valentinesdaycard": true
           },
@@ -202,6 +216,7 @@
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Smooth Jazz",
+          "season": 4,
           "bonuses": {
             "cafemixtape": true
           },
@@ -215,6 +230,7 @@
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Mutual Loneliness",
+          "season": 4,
           "bonuses": {
             "hardcandy": true
           },
@@ -228,6 +244,7 @@
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Intense Piano",
+          "season": 4,
           "bonuses": {
             "hardcandy": true,
             "deluxebirdseed": true
@@ -242,6 +259,7 @@
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "The Vet's Office",
+          "season": 4,
           "bonuses": {
             "duncecap": true
           },
@@ -255,6 +273,7 @@
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Fighting Game Tournaments",
+          "season": 4,
           "bonuses": {
             "cafemixtape": true
           },
@@ -268,6 +287,7 @@
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Drum&Bass",
+          "season": 5,
           "bonuses": {
             "cafemixtape": true,
             "rustysword": true
@@ -282,6 +302,7 @@
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Venting",
+          "season": 5,
           "bonuses": {
             "valentinesdaycard": true,
             "deluxebirdseed": true
@@ -296,6 +317,7 @@
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Aristocracy",
+          "season": 5,
           "bonuses": {
             "valentinesdaycard": true,
             "rustysword": true
@@ -310,6 +332,7 @@
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "School Dances",
+          "season": 4,
           "bonuses": {
             "valentinesdaycard": true,
             "deluxebirdseed": true
@@ -324,6 +347,7 @@
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Bureaucracy",
+          "season": 5,
           "bonuses": {
             "valentinesdaycard": true,
             "rustysword": true
@@ -338,6 +362,7 @@
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "The Cosmos",
+          "season": 4,
           "bonuses": {
             "valentinesdaycard": true,
             "cafemixtape": true
@@ -352,6 +377,7 @@
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Nicotine",
+          "season": 4,
           "bonuses": {
             "cafemixtape": true
           },
@@ -365,6 +391,7 @@
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Mist",
+          "season": 4,
           "bonuses": {
             "rustysword": true,
             "valentinesdaycard": true
@@ -379,6 +406,7 @@
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Piano",
+          "season": 4,
           "bonuses": {
             "hardcandy": true,
             "deluxebirdseed": true
@@ -393,6 +421,7 @@
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Loneliness",
+          "season": 4,
           "bonuses": {
             "hardcandy": true
           },
@@ -406,6 +435,7 @@
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Electricity",
+          "season": 4,
           "bonuses": {
             "cafemixtape": true
           },
@@ -419,6 +449,7 @@
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Music Production",
+          "season": 4,
           "bonuses": {
             "cafemixtape": true,
             "rustysword": true
@@ -433,6 +464,7 @@
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Improvisation",
+          "season": 4,
           "bonuses": {
             "cafemixtape": true
           },
@@ -457,6 +489,7 @@
           "type": "Rare",
           "description": "(Art by Winston Lee)",
           "smell": "lofi beats",
+          "season": 1,
           "bonuses": {
             "cafemixtape": true,
             "okamiiscollar": true
@@ -471,6 +504,7 @@
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "lofi beats",
+          "season": 1,
           "bonuses": {
             "cafemixtape": true
           },
@@ -484,6 +518,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "lofi beats",
+          "season": 1,
           "bonuses": {
             "cafemixtape": true
           },
@@ -497,10 +532,25 @@
           "type": "Discontinued",
           "description": "(Art by Winston Lee)",
           "smell": "lofi beats",
+          "season": 1,
           "bonuses": {
             "cafemixtape": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839163452689219598/coledc.png"
+        },
+        {
+          "chance": 1,
+          "filename": "colealt",
+          "name": "Cole Brew (Alternate)",
+          "tradeable": true,
+          "type": "Alternate",
+          "description": "(Art by Winston Lee)",
+          "smell": "THRASH METAL",
+          "season": 1,
+          "bonuses": {
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839198356608909332/colealt.png"
         },
         {
           "chance": 0,
@@ -510,6 +560,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Cole (Art by Kyle Labriola)",
           "smell": "lofi beats",
+          "season": 1,
           "bonuses": {
             "cafemixtape": true
           },
@@ -529,6 +580,7 @@
           "type": "Rare",
           "description": "(Art by Winston Lee)",
           "smell": "Haybales",
+          "season": 1,
           "bonuses": {
             "okamiiscollar": true
           },
@@ -542,6 +594,7 @@
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Haybales",
+          "season": 1,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201531168489542/farmersr.png"
         },
@@ -553,6 +606,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Haybales",
+          "season": 1,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201538429485066/farmerur.png"
         },
@@ -564,6 +618,7 @@
           "type": "Discontinued",
           "description": "(Art by Winston Lee)",
           "smell": "Game Development",
+          "season": 1,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839163230022271047/farmerdc.png"
         },
@@ -575,6 +630,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Farmer (Art by Kyle Labriola)",
           "smell": "Haybales",
+          "season": 1,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201514341728286/farmerc.png"
         }
@@ -592,6 +648,7 @@
           "type": "Rare",
           "description": "(Art by Winston Lee)",
           "smell": "Trains",
+          "season": 1,
           "bonuses": {
             "valentinesdaycard": true,
             "okamiiscollar": true
@@ -606,6 +663,7 @@
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Trains",
+          "season": 1,
           "bonuses": {
             "valentinesdaycard": true
           },
@@ -619,6 +677,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Trains",
+          "season": 1,
           "bonuses": {
             "valentinesdaycard": true
           },
@@ -632,6 +691,7 @@
           "type": "Discontinued",
           "description": "(Art by Winston Lee)",
           "smell": "Trains",
+          "season": 5,
           "bonuses": {
             "valentinesdaycard": true
           },
@@ -645,6 +705,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Hailey (Art by Kyle Labriola)",
           "smell": "Trains",
+          "season": 1,
           "bonuses": {
             "valentinesdaycard": true
           },
@@ -664,6 +725,7 @@
           "type": "Rare",
           "description": "(Art by Winston Lee)",
           "smell": "Gaming",
+          "season": 1,
           "bonuses": {
             "oversizedstethoscope": true,
             "okamiiscollar": true
@@ -678,6 +740,7 @@
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Gaming",
+          "season": 1,
           "bonuses": {
             "oversizedstethoscope": true
           },
@@ -691,6 +754,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Gaming",
+          "season": 1,
           "bonuses": {
             "oversizedstethoscope": true
           },
@@ -704,6 +768,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Ian (Art by Kyle Labriola)",
           "smell": "Gaming",
+          "season": 1,
           "bonuses": {
             "oversizedstethoscope": true
           },
@@ -723,6 +788,7 @@
           "type": "Rare",
           "description": "(Art by Winston Lee)",
           "smell": "Paperwork",
+          "season": 5,
           "bonuses": {
             "oversizedstethoscope": true,
             "okamiiscollar": true
@@ -737,6 +803,7 @@
           "type": "Super Rare",
           "description": "(Art by Dr Levi)",
           "smell": "Paperwork",
+          "season": 5,
           "bonuses": {
             "oversizedstethoscope": true
           },
@@ -750,6 +817,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Dr Levi)",
           "smell": "Paperwork",
+          "season": 5,
           "bonuses": {
             "oversizedstethoscope": true
           },
@@ -763,6 +831,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Edega (Art by Dr Levi)",
           "smell": "Paperwork",
+          "season": 5,
           "bonuses": {
             "oversizedstethoscope": true
           },
@@ -782,6 +851,7 @@
           "type": "Rare",
           "description": "(Art by Winston Lee)",
           "smell": "WiFi",
+          "season": 1,
           "bonuses": {
             "rustysword": true,
             "okamiiscollar": true
@@ -796,6 +866,7 @@
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "WiFi",
+          "season": 1,
           "bonuses": {
             "rustysword": true
           },
@@ -809,6 +880,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "WiFi",
+          "season": 1,
           "bonuses": {
             "rustysword": true
           },
@@ -822,10 +894,25 @@
           "type": "Discontinued",
           "description": "(Art by Winston Lee)",
           "smell": "WiFi",
+          "season": 5,
           "bonuses": {
             "rustysword": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162815780618291/insomniacdc.png"
+        },
+        {
+          "chance": 1,
+          "filename": "insomniacalt",
+          "name": "Insomniac (Alternate)",
+          "tradeable": true,
+          "type": "Alternate",
+          "description": "(Art by Winston Lee)",
+          "smell": "Bluetooth",
+          "season": 5,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839227753538912287/insomniacalt.png"
         },
         {
           "chance": 0,
@@ -835,6 +922,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of the Insomniac (Art by Kyle Labriola)",
           "smell": "WiFi",
+          "season": 1,
           "bonuses": {
             "rustysword": true
           },
@@ -854,6 +942,7 @@
           "type": "Rare",
           "description": "(Art by Winston Lee)",
           "smell": "Fingernails",
+          "season": 1,
           "bonuses": {
             "okamiiscollar": true
           },
@@ -867,6 +956,7 @@
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Fingernails",
+          "season": 1,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201837969375242/internsr.png"
         },
@@ -878,6 +968,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Fingernails",
+          "season": 1,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201845477572618/internur.png"
         },
@@ -889,6 +980,7 @@
           "type": "Discontinued",
           "description": "(Art by Winston Lee)",
           "smell": "Dithering",
+          "season": 5,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162624151126027/interndc.png"
         },
@@ -900,6 +992,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of the Intern (Art by Kyle Labriola)",
           "smell": "Fingernails",
+          "season": 1,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201827823222824/internc.png"
         }
@@ -917,6 +1010,7 @@
           "type": "Rare",
           "description": "(Art by Winston Lee)",
           "smell": "Young Love",
+          "season": 1,
           "bonuses": {
             "valentinesdaycard": true,
             "okamiiscollar": true
@@ -931,6 +1025,7 @@
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Young Love",
+          "season": 1,
           "bonuses": {
             "valentinesdaycard": true
           },
@@ -944,6 +1039,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Young Love",
+          "season": 1,
           "bonuses": {
             "valentinesdaycard": true
           },
@@ -1353,6 +1449,19 @@
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839160092858253332/samuraidc.png"
         },
         {
+          "chance": 1,
+          "filename": "samuraialt",
+          "name": "Samurai (Alternate)",
+          "tradeable": true,
+          "type": "Alternate",
+          "description": "(Art by Winston Lee)",
+          "smell": "Plastic",
+          "bonuses": {
+            "rustysword": true,
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839226590885314570/samuraialt.png"
+        },
+        {
           "chance": 0,
           "filename": "samuraic",
           "name": "Samurai (Collector's)",
@@ -1622,15 +1731,26 @@
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832648380047163392/heartchickur.png"
         },
         {
-          "chance": 0,
-          "filename": "heartchickc",
-          "name": "Heart Chick (Collector's)",
-          "tradeable": false,
-          "type": "Collector's",
-          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Heart Chick (Art by Lumina)",
+          "chance": 1,
+          "filename": "heartchickur",
+          "name": "Heart Chick (Ultra Rare)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by Kyle Labriola)",
           "smell": "Broken Glass",
           "bonuses": {},
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832647183089401866/heartchickc.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832648380047163392/heartchickur.png"
+        },
+        {
+          "chance": 1,
+          "filename": "heartchickalt",
+          "name": "Heart Chick (Alternate)",
+          "tradeable": true,
+          "type": "Alternate",
+          "description": "(Art by Winston Lee)",
+          "smell": "Scratchless Eggshells",
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839199088058433566/heartchickalt.png"
         }
       ]
     },
