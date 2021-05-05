@@ -1511,7 +1511,7 @@
           "description": "(Art by Winston Lee)",
           "smell": "Plastic",
           "bonuses": {
-            "rustysword": true,
+            "rustysword": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839226590885314570/samuraialt.png"
         },

@@ -66,12 +66,12 @@
   },
   "scribblednotepad": {
     "name": "Scribbled-in Notepad",
-    "description": "Makes editor cards or more likely to be pulled.",
+    "description": "Makes editor cards more likely to be pulled.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/837683791753248848/scribblednotepad.png"
   },
   "okamiiscollar": {
     "name": "okamii's Collar",
-    "description": "Makes Rare cards or more likely to be pulled.",
+    "description": "Makes Rare cards more likely to be pulled.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839103443347046460/okamiiscollar.png"
   },
   "coolhat": {
