@@ -2905,6 +2905,22 @@
             "paddedstickersheet": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839152086812983366/pharamatara.png"
+        },
+        {
+          "chance": 2,
+          "filename": "nichijoint",
+          "name": "Nichijoint - My Ordinary Weed",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "its here. its the weed card. (Level by megaminerzero, notDonte, and AdipemDragon)",
+          "smell": "April 20th",
+          "season": 0,
+          "bonuses": {
+            "paddedstickersheet": true,
+            "rustysword": true,
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839603874943074385/nichijoint.png"
         }
       ]
     },
@@ -2938,7 +2954,7 @@
           "type": "Meme",
           "description": "(Art by Winston Lee)",
           "smell": ":beans:",
-          "season": 4,
+          "season": 0,
           "bonuses": {
             "duncecap": true
           },
@@ -2952,7 +2968,7 @@
           "type": "Meme",
           "description": "(Art by Winston Lee, edited by Szprycha)",
           "smell": "Eggs",
-          "season": 4,
+          "season": 0,
           "bonuses": {
             "rustysword": true,
             "duncecap": true
@@ -2967,7 +2983,7 @@
           "type": "Meme",
           "description": "(Art by Kyle Labriola, edited by DeadlySprinklez)",
           "smell": "Eggs",
-          "season": 4,
+          "season": 0,
           "bonuses": {
             "rustysword": true,
             "duncecap": true
@@ -2982,7 +2998,7 @@
           "type": "Meme",
           "description": "(Art by Fizzd)",
           "smell": "Malpractice",
-          "season": 4,
+          "season": 0,
           "bonuses": {
             "duncecap": true
           },
@@ -2996,7 +3012,7 @@
           "type": "Meme",
           "description": "(Art by Lumina, based on art by Fizzd) weh",
           "smell": "Malpractice",
-          "season": 4,
+          "season": 0,
           "bonuses": {
             "duncecap": true
           },
@@ -3010,7 +3026,7 @@
           "type": "Meme",
           "description": "(Art by Winston Lee, edited by Axobotl)",
           "smell": "Dumpster Diving",
-          "season": 4,
+          "season": 0,
           "bonuses": {
             "oversizedstethoscope": true,
             "duncecap": true
@@ -3025,7 +3041,7 @@
           "type": "Meme",
           "description": "(Art by Dr Levi)",
           "smell": "Dumpster Diving",
-          "season": 4,
+          "season": 0,
           "bonuses": {
             "oversizedstethoscope": true,
             "duncecap": true
@@ -3040,7 +3056,7 @@
           "type": "Meme",
           "description": "(Art by Giacomo)",
           "smell": "Accuracy",
-          "season": 4,
+          "season": 0,
           "bonuses": {
             "duncecap": true
           },
@@ -3054,7 +3070,7 @@
           "type": "Meme",
           "description": "(Art by DPS2004)",
           "smell": "Accuracy",
-          "season": 4,
+          "season": 0,
           "bonuses": {
             "duncecap": true
           },
@@ -3068,7 +3084,7 @@
           "type": "Meme",
           "description": "(Art by Winston Lee, edited by Kin)",
           "smell": "Bad Opinions",
-          "season": 4,
+          "season": 0,
           "bonuses": {
             "valentinesdaycard": true,
             "duncecap": true
@@ -3083,7 +3099,7 @@
           "type": "Meme",
           "description": "(Art by Het)",
           "smell": "Bad Opinions",
-          "season": 4,
+          "season": 0,
           "bonuses": {
             "valentinesdaycard": true,
             "duncecap": true
@@ -3098,7 +3114,7 @@
           "type": "Meme",
           "description": "(Art by Het)",
           "smell": "Bad Opinions",
-          "season": 4,
+          "season": 0,
           "bonuses": {
             "valentinesdaycard": true,
             "duncecap": true
