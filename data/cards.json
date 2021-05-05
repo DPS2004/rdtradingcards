@@ -2881,7 +2881,7 @@
         {
           "chance": 2,
           "filename": "machinegun",
-          "name": "Machine gun",
+          "name": "Machine Gun",
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by lugi)",
@@ -2928,7 +2928,7 @@
     },
     {
       "groupname": "memes",
-      "basechance": 4,
+      "basechance": 3,
       "cards": [
         {
           "chance": 3,
