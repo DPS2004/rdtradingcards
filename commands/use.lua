@@ -241,7 +241,7 @@ function command.run(message, mt)
           newmessage = message.channel:send{embed = {
             color = 0x85c5ff,
             title = "Using Mouse Hole...",
-            description = 'Do you want to put your **Broken Mouse** into the **Mouse Hole?**',
+            description = message.author.mentionString .. ', do you want to put your **Broken Mouse** into the **Mouse Hole?**',
           }}
           local tf = dpf.loadjson("savedata/events.json",{})
           
@@ -267,7 +267,7 @@ function command.run(message, mt)
             newmessage = message.channel:send{embed = {
               color = 0x85c5ff,
               title = "Using Peculiar Box...",
-              description = 'Will you put a random **Trading Card** from your inventory in the **Peculiar Box?**.',
+              description = message.author.mentionString .. ', will you put a random **Trading Card** from your inventory in the **Peculiar Box?**.',
             }}
             local tf = dpf.loadjson("savedata/events.json",{})
             
@@ -318,6 +318,10 @@ function command.run(message, mt)
               title = "Using Terminal...",
               image = {
                 url = "https://cdn.discordapp.com/attachments/829197797789532181/838841498757234728/terminal3.png"
+              },
+              footer = {
+                text =  message.author.name,
+                icon_url = message.author.avatarURL
               }
             }}
             wj.worldstate = "terminalopen"
@@ -327,6 +331,10 @@ function command.run(message, mt)
               title = "Using Terminal...",
               image = {
                 url = "https://cdn.discordapp.com/attachments/829197797789532181/838841479698579587/terminal4.png"
+              },
+              footer = {
+                text =  message.author.name,
+                icon_url = message.author.avatarURL
               }
             }}
           end
@@ -338,6 +346,10 @@ function command.run(message, mt)
               description = '`ERROR: USER ALREADY LOGGED IN`',
               image = {
                 url = "https://cdn.discordapp.com/attachments/829197797789532181/838836625391484979/terminal2.gif"
+              },
+              footer = {
+                text =  message.author.name,
+                icon_url = message.author.avatarURL
               }
             }}
           elseif string.lower(mt[2]) == "cat" then
@@ -347,6 +359,10 @@ function command.run(message, mt)
               description = '`=^•_•^=`',
               image = {
                 url = "https://cdn.discordapp.com/attachments/829197797789532181/838840001310752788/terminalcat.gif"
+              },
+              footer = {
+                text =  message.author.name,
+                icon_url = message.author.avatarURL
               }
             }}
           elseif string.lower(mt[2]) == "help" then
@@ -356,6 +372,10 @@ function command.run(message, mt)
               description = '`AVAILABLE COMMANDS: \nHELP\nSTATS\nUPGRADE\nCREDITS`',
               image = {
                 url = "https://cdn.discordapp.com/attachments/829197797789532181/838836625391484979/terminal2.gif"
+              },
+              footer = {
+                text =  message.author.name,
+                icon_url = message.author.avatarURL
               }
             }}
           elseif string.lower(mt[2]) == "stats" then
@@ -399,18 +419,22 @@ function command.run(message, mt)
             message.channel:send{embed = {
               color = 0x85c5ff,
               title = "Using Terminal...",
-              description = 'The **Terminal** prints out a slip of paper. It reads:\n`Times Pulled: ' .. uj.timespulled .. '\nTimes Used: ' .. uj.timesused .. '\nTimes Looked: ' .. uj.timeslooked .. '\nTimes Prayed: ' .. uj.timesprayed .. '\nTimes Shredded: ' .. uj.timesshredded .. '\nTimes Stored: ' .. uj.timesstored .. '\nTimes Traded: ' .. uj.timestraded .. '\nTimes Peculiar Box has been Used: ' .. uj.timesusedbox .. '\nTimes Doubleclicked: ' .. uj.timesdoubleclicked .. '\nTokens Donated: ' .. uj.tokensdonated .. '\nCards Given: ' .. uj.timescardgiven .. '\nCards Received: ' .. uj.timescardreceived .. easteregg .. '`'
-
-
+              description = 'The **Terminal** prints out a slip of paper. It reads:\n`Times Pulled: ' .. uj.timespulled .. '\nTimes Used: ' .. uj.timesused .. '\nTimes Looked: ' .. uj.timeslooked .. '\nTimes Prayed: ' .. uj.timesprayed .. '\nTimes Shredded: ' .. uj.timesshredded .. '\nTimes Stored: ' .. uj.timesstored .. '\nTimes Traded: ' .. uj.timestraded .. '\nTimes Peculiar Box has been Used: ' .. uj.timesusedbox .. '\nTimes Doubleclicked: ' .. uj.timesdoubleclicked .. '\nTokens Donated: ' .. uj.tokensdonated .. '\nCards Given: ' .. uj.timescardgiven .. '\nCards Received: ' .. uj.timescardreceived .. easteregg .. '`',
+              footer = {
+                text =  message.author.name,
+                icon_url = message.author.avatarURL
+              }
             }}
             
           elseif string.lower(mt[2]) == "credits" then
             message.channel:send{embed = {
               color = 0x85c5ff,
               title = "Credits",
-              description = 'https://docs.google.com/document/d/1WgUqA8HNlBtjaM4Gpp4vTTEZf9t60EuJ34jl2TleThQ/edit?usp=sharing'
-
-
+              description = 'https://docs.google.com/document/d/1WgUqA8HNlBtjaM4Gpp4vTTEZf9t60EuJ34jl2TleThQ/edit?usp=sharing',
+              footer = {
+                text =  message.author.name,
+                icon_url = message.author.avatarURL
+              }
             }}
           elseif string.lower(mt[2]) == "upgrade" then
             if uj.tokens > 0 then
@@ -420,13 +444,15 @@ function command.run(message, mt)
                   description = 'Will you put a **Token** into the **Terminal?** (tokens remaining: ' .. uj.tokens .. ')',
                   image = {
                     url = "https://cdn.discordapp.com/attachments/829197797789532181/838894186472275988/terminal5.png"
+                  },
+                  footer = {
+                    text =  message.author.name,
+                    icon_url = message.author.avatarURL
                   }
-
-
                 }}
               addreacts(newmessage)
               local tf = dpf.loadjson("savedata/events.json",{})
-              tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "usehole",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
+              tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "usehole",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString, avatarURL = message.author.avatarURL}}}
               dpf.savejson("savedata/events.json",tf)
             else
               message.channel:send{embed = {
@@ -435,9 +461,11 @@ function command.run(message, mt)
                 description = 'Unfortunately, you have no **Tokens** to your name.',
                 image = {
                   url = "https://cdn.discordapp.com/attachments/829197797789532181/838894186472275988/terminal5.png"
+                },
+                footer = {
+                  text =  message.author.name,
+                  icon_url = message.author.avatarURL
                 }
-
-
               }}
             end
           
@@ -445,7 +473,11 @@ function command.run(message, mt)
             message.channel:send{embed = {
               color = 0x85c5ff,
               title = "Using Terminal...",
-              description = '`COMMAND "' .. mt[2] ..  '" NOT RECOGNIZED`'
+              description = '`COMMAND "' .. mt[2] ..  '" NOT RECOGNIZED`',
+              footer = {
+                text =  message.author.name,
+                icon_url = message.author.avatarURL
+              }
             }}
           end
         end

@@ -309,7 +309,7 @@ function command.run(message, mt)
           message.channel:send{embed = {
             color = 0x85c5ff,
             title = "Looking at Ladder...",
-            description = 'The **Ladder** feels too big to fit in a capsule, but that\'s where it came from. It is currently propped up in the **Hole**',
+            description = 'The **Ladder** feels too big to fit in a capsule, but that\'s where it came from. It is currently propped up in the **Hole**.',
             image = {
               url = 'https://cdn.discordapp.com/attachments/829197797789532181/831507279164997642/holeclosefinal.png'
             }

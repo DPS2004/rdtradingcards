@@ -36,7 +36,7 @@ function reaction.run(ef, eom, reaction, userid)
       wj.boxpool[boxpoolindex] = givecard
       
       local newmessage = reaction.message.channel:send {
-        content = 'You grab a **' .. fntoname(givecard) .. '** card from your inventory, and place it inside the box. As it goes in, a **' .. fntoname(getcard) .. '** card shows up in your pocket!'
+        content = '<@' .. uj.id .. '> grabs a **' .. fntoname(givecard) .. '** card from their inventory, and place it inside the box. As it goes in, a **' .. fntoname(getcard) .. '** card shows up in their pocket!'
       }
       
       if uj.timesusedbox == nil then

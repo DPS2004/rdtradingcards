@@ -240,6 +240,7 @@ function command.run(message, mt,overwrite)
           cuj.lastpull = -24
           cuj.lastprayer = -24
           cuj.lastequip = -24
+          cuj.lastbox = -24
         end
         dpf.savejson("savedata/"..v,cuj)
       end

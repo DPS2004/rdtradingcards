@@ -62,6 +62,10 @@ function reaction.run(ef, eom, reaction, userid)
             description = 'The **Terminal** whirrs happily.',
             image = {
               url = upgradeimages[math.random(1,#upgradeimages)]
+            },
+            footer = {
+              text =  eom.ogmessage.author.name,
+              icon_url = eom.ogmessage.author.avatarURL
             }
           }}
         }
