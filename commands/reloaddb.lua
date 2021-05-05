@@ -420,7 +420,7 @@ function command.run(message, mt,overwrite)
       for i,v in ipairs(scandir("savedata")) do
         cuj = dpf.loadjson("savedata/"..v,defaultjson)
         if cuj.id then
-          if cuj.id == x or ("<@!" .. cuj.id .. ">") == x then --prioritize id and mentions over nickname
+          if cuj.id == x or ("<@!" .. cuj.id .. ">") == x or ("<@" .. cuj.id .. ">") == x then --prioritize id and mentions over nickname
             return "savedata/"..v
           end
         end
