@@ -10,6 +10,7 @@ end
 local command = {}
 function command.run(message, mt)
   print(message.author.name .. " did !use")
+  local time = sw:getTime()
   if message.guild then
     local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
     local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
