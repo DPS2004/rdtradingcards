@@ -44,6 +44,7 @@ function reaction.run(ef, eom, reaction, userid)
       else
         uj.timesusedbox = uj.timesusedbox + 1
       end
+      uj.lastbox = time:toHours()
       
       dpf.savejson(ujf,uj)
       ef[reaction.message.id] = nil

@@ -258,24 +258,51 @@ function command.run(message, mt)
           
         end 
       elseif  (string.lower(mt[1]) == "peculiar box" or string.lower(mt[1]) == "box" or string.lower(mt[1]) == "peculiarbox") and wj.labdiscovered  then 
-        if uj.inventory ~= {} then
-          newmessage = message.channel:send{embed = {
-            color = 0x85c5ff,
-            title = "Using Peculiar Box...",
-            description = 'Will you put a random **Trading Card** from your inventory in the **Peculiar Box?**.',
-          }}
-          local tf = dpf.loadjson("savedata/events.json",{})
-          
-          addreacts(newmessage)
-          tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "usebox",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
-          
-          dpf.savejson("savedata/events.json",tf)
+        if not uj.lastbox then 
+          uj.lastbox = -24
+        end
+        if uj.lastbox + 11.5 <= time:toHours() then
+          if uj.inventory ~= {} then
+            newmessage = message.channel:send{embed = {
+              color = 0x85c5ff,
+              title = "Using Peculiar Box...",
+              description = 'Will you put a random **Trading Card** from your inventory in the **Peculiar Box?**.',
+            }}
+            local tf = dpf.loadjson("savedata/events.json",{})
+            
+            addreacts(newmessage)
+            tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "usebox",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
+            
+            dpf.savejson("savedata/events.json",tf)
+          else
+            newmessage = message.channel:send{embed = {
+              color = 0x85c5ff,
+              title = "Using Peculiar Box...",
+              description = 'You do not have any cards to put into the **Peculiar Box**',
+            }}
+          end
         else
-          newmessage = message.channel:send{embed = {
-            color = 0x85c5ff,
-            title = "Using Peculiar Box...",
-            description = 'You do not have any cards to put into the **Peculiar Box**',
-          }}
+
+          local minutesleft = math.ceil(uj.lastbox * 60 - time:toMinutes() + 11.5 * 60)
+          local durationtext = ""
+          if math.floor(minutesleft / 60) > 0 then
+            durationtext = math.floor(minutesleft / 60) .. " hour"
+            if math.floor(minutesleft / 60) ~= 1 then
+              durationtext = durationtext .. "s"
+            end
+          end
+          if minutesleft % 60 > 0 then
+            if durationtext ~= "" then
+              durationtext = durationtext .. " and "
+            end
+            durationtext = durationtext .. minutesleft % 60 .. " minute"
+            if minutesleft % 60 ~= 1 then
+              durationtext = durationtext .. "s"
+            end
+          end
+          message.channel:send('Please wait ' .. durationtext .. ' before using the box again.')
+          
+          
         end
       elseif (string.lower(mt[1]) == "terminal") and wj.labdiscovered  then 
         uj = adduse(uj)
