@@ -1107,6 +1107,7 @@
           "type": "Discontinued",
           "description": "(Art by Winston Lee)",
           "smell": "Young Love",
+          "season": 5,
           "bonuses": {
             "valentinesdaycard": true
           },
@@ -1120,6 +1121,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Logan (Art by Kyle Labriola)",
           "smell": "Young Love",
+          "season": 1,
           "bonuses": {
             "valentinesdaycard": true
           },
@@ -1139,6 +1141,7 @@
           "type": "Rare",
           "description": "(Art by Winston Lee)",
           "smell": "Coal",
+          "season": 1,
           "bonuses": {
             "okamiiscollar": true
           },
@@ -1152,6 +1155,7 @@
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Coal",
+          "season": 1,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202087949762600/minersr.png"
         },
@@ -1163,6 +1167,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Coal",
+          "season": 1,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202094220509234/minerur.png"
         },
@@ -1174,6 +1179,7 @@
           "type": "Discontinued",
           "description": "(Art by Winston Lee)",
           "smell": "Coal",
+          "season": 5,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162170129514506/minerdc.png"
         },
@@ -1185,6 +1191,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Miner (Art by Kyle Labriola)",
           "smell": "Coal",
+          "season": 1,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202076215148565/minerc.png"
         }
@@ -1202,6 +1209,7 @@
           "type": "Rare",
           "description": "(Art by Winston Lee)",
           "smell": "Old Women",
+          "season": 1,
           "bonuses": {
             "hardcandy": true,
             "okamiiscollar": true
@@ -1216,6 +1224,7 @@
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Old Women",
+          "season": 1,
           "bonuses": {
             "hardcandy": true
           },
@@ -1229,6 +1238,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Old Women",
+          "season": 1,
           "bonuses": {
             "hardcandy": true
           },
@@ -1242,6 +1252,7 @@
           "type": "Discontinued",
           "description": "(Art by Winston Lee)",
           "smell": "Really Old Women",
+          "season": 5,
           "bonuses": {
             "hardcandy": true
           },
@@ -1255,6 +1266,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Mrs. Stevenson (Art by Kyle Labriola)",
           "smell": "Old Women",
+          "season": 1,
           "bonuses": {
             "hardcandy": true
           },
@@ -1274,6 +1286,7 @@
           "type": "Rare",
           "description": "(Art by Winston Lee)",
           "smell": "Old Men",
+          "season": 1,
           "bonuses": {
             "hardcandy": true,
             "okamiiscollar": true
@@ -1288,6 +1301,7 @@
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Old Men",
+          "season": 1,
           "bonuses": {
             "hardcandy": true
           },
@@ -1301,6 +1315,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Old Men",
+          "season": 1,
           "bonuses": {
             "hardcandy": true
           },
@@ -1314,6 +1329,7 @@
           "type": "Discontinued",
           "description": "(Art by Winston Lee)",
           "smell": "Really Old Men",
+          "season": 5,
           "bonuses": {
             "hardcandy": true
           },
@@ -1327,6 +1343,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Mr. Stevenson (Art by Kyle Labriola)",
           "smell": "Old Men",
+          "season": 1,
           "bonuses": {
             "hardcandy": true
           },
@@ -1346,6 +1363,7 @@
           "type": "Rare",
           "description": "(Art by Winston Lee)",
           "smell": "Sweat and Tears",
+          "season": 1,
           "bonuses": {
             "oversizedstethoscope": true,
             "okamiiscollar": true
@@ -1360,6 +1378,7 @@
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Sweat and Tears",
+          "season": 1,
           "bonuses": {
             "oversizedstethoscope": true
           },
@@ -1373,6 +1392,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Sweat and Tears",
+          "season": 1,
           "bonuses": {
             "oversizedstethoscope": true
           },
@@ -1386,6 +1406,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Paige (Art by Kyle Labriola)",
           "smell": "Sweat and Tears",
+          "season": 1,
           "bonuses": {
             "oversizedstethoscope": true
           },
@@ -1405,6 +1426,7 @@
           "type": "Rare",
           "description": "(Art by Winston Lee)",
           "smell": "Democracy",
+          "season": 1,
           "bonuses": {
             "okamiiscollar": true
           },
@@ -1418,6 +1440,7 @@
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Democracy",
+          "season": 1,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202407238008904/politiciansr.png"
         },
@@ -1429,6 +1452,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Democracy",
+          "season": 1,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202413432733746/politicianur.png"
         },
@@ -1440,6 +1464,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of the Politician (Art by Kyle Labriola)",
           "smell": "Democracy",
+          "season": 1,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202395971715082/politicianc.png"
         }
@@ -1457,6 +1482,7 @@
           "type": "Rare",
           "description": "(Art by Winston Lee)",
           "smell": "Metal",
+          "season": 1,
           "bonuses": {
             "rustysword": true,
             "okamiiscollar": true
@@ -1471,6 +1497,7 @@
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Metal",
+          "season": 1,
           "bonuses": {
             "rustysword": true
           },
@@ -1484,6 +1511,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Metal",
+          "season": 1,
           "bonuses": {
             "rustysword": true
           },
@@ -1497,6 +1525,7 @@
           "type": "Discontinued",
           "description": "(Art by Winston Lee)",
           "smell": "Metal",
+          "season": 5,
           "bonuses": {
             "rustysword": true
           },
@@ -1510,6 +1539,7 @@
           "type": "Alternate",
           "description": "(Art by Winston Lee)",
           "smell": "Plastic",
+          "season": 5,
           "bonuses": {
             "rustysword": true
           },
@@ -1523,6 +1553,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Samurai (Art by Kyle Labriola)",
           "smell": "Samurai",
+          "season": 1,
           "bonuses": {
             "rustysword": true
           },
@@ -1542,6 +1573,7 @@
           "type": "Rare",
           "description": "(Art by Winston Lee)",
           "smell": "Minimum Wage",
+          "season": 3,
           "bonuses": {
             "cafemixtape": true,
             "okamiiscollar": true
@@ -1556,6 +1588,7 @@
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola, edited by Lumina)",
           "smell": "Minimum Wage",
+          "season": 3,
           "bonuses": {
             "cafemixtape": true
           },
@@ -1569,6 +1602,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola, edited by Lumina)",
           "smell": "Minimum Wage",
+          "season": 3,
           "bonuses": {
             "cafemixtape": true
           },
@@ -1582,6 +1616,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Nicole Ting (Art by Lumina, based on art by Kyle Labriola)",
           "smell": "Minimum Wage",
+          "season": 3,
           "bonuses": {
             "cafemixtape": true
           },
@@ -1601,6 +1636,7 @@
           "type": "Rare",
           "description": "(Art by Adipemdragon)",
           "smell": "Imagination",
+          "season": 3,
           "bonuses": {
             "okamiiscollar": true
           },
@@ -1614,6 +1650,7 @@
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola, edited by Lumina)",
           "smell": "Imagination",
+          "season": 3,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202060981436446/luciasr.png"
         },
@@ -1625,6 +1662,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola, edited by Lumina)",
           "smell": "Imagination",
+          "season": 3,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202070208118784/luciaur.png"
         },
@@ -1636,6 +1674,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Lucia Moon (Art by Lumina, based on art by Kyle Labriola)",
           "smell": "Imagination",
+          "season": 3,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202045797924864/luciac.png"
         }
@@ -1653,6 +1692,7 @@
           "type": "Rare",
           "description": "(Art by Winston Lee)",
           "smell": "Freestyle Rap",
+          "season": 3,
           "bonuses": {
             "okamiiscollar": true
           },
@@ -1666,6 +1706,7 @@
           "type": "Super Rare",
           "description": "(Art by DeadlySprinklez)",
           "smell": "Freestyle Rap",
+          "season": 3,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203019974574080/yosr.png"
         },
@@ -1677,6 +1718,7 @@
           "type": "Ultra Rare",
           "description": "(Art by DeadlySprinklez)",
           "smell": "Freestyle Rap",
+          "season": 3,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203033362923530/your.png"
         },
@@ -1688,6 +1730,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Yo (Art by Lumina, based on art by Kyle Labriola)",
           "smell": "Freestyle Rap",
+          "season": 3,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203005357555762/yoc.png"
         }
@@ -1705,6 +1748,7 @@
           "type": "Rare",
           "description": "(Art by Giacomo)",
           "smell": "Computer Chips",
+          "season": 5,
           "bonuses": {
             "okamiiscollar": true
           },
@@ -1718,6 +1762,7 @@
           "type": "Super Rare",
           "description": "(Art by Axobotl)",
           "smell": "Computer Chips",
+          "season": 5,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202332351856671/ottosr.png"
         },
@@ -1729,6 +1774,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Lumina)",
           "smell": "Computer Chips",
+          "season": 5,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202342809174036/ottour.png"
         },
@@ -1740,6 +1786,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Otto (Art by Lumina)",
           "smell": "Computer Chips",
+          "season": 5,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202317097041950/ottoc.png"
         }
@@ -1757,6 +1804,7 @@
           "type": "Rare",
           "description": "(Art by Winston Lee)",
           "smell": "Broken Glass",
+          "season": 5,
           "bonuses": {
             "okamiiscollar": true
           },
@@ -1770,6 +1818,7 @@
           "type": "Super Rare",
           "description": "(Art by Lumina)",
           "smell": "Broken Glass",
+          "season": 5,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832647186780782700/heartchicksr.png"
         },
@@ -1781,19 +1830,21 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Broken Glass",
+          "season": 5,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832648380047163392/heartchickur.png"
         },
         {
-          "chance": 1,
-          "filename": "heartchickur",
-          "name": "Heart Chick (Ultra Rare)",
-          "tradeable": true,
-          "type": "Ultra Rare",
-          "description": "(Art by Kyle Labriola)",
+          "chance": 0,
+          "filename": "heartchickc",
+          "name": "Heart Chick (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Heart Chick (Art by Lumina)",
           "smell": "Broken Glass",
+          "season": 5,
           "bonuses": {},
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832648380047163392/heartchickur.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839530317366034472/heartchickc.png"
         },
         {
           "chance": 1,
@@ -1803,6 +1854,7 @@
           "type": "Alternate",
           "description": "(Art by Winston Lee)",
           "smell": "Scratchless Eggshells",
+          "season": 5,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839199088058433566/heartchickalt.png"
         }
@@ -1825,6 +1877,7 @@
           "type": "Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Time Bending",
+          "season": 1,
           "bonuses": {
             "scribblednotepad": true,
             "okamiiscollar": true
@@ -1839,6 +1892,7 @@
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Time Bending",
+          "season": 1,
           "bonuses": {
             "scribblednotepad": true
           },
@@ -1852,6 +1906,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Time Bending",
+          "season": 1,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202521355976715/roomsur.png"
         },
@@ -1863,6 +1918,7 @@
           "type": "Discontinued",
           "description": "(Art by Kyle Labriola)",
           "smell": "3000 Pixels",
+          "season": 1,
           "bonuses": {
             "scribblednotepad": true
           },
@@ -1876,6 +1932,7 @@
           "type": "Discontinued",
           "description": "(Art by Kyle Labriola)",
           "smell": "3000 Pixels",
+          "season": 1,
           "bonuses": {
             "scribblednotepad": true
           },
@@ -1889,6 +1946,7 @@
           "type": "Discontinued",
           "description": "(Art by Kyle Labriola)",
           "smell": "3000 Pixels",
+          "season": 1,
           "bonuses": {
             "scribblednotepad": true
           },
@@ -1908,6 +1966,7 @@
           "type": "Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Overcharting",
+          "season": 1,
           "bonuses": {
             "scribblednotepad": true,
             "okamiiscollar": true
@@ -1922,6 +1981,7 @@
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Overcharting",
+          "season": 1,
           "bonuses": {
             "scribblednotepad": true
           },
@@ -1935,6 +1995,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Overcharting",
+          "season": 1,
           "bonuses": {
             "scribblednotepad": true
           },
@@ -1954,6 +2015,7 @@
           "type": "Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Kneecaps",
+          "season": 1,
           "bonuses": {
             "scribblednotepad": true,
             "okamiiscollar": true
@@ -1968,6 +2030,7 @@
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Kneecaps",
+          "season": 1,
           "bonuses": {
             "scribblednotepad": true
           },
@@ -1981,6 +2044,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Kneecaps",
+          "season": 1,
           "bonuses": {
             "scribblednotepad": true
           },
@@ -2000,6 +2064,7 @@
           "type": "Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Too Much Gray",
+          "season": 1,
           "bonuses": {
             "scribblednotepad": true,
             "okamiiscollar": true
@@ -2014,6 +2079,7 @@
           "type": "Super Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Too Much Gray",
+          "season": 1,
           "bonuses": {
             "scribblednotepad": true
           },
@@ -2027,6 +2093,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Too Much Gray",
+          "season": 1,
           "bonuses": {
             "scribblednotepad": true
           },
@@ -2046,6 +2113,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Butterflies",
+          "season": 1,
           "bonuses": {
             "rustysword": true
           },
@@ -2059,6 +2127,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Old Age",
+          "season": 1,
           "bonuses": {
             "hardcandy": true
           },
@@ -2072,6 +2141,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Blushing",
+          "season": 1,
           "bonuses": {
             "valentinesdaycard": true
           },
@@ -2085,6 +2155,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kyle Labriola)",
           "smell": "Overworking",
+          "season": 1,
           "bonuses": {
             "oversizedstethoscope": true
           },
@@ -2098,6 +2169,7 @@
           "type": "Collector's",
           "description": "Requires Samurai (Collector's) and The Samurai Group (Art by Kyle Labriola)",
           "smell": "Butterflies",
+          "season": 2,
           "bonuses": {
             "rustysword": true
           },
@@ -2111,6 +2183,7 @@
           "type": "Collector's",
           "description": "Requires Mrs. Stevenson (Collector's), Mr. Stevenson (Collector's), and The Stevenson Group (Art by Kyle Labriola)",
           "smell": "Old Age",
+          "season": 2,
           "bonuses": {
             "hardcandy": true
           },
@@ -2124,6 +2197,7 @@
           "type": "Collector's",
           "description": "Requires Logan (Collector's), Hailey (Collector's), and The Couple Group (Art by Kyle Labriola)",
           "smell": "Blushing",
+          "season": 2,
           "bonuses": {
             "valentinesdaycard": true
           },
@@ -2137,6 +2211,7 @@
           "type": "Collector's",
           "description": "Requires Paige (Collector's), Ian (Collector's), and The Doctor Group (Art by Kyle Labriola)",
           "smell": "Overworking",
+          "season": 2,
           "bonuses": {
             "oversizedstethoscope": true
           },
@@ -2156,6 +2231,7 @@
           "type": "Super Rare",
           "description": "(Level by fartiliumstation)",
           "smell": "Otherworldly Beings",
+          "season": 2,
           "bonuses": {
             "valentinesdaycard": true
           },
@@ -2169,6 +2245,7 @@
           "type": "Super Rare",
           "description": "(Level by noonhead)",
           "smell": "Two Halves of a Whole",
+          "season": 2,
           "bonuses": {
             "rustysword": true
           },
@@ -2182,6 +2259,7 @@
           "type": "Super Rare",
           "description": "(Level by Nocallia)",
           "smell": "Elliptical Orbits",
+          "season": 2,
           "bonuses": {
             "valentinesdaycard": true
           },
@@ -2195,6 +2273,7 @@
           "type": "Super Rare",
           "description": "(Level by CV35W)",
           "smell": "Murder",
+          "season": 2,
           "bonuses": {
             "paddedstickersheet": true
           },
@@ -2208,6 +2287,7 @@
           "type": "Super Rare",
           "description": "(Level by Some J Name, Het, DPS2004, and Samario)",
           "smell": "Freshly Cooked Lobster",
+          "season": 2,
           "bonuses": {
             "duncecap": true
           },
@@ -2221,6 +2301,7 @@
           "type": "Super Rare",
           "description": "(Level by thefinals)",
           "smell": "Ectoplasm",
+          "season": 2,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201610488020993/ghostsplay.png"
         },
@@ -2232,6 +2313,7 @@
           "type": "Super Rare",
           "description": "(Level by Szprycha)",
           "smell": "16 Bits",
+          "season": 2,
           "bonuses": {
             "rustysword": true,
             "paddedstickersheet": true
@@ -2246,6 +2328,7 @@
           "type": "Super Rare",
           "description": "(Level by Kneeckoh)",
           "smell": "Quadrilateral Shapes",
+          "season": 2,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202768963174400/square.png"
         },
@@ -2257,6 +2340,7 @@
           "type": "Super Rare",
           "description": "(Level by Samario)",
           "smell": "[undefined]",
+          "season": 2,
           "bonuses": {
             "oversizedstethoscope": true
           },
@@ -2271,6 +2355,7 @@
           "type": "Super Rare",
           "description": "(Level by thefinals)",
           "smell": "Fluoride",
+          "season": 2,
           "bonuses": {
             "valentinesdaycard": true
           },
@@ -2284,6 +2369,7 @@
           "type": "Super Rare",
           "description": "(Level by DPS2004 and Xeno)",
           "smell": "Mummies",
+          "season": 2,
           "bonuses": {
             "paddedstickersheet": true
           },
@@ -2297,6 +2383,7 @@
           "type": "Super Rare",
           "description": "(Level by CV35W)",
           "smell": "Spiderwebs",
+          "season": 2,
           "bonuses": {
             "paddedstickersheet": true
           },
@@ -2310,6 +2397,7 @@
           "type": "Super Rare",
           "description": "(Level by thefinals)",
           "smell": "Pollen",
+          "season": 2,
           "bonuses": {
             "valentinesdaycard": true
           },
@@ -2323,6 +2411,7 @@
           "type": "Super Rare",
           "description": "(Level by auth)",
           "smell": "Emergency Services",
+          "season": 2,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202203809677322/mylevel.png"
         },
@@ -2334,6 +2423,7 @@
           "type": "Super Rare",
           "description": "(Level by Noche)",
           "smell": "Crystals",
+          "season": 2,
           "bonuses": {
             "oversizedstethoscope": true
           },
@@ -2347,6 +2437,7 @@
           "type": "Super Rare",
           "description": "(Level by fartiliumstation)",
           "smell": "Hollywood",
+          "season": 3,
           "bonuses": {
             "paddedstickersheet": true
           },
@@ -2360,6 +2451,7 @@
           "type": "Super Rare",
           "description": "(Level by MarioMak967)",
           "smell": "Mahogany",
+          "season": 3,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201667860856843/hideandseek.png"
         },
@@ -2371,6 +2463,7 @@
           "type": "Super Rare",
           "description": "(Level by void)",
           "smell": "Dabbing",
+          "season": 3,
           "bonuses": {
             "paddedstickersheet": true
           },
@@ -2384,6 +2477,7 @@
           "type": "Super Rare",
           "description": "(Level by Kin, Xeno, MarioMak967, and Econ)",
           "smell": "Maple Syrup",
+          "season": 3,
           "bonuses": {
             "deluxebirdseed": true,
             "paddedstickersheet": true
@@ -2398,6 +2492,7 @@
           "type": "Super Rare",
           "description": "(Level by Kin)",
           "smell": "Potted Plants",
+          "season": 3,
           "bonuses": {
             "paddedstickersheet": true
           },
@@ -2411,6 +2506,7 @@
           "type": "Super Rare",
           "description": "(Level by Nocallia)",
           "smell": "Airplane Peanuts",
+          "season": 3,
           "bonuses": {
             "valentinesdaycard": true
           },
@@ -2424,6 +2520,7 @@
           "type": "Super Rare",
           "description": "(Level by Kin, Xeno, MarioMak967, and Econ)",
           "smell": "High-end Audio Equipment",
+          "season": 3,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200305966809088/aighgrayn.png"
         },
@@ -2435,6 +2532,7 @@
           "type": "Super Rare",
           "description": "(Level by MarioMak967)",
           "smell": "The Industrial Revolution",
+          "season": 3,
           "bonuses": {
             "valentinesdaycard": true,
             "rustysword": true,
@@ -2450,6 +2548,7 @@
           "type": "Super Rare",
           "description": "(Level by Bayou)",
           "smell": "Flamewars",
+          "season": 3,
           "bonuses": {
             "valentinesdaycard": true,
             "rustysword": true,
@@ -2465,6 +2564,7 @@
           "type": "Super Rare",
           "description": "(Level by InfectiousStepocity)",
           "smell": "16ths",
+          "season": 3,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202441458548796/reverence.png"
         },
@@ -2476,6 +2576,7 @@
           "type": "Super Rare",
           "description": "(Level by Lin Gamerz and Xeno)",
           "smell": "Tryhards",
+          "season": 3,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202545892524082/rpg.png"
         },
@@ -2487,6 +2588,7 @@
           "type": "Super Rare",
           "description": "(Level by Emdyion, Samario, DPS2004, thefinals, Some J Name, and Xeno)",
           "smell": "Fun:tm:",
+          "season": 3,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202555467857990/rrr.png"
         },
@@ -2498,6 +2600,7 @@
           "type": "Super Rare",
           "description": "(Level by Emdyion)",
           "smell": "Dubstep",
+          "season": 3,
           "bonuses": {
             "cafemixtape": true
           },
@@ -2511,6 +2614,7 @@
           "type": "Super Rare",
           "description": "(Level by notDonte and Xeno)",
           "smell": "Protein Shakes",
+          "season": 3,
           "bonuses": {
             "paddedstickersheet": true
           },
@@ -2524,6 +2628,7 @@
           "type": "Super Rare",
           "description": "(Level by CV35W)",
           "smell": "Guitar Solos",
+          "season": 3,
           "bonuses": {
             "paddedstickersheet": true
           },
@@ -2538,6 +2643,7 @@
           "type": "Super Rare",
           "description": "(Level by Kin, Xeno, and MarioMak967)",
           "smell": "The 7th Layer of Hell",
+          "season": 3,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202919563067392/underworld.gif"
         },
@@ -2549,6 +2655,7 @@
           "type": "Super Rare",
           "description": "(Level by Noche)",
           "smell": "nightmarenightmarenightmarenightmare",
+          "season": 3,
           "bonuses": {
             "rustysword": true,
             "oversizedstethoscope": true
@@ -2563,6 +2670,7 @@
           "type": "Super Rare",
           "description": "(Level by Colon)",
           "smell": "FlingSmash for the Nintendo Wii",
+          "season": 3,
           "bonuses": {
             "cafemixtape": true
           },
@@ -2576,6 +2684,7 @@
           "type": "Collector's",
           "description": "(Level by auth, Noche, and notDonte)",
           "smell": "Pure Crystals",
+          "season": 2,
           "bonuses": {
             "oversizedstethoscope": true
           },
@@ -2589,6 +2698,7 @@
           "type": "Super Rare",
           "description": "(Level by DPS2004 and Xeno)",
           "smell": "The Placebo Effect",
+          "season": 5,
           "bonuses": {
             "rustysword": true
           },
@@ -2602,6 +2712,7 @@
           "type": "Super Rare",
           "description": "(Level by megaminerzero)",
           "smell": "The Post Office",
+          "season": 5,
           "bonuses": {
             "rustysword": true
           },
@@ -2615,6 +2726,7 @@
           "type": "Super Rare",
           "description": "(Level by Samario)",
           "smell": "Nevada",
+          "season": 5,
           "bonuses": {
             "rustysword": true,
             "cafemixtape": true,
@@ -2630,6 +2742,7 @@
           "type": "Super Rare",
           "description": "(Level by yoshikirby26, based on the level by CV35W, go back UNBEATABLE on kickstarter! https://www.kickstarter.com/projects/dcellgames/unbeatable)",
           "smell": "Ink Ribbons",
+          "season": 5,
           "bonuses": {
             "valentinesdaycard": true,
             "oversizedstethoscope": true
@@ -2644,6 +2757,7 @@
           "type": "Super Rare",
           "description": "(Level by DPS2004)",
           "smell": "Sick Flips",
+          "season": 5,
           "bonuses": {
             "deluxebirdseed": true,
             "paddedstickersheet": true
@@ -2658,6 +2772,7 @@
           "type": "Super Rare",
           "description": "(Level by Plant Guy)",
           "smell": "Invasion",
+          "season": 5,
           "bonuses": {
             "rustysword": true,
             "paddedstickersheet": true
@@ -2672,6 +2787,7 @@
           "type": "Super Rare",
           "description": "(Level by JackArbor and Kin)",
           "smell": "Propeller Rats",
+          "season": 5,
           "bonuses": {
             "paddedstickersheet": true
           },
@@ -2685,6 +2801,7 @@
           "type": "Super Rare",
           "description": "(Level by Hyphex)",
           "smell": "Common Core",
+          "season": 5,
           "bonuses": {
             "cafemixtape": true
           },
@@ -2698,6 +2815,7 @@
           "type": "Super Rare",
           "description": "(Level by ddrr0077)",
           "smell": "Easter Island",
+          "season": 5,
           "bonuses": {
             "rustysword": true,
             "paddedstickersheet": true
@@ -2712,6 +2830,7 @@
           "type": "Super Rare",
           "description": "(Level by lugi, Qerewe, and Seven)",
           "smell": "Fabric",
+          "season": 5,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/831712853559214142/patchworkstaccato.png"
         },
@@ -2724,6 +2843,7 @@
           "type": "Super Rare",
           "description": "(Level by Kin)",
           "smell": "Lilypads",
+          "season": 5,
           "bonuses": {
             "valentinesdaycard": true
           },
@@ -2738,6 +2858,7 @@
           "type": "Super Rare",
           "description": "(Level by MarioMak967)",
           "smell": "Stay-Puft",
+          "season": 5,
           "bonuses": {
             "rustysword": true
           },
@@ -2751,6 +2872,7 @@
           "type": "Super Rare",
           "description": "(Level by Fritzy)",
           "smell": "Crowdfunding",
+          "season": 5,
           "bonuses": {
             "valentinesdaycard": true
           },
@@ -2764,6 +2886,7 @@
           "type": "Super Rare",
           "description": "(Level by lugi)",
           "smell": "Current Events",
+          "season": 5,
           "bonuses": {
             "valentinesdaycard": true
           },
@@ -2777,6 +2900,7 @@
           "type": "Super Rare",
           "description": "(Level by Some J Name, Het, and DPS2004)",
           "smell": "Marching Orders",
+          "season": 5,
           "bonuses": {
             "paddedstickersheet": true
           },
@@ -2796,6 +2920,7 @@
           "type": "Special",
           "description": "(this field intentionally left blank)",
           "smell": "THE ONE",
+          "season": 2,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202779016658994/ssss45.png"
         }
@@ -2813,6 +2938,7 @@
           "type": "Meme",
           "description": "(Art by Winston Lee)",
           "smell": ":beans:",
+          "season": 4,
           "bonuses": {
             "duncecap": true
           },
@@ -2826,6 +2952,7 @@
           "type": "Meme",
           "description": "(Art by Winston Lee, edited by Szprycha)",
           "smell": "Eggs",
+          "season": 4,
           "bonuses": {
             "rustysword": true,
             "duncecap": true
@@ -2840,6 +2967,7 @@
           "type": "Meme",
           "description": "(Art by Kyle Labriola, edited by DeadlySprinklez)",
           "smell": "Eggs",
+          "season": 4,
           "bonuses": {
             "rustysword": true,
             "duncecap": true
@@ -2854,6 +2982,7 @@
           "type": "Meme",
           "description": "(Art by Fizzd)",
           "smell": "Malpractice",
+          "season": 4,
           "bonuses": {
             "duncecap": true
           },
@@ -2867,6 +2996,7 @@
           "type": "Meme",
           "description": "(Art by Lumina, based on art by Fizzd) weh",
           "smell": "Malpractice",
+          "season": 4,
           "bonuses": {
             "duncecap": true
           },
@@ -2880,6 +3010,7 @@
           "type": "Meme",
           "description": "(Art by Winston Lee, edited by Axobotl)",
           "smell": "Dumpster Diving",
+          "season": 4,
           "bonuses": {
             "oversizedstethoscope": true,
             "duncecap": true
@@ -2894,6 +3025,7 @@
           "type": "Meme",
           "description": "(Art by Dr Levi)",
           "smell": "Dumpster Diving",
+          "season": 4,
           "bonuses": {
             "oversizedstethoscope": true,
             "duncecap": true
@@ -2908,6 +3040,7 @@
           "type": "Meme",
           "description": "(Art by Giacomo)",
           "smell": "Accuracy",
+          "season": 4,
           "bonuses": {
             "duncecap": true
           },
@@ -2921,6 +3054,7 @@
           "type": "Meme",
           "description": "(Art by DPS2004)",
           "smell": "Accuracy",
+          "season": 4,
           "bonuses": {
             "duncecap": true
           },
@@ -2934,6 +3068,7 @@
           "type": "Meme",
           "description": "(Art by Winston Lee, edited by Kin)",
           "smell": "Bad Opinions",
+          "season": 4,
           "bonuses": {
             "valentinesdaycard": true,
             "duncecap": true
@@ -2948,6 +3083,7 @@
           "type": "Meme",
           "description": "(Art by Het)",
           "smell": "Bad Opinions",
+          "season": 4,
           "bonuses": {
             "valentinesdaycard": true,
             "duncecap": true
@@ -2962,6 +3098,7 @@
           "type": "Meme",
           "description": "(Art by Het)",
           "smell": "Bad Opinions",
+          "season": 4,
           "bonuses": {
             "valentinesdaycard": true,
             "duncecap": true
@@ -2983,6 +3120,7 @@
           "pico": true,
           "description": "(Cart by auburn. Playable with the PICO-8 app or online at https://auburnsummer.itch.io/rhythm-stacker . The password is rhythmdoctah)",
           "smell": "Pancakes",
+          "season": 3,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202454527606814/rhythmstacker.p8.png"
         },
@@ -2992,6 +3130,7 @@
           "name": "A Chance of Fire or Ice",
           "tradeable": true,
           "type": "PICO-8",
+          "season": 3,
           "pico": true,
           "description": "(Cart by auburn. Playable with the PICO-8 app or online at https://auburnsummer.itch.io/acofoi . The password is meaculpa)",
           "smell": "Indecisiveness",
@@ -3017,6 +3156,7 @@
           "type": "Rare",
           "description": "(Art by Noche)",
           "smell": "Fall Damage",
+          "season": 3,
           "bonuses": {
             "deluxebirdseed": true,
             "okamiiscollar": true
@@ -3031,6 +3171,7 @@
           "type": "Super Rare",
           "description": "(Art by Noche)",
           "smell": "Fall Damage",
+          "season": 3,
           "bonuses": {
             "deluxebirdseed": true
           },
@@ -3044,6 +3185,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Noche)",
           "smell": "Fall Damage",
+          "season": 3,
           "bonuses": {
             "deluxebirdseed": true
           },
@@ -3057,6 +3199,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Big Bad Bird (Art by Noche)",
           "smell": "Fall Damage",
+          "season": 3,
           "bonuses": {
             "deluxebirdseed": true
           },
@@ -3076,6 +3219,7 @@
           "type": "Rare",
           "description": "(Art by AdipemDragon)",
           "smell": "Unconventional Gameplay",
+          "season": 5,
           "bonuses": {
             "okamiiscollar": true
           },
@@ -3089,6 +3233,7 @@
           "type": "Super Rare",
           "description": "(Art by Noche)",
           "smell": "Unconventional Gameplay",
+          "season": 5,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/830815043016196106/draemonsr.png"
         },
@@ -3100,6 +3245,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Plant Guy)",
           "smell": "Unconventional Gameplay",
+          "season": 5,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/830815056899080232/draemonur.png"
         },
@@ -3111,6 +3257,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Draemon (Art by Plant Guy)",
           "smell": "Unconventional Gameplay",
+          "season": 5,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/830815068093415445/draemonc.png"
         }
@@ -3128,6 +3275,7 @@
           "type": "Rare",
           "description": "(Art by AdipemDragon)",
           "smell": "Icicles",
+          "season": 3,
           "bonuses": {
             "okamiiscollar": true
           },
@@ -3141,6 +3289,7 @@
           "type": "Super Rare",
           "description": "(Art by Kin)",
           "smell": "Icicles",
+          "season": 3,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201779350568990/inimasr.png"
         },
@@ -3152,6 +3301,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Kin)",
           "smell": "Icicles",
+          "season": 3,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201792439943199/inimaur.png"
         },
@@ -3163,6 +3313,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Inima (Art by Kin)",
           "smell": "Icicles",
+          "season": 3,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201742738620436/inimac.png"
         }
@@ -3180,6 +3331,7 @@
           "type": "Rare",
           "description": "(Art by AdipemDragon)",
           "smell": "Abandoned Factories",
+          "season": 5,
           "bonuses": {
             "okamiiscollar": true
           },
@@ -3193,6 +3345,7 @@
           "type": "Super Rare",
           "description": "(Art by Plant Guy)",
           "smell": "Abandoned Factories",
+          "season": 5,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201580800475146/fhottosr.png"
         },
@@ -3204,6 +3357,7 @@
           "type": "Ultra Rare",
           "description": "(Art by Plant Guy)",
           "smell": "Abandoned Factories",
+          "season": 5,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201592703385610/fhottour.png"
         },
@@ -3215,6 +3369,7 @@
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Fire Hazard Otto (Art by Plant Guy)",
           "smell": "Abandoned Factories",
+          "season": 5,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201569643233300/fhottoc.png"
         }
