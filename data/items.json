@@ -41,7 +41,7 @@
   },
   "fixedmouse": {
     "name": "Fixed Mouse",
-    "description": "Very rarely lets you **Double Click**, and pull two cards at once.",
+    "description": "Sometimes lets you **Double Click**, and pull two cards at once.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832305270800515192/fixedmouse.png"
   },
   "stoppedwatch": {
