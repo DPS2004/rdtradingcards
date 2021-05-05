@@ -100,6 +100,13 @@ function reaction.run(ef, eom, reaction, userid)
           content = '***The ground rumbles... and so does the Strange Machine***'
         }
       end
+      if not wj.smellable and wj.tokensdonated >= 100 then
+        wj.smellable = true
+        local newmessage = reaction.message.channel:send {
+          content = '***The Database lets out a loud BEEP, before the Hole above you closes off. The Terminal begins spewing a noxious gas. ***\n.\n..\n...\n***When you wake up, the Hole has opened again, and your sense of Smell feels much more potent.***'
+        }
+
+      end
       
       ef[reaction.message.id] = nil
       

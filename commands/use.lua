@@ -445,10 +445,7 @@ function command.run(message, mt)
             message.channel:send{embed = {
               color = 0x85c5ff,
               title = "Using Terminal...",
-              description = '`COMMAND "' .. mt[2] ..  '" NOT RECOGNIZED`',
-              image = {
-                url = "https://cdn.discordapp.com/attachments/829197797789532181/838836625391484979/terminal2.gif"
-              }
+              description = '`COMMAND "' .. mt[2] ..  '" NOT RECOGNIZED`'
             }}
           end
         end

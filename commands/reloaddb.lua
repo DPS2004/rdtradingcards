@@ -66,6 +66,7 @@ function command.run(message, mt,overwrite)
     cmdre.usehole = dofile('reactions/usehole.lua')
     cmdre.spideruse = dofile('reactions/spideruse.lua')
     cmdre.spiderlook = dofile('reactions/spiderlook.lua')
+    cmdre.spidersmell = dofile('reactions/spidersmell.lua')
     cmdre.getladder = dofile('reactions/getladder.lua')
     cmdre.usemousehole = dofile('reactions/usemousehole.lua')
     cmdre.usebox = dofile('reactions/usebox.lua')
@@ -924,6 +925,9 @@ function command.run(message, mt,overwrite)
           elseif eom.etype == "spiderlook" then
             print('it is a look spider message being reacted to')
             cmdre.spiderlook.run(ef, eom, reaction, userid)
+          elseif eom.etype == "spidersmell" then
+            print('it is a look spider message being reacted to')
+            cmdre.spidersmell.run(ef, eom, reaction, userid)
           elseif eom.etype == "getladder" then
             print('getladder')
             cmdre.getladder.run(ef, eom, reaction, userid)
