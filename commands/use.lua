@@ -264,19 +264,55 @@ function command.run(message, mt)
         end
         if uj.lastbox + 11.5 <= time:toHours() then
           if uj.inventory ~= {} then
-            newmessage = message.channel:send{embed = {
-              color = 0x85c5ff,
-              title = "Using Peculiar Box...",
-              description = message.author.mentionString .. ', will you put a random **Trading Card** from your inventory in the **Peculiar Box?**.',
-            }}
-            local tf = dpf.loadjson("savedata/events.json",{})
-            
-            addreacts(newmessage)
-            tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "usebox",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
-            
-            dpf.savejson("savedata/events.json",tf)
+            if not uj.skipprompts then
+              newmessage = message.channel:send{embed = {
+                color = 0x85c5ff,
+                title = "Using Peculiar Box...",
+                description = message.author.mentionString .. ', will you put a random **Trading Card** from your inventory in the **Peculiar Box?**.',
+              }}
+              local tf = dpf.loadjson("savedata/events.json",{})
+              
+              addreacts(newmessage)
+              tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "usebox",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
+              
+              dpf.savejson("savedata/events.json",tf)
+            else
+              local iptable = {}
+              for k,v in pairs(uj.inventory) do
+                table.insert(iptable, k)
+              end
+              local givecard = iptable[math.random(1,#iptable)]
+              print("user giving " .. givecard)
+              
+              local boxpoolindex = math.random(1,#wj.boxpool)
+              local getcard = wj.boxpool[boxpoolindex]
+              
+              if uj.inventory[getcard] == nil then
+                uj.inventory[getcard] = 1
+              else
+                uj.inventory[getcard] = uj.inventory[getcard] + 1
+              end
+              
+              uj.inventory[givecard] = uj.inventory[givecard] - 1
+              
+              if uj.inventory[givecard] == 0 then
+                uj.inventory[givecard] = nil
+              end
+              
+              wj.boxpool[boxpoolindex] = givecard
+              message.channel:send {
+                content = '<@' .. uj.id .. '> grabs a **' .. fntoname(givecard) .. '** card from their inventory and places it inside the box. As it goes in, a **' .. fntoname(getcard) .. '** card shows up in their pocket!'
+              }
+              
+              if uj.timesusedbox == nil then
+                uj.timesusedbox = 1
+              else
+                uj.timesusedbox = uj.timesusedbox + 1
+              end
+              uj.lastbox = time:toHours()
+            end
           else
-            newmessage = message.channel:send{embed = {
+            message.channel:send{embed = {
               color = 0x85c5ff,
               title = "Using Peculiar Box...",
               description = 'You do not have any cards to put into the **Peculiar Box**',
@@ -438,7 +474,8 @@ function command.run(message, mt)
             }}
           elseif string.lower(mt[2]) == "upgrade" then
             if uj.tokens > 0 then
-              local newmessage = message.channel:send{embed = {
+              if not uj.skipprompts then
+                local newmessage = message.channel:send{embed = {
                   color = 0x85c5ff,
                   title = "Using Terminal...",
                   description = 'Will you put a **Token** into the **Terminal?** (tokens remaining: ' .. uj.tokens .. ')',
@@ -450,10 +487,50 @@ function command.run(message, mt)
                     icon_url = message.author.avatarURL
                   }
                 }}
-              addreacts(newmessage)
-              local tf = dpf.loadjson("savedata/events.json",{})
-              tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "usehole",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString, avatarURL = message.author.avatarURL}}}
-              dpf.savejson("savedata/events.json",tf)
+                addreacts(newmessage)
+                local tf = dpf.loadjson("savedata/events.json",{})
+                tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "usehole",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString, avatarURL = message.author.avatarURL}}}
+                dpf.savejson("savedata/events.json",tf)
+              else
+                local upgradeimages = {
+                  "https://cdn.discordapp.com/attachments/829197797789532181/838908505192661022/upgrade1.png",
+                  "https://cdn.discordapp.com/attachments/829197797789532181/838908506496958464/upgrade2.png",
+                  "https://cdn.discordapp.com/attachments/829197797789532181/838908508841836564/upgrade3.png",
+                  "https://cdn.discordapp.com/attachments/829197797789532181/838908510972280842/upgrade4.png",
+                  "https://cdn.discordapp.com/attachments/829197797789532181/838908513119109130/upgrade5.png",
+                  "https://cdn.discordapp.com/attachments/829197797789532181/838908515179036742/upgrade6.png",
+                  "https://cdn.discordapp.com/attachments/829197797789532181/838908517477253181/upgrade7.png",
+                  "https://cdn.discordapp.com/attachments/829197797789532181/838908519876263967/upgrade8.png",
+                  "https://cdn.discordapp.com/attachments/829197797789532181/838908522040918066/upgrade9.png",
+                  "https://cdn.discordapp.com/attachments/829197797789532181/838908524389203998/upgrade10.png",
+                  "https://cdn.discordapp.com/attachments/829197797789532181/838908548205379624/upgrade11.png",
+                  "https://cdn.discordapp.com/attachments/829197797789532181/838908558963376128/upgrade12.png",
+                  "https://cdn.discordapp.com/attachments/829197797789532181/838908564105723925/upgrade13.png",
+                  "https://cdn.discordapp.com/attachments/829197797789532181/838908567347003392/upgrade14.png",
+                  "https://cdn.discordapp.com/attachments/829197797789532181/838908570355236914/upgrade15.png",
+                  "https://cdn.discordapp.com/attachments/829197797789532181/838908575879135242/upgrade16.png",
+                  "https://cdn.discordapp.com/attachments/829197797789532181/838908579901734963/upgrade17.png",
+                  "https://cdn.discordapp.com/attachments/829197797789532181/838908584078999583/upgrade18.png",
+                  "https://cdn.discordapp.com/attachments/829197797789532181/838908589674332180/upgrade19.png",
+                  "https://cdn.discordapp.com/attachments/829197797789532181/838908616329265212/upgrade20.png",
+                  "https://cdn.discordapp.com/attachments/829197797789532181/838910126554742814/upgrade21.png",
+                  "https://cdn.discordapp.com/attachments/829197797789532181/838910145491894292/upgrade22.png",
+                  "https://cdn.discordapp.com/attachments/829197797789532181/838910782556733511/upgrade23.png"
+                }  
+                message.channel:send{embed = {
+                  color = 0x85c5ff,
+                  title = "Using Terminal...",
+                  description = 'The **Terminal** whirrs happily.',
+                  image = {
+                    url = upgradeimages[math.random(1,#upgradeimages)]
+                  },
+                  footer = {
+                    text =  message.author.name,
+                    icon_url = message.author.avatarURL
+                  }
+                }}
+                wj.tokensdonated = wj.tokensdonated + 1
+              end
             else
               message.channel:send{embed = {
                 color = 0x85c5ff,
