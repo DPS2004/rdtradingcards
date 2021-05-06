@@ -60,6 +60,9 @@ function command.run(message, mt)
       invstring = invstring .. invtable[i]
     end
   end
+  if not uj.tokens then
+    uj.tokens = 0
+  end
   local isplural = ""
   if uj.tokens ~= 1 then
     isplural = "s"
