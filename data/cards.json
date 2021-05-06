@@ -2589,7 +2589,9 @@
           "description": "(Level by Emdyion, Samario, DPS2004, thefinals, Some J Name, and Xeno)",
           "smell": "Fun:tm:",
           "season": 3,
-          "bonuses": {},
+          "bonuses": {
+            "oversizedstethoscope": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202555467857990/rrr.png"
         },
         {
