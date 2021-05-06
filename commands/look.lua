@@ -11,12 +11,14 @@ function command.run(message, mt)
   end
   if message.guild then
     if #mt == 1 or mt[1] == "" then
-      if texttofn(mt[1]) then
-        cmd.show.run(message, mt)
-      elseif itemtexttofn(mt[1]) then
-        cmd.showitem.run(message, mt)
-      elseif medaltexttofn(mt[1]) then
-        cmd.showmedal.run(message, mt)
+      if not nopeeking or uj.inventory[texttofn(mt[1])] or uj.storage[texttofn(mt[1])] or uj.items[itemtexttofn(mt[1])] or uj.items[medaltexttofn(mt[1])] then
+        if texttofn(mt[1]) then
+          cmd.show.run(message, mt)
+        elseif itemtexttofn(mt[1]) then
+          cmd.showitem.run(message, mt)
+        elseif medaltexttofn(mt[1]) then
+          cmd.showmedal.run(message, mt)
+        end
       else
         if string.lower(mt[1]) == "pyrowmid" then
           -- message.channel:send('The **Pyrowmid** has recently opened itself, revealing a **Panda** and a **Strange Machine** inside. The walls are made of Rows (Rare) cards.')
