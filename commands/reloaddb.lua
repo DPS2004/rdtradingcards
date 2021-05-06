@@ -884,6 +884,16 @@ function command.run(message, mt,overwrite)
             
             print(inspect(nmt))
             cmd.use.run(message,nmt)
+          elseif string.lower(string.sub(message.content, 0, 3+2)) == prefix.. 'box' then 
+            print("box command shortcut")
+            local mt = string.split(string.sub(message.content, 3+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            print(inspect(nmt))
+            cmd.use.run(message,{"box"})
           end
           
 
