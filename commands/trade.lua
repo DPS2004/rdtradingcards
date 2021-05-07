@@ -38,9 +38,9 @@ function command.run(message, mt)
                   
                 else
                   if nopeeking then
-                    message.channel:send("Sorry, but I either could not find the " .. mt[3] .. " card in the database, or ".. uj2.name .. " do not have it. Make sure that you spelled it right!")
+                    message.channel:send("Sorry, but I either could not find the " .. mt[3] .. " card in the database, or ".. mt[2] .. " does not have it. Make sure that you spelled it right!")
                   else
-                    message.channel:send("Sorry, but ".. uj2.name .. " doesn't have the **" .. fntoname(item2) .. "** card in their inventory.")
+                    message.channel:send("Sorry, but ".. mt[2] .. " doesn't have the **" .. fntoname(item2) .. "** card in their inventory.")
                   end
                 end
                 
@@ -58,7 +58,7 @@ function command.run(message, mt)
               
             else
               if nopeeking then
-                message.channel:send("Sorry, but I either could not find the " .. mt[3] .. " card in the database, or ".. uj2.name .. " do not have it. Make sure that you spelled it right!")
+                message.channel:send("Sorry, but I either could not find the " .. mt[3] .. " card in the database, or ".. mt[2] .. " does not have it. Make sure that you spelled it right!")
               else
                 message.channel:send("Sorry, but I could not find the " .. mt[3] .. " card in the database. Make sure that you spelled it right!")
               end
