@@ -34,6 +34,36 @@
     "description": "Collect all 12 meme cards!",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203516270182430/mememaestro.png"
   },
+  "season1maestro": {
+    "name": "Season 1 Maestro",
+    "description": "Collect every single Season 1 card!",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203387421294612/easytogetdebugmedal.png"
+  },
+  "season2maestro": {
+    "name": "Season 2 Maestro",
+    "description": "Collect every single Season 2 card!",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203387421294612/easytogetdebugmedal.png"
+  },
+  "season3maestro": {
+    "name": "Season 3 Maestro",
+    "description": "Collect every single Season 3 card!",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203387421294612/easytogetdebugmedal.png"
+  },
+  "season4maestro": {
+    "name": "Season 4 Maestro",
+    "description": "Collect every single, non-meme, Season 4 card!",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203387421294612/easytogetdebugmedal.png"
+  },
+  "season5maestro": {
+    "name": "Season 5 Maestro",
+    "description": "Collect every single, non-weed, Season 5 card!",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203387421294612/easytogetdebugmedal.png"
+  },
+  "cardmaestro": {
+    "name": "Card Maestro",
+    "description": "Collect every single card available at a given point in time!",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203366944702515/Card_Maestro_medal.png"
+  },
   "easytogetdebugmedal": {
     "name": "Easy to get debug medal lol",
     "description": "just get a rare samurai lmao",
