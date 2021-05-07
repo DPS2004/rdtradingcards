@@ -233,7 +233,7 @@ function command.run(message, mt)
           color = 0x85c5ff,
           title = "What poster?",
           image = {
-            url = 'https://media.discordapp.com/attachments/829197797789532181/838793078574809098/blankwall.png'
+            url = 'https://cdn.discordapp.com/attachments/829197797789532181/838793078574809098/blankwall.png'
           }
         }}
       elseif (string.lower(mt[1]) == "mouse hole" or string.lower(mt[1]) == "mouse" or string.lower(mt[1]) == "mousehole") and wj.labdiscovered  then 
