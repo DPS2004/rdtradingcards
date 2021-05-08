@@ -3,8 +3,6 @@ function command.run(message, mt)
   print(message.author.name .. " did !trade")
   if message.guild then
     if #mt == 3 then
-      local mt = string.split(string.sub(message.content, 9),"/")
-      print(string.sub(message.content, 0, 8))
       local ujf = ("savedata/" .. message.author.id .. ".json")
       
       local uj2f = usernametojson(mt[2])
