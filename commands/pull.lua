@@ -112,10 +112,7 @@ local time = sw:getTime()
         else
           uj.timespulled = uj.timespulled + 1
         end
-        if not uj.names then
-          uj.names = {}
-          uj.names[message.author.name .. "#" .. message.author.discriminator] = true
-        end
+        uj.names[message.author.name .. "#" .. message.author.discriminator] = true
         uj.id = message.author.id
         uj.lastpull = time:toHours()
         print(message.author.name .. "#" .. message.author.discriminator .. " is the username")
