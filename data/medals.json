@@ -37,31 +37,31 @@
   "s1maestro": {
     "name": "Season 1 Maestro",
     "description": "Collect every single Season 1 card!",
-    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203387421294612/easytogetdebugmedal.png"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/840574174980472882/season1maestro.png"
   },
   "s2maestro": {
     "name": "Season 2 Maestro",
     "description": "Collect every single Season 2 card!",
-    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203387421294612/easytogetdebugmedal.png"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/840574179094298634/season2maestro.png"
   },
   "s3maestro": {
     "name": "Season 3 Maestro",
     "description": "Collect every single Season 3 card!",
-    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203387421294612/easytogetdebugmedal.png"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/840574181279268895/season3maestro.png"
   },
   "s4maestro": {
     "name": "Season 4 Maestro",
     "description": "Collect every single, non-meme, Season 4 card!",
-    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203387421294612/easytogetdebugmedal.png"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/840574183342735420/season4maestro.png"
   },
   "s5maestro": {
     "name": "Season 5 Maestro",
     "description": "Collect every single, non-weed, Season 5 card!",
-    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203387421294612/easytogetdebugmedal.png"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/840574183595573272/season5maestro.png"
   },
   "cardmaestro": {
     "name": "Card Maestro",
-    "description": "Collect every single card available at a given point in time! This medal is not permanent, and will be removed any time new cards are added.",
+    "description": "Collect every single card available at a given point in time! This medal is not permanent, and will be removed every time new cards are added.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/840574153060778034/cardmaestro.png"
   },
   "easytogetdebugmedal": {

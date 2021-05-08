@@ -35,6 +35,8 @@ function reaction.run(ef, eom, reaction, userid)
         reaction.message.channel:send("<@" .. uj.id .. "> successfully put their " .. numcards .. " **" .. fntoname(item1) .. "** card" .. isplural .. " into storage.")
         dpf.savejson("savedata/events.json",ef)
         dpf.savejson(ujf,uj)
+        cmd.checkcollectors.run(eom.ogmessage,mt,reaction.message.channel)
+        cmd.checkmedals.run(eom.ogmessage,mt,reaction.message.channel)
       else
         local newmessage = reaction.message.channel:send("An error has occured. Please make sure that you still have the card in your inventory!")
       end
@@ -49,8 +51,6 @@ function reaction.run(ef, eom, reaction, userid)
   else
     print("its not uj1 reacting")
   end
-  cmd.checkcollectors.run(eom.ogmessage,mt,reaction.message.channel)
-  cmd.checkmedals.run(eom.ogmessage,mt,reaction.message.channel)
 end
 return reaction
   
