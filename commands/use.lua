@@ -263,7 +263,7 @@ function command.run(message, mt)
           uj.lastbox = -24
         end
         if uj.lastbox + 11.5 <= time:toHours() then
-          if uj.inventory ~= {} then
+          if next(uj.inventory) then
             if not uj.skipprompts then
               newmessage = message.channel:send{embed = {
                 color = 0x85c5ff,
