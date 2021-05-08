@@ -401,7 +401,7 @@ function command.run(message, mt)
                 icon_url = message.author.avatarURL
               }
             }}
-          elseif string.lower(mt[2]) == "help" then
+          elseif string.lower(mt[2]) == "help" or mt[2] == "" then
             message.channel:send{embed = {
               color = 0x85c5ff,
               title = "Using Terminal...",
@@ -450,7 +450,7 @@ function command.run(message, mt)
             end
             local easteregg = ""
             if math.random(1,100) == 1 then
-              easteregg = "Remember, the Factory is watching!\n"
+              easteregg = "\nRemember, the Factory is watching!"
             end
             message.channel:send{embed = {
               color = 0x85c5ff,
