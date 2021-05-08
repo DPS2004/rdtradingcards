@@ -91,6 +91,7 @@ function command.run(message, mt,overwrite)
 
     --generate pull table
     _G['ptable'] = {}
+    _G['seasontable'] = {}
     _G['cdb'] = {}
     for k,q in pairs(itemdb) do
       ptable[k] = {}
@@ -109,6 +110,10 @@ function command.run(message, mt,overwrite)
     for i,v in ipairs(cdata.groups) do
       for w,x in ipairs(v.cards) do
         table.insert(cdb,x)
+        if seasontable[x.season] == nil then
+			seasontable[x.season] = {}
+        end
+        table.insert(seasontable[x.season],x.filename)
         print(x.name.. " loaded!")
       end
     end
@@ -116,6 +121,8 @@ function command.run(message, mt,overwrite)
     
     print("here is cdb")
     print(inspect(cdb))
+    print("here is seasontable")
+    print(inspect(seasontable))
     -- print("here is ptable")
     --print(inspect(ptable))
 
