@@ -11,7 +11,7 @@ function command.run(message, mt)
   end
   if message.guild then
     if #mt == 1 or mt[1] == "" then
-      if not nopeeking or uj.inventory[texttofn(mt[1])] or uj.storage[texttofn(mt[1])] or uj.items[itemtexttofn(mt[1])] or uj.items[medaltexttofn(mt[1])] then
+      if uj.inventory[texttofn(mt[1])] or uj.storage[texttofn(mt[1])] or uj.items[itemtexttofn(mt[1])] or uj.medals[medaltexttofn(mt[1])] then
         if texttofn(mt[1]) then
           cmd.show.run(message, mt)
         elseif itemtexttofn(mt[1]) then
