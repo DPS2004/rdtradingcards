@@ -986,7 +986,8 @@
           "smell": "Fingernails",
           "season": 1,
           "bonuses": {
-            "okamiiscollar": true
+            "okamiiscollar": true,
+            "oversizedstethoscope": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162606311964762/internr.png"
         },
@@ -999,7 +1000,9 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Fingernails",
           "season": 1,
-          "bonuses": {},
+          "bonuses": {
+            "oversizedstethoscope": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201837969375242/internsr.png"
         },
         {
@@ -1011,7 +1014,9 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Fingernails",
           "season": 1,
-          "bonuses": {},
+          "bonuses": {
+            "oversizedstethoscope": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201845477572618/internur.png"
         },
         {
@@ -1023,7 +1028,9 @@
           "description": "(Art by Winston Lee)",
           "smell": "Dithering",
           "season": 5,
-          "bonuses": {},
+          "bonuses": {
+            "oversizedstethoscope": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162624151126027/interndc.png"
         },
         {
@@ -1035,7 +1042,9 @@
           "description": "(Art by Winston Lee)",
           "smell": "Toenails",
           "season": 5,
-          "bonuses": {},
+          "bonuses": {
+            "oversizedstethoscope": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839233681624137738/internalt.png"
         },
         {
@@ -1047,7 +1056,9 @@
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of the Intern (Art by Kyle Labriola)",
           "smell": "Fingernails",
           "season": 1,
-          "bonuses": {},
+          "bonuses": {
+            "oversizedstethoscope": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201827823222824/internc.png"
         }
       ]
@@ -1694,7 +1705,8 @@
           "smell": "Freestyle Rap",
           "season": 3,
           "bonuses": {
-            "okamiiscollar": true
+            "okamiiscollar": true,
+            "oversizedstethoscope": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203012345004093/yor.png"
         },
@@ -1707,7 +1719,9 @@
           "description": "(Art by DeadlySprinklez)",
           "smell": "Freestyle Rap",
           "season": 3,
-          "bonuses": {},
+          "bonuses": {
+            "oversizedstethoscope": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203019974574080/yosr.png"
         },
         {
@@ -1719,7 +1733,9 @@
           "description": "(Art by DeadlySprinklez)",
           "smell": "Freestyle Rap",
           "season": 3,
-          "bonuses": {},
+          "bonuses": {
+            "oversizedstethoscope": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203033362923530/your.png"
         },
         {
@@ -1731,7 +1747,9 @@
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Yo (Art by Lumina, based on art by Kyle Labriola)",
           "smell": "Freestyle Rap",
           "season": 3,
-          "bonuses": {},
+          "bonuses": {
+            "oversizedstethoscope": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203005357555762/yoc.png"
         }
       ]
