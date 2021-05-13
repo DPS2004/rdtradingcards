@@ -113,6 +113,7 @@ local time = sw:getTime()
           uj.timespulled = uj.timespulled + 1
         end
         if not uj.names then
+          uj.names = {}
           uj.names[message.author.name .. "#" .. message.author.discriminator] = true
         end
         uj.id = message.author.id

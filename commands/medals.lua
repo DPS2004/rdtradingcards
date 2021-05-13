@@ -25,7 +25,9 @@ function command.run(message, mt)
   end
   local numkey = 0
   for k,v in pairs(uj.medals) do
-    numkey = numkey + 1
+    if(uj.medals[k]) then
+      numkey = numkey + 1
+    end
   end
   local maxpn = math.ceil(numkey / 10)
   print("maxpn " .. numkey/10)
