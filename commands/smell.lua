@@ -19,7 +19,7 @@ function command.run(message, mt)
           "You take out your **____** card and put it up your nose.",
           "You whip out your **____** card and shove it in your face.",
           --"You pull out your **____** card and a doctah pops out.",
-          "You pry out your crumpled **____** card. It has lines eminating off it."
+          "You pry out your crumpled **____** card. It has lines emanating off it."
           --"Your **____** card is not encased in a peanut."
         }
         local random_beginning = beginnings[math.random(#beginnings)]
