@@ -62,7 +62,7 @@ function command.run(message, mt)
                 if nopeeking then
                   message.channel:send("Sorry, but I either could not find the " .. mt[2] .. " card in the database, or you do not have it. Make sure that you spelled it right!")
                 else
-                  message.channel:send("Sorry, but you don't have the **" .. fntoname(mt[2]) .. "** card in your inventory.")
+                  message.channel:send("Sorry, but you don't have the **" .. fntoname(curfilename) .. "** card in your inventory.")
                 end
               end
             else
