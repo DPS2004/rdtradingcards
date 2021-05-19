@@ -492,6 +492,19 @@ function command.run(message, mt)
                 tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "usehole",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString, avatarURL = message.author.avatarURL}}}
                 dpf.savejson("savedata/events.json",tf)
               else
+                uj.tokens = uj.tokens - 1
+                
+                if uj.timesused == nil then
+                  uj.timesused = 1
+                else
+                  uj.timesused = uj.timesused + 1
+                end
+                
+                if uj.tokensdonated == nil then
+                  uj.tokensdonated = 1
+                else
+                  uj.tokensdonated = uj.tokensdonated + 1
+                end
                 local upgradeimages = {
                   "https://cdn.discordapp.com/attachments/829197797789532181/838908505192661022/upgrade1.png",
                   "https://cdn.discordapp.com/attachments/829197797789532181/838908506496958464/upgrade2.png",
