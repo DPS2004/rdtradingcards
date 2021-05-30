@@ -53,6 +53,8 @@ function command.run(message, mt,overwrite)
     cmd.givetoken = dofile('commands/givetoken.lua')
     cmd.skipprompts = dofile('commands/skipprompts.lua')
     cmd.renamefile = dofile('commands/renamefile.lua')
+    cmd.addallpronoun = dofile('commands/addallpronoun.lua')
+    cmd.pronoun = dofile('commands/pronoun.lua')
     
     print("done loading commands")
 
