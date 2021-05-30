@@ -38,7 +38,7 @@ function command.run(message, mt)
               dpf.savejson("savedata/events.json",tf)
             else
               uj.equipped = curfilename
-              message.channel:send("<@" .. uj.id .. "> successfully set **" .. itemfntoname(curfilename) .. "** as their equipped item.")
+              message.channel:send("<@" .. uj.id .. "> successfully set **" .. itemfntoname(curfilename) .. "** as '..uj.pronouns["their"]..' equipped item.")
               uj.lastequip = time:toHours()
               dpf.savejson(ujf,uj)
               print('saved equipped as ' .. curfilename)
