@@ -52,7 +52,7 @@ function command.run(message, mt)
             else
               uj.timesstored = uj.timesstored + numcards
             end
-            message.channel:send("<@" .. uj.id .. "> successfully put their " .. numcards .. " **" .. fntoname(item1) .. "** card" .. isplural .. " into storage.")
+            message.channel:send("<@" .. uj.id .. "> successfully put "..uj.pronouns["their"].." " .. numcards .. " **" .. fntoname(item1) .. "** card" .. isplural .. " into storage.")
             dpf.savejson(ujf,uj)
             cmd.checkcollectors.run(message,mt)
             cmd.checkmedals.run(message,mt)
