@@ -56,6 +56,7 @@ function command.run(message, mt,overwrite)
     cmd.addallpronoun = dofile('commands/addallpronoun.lua')
     cmd.pronoun = dofile('commands/pronoun.lua')
     cmd.pronounlist = dofile('commands/pronounlist.lua')
+    cmd.pronounform = dofile('commands/pronounform.lua')
     
     print("done loading commands")
 
@@ -685,6 +686,14 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.pronounlist.run(message,mt)
+	  elseif string.lower(string.sub(message.content, 0, 11+3)) == prefix.. 'pronounform' then 
+            local mt = string.split(string.sub(message.content, 11+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            cmd.pronounform.run(message,mt)
           elseif string.lower(string.sub(message.content, 0, 4+2)) == prefix.. 'pray' then 
             local mt = string.split(string.sub(message.content, 4+4),"/")
             local nmt = {}
