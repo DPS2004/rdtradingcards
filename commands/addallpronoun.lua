@@ -8,11 +8,11 @@ function command.run(message, mt)
       if not cuj.pronouns then
         print("adding pronouns to person")
         cuj.pronouns = {}
-        cuj.pronouns["subject"] = "they"
-        cuj.pronouns["object"] = "them"
-        cuj.pronouns["possesdet"] = "their"
-        cuj.pronouns["possespro"] = "theirs"
-        cuj.pronouns["reflex"] = "theirself"
+        cuj.pronouns["they"] = "they"
+        cuj.pronouns["them"] = "them"
+        cuj.pronouns["their"] = "their"
+        cuj.pronouns["theirs"] = "theirs"
+        cuj.pronouns["theirself"] = "theirself"
         dpf.savejson("savedata/"..v,cuj)
       end
     end
