@@ -20,7 +20,7 @@ local time = sw:getTime()
         local ncn = fntoname(newcard)
         print(ncn)
         message.channel:send {
-            content = 'Woah! '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to their inventory.',
+            content = 'Woah! '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to'..uj.pronouns["their"]..'inventory.',
             file = "card_images/" .. newcard .. ".png"
           }
 
@@ -53,12 +53,12 @@ local time = sw:getTime()
         if newcard == "yor" or newcard == "yosr" or newcard == "your" then
           embedtitle = "Yo!"
         end
-        -- message.channel:send('Woah! '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to their inventory. The shorthand form of this card is **'.. newcard .. '**.')
+        -- message.channel:send('Woah! '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to'..uj.pronouns["their"]..'inventory. The shorthand form of this card is **'.. newcard .. '**.')
         -- message.channel:send('https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. getcardembed(newcard) .. '/' .. newcard .. extension)
         message.channel:send{embed = {
           color = 0x85c5ff,
           title = embedtitle,
-          description = message.author.mentionString ..' got a **'.. ncn ..'** card! The **'.. ncn ..'** card has been added to their inventory. The shorthand form of this card is **'.. newcard .. '**.',
+          description = message.author.mentionString ..' got a **'.. ncn ..'** card! The **'.. ncn ..'** card has been added to'..uj.pronouns["their"]..'inventory. The shorthand form of this card is **'.. newcard .. '**.',
           image = {
             url = getcardembed(newcard)
           }
@@ -80,7 +80,7 @@ local time = sw:getTime()
             message.channel:send{embed = {
               color = 0x85c5ff,
               title = "Doubleclick!",
-              description = 'Because of the **Fixed Mouse**, ' .. message.author.mentionString ..' got a **'.. ncn ..'** card! The **'.. ncn ..'** card has been added to their inventory. The shorthand form of this card is **'.. newcard .. '**.',
+              description = 'Because of the **Fixed Mouse**, ' .. message.author.mentionString ..' got a **'.. ncn ..'** card! The **'.. ncn ..'** card has been added to'..uj.pronouns["their"]..'inventory. The shorthand form of this card is **'.. newcard .. '**.',
               image = {
                 url = getcardembed(newcard)
               }
