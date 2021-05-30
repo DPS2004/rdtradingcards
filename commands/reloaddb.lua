@@ -796,14 +796,14 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.addallnicknames.run(message,mt)
-	  elseif string.lower(string.sub(message.content, 0, 14+3)) == prefix.. 'addallpronouns' then 
-            local mt = string.split(string.sub(message.content, 14+4),"/")
+	  elseif string.lower(string.sub(message.content, 0, 13+3)) == prefix.. 'addallpronoun' then 
+            local mt = string.split(string.sub(message.content, 13+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
               v = trim(v)
               nmt[i]=v
             end
-            cmd.addallpronouns.run(message,mt)
+            cmd.addallpronoun.run(message,mt)
           elseif string.lower(string.sub(message.content, 0, 13+3)) == prefix.. 'fullinventory' then 
             local mt = string.split(string.sub(message.content, 13+4),"/")
             local nmt = {}
