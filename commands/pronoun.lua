@@ -67,6 +67,8 @@ function command.run(message, mt)
     uj.pronouns["theirself"] = "starself"
     dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
     message.channel:send("You will now be refered to as sta/star.")
+  else then
+    message.channel:send("Sorry, but I could not find "..mt[1].." pronouns. See if you mispelled, or if you would like these pronouns to be added, please message @Nocallia#0695")
   end
 
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
