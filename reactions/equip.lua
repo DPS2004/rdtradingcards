@@ -11,7 +11,7 @@ function reaction.run(ef, eom, reaction, userid)
     if reaction.emojiName == "✅" then
       print('user1 has accepted')
       uj.equipped = newequip
-      reaction.message.channel:send("<@" .. uj.id .. "> successfully set **" .. itemfntoname(newequip) .. "** as their equipped item.")
+      reaction.message.channel:send("<@" .. uj.id .. "> successfully set **" .. itemfntoname(newequip) .. "** as "..uj.pronouns["their"].." equipped item.")
       uj.lastequip = time:toHours()
       
       dpf.savejson(ujf,uj)
@@ -22,7 +22,7 @@ function reaction.run(ef, eom, reaction, userid)
     if reaction.emojiName == "❌" then
       print('user1 has denied')
       
-      local newmessage = reaction.message.channel:send("<@" .. uj.id .. "> has successfully stopped the changing of their equipped item.")
+      local newmessage = reaction.message.channel:send("<@" .. uj.id .. "> has successfully stopped the changing of "..uj.pronouns["their"].." equipped item.")
       ef[reaction.message.id] = nil
       dpf.savejson("savedata/events.json",ef)
       

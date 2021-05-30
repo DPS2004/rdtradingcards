@@ -53,6 +53,10 @@ function command.run(message, mt,overwrite)
     cmd.givetoken = dofile('commands/givetoken.lua')
     cmd.skipprompts = dofile('commands/skipprompts.lua')
     cmd.renamefile = dofile('commands/renamefile.lua')
+    cmd.addallpronoun = dofile('commands/addallpronoun.lua')
+    cmd.pronoun = dofile('commands/pronoun.lua')
+    cmd.pronounlist = dofile('commands/pronounlist.lua')
+    cmd.pronounform = dofile('commands/pronounform.lua')
     
     print("done loading commands")
 
@@ -73,7 +77,7 @@ function command.run(message, mt,overwrite)
     
     print("done loading reactions")
 
-    _G['defaultjson'] = {inventory={},storage={},medals={},items={nothing=true},lastpull=-24,lastprayer=-7,lastequip=-24,lastbox=-24,tokens=0}
+    _G['defaultjson'] = {inventory={},storage={},medals={},items={nothing=true},lastpull=-24,lastprayer=-7,lastequip=-24,lastbox=-24,tokens=0,pronouns={their="their",them="them",theirself="themself",they="they",theirs="theirs"}}
     
     _G['defaultworldsave'] = {tokensdonated=0,boxpool={"ssss45","roomsdc_ur","roomsdc_r","underworld","enchantedlove","wallclockur","rhythmdogtor","moai","coolbird","beanshopper","cardboardworld","acofoi","rollermobster","inimaur","fhottour","superstrongcavity","soundsr","pancakefever","nicoleur","feedthemachine","retrofunky","heartchickalt"},lablookindex=0,lablooktext="password is gnuthca ",worldstate = "prehole"}
 
@@ -665,7 +669,31 @@ function command.run(message, mt,overwrite)
             end
             print(inspect(nmt))
             cmd.nickname.run(message,nmt)
-          
+	  elseif string.lower(string.sub(message.content, 0, 7+2)) == prefix.. 'pronoun' then 
+            local mt = string.split(string.sub(message.content, 7+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            print(inspect(nmt))
+            cmd.pronoun.run(message,nmt)
+          elseif string.lower(string.sub(message.content, 0, 11+3)) == prefix.. 'pronounlist' then 
+            local mt = string.split(string.sub(message.content, 11+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            cmd.pronounlist.run(message,mt)
+	  elseif string.lower(string.sub(message.content, 0, 11+3)) == prefix.. 'pronounform' then 
+            local mt = string.split(string.sub(message.content, 11+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            cmd.pronounform.run(message,mt)
           elseif string.lower(string.sub(message.content, 0, 4+2)) == prefix.. 'pray' then 
             local mt = string.split(string.sub(message.content, 4+4),"/")
             local nmt = {}
@@ -785,6 +813,14 @@ function command.run(message, mt,overwrite)
               nmt[i]=v
             end
             cmd.addallnicknames.run(message,mt)
+	  elseif string.lower(string.sub(message.content, 0, 13+3)) == prefix.. 'addallpronoun' then 
+            local mt = string.split(string.sub(message.content, 13+4),"/")
+            local nmt = {}
+            for i,v in ipairs(mt) do
+              v = trim(v)
+              nmt[i]=v
+            end
+            cmd.addallpronoun.run(message,mt)
           elseif string.lower(string.sub(message.content, 0, 13+3)) == prefix.. 'fullinventory' then 
             local mt = string.split(string.sub(message.content, 13+4),"/")
             local nmt = {}

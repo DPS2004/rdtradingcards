@@ -32,7 +32,7 @@ function reaction.run(ef, eom, reaction, userid)
         if numcards ~= 1 then
           isplural = "s"
         end
-        reaction.message.channel:send("<@" .. uj.id .. "> successfully put their " .. numcards .. " **" .. fntoname(item1) .. "** card" .. isplural .. " into storage.")
+        reaction.message.channel:send("<@" .. uj.id .. "> successfully put "..uj.pronouns["their"].." ".. numcards .. " **" .. fntoname(item1) .. "** card" .. isplural .. " into storage.")
         dpf.savejson("savedata/events.json",ef)
         dpf.savejson(ujf,uj)
         cmd.checkcollectors.run(eom.ogmessage,mt,reaction.message.channel)
@@ -44,7 +44,7 @@ function reaction.run(ef, eom, reaction, userid)
     if reaction.emojiName == "❌" then
       print('user1 has denied')
       ef[reaction.message.id] = nil
-      local newmessage = reaction.message.channel:send("<@" .. uj.id .. "> has successfully stopped the storage of their **" .. fntoname(item1) .. "** card.")
+      local newmessage = reaction.message.channel:send("<@" .. uj.id .. "> has successfully stopped the storage of "..uj.pronouns["their"].." **" .. fntoname(item1) .. "** card.")
       dpf.savejson("savedata/events.json",ef)
       
     end

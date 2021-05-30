@@ -26,7 +26,7 @@ function reaction.run(ef, eom, reaction, userid)
         if numcards ~= 1 then
           isplural = "s"
         end
-        reaction.message.channel:send("<@" .. uj.id .. "> successfully shredded their " .. numcards .. " **" .. fntoname(item1) .. "** card" .. isplural .. ".")
+        reaction.message.channel:send("<@" .. uj.id .. "> successfully shredded "..uj.pronouns["their"].." ".. numcards .. " **" .. fntoname(item1) .. "** card" .. isplural .. ".")
         dpf.savejson("savedata/events.json",ef)
         dpf.savejson(ujf,uj)
       else
@@ -36,7 +36,7 @@ function reaction.run(ef, eom, reaction, userid)
     if reaction.emojiName == "❌" then
       print('user1 has denied')
       ef[reaction.message.id] = nil
-      local newmessage = reaction.message.channel:send("<@" .. uj.id .. "> has successfully stopped the shredding of their **" .. fntoname(item1) .. "** card.")
+      local newmessage = reaction.message.channel:send("<@" .. uj.id .. "> has successfully stopped the shredding of "..uj.pronouns["their"].." **" .. fntoname(item1) .. "** card.")
       dpf.savejson("savedata/events.json",ef)
       
     end
