@@ -9,7 +9,7 @@ function command.run(message, mt)
     uj.pronouns["them"] = "them"
     uj.pronouns["their"] = "their"
     uj.pronouns["theirs"] = "theirs"
-    uj.pronouns["theirself"] = "theirself"
+    uj.pronouns["theirself"] = "themself"
     dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
   end
   
