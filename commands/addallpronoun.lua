@@ -1,6 +1,6 @@
 local command = {}
 function command.run(message, mt)
-  print(message.author.name .. " did !addallpronouns")
+  print(message.author.name .. " did !addallpronoun")
   local cmember = message.guild:getMember(message.author)
   if cmember:hasRole(privatestuff.modroleid) then
     for i,v in ipairs(scandir("savedata")) do
