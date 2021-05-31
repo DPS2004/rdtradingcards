@@ -50,6 +50,9 @@ local time = sw:getTime()
         local ncn = fntoname(newcard)
         print(ncn)
         local embedtitle = "Woah!"
+        if uj.equipped == "okamiiscollar" then
+          embedtitle = "Woof!"
+        end
         if newcard == "yor" or newcard == "yosr" or newcard == "your" then
           embedtitle = "Yo!"
         end

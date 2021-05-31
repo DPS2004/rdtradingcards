@@ -380,8 +380,14 @@ function command.run(message, mt,overwrite)
       for i,v in ipairs(cdb) do
         
         if v.filename == x then
-          print(v.smell)
           cembed = v.embed
+          print(v.smell)
+          if v.randomized then
+            if math.random(0,1) == 0 then
+              cembed = v.embedalt
+            end
+          end
+          
         end
       end
       return cembed

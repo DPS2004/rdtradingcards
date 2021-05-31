@@ -3035,6 +3035,24 @@
             "deluxebirdseed": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849018170910965760/watchingbirds.png"
+        },
+        {
+          "chance": 2,
+          "filename": "shade",
+          "name": "Shade",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by bunner and Xeno)",
+          "smell": "Paranoia",
+          "animated": true,
+          "randomized": true,
+          "season": 6,
+          "bonuses": {
+            "paddedstickersheet": true,
+            "deviltail":true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849026745806225448/shade.gif",
+          "embedalt": "https://cdn.discordapp.com/attachments/829197797789532181/849026758685884418/shadealt.gif"
         }
       ]
     },
