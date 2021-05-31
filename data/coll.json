@@ -194,6 +194,14 @@
   },
   {
     "require": [
+      "nicelogo",
+      "feedthemachine",
+      "retrofunky",
+    ],
+    "receive": "blackwater"
+  },
+  {
+    "require": [
       "samuraic",
       "samuraigroup"
     ],

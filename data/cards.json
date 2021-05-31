@@ -3091,6 +3091,21 @@
             "deluxebirdseed": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849048355593125898/goldenrule.gif"
+        },
+        {
+          "chance": 2,
+          "filename": "nicelogo",
+          "name": "Nice Logo",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by MarioMak967)",
+          "smell": "Pepsi",
+          "season": 6,
+          "bonuses": {
+            "paddedstickersheet": true,
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849065148354396170/nicelogo.png"
         }
       ]
     },
