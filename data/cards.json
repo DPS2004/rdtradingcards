@@ -3050,6 +3050,47 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849026745806225448/shade.gif",
           "embedalt": "https://cdn.discordapp.com/attachments/829197797789532181/849026758685884418/shadealt.gif"
+        },
+        {
+          "chance": 2,
+          "filename": "niconico",
+          "name": "組曲『ニコニコ動画』（10周年記念REMIX）",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Various)",
+          "smell": "Smiles",
+          "season": 6,
+          "bonuses": {
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849048302628503552/niconico.png"
+        },
+        {
+          "chance": 0,
+          "filename": "blackwater",
+          "name": "Blackwater",
+          "tradeable": true,
+          "type": "Collector's",
+          "description": "(Level by MarioMak967)",
+          "smell": "Westerns",
+          "season": 6,
+          "bonuses": {
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849051250784075816/blackwater.png"
+        },
+        {
+          "chance": 2,
+          "filename": "goldenrule",
+          "name": "GOLDEN RULE",
+          "tradeable": true,
+          "animated": true,
+          "type": "Super Rare",
+          "description": "(Level by Het)",
+          "smell": "Recursion",
+          "season": 6,
+          "bonuses": {
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849048355593125898/goldenrule.gif"
         }
       ]
     },
@@ -3393,6 +3434,18 @@
           "season": 5,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/830815056899080232/draemonur.png"
+        },
+        {
+          "chance": 1,
+          "filename": "draemonalt",
+          "name": "Draemon (Alternate)",
+          "tradeable": true,
+          "type": "Alternate",
+          "description": "(Art by AdipemDragon)",
+          "smell": "1 Tick Classic Rows",
+          "season": 6,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849055814525648896/draemonalt.png"
         },
         {
           "chance": 0,
