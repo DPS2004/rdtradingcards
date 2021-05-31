@@ -2303,7 +2303,7 @@
           "season": 2,
           "bonuses": {
             "paddedstickersheet": true,
-            "deviltail" true
+            "deviltail": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202751841107978/specialdelivery.png"
         },
@@ -2569,7 +2569,7 @@
             "valentinesdaycard": true,
             "rustysword": true,
             "paddedstickersheet": true,
-            "deviltail" true
+            "deviltail": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201557450129448/feedthemachine.png"
         },
@@ -3060,8 +3060,7 @@
           "description": "(Level by Various)",
           "smell": "Smiles",
           "season": 6,
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849048302628503552/niconico.png"
         },
         {
@@ -3073,8 +3072,7 @@
           "description": "(Level by MarioMak967)",
           "smell": "Westerns",
           "season": 6,
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849051250784075816/blackwater.png"
         },
         {

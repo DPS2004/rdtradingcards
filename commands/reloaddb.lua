@@ -89,6 +89,7 @@ function command.run(message, mt,overwrite)
     
     print('loading itemdb')    
     _G['itemdb'] = dpf.loadjson("data/items.json",defaultjson)
+    print("loading cards part 2: electric boogaloo")
 
     _G['cdata'] = json.decode(cj:read("*a"))
     cj:close()
