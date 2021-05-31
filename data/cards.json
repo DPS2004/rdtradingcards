@@ -2971,21 +2971,6 @@
           "smell": "THE FASTEST AVAILABLE ROUTE",
           "season": 6,
           "bonuses": {
-            "rustysword": true,
-            "deviltail": true
-          },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849007377168465939/orchid.png"
-        },
-        {
-          "chance": 2,
-          "filename": "orchid",
-          "name": "Orchid (GosT Remix)",
-          "tradeable": true,
-          "type": "Super Rare",
-          "description": "(Level by notDonte)",
-          "smell": "THE FASTEST AVAILABLE ROUTE",
-          "season": 6,
-          "bonuses": {
             "rustysword": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849007377168465939/orchid.png"
