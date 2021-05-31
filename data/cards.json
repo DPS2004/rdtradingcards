@@ -2950,6 +2950,91 @@
             "cafemixtape": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839603874943074385/nichijoint.png"
+        },
+        {
+          "chance": 2,
+          "filename": "orchid",
+          "name": "Orchid (GosT Remix)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by notDonte)",
+          "smell": "THE FASTEST AVAILABLE ROUTE",
+          "season": 6,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849007377168465939/orchid.png"
+        },
+        {
+          "chance": 2,
+          "filename": "orchid",
+          "name": "Orchid (GosT Remix)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by notDonte)",
+          "smell": "THE FASTEST AVAILABLE ROUTE",
+          "season": 6,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849007377168465939/orchid.png"
+        },
+        {
+          "chance": 2,
+          "filename": "streak",
+          "name": "Streak",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by vincentw)",
+          "smell": "Addition",
+          "season": 6,
+          "bonuses": {
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849009356439552000/streak.png"
+        },
+        {
+          "chance": 2,
+          "filename": "bluebear",
+          "name": "Blue Bear",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Noche)",
+          "smell": "Breakups",
+          "season": 6,
+          "bonuses": {
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849011169212497920/bluebear.png"
+        },
+        {
+          "chance": 2,
+          "filename": "sandwich",
+          "name": "sandwich",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by sandwich)",
+          "smell": "sandwich",
+          "season": 6,
+          "bonuses": {
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849015688018001951/sandwich.png"
+        },
+        {
+          "chance": 2,
+          "filename": "watchingbirds",
+          "name": "we like watching birds",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Firestix)",
+          "smell": "Applebee's ®",
+          "season": 6,
+          "bonuses": {
+            "valentinesdaycard": true,
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849018170910965760/watchingbirds.png"
         }
       ]
     },
