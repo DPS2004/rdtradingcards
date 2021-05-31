@@ -2302,7 +2302,8 @@
           "smell": "Murder",
           "season": 2,
           "bonuses": {
-            "paddedstickersheet": true
+            "paddedstickersheet": true,
+            "deviltail" true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202751841107978/specialdelivery.png"
         },
@@ -2329,7 +2330,9 @@
           "description": "(Level by thefinals)",
           "smell": "Ectoplasm",
           "season": 2,
-          "bonuses": {},
+          "bonuses": {
+            "deviltail": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201610488020993/ghostsplay.png"
         },
         {
@@ -2479,7 +2482,9 @@
           "description": "(Level by MarioMak967)",
           "smell": "Mahogany",
           "season": 3,
-          "bonuses": {},
+          "bonuses": {
+            "deviltail": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201667860856843/hideandseek.png"
         },
         {
@@ -2563,7 +2568,8 @@
           "bonuses": {
             "valentinesdaycard": true,
             "rustysword": true,
-            "paddedstickersheet": true
+            "paddedstickersheet": true,
+            "deviltail" true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201557450129448/feedthemachine.png"
         },
@@ -2673,7 +2679,9 @@
           "description": "(Level by Kin, Xeno, and MarioMak967)",
           "smell": "The 7th Layer of Hell",
           "season": 3,
-          "bonuses": {},
+          "bonuses": {
+            "deviltail": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202919563067392/underworld.gif"
         },
         {
@@ -2687,7 +2695,8 @@
           "season": 3,
           "bonuses": {
             "rustysword": true,
-            "oversizedstethoscope": true
+            "oversizedstethoscope": true,
+            "deviltail": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200410504986694/baddream.png"
         },
@@ -2759,7 +2768,8 @@
           "bonuses": {
             "rustysword": true,
             "cafemixtape": true,
-            "deluxebirdseed": true
+            "deluxebirdseed": true,
+            "deviltail": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/831155038126473266/madness.png"
         },
@@ -2961,7 +2971,8 @@
           "smell": "THE FASTEST AVAILABLE ROUTE",
           "season": 6,
           "bonuses": {
-            "rustysword": true
+            "rustysword": true,
+            "deviltail": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849007377168465939/orchid.png"
         },
@@ -3032,7 +3043,8 @@
           "season": 6,
           "bonuses": {
             "valentinesdaycard": true,
-            "deluxebirdseed": true
+            "deluxebirdseed": true,
+            "deviltail": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849018170910965760/watchingbirds.png"
         },
@@ -3049,7 +3061,7 @@
           "season": 6,
           "bonuses": {
             "paddedstickersheet": true,
-            "deviltail":true
+            "deviltail": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849026745806225448/shade.gif",
           "embedalt": "https://cdn.discordapp.com/attachments/829197797789532181/849026758685884418/shadealt.gif"
