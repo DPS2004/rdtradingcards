@@ -1,6 +1,7 @@
 local command = {}
 function command.run(message, mt)
   print(message.author.name .. " did !addallpronoun")
+  message.channel:send('Making Gender Canon...')
   local cmember = message.guild:getMember(message.author)
   if cmember:hasRole(privatestuff.modroleid) then
     for i,v in ipairs(scandir("savedata")) do
@@ -16,7 +17,7 @@ function command.run(message, mt)
         dpf.savejson("savedata/"..v,cuj)
       end
     end
-    message.channel:send('Pronouns Added!')
+    message.channel:send('All Pronouns Added!')
   else
     
     message.channel:send('Sorry, but only moderators can use this command!')
