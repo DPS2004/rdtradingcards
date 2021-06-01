@@ -64,6 +64,11 @@
     "description": "Makes meme cards or humorous cards more likely to be pulled.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/837679401884844092/duncecap.png"
   },
+  "deviltail": {
+    "name": "Devil Tail",
+    "description": "Makes dark or horror-themed cards more likely to be pulled.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849096756080017418/deviltail.png"
+  },
   "scribblednotepad": {
     "name": "Scribbled-in Notepad",
     "description": "Makes editor cards more likely to be pulled.",
