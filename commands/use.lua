@@ -405,6 +405,19 @@ function command.run(message, mt)
                 icon_url = message.author.avatarURL
               }
             }}
+          elseif string.lower(mt[2]) == "teikyou" then
+            message.channel:send{embed = {
+              color = 0x85c5ff,
+              title = "Using Terminal...",
+              description = '',
+              image = {
+                url = "https://cdn.discordapp.com/attachments/829197797789532181/849431570103664640/teikyou.png"
+              },
+              footer = {
+                text =  message.author.name,
+                icon_url = message.author.avatarURL
+              }
+            }}
           elseif string.lower(mt[2]) == "help" or mt[2] == "" then
             message.channel:send{embed = {
               color = 0x85c5ff,
@@ -532,7 +545,8 @@ function command.run(message, mt)
                   "https://cdn.discordapp.com/attachments/829197797789532181/838908616329265212/upgrade20.png",
                   "https://cdn.discordapp.com/attachments/829197797789532181/838910126554742814/upgrade21.png",
                   "https://cdn.discordapp.com/attachments/829197797789532181/838910145491894292/upgrade22.png",
-                  "https://cdn.discordapp.com/attachments/829197797789532181/838910782556733511/upgrade23.png"
+                  "https://cdn.discordapp.com/attachments/829197797789532181/838910782556733511/upgrade23.png",
+                  "https://cdn.discordapp.com/attachments/829197797789532181/849420890281345034/upgrade24.png"
                 }  
                 message.channel:send{embed = {
                   color = 0x85c5ff,

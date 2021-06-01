@@ -53,7 +53,8 @@ function reaction.run(ef, eom, reaction, userid)
           "https://cdn.discordapp.com/attachments/829197797789532181/838908616329265212/upgrade20.png",
           "https://cdn.discordapp.com/attachments/829197797789532181/838910126554742814/upgrade21.png",
           "https://cdn.discordapp.com/attachments/829197797789532181/838910145491894292/upgrade22.png",
-          "https://cdn.discordapp.com/attachments/829197797789532181/838910782556733511/upgrade23.png"
+          "https://cdn.discordapp.com/attachments/829197797789532181/838910782556733511/upgrade23.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/849420890281345034/upgrade24.png",
         }  
         local newmessage = reaction.message.channel:send {
           reaction.message.channel:send{embed = {
