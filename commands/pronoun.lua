@@ -67,8 +67,17 @@ function command.run(message, mt)
     uj.pronouns["theirself"] = "starself"
     dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
     message.channel:send("You will now be refered to with sta/star.")
+  elseif mt[1] == "ze" then
+    uj.pronouns = {}
+    uj.pronouns["they"] = "ze"
+    uj.pronouns["them"] = "zir"
+    uj.pronouns["their"] = "zir"
+    uj.pronouns["theirs"] = "zirs"
+    uj.pronouns["theirself"] = "zirself"
+    dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
+    message.channel:send("You will now be refered to with ze/zir.")
   else
-    message.channel:send("Sorry, but I could not find "..mt[1].." pronouns. See if you mispelled, or if you would like these pronouns to be added, please message @Nocallia#0695 or fill out the google form.")
+    message.channel:send("Sorry, but I could not find "..mt[1].." pronouns. See if you mispelled, or if you would like these pronouns to be added, please message <@125330806557114369> or fill out the google form.")
   end
 
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
