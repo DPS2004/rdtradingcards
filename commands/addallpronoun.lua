@@ -14,9 +14,9 @@ function command.run(message, mt)
         cuj.pronouns["theirs"] = "theirs"
         cuj.pronouns["theirself"] = "theirself"
         dpf.savejson("savedata/"..v,cuj)
-        message.channel:send('Pronouns Added!')
       end
     end
+    message.channel:send('Pronouns Added!')
   else
     
     message.channel:send('Sorry, but only moderators can use this command!')
