@@ -59,6 +59,11 @@
     "description": "Collect every single, non-weed, Season 5 card!",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/840574183595573272/season5maestro.png"
   },
+  "s6maestro": {
+    "name": "Season 6 Maestro",
+    "description": "Collect every single Season 6 card!",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849413322121805844/season6maestro.png"
+  },
   "cardmaestro": {
     "name": "Card Maestro",
     "description": "Collect every single card available at a given point in time! This medal is not permanent, and will be removed every time new cards are added.",

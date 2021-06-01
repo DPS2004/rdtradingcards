@@ -48,7 +48,7 @@
     "receive": "s5maestro"
   },
   {
-    "require": "function checkrequirements(uj) print('checking season 5') local result = false local cardcount = 0 for i, v in ipairs(seasontable[5]) do print(v) if uj.storage[v] then cardcount = cardcount + 1 end end print('season 5 card count is ' .. cardcount .. ' out of ' .. #seasontable[5]) if cardcount >= #seasontable[5] then result = true end return result end return checkrequirements",
+    "require": "function checkrequirements(uj) print('checking season 6') local result = false local cardcount = 0 for i, v in ipairs(seasontable[6]) do print(v) if uj.storage[v] then cardcount = cardcount + 1 end end print('season 6 card count is ' .. cardcount .. ' out of ' .. #seasontable[6]) if cardcount >= #seasontable[6] then result = true end return result end return checkrequirements",
     "receive": "s6maestro"
   },
   {
