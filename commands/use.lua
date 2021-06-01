@@ -301,7 +301,7 @@ function command.run(message, mt)
               
               wj.boxpool[boxpoolindex] = givecard
               message.channel:send {
-                content = '<@' .. uj.id .. '> grabs a **' .. fntoname(givecard) .. '** card from their inventory and places it inside the box. As it goes in, a **' .. fntoname(getcard) .. '** card shows up in their pocket!'
+                content = '<@' .. uj.id .. '> grabs a **' .. fntoname(givecard) .. '** card from '..uj.pronouns["their"]..' inventory and places it inside the box. As it goes in, a **' .. fntoname(getcard) .. '** card shows up in '..uj.pronouns["their"]..' pocket!'
               }
               
               if uj.timesusedbox == nil then
