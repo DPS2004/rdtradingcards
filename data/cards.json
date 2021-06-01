@@ -1136,7 +1136,7 @@
           "bonuses": {
             "valentinesdaycard": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849085499787182100/loganalt.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849106277556944936/loganalt.png"
         },
         {
           "chance": 0,
@@ -3145,9 +3145,22 @@
           "bonuses": {
             "cafemixtape": true,
             "oversizedstethoscope": true
-            
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849080044487573584/remember.png"
+        },
+        {
+          "chance": 2,
+          "filename": "escargou",
+          "name": "The Escar'gou",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Xeno)",
+          "smell": "French Cuisine",
+          "season": 6,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849106823885488138/escargou.png"
         }
       ]
     },
@@ -3383,10 +3396,10 @@
         {
           "chance": 2,
           "filename": "nndmtribute",
-          "name": "A Chance of Fire or Ice",
+          "name": "Nico Nico Douga Megacollab Tribute",
           "tradeable": true,
           "type": "PICO-8",
-          "season": 3,
+          "season": 6,
           "pico": true,
           "description": "(Cart by DPS2004. Playable with the PICO-8 app or online at https://dps2004.itch.io/n-n-d-m-collab .)",
           "smell": "Particle Effects",
