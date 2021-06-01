@@ -3379,6 +3379,19 @@
           "smell": "Indecisiveness",
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200274178572318/acofoi.p8.png"
+        },
+        {
+          "chance": 2,
+          "filename": "nndmtribute",
+          "name": "A Chance of Fire or Ice",
+          "tradeable": true,
+          "type": "PICO-8",
+          "season": 3,
+          "pico": true,
+          "description": "(Cart by DPS2004. Playable with the PICO-8 app or online at https://dps2004.itch.io/n-n-d-m-collab .)",
+          "smell": "Particle Effects",
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849102646983000084/nndmtribute.p8.png"
         }
       ]
     },
