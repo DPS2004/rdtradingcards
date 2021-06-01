@@ -1930,6 +1930,54 @@
       ]
     },
     {
+      "groupname": "animals",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "pebble",
+          "name": "Pebble",
+          "tradeable": true,
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "Sand",
+          "season": 6,
+          "bonuses": {
+            "okamiiscollar": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849398512470458459/pebble.png"
+        },
+        {
+          "chance": 3,
+          "filename": "loafy",
+          "name": "Loafy",
+          "tradeable": true,
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "Relaxation",
+          "season": 6,
+          "bonuses": {
+            "okamiiscollar": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849398418421317653/loafy.png"
+        },
+        {
+          "chance": 3,
+          "filename": "Dr. Spider, PHD",
+          "name": "spider",
+          "tradeable": true,
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "Professionalism",
+          "season": 6,
+          "bonuses": {
+            "okamiiscollar": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849398472452603924/spider.png"
+        }
+      ]
+    },
+    {
       "groupname": "----------------------------------------EDITOR STUFF------------------------------------------------",
       "basechance": 0,
       "cards": []
