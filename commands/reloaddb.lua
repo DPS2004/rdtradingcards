@@ -676,7 +676,7 @@ function command.run(message, mt,overwrite)
             end
             print(inspect(nmt))
             cmd.nickname.run(message,nmt)
-	  elseif string.lower(string.sub(message.content, 0, 7+2)) == prefix.. 'pronoun' then 
+	  elseif string.lower(string.sub(message.content, 0, 7+3)) == prefix.. 'pronoun ' then 
             local mt = string.split(string.sub(message.content, 7+4),"/")
             local nmt = {}
             for i,v in ipairs(mt) do
