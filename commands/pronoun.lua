@@ -77,7 +77,7 @@ function command.run(message, mt)
     dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
     message.channel:send("You will now be refered to with ze/zir.")
   else
-    message.channel:send("Sorry, but I could not find "..mt[1].." pronouns. See if you mispelled, or if your pronouns are c!pronounlist. If they are not there, you can either message <@125330806557114369> or use c!pronounform")
+    message.channel:send("Sorry, but I could not find "..mt[1].." pronouns. See if you mispelled, or if your pronouns are c!pronounlist. If they are not there, you may use c!pronounform to suggest adding them.")
   end
 
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
