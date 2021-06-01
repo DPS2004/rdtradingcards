@@ -1,6 +1,6 @@
 local command = {}
 function command.run(message, mt)
-  message.channel:send('Current Pronouns: He, She, They, It, Xe, Sta')
+  message.channel:send('**Common Pronouns:**\nHe, She, They, It\n\n**Neopronouns:**\nXe, Ze, Sta')
   print(message.author.name .. " did !pronounlist")
 end
 return command
