@@ -1591,7 +1591,7 @@
           "tradeable": true,
           "type": "Discontinued",
           "description": "(Art by Winston Lee)",
-          "smell": "Face Paint",
+          "smell": "Heavy Makeup",
           "season": 6,
           "bonuses": {
             "rustysword": true
@@ -1963,8 +1963,8 @@
         },
         {
           "chance": 3,
-          "filename": "Dr. Spider, PHD",
-          "name": "spider",
+          "filename": "spider",
+          "name": "Dr. Spider, PHD",
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Winston Lee)",
