@@ -262,7 +262,11 @@ function command.run(message, mt)
         if not uj.lastbox then 
           uj.lastbox = -24
         end
-        if uj.lastbox + 11.5 <= time:toHours() then
+        local cooldown = 11.5
+        if uj.equipped == "stainedgloves" then
+          cooldown = 8
+        end
+        if uj.lastbox + cooldown <= time:toHours() then
           if next(uj.inventory) then
             if not uj.skipprompts then
               newmessage = message.channel:send{embed = {
@@ -320,7 +324,7 @@ function command.run(message, mt)
           end
         else
 
-          local minutesleft = math.ceil(uj.lastbox * 60 - time:toMinutes() + 11.5 * 60)
+          local minutesleft = math.ceil(uj.lastbox * 60 - time:toMinutes() + cooldown * 60)
           local durationtext = ""
           if math.floor(minutesleft / 60) > 0 then
             durationtext = math.floor(minutesleft / 60) .. " hour"

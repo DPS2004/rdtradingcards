@@ -54,6 +54,11 @@
     "description": "Brings the c!pray timer down to 2.5 days.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203123024297984/faithfulnecklace.png"
   },
+  "stainedgloves": {
+    "name": "Stained Gloves",
+    "description": "Brings the c!box timer down to 8 hours.\nwait...\nwere you reaching in there with your bare hands ***this whole time!??!?!?***",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849416057085231144/stainedgloves.png"
+  },
   "paddedstickersheet": {
     "name": "Padded Sticker Sheet",
     "description": "Makes cards containing a custom character (being used as a traditional row) more likely to be pulled.",
