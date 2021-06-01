@@ -1125,6 +1125,20 @@
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162445271924787/logandc.png"
         },
         {
+          "chance": 1,
+          "filename": "loganalt",
+          "name": "Logan (Alternate)",
+          "tradeable": true,
+          "type": "Alternate",
+          "description": "(Art by Winston Lee)",
+          "smell": "Old Friendship",
+          "season": 6,
+          "bonuses": {
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849085499787182100/loganalt.png"
+        },
+        {
           "chance": 0,
           "filename": "loganc",
           "name": "Logan (Collector's)",
@@ -3104,6 +3118,36 @@
             "cafemixtape": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849065148354396170/nicelogo.png"
+        },
+        {
+          "chance": 2,
+          "filename": "artofwar",
+          "name": "The Art of War",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Not Xenogenesis)",
+          "smell": "Inaccurate Quotations",
+          "season": 6,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849079322786004992/artofwar.png"
+        },
+        {
+          "chance": 2,
+          "filename": "remember",
+          "name": "Remember",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Zack101155)",
+          "smell": "Interviews",
+          "season": 6,
+          "bonuses": {
+            "cafemixtape": true,
+            "oversizedstethoscope": true
+            
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849080044487573584/remember.png"
         }
       ]
     },
