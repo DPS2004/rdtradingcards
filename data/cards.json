@@ -1971,7 +1971,8 @@
           "smell": "Professionalism",
           "season": 6,
           "bonuses": {
-            "okamiiscollar": true
+            "okamiiscollar": true,
+            "oversizedstethoscope": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849398472452603924/spider.png"
         }
