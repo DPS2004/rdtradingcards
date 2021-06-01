@@ -740,6 +740,20 @@
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839163086031814767/haileydc.png"
         },
         {
+          "chance": 1,
+          "filename": "haileyalt",
+          "name": "Hailey (Alternate)",
+          "tradeable": true,
+          "type": "Alternate",
+          "description": "(Art by Winston Lee)",
+          "smell": "Planes and Automobiles",
+          "season": 6,
+          "bonuses": {
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849108089520914472/haileyalt.png"
+        },
+        {
           "chance": 0,
           "filename": "haileyc",
           "name": "Hailey (Collector's)",
@@ -1569,6 +1583,20 @@
             "rustysword": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839226590885314570/samuraialt.png"
+        },
+        {
+          "chance": 0.5,
+          "filename": "samuraidc_alt",
+          "name": "Samurai (Discontinued Alternate)",
+          "tradeable": true,
+          "type": "Discontinued",
+          "description": "(Art by Winston Lee)",
+          "smell": "Face Paint",
+          "season": 6,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849113790711595008/samuraidc_alt.png"
         },
         {
           "chance": 0,
@@ -3161,6 +3189,49 @@
             "rustysword": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849106823885488138/escargou.png"
+        },
+        {
+          "chance": 2,
+          "filename": "laidbackthrills",
+          "name": "Laidback Thrills",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Szprycha)",
+          "smell": "Buckled Pants",
+          "season": 6,
+          "bonuses": {
+            "paddedstickersheet": true,
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849268217939492894/laidbackthrills.png"
+        },
+        {
+          "chance": 2,
+          "filename": "endisanguish",
+          "name": "The End Is Anguish",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Lunaduskjr)",
+          "smell": "Arbitrary Code Execution",
+          "season": 6,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849271565153730590/endisanguish.png"
+        },
+        {
+          "chance": 2,
+          "filename": "darksheep",
+          "name": "Dark Sheep",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Bayou)",
+          "smell": "Spite",
+          "season": 6,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849268709348081724/darksheep.png"
         }
       ]
     },
