@@ -393,6 +393,10 @@ function command.run(message, mt,overwrite)
       end
       return cembed
     end
+    
+    
+    
+  
 	
     
     -- _G['getcardanimated'] = function (x)
@@ -458,6 +462,41 @@ function command.run(message, mt,overwrite)
       x:addReaction("✅")
       x:addReaction("❌")
     end
+    
+    
+    _G['commands'] = {}
+    
+    _G['addcommand'] = function(trigger,commandfunction, expectedargs)
+      local newcommand = {}
+      newcommand.trigger = prefix .. trigger
+      newcommand.commandfunction = commandfunction or cmd.ping
+      newcommand.expectedargs = 0 or expectedargs
+      
+      table.insert(commands,newcommand)
+      
+    end
+    
+    addcommand("ping",cmd.ping)
+    addcommand("help",cmd.help)
+    addcommand("show",cmd.show,1)
+    addcommand("inventory",cmd.inventory)
+    
+    _G['newhandlemessage'] = function (message)
+      if message.author.id ~= "767445265871142933" then
+        
+        for i,v in ipairs(commands) do
+          if string.lower(string.sub(message.content, 0, #v.trigger)) == v.trigger then
+            print("found ".. v.trigger)
+            
+          end
+          
+          
+        end
+        
+      end
+      
+    end
+    
     print("handlemessage")
     _G['handlemessage'] = function (message)
       if message.author.id ~= "767445265871142933" then --failsafe to avoid recursion
