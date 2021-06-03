@@ -56,6 +56,10 @@
     "receive": "cardmaestro"
   },
   {
+    "require": "function checkrequirements(uj) print('pyramid time') local result = false for k,v in pairs(uj.storage) do print(k) print(v) if v >= 50 then result = true end end return result end return checkrequirements",
+    "receive": "pyramidal"
+  }, 
+  {
     "require": "function checkrequirements(uj) print(inspect(uj)) if uj.storage['samurair'] then return false else return false end end return checkrequirements",
     "receive": "easytogetdebugmedal"
   }
