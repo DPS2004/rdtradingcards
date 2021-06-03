@@ -587,41 +587,12 @@ function command.run(message, mt,overwrite)
         eom = ef[reaction.message.id]
         if eom then
           print('it is an event message being reacted to')
-          if eom.etype == "trade" then
-            cmdre.trade.run(ef, eom, reaction, userid)
-          elseif eom.etype == "store" then
-            print('it is a storage message being reacted to')
-            cmdre.store.run(ef, eom, reaction, userid)
-          elseif eom.etype == "shred" then
-            print('it is a shred message being reacted to')
-            cmdre.shred.run(ef, eom, reaction, userid)
-          elseif eom.etype == "equip" then
-            print('it is an equip message being reacted to')
-            cmdre.equip.run(ef, eom, reaction, userid)
-          elseif eom.etype == "usemachine" then
-            print('it is a use machine message being reacted to')
-            cmdre.usemachine.run(ef, eom, reaction, userid)
-          elseif eom.etype == "usehole" then
-            print('it is a use hole message being reacted to')
-            cmdre.usehole.run(ef, eom, reaction, userid)
-          elseif eom.etype == "spideruse" then
-            print('it is a use spider message being reacted to')
-            cmdre.spideruse.run(ef, eom, reaction, userid)
-          elseif eom.etype == "spiderlook" then
-            print('it is a look spider message being reacted to')
-            cmdre.spiderlook.run(ef, eom, reaction, userid)
-          elseif eom.etype == "spidersmell" then
-            print('it is a look spider message being reacted to')
-            cmdre.spidersmell.run(ef, eom, reaction, userid)
-          elseif eom.etype == "getladder" then
-            print('getladder')
-            cmdre.getladder.run(ef, eom, reaction, userid)
-          elseif eom.etype == "usemousehole" then
-            print('usemousehole')
-            cmdre.usemousehole.run(ef, eom, reaction, userid)
-          elseif eom.etype == "usebox" then
-            print('usebox')
-            cmdre.usebox.run(ef, eom, reaction, userid)
+          local status, err = pcall(function ()
+            cmdre[eom.etype].run(ef, eom, reaction, userid)
+          end)
+          if not status then
+            print("uh oh")
+            reaction.message.channel:send("Oops! An error has occured! Error message: ```" .. err .. "``` (<@290582109750427648> <@298722923626364928> please fix this thanks)")
           end
         end
       end

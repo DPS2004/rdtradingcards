@@ -163,7 +163,7 @@ end)
 print("yay got past load ready")
 client:on('messageCreate', function(message)
   --print("hi")
-  newhandlemessage(message)
+  handlemessage(message)
 end)
 
 print("ok commands loaded, doing reactions")
