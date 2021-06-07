@@ -330,6 +330,11 @@ function command.run(message, mt,overwrite)
           cfn = string.lower(x)
         end
       end
+      if cfn ~= nil then
+        print("itemtext returning " .. cfn)
+      else
+        print("wow, its nil")
+      end
       return cfn
     end
     

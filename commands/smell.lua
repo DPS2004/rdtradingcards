@@ -23,6 +23,26 @@ function command.run(message, mt)
       mousehole = "The **Mouse Hole** smells like screen cleaner and screwdrivers.",
       box = "Oddly enough, the **Peculiar Box** smells of nothing at all."
     }
+    local itemsmells = {
+      nothing = "It smells like the **Peculiar Box**.",
+      rustysword = "The **Rusty Sword**, unsurprisingly, smells like rust.",
+      cafemixtape = "The **Cafe Mixtape** smells like outdated audio formats.",
+      oversizedstethoscope = "The **Oversized Stethoscope** smells like medical school.",
+      valentinesdaycard = "The **Valentines Day Card** smells like glitter.",
+      hardcandy = "The **Hard Candy** smells like a retirement home.",
+      deluxebirdseed = "The **Deluxe Birdseed** smells like something a squirrel would enjoy.",
+      brokenmouse = "The **Broken Mouse** smells like cheap plastic.",
+      fixedmouse = "The **Fixed Mouse** smells like reinforced plastic.",
+      stoppedwatch = "The **Stopped Watch** smells like anachronism.",
+      faithfulnecklace = "The **Faithful Necklace** smells. You need to take it off and wash it.",
+      stainedgloves = "The **Stained Gloves** smell like red.",
+      paddedstickersheet = "The **Padded Sticker Sheet** smells like elementary school.",
+      duncecap = "The **Dunce Cap** smells like #insomniacs. That is, to say, bad.",
+      deviltail = "The **Devil Tail** smells like fire and brimstone.",
+      scribblednotepad = "The **Scribbled-In Notepad** smells like imagination.",
+      okamiiscollar = "**okamii's Collar** smells like midnight.",
+      coolhat = "The **Cool Hat** smells really cool :sunglasses"
+    }
     request = string.lower(request)
     if request == "strange machine" then
       request = "machine"
@@ -92,7 +112,14 @@ function command.run(message, mt)
       dpf.savejson("savedata/events.json",tf)
     elseif hcsmells[request] then
       message.channel:send(hcsmells[request])
-
+    elseif itemtexttofn(request) then
+      print("smelling")
+      if uj.items[itemtexttofn(request)] then
+        
+        message.channel:send(itemsmells[itemtexttofn(request)])
+      else
+        message.channel:send("Sorry, but you do not have the **" .. itemfntoname(itemtexttofn(request)) .. "** item.")
+      end
     
     else
       if nopeeking then

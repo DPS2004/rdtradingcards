@@ -173,6 +173,12 @@ function command.run(message, mt)
           content = 'It appears that the **Throne** is already in use by the **Panda**.'
         }
         uj = adduse(uj)
+      elseif (string.lower(mt[1]) == "necklace" or string.lower(mt[1]) == "faithfulnecklace" or string.lower(mt[1]) == "faithful necklace") and uj.items["faithfulnecklace"] then       
+        message.channel:send {
+          
+          content = 'You wash off the **Faithful Necklace**, and then immediately drop it on the grimy floor of the **Abandoned Lab**. Whoops.'
+        }
+        uj = adduse(uj)
       
       elseif string.lower(mt[1]) == "ladder" then
         if wj.worldstate == "labopen" or wj.worldstate == "terminalopen" then

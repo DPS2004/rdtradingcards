@@ -3048,7 +3048,8 @@
           "bonuses": {
             "paddedstickersheet": true,
             "rustysword": true,
-            "cafemixtape": true
+            "cafemixtape": true,
+            "duncecap": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839603874943074385/nichijoint.png"
         },
@@ -3148,7 +3149,7 @@
           "name": "組曲『ニコニコ動画』（10周年記念REMIX）",
           "tradeable": true,
           "type": "Super Rare",
-          "description": "(Level by Various)",
+          "description": "(Level by Kin, Seven, DPS2004, Nocallia, Het, CrazyGuySmash, Rikri, JackArbor, WillFlame, Doctor Jazz, Not Xenogenesis, GameyfanC, Bayou, TNTz, Pastel, Xeno, and Hexakon)",
           "smell": "Smiles",
           "season": 6,
           "bonuses": {},
