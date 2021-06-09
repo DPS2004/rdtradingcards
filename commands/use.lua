@@ -411,6 +411,20 @@ function command.run(message, mt)
                 icon_url = message.author.avatarURL
               }
             }}
+          elseif string.lower(mt[2]) == "savedata" then
+            message.channel:send{embed = {
+              color = 0x85c5ff,
+              title = "Using Terminal...",
+              description = '`DATA LOCATED. GENERATING PRINTOUT`',
+              footer = {
+                text =  message.author.name,
+                icon_url = message.author.avatarURL
+              }
+            }}
+            message.channel:send({
+              content = '',
+              file = "savedata/" .. uj.id .. ".json"
+            })
           elseif string.lower(mt[2]) == "teikyou" then
             message.channel:send{embed = {
               color = 0x85c5ff,
@@ -428,7 +442,7 @@ function command.run(message, mt)
             message.channel:send{embed = {
               color = 0x85c5ff,
               title = "Using Terminal...",
-              description = '`AVAILABLE COMMANDS: \nHELP\nSTATS\nUPGRADE\nCREDITS`',
+              description = '`AVAILABLE COMMANDS: \nHELP\nSTATS\nUPGRADE\nCREDITS\nSAVEDATA`',
               image = {
                 url = "https://cdn.discordapp.com/attachments/829197797789532181/838836625391484979/terminal2.gif"
               },

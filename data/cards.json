@@ -12,7 +12,7 @@
       "cards": [
         {
           "chance": 2,
-          "filename": "battleworninsomniac",
+          "filename": "bwinsomniac",
           "name": "Battleworn Insomniac",
           "tradeable": true,
           "type": "Super Rare",
@@ -26,7 +26,7 @@
         },
         {
           "chance": 2,
-          "filename": "kotoshokotechno",
+          "filename": "samuraitechno",
           "name": "Samurai Techno",
           "tradeable": true,
           "type": "Super Rare",
@@ -267,7 +267,7 @@
         },
         {
           "chance": 1,
-          "filename": "bombsniffingpomeranian",
+          "filename": "bombsniffing",
           "name": "Bomb-Sniffing Pomeranian",
           "tradeable": true,
           "type": "Ultra Rare",
@@ -1935,8 +1935,8 @@
       "cards": [
         {
           "chance": 3,
-          "filename": "pebble",
-          "name": "Pebble",
+          "filename": "rattle",
+          "name": "Rattle",
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Winston Lee)",
@@ -2428,7 +2428,7 @@
         },
         {
           "chance": 2,
-          "filename": "creativeexercise",
+          "filename": "creativeex",
           "name": "Creative Exercise",
           "tradeable": true,
           "type": "Super Rare",
@@ -2455,7 +2455,7 @@
         },
         {
           "chance": 2,
-          "filename": "disperagioia",
+          "filename": "disper",
           "name": "Disperagioia",
           "tradeable": true,
           "type": "Super Rare",
@@ -2609,7 +2609,7 @@
         },
         {
           "chance": 2,
-          "filename": "pixelplantation",
+          "filename": "pixelplant",
           "name": "Pixel Plantation",
           "tradeable": true,
           "type": "Super Rare",
