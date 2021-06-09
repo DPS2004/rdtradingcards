@@ -21,7 +21,7 @@ function command.run(message, mt)
           if numcards ~= 1 then
             isplural = "s"
           end
-          local newmessage = message.channel:send("<@" .. uj.id .. ">, do you want shred your " .. numcards .. " **" .. fntoname(item1) .. "** card" .. isplural .. "? **This cannot be undone, and there is no reward for this.** React to this post with :white_check_mark: to confirm and :x: to deny.")
+          local newmessage = message.channel:send("<@" .. uj.id .. ">, do you want shred your " .. numcards .. " **" .. fntoname(item1) .. "** card" .. isplural .. "? **This cannot be undone.** React to this post with :white_check_mark: to confirm and :x: to deny.")
           addreacts(newmessage)
           local tf = dpf.loadjson("savedata/events.json",{})
           tf[newmessage.id] ={numcards = numcards, ujf = ujf, item1=item1,etype = "shred",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
