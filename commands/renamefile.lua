@@ -18,14 +18,14 @@ function command.run(message, mt)
                 cuj.storage[mt[2]] = cuj.inventory[mt[1]]
                 cuj.storage[mt[1]] = nil
               end
-              if cuj.medals[mt[1]] then
-                cuj.medals[mt[2]] = cuj.medals[mt[1]]
-                cuj.medals[mt[1]] = nil
-              end
-              if cuj.items[mt[1]] then
-                cuj.items[mt[2]] = cuj.items[mt[1]]
-                cuj.items[mt[1]] = nil
-              end
+--              if cuj.medals[mt[1]] then
+--                cuj.medals[mt[2]] = cuj.medals[mt[1]]
+--                cuj.medals[mt[1]] = nil
+--              end
+--              if cuj.items[mt[1]] then
+--                cuj.items[mt[2]] = cuj.items[mt[1]]
+--                cuj.items[mt[1]] = nil
+--              end
           end
           dpf.savejson("savedata/"..v,cuj)
         end
