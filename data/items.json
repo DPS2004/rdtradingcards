@@ -93,6 +93,11 @@
     "name": "Lost Name Tag",
     "description": "Makes cards containing Farmer or Politician more likely to be pulled.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/853048862256529428/lostnametag.png"
+  },
+  "charcoalpencil": {
+    "name": "Charcoal Pencil",
+    "description": "Makes cards containing Miner or Lucia Moon more likely to be pulled.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/853055152198385684/charcoalpencil.png"
   }
 
 }

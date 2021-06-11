@@ -148,7 +148,9 @@
           "description": "(Level by 7th Beat Games)",
           "smell": "Pencil Lead",
           "season": 4,
-          "bonuses": {},
+          "bonuses": {
+            "charcoalpencil": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200373872721990/artexercise.png"
         },
         {
@@ -349,7 +351,8 @@
           "smell": "Demoscene",
           "season": 5,
           "bonuses": {
-            "cafemixtape": true
+            "cafemixtape": true,
+            "charcoalpencil": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839273511914962974/rollerdisco.png"
         },
@@ -394,7 +397,8 @@
           "smell": "Pebbles",
           "season": 5,
           "bonuses": {
-            "rustysword": true
+            "rustysword": true,
+            "charcoalpencil": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839272847213068298/trainingdoctor.png"
         },
@@ -439,7 +443,8 @@
           "bonuses": {
             "rustysword": true,
             "valentinesdaycard": true,
-            "lostnametag": true
+            "lostnametag": true,
+            "charcoalpencil": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201878784671775/invisible.png"
         },
@@ -1194,7 +1199,8 @@
           "smell": "Coal",
           "season": 1,
           "bonuses": {
-            "okamiiscollar": true
+            "okamiiscollar": true,
+            "charcoalpencil": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839170156877447198/minerr.png"
         },
@@ -1207,7 +1213,9 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Coal",
           "season": 1,
-          "bonuses": {},
+          "bonuses": {
+            "charcoalpencil": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202087949762600/minersr.png"
         },
         {
@@ -1219,7 +1227,9 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Coal",
           "season": 1,
-          "bonuses": {},
+          "bonuses": {
+            "charcoalpencil": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202094220509234/minerur.png"
         },
         {
@@ -1231,7 +1241,9 @@
           "description": "(Art by Winston Lee)",
           "smell": "Coal",
           "season": 5,
-          "bonuses": {},
+          "bonuses": {
+            "charcoalpencil": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162170129514506/minerdc.png"
         },
         {
@@ -1243,7 +1255,9 @@
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Miner (Art by Kyle Labriola)",
           "smell": "Coal",
           "season": 1,
-          "bonuses": {},
+          "bonuses": {
+            "charcoalpencil": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202076215148565/minerc.png"
         }
       ]
@@ -1710,7 +1724,8 @@
           "smell": "Imagination",
           "season": 3,
           "bonuses": {
-            "okamiiscollar": true
+            "okamiiscollar": true,
+            "charcoalpencil": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162341920210984/luciar.png"
         },
@@ -1723,7 +1738,9 @@
           "description": "(Art by Kyle Labriola, edited by Lumina)",
           "smell": "Imagination",
           "season": 3,
-          "bonuses": {},
+          "bonuses": {
+            "charcoalpencil": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202060981436446/luciasr.png"
         },
         {
@@ -1735,7 +1752,9 @@
           "description": "(Art by Kyle Labriola, edited by Lumina)",
           "smell": "Imagination",
           "season": 3,
-          "bonuses": {},
+          "bonuses": {
+            "charcoalpencil": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202070208118784/luciaur.png"
         },
         {
@@ -1747,7 +1766,9 @@
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Lucia Moon (Art by Lumina, based on art by Kyle Labriola)",
           "smell": "Imagination",
           "season": 3,
-          "bonuses": {},
+          "bonuses": {
+            "charcoalpencil": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202045797924864/luciac.png"
         }
       ]
@@ -2483,7 +2504,8 @@
           "smell": "[undefined]",
           "season": 2,
           "bonuses": {
-            "oversizedstethoscope": true
+            "oversizedstethoscope": true,
+            "charcoalpencil": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201454807515196/disperagioia.png"
         },
@@ -3100,7 +3122,8 @@
           "smell": "Addition",
           "season": 6,
           "bonuses": {
-            "cafemixtape": true
+            "cafemixtape": true,
+            "charcoalpencil": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849009356439552000/streak.png"
         },
