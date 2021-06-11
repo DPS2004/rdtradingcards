@@ -88,6 +88,11 @@
     "name": "Cool Hat",
     "description": "Makes you look cooler.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203115609292810/coolhat.png"
+  },
+  "lostnametag": {
+    "name": "Lost Name Tag",
+    "description": "Makes cards containing Farmer or Politician more likely to be pulled.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/853048862256529428/lostnametag.png"
   }
 
 }

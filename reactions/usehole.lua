@@ -55,12 +55,19 @@ function reaction.run(ef, eom, reaction, userid)
           "https://cdn.discordapp.com/attachments/829197797789532181/838910145491894292/upgrade22.png",
           "https://cdn.discordapp.com/attachments/829197797789532181/838910782556733511/upgrade23.png",
           "https://cdn.discordapp.com/attachments/829197797789532181/849420890281345034/upgrade24.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/853044075704221716/upgrade25.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/853044088089215046/upgrade26.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/853044088164188180/upgrade27.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/853044089305563184/upgrade28.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/853044089003311105/upgrade29.png",
+          "https://cdn.discordapp.com/attachments/829197797789532181/853044859139784725/upgrade30.png"
         }  
+        wj.tokensdonated = wj.tokensdonated + 1
         local newmessage = reaction.message.channel:send {
           reaction.message.channel:send{embed = {
             color = 0x85c5ff,
             title = "Using Terminal...",
-            description = 'The **Terminal** whirrs happily.',
+            description = 'The **Terminal** whirrs happily. A printout lets you know that ' .. wj.tokensdonated .. ' tokens have been donated so far.',
             image = {
               url = upgradeimages[math.random(1,#upgradeimages)]
             },
@@ -73,7 +80,7 @@ function reaction.run(ef, eom, reaction, userid)
       end
       dpf.savejson(ujf,uj)
       
-      wj.tokensdonated = wj.tokensdonated + 1
+      
       
       if wj.worldstate == "tinyhole" and wj.tokensdonated >= 5 then
         wj.worldstate = "smallhole"

@@ -320,7 +320,8 @@
           "season": 5,
           "bonuses": {
             "valentinesdaycard": true,
-            "rustysword": true
+            "rustysword": true,
+            "lostnametag": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839143947929780224/classynight.png"
         },
@@ -378,7 +379,8 @@
           "season": 5,
           "bonuses": {
             "valentinesdaycard": true,
-            "rustysword": true
+            "rustysword": true,
+            "lostnametag": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839143334370869278/classy.png"
         },
@@ -436,7 +438,8 @@
           "season": 4,
           "bonuses": {
             "rustysword": true,
-            "valentinesdaycard": true
+            "valentinesdaycard": true,
+            "lostnametag": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201878784671775/invisible.png"
         },
@@ -624,7 +627,8 @@
           "smell": "Haybales",
           "season": 1,
           "bonuses": {
-            "okamiiscollar": true
+            "okamiiscollar": true,
+            "lostnametag": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839163216042786866/farmerr.png"
         },
@@ -637,7 +641,9 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Haybales",
           "season": 1,
-          "bonuses": {},
+          "bonuses": {
+            "lostnametag": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201531168489542/farmersr.png"
         },
         {
@@ -649,7 +655,9 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Haybales",
           "season": 1,
-          "bonuses": {},
+          "bonuses": {
+            "lostnametag": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201538429485066/farmerur.png"
         },
         {
@@ -661,7 +669,9 @@
           "description": "(Art by Winston Lee)",
           "smell": "Game Development",
           "season": 1,
-          "bonuses": {},
+          "bonuses": {
+            "lostnametag": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839163230022271047/farmerdc.png"
         },
         {
@@ -673,7 +683,9 @@
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Farmer (Art by Kyle Labriola)",
           "smell": "Haybales",
           "season": 1,
-          "bonuses": {},
+          "bonuses": {
+            "lostnametag": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201514341728286/farmerc.png"
         }
       ]
@@ -1467,7 +1479,8 @@
           "smell": "Democracy",
           "season": 1,
           "bonuses": {
-            "okamiiscollar": true
+            "okamiiscollar": true,
+            "lostnametag": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839160716299731024/politicianr.png"
         },
@@ -1480,7 +1493,9 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Democracy",
           "season": 1,
-          "bonuses": {},
+          "bonuses": {
+            "lostnametag": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202407238008904/politiciansr.png"
         },
         {
@@ -1492,7 +1507,9 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Democracy",
           "season": 1,
-          "bonuses": {},
+          "bonuses": {
+            "lostnametag": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202413432733746/politicianur.png"
         },
         {
@@ -1504,7 +1521,9 @@
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of the Politician (Art by Kyle Labriola)",
           "smell": "Democracy",
           "season": 1,
-          "bonuses": {},
+          "bonuses": {
+            "lostnametag": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202395971715082/politicianc.png"
         }
       ]
@@ -2861,7 +2880,8 @@
             "rustysword": true,
             "cafemixtape": true,
             "deluxebirdseed": true,
-            "deviltail": true
+            "deviltail": true,
+            "lostnametag": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/831155038126473266/madness.png"
         },
@@ -2976,7 +2996,8 @@
           "smell": "Lilypads",
           "season": 5,
           "bonuses": {
-            "valentinesdaycard": true
+            "valentinesdaycard": true,
+            "lostnametag": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/831155101553000458/enchantedlove.gif"
         },
@@ -2991,7 +3012,8 @@
           "smell": "Stay-Puft",
           "season": 5,
           "bonuses": {
-            "rustysword": true
+            "rustysword": true,
+            "lostnametag": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/838954510172553236/retrofunky.gif"
         },
@@ -3237,7 +3259,8 @@
           "smell": "French Cuisine",
           "season": 6,
           "bonuses": {
-            "rustysword": true
+            "rustysword": true,
+            "lostnametag": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849106823885488138/escargou.png"
         },
