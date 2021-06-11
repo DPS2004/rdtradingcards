@@ -62,7 +62,7 @@
   {
     "require": "function checkrequirements(uj) print('total shredded is ' .. uj.timesshredded)  if uj.timesshredded >= 25 then return true else return false end end return checkrequirements",
     "receive": "shredsavvy"
-  }
+  },
   {
     "require": "function checkrequirements(uj) print(inspect(uj)) if uj.storage['samurair'] then return false else return false end end return checkrequirements",
     "receive": "easytogetdebugmedal"

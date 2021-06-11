@@ -15,33 +15,33 @@ local time = sw:getTime()
     end
 
     if message.channel.id == privatestuff.specialchannelid then --ssss override
-        message.channel:send('Pulling card...')
-        local newcard = "ssss45"
-        local ncn = fntoname(newcard)
-        print(ncn)
-        message.channel:send {
-            content = 'Woah! '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to '..uj.pronouns["their"]..' inventory.',
-            file = "card_images/" .. newcard .. ".png"
-          }
+--        message.channel:send('Pulling card...')
+--        local newcard = "ssss45"
+--        local ncn = fntoname(newcard)
+--        print(ncn)
+--        message.channel:send {
+--            content = 'Woah! '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to '..uj.pronouns["their"]..' inventory.',
+--            file = "card_images/" .. newcard .. ".png"
+--          }
 
-        local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
-        if uj.inventory[newcard] == nil then
-          uj.inventory[newcard] = 1
-        else
-          uj.inventory[newcard] = uj.inventory[newcard] + 1
-        end
-        if uj.timespulled == nil then
-          uj.timespulled = 1
-        else
-          uj.timespulled = uj.timespulled + 1
-        end
-        uj.names = {}
-        uj.names[message.author.name .. "#" .. message.author.discriminator] = true
-        uj.id = message.author.id
-        uj.lastpull = time:toHours()
-        print(message.author.name .. "#" .. message.author.discriminator .. " is the username")
-        print("number of cards is " .. uj.inventory[newcard])
-        dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
+--        local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
+--        if uj.inventory[newcard] == nil then
+--          uj.inventory[newcard] = 1
+--        else
+--          uj.inventory[newcard] = uj.inventory[newcard] + 1
+--        end
+--        if uj.timespulled == nil then
+--          uj.timespulled = 1
+--        else
+--          uj.timespulled = uj.timespulled + 1
+--        end
+--        uj.names = {}
+--        uj.names[message.author.name .. "#" .. message.author.discriminator] = true
+--        uj.id = message.author.id
+--        uj.lastpull = time:toHours()
+--        print(message.author.name .. "#" .. message.author.discriminator .. " is the username")
+--        print("number of cards is " .. uj.inventory[newcard])
+--        dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
     else
 
       if uj.lastpull + cooldown <= time:toHours() then
@@ -58,14 +58,22 @@ local time = sw:getTime()
         end
         -- message.channel:send('Woah! '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to '..uj.pronouns["their"]..' inventory. The shorthand form of this card is **'.. newcard .. '**.')
         -- message.channel:send('https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. getcardembed(newcard) .. '/' .. newcard .. extension)
-        message.channel:send{embed = {
-          color = 0x85c5ff,
-          title = embedtitle,
-          description = message.author.mentionString ..' got a **'.. ncn ..'** card! The **'.. ncn ..'** card has been added to '..uj.pronouns["their"]..' inventory. The shorthand form of this card is **'.. newcard .. '**.',
-          image = {
-            url = getcardembed(newcard)
+        if not getcardspoiler(newcard) then
+          message.channel:send{embed = {
+            color = 0x85c5ff,
+            title = embedtitle,
+            description = message.author.mentionString ..' got a **'.. ncn ..'** card! The **'.. ncn ..'** card has been added to '..uj.pronouns["their"]..' inventory. The shorthand form of this card is **'.. newcard .. '**.',
+            image = {
+              url = getcardembed(newcard)
+            }
+          }}
+        else
+          print("spider moments")
+          message.channel:send{
+            content = "**" .. embedtitle .. "**\n" .. message.author.mentionString ..' got a **'.. ncn ..'** card! The **'.. ncn ..'** card has been added to '..uj.pronouns["their"]..' inventory. The shorthand form of this card is **'.. newcard .. '**.',
+            file = "card_images/SPOILER_" .. newcard .. ".png"
           }
-        }}
+        end
         local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
         if uj.inventory[newcard] == nil then
           uj.inventory[newcard] = 1
@@ -79,15 +87,22 @@ local time = sw:getTime()
             newcard = ptable[uj.equipped][math.random(#ptable[uj.equipped])]
             ncn = fntoname(newcard)
             print(ncn)
-
-            message.channel:send{embed = {
-              color = 0x85c5ff,
-              title = "Doubleclick!",
-              description = 'Because of the **Fixed Mouse**, ' .. message.author.mentionString ..' got a **'.. ncn ..'** card! The **'.. ncn ..'** card has been added to '..uj.pronouns["their"]..' inventory. The shorthand form of this card is **'.. newcard .. '**.',
-              image = {
-                url = getcardembed(newcard)
+            if not getcardspoiler(newcard) then
+              message.channel:send{embed = {
+                color = 0x85c5ff,
+                title = "Doubleclick!",
+                description = 'Because of the **Fixed Mouse**, ' .. message.author.mentionString ..' got a **'.. ncn ..'** card! The **'.. ncn ..'** card has been added to '..uj.pronouns["their"]..' inventory. The shorthand form of this card is **'.. newcard .. '**.',
+                image = {
+                  url = getcardembed(newcard)
+                }
+              }}
+            else
+              print("spider moments")
+              message.channel:send{
+                content = "**Doubleclick!**\n" .. 'Because of the **Fixed Mouse**, ' .. message.author.mentionString ..' got a **'.. ncn ..'** card! The **'.. ncn ..'** card has been added to '..uj.pronouns["their"]..' inventory. The shorthand form of this card is **'.. newcard .. '**.',
+                file = "card_images/SPOILER_" .. newcard .. ".png"
               }
-            }}
+            end
             if uj.inventory[newcard] == nil then
               uj.inventory[newcard] = 1
             else

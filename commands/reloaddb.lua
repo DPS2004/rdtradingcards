@@ -400,7 +400,22 @@ function command.run(message, mt,overwrite)
       return cembed
     end
     
-    
+    _G['getcardspoiler'] = function (x)
+      print("getting spoiler for " .. x)
+      local cspoiler = nil
+      for i,v in ipairs(cdb) do
+       
+        if v.filename == x then
+          print(v.spoiler)
+          cspoiler = v.spoiler
+          if cspoiler == nil then
+            cspoiler = false
+          end
+        end
+      end
+      print("returning " .. tostring(cspoiler))
+      return cspoiler
+    end
     
   
 	

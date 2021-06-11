@@ -11,21 +11,32 @@ function command.run(message, mt)
     if curfilename ~= nil then
       if uj.inventory[curfilename] or uj.storage[curfilename] then
         print("user has card")
-        local embeddescription = ""
-        if getcarddescription(curfilename) then
-          embeddescription = "\n\n*The description on the back reads:*\n> " .. getcarddescription(curfilename)
-        end
-        -- message.channel:send('Here it is! Your **'.. fntoname(curfilename) .. '** card. The shorthand form is **' .. curfilename .. '**.')
-        -- message.channel:send('https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. getcardembed(curfilename) .. '/' .. curfilename .. extension)
-        message.channel:send{embed = {
-          color = 0x85c5ff,
-          title = "Showing card...",
-          description = 
-          'Here it is! Your **'.. fntoname(curfilename) .. '** card. The shorthand form is **' .. curfilename .. '**.' .. embeddescription,
-          image = {
-            url = getcardembed(curfilename)
+        if not getcardspoiler(curfilename) then
+          local embeddescription = ""
+          if getcarddescription(curfilename) then
+            embeddescription = "\n\n*The description on the back reads:*\n> " .. getcarddescription(curfilename)
+          end
+          -- message.channel:send('Here it is! Your **'.. fntoname(curfilename) .. '** card. The shorthand form is **' .. curfilename .. '**.')
+          -- message.channel:send('https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. getcardembed(curfilename) .. '/' .. curfilename .. extension)
+          message.channel:send{embed = {
+            color = 0x85c5ff,
+            title = "Showing card...",
+            description = 
+            'Here it is! Your **'.. fntoname(curfilename) .. '** card. The shorthand form is **' .. curfilename .. '**.' .. embeddescription,
+            image = {
+              url = getcardembed(curfilename)
+            }
+          }}
+        else
+          print("spiderrrrrrr")
+          message.channel:send{
+            content = 'Here it is! Your **'.. fntoname(curfilename) .. '** card. The shorthand form is **' .. curfilename .. '**.',
+            file = "card_images/SPOILER_" .. curfilename .. ".png"
           }
-        }}
+          if getcarddescription(curfilename) then
+            message.channel:send("The description on the back reads:\n> " .. getcarddescription(curfilename))
+          end
+        end
       else
         print("user doesnt have card")
         if nopeeking then

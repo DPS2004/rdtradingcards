@@ -1970,6 +1970,7 @@
           "description": "(Art by Winston Lee)",
           "smell": "Professionalism",
           "season": 6,
+          "spoiler": true,
           "bonuses": {
             "okamiiscollar": true,
             "oversizedstethoscope": true
