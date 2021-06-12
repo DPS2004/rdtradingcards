@@ -29,6 +29,7 @@ function reaction.run(ef, eom, reaction, userid)
         reaction.message.channel:send("<@" .. uj.id .. "> successfully shredded "..uj.pronouns["their"].." ".. numcards .. " **" .. fntoname(item1) .. "** card" .. isplural .. ".")
         dpf.savejson("savedata/events.json",ef)
         dpf.savejson(ujf,uj)
+        cmd.checkmedals.run(eom.ogmessage,mt,reaction.message.channel)
       else
         local newmessage = reaction.message.channel:send("An error has occured. Please make sure that you still have the card in your inventory!")
       end
