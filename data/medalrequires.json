@@ -60,7 +60,7 @@
     "receive": "pyramidal"
   }, 
   {
-    "require": "function checkrequirements(uj) print('total shredded is ' .. uj.timesshredded)  if uj.timesshredded >= 25 then return true else return false end end return checkrequirements",
+    "require": "function checkrequirements(uj) if uj.timesshredded == nil then uj.timesshredded = 0 end print('total shredded is ' .. uj.timesshredded)  if uj.timesshredded >= 25 then return true else return false end end return checkrequirements",
     "receive": "shredsavvy"
   },
   {
