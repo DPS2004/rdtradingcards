@@ -43,6 +43,7 @@ function command.run(message, mt)
       okamiiscollar = "**okamii's Collar** smells like midnight.",
       coolhat = "The **Cool Hat** smells really cool :sunglasses:",
       lostnametag = "The **Lost Name Tag** smells like the Department of Agriculture"
+      charcoalpencil = "The **Charcoal Pencil** smells like a burnt-out campfire."
     }
     request = string.lower(request)
     if request == "strange machine" then
