@@ -562,7 +562,7 @@ function command.run(message, mt,overwrite)
       if message.author.id ~= "767445265871142933" then
         local hasrun = false
         for i,v in ipairs(commands) do
-          if string.lower(string.sub(message.content, 0, #v.trigger)) == v.trigger and not hasrun then
+          if (string.lower(string.sub(message.content, 0, #v.trigger+1)) == v.trigger or string.lower(string.sub(message.content, 0, #v.trigger+1)) == v.trigger.." ") and not hasrun then
             print("found ".. v.trigger)
             local mt = {}
             local nmt = {}
