@@ -4,8 +4,10 @@ rdtradingcards is a bot that allows for a fully fledged trading card game on the
 
 ## Installation and usage
 
-First, install [Discordia](https://github.com/SinisterRectus/Discordia) by following its readme.
+First, you will want to download this repo, and make a new file in it called "privatestuff.lua". Use the file named "sampleprivatestuff" as a guideline. 
 
-Next, you will want to download this repo, and make a new file in it called "privatestuff.lua". Use the file named "sampleprivatestuff" as a guideline. 
+Next, install [Discordia](https://github.com/SinisterRectus/Discordia) by following its readme.
+
+Install [Discordia-With-Buttons](https://github.com/Readof/Discordia-With-Buttons) by downloading the repo as a zip, and unzip it in deps/ as a folder named "discordia-with-buttons". make sure this folder has an "init.lua" in it.
 
 Then, you can run "run.bat" to launch the bot.

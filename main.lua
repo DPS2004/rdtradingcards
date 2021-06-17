@@ -2,7 +2,7 @@
 
 
 -- it works most of the time. most of the time.
-_G["discordia"] = require('discordia')
+_G["discordia"] = require('discordia-with-buttons')
 _G["client"] = discordia.Client()
 _G["prefix"] = "c!"
 _G["json"] = require('libs/json')
