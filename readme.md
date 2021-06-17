@@ -11,3 +11,5 @@ Next, install [Discordia](https://github.com/SinisterRectus/Discordia) by follow
 Install [Discordia-With-Buttons](https://github.com/Readof/Discordia-With-Buttons) by downloading the repo as a zip, and unzip it in deps/ as a folder named "discordia-with-buttons". make sure this folder has an "init.lua" in it.
 
 Then, you can run "run.bat" to launch the bot.
+
+I think you also have to make a folder named `savedata` in here in case you get an error that's like `Uncaught exception: error in error handling`.
