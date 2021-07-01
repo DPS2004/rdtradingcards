@@ -483,7 +483,36 @@ function command.run(message, mt,overwrite)
       x:addReaction("✅")
       x:addReaction("❌")
     end
-    
+    _G['ynbuttons'] = function(message, content, etype, yesoption, nooption)
+      yesoption = yesoption or "Yes"
+      nooption = nooption or "No"
+      local newmessage = message.channel:send({
+        content = content,
+        components = {
+          type = 1, -- make button container
+          components = {
+            {
+              type = 2, -- make a button
+              style = 3, -- green
+              label = yesoption, -- add text
+              custom_id = etype .. "_yes",
+              disabled = "false"
+            },
+            {
+              type = 2, -- make a button
+              style = 4, -- red
+              label = nooption, -- add text
+              custom_id = etype .. "_no",
+              disabled = "false"
+            }
+          }
+        }
+      })
+      local tf = dpf.loadjson("savedata/events.json",{})
+      tf[newmessage.id] ={ujf = ("savedata/" .. message.author.id .. ".json"), newequip = curfilename ,etype = etype,ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
+      dpf.savejson("savedata/events.json",tf)
+      return newmessage
+    end
     
     _G['commands'] = {}
     
@@ -620,6 +649,42 @@ function command.run(message, mt,overwrite)
         end
       end
     end
+    
+    print("handlebutton")
+    _G['handlebutton'] = function (buttonid, member, message)
+      
+      
+      local ef = dpf.loadjson("savedata/events.json",{})
+      
+      local en = "✅"
+      
+      if buttonid == ef[reaction.message.id].etype .. "_no" then
+        en = "❌"
+      end
+      
+      local userid = member.id
+      
+      local reaction = {
+        emojiName = en,
+        message = message
+      }
+      
+      print('a button with named '.. buttonid .. ' was pressed on a message with the id of ' .. reaction.message.id ..' by a user with the id of' .. userid)
+      eom = ef[reaction.message.id]
+      if eom then
+        print('it is an event message being reacted to')
+        local status, err = pcall(function ()
+          cmdre[eom.etype].run(ef, eom, reaction, userid)
+        end)
+        if not status then
+          print("uh oh")
+          reaction.message.channel:send("Oops! An error has occured! Error message: ```" .. err .. "``` (<@290582109750427648> <@298722923626364928> please fix this thanks)")
+        end
+      end
+    end
+  
+    
+    
     print("done loading")
     
     if not overwrite then

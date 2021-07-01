@@ -41,6 +41,13 @@ client:on('reactionAdd', function(reaction, userid)
 
 
 end)
+
+client:on('buttonPressed', function(buttonid, member, message)
+  handlebutton(buttonid, member, message)
+
+
+end)
+
 print("resettingclocks")
 resetclocks()
 

@@ -31,11 +31,11 @@ function command.run(message, mt)
             print(uj.equipped)
             if not uj.skipprompts then
             
-              local newmessage = message.channel:send("Would you like to change your equipped item from **" .. itemfntoname(uj.equipped) .. "** to **" .. itemfntoname(curfilename) .. "**? This can be done once every 6 hours.")
-              addreacts(newmessage)
-              local tf = dpf.loadjson("savedata/events.json",{})
-              tf[newmessage.id] ={ujf = ujf, newequip = curfilename ,etype = "equip",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
-              dpf.savejson("savedata/events.json",tf)
+              local newmessage = ynbuttons(message,"Would you like to change your equipped item from **" .. itemfntoname(uj.equipped) .. "** to **" .. itemfntoname(curfilename) .. "**? This can be done once every 6 hours.","equip")
+--              addreacts(newmessage)
+--              local tf = dpf.loadjson("savedata/events.json",{})
+--              tf[newmessage.id] ={ujf = ujf, newequip = curfilename ,etype = "equip",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
+--              dpf.savejson("savedata/events.json",tf)
             else
               uj.equipped = curfilename
               message.channel:send("<@" .. uj.id .. "> successfully set **" .. itemfntoname(curfilename) .. "** as "..uj.pronouns["their"].." equipped item.")
