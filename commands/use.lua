@@ -32,14 +32,12 @@ function command.run(message, mt)
             if uj.tokens >= 2 then
         
               if not uj.skipprompts then
-                local newmessage = message.channel:send {
-                  content = 'Will you put two **Tokens** into the **Strange Machine?** (tokens remaining: ' .. uj.tokens .. ')'
-                }
-                addreacts(newmessage)
-                --message.channel:send("IF YOU ARE SEEING THIS, SOMETHING HAS GONE WRONG!!!! <@290582109750427648>")
-                local tf = dpf.loadjson("savedata/events.json",{})
-                tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "usemachine",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
-                dpf.savejson("savedata/events.json",tf)
+                local newmessage = ynbuttons(message, 'Will you put two **Tokens** into the **Strange Machine?** (tokens remaining: ' .. uj.tokens .. ')',"usemachine",{})
+--                addreacts(newmessage)
+--                --message.channel:send("IF YOU ARE SEEING THIS, SOMETHING HAS GONE WRONG!!!! <@290582109750427648>")
+--                local tf = dpf.loadjson("savedata/events.json",{})
+--                tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "usemachine",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
+--                dpf.savejson("savedata/events.json",tf)
               else
                 local loops = 0
                 local newitem = "nothing"
@@ -238,17 +236,15 @@ function command.run(message, mt)
         }}
       elseif (string.lower(mt[1]) == "mouse hole" or string.lower(mt[1]) == "mouse" or string.lower(mt[1]) == "mousehole") and wj.labdiscovered  then 
         if uj.equipped == "brokenmouse" then
-          newmessage = message.channel:send{embed = {
+          newmessage = ynbuttons(message,{embed = {
             color = 0x85c5ff,
             title = "Using Mouse Hole...",
             description = message.author.mentionString .. ', do you want to put your **Broken Mouse** into the **Mouse Hole?**',
-          }}
-          local tf = dpf.loadjson("savedata/events.json",{})
-          
-          addreacts(newmessage)
-          tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "usemousehole",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
-          
-          dpf.savejson("savedata/events.json",tf)
+          }},"usemousehole")
+--          local tf = dpf.loadjson("savedata/events.json",{})
+--          addreacts(newmessage)
+--          tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "usemousehole",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
+--          dpf.savejson("savedata/events.json",tf)
         else
           newmessage = message.channel:send{embed = {
             color = 0x85c5ff,
@@ -269,17 +265,15 @@ function command.run(message, mt)
         if uj.lastbox + cooldown <= time:toHours() then
           if next(uj.inventory) then
             if not uj.skipprompts then
-              newmessage = message.channel:send{embed = {
+              newmessage = ynbuttons(message,{embed = {
                 color = 0x85c5ff,
                 title = "Using Peculiar Box...",
                 description = message.author.mentionString .. ', will you put a random **Trading Card** from your inventory in the **Peculiar Box?**.',
-              }}
-              local tf = dpf.loadjson("savedata/events.json",{})
-              
-              addreacts(newmessage)
-              tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "usebox",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
-              
-              dpf.savejson("savedata/events.json",tf)
+              }},"usebox",{})
+--              local tf = dpf.loadjson("savedata/events.json",{})
+--              addreacts(newmessage)
+--              tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "usebox",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
+--              dpf.savejson("savedata/events.json",tf)
             else
               local iptable = {}
               for k,v in pairs(uj.inventory) do
@@ -506,7 +500,7 @@ function command.run(message, mt)
           elseif string.lower(mt[2]) == "upgrade" then
             if uj.tokens > 0 then
               if not uj.skipprompts then
-                local newmessage = message.channel:send{embed = {
+                local newmessage = ynbuttons(message, {embed = {
                   color = 0x85c5ff,
                   title = "Using Terminal...",
                   description = 'Will you put a **Token** into the **Terminal?** (tokens remaining: ' .. uj.tokens .. ')',
@@ -517,11 +511,11 @@ function command.run(message, mt)
                     text =  message.author.name,
                     icon_url = message.author.avatarURL
                   }
-                }}
-                addreacts(newmessage)
-                local tf = dpf.loadjson("savedata/events.json",{})
-                tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "usehole",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString, avatarURL = message.author.avatarURL}}}
-                dpf.savejson("savedata/events.json",tf)
+                }},"usehole",{})
+--                addreacts(newmessage)
+--                local tf = dpf.loadjson("savedata/events.json",{})
+--                tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "usehole",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString, avatarURL = message.author.avatarURL}}}
+--                dpf.savejson("savedata/events.json",tf)
               else
                 uj.tokens = uj.tokens - 1
                 

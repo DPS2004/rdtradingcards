@@ -512,7 +512,7 @@ function command.run(message, mt,overwrite)
         }
       })
       local tf = dpf.loadjson("savedata/events.json",{})
-      local newevent = {ujf = ("savedata/" .. message.author.id .. ".json") ,etype = etype,ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
+      local newevent = {ujf = ("savedata/" .. message.author.id .. ".json") ,etype = etype,ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString, avatarURL = message.author.avatarURL}}}
       for k,v in pairs(data) do
         newevent[k] = v
       end
