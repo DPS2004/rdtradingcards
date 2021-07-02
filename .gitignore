@@ -3,6 +3,8 @@ savedata
 discordia.log
 gateway.json
 deps
+vips
+vips_out
 lit
 luvi
 luvit

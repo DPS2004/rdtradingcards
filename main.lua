@@ -10,6 +10,7 @@ _G["fs"] = require('fs')
 _G["dpf"] = require('libs/dpf')
 _G["utils"] = require('libs/utils')
 _G["inspect"] = require('libs/inspect')
+_G["vips"] = require('vips')
 _G["trim"] = function (s)
    return s:match "^%s*(.-)%s*$"
 end
