@@ -11,11 +11,11 @@ function command.run(message, mt)
     message.channel:send("Sorry, but the c!give command expects 2 or 3 arguments. Please see c!help for more details.")
     return
   end
-	
-	local user_argument = mt[1]
-	local thing_argument = mt[2]
-	local numcards = 1
-	
+  
+  local user_argument = mt[1]
+  local thing_argument = mt[2]
+  local numcards = 1
+  
   if tonumber(mt[3]) then
     if tonumber(mt[3]) > 1 then
       numcards = math.floor(mt[3])
@@ -36,7 +36,7 @@ function command.run(message, mt)
   end
 
   local uj2 = dpf.loadjson(uj2f, defaultjson)
-	
+  
   if uj2.id == message.author.id then
     message.channel:send("Sorry, but you cannot give something to yourself!")
     return
@@ -73,22 +73,22 @@ function command.run(message, mt)
   print(uj.inventory[curfilename] .. "before")
   uj.inventory[curfilename] = uj.inventory[curfilename] - numcards
   print(uj.inventory[curfilename] .. "after")
-	
+  
   if uj.inventory[curfilename] == 0 then
     uj.inventory[curfilename] = nil
   end
-	
-	uj.timescardgiven = (uj.timescardgiven == nil) and numcards or (uj.timescardgiven + numcards)
-	uj2.timescardreceived = (uj2.timescardreceived == nil) and numcards or (uj2.timescardreceived + numcards)
-	
+  
+  uj.timescardgiven = (uj.timescardgiven == nil) and numcards or (uj.timescardgiven + numcards)
+  uj2.timescardreceived = (uj2.timescardreceived == nil) and numcards or (uj2.timescardreceived + numcards)
+  
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
   print("user had card, removed from original user")
-	
-	uj2.inventory[curfilename] = (uj2.inventory[curfilename] == nil) and numcards or (uj2.inventory[curfilename] + numcards)
-	
+  
+  uj2.inventory[curfilename] = (uj2.inventory[curfilename] == nil) and numcards or (uj2.inventory[curfilename] + numcards)
+  
   dpf.savejson(uj2f,uj2)
   print("saved user2 json with new card")
-	
+  
   local isplural = numcards ~= 1 and "s" or ""
   message.channel:send {
     content = 'You have gifted ' .. numcards .. ' **' .. fntoname(curfilename) .. '** card' .. isplural ..' to <@' .. uj2.id .. '>.'
