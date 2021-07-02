@@ -21,11 +21,11 @@ function command.run(message, mt)
           if numcards ~= 1 then
             isplural = "s"
           end
-          local newmessage = message.channel:send("<@" .. uj.id .. ">, do you want shred your " .. numcards .. " **" .. fntoname(item1) .. "** card" .. isplural .. "? **This cannot be undone.** React to this post with :white_check_mark: to confirm and :x: to deny.")
-          addreacts(newmessage)
-          local tf = dpf.loadjson("savedata/events.json",{})
-          tf[newmessage.id] ={numcards = numcards, ujf = ujf, item1=item1,etype = "shred",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
-          dpf.savejson("savedata/events.json",tf)
+          newmessage = ynbuttons(message, "<@" .. uj.id .. ">, do you want shred your " .. numcards .. " **" .. fntoname(item1) .. "** card" .. isplural .. "? **This cannot be undone.** React to this post with :white_check_mark: to confirm and :x: to deny.","shred",{item1=item1,numcards = numcards})
+--          addreacts(newmessage)
+--          local tf = dpf.loadjson("savedata/events.json",{})
+--          tf[newmessage.id] ={numcards = numcards, ujf = ujf, item1=item1,etype = "shred",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
+--          dpf.savejson("savedata/events.json",tf)
         else
           message.channel:send("Sorry, but you do not have enough **" .. fntoname(item1) .. "** cards in your inventory.")
         end
