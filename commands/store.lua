@@ -30,11 +30,11 @@ function command.run(message, mt)
             isplural = "s"
           end
           if not uj.skipprompts then
-            local newmessage = message.channel:send("<@" .. uj.id .. ">, do you want to put your " .. numcards .. " **" .. fntoname(item1) .. "** card" .. isplural ..  " into storage? This cannot be undone. React to this post with :white_check_mark: to confirm and :x: to deny.")
-            addreacts(newmessage)
-            local tf = dpf.loadjson("savedata/events.json",{})
-            tf[newmessage.id] ={numcards = numcards, ujf = ujf, item1=item1,etype = "store",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
-            dpf.savejson("savedata/events.json",tf)
+            local newmessage = ynbuttons(message,"<@" .. uj.id .. ">, do you want to put your " .. numcards .. " **" .. fntoname(item1) .. "** card" .. isplural ..  " into storage? This cannot be undone. React to this post with :white_check_mark: to confirm and :x: to deny.","store",{numcards=numcards,item1=item1})
+--            addreacts(newmessage)
+--            local tf = dpf.loadjson("savedata/events.json",{})
+--            tf[newmessage.id] ={numcards = numcards, ujf = ujf, item1=item1,etype = "store",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
+--            dpf.savejson("savedata/events.json",tf)
             
           else
             uj.inventory[item1] = uj.inventory[item1] - numcards
