@@ -207,17 +207,11 @@ function command.run(message, mt)
         elseif (string.lower(mt[1]) == "spider" or string.lower(mt[1]) == "spiderweb" or string.lower(mt[1]) == "web" or string.lower(mt[1]) == "spider web") and wj.labdiscovered then       
           
             
-          local newmessage = message.channel:send {
-            content = 'Are you okay with seeing a spider?'
-          }
-          addreacts(newmessage)
-
-          local tf = dpf.loadjson("savedata/events.json",{})
-          tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "spiderlook",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
-          
-          
-
-          dpf.savejson("savedata/events.json",tf)
+          local newmessage = ynbuttons(message,'Are you okay with seeing a spider?',"spiderlook",{})
+--          addreacts(newmessage)
+--          local tf = dpf.loadjson("savedata/events.json",{})
+--          tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "spiderlook",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
+--          dpf.savejson("savedata/events.json",tf)
           
         
         elseif (string.lower(mt[1]) == "lab" or string.lower(mt[1]) == "abandoned lab") and wj.labdiscovered  then 
