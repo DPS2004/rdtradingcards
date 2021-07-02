@@ -63,7 +63,7 @@ function command.run(message, mt)
     return
   end
   
-  if uj.inventory[curfilename] >= numcards then
+  if not (uj.inventory[curfilename] >= numcards) then
     print("user doesn't have enough cards")
     message.channel:send("Sorry, but you do not have enough **" .. fntoname(curfilename) .. "** cards in your inventory.")
     return
