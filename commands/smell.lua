@@ -103,15 +103,11 @@ function command.run(message, mt)
       end
 
     elseif (string.lower(request) == "spiderweb" or string.lower(request) == "spider web" or string.lower(request) == "web") and wj.smellable then
-      local newmessage = message.channel:send {
-        content = 'Are you okay with smelling a spider?'
-      }
-      addreacts(newmessage)
-
-      local tf = dpf.loadjson("savedata/events.json",{})
-      tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "spidersmell",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
-      
-      dpf.savejson("savedata/events.json",tf)
+      local newmessage = ynbuttons(message, 'Are you okay with smelling a spider?',"spidersmell",{})
+--      addreacts(newmessage)
+--      local tf = dpf.loadjson("savedata/events.json",{})
+--      tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "spidersmell",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
+--      dpf.savejson("savedata/events.json",tf)
     elseif hcsmells[request] then
       message.channel:send(hcsmells[request])
     elseif itemtexttofn(request) then
