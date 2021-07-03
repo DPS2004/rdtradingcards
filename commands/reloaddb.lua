@@ -83,7 +83,7 @@ function command.run(message, mt,overwrite)
 
     _G['defaultjson'] = {inventory={},storage={},medals={},items={nothing=true},lastpull=-24,lastprayer=-7,lastequip=-24,lastbox=-24,tokens=0,pronouns={their="their",them="them",theirself="themself",they="they",theirs="theirs"}}
     
-    _G['defaultworldsave'] = {tokensdonated=0,boxpool={"ssss45","roomsdc_ur","roomsdc_r","underworld","enchantedlove","wallclockur","rhythmdogtor","moai","coolbird","beanshopper","cardboardworld","acofoi","rollermobster","inimaur","fhottour","superstrongcavity","soundsr","pancakefever","nicoleur","feedthemachine","retrofunky","heartchickalt"},lablookindex=0,lablooktext="password is gnuthca ",worldstate = "prehole"}
+    _G['defaultworldsave'] = {tokensdonated=0,boxpool={"ssss45","roomsdc_ur","roomsdc_r","underworld","enchantedlove","wallclockur","rhythmdogtor","moai","coolbird","beanshopper","cardboardworld","acofoi","rollermobster","inimaur","fhottour","superstrongcavity","soundsr","pancakefever","nicoleur","feedthemachine","retrofunky","heartchickalt"},lablookindex=0,lablooktext="password is gnuthca ",worldstate = "prehole",ws=0}
 
     _G['debug'] = false
     
