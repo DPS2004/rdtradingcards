@@ -45,6 +45,10 @@
     "gun" : {
       "name": "Photorealistic Gun",
       "description": "*oh god oh fuck who gave the heart chick a gun*"
+    },
+    "sword" : {
+      "name": "Sword",
+      "description": "Don't worry, I don't think the chick is strong enough to pull it from the ground."
     }
   }
 }
