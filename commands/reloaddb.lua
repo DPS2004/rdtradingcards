@@ -82,7 +82,31 @@ function command.run(message, mt,overwrite)
     
     print("done loading reactions")
 
-    _G['defaultjson'] = {inventory={},storage={},medals={},items={nothing=true},lastpull=-24,lastprayer=-7,lastequip=-24,lastbox=-24,tokens=0,pronouns={their="their",them="them",theirself="themself",they="they",theirs="theirs"},room=0}
+    _G['defaultjson'] = {
+      inventory={},
+      storage={},
+      medals={},
+      items={nothing=true},
+      lastpull=-24,
+      lastprayer=-7,
+      lastequip=-24,
+      lastbox=-24,
+      tokens=0,
+      pronouns={
+        their="their",them="them",theirself="themself",they="they",theirs="theirs"
+      },
+      room=0,
+      chickstats={
+        bodycolor = {255, 250, 0},
+        eyecolor = {49, 49, 49},
+        scleracolor = {248, 248, 248},
+        beakcolor = {255, 128, 3},
+        footcolor =  {255, 128, 3},
+        headwear = "nothing",
+        eyewear = "nothing",
+        neckwear = "nothing"
+      }
+    }
     
     _G['defaultworldsave'] = {tokensdonated=0,boxpool={"ssss45","roomsdc_ur","roomsdc_r","underworld","enchantedlove","wallclockur","rhythmdogtor","moai","coolbird","beanshopper","cardboardworld","acofoi","rollermobster","inimaur","fhottour","superstrongcavity","soundsr","pancakefever","nicoleur","feedthemachine","retrofunky","heartchickalt"},lablookindex=0,lablooktext="password is gnuthca ",worldstate = "prehole",ws=0}
 
@@ -94,6 +118,8 @@ function command.run(message, mt,overwrite)
     
     print('loading itemdb')    
     _G['itemdb'] = dpf.loadjson("data/items.json",defaultjson)
+    print('loading accessorydb')    
+    _G['accessorydb'] = dpf.loadjson("data/accessories.json",defaultjson)
     print("loading cards part 2: electric boogaloo")
 
     _G['cdata'] = json.decode(cj:read("*a"))
@@ -701,6 +727,63 @@ function command.run(message, mt,overwrite)
         print("user reacted to a finished button")
       end
       
+    end
+
+    print("getchickimage")
+    _G['getchickimage'] = function (userid)
+      local ujf = ("savedata/" .. userid .. ".json")
+      local uj = dpf.loadjson(ujf, defaultjson)
+
+      --getting all the body parts
+      local chickbody = vips.Image.new_from_file("chick/chick_body.png")
+      local chickeyes = vips.Image.new_from_file("chick/chick_eyes.png")
+      local chicksclerae = vips.Image.new_from_file("chick/chick_sclerae.png")
+      local chickbeak = vips.Image.new_from_file("chick/chick_beak.png")
+      local chickfeet = vips.Image.new_from_file("chick/chick_feet.png")
+
+      --coloring the body
+      local cbodycolor = uj.chickstats.bodycolor
+      chickbody = chickbody:colourspace("hsv") * { 0, 0, 1, 1 }
+      chickbody = chickbody:colourspace("srgb") * { cbodycolor[1] / 255, cbodycolor[2] / 255, cbodycolor[3] / 255, 1 }
+
+      --coloring the body parts
+      local ceyecolor = uj.chickstats.eyecolor
+      chickeyes = chickeyes * { ceyecolor[1] / 255, ceyecolor[2]/255, ceyecolor[3] / 255, 1 }
+
+      local cscleracolor = uj.chickstats.scleracolor
+      chicksclerae = chicksclerae * { cscleracolor[1] / 255, cscleracolor[2]/255, cscleracolor[3] / 255, 1 }
+      
+      local cbeakcolor = uj.chickstats.beakcolor
+      chickbeak = chickbeak * { cbeakcolor[1] / 255, cbeakcolor[2]/255, cbeakcolor[3] / 255, 1 }
+
+      local cfootcolor = uj.chickstats.footcolor
+      chickfeet = chickfeet * { cfootcolor[1] / 255, cfootcolor[2]/255, cfootcolor[3] / 255, 1 }
+
+      --combining the body parts
+      local chickimg = chickbody:composite2(chickeyes, "over")
+      chickimg = chickimg:composite2(chicksclerae, "over")
+      chickimg = chickimg:composite2(chickbeak, "over")
+      chickimg = chickimg:composite2(chickfeet, "over")
+
+      --adding headwear
+      if (uj.chickstats.headwear and uj.chickstats.headwear ~= "nothing") then
+        local hatimg = vips.Image.new_from_file("chick/accessories/" .. uj.chickstats.headwear .. ".png")
+        chickimg = chickimg:composite2(hatimg, "over")
+      end
+
+      --adding eyewear
+      if (uj.chickstats.eyewear and uj.chickstats.eyewear ~= "nothing") then
+        local glassesimg = vips.Image.new_from_file("chick/accessories/" .. uj.chickstats.eyewear .. ".png")
+        chickimg = chickimg:composite2(glassesimg, "over")
+      end
+
+      --adding neckwear
+      if (uj.chickstats.neckwear and uj.chickstats.neckwear ~= "nothing") then
+        local neckimg = vips.Image.new_from_file("chick/accessories/" .. uj.chickstats.neckwear .. ".png")
+        chickimg = chickimg:composite2(neckimg, "over")
+      end
+      
+      return chickimg
     end
   
     
