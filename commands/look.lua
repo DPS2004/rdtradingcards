@@ -7,23 +7,34 @@ function command.run(message, mt)
     dpf.savejson("savedata/worldsave.json", wj)
   end
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
+  
+  if uj.room == nil then
+    uj.room = 0
+  end
+  
   if uj.timeslooked == nil then
     uj.timeslooked = 1
   else
     uj.timeslooked = uj.timeslooked + 1
   end
   if message.guild then
-    if #mt == 1 or mt[1] == "" then
-      if uj.inventory[texttofn(mt[1])] or uj.storage[texttofn(mt[1])] or uj.items[itemtexttofn(mt[1])] or uj.medals[medaltexttofn(mt[1])] then
-        if texttofn(mt[1]) then
-          cmd.show.run(message, mt)
-        elseif itemtexttofn(mt[1]) then
-          cmd.showitem.run(message, mt)
-        elseif medaltexttofn(mt[1]) then
-          cmd.showmedal.run(message, mt)
-        end
-      else
-        if string.lower(mt[1]) == "pyrowmid" then
+    if not mt[1] then
+      mt[1] = ""
+    end
+    if uj.inventory[texttofn(mt[1])] or uj.storage[texttofn(mt[1])] or uj.items[itemtexttofn(mt[1])] or uj.medals[medaltexttofn(mt[1])] then
+      if texttofn(mt[1]) then
+        cmd.show.run(message, mt)
+      elseif itemtexttofn(mt[1]) then
+        cmd.showitem.run(message, mt)
+      elseif medaltexttofn(mt[1]) then
+        cmd.showmedal.run(message, mt)
+      end
+    else
+      found = true
+      if uj.room == 0 then
+        
+        
+        if string.lower(mt[1]) == "pyrowmid" or mt[1] == "" then -----------------PYROWMID--------------------------
           -- message.channel:send('The **Pyrowmid** has recently opened itself, revealing a **Panda** and a **Strange Machine** inside. The walls are made of Rows (Rare) cards.')
           -- message.channel:send('https://cdn.discordapp.com/attachments/829197797789532181/829255814169493535/pyr7.png')
           if wj.worldstate == "prehole" then
@@ -120,24 +131,8 @@ function command.run(message, mt)
               content = 'The **Strange Machine** appears to have a slot for two **Tokens**, and a crank. The crank is worn, as if it has been **Used** many times.'
             }
           end
-        elseif string.lower(mt[1]) == "card factory" or string.lower(mt[1]) == "factory" or string.lower(mt[1]) == "cardfactory" or string.lower(mt[1]) == "the card factory" then 
-          message.channel:send {
-            content = ':eye:`the card factory looks back`:eye:'
-          }
-        elseif string.lower(mt[1]) == "token"  then 
-          -- message.channel:send('You do not know how, but lots of these **Tokens** have been showing up recently. If only there were somewhere to **Use** them...')
-          -- message.channel:send('https://cdn.discordapp.com/attachments/829197797789532181/829255830485598258/token.png')
-          message.channel:send{embed = {
-            color = 0x85c5ff,
-            title = "Looking at Token...",
-            description = 'You do not know how, but lots of these **Tokens** have been showing up recently. If only there were somewhere to **Use** them...',
-            image = {
-              url = 'https://cdn.discordapp.com/attachments/829197797789532181/829255830485598258/token.png'
-            }
-          }}
+        
         elseif string.lower(mt[1]) == "hole" then
-        
-        
           if wj.worldstate == "prehole" then
             message.channel:send{
               content = 'what hole?'
@@ -205,19 +200,26 @@ function command.run(message, mt)
                 url = 'https://cdn.discordapp.com/attachments/829197797789532181/831507279164997642/holeclosefinal.png' --TODO
               }
             }}
-          
           end
-        elseif (string.lower(mt[1]) == "spider" or string.lower(mt[1]) == "spiderweb" or string.lower(mt[1]) == "web" or string.lower(mt[1]) == "spider web") and wj.labdiscovered then       
-          
-            
-          local newmessage = ynbuttons(message,'Are you okay with seeing a spider?',"spiderlook",{})
---          addreacts(newmessage)
---          local tf = dpf.loadjson("savedata/events.json",{})
---          tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "spiderlook",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
---          dpf.savejson("savedata/events.json",tf)
+        elseif (string.lower(mt[1]) == "ladder") and wj.labdiscovered  then 
+          message.channel:send{embed = {
+            color = 0x85c5ff,
+            title = "Looking at Ladder...",
+            description = 'The **Ladder** feels too big to fit in a capsule, but that\'s where it came from. It is currently propped up in the **Hole**.',
+            image = {
+              url = 'https://cdn.discordapp.com/attachments/829197797789532181/831507279164997642/holeclosefinal.png'
+            }
+          }}
+        else
+          found = false
+        end
+      end -------------------------------------END PYROWMID------------------------------------------------
+      
+      if uj.room == 1 then     --------------------------------------------------LAB--------------------------------------------------------------------------   
+        
           
         
-        elseif (string.lower(mt[1]) == "lab" or string.lower(mt[1]) == "abandoned lab") and wj.labdiscovered  then 
+        if (string.lower(mt[1]) == "lab" or string.lower(mt[1]) == "abandoned lab" or mt[1] == "") and wj.labdiscovered  then 
           message.channel:send{embed = {
             color = 0x85c5ff,
             title = "Looking at Lab...",
@@ -230,7 +232,14 @@ function command.run(message, mt)
           
           wj.lablookindex = wj.lablookindex % string.len(wj.lablooktext)
           dpf.savejson("savedata/worldsave.json", wj)
+        elseif (string.lower(mt[1]) == "spider" or string.lower(mt[1]) == "spiderweb" or string.lower(mt[1]) == "web" or string.lower(mt[1]) == "spider web") and wj.labdiscovered then       
           
+            
+          local newmessage = ynbuttons(message,'Are you okay with seeing a spider?',"spiderlook",{})
+--          addreacts(newmessage)
+--          local tf = dpf.loadjson("savedata/events.json",{})
+--          tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "spiderlook",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
+--          dpf.savejson("savedata/events.json",tf)
         elseif (string.lower(mt[1]) == "terminal") and wj.labdiscovered  then  --FONT IS MS GOTHIC AT 24PX, 8PX FOR SMALL FONT
           if wj.worldstate == "labopen" then
             message.channel:send{embed = {
@@ -315,22 +324,41 @@ function command.run(message, mt)
         
         
         
-        elseif (string.lower(mt[1]) == "ladder") and wj.labdiscovered  then 
+        
+        else
+          found = false
+        end
+      end
+      
+      if not found then ----------------------------------NON-ROOM ITEMS GO HERE!--------------------------------------------------
+        if string.lower(mt[1]) == "card factory" or string.lower(mt[1]) == "factory" or string.lower(mt[1]) == "cardfactory" or string.lower(mt[1]) == "the card factory" then --TODO: move these to not found
+          message.channel:send {
+            content = ':eye:`the card factory looks back`:eye:'
+          }
+        elseif string.lower(mt[1]) == "token"  then
+          -- message.channel:send('You do not know how, but lots of these **Tokens** have been showing up recently. If only there were somewhere to **Use** them...')
+          -- message.channel:send('https://cdn.discordapp.com/attachments/829197797789532181/829255830485598258/token.png')
           message.channel:send{embed = {
             color = 0x85c5ff,
-            title = "Looking at Ladder...",
-            description = 'The **Ladder** feels too big to fit in a capsule, but that\'s where it came from. It is currently propped up in the **Hole**.',
+            title = "Looking at Token...",
+            description = 'You do not know how, but lots of these **Tokens** have been showing up recently. If only there were somewhere to **Use** them...',
             image = {
-              url = 'https://cdn.discordapp.com/attachments/829197797789532181/831507279164997642/holeclosefinal.png'
+              url = 'https://cdn.discordapp.com/attachments/829197797789532181/829255830485598258/token.png'
             }
           }}
+        
+        
         else
           message.channel:send("Sorry, but I cannot find " .. mt[1] .. ".")
           uj.timeslooked = uj.timeslooked - 1
         end
       end
-    else
-      message.channel:send("Sorry, but the c!look command expects 1 argument. Please see c!help for more details.")
+      
+      
+      
+      
+      
+      
     end
     dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
   end
