@@ -782,6 +782,11 @@ function command.run(message, mt,overwrite)
         local neckimg = vips.Image.new_from_file("chick/accessories/" .. uj.chickstats.neckwear .. ".png")
         chickimg = chickimg:composite2(neckimg, "over")
       end
+      --adding other
+      if (uj.chickstats.other and uj.chickstats.other ~= "nothing") then
+        local otherimg = vips.Image.new_from_file("chick/accessories/" .. uj.chickstats.other .. ".png")
+        chickimg = chickimg:composite2(otherimg, "over")
+      end
       
       return chickimg
     end

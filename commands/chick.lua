@@ -12,7 +12,8 @@ function command.run(message, mt)
           footcolor =  { 255, 128, 3 },
           headwear = "nothing",
           eyewear = "nothing",
-          neckwear = "nothing"
+          neckwear = "nothing",
+          other = "nothing",
       }
       dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
   end

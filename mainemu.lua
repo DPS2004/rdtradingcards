@@ -8,7 +8,7 @@ _G["fs"] = require('fs')
 _G["dpf"] = require('libs/dpf')
 _G["emuser"] = {}
 
-io.write("EMU: What use would you like to load?\n")
+io.write("EMU: What user would you like to load?\n")
 local defaultuser = io.read()
 emuser = dpf.loadjson("emu_users/" .. defaultuser .. ".json", {name = "defaultuser", id = "481293038594304959", mentionString = "<@481293038594304959>", discriminator = "6969", mod = false})
 
