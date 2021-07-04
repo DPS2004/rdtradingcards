@@ -44,11 +44,19 @@
     },
     "gun" : {
       "name": "Photorealistic Gun",
-      "description": "*oh god oh fuck who gave the heart chick a gun*"
+      "description": "*oh god oh fuck who gave the heart chick a gun*",
+      "layer": "top"
     },
     "sword" : {
       "name": "Sword",
-      "description": "Don't worry, I don't think the chick is strong enough to pull it from the ground."
+      "description": "Don't worry, I don't think the chick is strong enough to pull it from the ground.",
+      "layer": "top"
+    },
+    "catears" : {
+      "name": "Cat Ears",
+      "description": "Nya~",
+      "bodycolor": true,
+      "layer": "middle"
     }
   }
 }

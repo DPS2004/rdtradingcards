@@ -765,6 +765,22 @@ function command.run(message, mt,overwrite)
       chickimg = chickimg:composite2(chicksclerae, "over")
       chickimg = chickimg:composite2(chickbeak, "over")
       chickimg = chickimg:composite2(chickfeet, "over")
+      
+      
+      --adding others (middle layer)
+      if uj.chickstats.others and uj.chickstats.others ~= {} then
+        for i,v in ipairs(uj.chickstats.others) do
+          if accessorydb.other[v].layer == "middle" then
+            local otherimg = vips.Image.new_from_file("chick/accessories/" .. v .. ".png")
+            if accessorydb.other[v].bodycolor then
+              local cbodycolor = uj.chickstats.bodycolor
+              otherimg = otherimg:colourspace("hsv") * { 0, 0, 1, 1 }
+              otherimg = otherimg:colourspace("srgb") * { cbodycolor[1] / 255, cbodycolor[2] / 255, cbodycolor[3] / 255, 1 }
+            end
+            chickimg = chickimg:composite2(otherimg, "over")
+          end
+        end
+      end
 
       --adding headwear
       if (uj.chickstats.headwear and uj.chickstats.headwear ~= "nothing") then
@@ -783,11 +799,19 @@ function command.run(message, mt,overwrite)
         local neckimg = vips.Image.new_from_file("chick/accessories/" .. uj.chickstats.neckwear .. ".png")
         chickimg = chickimg:composite2(neckimg, "over")
       end
-      --adding others
+      
+      --adding others (top layer)
       if uj.chickstats.others and uj.chickstats.others ~= {} then
         for i,v in ipairs(uj.chickstats.others) do
-          local otherimg = vips.Image.new_from_file("chick/accessories/" .. v .. ".png")
-          chickimg = chickimg:composite2(otherimg, "over")
+          if accessorydb.other[v].layer == "top" then
+            local otherimg = vips.Image.new_from_file("chick/accessories/" .. v .. ".png")
+            if accessorydb.other[v].bodycolor then
+              local cbodycolor = uj.chickstats.bodycolor
+              otherimg = otherimg:colourspace("hsv") * { 0, 0, 1, 1 }
+              otherimg = otherimg:colourspace("srgb") * { cbodycolor[1] / 255, cbodycolor[2] / 255, cbodycolor[3] / 255, 1 }
+            end
+            chickimg = chickimg:composite2(otherimg, "over")
+          end
         end
       end
       
