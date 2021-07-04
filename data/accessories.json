@@ -1,0 +1,40 @@
+{
+  "hats" : {
+	"nothing" : {
+      "name": "Nothing",
+      "description": "Let your chick feel the breeze on their head."
+    },
+	"fez" : {
+      "name": "Fez",
+      "description": "A simple fez. Dimension-hopping not included."
+    },
+	"tophat" : {
+      "name": "Top Hat",
+      "description": "Great on all birds - not just parrots!"
+    }
+  },
+  "eyewear" : {
+	"nothing" : {
+      "name": "Nothing",
+      "description": "All the powers (and limits) of the unaided eye."
+    },
+	"glasses" : {
+      "name": "Glasses",
+      "description": "A pair of glasses. Great for visual impairments!"
+    },
+	"shades" : {
+      "name": "Cool Shades",
+      "description": "Protect your eyes from the sun AND look wicked cool at the same time!"
+    }
+  },
+  "neckwear" : {
+	"nothing" : {
+      "name": "Nothing",
+      "description": "An exposed neck for the vampire-deniers."
+    },
+	"bowtie" : {
+      "name": "Bow Tie",
+      "description": "An avian fashion favorite!"
+    }
+  }
+}
