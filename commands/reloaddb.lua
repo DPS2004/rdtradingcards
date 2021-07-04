@@ -104,7 +104,8 @@ function command.run(message, mt,overwrite)
         footcolor =  {255, 128, 3},
         headwear = "nothing",
         eyewear = "nothing",
-        neckwear = "nothing"
+        neckwear = "nothing",
+        others = {}
       }
     }
     
