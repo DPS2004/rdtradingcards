@@ -29,6 +29,14 @@
     "shades" : {
       "name": "Cool Shades",
       "description": "Protect your eyes from the sun AND look wicked cool at the same time!"
+    },
+    "eyepatch" : {
+      "name": "Eyepatch",
+      "description": "For the true off-brand James Bond villain look."
+    },
+    "walleyed" : {
+      "name": "Wall-eyed",
+      "description": "Logan! This one's looking at both of us at the same time!"
     }
   },
   "neckwear" : {
@@ -39,6 +47,10 @@
     "bowtie" : {
       "name": "Bow Tie",
       "description": "An avian fashion favorite!"
+    },
+    "scarf" : {
+      "name": "Scarf",
+      "description": "For warmth in the winter, and fashion in the summer."
     }
   },
   "other" : {
