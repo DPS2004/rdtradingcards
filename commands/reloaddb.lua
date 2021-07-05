@@ -105,6 +105,7 @@ function command.run(message, mt,overwrite)
         headwear = "nothing",
         eyewear = "nothing",
         neckwear = "nothing",
+        shoes = "nothing",
         others = {}
       }
     }
@@ -818,6 +819,12 @@ function command.run(message, mt,overwrite)
       if (uj.chickstats.neckwear and uj.chickstats.neckwear ~= "nothing") then
         local neckimg = vips.Image.new_from_file("chick/accessories/" .. uj.chickstats.neckwear .. ".png")
         chickimg = chickimg:composite2(neckimg, "over")
+      end
+      
+      --adding shoes
+      if (uj.chickstats.shoes and uj.chickstats.shoes ~= "nothing") then
+        local shoeimg = vips.Image.new_from_file("chick/accessories/" .. uj.chickstats.shoes .. ".png")
+        chickimg = chickimg:composite2(shoeimg, "over")
       end
       
       --adding others (top layer)

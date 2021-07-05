@@ -12,6 +12,10 @@
       "name": "Top Hat",
       "description": "Great on all birds - not just parrots!"
     },
+    "bowlerhat" : {
+      "name": "Bowler Hat",
+      "description": "Bowler shoes and bowler ball not included."
+    },
     "egg" : {
       "name": "Egg(?)",
       "description": "That sure is an egg. I think."
@@ -53,6 +57,16 @@
       "description": "For warmth in the winter, and fashion in the summer."
     }
   },
+  "shoes" : {
+    "nothing" : {
+      "name": "Nothing",
+      "description": "Feel the cold floor on your feet."
+    },
+    "sneakers" : {
+      "name": "Sneakers",
+      "description": "(TODO)"
+    }
+  },
   "other" : {
     "nothing" : {
       "name": "Nothing",
@@ -66,6 +80,11 @@
     "sword" : {
       "name": "Sword",
       "description": "Don't worry, I don't think the chick is strong enough to pull it from the ground.",
+      "layer": "top"
+    },
+    "cane" : {
+      "name": "Cane",
+      "description": "(TODO)",
       "layer": "top"
     },
     "catears" : {
