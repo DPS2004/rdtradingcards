@@ -11,6 +11,10 @@
     "tophat" : {
       "name": "Top Hat",
       "description": "Great on all birds - not just parrots!"
+    },
+    "egg" : {
+      "name": "Egg(?)",
+      "description": "That sure is an egg. I think."
     }
   },
   "eyewear" : {
