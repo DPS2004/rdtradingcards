@@ -554,12 +554,13 @@ function command.run(message, mt,overwrite)
     
     _G['commands'] = {}
     
-    _G['addcommand'] = function(trigger,commandfunction, expectedargs,force)
+    _G['addcommand'] = function(trigger,commandfunction, expectedargs,force,usebypass)
       local newcommand = {}
       newcommand.trigger = prefix .. trigger
       newcommand.commandfunction = commandfunction or cmd.ping
       newcommand.expectedargs = 0 or expectedargs
       newcommand.force = force
+      newcommand.usebypass = usebypass
       
       table.insert(commands,newcommand)
       
@@ -621,10 +622,10 @@ function command.run(message, mt,overwrite)
     addcommand("move",cmd.move)
     addcommand("renamefile",cmd.renamefile)
     addcommand("getfile",cmd.getfile)
-    addcommand("stats",cmd.use,0,{"terminal","stats"})
+    addcommand("stats",cmd.use,0,{"terminal","stats"},true)
     addcommand("upgrade",cmd.use,0,{"terminal","upgrade"})
-    addcommand("credits",cmd.use,0,{"terminal","credits"})
-    addcommand("savedata",cmd.use,0,{"terminal","savedata"})
+    addcommand("credits",cmd.use,0,{"terminal","credits"},true)
+    addcommand("savedata",cmd.use,0,{"terminal","savedata"},true)
     addcommand("terminal",cmd.use,0,{"terminal"})
     addcommand("box",cmd.use,0,{"box"})
     addcommand("show",cmd.show)
@@ -655,7 +656,7 @@ function command.run(message, mt,overwrite)
             print("nmt: " .. inspect(nmt))
             hasrun = true
             local status, err = pcall(function ()
-              v.commandfunction.run(message,nmt)
+              v.commandfunction.run(message,nmt,v.usebypass)
             end)
             if not status then
               print("uh oh")
