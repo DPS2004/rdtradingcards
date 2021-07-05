@@ -34,9 +34,9 @@
       "name": "Eyepatch",
       "description": "For the true off-brand James Bond villain look."
     },
-    "walleyed" : {
-      "name": "Wall-eyed",
-      "description": "Logan! This one's looking at both of us at the same time!"
+    "happymask" : {
+      "name": "Happy Mask",
+      "description": ":)"
     }
   },
   "neckwear" : {
@@ -78,7 +78,21 @@
       "name": "Cyclops",
       "description": "My name is Intern. Intern I am called by mother, father, and by all my comrades.",
       "bodycolor": true,
-      "uncoloredlayer": true,
+      "sclerae": true,
+      "eyes": true,
+      "layer": "middle"
+    },
+    "walleyed" : {
+      "name": "Wall-eyed",
+      "description": "Logan! This one's looking at both of us at the same time!",
+      "layer": "middle",
+      "sclerae": true,
+      "eyes": true
+    },
+    "faceless" : {
+      "name": "Faceless",
+      "description": "I have no beak, and I must cheep.",
+      "bodycolor": true,
       "layer": "middle"
     },
     "realchick" : {

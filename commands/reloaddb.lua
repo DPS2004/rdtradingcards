@@ -771,18 +771,28 @@ function command.run(message, mt,overwrite)
       --adding others (middle layer)
       if uj.chickstats.others and uj.chickstats.others ~= {} then
         for i,v in ipairs(uj.chickstats.others) do
+          print("loading "..v)
           if accessorydb.other[v].layer == "middle" then
             if not accessorydb.other[v].replace then
               local otherimg = vips.Image.new_from_file("chick/accessories/" .. v .. ".png")
               if accessorydb.other[v].bodycolor then
-                print(accessorydb.other[v].uncoloredlayer)
+                print("found bodycolor")
+
                 local cbodycolor = uj.chickstats.bodycolor
                 otherimg = otherimg:colourspace("hsv") * { 0, 0, 1, 1 }
                 otherimg = otherimg:colourspace("srgb") * { cbodycolor[1] / 255, cbodycolor[2] / 255, cbodycolor[3] / 255, 1 }
-                if accessorydb.other[v].uncoloredlayer then
-                  local uclayer = vips.Image.new_from_file("chick/accessories/" .. v .. "_uncolored.png")
-                  otherimg = otherimg:composite2(uclayer, "over")
-                end
+              end
+              if accessorydb.other[v].sclerae then
+                print("found scl")
+                local scleraelayer = vips.Image.new_from_file("chick/accessories/" .. v .. "_sclerae.png")
+                scleraelayer = scleraelayer * { cscleracolor[1] / 255, cscleracolor[2]/255, cscleracolor[3] / 255, 1 }
+                otherimg = otherimg:composite2(scleraelayer, "over")
+              end
+              if accessorydb.other[v].eyes then
+                print("found eyes")
+                local eyeslayer = vips.Image.new_from_file("chick/accessories/" .. v .. "_eyes.png")
+                eyeslayer = eyeslayer * { ceyecolor[1] / 255, ceyecolor[2]/255, ceyecolor[3] / 255, 1 }
+                otherimg = otherimg:composite2(eyeslayer, "over")
               end
               chickimg = chickimg:composite2(otherimg, "over")
             else
