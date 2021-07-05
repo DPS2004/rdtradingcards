@@ -80,6 +80,12 @@
       "bodycolor": true,
       "uncoloredlayer": true,
       "layer": "middle"
+    },
+    "realchick" : {
+      "name": "???",
+      "description": "??????",
+      "layer": "middle",
+      "replace": true
     }
   }
 }
