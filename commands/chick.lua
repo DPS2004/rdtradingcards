@@ -18,13 +18,27 @@ function command.run(message, mt)
       dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
   end
 
-  local chickimg = getchickimage(message.author.id)
-  chickimg:write_to_file("vips_out/chick.png")
+  if mt[1] == "" then
+    mt[1] = "look"
+    mt[2] = uj.id
+  end
+  if mt[1] == "add" then
+    -- add accessory code
+  elseif mt[1] == "remove" then
+    -- remove accessory code
+  elseif mt[1] == "inventory" or mt[1] == "inv" then
+    -- accessory inventory code
+  elseif mt[1] == "look" then
+    local chickimg = getchickimage(mt[2])
+    chickimg:write_to_file("vips_out/chick.png")
 
-  message.channel:send{
-    content = "Chick",
-    file = "vips_out/chick.png"
-  }
+    message.channel:send{
+      content = "Chick",
+      file = "vips_out/chick.png"
+    }
+    -- add code for checking other people's chicks
+  end
+
   print(message.author.name .. " did !chick")
 end
 return command
