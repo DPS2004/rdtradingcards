@@ -13,6 +13,7 @@ function command.run(message, mt)
           headwear = "nothing",
           eyewear = "nothing",
           neckwear = "nothing",
+          shoes = "nothing",
           others = {}
       }
       dpf.savejson("savedata/" .. message.author.id .. ".json",uj)

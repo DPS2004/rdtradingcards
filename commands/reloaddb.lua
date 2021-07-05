@@ -795,9 +795,22 @@ function command.run(message, mt,overwrite)
                 eyeslayer = eyeslayer * { ceyecolor[1] / 255, ceyecolor[2]/255, ceyecolor[3] / 255, 1 }
                 otherimg = otherimg:composite2(eyeslayer, "over")
               end
+              if accessorydb.other[v].legs then
+                print("found legs")
+                local legslayer = vips.Image.new_from_file("chick/accessories/" .. v .. "_legs.png")
+                legslayer = legslayer * { cfootcolor[1] / 255, cfootcolor[2]/255, cfootcolor[3] / 255, 1 }
+                otherimg = otherimg:composite2(legslayer, "over")
+              end
               chickimg = chickimg:composite2(otherimg, "over")
             else
               chickimg = vips.Image.new_from_file("chick/accessories/" .. v .. ".png")
+              if accessorydb.other[v].bodycolor then
+                print("found bodycolor")
+
+                local cbodycolor = uj.chickstats.bodycolor
+                chickimg = chickimg:colourspace("hsv") * { 0, 0, 1, 1 }
+                chickimg = chickimg:colourspace("srgb") * { cbodycolor[1] / 255, cbodycolor[2] / 255, cbodycolor[3] / 255, 1 }
+              end
             end
           end
         end

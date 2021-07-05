@@ -14,7 +14,7 @@
     },
     "bowlerhat" : {
       "name": "Bowler Hat",
-      "description": "Bowler shoes and bowler ball not included."
+      "description": "Bowler Pins and Bowler Ball not included."
     },
     "egg" : {
       "name": "Egg(?)",
@@ -112,6 +112,13 @@
       "name": "Faceless",
       "description": "I have no beak, and I must cheep.",
       "bodycolor": true,
+      "layer": "middle"
+    },
+    "blocky" : {
+      "name": "Blocky",
+      "description": "Be there or be square!",
+      "bodycolor": true,
+      "legs": true,
       "layer": "middle"
     },
     "realchick" : {
