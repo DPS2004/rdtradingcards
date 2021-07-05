@@ -57,6 +57,13 @@
       "description": "Nya~",
       "bodycolor": true,
       "layer": "middle"
+    },
+    "cyclops" : {
+      "name": "Cyclops",
+      "description": "My name is Intern. Intern I am called by mother, father, and by all my comrades.",
+      "bodycolor": true,
+      "uncoloredlayer": true,
+      "layer": "middle"
     }
   }
 }

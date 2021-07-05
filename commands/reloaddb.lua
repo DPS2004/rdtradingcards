@@ -774,9 +774,14 @@ function command.run(message, mt,overwrite)
           if accessorydb.other[v].layer == "middle" then
             local otherimg = vips.Image.new_from_file("chick/accessories/" .. v .. ".png")
             if accessorydb.other[v].bodycolor then
+              print(accessorydb.other[v].uncoloredlayer)
               local cbodycolor = uj.chickstats.bodycolor
               otherimg = otherimg:colourspace("hsv") * { 0, 0, 1, 1 }
               otherimg = otherimg:colourspace("srgb") * { cbodycolor[1] / 255, cbodycolor[2] / 255, cbodycolor[3] / 255, 1 }
+              if accessorydb.other[v].uncoloredlayer then
+                local uclayer = vips.Image.new_from_file("chick/accessories/" .. v .. "_uncolored.png")
+                otherimg = otherimg:composite2(uclayer, "over")
+              end
             end
             chickimg = chickimg:composite2(otherimg, "over")
           end
@@ -807,9 +812,14 @@ function command.run(message, mt,overwrite)
           if accessorydb.other[v].layer == "top" then
             local otherimg = vips.Image.new_from_file("chick/accessories/" .. v .. ".png")
             if accessorydb.other[v].bodycolor then
+              print(accessorydb.other[v].uncoloredlayer)
               local cbodycolor = uj.chickstats.bodycolor
               otherimg = otherimg:colourspace("hsv") * { 0, 0, 1, 1 }
               otherimg = otherimg:colourspace("srgb") * { cbodycolor[1] / 255, cbodycolor[2] / 255, cbodycolor[3] / 255, 1 }
+              if accessorydb.other[v].uncoloredlayer then
+                local uclayer = vips.Image.new_from_file("chick/accessories/" .. v .. "_uncolored.png")
+                otherimg = otherimg:composite2(uclayer, "over")
+              end
             end
             chickimg = chickimg:composite2(otherimg, "over")
           end
