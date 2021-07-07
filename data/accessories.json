@@ -59,6 +59,10 @@
     "scarf" : {
       "name": "Scarf",
       "description": "For warmth in the winter, and fashion in the summer."
+    },
+    "lobstercostume" : {
+      "name": "Lobster Costume",
+      "description": "If it looks cute on dogs, it probably looks cute on birds a well, right?"
     }
   },
   
@@ -81,6 +85,10 @@
     "sneakers" : {
       "name": "Sneakers",
       "description": "(TODO)"
+    },
+    "rollerskates" : {
+      "name": "Roller Skates",
+      "description": "Increases your chick's movement speed by about 50%, and the likelyhood of falling off by 100%."
     }
   },
   "other" : {
