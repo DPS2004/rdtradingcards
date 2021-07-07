@@ -59,10 +59,6 @@
     "scarf" : {
       "name": "Scarf",
       "description": "For warmth in the winter, and fashion in the summer."
-    },
-    "lobstercostume" : {
-      "name": "Lobster Costume",
-      "description": "If it looks cute on dogs, it probably looks cute on birds a well, right?"
     }
   },
   
@@ -74,6 +70,10 @@
     "guitaristoutfit" : {
       "name": "Cute Guitarist Outfit",
       "description": "Some call it cute, others call it battle armor while hitting monsters in the face with an instrument."
+    },
+    "lobstercostume" : {
+      "name": "Lobster Costume",
+      "description": "If it looks cute on dogs, it probably looks cute on birds as well, right?"
     }
   },
   
@@ -110,6 +110,11 @@
       "name": "Cane",
       "description": "(TODO)",
       "layer": "top"
+    },
+    "static" : {
+      "name": "Static",
+      "description": "*BZZT*",
+      "layer": "middle"
     },
     "catears" : {
       "name": "Cat Ears",
