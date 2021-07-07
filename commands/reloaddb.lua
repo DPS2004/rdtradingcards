@@ -801,6 +801,10 @@ function command.run(message, mt,overwrite)
                 legslayer = legslayer * { cfootcolor[1] / 255, cfootcolor[2]/255, cfootcolor[3] / 255, 1 }
                 otherimg = otherimg:composite2(legslayer, "over")
               end
+              if accessorydb.other[v].uncolored then
+                local uclayer = vips.Image.new_from_file("chick/accessories/" .. v .. "_uncolored.png")
+                otherimg = otherimg:composite2(uclayer, "over")
+              end
               chickimg = chickimg:composite2(otherimg, "over")
             else
               chickimg = vips.Image.new_from_file("chick/accessories/" .. v .. ".png")
@@ -834,6 +838,12 @@ function command.run(message, mt,overwrite)
         chickimg = chickimg:composite2(neckimg, "over")
       end
       
+      --adding clothes
+      if (uj.chickstats.clothes and uj.chickstats.clothes ~= "nothing") then
+        local clothesimg = vips.Image.new_from_file("chick/accessories/" .. uj.chickstats.clothes .. ".png")
+        chickimg = chickimg:composite2(clothesimg, "over")
+      end
+
       --adding shoes
       if (uj.chickstats.shoes and uj.chickstats.shoes ~= "nothing") then
         local shoeimg = vips.Image.new_from_file("chick/accessories/" .. uj.chickstats.shoes .. ".png")
@@ -850,7 +860,7 @@ function command.run(message, mt,overwrite)
               local cbodycolor = uj.chickstats.bodycolor
               otherimg = otherimg:colourspace("hsv") * { 0, 0, 1, 1 }
               otherimg = otherimg:colourspace("srgb") * { cbodycolor[1] / 255, cbodycolor[2] / 255, cbodycolor[3] / 255, 1 }
-              if accessorydb.other[v].uncoloredlayer then
+              if accessorydb.other[v].uncolored then
                 local uclayer = vips.Image.new_from_file("chick/accessories/" .. v .. "_uncolored.png")
                 otherimg = otherimg:composite2(uclayer, "over")
               end

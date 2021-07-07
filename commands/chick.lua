@@ -13,6 +13,7 @@ function command.run(message, mt)
           headwear = "nothing",
           eyewear = "nothing",
           neckwear = "nothing",
+          clothes = "nothing",
           shoes = "nothing",
           others = {}
       }
