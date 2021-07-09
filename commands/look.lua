@@ -220,12 +220,19 @@ function command.run(message, mt)
           
         
         if (string.lower(mt[1]) == "lab" or string.lower(mt[1]) == "abandoned lab" or mt[1] == "") and wj.labdiscovered  then 
+          local laburl = "https://cdn.discordapp.com/attachments/829197797789532181/862885457854726154/lab_scanner.png"
+          local labdesc = 'The **Abandoned Lab** was revealed after a **Hole** appeared next to the **Pyrowmid**. Judging by the presence of a **Spider Web**, it has not been used for quite some time, but the technology here looks relatively modern. The **Database** and the connected **Terminal** juxtapose the cheery **Cat Poster**, which was recently moved to reveal the **Scanner**. The **Table** on the other side of the room is caked in dust.'
+          
+          if wj.ws <= 1 then
+            laburl = labimages[getletterindex(string.sub(wj.lablooktext, wj.lablookindex + 1, wj.lablookindex + 1))]
+            labdesc = 'The **Abandoned Lab** was revealed after a **Hole** appeared next to the **Pyrowmid**. Judging by the presence of a **Spider Web**, it has not been used for quite some time, but the technology here looks relatively modern. The **Database** and the connected **Terminal** juxtapose the cheery **Cat Poster**. The **Table** on the other side of the room is caked in dust.'
+          end
           message.channel:send{embed = {
             color = 0x85c5ff,
             title = "Looking at Lab...",
-            description = 'The **Abandoned Lab** was revealed after a **Hole** appeared next to the **Pyrowmid**. Judging by the presence of a **Spider Web**, it has not been used for quite some time, but the technology here looks relatively modern. The **Database** and the connected **Terminal** juxtapose the cheery **Cat Poster**. The **Table** on the other side of the room is caked in dust.',
+            description = labdesc,
             image = {
-              url = labimages[getletterindex(string.sub(wj.lablooktext, wj.lablookindex + 1, wj.lablookindex + 1))]
+              url = laburl
             }
           }}
           wj.lablookindex = wj.lablookindex + 1

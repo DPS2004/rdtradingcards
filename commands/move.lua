@@ -22,10 +22,10 @@ function command.run(message, mt)
   elseif request == "lab" or request == "abandonedlab" or request == "the abandoned lab" or request == "abandoned lab" then
     success = true
     newroom = 1
-  elseif wj.ws >= 3 and (request == "hallway" or request == "darkhallway" or request == "the dark hallway" or request == "dark hallway") then
+  elseif wj.ws >= 4 and (request == "hallway" or request == "darkhallway" or request == "the dark hallway" or request == "dark hallway") then
     success = true
     newroom = 2
-  elseif wj.ws >= 4 and (request == "casino" or request == "shadycasino" or request == "the shady casino" or request == "shady casino") then
+  elseif wj.ws >= 5 and (request == "casino" or request == "shadycasino" or request == "the shady casino" or request == "shady casino") then
     success = true
     newroom = 3
   end
