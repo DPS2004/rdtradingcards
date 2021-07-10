@@ -26,7 +26,7 @@ function command.run(message, mt)
         if nopeeking then
           message.channel:send("Sorry, but I either could not find the " .. request .. " medal in the database, or you do not have it. Make sure that you spelled it right!")
         else
-          message.channel:send("Sorry, but you don't have the **" .. medalfntoname(curfilename) .. "** medal in your inventory or your storage.")
+          message.channel:send("Sorry, but you don't have the **" .. medalfntoname(curfilename) .. "** medal.")
         end
       end
     else
