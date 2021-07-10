@@ -29,6 +29,10 @@ function command.run(message, mt)
     
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
   local uj2f = usernametojson(user_argument)
+
+  if mt[3] == "all" then
+    numcards = uj.inventory[thing_argument]
+  end
   
   if not uj2f then
     message.channel:send("Sorry, but I could not find a user named " .. user_argument .. " in the database. Make sure that you have spelled it right, and that they have at least pulled a card to register!")

@@ -16,6 +16,9 @@ function command.run(message, mt)
             numcards = math.floor(mt[2])
           end
         end
+        if mt[2] == "all" then
+          numcards = uj.inventory[item1]
+        end
         if uj.inventory[item1] >= numcards then
           local isplural = ""
           if numcards ~= 1 then
