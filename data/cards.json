@@ -2857,7 +2857,7 @@
           "name": "My Level, Crystalline",
           "tradeable": false,
           "type": "Collector's",
-          "description": "(Level by auth, Noche, and notDonte)",
+          "description": "Requires My Level and Crystalline (Level by auth, Noche, and notDonte)",
           "smell": "Pure Crystals",
           "season": 2,
           "bonuses": {
@@ -3213,7 +3213,7 @@
           "name": "Blackwater",
           "tradeable": true,
           "type": "Collector's",
-          "description": "(Level by MarioMak967)",
+          "description": "Requires Feed the Machine, Retro Funky (SUNDANCE Remix), and Nice Logo (Level by MarioMak967)",
           "smell": "Westerns",
           "season": 6,
           "bonuses": {},

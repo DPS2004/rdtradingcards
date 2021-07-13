@@ -196,7 +196,7 @@
     "require": [
       "nicelogo",
       "feedthemachine",
-      "retrofunky",
+      "retrofunky"
     ],
     "receive": "blackwater"
   },
