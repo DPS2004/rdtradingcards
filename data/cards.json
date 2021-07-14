@@ -3371,6 +3371,7 @@
           "smell": ":beans:",
           "season": 0,
           "bonuses": {
+            "okamiiscollar": true,
             "duncecap": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200733840605254/beansr.png"
@@ -3385,6 +3386,7 @@
           "smell": "Eggs",
           "season": 0,
           "bonuses": {
+            "okamiiscollar": true,
             "rustysword": true,
             "duncecap": true
           },
@@ -3415,6 +3417,7 @@
           "smell": "Malpractice",
           "season": 0,
           "bonuses": {
+            "okamiiscollar": true,
             "duncecap": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201476747526144/doctahr.png"
@@ -3443,6 +3446,7 @@
           "smell": "Dumpster Diving",
           "season": 0,
           "bonuses": {
+            "okamiiscollar": true,
             "oversizedstethoscope": true,
             "duncecap": true
           },
@@ -3473,6 +3477,7 @@
           "smell": "Accuracy",
           "season": 0,
           "bonuses": {
+            "okamiiscollar": true,
             "duncecap": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202946058223656/wallclockr.png"
@@ -3501,6 +3506,7 @@
           "smell": "Bad Opinions",
           "season": 0,
           "bonuses": {
+            "okamiiscollar": true,
             "valentinesdaycard": true,
             "duncecap": true
           },
