@@ -519,8 +519,15 @@ function command.run(message, mt,overwrite)
     _G['ynbuttons'] = function(message, content, etype, data, yesoption, nooption)
       yesoption = yesoption or "Yes"
       nooption = nooption or "No"
+      local messagecontent, messageembed
+      if type(content) == "table" then
+        messageembed = content
+      else
+        messagecontent = content
+      end
       local newmessage = message.channel:send({
-        content = content,
+        embed = messageembed,
+        content = messagecontent,
         components = {
           { --whyyyyyy
             type = 1, -- make button container
