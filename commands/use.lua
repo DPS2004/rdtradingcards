@@ -614,7 +614,7 @@ function command.run(message, mt,bypass)
                 }}
               end
             elseif string.lower(mt[2]) == "pull" then
-              if (wj.ws >= 4) or (wj.ws == 2 and uj.id == wj.specialuser) then
+              if (wj.ws >= 4) or (wj.ws == 2 and uj.id == wj.specialuser and (not uj.storage.key)) then
                 message.channel:send{embed = {
                   color = 0x85c5ff,
                   title = "PULLING CARD... ERROR!",
@@ -628,9 +628,9 @@ function command.run(message, mt,bypass)
                   }
                 }}
                 uj.storage.key = 1
-
-            
-                wj.ws = 3
+                if wj.ws == 2 then
+                  wj.ws = 3 --bruh
+                end
               else
                 message.channel:send{embed = {
                   color = 0x85c5ff,
