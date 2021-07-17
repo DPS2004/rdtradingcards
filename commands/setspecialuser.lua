@@ -6,19 +6,7 @@ function command.run(message, mt)
     local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
     
     wj.specialuser = mt[1]
-    
-    --old states, do not use!: 
-    
-    --prehole: pre-s5
-    --tinyhole: s5 intro
-    --smallhole: ditto
-    --mediumhole: ditto
-    --largehole: ditto
-    --largerhole: ditto
-    --largesthole: waiting for ladder
-    --labopen: lab is initially open
-    --terminalopen: terminal has been logged in to
-    
+        
     dpf.savejson("savedata/worldsave.json", wj)
     message.channel:send("world updated")
   else

@@ -614,8 +614,34 @@ function command.run(message, mt,bypass)
                 }}
               end
             elseif string.lower(mt[2]) == "pull" then
-              --todo
+              if (wj.ws >= 4) or (wj.ws == 2 and uj.id == wj.specialuser) then
+                message.channel:send{embed = {
+                  color = 0x85c5ff,
+                  title = "PULLING CARD... ERROR!",
+                  description = '` message.author.mentionString .. got a **.. KEY ..** card! The **.. KEY ..** card has been added to ..uj.pronouns["their"].. STORAGE. The shorthand form of this card is **.. newcard .. **., uj.storage.key = 1, dpf.savejson("savedata/" .. message.author.id .. ".json",uj)`',
+                  image = {
+                    url = "https://cdn.discordapp.com/attachments/829197797789532181/865792363167219722/key.png"
+                  },
+                  footer = {
+                    text =  message.author.name,
+                    icon_url = message.author.avatarURL
+                  }
+                }}
+                uj.storage.key = 1
+
             
+                wj.ws = 3
+              else
+                message.channel:send{embed = {
+                  color = 0x85c5ff,
+                  title = "Using Terminal...",
+                  description = '`ERROR: CARD PRINTER JAMMED. PLEASE WAIT.`',
+                  footer = {
+                    text =  message.author.name,
+                    icon_url = message.author.avatarURL
+                  }
+                }}
+              end
             else
               message.channel:send{embed = {
                 color = 0x85c5ff,
