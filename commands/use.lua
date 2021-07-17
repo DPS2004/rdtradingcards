@@ -613,6 +613,8 @@ function command.run(message, mt,bypass)
                   }
                 }}
               end
+            elseif string.lower(mt[2]) == "pull" then
+              --todo
             
             else
               message.channel:send{embed = {
