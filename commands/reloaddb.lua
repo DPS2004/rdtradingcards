@@ -640,6 +640,7 @@ function command.run(message, mt,overwrite)
     addcommand("box",cmd.use,0,{"box"})
     addcommand("show",cmd.show)
     addcommand("p",cmd.pull)
+    addcommand("b",cmd.use,0,{"box"})
     _G['handlemessage'] = function (message)
       if message.author.id ~= "767445265871142933" then
         local hasrun = false
