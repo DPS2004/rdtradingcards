@@ -8,7 +8,7 @@ function command.run(message, mt)
     
     --0: pre-s7
     
-    --701: s7 intro
+    --701: s7 intro, c!terminal logs unlocked
     
     
     --801: s8 intro, The cat poster can be pulled away.

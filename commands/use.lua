@@ -449,10 +449,14 @@ function command.run(message, mt,bypass)
                 }
               }}
             elseif string.lower(mt[2]) == "help" or mt[2] == "" then
+              local extracmd = ""
+              if wj.ws >= 701 then
+                extracmd = extracmd .. "\nLOGS"
+              end
               message.channel:send{embed = {
                 color = 0x85c5ff,
                 title = "Using Terminal...",
-                description = '`AVAILABLE COMMANDS: \nHELP\nSTATS\nUPGRADE\nCREDITS\nSAVEDATA`',
+                description = '`AVAILABLE COMMANDS: \nHELP\nSTATS\nUPGRADE\nCREDITS\nSAVEDATA' .. extracmd .. "`",
                 image = {
                   url = "https://cdn.discordapp.com/attachments/829197797789532181/838836625391484979/terminal2.gif"
                 },
@@ -513,6 +517,16 @@ function command.run(message, mt,bypass)
               message.channel:send{embed = {
                 color = 0x85c5ff,
                 title = "Credits",
+                description = 'https://docs.google.com/document/d/1WgUqA8HNlBtjaM4Gpp4vTTEZf9t60EuJ34jl2TleThQ/edit?usp=sharing',
+                footer = {
+                  text =  message.author.name,
+                  icon_url = message.author.avatarURL
+                }
+              }}
+            elseif string.lower(mt[2]) == "logs" and wj.ws >= 701 then
+              message.channel:send{embed = {
+                color = 0x85c5ff,
+                title = "Logs",
                 description = 'https://docs.google.com/document/d/1WgUqA8HNlBtjaM4Gpp4vTTEZf9t60EuJ34jl2TleThQ/edit?usp=sharing',
                 footer = {
                   text =  message.author.name,
