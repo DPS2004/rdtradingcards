@@ -97,18 +97,18 @@ function command.run(message, mt,overwrite)
         their="their",them="them",theirself="themself",they="they",theirs="theirs"
       },
       room=0,
-      chickstats={
-        bodycolor = {255, 250, 0},
-        eyecolor = {49, 49, 49},
-        scleracolor = {248, 248, 248},
-        beakcolor = {255, 128, 3},
-        footcolor =  {255, 128, 3},
-        headwear = "nothing",
-        eyewear = "nothing",
-        neckwear = "nothing",
-        shoes = "nothing",
-        others = {}
-      }
+--      chickstats={
+--        bodycolor = {255, 250, 0},
+--        eyecolor = {49, 49, 49},
+--        scleracolor = {248, 248, 248},
+--        beakcolor = {255, 128, 3},
+--        footcolor =  {255, 128, 3},
+--        headwear = "nothing",
+--        eyewear = "nothing",
+--        neckwear = "nothing",
+--        shoes = "nothing",
+--        others = {}
+--      }
     }
     
     _G['defaultworldsave'] = {tokensdonated=0,boxpool={"ssss45","roomsdc_ur","roomsdc_r","underworld","enchantedlove","wallclockur","rhythmdogtor","moai","coolbird","beanshopper","cardboardworld","acofoi","rollermobster","inimaur","fhottour","superstrongcavity","soundsr","pancakefever","nicoleur","feedthemachine","retrofunky","heartchickalt"},lablookindex=0,lablooktext="password is gnuthca ",worldstate = "prehole",ws=0}
@@ -629,7 +629,7 @@ function command.run(message, mt,overwrite)
     addcommand("skipprompts",cmd.skipprompts)
     addcommand("buttontest",cmd.buttontest)
     addcommand("vipstest",cmd.vipstest)
-    addcommand("chick",cmd.chick)
+    --addcommand("chick",cmd.chick)
     addcommand("move",cmd.move)
     addcommand("renamefile",cmd.renamefile)
     addcommand("getfile",cmd.getfile)

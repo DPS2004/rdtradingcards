@@ -236,7 +236,7 @@ function command.run(message, mt,bypass)
             description = 'You dust off the **Table**. But as soon as you look away, the **Table** is covered in dust again.',
           }}
         elseif (string.lower(mt[1]) == "poster" or string.lower(mt[1]) == "catposter" or string.lower(mt[1]) == "cat poster") and wj.labdiscovered  then 
-          if wj.ws ~= 1 then
+          if wj.ws ~= 801 then
             message.channel:send{embed = {
               color = 0x85c5ff,
               title = "What poster?",
@@ -253,7 +253,7 @@ function command.run(message, mt,bypass)
                 url = 'https://cdn.discordapp.com/attachments/829197797789532181/862883805786144768/scanner.png'
               }
             }}
-            wj.ws = 2
+            wj.ws = 802
             
           end
         elseif (string.lower(mt[1]) == "mouse hole" or string.lower(mt[1]) == "mouse" or string.lower(mt[1]) == "mousehole") and wj.labdiscovered  then 
@@ -614,7 +614,7 @@ function command.run(message, mt,bypass)
                 }}
               end
             elseif string.lower(mt[2]) == "pull" then
-              if (wj.ws >= 4) or (wj.ws == 2 and uj.id == wj.specialuser and (not uj.storage.key)) then
+              if (wj.ws >= 804) or (wj.ws == 802 and uj.id == wj.specialuser and (not uj.storage.key)) then
                 message.channel:send{embed = {
                   color = 0x85c5ff,
                   title = "PULLING CARD... ERROR!",
@@ -628,8 +628,8 @@ function command.run(message, mt,bypass)
                   }
                 }}
                 uj.storage.key = 1
-                if wj.ws == 2 then
-                  wj.ws = 3 --bruh
+                if wj.ws == 802 then
+                  wj.ws = 803 --bruh
                 end
               else
                 message.channel:send{embed = {
