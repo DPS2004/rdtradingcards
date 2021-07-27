@@ -504,7 +504,7 @@ function command.run(message, mt,overwrite)
         end
         if cuj.names then
           for j,w in pairs(cuj.names) do
-            if j == x then
+            if string.lower(j) == x then
               return "savedata/"..v
             end
           end
