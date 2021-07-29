@@ -527,12 +527,25 @@ function command.run(message, mt,bypass)
               message.channel:send{embed = {
                 color = 0x85c5ff,
                 title = "Logs",
-                description = 'https://docs.google.com/document/d/1WgUqA8HNlBtjaM4Gpp4vTTEZf9t60EuJ34jl2TleThQ/edit?usp=sharing',
+                description = 'https://docs.google.com/document/d/1td9u_n-ou-yIKHKU766T-Ue4EdJGYThjcl-MRxRUA5E/edit?usp=sharing',
                 footer = {
                   text =  message.author.name,
                   icon_url = message.author.avatarURL
                 }
               }}
+            elseif string.lower(mt[2]) == "laureladams" and wj.ws >= 701 then
+              message.channel:send{embed = {
+                color = 0x85c5ff,
+                title = "Logs",
+                description = 'TODO',
+                footer = {
+                  text =  message.author.name,
+                  icon_url = message.author.avatarURL
+                }
+              }}
+              if wj.ws == 701 then
+                wj.ws = 702
+              end
             elseif string.lower(mt[2]) == "upgrade" then
               if uj.tokens > 0 then
                 if not uj.skipprompts then
