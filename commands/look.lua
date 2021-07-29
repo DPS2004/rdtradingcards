@@ -337,6 +337,37 @@ function command.run(message, mt)
         end
       end
       
+      if uj.room == 4 then     --------------------------------------------------MOUNTAINS--------------------------------------------------------------------------   
+        
+          
+        local request = string.lower(mt[1]) --why tf didint i do this for all the other ones?????????????????
+        if (request == "mountains" or request == "mountain" or request == "windymountains" or request == "the windy mountains" or request == "windy mountains" or mt[1] == "") then 
+          message.channel:send{embed = {
+            color = 0x85c5ff,
+            title = "Looking at Mountains...",
+            description = "TODO: mention Quaint Shop, Bridge, Pyrowmid, Barrels, Clouds. Also edit picture to only have one pyramid",
+            image = {
+              url = "https://cdn.discordapp.com/attachments/829197797789532181/870127261498617906/windymountains.png"
+            }
+          }}
+        
+
+        
+ 
+        elseif (string.lower(mt[1]) == "mouse hole" or string.lower(mt[1]) == "mouse" or string.lower(mt[1]) == "mousehole") and wj.labdiscovered  then 
+          message.channel:send{embed = {
+            color = 0x85c5ff,
+            title = "Looking at Mouse Hole...",
+            description = 'The **Mouse Hole** is directly underneath a yellow sign that says "I.T.". The hole is just about wide enough to fit a computer mouse into.',
+          }}
+
+        
+        
+        else
+          found = false
+        end
+      end
+      
       if not found then ----------------------------------NON-ROOM ITEMS GO HERE!--------------------------------------------------
         if string.lower(mt[1]) == "card factory" or string.lower(mt[1]) == "factory" or string.lower(mt[1]) == "cardfactory" or string.lower(mt[1]) == "the card factory" then --TODO: move these to not found
           message.channel:send {

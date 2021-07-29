@@ -6,7 +6,7 @@ function command.run(message, mt)
   if not mt[1] then
     mt[1] = "pyrowmid"
   end
-  local locations = {"Pyrowmid", "Abandoned Lab", "Dark Hallway", "Shady Casino"}
+  local locations = {"Pyrowmid", "Abandoned Lab", "Dark Hallway", "Shady Casino","Windy Mountains","Quaint Shop"}
   local success = false
   local request = string.lower(mt[1])
   local newroom = 0
@@ -22,13 +22,17 @@ function command.run(message, mt)
   elseif request == "lab" or request == "abandonedlab" or request == "the abandoned lab" or request == "abandoned lab" then
     success = true
     newroom = 1
-  elseif wj.ws >= 4 and (request == "hallway" or request == "darkhallway" or request == "the dark hallway" or request == "dark hallway") then
+  elseif wj.ws >= 804 and (request == "hallway" or request == "darkhallway" or request == "the dark hallway" or request == "dark hallway") then
     success = true
     newroom = 2
-  elseif wj.ws >= 5 and (request == "casino" or request == "shadycasino" or request == "the shady casino" or request == "shady casino") then
+  elseif wj.ws >= 805 and (request == "casino" or request == "shadycasino" or request == "the shady casino" or request == "shady casino") then
     success = true
     newroom = 3
+  elseif wj.ws >= 702 and (request == "mountains" or request == "mountain" or request == "windymountains" or request == "the windy mountains" or request == "windy mountains") then
+    success = true
+    newroom = 4
   end
+  
   
   if success then
     print("newroom is ".. newroom)
