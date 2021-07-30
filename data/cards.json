@@ -2325,6 +2325,76 @@
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201486566391868/doctorgroup.png"
         },
         {
+          "chance": 1,
+          "filename": "birdgroup",
+          "name": "The Bird Group",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by Plant Guy)",
+          "smell": "Government Surveillance",
+          "season": 7,
+          "bonuses": {
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+        },
+        {
+          "chance": 1,
+          "filename": "animalgroup",
+          "name": "The Animal Group",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by Peachy6206)",
+          "smell": "Good Bois",
+          "season": 7,
+          "bonuses": {
+            
+          },
+          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/868119057440866364/Untitled2_3.png"
+        },
+        {
+          "chance": 1,
+          "filename": "unbeatablegroup",
+          "name": "The Unbeatable Group",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by MokkaCat)",
+          "smell": "Crime",
+          "season": 7,
+          "bonuses": {
+            
+          },
+          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/866479549184475166/image0.jpg"
+        },
+        {
+          "chance": 1,
+          "filename": "hughgroup",
+          "name": "The Hugh Group",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by Lumina)",
+          "smell": "30 Dollar Haircuts",
+          "season": 7,
+          "bonuses": {
+            "lostnametag": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/870222688323530782/hughgroup.png"
+        },
+        {
+          "chance": 1,
+          "filename": "coffeegroup",
+          "name": "The Coffee Group",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by Lumina)",
+          "smell": "Coffee, Obviously",
+          "season": 7,
+          "bonuses": {
+            "cafemixtake": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/870224530054983690/coffeegroup.png"
+        },
+        {
           "chance": 0,
           "filename": "samuraigroupc",
           "name": "The Samurai Group (Collector's)",
@@ -2379,6 +2449,48 @@
             "oversizedstethoscope": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201507349561379/doctorgroupc.png"
+        },
+        {
+          "chance": 0,
+          "filename": "birdgroupc",
+          "name": "The Bird Group (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires Cockatiel (Collector's), Parrot (Collector's), Owl (Collector's), Oriole (Collector's), and The Bird Group (Art by Plant Guy)",
+          "smell": "Government Surveillance",
+          "season": 7,
+          "bonuses": {
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201507349561379/doctorgroupc.png"
+        },
+        {
+          "chance": 0,
+          "filename": "animalgroupc",
+          "name": "The Animal Group (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires Loafy (Collector's), Rattle (Collector's), Dr. Spider (Collector's), and The Animal Group (Art by Peachy6026)",
+          "smell": "Good Bois",
+          "season": 7,
+          "bonuses": {
+            
+          },
+          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/868096169757278228/Untitled1_1.png"
+        },
+        {
+          "chance": 0,
+          "filename": "unbeatablegroupc",
+          "name": "The Unbeatable Group (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires PLACEHOLDER, and The Unbeatable Group (Art by MokkaCat)",
+          "smell": "Crime",
+          "season": 7,
+          "bonuses": {
+            
+          },
+          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/868949556308627517/image0.png"
         }
       ]
     },
