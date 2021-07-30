@@ -1970,13 +1970,13 @@
       ]
     },
     {
-      "groupname": "animals",
+      "groupname": "rattle",
       "basechance": 3,
       "cards": [
         {
           "chance": 3,
-          "filename": "rattle",
-          "name": "Rattle",
+          "filename": "rattler",
+          "name": "Rattle (Rare)",
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Winston Lee)",
@@ -1988,9 +1988,57 @@
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849398512470458459/pebble.png"
         },
         {
+          "chance": 2,
+          "filename": "rattlesr",
+          "name": "Rattle (Super Rare)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Art by Stamps)",
+          "smell": "Sand",
+          "season": 7,
+          "bonuses": {
+            
+          },
+          "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+        },
+        {
+          "chance": 1,
+          "filename": "rattleur",
+          "name": "Rattle (Ultra Rare)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by Emery)",
+          "smell": "Sand",
+          "season": 7,
+          "bonuses": {
+
+          },
+          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/867864903074971688/rattleur.png"
+        },
+        {
+          "chance": 0,
+          "filename": "rattlec",
+          "name": "Rattle (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Rattle (Art by TrainThemAll)",
+          "smell": "Sand",
+          "season": 7,
+          "bonuses": {
+
+          },
+          "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+        }
+      ]
+    },
+    {
+      "groupname": "loafy",
+      "basechance": 3,
+      "cards": [
+        {
           "chance": 3,
-          "filename": "loafy",
-          "name": "Loafy",
+          "filename": "loafyr",
+          "name": "Loafy (Rare)",
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Winston Lee)",
@@ -1999,12 +2047,60 @@
           "bonuses": {
             "okamiiscollar": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849398418421317653/loafy.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849398512470458459/pebble.png"
         },
         {
+          "chance": 2,
+          "filename": "loafysr",
+          "name": "Loafy (Super Rare)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Art by Emery)",
+          "smell": "Relaxation",
+          "season": 7,
+          "bonuses": {
+            
+          },
+          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/867837645216284712/loafysr.png"
+        },
+        {
+          "chance": 1,
+          "filename": "loafyur",
+          "name": "Loafy (Ultra Rare)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by MokkaCat)",
+          "smell": "Relaxation",
+          "season": 7,
+          "bonuses": {
+            
+          },
+          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/867957026616139786/image0.png"
+        },
+        {
+          "chance": 0,
+          "filename": "loafyc",
+          "name": "Loafy (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Loafy (Art by ????)",
+          "smell": "Relaxation",
+          "season": 7,
+          "bonuses": {
+
+          },
+          "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+        }
+      ]
+    },
+    {
+      "groupname": "spider",
+      "basechance": 3,
+      "cards": [
+        {
           "chance": 3,
-          "filename": "spider",
-          "name": "Dr. Spider, PHD",
+          "filename": "spiderr",
+          "name": "Dr. Spider, PHD (Rare)",
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Winston Lee)",
@@ -2016,6 +2112,51 @@
             "oversizedstethoscope": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849398472452603924/spider.png"
+        },
+        {
+          "chance": 2,
+          "filename": "spidersr",
+          "name": "Dr. Spider, PHD (Super Rare)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Art by Stamps)",
+          "smell": "Professionalism",
+          "season": 7,
+          "spoiler": true,
+          "bonuses": {
+            "oversizedstethoscope": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/868188192686362654/0.png"
+        },
+        {
+          "chance": 1,
+          "filename": "spiderur",
+          "name": "Dr. Spider, PHD (Ultra Rare)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "Professionalism",
+          "season": 7,
+          "spoiler": true,
+          "bonuses": {
+            "oversizedstethoscope": true
+          },
+          "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+        },
+        {
+          "chance": 0,
+          "filename": "rattlec",
+          "name": "Dr. Spider, PHD (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Dr. Spider, PHD (Art by TrainThemAll)",
+          "smell": "Professionalism",
+          "season": 7,
+          "spoiler": true,
+          "bonuses": {
+            "oversizedstethoscope": true
+          },
+          "https://cdn.discordapp.com/attachments/865407405092503582/867875850849484820/SPOILER_spiderc.png"
         }
       ]
     },
