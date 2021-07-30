@@ -230,6 +230,45 @@
       "doctorgroup"
     ],
     "receive": "doctorgroupc"
-  }
+  },
+  {
+    "require": [
+      "unbeatablegroup"
+    ],
+    "receive": "doctorgroupc"
+  },
+  {
+    "require": [
+      "rattler",
+      "rattlesr",
+      "rattleur"
+    ],
+    "receive": "rattlec"
+  },
+  {
+    "require": [
+      "loafyr",
+      "loafysr",
+      "loafyur"
+    ],
+    "receive": "loafyc"
+  },
+  {
+    "require": [
+      "spiderr",
+      "spidersr",
+      "spiderur"
+    ],
+    "receive": "spiderc"
+  },
+  {
+    "require": [
+      "rattlec",
+      "loafyc",
+      "spiderc",
+      "animalgroup"
+    ],
+    "receive": "animalgroupc"
+  },
 
 ]
