@@ -2027,7 +2027,7 @@
           "bonuses": {
 
           },
-          "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
         }
       ]
     },
@@ -2089,7 +2089,7 @@
           "bonuses": {
 
           },
-          "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
         }
       ]
     },
@@ -2141,7 +2141,7 @@
           "bonuses": {
             "oversizedstethoscope": true
           },
-          "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
         },
         {
           "chance": 0,
@@ -2156,7 +2156,7 @@
           "bonuses": {
             "oversizedstethoscope": true
           },
-          "https://cdn.discordapp.com/attachments/865407405092503582/867875850849484820/SPOILER_spiderc.png"
+          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/867875850849484820/SPOILER_spiderc.png"
         }
       ]
     },
@@ -2175,6 +2175,7 @@
           "season": 7,
           "bonuses": {
             "duncecap": true,
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
         },
@@ -2204,7 +2205,7 @@
           "bonuses": {
             "duncecap": true
           },
-          "https://cdn.discordapp.com/attachments/865407405092503582/868220205812297748/bodybuilderur.png"
+          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/868220205812297748/bodybuilderur.png"
         },
         {
           "chance": 0,
@@ -2218,7 +2219,7 @@
           "bonuses": {
             "duncecap": true
           },
-          "https://cdn.discordapp.com/attachments/865407405092503582/867144450685272074/bdbdc.png"
+          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/867144450685272074/bdbdc.png"
         }
       ]
     },
@@ -2236,7 +2237,7 @@
           "smell": "Placeholder Text",
           "season": 7,
           "bonuses": {
-            
+            "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
         },
@@ -2250,7 +2251,7 @@
           "smell": "Placeholder Text",
           "season": 7,
           "bonuses": {
-            "duncecap": true
+            
           },
           "embed": "https://cdn.discordapp.com/attachments/865407405092503582/866090148416847883/BiristaSr.png"
         },
@@ -2264,13 +2265,13 @@
           "smell": "Placeholder Text",
           "season": 7,
           "bonuses": {
-            "duncecap": true
+            
           },
-          "https://cdn.discordapp.com/attachments/865407405092503582/865989574589284352/image0.png"
+          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/865989574589284352/image0.png"
         },
         {
           "chance": 0,
-          "filename": "Baristac",
+          "filename": "baristac",
           "name": "Barista (Collector's)",
           "tradeable": false,
           "type": "Collector's",
@@ -2280,7 +2281,259 @@
           "bonuses": {
             "duncecap": true
           },
-          "https://cdn.discordapp.com/attachments/865407405092503582/866046609431330826/image0.png"
+          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/866046609431330826/image0.png"
+        }
+      ]
+    },
+    {
+      "groupname": "cockatiel",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "cockatielr",
+          "name": "Cockatiel (Rare)",
+          "tradeable": true,
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "Meat",
+          "season": 7,
+          "bonuses": {
+            "okamiiscollar": true,
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+        },
+        {
+          "chance": 2,
+          "filename": "cockatielsr",
+          "name": "Cockatiel (Super Rare)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Art by Plant Guy)",
+          "smell": "Meat",
+          "season": 7,
+          "bonuses": {
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/835904591785754684/cockatielsr.png"
+        },
+        {
+          "chance": 1,
+          "filename": "cockatielur",
+          "name": "Cockatiel (Ultra Rare)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by Vapor)",
+          "smell": "Meat",
+          "season": 7,
+          "bonuses": {
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/865746139797913600/image0.png"
+        },
+        {
+          "chance": 0,
+          "filename": "cockatielc",
+          "name": "Cockatiel (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Cockatiel (Art by Vapor)",
+          "smell": "Meat",
+          "season": 7,
+          "bonuses": {
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+        }
+      ]
+    },
+    {
+      "groupname": "parrot",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "parrotr",
+          "name": "Parrot (Rare)",
+          "tradeable": true,
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "Fancy Things",
+          "season": 7,
+          "bonuses": {
+            "okamiiscollar": true,
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+        },
+        {
+          "chance": 2,
+          "filename": "parrotsr",
+          "name": "Parrot (Super Rare)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Art by Vapor)",
+          "smell": "Fancy Things",
+          "season": 7,
+          "bonuses": {
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/865995868758605844/image0.png"
+        },
+        {
+          "chance": 1,
+          "filename": "parrotur",
+          "name": "Parrot (Ultra Rare)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by Vapor)",
+          "smell": "Fancy Things",
+          "season": 7,
+          "bonuses": {
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+        },
+        {
+          "chance": 0,
+          "filename": "parrotc",
+          "name": "Parrot (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Parrot (Art by Stamps)",
+          "smell": "Fancy Things",
+          "season": 7,
+          "bonuses": {
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+        }
+      ]
+    },
+    {
+      "groupname": "owl",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "owlr",
+          "name": "Owl (Rare)",
+          "tradeable": true,
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "Wisdom",
+          "season": 7,
+          "bonuses": {
+            "okamiiscollar": true,
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+        },
+        {
+          "chance": 2,
+          "filename": "owlsr",
+          "name": "Owl (Super Rare)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Art by Plant Guy)",
+          "smell": "Wisdom",
+          "season": 7,
+          "bonuses": {
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/835904604352151602/owlsr.png"
+        },
+        {
+          "chance": 1,
+          "filename": "owlur",
+          "name": "Owl (Ultra Rare)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by Plant Guy)",
+          "smell": "Wisdom",
+          "season": 7,
+          "bonuses": {
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/838038543380250664/owlsr.png"
+        },
+        {
+          "chance": 0,
+          "filename": "owlc",
+          "name": "Owl (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Owl (Art by Stamps)",
+          "smell": "Wisdom",
+          "season": 7,
+          "bonuses": {
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+        }
+      ]
+    },
+    {
+      "groupname": "oriole",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "orioler",
+          "name": "Oriole (Rare)",
+          "tradeable": true,
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "Big Bill's",
+          "season": 7,
+          "bonuses": {
+            "okamiiscollar": true,
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+        },
+        {
+          "chance": 2,
+          "filename": "oriolesr",
+          "name": "Oriole (Super Rare)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Art by Vapor)",
+          "smell": "Big Bill's",
+          "season": 7,
+          "bonuses": {
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+        },
+        {
+          "chance": 1,
+          "filename": "orioleur",
+          "name": "Oriole (Ultra Rare)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by MokkaCat)",
+          "smell": "Big Bill's",
+          "season": 7,
+          "bonuses": {
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/866097946524516362/image0.png"
+        },
+        {
+          "chance": 0,
+          "filename": "oriolec",
+          "name": "Oriole (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Oriole (Art by MokkaCat)",
+          "smell": "Wisdom",
+          "season": 7,
+          "bonuses": {
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/865701685904146452/image0.png"
         }
       ]
     },
@@ -3979,7 +4232,7 @@
       ]
     },
     {
-      "groupname": "----------------------------------------RDRPG------------------------------------------------",
+      "groupname": "----------------------------------------RDRPG (and Rodney)------------------------------------------------",
       "basechance": 0,
       "cards": []
     },
@@ -4223,6 +4476,118 @@
           "season": 5,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201569643233300/fhottoc.png"
+        }
+      ]
+    },
+    {
+      "groupname": "connectifia",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "connectifiar",
+          "name": "Connectifia Abortus (Rare)",
+          "tradeable": true,
+          "type": "Rare",
+          "description": "(Art by Axobotl)",
+          "smell": "ERROR SMELL NOT FOUND",
+          "season": 7,
+          "bonuses": {
+            "okamiiscollar": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201571261710376/fhottor.png"
+        },
+        {
+          "chance": 2,
+          "filename": "connectifiasr",
+          "name": "Connectifia Abortus (Super Rare)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Art by Vapor)",
+          "smell": "ERROR SMELL NOT FOUND",
+          "season": 7,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/870715255658000465/connectifiasr.gif"
+        },
+        {
+          "chance": 1,
+          "filename": "connectifiaur",
+          "name": "Connectifia Abortus (Ultra Rare)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by Plant Guy)",
+          "smell": "ERROR SMELL NOT FOUND",
+          "season": 7,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/794420141802651658/862016241753129020/connectifiaur_3.png"
+        },
+        {
+          "chance": 0,
+          "filename": "connectifiac",
+          "name": "Connectifia Abortus (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Connectifia Abortus (Art by Vapor)",
+          "smell": "ERROR SMELL NOT FOUND",
+          "season": 7,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/794420141802651658/864906857251340328/connectifiaabortusc.png"
+        }
+      ]
+    },
+    {
+      "groupname": "rodney",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "rodneyr",
+          "name": "Rodney (Rare)",
+          "tradeable": true,
+          "type": "Rare",
+          "description": "(Art by DPS2004(?))",
+          "smell": "Disorganization",
+          "season": 7,
+          "bonuses": {
+            "okamiiscollar": true
+          },
+          "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+        },
+        {
+          "chance": 2,
+          "filename": "rodneysr",
+          "name": "Rodney (Super Rare)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Art by Vapor)",
+          "smell": "Disorganization",
+          "season": 7,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/865799852893143060/image0.png"
+        },
+        {
+          "chance": 1,
+          "filename": "rodneyur",
+          "name": "Rodney (Ultra Rare)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by TatonSlice)",
+          "smell": "Disorganization",
+          "season": 7,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+        },
+        {
+          "chance": 0,
+          "filename": "rodneyc",
+          "name": "Rodney (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Rodney (Art by Kin)",
+          "smell": "Disorganization",
+          "season": 7,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
         }
       ]
     }
