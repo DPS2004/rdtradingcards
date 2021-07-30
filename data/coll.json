@@ -270,5 +270,21 @@
     ],
     "receive": "animalgroupc"
   },
+  {
+    "require": [
+      "bodybuilderr",
+      "bodybuildersr",
+      "bodybuilderur"
+    ],
+    "receive": "bodybuilderc"
+  },
+  {
+    "require": [
+      "baristar",
+      "baristasr",
+      "baristaur"
+    ],
+    "receive": "baristac"
+  }
 
 ]
