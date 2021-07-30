@@ -2161,6 +2161,130 @@
       ]
     },
     {
+      "groupname": "bodybuilder",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "bodybuilderr",
+          "name": "Bodybuilder (Rare)",
+          "tradeable": true,
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "Protein Shakes",
+          "season": 7,
+          "bonuses": {
+            "duncecap": true,
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+        },
+        {
+          "chance": 2,
+          "filename": "bodybuildersr",
+          "name": "Bodybuilder (Super Rare)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Art by Peachy6206)",
+          "smell": "Protein Shakes",
+          "season": 7,
+          "bonuses": {
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/866599254372909056/Untitled2645-2.png"
+        },
+        {
+          "chance": 1,
+          "filename": "bodybuilderur",
+          "name": "Bodybuilder (Ultra Rare)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by Emery)",
+          "smell": "Protein Shakes",
+          "season": 7,
+          "bonuses": {
+            "duncecap": true
+          },
+          "https://cdn.discordapp.com/attachments/865407405092503582/868220205812297748/bodybuilderur.png"
+        },
+        {
+          "chance": 0,
+          "filename": "bodybuilderc",
+          "name": "Bodybuilder (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Bodybuilder (Art by Pseuu)",
+          "smell": "Protein Shakes",
+          "season": 7,
+          "bonuses": {
+            "duncecap": true
+          },
+          "https://cdn.discordapp.com/attachments/865407405092503582/867144450685272074/bdbdc.png"
+        }
+      ]
+    },
+    {
+      "groupname": "barista",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "baristar",
+          "name": "Barista (Rare)",
+          "tradeable": true,
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "Placeholder Text",
+          "season": 7,
+          "bonuses": {
+            
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+        },
+        {
+          "chance": 2,
+          "filename": "baristasr",
+          "name": "Barista (Super Rare)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Art by Stamps)",
+          "smell": "Placeholder Text",
+          "season": 7,
+          "bonuses": {
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/866090148416847883/BiristaSr.png"
+        },
+        {
+          "chance": 1,
+          "filename": "baristaur",
+          "name": "Barista (Ultra Rare)",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Art by Kin)",
+          "smell": "Placeholder Text",
+          "season": 7,
+          "bonuses": {
+            "duncecap": true
+          },
+          "https://cdn.discordapp.com/attachments/865407405092503582/865989574589284352/image0.png"
+        },
+        {
+          "chance": 0,
+          "filename": "Baristac",
+          "name": "Barista (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Barista (Art by Kin)",
+          "smell": "Placeholder Text",
+          "season": 7,
+          "bonuses": {
+            "duncecap": true
+          },
+          "https://cdn.discordapp.com/attachments/865407405092503582/866046609431330826/image0.png"
+        }
+      ]
+    },
+    {
       "groupname": "----------------------------------------EDITOR STUFF------------------------------------------------",
       "basechance": 0,
       "cards": []
