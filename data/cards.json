@@ -2145,7 +2145,7 @@
         },
         {
           "chance": 0,
-          "filename": "rattlec",
+          "filename": "spiderc",
           "name": "Dr. Spider, PHD (Collector's)",
           "tradeable": false,
           "type": "Collector's",
