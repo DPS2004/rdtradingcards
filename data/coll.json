@@ -285,6 +285,63 @@
       "baristaur"
     ],
     "receive": "baristac"
-  }
-
+  },
+  {
+    "require": [
+      "bodybuilderr",
+      "bodybuildersr",
+      "bodybuilderur"
+    ],
+    "receive": "bodybuilderc"
+  },
+  {
+    "require": [
+      "cockatielr",
+      "cockatielsr",
+      "cockatielur"
+    ],
+    "receive": "cockatielc"
+  },
+  {
+    "require": [
+      "parrotr",
+      "parrotsr",
+      "parrotur"
+    ],
+    "receive": "parrotc"
+  },
+  {
+    "require": [
+      "owlr",
+      "owlsr",
+      "owlur"
+    ],
+    "receive": "owlc"
+  },
+  {
+    "require": [
+      "cockatielc",
+      "parrotc",
+      "owlc",
+      "oriolec",
+      "birdgroup"
+    ],
+    "receive": "birdgroupc"
+  },
+  {
+    "require": [
+      "connectifiar",
+      "connectifiasr",
+      "connectifiaur"
+    ],
+    "receive": "connectifiac"
+  },
+  {
+    "require": [
+      "rodneyr",
+      "rodneysr",
+      "rodneyur"
+    ],
+    "receive": "rodneyc"
+  },
 ]
