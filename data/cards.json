@@ -2174,7 +2174,6 @@
           "smell": "Protein Shakes",
           "season": 7,
           "bonuses": {
-            "duncecap": true,
             "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
@@ -2189,7 +2188,6 @@
           "smell": "Protein Shakes",
           "season": 7,
           "bonuses": {
-            "duncecap": true
           },
           "embed": "https://cdn.discordapp.com/attachments/865407405092503582/866599254372909056/Untitled2645-2.png"
         },
@@ -2203,7 +2201,6 @@
           "smell": "Protein Shakes",
           "season": 7,
           "bonuses": {
-            "duncecap": true
           },
           "embed": "https://cdn.discordapp.com/attachments/865407405092503582/868220205812297748/bodybuilderur.png"
         },
@@ -2217,7 +2214,6 @@
           "smell": "Protein Shakes",
           "season": 7,
           "bonuses": {
-            "duncecap": true
           },
           "embed": "https://cdn.discordapp.com/attachments/865407405092503582/867144450685272074/bdbdc.png"
         }
@@ -2279,7 +2275,6 @@
           "smell": "Placeholder Text",
           "season": 7,
           "bonuses": {
-            "duncecap": true
           },
           "embed": "https://cdn.discordapp.com/attachments/865407405092503582/866046609431330826/image0.png"
         }
