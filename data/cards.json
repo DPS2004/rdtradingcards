@@ -1999,7 +1999,7 @@
           "bonuses": {
             
           },
-          "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
         },
         {
           "chance": 1,
@@ -4551,7 +4551,7 @@
           "bonuses": {
             "okamiiscollar": true
           },
-          "https://cdn.discordapp.com/attachments/829197797789532181/870723597684072498/rodneyr.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/870723597684072498/rodneyr.png"
         },
         {
           "chance": 2,
