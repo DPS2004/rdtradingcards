@@ -33,6 +33,10 @@ function command.run(message, mt)
     newroom = 4
   end
   
+  if newroom == uj.room then
+    message.channel:send("You are already in the **" .. locations[newroom+1] .. "**!")
+    return
+  end
   
   if success then
     print("newroom is ".. newroom)
