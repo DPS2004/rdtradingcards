@@ -4026,7 +4026,7 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(\"Level\" by A Friendly Waddle Dee)",
-          "smell": "Cardboard",
+          "smell": "Exceptions",
           "season": 7,
           "bonuses": {
             "rustysword": true,
@@ -4116,7 +4116,7 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by CooMonkey)",
-          "smell": "Salt Water",
+          "smell": "The PSP",
           "season": 7,
           "bonuses": {
             "paddedstickersheet": true
