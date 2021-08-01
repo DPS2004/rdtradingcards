@@ -21,7 +21,12 @@ function command.run(message, mt)
       table = "As you go to take a sniff of the **Table**, you end up with a noseful of dust.",
       poster = "The **Cat Poster** smells like lots of different things at the same time.",
       mousehole = "The **Mouse Hole** smells like screen cleaner and screwdrivers.",
-      box = "Oddly enough, the **Peculiar Box** smells of nothing at all."
+      box = "Oddly enough, the **Peculiar Box** smells of nothing at all.",
+      mountains = "The **Windy Mountains** smell very calming.",
+      bridge = "The **Bridge** smells stable... enough...",
+      shop = "The **Quaint Shop** smells like healthy competition.",
+      barrels = "The **Barrels** smell like trade secrets.",
+      clouds = "The **Clouds are a bit too high up for you to smell!"
     }
     local itemsmells = {
       nothing = "It smells like the **Peculiar Box**.",
@@ -58,6 +63,10 @@ function command.run(message, mt)
       request = "mousehole"
     elseif request == "peculiar box" or request == "peculiarbox" then
       request = "box"
+    elseif request == "windymountains" or request == "windy mountains" then
+      request = "mountains"
+    elseif request == "quaintshop" or request == "quaint shop" then
+      request = "shop"
     end
     
     

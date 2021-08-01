@@ -345,22 +345,46 @@ function command.run(message, mt)
           message.channel:send{embed = {
             color = 0x85c5ff,
             title = "Looking at Mountains...",
-            description = "TODO: mention Quaint Shop, Bridge, Pyrowmid, Barrels, Clouds. Also edit picture to only have one pyramid",
+            description = "The **Windy Mountains** can be found near the **Pyrowmid.** Across a **Bridge** is a **Quaint Shop**, which seems to have some **Barrels** next to it. The sky is filled with **Clouds.**",
+            --TODO: mention Quaint Shop, Bridge, Pyrowmid, Barrels, Clouds. Also edit picture to only have one pyramid,
             image = {
-              url = "https://cdn.discordapp.com/attachments/829197797789532181/870127261498617906/windymountains.png"
+              url = "https://cdn.discordapp.com/attachments/829197797789532181/871433038280675348/windymountains.png"
             }
           }}
         
 
         
  
-        elseif (string.lower(mt[1]) == "mouse hole" or string.lower(mt[1]) == "mouse" or string.lower(mt[1]) == "mousehole") and wj.labdiscovered  then 
+        elseif (string.lower(mt[1]) == "pyrowmid")  then 
           message.channel:send{embed = {
             color = 0x85c5ff,
-            title = "Looking at Mouse Hole...",
-            description = 'The **Mouse Hole** is directly underneath a yellow sign that says "I.T.". The hole is just about wide enough to fit a computer mouse into.',
+            title = "Looking at Pyrowmid...",
+            description = 'From up here, the **Pyrowmid** looks absolutely tiny! Next to it is an absolutely bog-standard pyramid.',
           }}
-
+        elseif (string.lower(mt[1]) == "bridge")  then 
+          message.channel:send{embed = {
+            color = 0x85c5ff,
+            title = "Looking at Bridge...",
+            description = 'The **Bridge** looks safe to walk over, but you might not want to do any fancy jumps on it or anything.',
+          }}
+        elseif (request == "shop" or request == "quaintshop" or request == "quaint shop")  then 
+          message.channel:send{embed = {
+            color = 0x85c5ff,
+            title = "Looking at Quaint Shop...",
+            description = 'The **Quaint Shop** has a sign outside of it, marking that it sells "Cards And Things". If you need cards and/or things, it might be worth checking out.',
+          }}
+        elseif (request == "barrels")  then 
+          message.channel:send{embed = {
+            color = 0x85c5ff,
+            title = "Looking at Barrels...",
+            description = 'The **Barrels** are propped up next to the **Quaint Shop.** Probably best not to touch them...',
+          }}
+        elseif (request == "clouds")  then 
+          message.channel:send{embed = {
+            color = 0x85c5ff,
+            title = "Looking at Clouds...",
+            description = 'Ooh! Pretty!',
+          }}
         
         
         else
