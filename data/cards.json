@@ -3961,6 +3961,167 @@
             "rustysword": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849268709348081724/darksheep.png"
+        },
+        {
+          "chance": 2,
+          "filename": "bamboo",
+          "name": "Bamboo",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by 吾夜犹明)",
+          "smell": "Pandas",
+          "season": 7,
+          "bonuses": {
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/325438771384418315/867762683121500240/SPOILER_bamboo.png"
+        },
+        {
+          "chance": 2,
+          "filename": "birdwing",
+          "name": "Bird on the Wing",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by FirecatFG)",
+          "smell": ":skateboard: zzshhhhhh clk clk zshhhhhh clk clk szhhhhhhh clk clk",
+          "season": 7,
+          "bonuses": {
+            "paddedstickersheet": true,
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/325438771384418315/867762689345978398/SPOILER_birdonthewing.png"
+        },
+        {
+          "chance": 2,
+          "filename": "firetemple",
+          "name": "Fire Temple",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Nocallia)",
+          "smell": "Eya",
+          "season": 7,
+          "bonuses": {
+
+          },
+          "embed": "https://cdn.discordapp.com/attachments/325438771384418315/867762697773121586/SPOILER_firetemple.png"
+        },
+        {
+          "chance": 2,
+          "filename": "injam",
+          "name": "Up in my Jam",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by thefinals, MarioMak987, NotXeno, JackArbor)",
+          "smell": "Cardboard",
+          "season": 7,
+          "bonuses": {
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+        },
+        {
+          "chance": 2,
+          "filename": "rdnot",
+          "name": "What is RD Not?",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(\"Level\" by A Friendly Waddle Dee)",
+          "smell": "Cardboard",
+          "season": 7,
+          "bonuses": {
+            "rustysword": true,
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/325438771384418315/867766900897480755/SPOILER_whatisrdnot.png"
+        },
+        {
+          "chance": 2,
+          "filename": "longfall",
+          "name": "A Long Fall",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Kamayana)",
+          "smell": "Raids",
+          "season": 7,
+          "bonuses": {
+            "paddedstickersheet": true,
+            "rustysword": true,
+            "lostnametag": true,
+            "oversizedstethoscope": true,
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/325438771384418315/867764916492435456/SPOILER_alongfall.png"
+        },
+        {
+          "chance": 2,
+          "filename": "alterego",
+          "name": "Alter Ego",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Rorrogi_)",
+          "smell": "Old RPGs",
+          "season": 7,
+          "bonuses": {
+            "paddedstickersheet": true,
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/325438771384418315/867772417182400542/SPOILER_afterego.png"
+        },
+        {
+          "chance": 2,
+          "filename": "wantgnomes",
+          "name": "You Want Gnomes",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by NoranOmicron)",
+          "smell": "Grass",
+          "season": 7,
+          "bonuses": {
+
+          },
+          "embed": "https://cdn.discordapp.com/attachments/325438771384418315/867772424299872306/SPOILER_wantgnomes.png"
+        },
+        {
+          "chance": 2,
+          "filename": "lightscameraaction",
+          "name": "Lights Camera Action",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Purple0702, ddrr0077, LimonSoda, Daming)",
+          "smell": "Rhythm",
+          "season": 7,
+          "bonuses": {
+
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+        },
+        {
+          "chance": 2,
+          "filename": "peacefulseabed",
+          "name": "Peaceful Seabed",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by soggoru waffle)",
+          "smell": "Salt Water",
+          "season": 7,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/325438771384418315/867772419384934440/SPOILER_peacefulseabed.png"
+        },
+        {
+          "chance": 2,
+          "filename": "rainingstars",
+          "name": "On the Street of Raining Stars",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by CooMonkey)",
+          "smell": "Salt Water",
+          "season": 7,
+          "bonuses": {
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/325438771384418315/867772421885001768/SPOILER_rainingstars.png"
         }
       ]
     },
