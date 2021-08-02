@@ -219,8 +219,7 @@ function command.run(message, mt,bypass)
           found = false
           
         end
-      end
-      if uj.room == 1 or bypass then ----------------------------LAB------------------------
+      elseif uj.room == 1 or bypass then ----------------------------LAB------------------------
         if (string.lower(mt[1]) == "spider" or string.lower(mt[1]) == "spiderweb" or string.lower(mt[1]) == "web" or string.lower(mt[1]) == "spider web") and wj.labdiscovered then       
           
             
