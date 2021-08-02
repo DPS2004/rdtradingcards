@@ -27,7 +27,7 @@ function command.run(message, mt)
                 if uj2.inventory[item2] then
                   --BOTH ITEMS EXIST, AND ARE IN THE RIGHT PLACES.
                   print("success!!!!!")
-                  local newmessage = ynbuttons(message, "<@".. uj2.id ..">, <@" .. uj.id .. "> wants to trade "..uj.pronouns["their"] .. " **" .. fntoname(item1) .. "** for your **" .. fntoname(item2) .. "**. React to this post with :white_check_mark: to accept and :x: to deny.","trade", {uj2f=uj2f, item1=item1,item2=item2})
+                  local newmessage = ynbuttons(message, "<@".. uj2.id ..">, <@" .. uj.id .. "> wants to trade "..uj.pronouns["their"] .. " **" .. fntoname(item1) .. "** for your **" .. fntoname(item2) .. "**. Click the Yes button to accept and No to deny.","trade", {uj2f=uj2f, item1=item1,item2=item2})
 --                  addreacts(newmessage)
 --                  local tf = dpf.loadjson("savedata/events.json",{})
 --                  tf[newmessage.id] ={ujf = ujf, uj2f=uj2f,item1=item1, item2=item2,etype = "trade"}

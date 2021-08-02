@@ -24,7 +24,7 @@ function command.run(message, mt)
           if numcards ~= 1 then
             isplural = "s"
           end
-          newmessage = ynbuttons(message, "<@" .. uj.id .. ">, do you want to shred your " .. numcards .. " **" .. fntoname(item1) .. "** card" .. isplural .. "? **This cannot be undone.** React to this post with :white_check_mark: to confirm and :x: to deny.","shred",{item1=item1,numcards = numcards})
+          newmessage = ynbuttons(message, "<@" .. uj.id .. ">, do you want to shred your " .. numcards .. " **" .. fntoname(item1) .. "** card" .. isplural .. "? **This cannot be undone.** Click the Yes button to confirm and No to deny.","shred",{item1=item1,numcards = numcards})
 --          addreacts(newmessage)
 --          local tf = dpf.loadjson("savedata/events.json",{})
 --          tf[newmessage.id] ={numcards = numcards, ujf = ujf, item1=item1,etype = "shred",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
