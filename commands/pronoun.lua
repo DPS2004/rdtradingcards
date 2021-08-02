@@ -21,7 +21,7 @@ function command.run(message, mt)
     uj.pronouns["theirs"] = "theirs"
     uj.pronouns["theirself"] = "theirself"
     dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
-    message.channel:send("You will now be refereed to with they/them.")
+    message.channel:send("You will now be referred to with they/them.")
   elseif mt[1] == "he" then
     uj.pronouns = {}
     uj.pronouns["they"] = "he"
@@ -30,7 +30,7 @@ function command.run(message, mt)
     uj.pronouns["theirs"] = "his"
     uj.pronouns["theirself"] = "himself"
     dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
-    message.channel:send("You will now be refereed to with he/him.")
+    message.channel:send("You will now be referred to with he/him.")
   elseif mt[1] == "she" then
     uj.pronouns = {}
     uj.pronouns["they"] = "she"
@@ -39,7 +39,7 @@ function command.run(message, mt)
     uj.pronouns["theirs"] = "hers"
     uj.pronouns["theirself"] = "herself"
     dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
-    message.channel:send("You will now be refereed to with she/her.")
+    message.channel:send("You will now be referred to with she/her.")
   elseif mt[1] == "it" then
     uj.pronouns = {}
     uj.pronouns["they"] = "it"
@@ -48,7 +48,7 @@ function command.run(message, mt)
     uj.pronouns["theirs"] = "its"
     uj.pronouns["theirself"] = "itself"
     dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
-    message.channel:send("You will now be refereed to with it/its.")
+    message.channel:send("You will now be referred to with it/its.")
   elseif mt[1] == "xe" then
     uj.pronouns = {}
     uj.pronouns["they"] = "xe"
@@ -57,7 +57,7 @@ function command.run(message, mt)
     uj.pronouns["theirs"] = "xirs"
     uj.pronouns["theirself"] = "xirself"
     dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
-    message.channel:send("You will now be refereed to with xe/xem.")
+    message.channel:send("You will now be referred to with xe/xem.")
   elseif mt[1] == "sta" then
     uj.pronouns = {}
     uj.pronouns["they"] = "sta"
@@ -66,7 +66,7 @@ function command.run(message, mt)
     uj.pronouns["theirs"] = "stars"
     uj.pronouns["theirself"] = "starself"
     dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
-    message.channel:send("You will now be refereed to with sta/star.")
+    message.channel:send("You will now be referred to with sta/star.")
   elseif mt[1] == "ze" then
     uj.pronouns = {}
     uj.pronouns["they"] = "ze"
@@ -75,7 +75,7 @@ function command.run(message, mt)
     uj.pronouns["theirs"] = "zirs"
     uj.pronouns["theirself"] = "zirself"
     dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
-    message.channel:send("You will now be refereed to with ze/zir.")
+    message.channel:send("You will now be referred to with ze/zir.")
   elseif mt[1] == "vee" then
     uj.pronouns = {}
     uj.pronouns["they"] = "vee"
@@ -84,7 +84,7 @@ function command.run(message, mt)
     uj.pronouns["theirs"] = "veem's"
     uj.pronouns["theirself"] = "veeself"
     dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
-    message.channel:send("You will now be refereed to with vee/veem.")
+    message.channel:send("You will now be referred to with vee/veem.")
   elseif mt[1] == "" then
     message.channel:send("Please enter your pronouns.")
   else
