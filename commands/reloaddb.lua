@@ -63,6 +63,8 @@ function command.run(message, mt,overwrite)
     cmd.vipstest = dofile('commands/vipstest.lua')
     cmd.chick = dofile('commands/chick.lua')
     cmd.move = dofile('commands/move.lua')
+    cmd.throw = dofile('commands/throw.lua')
+    cmd.catch = dofile('commands/catch.lua')
     
     print("done loading commands")
 
@@ -643,6 +645,8 @@ function command.run(message, mt,overwrite)
     addcommand("show",cmd.show)
     addcommand("p",cmd.pull)
     addcommand("b",cmd.use,0,{"box"})
+    addcommand("throw",cmd.throw)
+    addcommand("catch",cmd.catch)
     _G['handlemessage'] = function (message)
       if message.author.id ~= "767445265871142933" then
         local hasrun = false
