@@ -2,7 +2,7 @@ local command = {}
 function command.run(message, mt)
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
   print(message.author.name .. " did !nickname")
-  local maxnicknames = 3
+  local maxnicknames = 4
   
   if not uj.names then
     uj.names = {}
