@@ -8,7 +8,7 @@ function command.run(message, mt)
   end
 
   if not (#mt == 1) then
-    message.channel:send("Sorry, but the c!give command expects 1 argument. Please see c!help for more details.")
+    message.channel:send("Sorry, but the c!catch command expects 1 argument. Please see c!help for more details.")
     return
   end
 
@@ -37,7 +37,6 @@ function command.run(message, mt)
   end
 
   if not uj.inventory[curfilename] then uj.inventory[curfilename] = 1 else uj.inventory[curfilename] = uj.inventory[curfilename] + 1 end
-  print(tj[curfilename][1])
   client:emit(tj[curfilename][1])
   table.remove(tj[curfilename], 1)
   if not next(tj[curfilename]) then tj[curfilename] = nil end

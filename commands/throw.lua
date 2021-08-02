@@ -10,7 +10,7 @@ function command.run(message, mt)
   end
 
   if not (#mt == 1) then
-    message.channel:send("Sorry, but the c!give command expects 1 argument. Please see c!help for more details.")
+    message.channel:send("Sorry, but the c!throw command expects 1 argument. Please see c!help for more details.")
     return
   end
 
@@ -42,8 +42,6 @@ function command.run(message, mt)
 
   if uj.inventory[curfilename] == 0 then uj.inventory[curfilename] = nil end
   if not tj[curfilename] then tj[curfilename] = {tostring(time:toHours())} else table.insert(tj[curfilename], tostring(time:toHours())) end
-  local pos = #tj[curfilename]
-  print("pos is " .. pos)
 
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
   print("user had card, removed from original user")
@@ -52,11 +50,19 @@ function command.run(message, mt)
   message.channel:send(message.author.mentionString .. " has thrown a **" .. fntoname(curfilename) .. "** card in the air! Type this command within " .. timeout .. " seconds to catch it!")
   message.channel:send("`c!catch " .. curfilename .. "`")
 
-  print(tostring(time:toHours()))
   if not client:waitFor(tostring(time:toHours()), timeout * 1000) then
-    print("oof")
+    print("card hasn't been caught!")
+    tj = dpf.loadjson("savedata/throwncards.json", {})
+    uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
+
     if not uj.inventory[curfilename] then uj.inventory[curfilename] = 1 else uj.inventory[curfilename] = uj.inventory[curfilename] + 1 end
-    table.remove(tj[curfilename], pos)
+    for x = #tj[curfilename], 1, -1 do
+      if tj[curfilename][x] == tostring(time:toHours()) then
+        table.remove(tj[curfilename], x)
+        break
+      end
+    end
+
     if not next(tj[curfilename]) then tj[curfilename] = nil end
     dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
     dpf.savejson("savedata/throwncards.json", tj)
