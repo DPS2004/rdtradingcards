@@ -1985,7 +1985,7 @@
           "bonuses": {
             "okamiiscollar": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849398512470458459/pebble.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872076809221574686/rattler.png"
         },
         {
           "chance": 2,
@@ -2047,7 +2047,7 @@
           "bonuses": {
             "okamiiscollar": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849398512470458459/pebble.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872138837747458130/loafyr.png"
         },
         {
           "chance": 2,
@@ -2111,7 +2111,7 @@
             "okamiiscollar": true,
             "oversizedstethoscope": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849398472452603924/spider.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872138965359149096/spiderr.png"
         },
         {
           "chance": 2,
@@ -2249,7 +2249,7 @@
           "bonuses": {
             
           },
-          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/866090148416847883/BiristaSr.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872138749415395358/baristasr.png"
         },
         {
           "chance": 1,
@@ -2263,7 +2263,7 @@
           "bonuses": {
             
           },
-          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/865989574589284352/image0.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872138750682075236/baristaur.png"
         },
         {
           "chance": 0,
@@ -2276,7 +2276,7 @@
           "season": 7,
           "bonuses": {
           },
-          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/866046609431330826/image0.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872138747255336970/baristac.png"
         }
       ]
     },
@@ -2402,7 +2402,7 @@
           "bonuses": {
             "deluxebirdseed": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872075796452352050/parrotc.png"
         }
       ]
     },
@@ -2528,7 +2528,7 @@
           "bonuses": {
             "deluxebirdseed": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/865701685904146452/image0.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872139590335619082/oriolec.png"
         }
       ]
     },
@@ -4703,7 +4703,7 @@
           "smell": "ERROR SMELL NOT FOUND",
           "season": 7,
           "bonuses": {},
-          "embed": "https://cdn.discordapp.com/attachments/794420141802651658/862016241753129020/connectifiaur_3.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872071781043822642/connectifiaur.png"
         },
         {
           "chance": 0,
@@ -4715,7 +4715,7 @@
           "smell": "ERROR SMELL NOT FOUND",
           "season": 7,
           "bonuses": {},
-          "embed": "https://cdn.discordapp.com/attachments/794420141802651658/864906857251340328/connectifiaabortusc.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872071967509983322/connectifiac.png"
         }
       ]
     },
