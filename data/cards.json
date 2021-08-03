@@ -2149,7 +2149,7 @@
           "name": "Dr. Spider, PHD (Collector's)",
           "tradeable": false,
           "type": "Collector's",
-          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Dr. Spider, PHD (Art by TrainThemAll)",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Dr. Spider, PHD (Art by Emery)",
           "smell": "Professionalism",
           "season": 7,
           "spoiler": true,
@@ -2276,7 +2276,7 @@
           "season": 7,
           "bonuses": {
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872138747255336970/baristac.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872167858208116826/baristac.png"
         }
       ]
     },
@@ -2500,7 +2500,7 @@
           "bonuses": {
             "deluxebirdseed": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/872136868551090246/image0.png"
         },
         {
           "chance": 1,
@@ -4767,7 +4767,7 @@
           "name": "Rodney (Collector's)",
           "tradeable": false,
           "type": "Collector's",
-          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Rodney (Art by Kin)",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Rodney (Art by Stamps)",
           "smell": "Disorganization",
           "season": 7,
           "bonuses": {},
