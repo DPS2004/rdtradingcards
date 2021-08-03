@@ -2885,7 +2885,7 @@
           "name": "The Hugh Group",
           "tradeable": true,
           "type": "Ultra Rare",
-          "description": "(Art by Lumina)",
+          "description": "(Art by Lumina, based on art by Kyle Labriola)",
           "smell": "30 Dollar Haircuts",
           "season": 7,
           "bonuses": {
@@ -2899,7 +2899,7 @@
           "name": "The Coffee Group",
           "tradeable": true,
           "type": "Ultra Rare",
-          "description": "(Art by Lumina)",
+          "description": "(Art by Lumina, based on art by Kyle Labriola)",
           "smell": "Coffee, Obviously",
           "season": 7,
           "bonuses": {
@@ -3004,6 +3004,34 @@
             
           },
           "embed": "https://cdn.discordapp.com/attachments/865407405092503582/868949556308627517/image0.png"
+        },
+        {
+          "chance": 0,
+          "filename": "hughgroupc",
+          "name": "The Hugh Group (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires Politician (Collector's), Farmer (Collector's), and The Hugh Group (Art by Lumina, based on art by Kyle Labriola)",
+          "smell": "30 Dollar Haircuts",
+          "season": 7,
+          "bonuses": {
+            "lostnametag": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+        },
+        {
+          "chance": 0,
+          "filename": "coffeegroupc",
+          "name": "The Coffee Group (Collector's)",
+          "tradeable": false,
+          "type": "Collector's",
+          "description": "Requires Cole Brew (Collector's), Nicole Ting (Collector's), and The Coffee Group (Art by Lumina, based on art by Kyle Labriola)",
+          "smell": "Coffee, Obviously",
+          "season": 7,
+          "bonuses": {
+            "cafemixtake": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
         }
       ]
     },
