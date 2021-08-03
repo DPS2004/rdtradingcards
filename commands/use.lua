@@ -15,7 +15,6 @@ function command.run(message, mt,bypass)
     local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
     local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
     if #mt >= 1 or mt[1] == "" then
-      
       local found = true
       if uj.room == 0 or bypass then ----------------------------PYROWMID------------------------
         if string.lower(mt[1]) == "strange machine" or string.lower(mt[1]) == "machine" then 
@@ -204,7 +203,9 @@ function command.run(message, mt,bypass)
               }}
             end
             uj.room = 1
-            
+            dpf.savejson("savedata/worldsave.json", wj)
+            dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
+            return
           else
             message.channel:send{embed = {
               color = 0x85c5ff,
@@ -219,7 +220,8 @@ function command.run(message, mt,bypass)
           found = false
           
         end
-      elseif uj.room == 1 or bypass then ----------------------------LAB------------------------
+      end
+      if uj.room == 1 or bypass then ----------------------------LAB------------------------
         if (string.lower(mt[1]) == "spider" or string.lower(mt[1]) == "spiderweb" or string.lower(mt[1]) == "web" or string.lower(mt[1]) == "spider web") and wj.labdiscovered then       
           
             
