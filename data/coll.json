@@ -344,4 +344,20 @@
     ],
     "receive": "rodneyc"
   },
+  {
+    "require": [
+      "farmerc",
+      "politicianc",
+      "hughgroup"
+    ],
+    "receive": "hughgroupc"
+  },
+  {
+    "require": [
+      "colec",
+      "nicolec",
+      "coffeegroup"
+    ],
+    "receive": "coffeegroupc"
+  },
 ]
