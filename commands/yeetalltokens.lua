@@ -1,7 +1,7 @@
 
 local command = {}
 function command.run(message, mt)
-  print("lmao someone did c!crash")
+  print("lmao someone did c!yeetalltokens")
   local cmember = message.guild:getMember(message.author)
   if cmember:hasRole(privatestuff.modroleid) then
     for i,v in ipairs(scandir("savedata")) do
@@ -15,8 +15,8 @@ function command.run(message, mt)
       cuj.tokens = 0
       dpf.savejson("savedata/"..v,cuj)
     end
+    message.channel:send("Bruh you just deleted everyone's tokens")
   else
-    
     message.channel:send('Sorry, but only moderators can use this command!')
   end
 end

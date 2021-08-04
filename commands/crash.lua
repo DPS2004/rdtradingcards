@@ -7,7 +7,6 @@ function command.run(message, mt)
     message.channel:send('Time to crash! Here I go! Hopefully this should say something about concatenating a nil value!')
     print("string string stringity string" .. nilvalue)
   else
-    
     message.channel:send('Sorry, but only moderators can use this command!')
   end
 end

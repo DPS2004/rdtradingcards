@@ -11,8 +11,6 @@ function command.run(message, mt)
     if curfilename ~= nil then
       if uj.medals[curfilename] then
         print("user has medal")
-        -- message.channel:send('Here it is! Your **'.. medalfntoname(curfilename) .. '** medal.\nThe description on the back reads: ```'..medaldb[curfilename].description .. '``` The shorthand form is **' .. curfilename .. '**.')
-        -- message.channel:send('https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. medaldb[curfilename].embed .. '/' .. curfilename .. '.png')
         message.channel:send{embed = {
           color = 0x85c5ff,
           title = "Showing medal...",

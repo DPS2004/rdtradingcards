@@ -34,7 +34,7 @@ function command.run(message, mt)
     end
   end
 
-  found = true
+  local found = true
   if uj.room == 0 then
     
     
