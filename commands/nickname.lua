@@ -79,7 +79,7 @@ function command.run(message, mt)
           numnames2 = numnames2 + 1
         end
         if numnames2 == 1 then
-          message.channel:send(nicknamestring .. " is their only name for trading and gifting.")
+          message.channel:send(nicknamestring .. " is " .. uj2.pronouns["their"] .. " only name for trading and gifting.")
         else
           message.channel:send(mt[2] .. "'s nicknames for trading and gifting are " .. nicknamestring)
         end

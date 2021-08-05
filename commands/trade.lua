@@ -36,7 +36,7 @@ function command.run(message, mt)
                   if nopeeking then
                     message.channel:send("Sorry, but I either could not find the " .. mt[3] .. " card in the database, or ".. mt[2] .. " does not have it. Make sure that you spelled it right!")
                   else
-                    message.channel:send("Sorry, but ".. mt[2] .. " doesn't have the **" .. fntoname(item2) .. "** card in their inventory.")
+                    message.channel:send("Sorry, but ".. mt[2] .. " doesn't have the **" .. fntoname(item2) .. "** card in " .. uj2.pronouns["their"] .. " inventory.")
                   end
                 end
                 
