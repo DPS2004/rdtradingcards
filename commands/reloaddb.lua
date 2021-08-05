@@ -1,9 +1,9 @@
 local command = {}
 function command.run(message, mt,overwrite)
+  local authcheck
   if overwrite then
     authcheck = true
   else
-    
     local cmember = message.guild:getMember(message.author)
     authcheck = cmember:hasRole(privatestuff.modroleid)
   end
@@ -46,7 +46,6 @@ function command.run(message, mt,overwrite)
     cmd.yeetalltokens = dofile('commands/yeetalltokens.lua')
     cmd.survey = dofile('commands/survey.lua')
     cmd.granttoken = dofile('commands/granttoken.lua')
-    cmd.addallnicknames = dofile('commands/addallnicknames.lua')
     cmd.fullinventory = dofile('commands/fullinventory.lua')
     cmd.fullstorage = dofile('commands/fullstorage.lua')
     cmd.setworldstate = dofile('commands/setworldstate.lua')
@@ -54,13 +53,10 @@ function command.run(message, mt,overwrite)
     cmd.givetoken = dofile('commands/givetoken.lua')
     cmd.skipprompts = dofile('commands/skipprompts.lua')
     cmd.renamefile = dofile('commands/renamefile.lua')
-    cmd.addallpronoun = dofile('commands/addallpronoun.lua')
     cmd.pronounlist = dofile('commands/pronounlist.lua')
     cmd.pronounform = dofile('commands/pronounform.lua')
     cmd.pronoun = dofile('commands/pronoun.lua')
     cmd.getfile = dofile('commands/getfile.lua')
-    cmd.buttontest = dofile('commands/buttontest.lua')
-    cmd.vipstest = dofile('commands/vipstest.lua')
     cmd.chick = dofile('commands/chick.lua')
     cmd.move = dofile('commands/move.lua')
     cmd.throw = dofile('commands/throw.lua')
@@ -68,8 +64,6 @@ function command.run(message, mt,overwrite)
     
     print("done loading commands")
 
-    -- import reaction commands
-    cmdre = {}
     cmdre.trade = dofile('reactions/trade.lua')
     cmdre.store = dofile('reactions/store.lua')
     cmdre.shred = dofile('reactions/shred.lua')
@@ -86,93 +80,101 @@ function command.run(message, mt,overwrite)
     print("done loading reactions")
 
     _G['defaultjson'] = {
-      inventory={},
-      storage={},
-      medals={},
-      items={nothing=true},
-      lastpull=-24,
-      lastprayer=-7,
-      lastequip=-24,
-      lastbox=-24,
-      tokens=0,
-      pronouns={
-        their="their",them="them",theirself="themself",they="they",theirs="theirs"
+      inventory = {},
+      storage = {},
+      medals = {},
+      items = {nothing = true},
+      equipped="nothing",
+      lastpull = -24,
+      lastprayer = -7,
+      lastequip = -24,
+      lastbox = -24,
+      tokens = 0,
+      pronouns = {
+        their = "their",
+        them = "them",
+        theirself = "themself",
+        they = "they",
+        theirs = "theirs"
       },
-      room=0,
---      chickstats={
---        bodycolor = {255, 250, 0},
---        eyecolor = {49, 49, 49},
---        scleracolor = {248, 248, 248},
---        beakcolor = {255, 128, 3},
---        footcolor =  {255, 128, 3},
---        headwear = "nothing",
---        eyewear = "nothing",
---        neckwear = "nothing",
---        shoes = "nothing",
---        others = {}
---      }
+      room = 0,
+      -- chickstats = {
+      --   bodycolor = {255, 250, 0},
+      --   eyecolor = {49, 49, 49},
+      --   scleracolor = {248, 248, 248},
+      --   beakcolor = {255, 128, 3},
+      --   footcolor =  {255, 128, 3},
+      --   headwear = "nothing",
+      --   eyewear = "nothing",
+      --   neckwear = "nothing",
+      --   shoes = "nothing",
+      --   others = {}
+      -- }
     }
     
-    _G['defaultworldsave'] = {tokensdonated=0,boxpool={"ssss45","roomsdc_ur","roomsdc_r","underworld","enchantedlove","wallclockur","rhythmdogtor","moai","coolbird","beanshopper","cardboardworld","acofoi","rollermobster","inimaur","fhottour","superstrongcavity","soundsr","pancakefever","nicoleur","feedthemachine","retrofunky","heartchickalt"},lablookindex=0,lablooktext="password is gnuthca ",worldstate = "prehole",ws=0}
+    _G['defaultworldsave'] = {
+      tokensdonated = 0,
+      boxpool = {"ssss45", "roomsdc_ur", "roomsdc_r", "underworld", "enchantedlove", "wallclockur", "rhythmdogtor", "moai", "coolbird", "beanshopper", "cardboardworld", "acofoi", "rollermobster", "inimaur", "fhottour", "superstrongcavity", "soundsr", "pancakefever", "nicoleur", "feedthemachine", "retrofunky", "heartchickalt"},
+      lablookindex = 0,
+      lablooktext = "password is gnuthca ",
+      worldstate = "prehole",
+      ws = 0
+    }
 
     _G['debug'] = false
+
+    _G['nopeeking'] = false
     
-    _G["attachmentchannel"] = "829197797789532181"
     print("loading cards")
-    cj =  io.open("data/cards.json", "r")
+    _G['cdata'] = dpf.loadjson("data/cards.json", defaultjson)
     
     print('loading itemdb')    
-    _G['itemdb'] = dpf.loadjson("data/items.json",defaultjson)
-    print('loading accessorydb')    
-    _G['accessorydb'] = dpf.loadjson("data/accessories.json",defaultjson)
-    print("loading cards part 2: electric boogaloo")
+    _G['itemdb'] = dpf.loadjson("data/items.json", defaultjson)
 
-    _G['cdata'] = json.decode(cj:read("*a"))
-    cj:close()
+    print('loading accessorydb')    
+    _G['accessorydb'] = dpf.loadjson("data/accessories.json", defaultjson)
 
     --generate pull table
     _G['ptable'] = {}
     _G['seasontable'] = {}
     _G['cdb'] = {}
-    for k,q in pairs(itemdb) do
+
+    for k, q in pairs(itemdb) do
       ptable[k] = {}
-      for i,v in ipairs(cdata.groups) do
-        for w,x in ipairs(v.cards) do
+      for i, v in ipairs(cdata.groups) do
+        for w, x in ipairs(v.cards) do
           local cmult = 1
           if x.bonuses[k] then
             cmult = 10 -- might tweak this??
           end
-          for y=1,(cdata.basemult*v.basechance*x.chance*cmult) do
+          for y = 1, (cdata.basemult * v.basechance * x.chance * cmult) do
             table.insert(ptable[k],x.filename)
           end
         end
       end
     end
-    for i,v in ipairs(cdata.groups) do
-      for w,x in ipairs(v.cards) do
-        table.insert(cdb,x)
-        if seasontable[x.season] == nil then
-			seasontable[x.season] = {}
-        end
-        table.insert(seasontable[x.season],x.filename)
-        print(x.name.. " loaded!")
+
+    for i, v in ipairs(cdata.groups) do
+      for w, x in ipairs(v.cards) do
+        table.insert(cdb, x)
+        if not seasontable[x.season] then seasontable[x.season] = {} end
+        table.insert(seasontable[x.season], x.filename)
       end
     end
-    --dpf.savejson("savedata/pulltable.json",ptable)
     
-    print("here is cdb")
-    print(inspect(cdb))
-    print("here is seasontable")
-    print(inspect(seasontable))
+    -- print("here is cdb")
+    -- print(inspect(cdb))
+    -- print("here is seasontable")
+    -- print(inspect(seasontable))
     -- print("here is ptable")
-    --print(inspect(ptable))
+    -- print(inspect(ptable))
 
     print("loading collector's info")
-    _G['coll'] = dpf.loadjson("data/coll.json",defaultjson)
+    _G['coll'] = dpf.loadjson("data/coll.json", defaultjson)
     print("loading medaldb")
-    _G['medaldb'] = dpf.loadjson("data/medals.json",defaultjson)
+    _G['medaldb'] = dpf.loadjson("data/medals.json", defaultjson)
     print('loading itemdb')    
-    _G['itemdb'] = dpf.loadjson("data/items.json",defaultjson)
+    _G['itemdb'] = dpf.loadjson("data/items.json", defaultjson)
     
     print("generating item pull table")
     _G['itempt'] = {}
@@ -214,7 +216,7 @@ function command.run(message, mt,overwrite)
       "https://cdn.discordapp.com/attachments/829197797789532181/831907869049356338/lab23.png",
       "https://cdn.discordapp.com/attachments/829197797789532181/831907874141765683/lab24.png",
       "https://cdn.discordapp.com/attachments/829197797789532181/831907878990381076/lab25.png",
-      "https://cdn.discordapp.com/attachments/829197797789532181/831907882618323015/lab26.png" --h      
+      "https://cdn.discordapp.com/attachments/829197797789532181/831907882618323015/lab26.png" --h
     }
     _G['letters'] = {
       " ",
@@ -246,36 +248,29 @@ function command.run(message, mt,overwrite)
       "z"
     }
     
-    
     print("loading functions")
     
     _G['getletterindex'] = function (x)
       print("finding letterindex of "..x)
-      for i,v in ipairs(letters) do
+      for i, v in ipairs(letters) do
         if v == x then
           return i
         end
       end
-      
     end
     
-    
     _G['fntoname'] = function (x)
-      print("finding "..x)
-      for i,v in ipairs(cdb) do
+      print("finding " .. x)
+      for i, v in ipairs(cdb) do
         if string.lower(v.filename) == string.lower(x) then
-          local match = v.name
-          print(x.." = "..v.name)
           return v.name
         end
       end
-      
     end
 
     _G['nametofn'] = function (x)
-      for i,v in ipairs(cdb) do
+      for i, v in ipairs(cdb) do
         if string.lower(v.name) == string.lower(x) then
-          local match = v.filename
           return v.filename
         end
       end
@@ -283,75 +278,68 @@ function command.run(message, mt,overwrite)
 
     _G['resetclocks'] = function ()
       for i,v in ipairs(scandir("savedata")) do
-        cuj = dpf.loadjson("savedata/"..v,defaultjson)
+        local cuj = dpf.loadjson("savedata/" .. v, defaultjson)
         if cuj.lastpull then
           cuj.lastpull = -24
           cuj.lastprayer = -24
           cuj.lastequip = -24
           cuj.lastbox = -24
         end
-        dpf.savejson("savedata/"..v,cuj)
+        dpf.savejson("savedata/" .. v, cuj)
       end
     end
-    --really cool and good code goes here
-    --variable = "string" .. nilvalue
 
     _G['texttofn'] = function (x)
       local cfn = nametofn(x)
-      if cfn == nil then
+      if not cfn then
         cfn = fntoname(x)
-        if cfn ~= nil then
+        if cfn then
           cfn = string.lower(x)
         end
       end
       return cfn
     end
+
     _G['medalnametofn'] = function (x)
-      for k,v in pairs(medaldb) do
+      for k, v in pairs(medaldb) do
         if string.lower(v.name) == string.lower(x) then
-          local match = k
           return k
         end
       end
     end
+
     _G['medalfntoname'] = function (x)
-      print("finding "..x)
-      for k,v in pairs(medaldb) do
+      print("finding " .. x)
+      for k, v in pairs(medaldb) do
         if string.lower(k) == string.lower(x) then
-          local match = v.name
-          print(x.." = "..v.name)
           return v.name
         end
       end
-      
     end
 
     _G['medaltexttofn'] = function (x)
-      local cfn = medalnametofn(x)
-      if cfn == nil then
-        cfn = medalfntoname(x)
-        if cfn ~= nil then
-          cfn = string.lower(x)
+      local mfn = medalnametofn(x)
+      if not mfn then
+        mfn = medalfntoname(x)
+        if mfn then
+          mfn = string.lower(x)
         end
       end
-      return cfn
+      return mfn
     end
     
-    ---aaaaaa
     _G['itemnametofn'] = function (x)
-      for k,v in pairs(itemdb) do
+      for k, v in pairs(itemdb) do
         if string.lower(v.name) == string.lower(x) then
-          local match = k
           return k
         end
       end
     end
+
     _G['itemfntoname'] = function (x)
-      print("finding "..x)
-      for k,v in pairs(itemdb) do
+      print("finding " .. x)
+      for k, v in pairs(itemdb) do
         if string.lower(k) == string.lower(x) then
-          local match = v.name
-          print(x.." = "..v.name)
           return v.name
         end
       end
@@ -359,77 +347,55 @@ function command.run(message, mt,overwrite)
     end
 
     _G['itemtexttofn'] = function (x)
-      local cfn = itemnametofn(x)
-      if cfn == nil then
-        cfn = itemfntoname(x)
-        if cfn ~= nil then
-          cfn = string.lower(x)
+      local ifn = itemnametofn(x)
+      if not ifn then
+        ifn = itemfntoname(x)
+        if ifn then
+          ifn = string.lower(x)
         end
       end
-      if cfn ~= nil then
-        print("itemtext returning " .. cfn)
-      else
-        print("wow, its nil")
-      end
-      return cfn
+      return ifn
     end
     
     _G['getcardtype'] = function (x)
-      local ctype = nil
-      for i,v in ipairs(cdb) do
-        
+      for i, v in ipairs(cdb) do
         if v.filename == x then
-          print(v.filename)
-          ctype = v.type
+          return v.type
         end
       end
-      return ctype
     end
     
-    
-    
-    
-    --- end aaaa
     _G['getcarddescription'] = function (x)
       print("getting description for " .. x)
-      local cdescription = nil
-      for i,v in ipairs(cdb) do
-        
+      for i, v in ipairs(cdb) do
         if v.filename == x then
           print(v.description)
-          cdescription = v.description
+          return v.description
         end
       end
-      return cdescription
     end
     
 	
     _G['getcardsmell'] = function (x)
       print("getting smell for " .. x)
-      local csmell = nil
-      for i,v in ipairs(cdb) do
-        
+      for i, v in ipairs(cdb) do
         if v.filename == x then
           print(v.smell)
-          csmell = v.smell
+          return v.smell
         end
       end
-      return csmell 
     end
 
     _G['getcardembed'] = function (x)
       local cembed = nil
-      for i,v in ipairs(cdb) do
-        
+      for i, v in ipairs(cdb) do
         if v.filename == x then
           cembed = v.embed
-          print(v.smell)
           if v.randomized then
             if math.random(0,1) == 0 then
               cembed = v.embedalt
             end
           end
-          
         end
       end
       return cembed
@@ -437,58 +403,15 @@ function command.run(message, mt,overwrite)
     
     _G['getcardspoiler'] = function (x)
       print("getting spoiler for " .. x)
-      local cspoiler = nil
-      for i,v in ipairs(cdb) do
-       
+      for i, v in ipairs(cdb) do
         if v.filename == x then
           print(v.spoiler)
-          cspoiler = v.spoiler
-          if cspoiler == nil then
-            cspoiler = false
+          if v.spoiler then
+            return true
           end
         end
       end
-      print("returning " .. tostring(cspoiler))
-      return cspoiler
     end
-    
-  
-	
-    
-    -- _G['getcardanimated'] = function (x)
-    --   print("getting animated for " .. x)
-    --   local canimated = nil
-    --   for i,v in ipairs(cdb) do
-        
-    --     if v.filename == x then
-    --       print(v.animated)
-    --       canimated = v.animated
-    --       if canimated == nil then
-    --         canimated = false
-    --       end
-    --     end
-    --   end
-  
-    --   print("returning" .. tostring(canimated))
-    --   return canimated
-    -- end
-    -- _G['getcardpico'] = function (x)
-    --   print("getting pico for " .. x)
-    --   local cpico = nil
-    --   for i,v in ipairs(cdb) do
-        
-    --     if v.filename == x then
-    --       print(v.pico)
-    --       cpico = v.pico
-    --       if cpico == nil then
-    --         cpico = false
-    --       end
-    --     end
-    --   end
-    --   print("returning" .. tostring(cpico))
-    --   return cpico
-    -- end
-
 
     -- Lua implementation of PHP scandir function
     _G['scandir'] = function (directory)
@@ -498,7 +421,7 @@ function command.run(message, mt,overwrite)
     _G['usernametojson'] = function (x)
       print(x)
       for i,v in ipairs(scandir("savedata")) do
-        cuj = dpf.loadjson("savedata/"..v,defaultjson)
+        local cuj = dpf.loadjson("savedata/"..v,defaultjson)
         if cuj.id then
           if cuj.id == x or ("<@!" .. cuj.id .. ">") == x or ("<@" .. cuj.id .. ">") == x then --prioritize id and mentions over nickname
             return "savedata/"..v
@@ -514,10 +437,6 @@ function command.run(message, mt,overwrite)
       end
     end
 
-    _G['addreacts'] = function (x)
-      x:addReaction("✅")
-      x:addReaction("❌")
-    end
     _G['ynbuttons'] = function(message, content, etype, data, yesoption, nooption)
       yesoption = yesoption or "Yes"
       nooption = nooption or "No"

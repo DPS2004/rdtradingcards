@@ -1,6 +1,5 @@
 -- this is a bad idea
 
-
 -- BUT IM DOING IT ANYWAYS
 
 _G["json"] = require('libs/json')
@@ -11,10 +10,6 @@ _G["emuser"] = {}
 io.write("EMU: What user would you like to load?\n")
 local defaultuser = io.read()
 emuser = dpf.loadjson("emu_users/" .. defaultuser .. ".json", {name = "defaultuser", id = "481293038594304959", mentionString = "<@481293038594304959>", discriminator = "6969", mod = false})
-
-
-
-
 
 _G["discordia"] = {
   Client = function()
@@ -149,15 +144,11 @@ _G["discordia"] = {
 }
 _G["client"] = discordia.Client()
 _G["prefix"] = "c!"
-
 _G["utils"] = require('libs/utils')
 _G["inspect"] = require('libs/inspect')
 _G["trim"] = function (s)
    return s:match "^%s*(.-)%s*$"
 end
-
-
-
 
 -- import all the commands
 _G['cmd'] = {}
@@ -167,11 +158,11 @@ print("exited rdb.run")
 _G['sw'] = discordia.Stopwatch()
 sw:start()
 
-
 client:on('ready', function()
 	print('Logged in as '.. client.user.username)
 end)
 print("yay got past load ready")
+
 client:on('messageCreate', function(message)
   --print("hi")
   handlemessage(message)
@@ -181,13 +172,10 @@ print("ok commands loaded, doing reactions")
 
 client:on('reactionAdd', function(reaction, userid)
   handlereaction(reaction,userid)
-
-
 end)
-print("resettingclocks")
+
+print("Resetting clocks...")
 resetclocks()
-
-
 
 client:run(privatestuff.botid)
 

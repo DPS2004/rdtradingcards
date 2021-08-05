@@ -16,8 +16,6 @@ function command.run(message, mt)
     local curfilename = itemtexttofn(request)
     if curfilename then
       if uj.items[curfilename] then
-        -- message.channel:send('Here it is! Your **'.. itemfntoname(curfilename) .. '**.\nThe description reads: ```'..itemdb[curfilename].description .. '``` The shorthand form is **' .. curfilename .. '**.')
-        -- message.channel:send('https://cdn.discordapp.com/attachments/' .. attachmentchannel .. '/' .. itemdb[curfilename].embed .. '/' .. curfilename .. '.png')
         message.channel:send{embed = {
           color = 0x85c5ff,
           title = "Showing item...",

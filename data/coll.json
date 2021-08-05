@@ -320,6 +320,14 @@
   },
   {
     "require": [
+      "orioler",
+      "oriolesr",
+      "orioleur"
+    ],
+    "receive": "oriolec"
+  },
+  {
+    "require": [
       "cockatielc",
       "parrotc",
       "owlc",
