@@ -1,21 +1,18 @@
 local command = {}
 function command.run(message, mt)
-  message:addReaction("✅")
   print(message.author.name .. " did !fullinventory")
+  message:addReaction("✅")
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
   local numkey = 0
-  for k,v in pairs(uj.inventory) do
-    numkey = numkey + 1
-  end
+  for k in pairs(uj.inventory) do numkey = numkey + 1 end
+
   local invtable = {}
   local contentstring = 'Your inventory contains:'
   local titlestring = 'Full Inventory'
   local invstring = ''
   local previnvstring = ''
-  for k,v in pairs(uj.inventory) do
-    table.insert(invtable, "**" .. (fntoname(k) or k) .. "** x" .. v .. "\n")
-  end
-  table.sort(invtable, function(a,b) return string.lower(a)<string.lower(b) end)
+  for k,v in pairs(uj.inventory) do table.insert(invtable, "**" .. (fntoname(k) or k) .. "** x" .. v .. "\n") end
+  table.sort(invtable)
   for i = 1, numkey do
     invstring = invstring .. invtable[i]
     if #invstring > 2048 then
@@ -43,4 +40,3 @@ function command.run(message, mt)
   }
 end
 return command
-  

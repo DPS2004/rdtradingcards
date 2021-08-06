@@ -8,7 +8,7 @@ function command.run(message, mt)
       -- why did i even add this if statement
       if fntoname(mt[2]) then
         for i,v in ipairs(scandir("savedata")) do
-          cuj = dpf.loadjson("savedata/"..v,defaultjson)
+          local cuj = dpf.loadjson("savedata/"..v,defaultjson)
           if cuj.id then
               if cuj.inventory[mt[1]] then
                 cuj.inventory[mt[2]] = cuj.inventory[mt[1]]

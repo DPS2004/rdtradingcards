@@ -1,62 +1,39 @@
 local command = {}
 function command.run(message, mt)
   print(message.author.name .. " did !medals")
-  print(#mt)
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
-  if mt[1] == "" then
-    mt[1] = "1"
-  end
-  print(mt[1])
-  local pagenumber = 1
-  if tonumber(mt[1]) then
-    local tnresult = tonumber(mt[1])
-    print("tonumber returns not nil, specifically " .. tnresult)
-    print(type(tnresult))
-    pagenumber = math.floor(tnresult)
-    print("math.floor 1 = " .. math.floor(1))
 
-  else
-    print("tonumber returns nil")
-    pagenumber = 1
+  local pagenumber = tonumber(mt[1]) and math.floor(mt[1]) or 1
+  pagenumber = math.max(1, pagenumber)
+
+  local nummedals = 0
+  for k, v in pairs(uj.medals) do
+    if v then nummedals = nummedals + 1 end
+  end
+  print("Number of medals is " .. nummedals)
+  local maxpn = math.ceil(nummedals / 10)
+  pagenumber = math.min(pagenumber, maxpn)
+
+  print("Page number is " .. pagenumber)
+  local medaltable = {}
+  local medalstring = ''
+
+  for k, v in pairs(uj.medals) do
+    if v then table.insert(medaltable, "**" .. medaldb[k].name .. "**\n") end
+  end
+  table.sort(medaltable)
+
+  for i = (pagenumber - 1) * 10 + 1, (pagenumber) * 10 do
+    print(i)
+    if medaltable[i] then medalstring = medalstring .. medaltable[i] end
   end
   
-  if pagenumber < 1 then
-    pagenumber = 1
-  end
-  local numkey = 0
-  for k,v in pairs(uj.medals) do
-    if(uj.medals[k]) then
-      numkey = numkey + 1
-    end
-  end
-  local maxpn = math.ceil(numkey / 10)
-  print("maxpn " .. numkey/10)
-
-  if pagenumber > maxpn then
-    pagenumber = maxpn
-  end
-  print("pagenumber " .. pagenumber)
-  local invtable = {}
-  local invstring = ''
-  for k,v in pairs(uj.medals) do
-    if v then
-      table.insert(invtable, "**" .. medaldb[k].name .. "**\n")
-    end
-  end
-  table.sort(invtable, function(a,b) return string.lower(a)<string.lower(b) end)
-  for i=(pagenumber-1)*10+1,(pagenumber)*10 do
-    print(i)
-    if invtable[i] then
-      invstring = invstring .. invtable[i]
-    end
-  end
-  -- message.channel:send("You have the following medals:\n" .. invstring .. "(page ".. pagenumber .. " of " .. maxpn .. ")")
   message.channel:send{
     content = message.author.mentionString .. ", you have the following medals:",
     embed = {
       color = 0x85c5ff,
       title = message.author.name .. "'s Medals",
-      description = invstring,
+      description = medalstring,
       footer = {
         text =  "(Page " .. pagenumber .. " of " .. maxpn .. ")",
         icon_url = message.author.avatarURL
@@ -65,4 +42,3 @@ function command.run(message, mt)
   }
 end
 return command
-  
