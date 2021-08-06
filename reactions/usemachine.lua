@@ -1,57 +1,50 @@
-reaction = {}
+local reaction = {}
 function reaction.run(ef, eom, reaction, userid)
   local ujf = eom.ujf
-  local newequip = eom.newequip
   local uj = dpf.loadjson(ujf, defaultjson)
-  local time = sw:getTime()
-  print("loaded uj")
-  if uj.id == userid then
-    print('user1 has reacted')
-    
-    if reaction.emojiName == "✅" then
-      print('user1 has accepted')
-      local loops = 0
-      local newitem = "nothing"
-      while true do --this is bad!
-        newitem = itempt[math.random(#itempt)]
-        if not uj.items[newitem] then
-          if newitem == "brokenmouse" then
-            if not uj.items["fixedmouse"] then
-              print("found one!")
-              print(newitem)
-              break
-            end
-          else
-            print("found one!")
-            print(newitem)
-            break
-          end
-        end
-        loops = loops + 1
-        print(loops)
+  print("Loaded uj")
+  if uj.id ~= userid then
+    print("It's not uj1 reacting")
+    return
+  end
+
+  print('user1 has reacted')
+  ef[reaction.message.id] = nil
+  dpf.savejson("savedata/events.json",ef)
+
+  if reaction.emojiName == "✅" then
+    print('user1 has accepted')
+
+    if uj.tokens < 2 then
+      reaction.message.channel:send("An error has occured. Please make sure that you have enough tokens!")
+      return
+    end
+
+    local itempt = {}
+    for k in pairs(itemdb) do
+      if uj.items["fixedmouse"] then
+        if not uj.items[k] and k ~= "brokenmouse" then table.insert(itempt, k) end
+      else
+        if not uj.items[k] and k ~= "fixedmouse" then table.insert(itempt, k) end
       end
-      uj.items[newitem] = true
-      uj.tokens = uj.tokens - 2
-      local newmessage = reaction.message.channel:send {
-        content = 'After depositing 2 **Tokens** and turning the crank, a capsule comes out of the **Strange Machine**. Inside it is the **' .. itemfntoname(newitem) .. '**! You put the **'.. itemfntoname(newitem) ..'** with your items.'
-      }
-      dpf.savejson(ujf,uj)
-      ef[reaction.message.id] = nil
-      
-      dpf.savejson("savedata/events.json",ef)
     end
-    if reaction.emojiName == "❌" then
-      print('user1 has denied')
-      
-      local newmessage = reaction.message.channel:send("You decide to not use the **Strange Machine**.")
-      ef[reaction.message.id] = nil
-      dpf.savejson("savedata/events.json",ef)
-      
-      
+    print(inspect(itempt))
+
+    if #itempt == 0 then
+      reaction.message.channel:send("An error has occured. You already have every item that is currently available.")
+      return
     end
-  else
-    print("its not uj1 reacting")
+
+    local newitem = itempt[math.random(1, #itempt)]
+    uj.items[newitem] = true
+    uj.tokens = uj.tokens - 2
+    reaction.message.channel:send('After depositing 2 **Tokens** and turning the crank, a capsule comes out of the **Strange Machine**. Inside it is the **' .. itemfntoname(newitem) .. '**! You put the **'.. itemfntoname(newitem) .. '** with your items.')
+    dpf.savejson(ujf,uj)
+  end
+
+  if reaction.emojiName == "❌" then
+    print('user1 has denied')
+    reaction.message.channel:send("You decide to not use the **Strange Machine**.")
   end
 end
 return reaction
-  

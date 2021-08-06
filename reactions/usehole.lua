@@ -1,4 +1,4 @@
-reaction = {}
+local reaction = {}
 function reaction.run(ef, eom, reaction, userid)
   local ujf = eom.ujf
   local newequip = eom.newequip

@@ -1,9 +1,5 @@
 local function adduse(uj)
-  if uj.timesused == nil then
-    uj.timesused = 1
-  else
-    uj.timesused = uj.timesused + 1
-  end
+  uj.timesused = uj.timesused and uj.timesused + 1 or 1
   return uj
 end
 
@@ -18,64 +14,32 @@ function command.run(message, mt,bypass)
       local found = true
       if uj.room == 0 or bypass then ----------------------------PYROWMID------------------------
         if string.lower(mt[1]) == "strange machine" or string.lower(mt[1]) == "machine" then 
-          if uj.tokens == nil then
-            uj.tokens = 0
-          end
-          local numitems = 0
-          if uj.items == nil then 
-            uj.items = {nothing=true}
-          end
-          for k,v in pairs(uj.items) do
-            numitems = numitems + 1
-          end
+          if not uj.tokens then uj.tokens = 0 end
+          if not uj.items then uj.items = {nothing = true} end
           if wj.worldstate ~= "largesthole" then
-            if numitems < #itempt then
+            local itempt = {}
+            for k in pairs(itemdb) do
+              if uj.items["fixedmouse"] then
+                if not uj.items[k] and k ~= "brokenmouse" then table.insert(itempt, k) end
+              else
+                if not uj.items[k] and k ~= "fixedmouse" then table.insert(itempt, k) end
+              end
+            end
+            if #itempt > 0 then
               if uj.tokens >= 2 then
           
                 if not uj.skipprompts then
-                  local newmessage = ynbuttons(message, 'Will you put two **Tokens** into the **Strange Machine?** (tokens remaining: ' .. uj.tokens .. ')',"usemachine",{})
-  --                addreacts(newmessage)
-  --                --message.channel:send("IF YOU ARE SEEING THIS, SOMETHING HAS GONE WRONG!!!! <@290582109750427648>")
-  --                local tf = dpf.loadjson("savedata/events.json",{})
-  --                tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "usemachine",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
-  --                dpf.savejson("savedata/events.json",tf)
+                  ynbuttons(message, 'Will you put two **Tokens** into the **Strange Machine?** (tokens remaining: ' .. uj.tokens .. ')',"usemachine",{})
                 else
-                  local loops = 0
-                  local newitem = "nothing"
-                  while true do --this is bad!
-                    newitem = itempt[math.random(#itempt)]
-
-                    if not uj.items[newitem] then
-                      if newitem == "brokenmouse" then
-                        if not uj.items["fixedmouse"] then
-                          print("found one!")
-                          print(newitem)
-                          break
-                        end
-                      else
-                        print("found one!")
-                        print(newitem)
-                        break
-                      end
-                    end
-
-                    loops = loops + 1
-                    print(loops)
-                  end
+                  local newitem = itempt[math.random(#itempt)]
                   uj.items[newitem] = true
                   uj.tokens = uj.tokens - 2
                   uj = adduse(uj)
-                  local newmessage = message.channel:send {
-                    content = 'After depositing 2 **Tokens** and turning the crank, a capsule comes out of the **Strange Machine**. Inside it is the **' .. itemfntoname(newitem) .. '**! You put the **'.. itemfntoname(newitem) ..'** with your items.'
-                  }
+                  message.channel:send('After depositing 2 **Tokens** and turning the crank, a capsule comes out of the **Strange Machine**. Inside it is the **' .. itemfntoname(newitem) .. '**! You put the **'.. itemfntoname(newitem) ..'** with your items.')
                   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
-                  
                 end
-                
               else
-                message.channel:send {
-                  content = 'You try to turn the crank, but it does not budge. There is a slot above it that looks like it could fit two **Tokens**...'
-                }
+                message.channel:send('You try to turn the crank, but it does not budge. There is a slot above it that looks like it could fit two **Tokens**...')
               end
             else
               message.channel:send('You already have every item that is currently available.')
@@ -281,10 +245,7 @@ function command.run(message, mt,bypass)
           if not uj.lastbox then 
             uj.lastbox = -24
           end
-          local cooldown = 11.5
-          if uj.equipped == "stainedgloves" then
-            cooldown = 8
-          end
+          local cooldown = (uj.equipped == "stainedgloves") and 8 or 11.5
           if uj.lastbox + cooldown <= time:toHours() then
             if next(uj.inventory) then
               if not uj.skipprompts then

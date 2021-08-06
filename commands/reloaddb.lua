@@ -176,15 +176,6 @@ function command.run(message, mt,overwrite)
     print('loading itemdb')    
     _G['itemdb'] = dpf.loadjson("data/items.json", defaultjson)
     
-    print("generating item pull table")
-    _G['itempt'] = {}
-    for k,v in pairs(itemdb) do
-      if k ~= "fixedmouse" then
-        table.insert(itempt,k)
-      end
-    end
-    print(inspect(itempt))
-    
     print("loading medal requires")
     _G['medalrequires'] = dpf.loadjson("data/medalrequires.json",defaultjson)
     
@@ -492,8 +483,7 @@ function command.run(message, mt,overwrite)
       newcommand.force = force
       newcommand.usebypass = usebypass
       
-      table.insert(commands,newcommand)
-      
+      table.insert(commands, newcommand)
     end
     
     addcommand("ping",cmd.ping)
