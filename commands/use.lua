@@ -67,7 +67,7 @@ function command.run(message, mt,bypass)
           end
           
           
-          if wj.worldstate >= 0 then
+          if wj.worldstate == "labopen" or wj.worldstate == "largesthole" or wj.worldstate == "terminalopen" or wj.worldstate == "prehole" then
             local newmessage = message.channel:send {
               content = 'The **Hole** is not accepting donations at this time.'
             }
@@ -144,7 +144,7 @@ function command.run(message, mt,bypass)
           uj = adduse(uj)
         
         elseif string.lower(mt[1]) == "ladder" then
-          if wj.worldstate >= 0 then
+          if wj.worldstate == "labopen" or wj.worldstate == "terminalopen" then
             if not wj.labdiscovered then
               wj.labdiscovered = true
               message.channel:send{embed = {
