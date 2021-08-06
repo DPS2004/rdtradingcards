@@ -15,7 +15,7 @@ function command.run(message, mt)
                 cuj.inventory[mt[1]] = nil
               end
               if cuj.storage[mt[1]] then
-                cuj.storage[mt[2]] = cuj.inventory[mt[1]]
+                cuj.storage[mt[2]] = cuj.storage[mt[1]]
                 cuj.storage[mt[1]] = nil
               end
           end
