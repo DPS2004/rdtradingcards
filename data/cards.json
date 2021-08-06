@@ -2244,7 +2244,7 @@
           "tradeable": true,
           "type": "Rare",
           "description": "(Art by Winston Lee)",
-          "smell": "Placeholder Text",
+          "smell": "A Nice Cup o' Joe",
           "season": 7,
           "bonuses": {
             "okamiiscollar": true
@@ -2258,7 +2258,7 @@
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Art by Stamps)",
-          "smell": "Placeholder Text",
+          "smell": "A Nice Cup o' Joe",
           "season": 7,
           "bonuses": {
             
@@ -2272,7 +2272,7 @@
           "tradeable": true,
           "type": "Ultra Rare",
           "description": "(Art by Kin)",
-          "smell": "Placeholder Text",
+          "smell": "A Nice Cup o' Joe",
           "season": 7,
           "bonuses": {
             
@@ -2286,7 +2286,7 @@
           "tradeable": false,
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Barista (Art by Kin)",
-          "smell": "Placeholder Text",
+          "smell": "A Nice Cup o' Joe",
           "season": 7,
           "bonuses": {
           },
@@ -4168,6 +4168,136 @@
             "paddedstickersheet": true
           },
           "embed": "https://cdn.discordapp.com/attachments/325438771384418315/867772421885001768/SPOILER_rainingstars.png"
+        },
+        {
+          "chance": 2,
+          "filename": "arctic",
+          "name": "Arctic Oscillation",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by DNH, DeadlySprinklez, Xeno, and Some J Name)",
+          "smell": "Acid Rain",
+          "season": 7,
+          "bonuses": {
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/871947037988491294/arctic.png"
+        },
+        {
+          "chance": 2,
+          "filename": "initiation",
+          "name": "Initiation -aggressive solicitation mix-",
+          "tradeable": true,
+          "type": "Ultra Rare",
+          "description": "(Level by Emdyion, Xeno)",
+          "smell": "Forever",
+          "season": 7,
+          "bonuses": {
+            "rustysword": true,
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/871950217556148244/initiation.png"
+        },
+        {
+          "chance": 2,
+          "filename": "drgaster",
+          "name": "Dr. Gaster",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by MayorSeb)",
+          "smell": "Bones",
+          "season": 7,
+          "bonuses": {
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/871952828682371102/drgaster.png"
+        },
+        {
+          "chance": 2,
+          "filename": "goodbyesengen",
+          "name": "Goodbye Sengen",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by thefinals)",
+          "smell": "Poppies",
+          "season": 7,
+          "bonuses": {
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/871954310299267112/byesengen.png"
+        },
+        {
+          "chance": 2,
+          "filename": "mineore",
+          "name": "wish i could care less (minecraft parody)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Original by fizzd, Parody by Colon)",
+          "smell": "The Cave Update",
+          "season": 7,
+          "bonuses": {
+            "cafemixtape": true,
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873247709451141120/mineore.png"
+        },
+        {
+          "chance": 2,
+          "filename": "stormlofi",
+          "name": "storm (EXT4NT lofi rmx)",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by WolfPlay013)",
+          "smell": "Raindroplets",
+          "season": 7,
+          "bonuses": {
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873242062454145074/stormlofi.png"
+        },
+        {
+          "chance": 2,
+          "filename": "doornook",
+          "name": "Door Nook",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Arkaan Muyassar)",
+          "smell": "Terrible Jokes",
+          "season": 7,
+          "bonuses": {
+            
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873243320581767198/doornook.png"
+        },
+        {
+          "chance": 2,
+          "filename": "cursed",
+          "name": "Cursed",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by 1257Plays)",
+          "smell": "Nightmares",
+          "season": 7,
+          "bonuses": {
+            "rustysword": true,
+            "deviltail": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873244966892212254/cursed.png"
+        },
+        {
+          "chance": 2,
+          "filename": "pools",
+          "name": "Pools",
+          "tradeable": true,
+          "type": "Super Rare",
+          "description": "(Level by Ceo of Overanalysis)",
+          "smell": "Bird-related Injuries",
+          "season": 7,
+          "bonuses": {
+            "deluxebirdseed": true,
+            "deviltail": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/325438771384418315/867772421885001768/SPOILER_rainingstars.png"
         }
       ]
     },
@@ -4198,6 +4328,18 @@
           "season": 0,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/865792363167219722/key.png"
+        },
+        {
+          "chance": 0,
+          "filename": "placeholder",
+          "name": "Placeholder Card",
+          "tradeable": false,
+          "type": "Special",
+          "description": "Insert Description Here",
+          "smell": "Insert Smell Here",
+          "season": 0,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.pn"
         }
       ]
     },
