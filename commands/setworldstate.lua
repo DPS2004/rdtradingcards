@@ -6,7 +6,16 @@ function command.run(message, mt)
     local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
     --betterworldstates: 
     
-    --0: pre-s7
+    --0: pre-s5
+	
+	--501: s5 intro, a tiny hole appears
+	--502: hole grows larger
+    --503: ditto
+    --504: ditto
+    --505: ditto
+	--506: hole grows to max size, capsule machine starts vibrating
+	--507: ladder is placed into the hole, lab can now be acessed
+    --508: terminal has been sucessfully logged in to, default pre-s7 state.
     
     --701: s7 intro, c!terminal logs unlocked
     

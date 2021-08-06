@@ -18,7 +18,7 @@ function reaction.run(ef, eom, reaction, userid)
       }
       dpf.savejson(ujf,uj)
       ef[reaction.message.id] = nil
-      wj.worldstate = "labopen" -- valid states: prehole, tinyhole, smallhole, mediumhole, largehole, largerhole, largesthole, labopen
+      wj.ws = 507 -- see setworldstate.lua
       dpf.savejson("savedata/worldsave.json", wj)
       
       dpf.savejson("savedata/events.json",ef)

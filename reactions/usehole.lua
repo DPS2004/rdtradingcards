@@ -82,32 +82,32 @@ function reaction.run(ef, eom, reaction, userid)
       
       
       
-      if wj.worldstate == "tinyhole" and wj.tokensdonated >= 5 then
-        wj.worldstate = "smallhole"
+      if wj.ws == 501 and wj.tokensdonated >= 5 then
+        wj.ws = 502
         local newmessage = reaction.message.channel:send {
           content = '***The ground rumbles...***'
         }
       end
-      if wj.worldstate == "smallhole" and wj.tokensdonated >= 10 then
-        wj.worldstate = "mediumhole"
+      if wj.ws == 502 and wj.tokensdonated >= 10 then
+        wj.ws = 503
         local newmessage = reaction.message.channel:send {
           content = '***The ground rumbles...***'
         }
       end
-      if wj.worldstate == "mediumhole" and wj.tokensdonated >= 15 then
-        wj.worldstate = "largehole"
+      if wj.ws == 503 and wj.tokensdonated >= 15 then
+        wj.ws = 504
         local newmessage = reaction.message.channel:send {
           content = '***The ground rumbles...***'
         }
       end      
-      if wj.worldstate == "largehole" and wj.tokensdonated >= 20 then
-        wj.worldstate = "largerhole"
+      if wj.ws == 504 and wj.tokensdonated >= 20 then
+        wj.ws = 505
         local newmessage = reaction.message.channel:send {
           content = '***The ground rumbles...***'
         }
       end
-      if wj.worldstate == "largerhole" and wj.tokensdonated >= 30 then
-        wj.worldstate = "largesthole"
+      if wj.ws == 505 and wj.tokensdonated >= 30 then
+        wj.ws = 506
         local newmessage = reaction.message.channel:send {
           content = '***The ground rumbles... and so does the Strange Machine***'
         }

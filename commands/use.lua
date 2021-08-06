@@ -16,7 +16,7 @@ function command.run(message, mt,bypass)
         if string.lower(mt[1]) == "strange machine" or string.lower(mt[1]) == "machine" then 
           if not uj.tokens then uj.tokens = 0 end
           if not uj.items then uj.items = {nothing = true} end
-          if wj.worldstate ~= "largesthole" then
+          if wj.ws ~= 506 then
             local itempt = {}
             for k in pairs(itemdb) do
               if uj.items["fixedmouse"] then
@@ -67,7 +67,7 @@ function command.run(message, mt,bypass)
           end
           
           
-          if wj.worldstate == "labopen" or wj.worldstate == "largesthole" or wj.worldstate == "terminalopen" or wj.worldstate == "prehole" then
+          if wj.ws >= 506 or wj.ws < 501 then
             local newmessage = message.channel:send {
               content = 'The **Hole** is not accepting donations at this time.'
             }
@@ -144,7 +144,7 @@ function command.run(message, mt,bypass)
           uj = adduse(uj)
         
         elseif string.lower(mt[1]) == "ladder" then
-          if wj.worldstate == "labopen" or wj.worldstate == "terminalopen" then
+          if wj.ws < 507 then
             if not wj.labdiscovered then
               wj.labdiscovered = true
               message.channel:send{embed = {
@@ -328,7 +328,7 @@ function command.run(message, mt,bypass)
           if not mt[2] then
             mt[2] = ""
           end
-          if wj.worldstate == "labopen" then
+          if wj.ws < 508 then
             
             if string.lower(mt[2]) == "gnuthca" then
               message.channel:send{embed = {
@@ -342,7 +342,7 @@ function command.run(message, mt,bypass)
                   icon_url = message.author.avatarURL
                 }
               }}
-              wj.worldstate = "terminalopen"
+              wj.ws = 508
             else
               message.channel:send{embed = {
                 color = 0x85c5ff,

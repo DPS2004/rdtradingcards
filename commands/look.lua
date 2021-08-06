@@ -3,7 +3,7 @@ function command.run(message, mt)
   print(message.author.name .. " did !look")
   local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
   if not wj.ws then
-    wj.ws = 0
+    wj.ws = 508
     dpf.savejson("savedata/worldsave.json", wj)
   end
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
@@ -41,7 +41,7 @@ function command.run(message, mt)
     if string.lower(mt[1]) == "pyrowmid" or mt[1] == "" then -----------------PYROWMID--------------------------
       -- message.channel:send('The **Pyrowmid** has recently opened itself, revealing a **Panda** and a **Strange Machine** inside. The walls are made of Rows (Rare) cards.')
       -- message.channel:send('https://cdn.discordapp.com/attachments/829197797789532181/829255814169493535/pyr7.png')
-      if wj.worldstate == "prehole" then
+      if wj.ws < 501 then
         message.channel:send{embed = {
           color = 0x85c5ff,
           title = "Looking at Pyrowmid...",
@@ -50,7 +50,7 @@ function command.run(message, mt)
             url = 'https://cdn.discordapp.com/attachments/829197797789532181/829255814169493535/pyr7.png'
           }
         }}
-      elseif wj.worldstate == "tinyhole" then
+      elseif wj.ws == 501 then
         message.channel:send{embed = {
           color = 0x85c5ff,
           title = "Looking at Pyrowmid...",
@@ -59,7 +59,7 @@ function command.run(message, mt)
             url = 'https://cdn.discordapp.com/attachments/829197797789532181/831189023426478170/pyrhole.png'
           }
         }}
-      elseif wj.worldstate == "smallhole" then
+      elseif wj.ws == 502 then
         message.channel:send{embed = {
           color = 0x85c5ff,
           title = "Looking at Pyrowmid...",
@@ -68,7 +68,7 @@ function command.run(message, mt)
             url = 'https://cdn.discordapp.com/attachments/829197797789532181/831191711917146183/pyrhole2.png'
           }
         }}
-      elseif wj.worldstate == "mediumhole" then
+      elseif wj.ws == 503 then
         message.channel:send{embed = {
           color = 0x85c5ff,
           title = "Looking at Pyrowmid...",
@@ -77,7 +77,7 @@ function command.run(message, mt)
             url = 'https://cdn.discordapp.com/attachments/829197797789532181/831192398524710982/pyrhole3.png'
           }
         }}
-      elseif wj.worldstate == "largehole" then
+      elseif wj.ws == 504 then
         message.channel:send{embed = {
           color = 0x85c5ff,
           title = "Looking at Pyrowmid...",
@@ -86,7 +86,7 @@ function command.run(message, mt)
             url = 'https://cdn.discordapp.com/attachments/829197797789532181/831263091470630922/pyrhole4.png'
           }
         }}
-      elseif wj.worldstate == "largerhole" then
+      elseif wj.ws == 505 then
         message.channel:send{embed = {
           color = 0x85c5ff,
           title = "Looking at Pyrowmid...",
@@ -95,7 +95,7 @@ function command.run(message, mt)
             url = 'https://cdn.discordapp.com/attachments/829197797789532181/831223296112066560/pyrhole5.png'
           }
         }}
-      elseif wj.worldstate == "largesthole" then
+      elseif wj.ws == 506 then
         message.channel:send{embed = {
           color = 0x85c5ff,
           title = "Looking at Pyrowmid...",
@@ -126,7 +126,7 @@ function command.run(message, mt)
         content = 'The **Throne**, like the walls of the **Pyrowmid** are made of Rows (Rare) cards. It is unknown how it is being held together.'
       }
     elseif string.lower(mt[1]) == "strange machine" or string.lower(mt[1]) == "machine" then 
-      if wj.worldstate == "largesthole" then
+      if wj.ws == 506 then
         message.channel:send {
           content = 'The **Strange Machine** appears to have a slot for four **Tokens**, and a crank. The crank is worn, as if it has been **Used** many times. The machine is shaking vigorously.'
         }          
@@ -137,11 +137,11 @@ function command.run(message, mt)
       end
     
     elseif string.lower(mt[1]) == "hole" then
-      if wj.worldstate == "prehole" then
+      if wj.ws < 501 then
         message.channel:send{
           content = 'what hole?'
         }
-      elseif wj.worldstate == "tinyhole" then
+      elseif wj.ws == 501 then
         message.channel:send{embed = {
           color = 0x85c5ff,
           title = "Looking at Hole...",
@@ -150,7 +150,7 @@ function command.run(message, mt)
             url = 'https://cdn.discordapp.com/attachments/829197797789532181/831507279975153754/holeclose.png' --holeclose.png
           }
         }}
-      elseif wj.worldstate == "smallhole" then
+      elseif wj.ws == 502 then
         message.channel:send{embed = {
           color = 0x85c5ff,
           title = "Looking at Hole...",
@@ -159,7 +159,7 @@ function command.run(message, mt)
             url = 'https://cdn.discordapp.com/attachments/829197797789532181/831507280905633812/holeclose2.png'
           }
         }}
-      elseif wj.worldstate == "mediumhole" then
+      elseif wj.ws == 503 then
         message.channel:send{embed = {
           color = 0x85c5ff,
           title = "Looking at Hole...",
@@ -168,7 +168,7 @@ function command.run(message, mt)
             url = 'https://cdn.discordapp.com/attachments/829197797789532181/831507281941495948/holeclose3.png'
           }
         }}
-      elseif wj.worldstate == "largehole" then
+      elseif wj.ws == 504 then
         message.channel:send{embed = {
           color = 0x85c5ff,
           title = "Looking at Hole...",
@@ -177,7 +177,7 @@ function command.run(message, mt)
             url = 'https://cdn.discordapp.com/attachments/829197797789532181/831507283624198174/holeclose4.png'
           }
         }}
-      elseif wj.worldstate == "largerhole" then
+      elseif wj.ws == 505 then
         message.channel:send{embed = {
           color = 0x85c5ff,
           title = "Looking at Hole...",
@@ -186,7 +186,7 @@ function command.run(message, mt)
             url = 'https://cdn.discordapp.com/attachments/829197797789532181/831507285242150922/holeclose5.png'
           }
         }}
-      elseif wj.worldstate == "largesthole" then
+      elseif wj.ws == 506 then
         message.channel:send{embed = {
           color = 0x85c5ff,
           title = "Looking at Hole...",
@@ -252,7 +252,7 @@ function command.run(message, mt)
 --          tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "spiderlook",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
 --          dpf.savejson("savedata/events.json",tf)
     elseif (string.lower(mt[1]) == "terminal") and wj.labdiscovered  then  --FONT IS MS GOTHIC AT 24PX, 8PX FOR SMALL FONT
-      if wj.worldstate == "labopen" then
+      if wj.ws < 508 then
         message.channel:send{embed = {
           color = 0x85c5ff,
           title = "Looking at Terminal...",
