@@ -1,7 +1,7 @@
 local command = {}
 function command.run(message, mt)
   print(message.author.name .. " did !show")
-  if #mt == 1 then
+  if #mt ~= 1 then
     message.channel:send("Sorry, but the c!show command expects 1 argument. Please see c!help for more details.")
     return
   end

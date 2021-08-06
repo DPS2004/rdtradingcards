@@ -10,13 +10,13 @@ function command.run(message, mt)
   local request = mt[1]
   local curfilename = texttofn(request)
 
-  if not curfilename ~= nil then
-  else
+  if not curfilename then
     if nopeeking then
       message.channel:send("Sorry, but I either could not find the " .. request .. " card in the database, or you do not have it. Make sure that you spelled it right!")
     else
       message.channel:send("Sorry, but I could not find the " .. request .. " card in the database. Make sure that you spelled it right!")
     end
+    return
   end
 
   local invnum = uj.inventory[curfilename] or 0
