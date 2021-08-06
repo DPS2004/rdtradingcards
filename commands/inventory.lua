@@ -17,7 +17,7 @@ function command.run(message, mt)
 
   local invtable = {}
   local invstring = ''
-  for k,v in pairs(uj.inventory) do table.insert(invtable, "**" .. fntoname(k) .. "** x" .. v .. "\n") end
+  for k,v in pairs(uj.inventory) do table.insert(invtable, "**" .. (fntoname(k) or k) .. "** x" .. v .. "\n") end
   table.sort(invtable)
 
   for i = (pagenumber - 1) * 10 + 1, (pagenumber) * 10 do
