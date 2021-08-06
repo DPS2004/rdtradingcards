@@ -41,7 +41,7 @@
   },
   "s2maestro": {
     "name": "Season 2 Maestro",
-    "description": "Collect every single Season 2 card!",
+    "description": "Collect every single, non-statistic, Season 2 card!",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/840574179094298634/season2maestro.png"
   },
   "s3maestro": {
@@ -66,7 +66,7 @@
   },
   "cardmaestro": {
     "name": "Card Maestro",
-    "description": "Collect every single card available at a given point in time! This medal is not permanent, and will be removed every time new cards are added.",
+    "description": "Collect every single card that's currently available! This medal is not permanent, and will be removed every time new cards are added.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/840574153060778034/cardmaestro.png"
   },
   "pyramidal": {
