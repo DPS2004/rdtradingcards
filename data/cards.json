@@ -1079,6 +1079,20 @@
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839233681624137738/internalt.png"
         },
         {
+          "chance": 0.5,
+          "filename": "interndc_alt",
+          "name": "Intern (Discontinued Alternate)",
+          "tradeable": true,
+          "type": "Discontinued",
+          "description": "(Art by Winston Lee)",
+          "smell": "Senior Doctor",
+          "season": 7,
+          "bonuses": {
+            "oversizedstethoscope": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873172939997077504/interndc_alt.png"
+        },
+        {
           "chance": 0,
           "filename": "internc",
           "name": "Intern (Collector's)",
