@@ -34,9 +34,9 @@ function reaction.run(ef, eom, reaction, userid)
       end
     end
 
-    local givecard = iptable[math.random(1,#iptable)]
+    local givecard = iptable[math.random(#iptable)]
     print("user giving " .. givecard)
-    local boxpoolindex = math.random(1,#wj.boxpool)
+    local boxpoolindex = math.random(#wj.boxpool)
     local getcard = wj.boxpool[boxpoolindex]
     
     uj.inventory[getcard] = uj.inventory[getcard] and uj.inventory[getcard] + 1 or 1

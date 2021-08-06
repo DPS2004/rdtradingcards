@@ -1,12 +1,13 @@
 local command = {}
 function command.run(message, mt)
   print(message.author.name .. " did !move")
+
   local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
   if not mt[1] then
     mt[1] = "pyrowmid"
   end
-  local locations = {"Pyrowmid", "Abandoned Lab", "Dark Hallway", "Shady Casino","Windy Mountains","Quaint Shop"}
+  local locations = {"Pyrowmid", "Abandoned Lab", "Dark Hallway", "Shady Casino", "Windy Mountains", "Quaint Shop"}
   local success = false
   local request = string.lower(mt[1])
   local newroom = 0

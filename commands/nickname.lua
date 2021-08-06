@@ -11,7 +11,7 @@ function command.run(message, mt)
   end
 
   local numnames = 0
-  for k,v in pairs(uj.names) do
+  for k in pairs(uj.names) do
     numnames = numnames + 1
   end
 
@@ -19,6 +19,7 @@ function command.run(message, mt)
     mt[1] = "check"
     mt[2] = uj.id
   end
+  
   if mt[1] == "add" then
     if mt[2] then
       if mt[2] ~= uj.id then

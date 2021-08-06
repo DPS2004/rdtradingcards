@@ -37,8 +37,8 @@ function reaction.run(ef, eom, reaction, userid)
 
     reaction.message.channel:send("<@" .. uj.id .. "> successfully put " .. uj.pronouns["their"] .. " " .. numcards .. " **" .. fntoname(item1) .. "** card" .. (numcards == 1 and "" or "s") .. " into storage.")
     dpf.savejson(ujf,uj)
-    cmd.checkcollectors.run(eom.ogmessage,mt,reaction.message.channel)
-    cmd.checkmedals.run(eom.ogmessage,mt,reaction.message.channel)
+    cmd.checkcollectors.run(eom.ogmessage, {}, reaction.message.channel)
+    cmd.checkmedals.run(eom.ogmessage, {}, reaction.message.channel)
   end
 
   if reaction.emojiName == "❌" then

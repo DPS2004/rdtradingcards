@@ -36,7 +36,7 @@ function command.run(message, mt)
     return
   end
 
-  if not uj.inventory[curfilename] then uj.inventory[curfilename] = 1 else uj.inventory[curfilename] = uj.inventory[curfilename] + 1 end
+  uj.inventory[curfilename] = uj.inventory[curfilename] and uj.inventory[curfilename] or 1
   client:emit(tj[curfilename][1])
   table.remove(tj[curfilename], 1)
   if not next(tj[curfilename]) then tj[curfilename] = nil end

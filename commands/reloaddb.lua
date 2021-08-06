@@ -1,5 +1,5 @@
 local command = {}
-function command.run(message, mt,overwrite)
+function command.run(message, mt, overwrite)
   local authcheck
   if overwrite then
     authcheck = true
@@ -84,7 +84,7 @@ function command.run(message, mt,overwrite)
       storage = {},
       medals = {},
       items = {nothing = true},
-      equipped="nothing",
+      equipped = "nothing",
       lastpull = -24,
       lastprayer = -7,
       lastequip = -24,
@@ -383,7 +383,7 @@ function command.run(message, mt,overwrite)
         if v.filename == x then
           cembed = v.embed
           if v.randomized then
-            if math.random(0,1) == 0 then
+            if math.random(2) == 1 then
               cembed = v.embedalt
             end
           end
@@ -600,7 +600,7 @@ function command.run(message, mt,overwrite)
       if userid ~= "767445265871142933" then
         local ef = dpf.loadjson("savedata/events.json",{})
         print('a reaction with an emoji named '.. reaction.emojiName .. ' was added to a message with the id of ' .. reaction.message.id ..' by a user with the id of' .. userid)
-        eom = ef[reaction.message.id]
+        local eom = ef[reaction.message.id]
         if eom then
           print('it is an event message being reacted to')
           local status, err = pcall(function ()
@@ -635,7 +635,7 @@ function command.run(message, mt,overwrite)
         
         
         print('a button named '.. buttonid .. ' was pressed on a message with the id of ' .. reaction.message.id ..' by a user with the id of' .. userid)
-        eom = ef[reaction.message.id]
+        local eom = ef[reaction.message.id]
         if eom then
           print('it is an event message being reacted to')
           local status, err = pcall(function ()

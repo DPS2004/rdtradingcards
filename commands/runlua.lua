@@ -1,4 +1,3 @@
-
 local command = {}
 function command.run(message, mt)
   print("c!runlua!!!!!")
@@ -10,7 +9,6 @@ function command.run(message, mt)
     local rfunc = loadstring(request)
     rfunc()
   else
-    
     message.channel:send('Sorry, but only moderators can use this command!')
   end
 end

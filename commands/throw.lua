@@ -39,8 +39,8 @@ function command.run(message, mt)
   end
 
   uj.inventory[curfilename] = uj.inventory[curfilename] - 1
-
   if uj.inventory[curfilename] == 0 then uj.inventory[curfilename] = nil end
+
   if not tj[curfilename] then tj[curfilename] = {tostring(time:toHours())} else table.insert(tj[curfilename], tostring(time:toHours())) end
 
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
@@ -55,7 +55,7 @@ function command.run(message, mt)
     tj = dpf.loadjson("savedata/throwncards.json", {})
     uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
 
-    if not uj.inventory[curfilename] then uj.inventory[curfilename] = 1 else uj.inventory[curfilename] = uj.inventory[curfilename] + 1 end
+    uj.inventory[curfilename] = uj.inventory[curfilename] and uj.inventory[curfilename] + 1 or 1
     for x = #tj[curfilename], 1, -1 do
       if tj[curfilename][x] == tostring(time:toHours()) then
         table.remove(tj[curfilename], x)

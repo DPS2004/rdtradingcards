@@ -69,7 +69,7 @@ function reaction.run(ef, eom, reaction, userid)
             title = "Using Terminal...",
             description = 'The **Terminal** whirrs happily. A printout lets you know that ' .. wj.tokensdonated .. ' tokens have been donated so far.',
             image = {
-              url = upgradeimages[math.random(1,#upgradeimages)]
+              url = upgradeimages[math.random(#upgradeimages)]
             },
             footer = {
               text =  eom.ogmessage.author.name,
