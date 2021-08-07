@@ -133,7 +133,7 @@ function command.run(message, mt,bypass)
           uj = adduse(uj)
         
         elseif string.lower(mt[1]) == "ladder" then
-          if wj.ws < 507 then
+          if wj.ws >= 507 then
             if not wj.labdiscovered then
               wj.labdiscovered = true
               message.channel:send{embed = {
