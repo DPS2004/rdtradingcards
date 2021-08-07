@@ -50,14 +50,7 @@ function command.run(message, mt,bypass)
             end
           else
             if uj.tokens >= 4 then
-              local newmessage = message.channel:send {
-                
-                content = 'Will you put four **Tokens** into the **Strange Machine?** (tokens remaining: ' .. uj.tokens .. ')'
-              }
-              addreacts(newmessage)
-              local tf = dpf.loadjson("savedata/events.json",{})
-              tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "getladder",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
-              dpf.savejson("savedata/events.json",tf)
+              ynbuttons('Will you put four **Tokens** into the **Strange Machine?** (tokens remaining: ' .. uj.tokens .. ')', 'getladder', {})
             else
               message.channel:send {
                 content = 'You try to turn the crank, but it does not budge. There is a slot above it that looks like it could fit four **Tokens**...'
@@ -77,17 +70,9 @@ function command.run(message, mt,bypass)
             }
           else
             if uj.tokens > 0 then
-              local newmessage = message.channel:send {
-                content = 'Will you put a **Token** into the **Hole?** (tokens remaining: ' .. uj.tokens .. ')'
-              }
-              addreacts(newmessage)
-              local tf = dpf.loadjson("savedata/events.json",{})
-              tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "usehole",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
-              dpf.savejson("savedata/events.json",tf)
+              ynbuttons(message, 'Will you put a **Token** into the **Hole?** (tokens remaining: ' .. uj.tokens .. ')', 'usehole', {})
             else
-              local newmessage = message.channel:send {
-                content = 'You have no **Tokens** to offer to the **Hole.**'
-              }
+              message.channel:send('You have no **Tokens** to offer to the **Hole.**')
             end
           end
         elseif string.lower(mt[1]) == "token"  then -------------------------FOUND = FALSE!
