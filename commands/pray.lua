@@ -2,7 +2,7 @@ local command = {}
 function command.run(message, mt)
 local time = sw:getTime()
   print(message.author.name .. " did !pray")
-  if message.guild then
+  if not message.guild then
     message.channel:send("Sorry, but you cannot pray in DMs!")
     return
   end
@@ -37,6 +37,7 @@ local time = sw:getTime()
       end
     end
     message.channel:send('Please wait ' .. durationtext .. ' before praying again.')
+    return
   end
 
   message.channel:send('The Card Gods have listened to your plight. A **Token** appears in your pocket.')
