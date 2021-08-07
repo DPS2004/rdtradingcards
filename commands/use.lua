@@ -50,7 +50,11 @@ function command.run(message, mt,bypass)
             end
           else
             if uj.tokens >= 4 then
-              ynbuttons(message, 'Will you put four **Tokens** into the **Strange Machine?** (tokens remaining: ' .. uj.tokens .. ')', 'getladder', {})
+              local newmessage = ynbuttons(message, {
+              color = 0x85c5ff,
+              title = "Using Strange Machine...",
+              description = 'Will you put four **Tokens** into the **Strange Machine?** (tokens remaining: ' .. uj.tokens .. ')', 
+              },"getladder", {})
             else
               message.channel:send {
                 content = 'You try to turn the crank, but it does not budge. There is a slot above it that looks like it could fit four **Tokens**...'
@@ -70,7 +74,11 @@ function command.run(message, mt,bypass)
             }
           else
             if uj.tokens > 0 then
-              ynbuttons(message, 'Will you put a **Token** into the **Hole?** (tokens remaining: ' .. uj.tokens .. ')', 'usehole', {})
+              local newmessage = ynbuttons(message, {
+              color = 0x85c5ff,
+              title = "Using Hole...",
+              description = 'Will you put a **Token** into the **Hole?** (tokens remaining: ' .. uj.tokens .. ')', 
+              },"usehole", {})
             else
               message.channel:send('You have no **Tokens** to offer to the **Hole.**')
             end
