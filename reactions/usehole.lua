@@ -27,19 +27,17 @@ function reaction.run(ef, eom, reaction, userid)
     if not wj.labdiscovered then
       reaction.message.channel:send('A **Token** has been dropped into the **Hole.** Thank you for your generosity!')
     else
-      reaction.message.channel:send {
-        reaction.message.channel:send{embed = {
-          color = 0x85c5ff,
-          title = "Using Terminal...",
-          description = 'The **Terminal** whirrs happily. A printout lets you know that ' .. wj.tokensdonated .. ' tokens have been donated so far.',
-          image = {
-            url = upgradeimages[math.random(#upgradeimages)]
-          },
-          footer = {
-            text =  eom.ogmessage.author.name,
-            icon_url = eom.ogmessage.author.avatarURL
-          }
-        }}
+      reaction.message.channel:send{embed = {
+        color = 0x85c5ff,
+        title = "Using Terminal...",
+        description = 'The **Terminal** whirrs happily. A printout lets you know that ' .. wj.tokensdonated .. ' tokens have been donated so far.',
+        image = {
+          url = upgradeimages[math.random(#upgradeimages)]
+        },
+        footer = {
+          text =  eom.ogmessage.author.name,
+          icon_url = eom.ogmessage.author.avatarURL
+        }
       }
     end
 
