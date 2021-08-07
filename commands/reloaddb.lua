@@ -179,7 +179,39 @@ function command.run(message, mt, overwrite)
     print("loading medal requires")
     _G['medalrequires'] = dpf.loadjson("data/medalrequires.json",defaultjson)
     
-    
+    _G['upgradeimages'] = {
+      "https://cdn.discordapp.com/attachments/829197797789532181/838908505192661022/upgrade1.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/838908506496958464/upgrade2.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/838908508841836564/upgrade3.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/838908510972280842/upgrade4.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/838908513119109130/upgrade5.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/838908515179036742/upgrade6.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/838908517477253181/upgrade7.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/838908519876263967/upgrade8.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/838908522040918066/upgrade9.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/838908524389203998/upgrade10.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/838908548205379624/upgrade11.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/838908558963376128/upgrade12.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/838908564105723925/upgrade13.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/838908567347003392/upgrade14.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/838908570355236914/upgrade15.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/838908575879135242/upgrade16.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/838908579901734963/upgrade17.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/838908584078999583/upgrade18.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/838908589674332180/upgrade19.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/838908616329265212/upgrade20.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/838910126554742814/upgrade21.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/838910145491894292/upgrade22.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/838910782556733511/upgrade23.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/849420890281345034/upgrade24.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/853044075704221716/upgrade25.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/853044088089215046/upgrade26.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/853044088164188180/upgrade27.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/853044089305563184/upgrade28.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/853044089003311105/upgrade29.png",
+      "https://cdn.discordapp.com/attachments/829197797789532181/853044859139784725/upgrade30.png"
+    }
+
     _G['labimages'] = {
       "https://cdn.discordapp.com/attachments/829197797789532181/831907762081497118/lab0.png", --use embeds, they said
       "https://cdn.discordapp.com/attachments/829197797789532181/831907763076333588/lab1.png",
@@ -209,6 +241,7 @@ function command.run(message, mt, overwrite)
       "https://cdn.discordapp.com/attachments/829197797789532181/831907878990381076/lab25.png",
       "https://cdn.discordapp.com/attachments/829197797789532181/831907882618323015/lab26.png" --h
     }
+
     _G['letters'] = {
       " ",
       "a",
