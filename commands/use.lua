@@ -50,7 +50,7 @@ function command.run(message, mt,bypass)
             end
           else
             if uj.tokens >= 4 then
-              ynbuttons('Will you put four **Tokens** into the **Strange Machine?** (tokens remaining: ' .. uj.tokens .. ')', 'getladder', {})
+              ynbuttons(message, 'Will you put four **Tokens** into the **Strange Machine?** (tokens remaining: ' .. uj.tokens .. ')', 'getladder', {})
             else
               message.channel:send {
                 content = 'You try to turn the crank, but it does not budge. There is a slot above it that looks like it could fit four **Tokens**...'
