@@ -33,10 +33,6 @@ function command.run(message, mt,bypass)
                     color = 0x85c5ff,
                     title = "Using Strange Machine...",
                     description = 'Will you put two **Tokens** into the **Strange Machine?** (tokens remaining: ' .. uj.tokens .. ')',
-                    footer = {
-                      text =  message.author.name,
-                      icon_url = message.author.avatarURL
-                    }
                   },"usemachine",{})
                 else
                   local newitem = itempt[math.random(#itempt)]
