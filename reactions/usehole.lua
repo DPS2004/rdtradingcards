@@ -38,7 +38,7 @@ function reaction.run(ef, eom, reaction, userid)
           text =  eom.ogmessage.author.name,
           icon_url = eom.ogmessage.author.avatarURL
         }
-      }
+      }}
     end
 
     wj.tokensdonated = wj.tokensdonated + 1
