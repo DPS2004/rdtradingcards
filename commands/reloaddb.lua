@@ -808,7 +808,7 @@ function command.run(message, mt, overwrite)
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
       
       local newcards = {{name="",stock=0,price=0},{name="",stock=0,price=0},{name="",stock=0,price=0},{name="",stock=0,price=0}}
-      for i,v in ipairs(sj.cards) do
+      for i,v in ipairs(sj.cards) do--------------------cards
         print("stocking" .. i)
         local finding = true
         local nc = ""
@@ -842,6 +842,16 @@ function command.run(message, mt, overwrite)
         newcards[i] = {name = nc,stock = math.random(10,20), price = price}
         sj.cards = newcards
       end
+      ---------------------------------------------item
+      
+      local itempt = {}
+      for k in pairs(itemdb) do
+        if k ~= "fixedmouse" then
+          table.insert(itempt, k)
+        end
+      end
+      sj.item = itempt[math.random(#itempt)]
+      
       dpf.savejson("savedata/shop.json", sj)
       
       
