@@ -762,34 +762,42 @@ function command.run(message, mt, overwrite)
     _G['getshopimage'] = function()
       local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
-      --TODO: possibly figure out caching system for shop images
-      local base = vips.Image.new_from_file("assets/shop/base.png")
-      local item = vips.Image.new_from_file(getitemthumb(sj.item))
-      base = base:composite2(item,"over",{x=900,y=420})
-      local i = 0
-      for k,v in pairs(sj.consumables) do
-        item = vips.Image.new_from_file(getitemthumb(k,true))
-        base = base:composite2(item,"over",{x=260 + i*213 ,y=420})
-        i = i + 1
-      end 
-      i = 0
-      local x = 0
-      local y = 0
-      for i,v in ipairs(sj.cards) do
-        if i == 1 then
-          x,y = 210,173
-        elseif i == 2 then
-          x,y = 330,173
-        elseif i == 3 then
-          x,y = 210,293
-        elseif i == 4 then
-          x,y = 330,293
+      local osj = dpf.loadjson("vips_out/cache/shop/lastshop.json", {})
+      
+      if json.encode(sj) ~= json.encode(osj) then--holy shit why
+        
+        print("remaking shop")
+        local base = vips.Image.new_from_file("assets/shop/base.png")
+        local item = vips.Image.new_from_file(getitemthumb(sj.item))
+        base = base:composite2(item,"over",{x=900,y=420})
+        local i = 0
+        for k,v in pairs(sj.consumables) do
+          item = vips.Image.new_from_file(getitemthumb(k,true))
+          base = base:composite2(item,"over",{x=260 + i*213 ,y=420})
+          i = i + 1
+        end 
+        i = 0
+        local x = 0
+        local y = 0
+        for i,v in ipairs(sj.cards) do
+          if i == 1 then
+            x,y = 210,173
+          elseif i == 2 then
+            x,y = 330,173
+          elseif i == 3 then
+            x,y = 210,293
+          elseif i == 4 then
+            x,y = 330,293
+          end
+          card = vips.Image.new_from_file(getcardthumb(v.name))
+          base = base:composite2(card,"over",{x=x,y=y})
         end
-        card = vips.Image.new_from_file(getcardthumb(v.name))
-        base = base:composite2(card,"over",{x=x,y=y})
+            
+        base:write_to_file("vips_out/shop.png")
+        dpf.savejson("vips_out/cache/shop/lastshop.json", sj)
+      else
+        print("shop is already good")
       end
-          
-      base:write_to_file("vips_out/shop.png")
       return "vips_out/shop.png"
     end
     getshopimage()
@@ -822,8 +830,10 @@ function command.run(message, mt, overwrite)
           price = 1
         elseif getcardtype(nc) == "Super Rare" then
           price = 3
-        elseif getcardtype(nc) == "ultra rare" then
+        elseif getcardtype(nc) == "Ultra Rare" then
           price = 5
+        elseif getcardtype(nc) == "PICO-8" then
+          price = 6
         end
           
         
