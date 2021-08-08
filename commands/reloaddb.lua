@@ -123,15 +123,18 @@ function command.run(message, mt, overwrite)
     
     _G['defaultshopsave'] = {
       consumables = {
-        caffeinatedsoda = {
+        {
+          name = "caffeinatedsoda",
           stock = 10,
           price = 5
         },
-        lunarrocks = {
+        {
+          name = "lunarrocks",
           stock = 11,
           price = 4
         },
-        fancyteaset = {
+        {
+          name = "fancyteaset",
           stock = 12,
           price = 3
         }
@@ -209,6 +212,18 @@ function command.run(message, mt, overwrite)
     -- print(inspect(seasontable))
     -- print("here is ptable")
     -- print(inspect(ptable))
+    
+    
+    print('loading consumabledb')    
+    _G['consumabledb'] = dpf.loadjson("data/consumables.json", defaultjson)
+    
+    print("making cpt")
+    _G['cpt'] = {}
+    for k,v in pairs(consumabledb) do
+      for i=1,v.chance do
+        table.insert(cpt,k)
+      end
+    end
 
     print("loading collector's info")
     _G['coll'] = dpf.loadjson("data/coll.json", defaultjson)
@@ -771,8 +786,8 @@ function command.run(message, mt, overwrite)
         local item = vips.Image.new_from_file(getitemthumb(sj.item))
         base = base:composite2(item,"over",{x=900,y=420})
         local i = 0
-        for k,v in pairs(sj.consumables) do
-          item = vips.Image.new_from_file(getitemthumb(k,true))
+        for i,v in pairs(sj.consumables) do
+          item = vips.Image.new_from_file(getitemthumb(v.name,true))
           base = base:composite2(item,"over",{x=260 + i*213 ,y=420})
           i = i + 1
         end 
@@ -846,11 +861,37 @@ function command.run(message, mt, overwrite)
       
       local itempt = {}
       for k in pairs(itemdb) do
-        if k ~= "fixedmouse" then
+        if k ~= "fixedmouse" and k ~= "nothing" then
           table.insert(itempt, k)
         end
       end
       sj.item = itempt[math.random(#itempt)]
+      -----------------------consumables
+      local newconsumables = {{name="",stock=0,price=0},{name="",stock=0,price=0},{name="",stock=0,price=0}}
+      for i,v in ipairs(sj.consumables) do
+        
+        local finding = true
+        local nc = ""
+        while finding do
+          nc = cpt[math.random(#cpt)]
+          local new = true
+          for w,x in ipairs(newconsumables) do
+            if x.name == nc then
+              new = false
+            end
+          end
+          if new == true then
+            finding = false
+          end
+        end
+
+        newconsumables[i] = {name = nc,stock = math.random(10,20), price = consumabledb[nc].baseprice + math.random(-1,1)}
+        
+      end
+      sj.consumables = newconsumables
+        
+      
+      
       
       dpf.savejson("savedata/shop.json", sj)
       
