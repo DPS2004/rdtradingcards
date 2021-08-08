@@ -655,7 +655,6 @@ function command.run(message, mt, overwrite)
                 nmt[a]=b
               end
             elseif v.expectedargs == 1 then
-              
               nmt = {trim(string.sub(message.content, #v.trigger+1))}
             end --might have to expand later?
             if v.force then
@@ -672,32 +671,6 @@ function command.run(message, mt, overwrite)
               print("uh oh")
               message.channel:send("Oops! An error has occured! Error message: ```" .. err .. "``` (<@290582109750427648> <@298722923626364928> please fix this thanks)")
             end
-              
-          end
-          
-          
-        end
-        
-      end
-    
-    
-    
-    end
-    print("handlereaction")
-    _G['handlereaction'] = function (reaction, userid)
-      
-      if userid ~= "767445265871142933" then
-        local ef = dpf.loadjson("savedata/events.json",{})
-        print('a reaction with an emoji named '.. reaction.emojiName .. ' was added to a message with the id of ' .. reaction.message.id ..' by a user with the id of' .. userid)
-        local eom = ef[reaction.message.id]
-        if eom then
-          print('it is an event message being reacted to')
-          local status, err = pcall(function ()
-            cmdre[eom.etype].run(ef, eom, reaction, userid)
-          end)
-          if not status then
-            print("uh oh")
-            reaction.message.channel:send("Oops! An error has occured! Error message: ```" .. err .. "``` (<@290582109750427648> <@298722923626364928> please fix this thanks)")
           end
         end
       end
@@ -707,8 +680,6 @@ function command.run(message, mt, overwrite)
     _G['handlebutton'] = function (buttonid, member, message)
       local ef = dpf.loadjson("savedata/events.json",{})
       if ef[message.id] then
-        
-        
         local reaction = {
           emojiName = "✅",
           message = message
@@ -718,11 +689,8 @@ function command.run(message, mt, overwrite)
           print("reaction is no")
           reaction.emojiName = "❌"
         end
-        
+
         local userid = member.id
-        
-        
-        
         print('a button named '.. buttonid .. ' was pressed on a message with the id of ' .. reaction.message.id ..' by a user with the id of' .. userid)
         local eom = ef[reaction.message.id]
         if eom then
@@ -738,7 +706,6 @@ function command.run(message, mt, overwrite)
       else
         print("user reacted to a finished button")
       end
-      
     end
     
     _G['getitemthumb'] = function(item,cons)
