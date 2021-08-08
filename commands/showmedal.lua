@@ -7,7 +7,7 @@ function command.run(message, mt)
   end
 
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
-  local curfilename = itemtexttofn(mt[1])
+  local curfilename = medaltexttofn(mt[1])
 
   if not curfilename then
     if nopeeking then

@@ -35,12 +35,6 @@ client:on('messageCreate', function(message)
   handlemessage(message)
 end)
 
-print("ok commands loaded, doing reactions")
-
-client:on('reactionAdd', function(reaction, userid)
-  handlereaction(reaction,userid)
-end)
-
 client:on('buttonPressed', function(buttonid, member, message)
   handlebutton(buttonid, member, message)
 end)

@@ -225,7 +225,7 @@ function command.run(message, mt,bypass)
         
         wj.boxpool[boxpoolindex] = givecard
         
-        message.channel:send('<@' .. uj.id .. '> grabs a **' .. fntoname(givecard) .. '** card from '..uj.pronouns["their"]..' inventory and places it inside the box. As it goes in, a **' .. fntoname(getcard) .. '** card shows up in '..uj.pronouns["their"]..' pocket!')
+        message.channel:send('<@' .. uj.id .. '> grabs a **' .. fntoname(givecard) .. '** card from '..uj.pronouns["their"]..' inventory and places it inside the box. As it goes in, a **' .. fntoname(getcard) .. '** card shows up in '..uj.pronouns["their"]..' pocket! The shorthand form of this card is **' .. getcard .. '**.')
 
         uj.timesusedbox = uj.timesusedbox and uj.timesusedbox + 1 or 1
         uj.lastbox = time:toHours()
@@ -325,23 +325,23 @@ function command.run(message, mt,bypass)
         else
           embeddescription = '`COMMAND "' .. mt[2] ..  '" NOT RECOGNIZED`'
         end
-        message.channel:send{embed = {
-          color = 0x85c5ff,
-          title = embedtitle,
-          description = embeddescription,
-          image = {
-            url = embedimage
-          },
-          footer = {
-            text =  message.author.name,
-            icon_url = message.author.avatarURL
-          }
-        }}
-        if filename then 
-          message.channel:send{
-            file = filename
-          }
-        end
+      end
+      message.channel:send{embed = {
+        color = 0x85c5ff,
+        title = embedtitle,
+        description = embeddescription,
+        image = {
+          url = embedimage
+        },
+        footer = {
+          text =  message.author.name,
+          icon_url = message.author.avatarURL
+        }
+      }}
+      if filename then 
+        message.channel:send{
+          file = filename
+        }
       end
     else
       found = false
