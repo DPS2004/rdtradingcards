@@ -325,23 +325,23 @@ function command.run(message, mt,bypass)
         else
           embeddescription = '`COMMAND "' .. mt[2] ..  '" NOT RECOGNIZED`'
         end
-        message.channel:send{embed = {
-          color = 0x85c5ff,
-          title = embedtitle,
-          description = embeddescription,
-          image = {
-            url = embedimage
-          },
-          footer = {
-            text =  message.author.name,
-            icon_url = message.author.avatarURL
-          }
-        }}
-        if filename then 
-          message.channel:send{
-            file = filename
-          }
-        end
+      end
+      message.channel:send{embed = {
+        color = 0x85c5ff,
+        title = embedtitle,
+        description = embeddescription,
+        image = {
+          url = embedimage
+        },
+        footer = {
+          text =  message.author.name,
+          icon_url = message.author.avatarURL
+        }
+      }}
+      if filename then 
+        message.channel:send{
+          file = filename
+        }
       end
     else
       found = false
