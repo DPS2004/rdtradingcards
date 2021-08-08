@@ -4257,8 +4257,8 @@
         },
         {
           "chance": 2,
-          "filename": "doornook",
-          "name": "Door Nook",
+          "filename": "doornock",
+          "name": "Door Nock",
           "tradeable": true,
           "type": "Super Rare",
           "description": "(Level by Arkaan Muyassar)",
