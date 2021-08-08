@@ -396,6 +396,20 @@ function command.run(message, mt)
     end
   end
   
+  if uj.room == 5 then     --------------------------------------------------SHOP--------------------------------------------------------------------------   
+    
+      
+    local request = string.lower(mt[1]) --why tf didint i do this for all the other ones?????????????????
+    if (request == "shop" or request == "quaintshop" or request == "quaint shop" or request == "")  then 
+      message.channel:send{embed = {
+        color = 0x85c5ff,
+        title = "Looking at Quaint Shop...",
+        description = 'The **Quaint Shop** has a sign outside of it, marking that it sells "Cards And Things". If you need cards and/or things, it might be worth checking out.',
+      }}
+    end
+  end
+  
+
   if not found then ----------------------------------NON-ROOM ITEMS GO HERE!--------------------------------------------------
     if string.lower(mt[1]) == "card factory" or string.lower(mt[1]) == "factory" or string.lower(mt[1]) == "cardfactory" or string.lower(mt[1]) == "the card factory" then --TODO: move these to not found
       message.channel:send {

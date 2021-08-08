@@ -16,6 +16,8 @@ function command.run(message, mt)
   --1: lab
   --2: hallway
   --3: casino
+  --4: mountain
+  --5: shop
   
   if request == "pyrowmid" or request == "the pyrowmid" then
     success = true
@@ -32,6 +34,9 @@ function command.run(message, mt)
   elseif wj.ws >= 702 and (request == "mountains" or request == "mountain" or request == "windymountains" or request == "the windy mountains" or request == "windy mountains") then
     success = true
     newroom = 4
+  elseif wj.ws >= 702 and (request == "shop" or request == "quaintshop" or request == "quaint shop" or request == "the quaint shop" then) then
+    success = true
+    newroom = 5
   end
   
   if newroom == uj.room then

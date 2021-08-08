@@ -1,0 +1,48 @@
+{
+
+  "caffeinatedsoda" : {
+    "name": "Caffeinated Soda",
+    "description": "Sets all your current cooldowns to 0, but adds whatever they were at to your next cooldowns.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873730442656882798/caffeinatedsoda.png",
+    "baseprice": 5,
+    "chance":10
+  },
+  "decaf" : {
+    "name": "Decaf",
+    "description": "The next card you pull is guaranteed to contain Cole Brew or a barista. You can only use one item of this type at a time.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873730443999068210/decaf.png",
+    "baseprice": 3,
+    "chance":10
+  },
+  "fancyteaset" : {
+    "name": "Fancy Tea Set",
+    "description": "The next card you pull is guaranteed to contain Samurai or Insomniac. You can only use one item of this type at a time.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873730445416730694/fancyteaset.png",
+    "baseprice": 3,
+    "chance":10
+  },
+  "lunarrocks" : {
+    "name": "Lunar Rocks",
+    "description": "The next card you pull is guaranteed to contain Miner or Lucia. You can only use one item of this type at a time.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873730449644589076/lunarrock.png",
+    "baseprice": 3,
+    "chance":10
+  },
+  "secretadmirersnote" : {
+    "name": "Secret Admirers Note",
+    "description": "The next card you pull is guaranteed to contain Miner or Lucia. You can only use one item of this type at a time.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873730453255884820/secretadmirersnote.png",
+    "baseprice": 3,
+    "chance":10
+  },
+  "giftairstrike" : {
+    "name": "Gift Air Strike",
+    "description": "Gives 30 random people a copy of a random card from your inventory.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873730445416730694/fancyteaset.png",
+    "baseprice": 35,
+    "chance":1
+  }
+  
+  
+
+}
