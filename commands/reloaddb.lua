@@ -162,6 +162,7 @@ function command.run(message, mt, overwrite)
         },
       },
       item = "hardcandy",
+      itemstock = 10
       
     }
 
@@ -406,6 +407,15 @@ function command.run(message, mt, overwrite)
         end
       end
       return mfn
+    end
+    _G['consfntoname'] = function (x)
+      print("finding " .. x)
+      for k, v in pairs(consumabledb) do
+        if string.lower(k) == string.lower(x) then
+          return v.name
+        end
+      end
+      
     end
     
     _G['itemnametofn'] = function (x)
