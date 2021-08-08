@@ -785,13 +785,11 @@ function command.run(message, mt, overwrite)
         local base = vips.Image.new_from_file("assets/shop/base.png")
         local item = vips.Image.new_from_file(getitemthumb(sj.item))
         base = base:composite2(item,"over",{x=900,y=420})
-        local i = 0
         for i,v in pairs(sj.consumables) do
           item = vips.Image.new_from_file(getitemthumb(v.name,true))
-          base = base:composite2(item,"over",{x=260 + i*213 ,y=420})
+          base = base:composite2(item,"over",{x=260 + (i-1)*213 ,y=420})
           i = i + 1
         end 
-        i = 0
         local x = 0
         local y = 0
         for i,v in ipairs(sj.cards) do
