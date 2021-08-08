@@ -150,7 +150,7 @@ function command.run(message, mt, overwrite)
           stock = 10
         },
         {
-          name = "longfall",
+          name = "alienalien",
           stock = 10
         },
       },
@@ -722,7 +722,7 @@ function command.run(message, mt, overwrite)
       
     end
     
-    _G['getitem'] = function(item,cons)
+    _G['getitemthumb'] = function(item,cons)
       local cf = io.open("vips_out/cache/items/"..item..".png", "r")
       if not cf then --check if file exists
         print("caching thumb for ".. item)
@@ -731,22 +731,64 @@ function command.run(message, mt, overwrite)
           dir = "assets/consumables/"
         end
         print(dir..item..".png")
-        itemimg = vips.Image.new_from_file(dir..item..".png") -- load item image
-        itemimg = itemimg:resize(0.15)
+        local itemimg = vips.Image.new_from_file(dir..item..".png") -- load item image
+        itemimg = itemimg:resize(0.15) --TODO: force nearest neighbor scaling?
         itemimg:write_to_file("vips_out/cache/items/"..item..".png")
+        print("done cachin'")
       end
       return "vips_out/cache/items/"..item..".png"
     end
-    getitem("decaf",true)
-    getitem("stainedgloves")
+    _G['getcardthumb'] = function(card)
+      local cf = io.open("vips_out/cache/cards/"..card..".png", "r")
+      if not cf then --check if file exists
+        print("caching thumb for " .. card)
+        
+        local cardimg = vips.Image.new_from_file("card_images/"..card..".png") -- load item image
+        cardimg = cardimg:resize(96 / cardimg:height()) --TODO: force nearest neighbor scaling?
+        
+        cardimg:write_to_file("vips_out/cache/cards/"..card..".png")
+        print("done cachin'")
+      end
+      return "vips_out/cache/cards/"..card..".png"
+    end
+    getitemthumb("decaf",true)
+    getitemthumb("stainedgloves")
+    getcardthumb("knowyou")
     
     _G['getshopimage'] = function()
       local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
-      
-      
-      
+      --TODO: possibly figure out caching system for shop images
+      local base = vips.Image.new_from_file("assets/shop/base.png")
+      local item = vips.Image.new_from_file(getitemthumb(sj.item))
+      base = base:composite2(item,"over",{x=900,y=420})
+      local i = 0
+      for k,v in pairs(sj.consumables) do
+        item = vips.Image.new_from_file(getitemthumb(k,true))
+        base = base:composite2(item,"over",{x=260 + i*213 ,y=420})
+        i = i + 1
+      end 
+      i = 0
+      local x = 0
+      local y = 0
+      for i,v in ipairs(sj.cards) do
+        if i == 1 then
+          x,y = 210,173
+        elseif i == 2 then
+          x,y = 330,173
+        elseif i == 3 then
+          x,y = 210,293
+        elseif i == 4 then
+          x,y = 330,293
+        end
+        card = vips.Image.new_from_file(getcardthumb(v.name))
+        base = base:composite2(card,"over",{x=x,y=y})
+      end
+          
+      base:write_to_file("vips_out/shop.png")
+      return "vips_out/shop.png"
     end
+    getshopimage()
 
     print("getchickimage")
     _G['getchickimage'] = function (userid)
