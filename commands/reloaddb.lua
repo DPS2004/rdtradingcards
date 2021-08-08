@@ -139,19 +139,23 @@ function command.run(message, mt, overwrite)
       cards = {
         {
           name = "514",
-          stock = 10
+          stock = 10,
+          price = 3
         },
         {
           name = "samurair",
-          stock = 10
+          stock = 10,
+          price = 1
         },
         {
           name = "knowyou",
-          stock = 10
+          stock = 10,
+          price = 3
         },
         {
           name = "alienalien",
-          stock = 10
+          stock = 10,
+          price = 1
         },
       },
       item = "hardcandy",
@@ -789,6 +793,50 @@ function command.run(message, mt, overwrite)
       return "vips_out/shop.png"
     end
     getshopimage()
+    
+    
+    _G['stockshop'] = function()
+      local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
+      local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
+      
+      local newcards = {{name="",stock=0,price=0},{name="",stock=0,price=0},{name="",stock=0,price=0},{name="",stock=0,price=0}}
+      for i,v in ipairs(sj.cards) do
+        print("stocking" .. i)
+        local finding = true
+        local nc = ""
+        while finding do
+          nc = ptable.nothing[math.random(#ptable.nothing)]
+          print(nc)
+          local new = true
+          for w,x in ipairs(newcards) do
+            if x.name == nc then
+              new = false
+            end
+          end
+          if new == true then
+            finding = false
+          end
+        end
+        local price = 8
+        if getcardtype(nc) == "Rare" then
+          price = 1
+        elseif getcardtype(nc) == "Super Rare" then
+          price = 3
+        elseif getcardtype(nc) == "ultra rare" then
+          price = 5
+        end
+          
+        
+        
+        
+        newcards[i] = {name = nc,stock = math.random(10,20), price = price}
+        sj.cards = newcards
+      end
+      dpf.savejson("savedata/shop.json", sj)
+      
+      
+      
+    end
 
     print("getchickimage")
     _G['getchickimage'] = function (userid)
