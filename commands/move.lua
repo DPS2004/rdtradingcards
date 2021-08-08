@@ -39,16 +39,17 @@ function command.run(message, mt)
     newroom = 5
   end
   
-  if newroom == uj.room then
-    message.channel:send("You are already in the **" .. locations[newroom+1] .. "**!")
-    return
-  end
   
   if success then
     print("newroom is ".. newroom)
-    uj.room = newroom
-    message.channel:send("Your location is now the **" .. locations[newroom+1] .. "**.")
-    dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
+    if newroom == uj.room then
+      message.channel:send("You are already in the **" .. locations[newroom+1] .. "**!")
+      return
+	else
+      uj.room = newroom
+      message.channel:send("Your location is now the **" .. locations[newroom+1] .. "**.")
+      dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
+	end
   else
     message.channel:send("Sorry, but I could not find " .. mt[1] .. ". Make sure that you spelled it right!")
   end
