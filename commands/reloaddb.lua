@@ -721,6 +721,32 @@ function command.run(message, mt, overwrite)
       end
       
     end
+    
+    _G['getitem'] = function(item,cons)
+      local cf = io.open("vips_out/cache/items/"..item..".png", "r")
+      if not cf then --check if file exists
+        print("caching thumb for ".. item)
+        local dir = "items/"
+        if cons then
+          dir = "assets/consumables/"
+        end
+        print(dir..item..".png")
+        itemimg = vips.Image.new_from_file(dir..item..".png") -- load item image
+        itemimg = itemimg:resize(0.15)
+        itemimg:write_to_file("vips_out/cache/items/"..item..".png")
+      end
+      return "vips_out/cache/items/"..item..".png"
+    end
+    getitem("decaf",true)
+    getitem("stainedgloves")
+    
+    _G['getshopimage'] = function()
+      local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
+      local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
+      
+      
+      
+    end
 
     print("getchickimage")
     _G['getchickimage'] = function (userid)
