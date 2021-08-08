@@ -225,7 +225,7 @@ function command.run(message, mt,bypass)
         
         wj.boxpool[boxpoolindex] = givecard
         
-        message.channel:send('<@' .. uj.id .. '> grabs a **' .. fntoname(givecard) .. '** card from '..uj.pronouns["their"]..' inventory and places it inside the box. As it goes in, a **' .. fntoname(getcard) .. '** card shows up in '..uj.pronouns["their"]..' pocket!')
+        message.channel:send('<@' .. uj.id .. '> grabs a **' .. fntoname(givecard) .. '** card from '..uj.pronouns["their"]..' inventory and places it inside the box. As it goes in, a **' .. fntoname(getcard) .. '** card shows up in '..uj.pronouns["their"]..' pocket! The shorthand form of this card is **' .. getcard .. '**.')
 
         uj.timesusedbox = uj.timesusedbox and uj.timesusedbox + 1 or 1
         uj.lastbox = time:toHours()
