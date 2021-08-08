@@ -34,7 +34,7 @@ function command.run(message, mt)
   elseif wj.ws >= 702 and (request == "mountains" or request == "mountain" or request == "windymountains" or request == "the windy mountains" or request == "windy mountains") then
     success = true
     newroom = 4
-  elseif wj.ws >= 702 and (request == "shop" or request == "quaintshop" or request == "quaint shop" or request == "the quaint shop" then) then
+  elseif wj.ws >= 702 and (request == "shop" or request == "quaintshop" or request == "quaint shop" or request == "the quaint shop") then
     success = true
     newroom = 5
   end

@@ -119,9 +119,43 @@ function command.run(message, mt, overwrite)
       lablooktext = "abcdefghijklmnopqrstuvwxyz",
       worldstate = "prehole",
       ws = 0,
-      shop = {
-        
-      }
+    }
+    
+    _G['defaultshopsave'] = {
+      consumables = {
+        caffeinatedsoda = {
+          stock = 10,
+          price = 5
+        },
+        lunarrocks = {
+          stock = 11,
+          price = 4
+        },
+        fancyteaset = {
+          stock = 12,
+          price = 3
+        }
+      },
+      cards = {
+        {
+          name = "514",
+          stock = 10
+        },
+        {
+          name = "samurair",
+          stock = 10
+        },
+        {
+          name = "knowyou",
+          stock = 10
+        },
+        {
+          name = "longfall",
+          stock = 10
+        },
+      },
+      item = "hardcandy",
+      
     }
 
     _G['debug'] = false
