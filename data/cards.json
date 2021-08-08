@@ -4328,18 +4328,6 @@
           "season": 0,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/865792363167219722/key.png"
-        },
-        {
-          "chance": 0,
-          "filename": "placeholder",
-          "name": "Placeholder Card",
-          "tradeable": false,
-          "type": "Special",
-          "description": "Insert Description Here",
-          "smell": "Insert Smell Here",
-          "season": 0,
-          "bonuses": {},
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.pn"
         }
       ]
     },
