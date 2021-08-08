@@ -761,7 +761,10 @@ function command.run(message, mt, overwrite)
       local cf = io.open("vips_out/cache/cards/"..card..".png", "r")
       if not cf then --check if file exists
         print("caching thumb for " .. card)
-        
+        local check = io.open("card_images/"..card..".png")
+        if not check then
+          card = "none"
+        end
         local cardimg = vips.Image.new_from_file("card_images/"..card..".png") -- load item image
         cardimg = cardimg:resize(96 / cardimg:height()) --TODO: force nearest neighbor scaling?
         
@@ -802,6 +805,7 @@ function command.run(message, mt, overwrite)
           elseif i == 4 then
             x,y = 330,293
           end
+          
           card = vips.Image.new_from_file(getcardthumb(v.name))
           base = base:composite2(card,"over",{x=x,y=y})
         end
