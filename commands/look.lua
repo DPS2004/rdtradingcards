@@ -402,9 +402,10 @@ function command.run(message, mt)
     local request = string.lower(mt[1]) --why tf didint i do this for all the other ones?????????????????
     if (request == "shop" or request == "quaintshop" or request == "quaint shop" or request == "")  then 
       message.channel:send{ ---todo: make this an embed
-        content = 'The **Quaint Shop**. Yeah. thats it. sorry bye',
+        content = 'The **Quaint Shop** is filled with cards and card accessories, all sold by the **Wolf.** It seems to be doing a pretty good job at running the business. The **Ghost** in the corner is standing guard, watching over the store.',
         file = getshopimage(),
       }
+      message.channel:send("The shop is selling: TODO: c!inv like view of the wares available to buy")
     end
   end
   
