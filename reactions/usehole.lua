@@ -10,8 +10,7 @@ function reaction.run(ef, eom, reaction, userid)
   end
 
   print('user1 has reacted')
-  ef[reaction.message.id] = nil
-  dpf.savejson("savedata/events.json",ef)
+  client:emit(reaction.message.id)
 
   if reaction.emojiName == "✅" then
     print('user1 has accepted')
