@@ -574,6 +574,7 @@ function command.run(message, mt, overwrite)
       else
         print("Button reaction timed out, removing event")
       end
+      tf = dpf.loadjson("savedata/events.json",{})
       tf[newmessage.id] = nil
       dpf.savejson("savedata/events.json", tf)
 
