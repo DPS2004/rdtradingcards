@@ -393,13 +393,24 @@ function command.run(message, mt,bypass)
         
       elseif itemtexttofn(mt[2]) then
         srequest = itemtexttofn(mt[2])
-        sname = itemfntoname(mt[2])
+        sname = itemfntoname(srequest)
         sprice = 5
-        if itemtexttofn(mt[2]) == sj.item then
+        if srequest == sj.item then
           
           if sj.itemstock > 0 then
             if uj.tokens >= 5 then
-              --can buy item
+              if not uj.items[srequest] then
+                
+                
+              else
+                result = "alreadyhave"
+              end
+                --can buy item
+                ynbuttons(message,{
+                  color = 0x85c5ff,
+                  title = "Buying " .. sname .. "...",
+                  description = "The description for this item reads: \n`".. itemdb[srequest].description .."`\nWill you buy it for "..sprice.." **Tokens**?",
+                },"buy",{itemtype = "item",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest})
             else
               result = "notenough"
             end
@@ -408,10 +419,10 @@ function command.run(message, mt,bypass)
           end
         else
           result = "donthave"
-        end --jci please dont kill me
+        end 
       elseif texttofn(mt[2]) then
         srequest = texttofn(mt[2])
-        sname = fntoname(mt[2])
+        sname = fntoname(srequest)
         local x = false
         for i,v in ipairs(sj.cards) do
           if v.name == srequest then
@@ -425,6 +436,11 @@ function command.run(message, mt,bypass)
           if stock > 0 then
             if uj.tokens >= sprice then
               --can buy card
+              ynbuttons(message,{
+                color = 0x85c5ff,
+                title = "Buying " .. sname .. "...",
+                description = "The description for this item reads: \n`".. getcarddescription(srequest) .."`\nWill you buy it for "..sprice.." **Tokens**?",
+              },"buy",{itemtype = "card",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest})
             else
               result = "notenough"
             end
@@ -433,10 +449,10 @@ function command.run(message, mt,bypass)
           end
         else
           result = "donthave"
-        end
+        end--jci please dont kill me
         
       else --unknown request
-        message.channel:send('The **Wolf** looks at you with a confused look on its face. It does not appear to know what a ' .. mt[2] .. ' is.')
+        message.channel:send('The **Wolf** looks at you with confusion. It does not appear to know what ' .. mt[2] .. ' is.')
       end
       --error handling
       if result == "notenough" then
@@ -446,8 +462,12 @@ function command.run(message, mt,bypass)
         message.channel:send('The **Wolf** frowns. It is currently out of stock of **' .. sname .. '**.')
       end
       if result == "donthave" then
-        message.channel:send('The **Wolf** looks at you with a confused look on its face. It doesn\'t seem to be selling **' .. sname .. '**.')
+        message.channel:send('The **Wolf** looks at you with confusion. It doesn\'t seem to be selling **' .. sname .. '**.')
       end
+      if result == "alreadyhave" then
+        message.channel:send('The **Wolf** looks at you with confusion. You already have the **' .. sname .. '** item.')
+      end
+      
       
     end
     

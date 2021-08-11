@@ -18,6 +18,10 @@ function reaction.run(ef, eom, reaction, userid)
     local checked = false
     if eom.itemtype == "consumable" then
       checked = (sj.consumables[eom.sindex].name == eom.srequest) and (sj.consumables[eom.sindex].stock ~= 0)
+    end --other types also go up here
+    
+    if eom.itemtype == "card" then
+      checked = (sj.cards[eom.sindex].name == eom.srequest) and (sj.cards[eom.sindex].stock ~= 0)
     end
     
     if not checked then
@@ -32,8 +36,34 @@ function reaction.run(ef, eom, reaction, userid)
     end
 
     --do the fucking thing here
+    
+    if eom.itemtype == "consumable" then
+      sj.consumables[eom.sindex].stock = sj.consumables[eom.sindex].stock - 1
+      if not uj.consumables then uj.consumables = {} end
+      if not uj.consumables[eom.srequest] then
+        uj.consumables[eom.srequest] = 1
+      else
+        uj.consumables[eom.srequest] = uj.consumables[eom.srequest] + 1
+      end
+    end 
+    if eom.itemtype == "card" then
+      sj.cards[eom.sindex].stock = sj.cards[eom.sindex].stock - 1
+      if not uj.inventory then uj.inventory = {} end
+      if not uj.inventory[eom.srequest] then
+        uj.inventory[eom.srequest] = 1
+      else
+        uj.inventory[eom.srequest] = uj.inventory[eom.srequest] + 1
+      end
+    end 
+    if eom.itemtype == "item" then
+      sj.itemstock = sj.itemstock - 1
+      uj.items[eom.srequest] = true
+    end
+    uj.tokens = uj.tokens - eom.sprice
+    
     dpf.savejson(ujf,uj)
     dpf.savejson("savedata/shop.json", sj)
+    reaction.message.channel:send("<@" .. uj.id .. "> successfully bought **" .. eom.sname .. "** from the shop.")
   end
 
   if reaction.emojiName == "❌" then
