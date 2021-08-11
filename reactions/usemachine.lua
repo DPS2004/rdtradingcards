@@ -36,7 +36,7 @@ function reaction.run(ef, eom, reaction, userid)
 
     local newitem = itempt[math.random(#itempt)]
     uj.items[newitem] = true
-    uj.tokens = uj.tokens - 2
+    uj.tokens = uj.tokens - 3
     reaction.message.channel:send('After depositing 2 **Tokens** and turning the crank, a capsule comes out of the **Strange Machine**. Inside it is the **' .. itemfntoname(newitem) .. '**! You put the **'.. itemfntoname(newitem) .. '** with your items.')
     dpf.savejson(ujf,uj)
   end

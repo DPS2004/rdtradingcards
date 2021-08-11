@@ -8,9 +8,9 @@ local time = sw:getTime()
   end
 
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
-  local cooldown = 3
+  local cooldown = 23/24
   if uj.equipped == "faithfulnecklace" then
-    cooldown = 2.5
+    cooldown = 20/24
   end
 
   if not uj.lastprayer then

@@ -31,7 +31,7 @@ function command.run(message, mt,bypass)
           message.channel:send('You already have every item that is currently available.')
           return
         end
-        if uj.tokens < 2 then
+        if uj.tokens < 3 then
           message.channel:send('You try to turn the crank, but it does not budge. There is a slot above it that looks like it could fit two **Tokens**...')
           return
         end
@@ -39,12 +39,12 @@ function command.run(message, mt,bypass)
           ynbuttons(message, {
             color = 0x85c5ff,
             title = "Using Strange Machine...",
-            description = 'Will you put two **Tokens** into the **Strange Machine?** (tokens remaining: ' .. uj.tokens .. ')',
+            description = 'Will you put three **Tokens** into the **Strange Machine?** (tokens remaining: ' .. uj.tokens .. ')',
           },"usemachine",{})
         else
           local newitem = itempt[math.random(#itempt)]
           uj.items[newitem] = true
-          uj.tokens = uj.tokens - 2
+          uj.tokens = uj.tokens - 3
           uj.timesused = uj.timesused and uj.timesused + 1 or 1
           message.channel:send('After depositing 2 **Tokens** and turning the crank, a capsule comes out of the **Strange Machine**. Inside it is the **' .. itemfntoname(newitem) .. '**! You put the **'.. itemfntoname(newitem) ..'** with your items.')
         end
