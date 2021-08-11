@@ -415,6 +415,20 @@ function command.run(message, mt)
       end
       shopstr = shopstr .. "\n**"..itemfntoname(sj.item).."** (5 tokens) x"..sj.itemstock
       message.channel:send("The shop is selling:\n"..shopstr)
+    elseif (request == "wolf")  then 
+      message.channel:send{embed = {
+        color = 0x85c5ff,
+        title = "Looking at Wolf...",
+        description = 'TODO',
+      }}
+    elseif (request == "ghost")  then 
+      message.channel:send{embed = {
+        color = 0x85c5ff,
+        title = "Looking at Ghost...",
+        description = 'TODO',
+      }}
+    else
+      found = false
     end
   end
   

@@ -82,6 +82,7 @@ function command.run(message, mt, overwrite)
     _G['defaultjson'] = {
       inventory = {},
       storage = {},
+      consumables = {},
       medals = {},
       items = {nothing = true},
       equipped = "nothing",
@@ -408,6 +409,15 @@ function command.run(message, mt, overwrite)
       end
       return mfn
     end
+    
+    _G['consnametofn'] = function (x)
+      for k, v in pairs(consumabledb) do
+        if string.lower(v.name) == string.lower(x) then
+          return k
+        end
+      end
+    end
+    
     _G['consfntoname'] = function (x)
       print("finding " .. x)
       for k, v in pairs(consumabledb) do
@@ -416,6 +426,17 @@ function command.run(message, mt, overwrite)
         end
       end
       
+    end
+    
+    _G['constexttofn'] = function (x)
+      local ifn = consnametofn(x)
+      if not ifn then
+        ifn = consfntoname(x)
+        if ifn then
+          ifn = string.lower(x)
+        end
+      end
+      return ifn
     end
     
     _G['itemnametofn'] = function (x)
@@ -446,6 +467,7 @@ function command.run(message, mt, overwrite)
       end
       return ifn
     end
+    
     
     _G['getcardtype'] = function (x)
       for i, v in ipairs(cdb) do

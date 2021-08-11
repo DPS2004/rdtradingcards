@@ -347,6 +347,37 @@ function command.run(message, mt,bypass)
       found = false
     end
   end
+  if (uj.room == 5) then ----------------------------------------------------------SHOP
+    if request == "shop" then
+      local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
+      local result = ""
+      local result_price = 0
+      if constexttofn(mt[2]) then
+        
+      elseif itemtexttofn(mt[2]) then
+        if itemtexttofn(mt[2]) == sj.item then
+          if sj.itemstock > 0 then
+            if uj.tokens >= 5 then
+              
+            else
+              result = "notenough"
+              result_price = 5
+            end
+          else
+            result = "outofstock"
+          end
+        else
+          result = "donthave"
+        end --jci please dont kill me
+      elseif texttofn(mt[2]) then
+        
+      else
+        message.channel:send('The **Wolf** looks at you with a confused look on its face. It does not appear to know what a ' .. mt[2] .. ' is.')
+      end
+    end
+    
+  end
+    
   if (not found) and (not bypass) then ----------------------------------NON-ROOM ITEMS GO HERE!-------------------------------------------------
     if request == "token"  then
       if uj.tokens > 0 then
