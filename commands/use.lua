@@ -347,6 +347,21 @@ function command.run(message, mt,bypass)
       found = false
     end
   end
+  if (uj.room == 5) then --piss
+    if request == "shop" then
+      if constexttofn(mt[2]) then
+        
+      elseif itemtexttofn(mt[2]) then
+        
+      elseif texttofn(mt[2]) then
+        
+      else
+        message.channel:send('The **Wolf** looks at you with a confused look on its face. It does not appear to know what a ' .. mt[2] .. ' is.')
+      end
+    end
+    
+  end
+    
   if (not found) and (not bypass) then ----------------------------------NON-ROOM ITEMS GO HERE!-------------------------------------------------
     if request == "token"  then
       if uj.tokens > 0 then
