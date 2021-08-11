@@ -76,6 +76,7 @@ function command.run(message, mt, overwrite)
     cmdre.getladder = dofile('reactions/getladder.lua')
     cmdre.usemousehole = dofile('reactions/usemousehole.lua')
     cmdre.usebox = dofile('reactions/usebox.lua')
+    cmdre.buy = dofile('reactions/buy.lua')
     
     print("done loading reactions")
 

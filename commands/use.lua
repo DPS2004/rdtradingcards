@@ -361,7 +361,7 @@ function command.run(message, mt,bypass)
         sname = consfntoname(srequest)
         local x = false
         for i,v in ipairs(sj.consumables) do
-          if v.name == mt[2] then
+          if v.name == srequest then
             x = true
             stock = v.stock
             sprice = v.price
@@ -372,6 +372,15 @@ function command.run(message, mt,bypass)
           if stock > 0 then
             if uj.tokens >= sprice then
               --can buy consumable
+              
+              ynbuttons(message,{
+                color = 0x85c5ff,
+                title = "Buying " .. sname .. "...",
+                description = "The description for this item reads: \n`".. consumabledb[srequest].description .."`\nWill you buy it for "..sprice.." **Tokens**?",
+              },"buy",{itemtype = "consumable",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest})
+              
+              
+              
             else
               result = "notenough"
             end
@@ -405,7 +414,7 @@ function command.run(message, mt,bypass)
         sname = fntoname(mt[2])
         local x = false
         for i,v in ipairs(sj.cards) do
-          if v.name == mt[2] then
+          if v.name == srequest then
             x = true
             stock = v.stock
             sprice = v.price
