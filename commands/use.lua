@@ -351,17 +351,48 @@ function command.run(message, mt,bypass)
     if request == "shop" then
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
       local result = ""
-      local result_price = 0
+      local sprice = 0
+      local srequest = ""
+      local sname = ""
+      local stock = 0
+      local sindex = 0
       if constexttofn(mt[2]) then
-        
-      elseif itemtexttofn(mt[2]) then
-        if itemtexttofn(mt[2]) == sj.item then
-          if sj.itemstock > 0 then
-            if uj.tokens >= 5 then
-              
+        srequest = constexttofn(mt[2])
+        sname = consfntoname(srequest)
+        local x = false
+        for i,v in ipairs(sj.consumables) do
+          if v.name == mt[2] then
+            x = true
+            stock = v.stock
+            sprice = v.price
+            sindex = i
+          end
+        end
+        if x then 
+          if stock > 0 then
+            if uj.tokens >= sprice then
+              --can buy consumable
             else
               result = "notenough"
-              result_price = 5
+            end
+          else
+            result = "outofstock"
+          end
+        else
+          result = "donthave"
+        end
+        
+      elseif itemtexttofn(mt[2]) then
+        srequest = itemtexttofn(mt[2])
+        sname = itemfntoname(mt[2])
+        sprice = 5
+        if itemtexttofn(mt[2]) == sj.item then
+          
+          if sj.itemstock > 0 then
+            if uj.tokens >= 5 then
+              --can buy item
+            else
+              result = "notenough"
             end
           else
             result = "outofstock"
@@ -370,10 +401,45 @@ function command.run(message, mt,bypass)
           result = "donthave"
         end --jci please dont kill me
       elseif texttofn(mt[2]) then
+        srequest = texttofn(mt[2])
+        sname = fntoname(mt[2])
+        local x = false
+        for i,v in ipairs(sj.cards) do
+          if v.name == mt[2] then
+            x = true
+            stock = v.stock
+            sprice = v.price
+            sindex = i
+          end
+        end
+        if x then 
+          if stock > 0 then
+            if uj.tokens >= sprice then
+              --can buy card
+            else
+              result = "notenough"
+            end
+          else
+            result = "outofstock"
+          end
+        else
+          result = "donthave"
+        end
         
-      else
+      else --unknown request
         message.channel:send('The **Wolf** looks at you with a confused look on its face. It does not appear to know what a ' .. mt[2] .. ' is.')
       end
+      --error handling
+      if result == "notenough" then
+        message.channel:send('The **Wolf** frowns. You don\'t have the ' .. sprice .. ' **Tokens** required to buy the **' .. sname .. '**!')
+      end
+      if result == "outofstock" then
+        message.channel:send('The **Wolf** frowns. It is currently out of stock of **' .. sname .. '**.')
+      end
+      if result == "donthave" then
+        message.channel:send('The **Wolf** looks at you with a confused look on its face. It doesn\'t seem to be selling **' .. sname .. '**.')
+      end
+      
     end
     
   end
