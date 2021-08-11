@@ -347,12 +347,28 @@ function command.run(message, mt,bypass)
       found = false
     end
   end
-  if (uj.room == 5) then --piss
+  if (uj.room == 5) then ----------------------------------------------------------SHOP
     if request == "shop" then
+      local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
+      local result = ""
+      local result_price = 0
       if constexttofn(mt[2]) then
         
       elseif itemtexttofn(mt[2]) then
-        
+        if itemtexttofn(mt[2]) == sj.item then
+          if sj.itemstock > 0 then
+            if uj.tokens >= 5 then
+              
+            else
+              result = "notenough"
+              result_price = 5
+            end
+          else
+            result = "outofstock"
+          end
+        else
+          result = "donthave"
+        end --jci please dont kill me
       elseif texttofn(mt[2]) then
         
       else
