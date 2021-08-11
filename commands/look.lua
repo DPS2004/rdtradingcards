@@ -419,13 +419,13 @@ function command.run(message, mt)
       message.channel:send{embed = {
         color = 0x85c5ff,
         title = "Looking at Wolf...",
-        description = 'TODO',
+        description = 'The **Wolf** looks up and gives a friendly wave. They seem quite content with where they are at, but you can see a small amount of sadness in their eyes.',
       }}
     elseif (request == "ghost")  then 
       message.channel:send{embed = {
         color = 0x85c5ff,
         title = "Looking at Ghost...",
-        description = 'TODO',
+        description = 'The **Ghost** stands idily by, making sure the shop remains safe. You can tell it is constantly internally screaming.',
       }}
     else
       found = false
