@@ -2099,7 +2099,8 @@
           "smell": "A Nice Cup o' Joe",
           "season": 7,
           "bonuses": {
-            "okamiiscollar": true
+            "okamiiscollar": true,
+			"cafemixtape": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872161241643233300/baristar.png"
         },
@@ -2112,7 +2113,7 @@
           "smell": "A Nice Cup o' Joe",
           "season": 7,
           "bonuses": {
-            
+            "cafemixtape": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872138749415395358/baristasr.png"
         },
@@ -2125,7 +2126,7 @@
           "smell": "A Nice Cup o' Joe",
           "season": 7,
           "bonuses": {
-            
+            "cafemixtape": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872138750682075236/baristaur.png"
         },
@@ -2138,6 +2139,7 @@
           "smell": "A Nice Cup o' Joe",
           "season": 7,
           "bonuses": {
+		    "cafemixtape": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872167858208116826/baristac.png"
         }

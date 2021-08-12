@@ -9,7 +9,7 @@
   },
   "decaf" : {
     "name": "Decaf",
-    "description": "The next card you pull is guaranteed to contain Cole Brew or a barista. You can only use one item of this type at a time.",
+    "description": "The next card you pull is guaranteed to contain Cole Brew or a coffeeshop worker. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873730443999068210/decaf.png",
     "baseprice": 3,
     "chance":10
