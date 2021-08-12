@@ -791,14 +791,23 @@ function command.run(message, mt, overwrite)
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
       local osj = dpf.loadjson("vips_out/cache/shop/lastshop.json", {})
       
+      
       if json.encode(sj) ~= json.encode(osj) then--holy shit why
-        
+        local darkener = vips.Image.new_from_file("assets/darkener.png")
         print("remaking shop")
         local base = vips.Image.new_from_file("assets/shop/base.png")
         local item = vips.Image.new_from_file(getitemthumb(sj.item))
+        if sj.itemstock == 0 then
+          item = item:Colourspace('b-w')
+          item = item:composite2(darkener,"over")
+        end
         base = base:composite2(item,"over",{x=900,y=420})
         for i,v in pairs(sj.consumables) do
           item = vips.Image.new_from_file(getitemthumb(v.name,true))
+          if v.stock == 0 then
+            item = item:Colourspace('b-w')
+            item = item:composite2(darkener,"over")
+          end
           base = base:composite2(item,"over",{x=260 + (i-1)*213 ,y=420})
           i = i + 1
         end 
@@ -816,6 +825,10 @@ function command.run(message, mt, overwrite)
           end
           
           card = vips.Image.new_from_file(getcardthumb(v.name))
+          if v.stock == 0 then
+            card = card:Colourspace('b-w')
+            card = card:composite2(darkener,"over")
+          end
           base = base:composite2(card,"over",{x=x,y=y})
         end
             
