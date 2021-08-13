@@ -123,6 +123,7 @@ function command.run(message, mt, overwrite)
     }
     
     _G['defaultshopsave'] = {
+      lastrefresh = 0,
       consumables = {
         {
           name = "caffeinatedsoda",
@@ -840,6 +841,18 @@ function command.run(message, mt, overwrite)
     getshopimage()
     
     
+    _G['checkforreload'] = function(days) 
+      local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
+      print(days .. "days")
+      if days >= sj.lastrefresh + 46/24 then
+        stockshop()
+        sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
+        sj.lastrefresh = sj.lastrefresh + 46/24
+        dpf.savejson("savedata/shop.json", sj)
+      end
+      
+    end
+    
     _G['stockshop'] = function()
       local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
@@ -876,7 +889,7 @@ function command.run(message, mt, overwrite)
         
         
         
-        newcards[i] = {name = nc,stock = math.random(10,20), price = price}
+        newcards[i] = {name = nc,stock = math.random(5,15), price = price}
         sj.cards = newcards
       end
       ---------------------------------------------item
@@ -888,6 +901,7 @@ function command.run(message, mt, overwrite)
         end
       end
       sj.item = itempt[math.random(#itempt)]
+      sj.itemstock = math.random(5,15)
       -----------------------consumables
       local newconsumables = {{name="",stock=0,price=0},{name="",stock=0,price=0},{name="",stock=0,price=0}}
       for i,v in ipairs(sj.consumables) do
@@ -907,7 +921,7 @@ function command.run(message, mt, overwrite)
           end
         end
 
-        newconsumables[i] = {name = nc,stock = math.random(10,20), price = consumabledb[nc].baseprice + math.random(-1,1)}
+        newconsumables[i] = {name = nc,stock = math.random(5,15), price = consumabledb[nc].baseprice + math.random(-1,1)}
         
       end
       sj.consumables = newconsumables

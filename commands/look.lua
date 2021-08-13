@@ -401,6 +401,8 @@ function command.run(message, mt)
       
     local request = string.lower(mt[1]) --why tf didint i do this for all the other ones?????????????????
     if (request == "shop" or request == "quaintshop" or request == "quaint shop" or request == "")  then 
+      local time = sw:getTime()
+      checkforreload(time:toDays())
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
       message.channel:send{ ---todo: make this an embed
         content = 'The **Quaint Shop** is filled with cards and card accessories, all sold by the **Wolf.** It seems to be doing a pretty good job at running the business. The **Ghost** in the corner is standing guard, watching over the store.',
@@ -419,7 +421,7 @@ function command.run(message, mt)
       message.channel:send{embed = {
         color = 0x85c5ff,
         title = "Looking at Wolf...",
-        description = 'The **Wolf** looks up and gives a friendly wave. They seem quite content with where they are at, but you can see a small amount of sadness in their eyes.',
+        description = 'The **Wolf** looks up and gives a friendly wave. They seem quite content with where they are at, but you can see a small amount of worry in their eyes.',
       }}
     elseif (request == "ghost")  then 
       message.channel:send{embed = {

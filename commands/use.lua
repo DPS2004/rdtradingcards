@@ -349,6 +349,7 @@ function command.run(message, mt,bypass)
   end
   if (uj.room == 5) then ----------------------------------------------------------SHOP
     if request == "shop" then
+      checkforreload(time:toDays())
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
       local result = ""
       local sprice = 0
