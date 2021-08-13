@@ -934,6 +934,27 @@ function command.run(message, mt, overwrite)
       
       
     end
+    _G['shophas'] = function (x)
+      print("hhh")
+      local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
+      local found = false
+      for i,v in ipairs(sj.consumables) do
+        if v.name == x then
+          found = true
+        end
+      end
+      for i,v in ipairs(sj.cards) do
+        if v.name == x then
+          found = true
+        end
+      end
+      if sj.item == x then
+        found = true
+      end
+      print(x)
+      print(found)
+      return found
+    end
 
     print("getchickimage")
     _G['getchickimage'] = function (userid)

@@ -36,7 +36,7 @@ function command.run(message, mt)
     return
   end
 
-  if (not uj.items[curfilename]) and (not uj.consumables[curfilename]) then
+  if ((not uj.items[curfilename]) and (not uj.consumables[curfilename])) and (not shophas(curfilename)) then
     print("user doesnt have item")
     if nopeeking then
       message.channel:send("Sorry, but I either could not find the " .. mt[1] .. " item in the database, or you do not have it. Make sure that you spelled it right!")

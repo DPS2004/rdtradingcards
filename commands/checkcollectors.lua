@@ -24,14 +24,21 @@ function command.run(message, mt,mc)
           uj.storage[newcard] = uj.storage[newcard] + 1
         end
         local ncn = fntoname(newcard)
-        mc:send{embed = {
-          color = 0x85c5ff,
-          title = "Congratulations!",
-          description = 'After collecting and storing some other cards, '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to '..uj.pronouns["their"]..' storage.',
-          image = {
-            url = getcardembed(newcard)
-          }
-        }}
+        if not getcardspoiler(curfilename) then
+          mc:send{embed = {
+            color = 0x85c5ff,
+            title = "Congratulations!",
+            description = 'After collecting and storing some other cards, '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to '..uj.pronouns["their"]..' storage.',
+            image = {
+              url = getcardembed(newcard)
+            }
+          }}
+        else
+          message.channel:send{
+          content = '**Congratulations!**\nAfter collecting and storing some other cards, '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to '..uj.pronouns["their"]..' storage.',
+          file = "card_images/SPOILER_" .. curfilename .. ".png"
+        }
+        end
       else
         print("no card for you lol")
       end
