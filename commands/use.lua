@@ -470,10 +470,12 @@ function command.run(message, mt,bypass)
       end
       
       
+    
+    
+    else
+      found = false
     end
-    
   end
-    
   if (not found) and (not bypass) then ----------------------------------NON-ROOM ITEMS GO HERE!-------------------------------------------------
     if request == "token"  then
       if uj.tokens > 0 then
@@ -482,6 +484,24 @@ function command.run(message, mt,bypass)
         message.channel:send('Sadly, you do not have any **Tokens**.')
       end
       uj.timesused = uj.timesused and uj.timesused + 1 or 1
+    elseif constexttofn(request) then
+      print("using consumable")
+      
+      request = constexttofn(request)
+      if uj.consumables[request] then
+        if not uj.skipprompts then
+          ynbuttons(message,{
+            color = 0x85c5ff,
+            title = "Using " .. consfntoname(request) .. "...",
+            description = "Do you want to use your **" .. consfntoname(request) .. "**?",
+          },"useconsumable",{crequest=request,mt=mt})
+        else
+          cmdcons[request].run(uj,"savedata/" .. message.author.id .. ".json",message,mt)
+        end
+      else
+        message.channel:send("Sorry, but you don't have the **" .. consfntoname(request) .. "** item.")
+      end
+      
     else
       message.channel:send("Sorry, but I don't know how to use " .. mt[1] .. ".")
     end

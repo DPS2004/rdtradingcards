@@ -76,6 +76,9 @@ function command.run(message, mt, overwrite)
     cmdre.usemousehole = dofile('reactions/usemousehole.lua')
     cmdre.usebox = dofile('reactions/usebox.lua')
     cmdre.buy = dofile('reactions/buy.lua')
+    cmdre.useconsumable = dofile('reactions/useconsumable.lua')
+    
+    cmdcons.xraygoggles = dofile('consumables/xraygoggles.lua')
     
     print("done loading reactions")
 
@@ -585,7 +588,7 @@ function command.run(message, mt, overwrite)
         }
       })
       local tf = dpf.loadjson("savedata/events.json",{})
-      local newevent = {ujf = ("savedata/" .. message.author.id .. ".json") ,etype = etype,ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString, avatarURL = message.author.avatarURL}}}
+      local newevent = {ujf = ("savedata/" .. message.author.id .. ".json") ,etype = etype,ogmessage = {channel = {id = message.channel.id}, id = message.id, author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString, avatarURL = message.author.avatarURL}}}
       for k,v in pairs(data) do
         newevent[k] = v
       end

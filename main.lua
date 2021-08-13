@@ -19,6 +19,8 @@ _G['cmd'] = {}
 -- import reaction commands
 _G['cmdre'] = {}
 
+_G['cmdcons'] = {}
+
 local rdb = dofile('commands/reloaddb.lua')
 rdb.run(nil,nil,true)
 print("exited rdb.run")
