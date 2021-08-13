@@ -16,8 +16,12 @@ function command.run(message, mt)
     uj.equipped = "nothing"
     dpf.savejson("savedata/" .. message.author.id .. ".json", uj)
   end
+  if not uj.consumables then
+    uj.consumables = {}
+  end
   
   for k in pairs(uj.items) do numitems = numitems + 1 end
+  for k in pairs(uj.consumables) do numitems = numitems + 1 end
   local maxpn = math.ceil(numitems / 10)
   pagenumber = math.min(pagenumber, maxpn)
   print("Page number is " .. pagenumber)
@@ -27,6 +31,9 @@ function command.run(message, mt)
 
   for k,v in pairs(uj.items) do
     if v then table.insert(invtable, "**" .. itemdb[k].name .. "**" .. (uj.equipped == k and " (equipped)" or "") .. "\n") end
+  end
+  for k,v in pairs(uj.consumables) do
+    table.insert(invtable,"**".. consfntoname(k)  .. "** x" .. v .. "\n")
   end
   table.sort(invtable)
 
