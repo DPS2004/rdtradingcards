@@ -1012,7 +1012,7 @@
           "name": "Intern (Discontinued Alternate)",
           "type": "Discontinued",
           "description": "(Art by Winston Lee)",
-          "smell": "Senior Doctor",
+          "smell": "Senior Doctors",
           "season": 7,
           "bonuses": {
             "oversizedstethoscope": true
@@ -2155,7 +2155,7 @@
           "name": "Cockatiel (Rare)",
           "type": "Rare",
           "description": "(Art by Winston Lee)",
-          "smell": "Meat",
+          "smell": "Bananas",
           "season": 7,
           "bonuses": {
             "okamiiscollar": true,
@@ -2169,7 +2169,7 @@
           "name": "Cockatiel (Super Rare)",
           "type": "Super Rare",
           "description": "(Art by Plant Guy)",
-          "smell": "Meat",
+          "smell": "Bananas",
           "season": 7,
           "bonuses": {
             "deluxebirdseed": true
@@ -2182,7 +2182,7 @@
           "name": "Cockatiel (Ultra Rare)",
           "type": "Ultra Rare",
           "description": "(Art by Vapor)",
-          "smell": "Meat",
+          "smell": "Bananas",
           "season": 7,
           "bonuses": {
             "deluxebirdseed": true
@@ -2195,7 +2195,7 @@
           "name": "Cockatiel (Collector's)",
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Cockatiel (Art by Penny)",
-          "smell": "Meat",
+          "smell": "Bananas",
           "season": 7,
           "bonuses": {
             "deluxebirdseed": true
@@ -2705,7 +2705,7 @@
           "bonuses": {
             
           },
-          "embed": "https://cdn.discordapp.com/attachments/865407405092503582/866479549184475166/image0.jpg"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875545496331092018/unbeatablegroup.png"
         },
         {
           "chance": 1,
@@ -2713,7 +2713,7 @@
           "name": "The Hugh Group",
           "type": "Ultra Rare",
           "description": "(Art by Lumina, based on art by Kyle Labriola)",
-          "smell": "30 Dollar Haircuts",
+          "smell": "Mistaken Identities",
           "season": 7,
           "bonuses": {
             "lostnametag": true
@@ -2831,12 +2831,12 @@
           "name": "The Hugh Group (Collector's)",
           "type": "Collector's",
           "description": "Requires Politician (Collector's), Farmer (Collector's), and The Hugh Group (Art by Lumina, based on art by Kyle Labriola)",
-          "smell": "30 Dollar Haircuts",
+          "smell": "Mistaken Identities",
           "season": 7,
           "bonuses": {
             "lostnametag": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875276401958334484/hughgroupc.png"
         },
         {
           "chance": 0,
@@ -4543,7 +4543,7 @@
           "filename": "rodneyr",
           "name": "Rodney (Rare)",
           "type": "Rare",
-          "description": "(Art by DPS2004(?))",
+          "description": "(Art by Xeno, DPS2004)",
           "smell": "Disorganization",
           "season": 7,
           "bonuses": {
@@ -4567,11 +4567,11 @@
           "filename": "rodneyur",
           "name": "Rodney (Ultra Rare)",
           "type": "Ultra Rare",
-          "description": "(Art by TatonSlice)",
+          "description": "(Art by Kin)",
           "smell": "Disorganization",
           "season": 7,
           "bonuses": {},
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875547348707717150/rodneyur.png"
         },
         {
           "chance": 0,
@@ -4582,7 +4582,7 @@
           "smell": "Disorganization",
           "season": 7,
           "bonuses": {},
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875547347390709871/rodneyc.png"
         }
       ]
     }
