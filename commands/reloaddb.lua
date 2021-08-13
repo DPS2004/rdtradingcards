@@ -79,6 +79,7 @@ function command.run(message, mt, overwrite)
     cmdre.useconsumable = dofile('reactions/useconsumable.lua')
     
     cmdcons.xraygoggles = dofile('consumables/xraygoggles.lua')
+    cmdcons.breadcrumbs = dofile('consumables/breadcrumbs.lua')
     
     print("done loading reactions")
 
@@ -89,6 +90,7 @@ function command.run(message, mt, overwrite)
       medals = {},
       items = {nothing = true},
       equipped = "nothing",
+      conspt = "none",
       lastpull = -24,
       lastprayer = -7,
       lastequip = -24,
@@ -188,14 +190,19 @@ function command.run(message, mt, overwrite)
     _G['ptable'] = {}
     _G['seasontable'] = {}
     _G['cdb'] = {}
+    _G['constable'] = {}
 
     for k, q in pairs(itemdb) do
       ptable[k] = {}
+      constable[k] = {}
       for i, v in ipairs(cdata.groups) do
         for w, x in ipairs(v.cards) do
           local cmult = 1
           if x.bonuses[k] then
             cmult = 10 -- might tweak this??
+            for y=1, (cdata.basemult * v.basechance * x.chance) do
+              table.insert(constable[k],x.filename)
+            end
           end
           for y = 1, (cdata.basemult * v.basechance * x.chance * cmult) do
             table.insert(ptable[k],x.filename)
