@@ -21,11 +21,11 @@ function command.run(message, mt)
   if not mt[1] then
     mt[1] = ""
   end
-  if texttofn(mt[1]) or itemtexttofn(mt[1]) or medaltexttofn(mt[1]) then
+  if texttofn(mt[1]) or itemtexttofn(mt[1]) or constexttofn(mt[1]) or medaltexttofn(mt[1]) then
     if (nopeeking and (uj.inventory[texttofn(mt[1])] or uj.storage[texttofn(mt[1])] or uj.items[itemtexttofn(mt[1])] or uj.medals[medaltexttofn(mt[1])])) or not nopeeking then
       if texttofn(mt[1]) then
         cmd.show.run(message, mt)
-      elseif itemtexttofn(mt[1]) then
+      elseif itemtexttofn(mt[1]) or constexttofn(mt[1]) then
         cmd.showitem.run(message, mt)
       elseif medaltexttofn(mt[1]) then
         cmd.showmedal.run(message, mt)
