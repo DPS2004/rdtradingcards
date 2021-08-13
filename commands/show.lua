@@ -18,7 +18,7 @@ function command.run(message, mt)
     return
   end
 
-  if not ((uj.inventory[curfilename] or uj.storage[curfilename]) and (not shophas(curfilename)) then
+  if not ((uj.inventory[curfilename] or uj.storage[curfilename])) and (not shophas(curfilename)) then
     print("user doesnt have card")
     if nopeeking then
       message.channel:send("Sorry, but I either could not find the " .. mt[1] .. " card in the database, or you do not have it. Make sure that you spelled it right!")
