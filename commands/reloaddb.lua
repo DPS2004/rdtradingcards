@@ -935,7 +935,6 @@ function command.run(message, mt, overwrite)
       
     end
     _G['shophas'] = function (x)
-      print("hhh")
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
       local found = false
       for i,v in ipairs(sj.consumables) do
@@ -951,8 +950,6 @@ function command.run(message, mt, overwrite)
       if sj.item == x then
         found = true
       end
-      print(x)
-      print(found)
       return found
     end
 

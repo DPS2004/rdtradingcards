@@ -52,7 +52,7 @@
     "receive": "s6maestro"
   },
   {
-    "require": "function checkrequirements(uj) print('checking all cards') local result = false local cardcount = 0 for k, v in pairs(uj.storage) do print(k) if v > 0 then cardcount = cardcount + 1 end end print('storage card count is ' .. cardcount .. ' out of ' .. #cdb) if cardcount >= #cdb then result = true end return result end return checkrequirements",
+    "require": "function checkrequirements(uj) print('checking all cards') local result = false local cardcount = 0 for k, v in pairs(uj.storage) do print(k) if v > 0 then cardcount = cardcount + 1 end end print('storage card count is ' .. cardcount .. ' out of ' .. #cdb) if cardcount >= #cdb - 1 then result = true end return result end return checkrequirements",
     "receive": "cardmaestro"
   },
   {
