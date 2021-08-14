@@ -10,6 +10,11 @@ function item.run(uj,ujf,message,mt)
   if uj.consumables.xraygoggles == 0 then
     uj.consumables.xraygoggles = nil
   end
+  if not uj.timesitemused then 
+    uj.timesitemused = 1 
+  else
+    uj.timesitemused = uj.timesitemused + 1
+  end
   dpf.savejson(ujf,uj)
   message.author:send("The **Mysterious Box** contains:\n"..boxstring)
   

@@ -98,6 +98,13 @@
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873730446708584478/giftairstrike.png",
     "baseprice": 35,
     "chance":1
+  },
+  "megaphone": {
+    "name": "Megaphone",
+    "description": "Sends a message in #trading-cards from the RDCards bot.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875927481679487036/megaphone.png",
+    "baseprice": 10,
+    "chance":10
   }
   
   

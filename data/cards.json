@@ -2718,7 +2718,7 @@
           "bonuses": {
             "lostnametag": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873789758055280670/hughgroup.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875670682502049822/hughgroup.png"
         },
         {
           "chance": 1,
@@ -2731,7 +2731,7 @@
           "bonuses": {
             "cafemixtake": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873789828456644658/coffeegroup.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875670644229042176/coffeegroup.png"
         },
         {
           "chance": 0,
@@ -2836,7 +2836,7 @@
           "bonuses": {
             "lostnametag": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875276401958334484/hughgroupc.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875670680182591528/hughgroupc.png"
         },
         {
           "chance": 0,
@@ -2849,7 +2849,7 @@
           "bonuses": {
             "cafemixtake": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875670648788238396/coffeegroupc.png"
         }
       ]
     },
@@ -4006,6 +4006,62 @@
             "deviltail": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873246652742397972/pools.png"
+        },
+        {
+          "chance": 2,
+          "filename": "bornsurvivor",
+          "name": "Born Survivor",
+          "type": "Super Rare",
+          "description": "(Level by Noche)",
+          "smell": "Future Doubts",
+          "season": 7,
+          "bonuses": {
+            "rustysword": true,
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875934908936224788/bornsurvivor.png"
+        },
+        {
+          "chance": 2,
+          "filename": "csqn",
+          "name": "CSQN",
+          "type": "Super Rare",
+          "description": "(Level by DPS2004 and Rikri)",
+          "smell": "Motion Sickness",
+          "season": 7,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875934906142830622/csqn.png"
+        },
+        {
+          "chance": 2,
+          "filename": "hollowbastion",
+          "name": "Hollow Bastion",
+          "type": "Super Rare",
+          "description": "(Level by Nocallia)",
+          "smell": "Convoluted Storylines",
+          "season": 7,
+          "bonuses": {
+            "rustysword": true,
+	    "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875934910408425542/hollowbastion.png"
+        },
+        {
+          "chance": 2,
+          "filename": "mypiano",
+          "name": "My Piano Is Escaping (8bit)",
+          "type": "Super Rare",
+          "description": "(Level by BluPen)",
+          "smell": "Old Platformers",
+          "season": 7,
+          "bonuses": {
+            "cafemixtape": true,
+	    "oversizedstethoscope": true,
+	    "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875934909166936124/mypiano.png"
         }
       ]
     },

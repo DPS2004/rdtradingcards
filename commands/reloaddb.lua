@@ -88,6 +88,7 @@ function command.run(message, mt, overwrite)
     cmdcons.secretadmirersnote = dofile('consumables/secretadmirersnote.lua')
     cmdcons.stickontabs = dofile('consumables/stickontabs.lua')
     cmdcons.tapiocapudding = dofile('consumables/tapiocapudding.lua')
+    cmdcons.megaphone = dofile('consumables/megaphone.lua')
     
     print("done loading reactions")
 
