@@ -24,7 +24,7 @@ function command.run(message, mt,mc)
           uj.storage[newcard] = uj.storage[newcard] + 1
         end
         local ncn = fntoname(newcard)
-        if not getcardspoiler(curfilename) then
+        if not getcardspoiler(newcard) then
           mc:send{embed = {
             color = 0x85c5ff,
             title = "Congratulations!",
@@ -36,7 +36,7 @@ function command.run(message, mt,mc)
         else
           message.channel:send{
           content = '**Congratulations!**\nAfter collecting and storing some other cards, '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to '..uj.pronouns["their"]..' storage.',
-          file = "card_images/SPOILER_" .. curfilename .. ".png"
+          file = "card_images/SPOILER_" .. newcard .. ".png"
         }
         end
       else
