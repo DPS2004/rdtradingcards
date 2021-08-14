@@ -164,15 +164,10 @@ end)
 print("yay got past load ready")
 
 client:on('messageCreate', function(message)
-  --print("hi")
   handlemessage(message)
 end)
 
 print("ok commands loaded, doing reactions")
-
-client:on('reactionAdd', function(reaction, userid)
-  handlereaction(reaction,userid)
-end)
 
 print("Resetting clocks...")
 resetclocks()
