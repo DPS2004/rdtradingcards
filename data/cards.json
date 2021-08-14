@@ -12,7 +12,7 @@
       "cards": [
         {
           "chance": 2,
-          "filename": "bwinsomniac",
+          "filename": "bi",
           "name": "Battleworn Insomniac",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
@@ -25,7 +25,7 @@
         },
         {
           "chance": 2,
-          "filename": "samuraitechno",
+          "filename": "techno",
           "name": "Samurai Techno",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
@@ -38,7 +38,7 @@
         },
         {
           "chance": 1,
-          "filename": "samuraidubstep",
+          "filename": "dubstep",
           "name": "Samurai Dubstep",
           "type": "Ultra Rare",
           "smell": "The Future",
@@ -50,7 +50,7 @@
         },
         {
           "chance": 2,
-          "filename": "allthetimes",
+          "filename": "att",
           "name": "All The Times",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
@@ -63,7 +63,7 @@
         },
         {
           "chance": 2,
-          "filename": "oneshiftmore",
+          "filename": "osm",
           "name": "One Shift More",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
@@ -89,7 +89,7 @@
         },
         {
           "chance": 1,
-          "filename": "superbattleworninsomniac",
+          "filename": "sbi",
           "name": "Super Battleworn Insomniac",
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
@@ -131,7 +131,7 @@
         },
         {
           "chance": 1,
-          "filename": "artexercise",
+          "filename": "artex",
           "name": "Art Exercise",
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
@@ -157,7 +157,7 @@
         },
         {
           "chance": 1,
-          "filename": "wishicouldcareless",
+          "filename": "careless",
           "name": "wish i could care less",
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
@@ -237,7 +237,7 @@
         },
         {
           "chance": 1,
-          "filename": "rhythmdogtor",
+          "filename": "dogtor",
           "name": "Rhythm Dogtor",
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
@@ -306,7 +306,7 @@
         },
         {
           "chance": 1,
-          "filename": "fgirlfriend",
+          "filename": "mfg",
           "name": "My Future Girlfriend",
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
@@ -3253,7 +3253,7 @@
         },
         {
           "chance": 2,
-          "filename": "whydontyouplaythem",
+          "filename": "whydontyou",
           "name": "Why Don't You Play Them?",
           "type": "Super Rare",
           "description": "(Level by Colon)",
@@ -3266,7 +3266,7 @@
         },
         {
           "chance": 0,
-          "filename": "mylevelcrystalline",
+          "filename": "mycrystal",
           "name": "My Level, Crystalline",
           "type": "Collector's",
           "description": "Requires My Level and Crystalline (Level by auth, Noche, and notDonte)",
@@ -3405,7 +3405,7 @@
         },
         {
           "chance": 2,
-          "filename": "patchworkstaccato",
+          "filename": "patchwork",
           "name": "Patchwork Staccato",
           "type": "Super Rare",
           "description": "(Level by lugi, Qerewe, and Seven)",
@@ -4291,7 +4291,7 @@
       "cards": [
         {
           "chance": 3,
-          "filename": "bigbadbirdr",
+          "filename": "bbbr",
           "name": "Big Bad Bird (Rare)",
           "type": "Rare",
           "description": "(Art by Noche)",
@@ -4305,7 +4305,7 @@
         },
         {
           "chance": 2,
-          "filename": "bigbadbirdsr",
+          "filename": "bbbsr",
           "name": "Big Bad Bird (Super Rare)",
           "type": "Super Rare",
           "description": "(Art by Noche)",
@@ -4318,7 +4318,7 @@
         },
         {
           "chance": 1,
-          "filename": "bigbadbirdur",
+          "filename": "bbbur",
           "name": "Big Bad Bird (Ultra Rare)",
           "type": "Ultra Rare",
           "description": "(Art by Noche)",
@@ -4331,7 +4331,7 @@
         },
         {
           "chance": 0,
-          "filename": "bigbadbirdc",
+          "filename": "bbbc",
           "name": "Big Bad Bird (Collector's)",
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Big Bad Bird (Art by Noche)",
