@@ -4585,6 +4585,83 @@
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875547347390709871/rodneyc.png"
         }
       ]
+    },
+	  {
+      "groupname": "----------------------------------------COLLAB CHARACTERS------------------------------------------------",
+      "basechance": 0,
+      "cards": []
+    },
+    {
+      "groupname": "quaver",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "quaverr",
+          "name": "Quaver (Rare)",
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "Intense Vibing",
+          "season": 7,
+          "bonuses": {
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/875763678492889088/quaverr.png"
+        } 
+      ]
+    },
+    {
+      "groupname": "beat",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "beatr",
+          "name": "Beat (Rare)",
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "Musical Crimes",
+          "season": 7,
+          "bonuses": {
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/875762063274811432/beatr.png"
+        } 
+      ]
+    },
+    {
+      "groupname": "treble",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "trebler",
+          "name": "Treble (Rare)",
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "Sick Piano Solos",
+          "season": 7,
+          "bonuses": {
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/875762059399274506/trebler.png"
+        } 
+      ]
+    },
+    {
+      "groupname": "clef",
+      "basechance": 3,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "clefr",
+          "name": "Clef (Rare)",
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "Bass Kick",
+          "season": 7,
+          "bonuses": {
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/875762060640804884/clefr.png"
+        } 
+      ]
     }
   ]
 }
