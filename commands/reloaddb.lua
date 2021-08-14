@@ -80,6 +80,7 @@ function command.run(message, mt, overwrite)
     
     cmdcons.xraygoggles = dofile('consumables/xraygoggles.lua')
     cmdcons.breadcrumbs = dofile('consumables/breadcrumbs.lua')
+    cmdcons.megaphone = dofile('consumables/megaphone.lua')
     
     print("done loading reactions")
 

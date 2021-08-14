@@ -262,6 +262,8 @@ function command.run(message, mt,bypass)
         elseif string.lower(mt[2]) == "stats" then
           if not uj.timespulled then uj.timespulled = 0 end
           if not uj.timesshredded then uj.timesshredded = 0 end
+          if not uj.timesused then uj.timesused = 0 end
+          if not uj.timesitemused then uj.timesitemused = 0 end
           if not uj.timesprayed then uj.timesprayed = 0 end
           if not uj.timesstored then uj.timesstored = 0 end
           if not uj.timestraded then uj.timestraded = 0 end
@@ -271,7 +273,7 @@ function command.run(message, mt,bypass)
           if not uj.timescardreceived then uj.timescardreceived = 0 end
           if not uj.timeslooked then uj.timeslooked = 0 end
           if not uj.timesdoubleclicked then uj.timesdoubleclicked = 0 end
-          embeddescription = 'The **Terminal** prints out a slip of paper. It reads:\n`Times Pulled: ' .. uj.timespulled .. '\nTimes Used: ' .. uj.timesused .. '\nTimes Looked: ' .. uj.timeslooked .. '\nTimes Prayed: ' .. uj.timesprayed .. '\nTimes Shredded: ' .. uj.timesshredded .. '\nTimes Stored: ' .. uj.timesstored .. '\nTimes Traded: ' .. uj.timestraded .. '\nTimes Peculiar Box has been Used: ' .. uj.timesusedbox .. '\nTimes Doubleclicked: ' .. uj.timesdoubleclicked .. '\nTokens Donated: ' .. uj.tokensdonated .. '\nCards Given: ' .. uj.timescardgiven .. '\nCards Received: ' .. uj.timescardreceived .. (math.random(100) == 1 and "\nRemember, the Factory is watching!" or "") .. '`'
+          embeddescription = 'The **Terminal** prints out a slip of paper. It reads:\n`Times Pulled: ' .. uj.timespulled .. '\nTimes Used: ' .. uj.timesused .. '\nTimes Looked: ' .. uj.timeslooked .. '\nTimes Prayed: ' .. uj.timesprayed .. '\nTimes Shredded: ' .. uj.timesshredded .. '\nTimes Stored: ' .. uj.timesstored .. '\nTimes Traded: ' .. uj.timestraded .. '\nTimes Peculiar Box has been Used: ' .. uj.timesusedbox .. '\nTimes Doubleclicked: ' .. uj.timesdoubleclicked .. '\nTokens Donated: ' .. uj.tokensdonated .. '\nCards Given: ' .. uj.timescardgiven .. '\nItems Used: ' .. uj.timesitemused .. '\nCards Received: ' .. uj.timescardreceived .. (math.random(100) == 1 and "\nRemember, the Factory is watching!" or "") .. '`'
         elseif string.lower(mt[2]) == "credits" then
           embedtitle = "Credits"
           embeddescription = 'https://docs.google.com/document/d/1WgUqA8HNlBtjaM4Gpp4vTTEZf9t60EuJ34jl2TleThQ/edit?usp=sharing'

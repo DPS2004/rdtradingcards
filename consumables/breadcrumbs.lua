@@ -7,8 +7,14 @@ function item.run(uj,ujf,message,mt)
     if uj.consumables.breadcrumbs == 0 then
       uj.consumables.breadcrumbs = nil
     end
-    
+    if not uj.timesitemused then 
+      uj.timesitemused = 1 
+    else
+      uj.timesitemused = uj.timesitemused + 1
+    end
+      
     uj.conspt = "deluxebirdseed"
+    
     dpf.savejson(ujf,uj)
     message.channel:send("You eat the **Breadcrumbs.**")
   else
