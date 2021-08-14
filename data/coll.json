@@ -233,6 +233,10 @@
   },
   {
     "require": [
+      "quaverr",
+      "beatr",
+      "trebler",
+      "clefr",
       "unbeatablegroup"
     ],
     "receive": "doctorgroupc"

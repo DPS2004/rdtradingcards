@@ -38,9 +38,17 @@ local time = sw:getTime()
 
   message.channel:send('Pulling card...')
   local pulledcards = {ptable[uj.equipped][math.random(#ptable[uj.equipped])]}
-  if uj.equipped == "fixedmouse" and math.random(6) == 1 then
-    table.insert(pulledcards, ptable[uj.equipped][math.random(#ptable[uj.equipped])])
-    uj.timesdoubleclicked = uj.timesdoubleclicked and uj.timesdoubleclicked + 1 or 1
+  if not uj.conspt then
+    uj.conspt = "none"
+  end
+  if uj.conspt == "none" then
+    if uj.equipped == "fixedmouse" and math.random(6) == 1 then
+      table.insert(pulledcards, ptable[uj.equipped][math.random(#ptable[uj.equipped])])
+      uj.timesdoubleclicked = uj.timesdoubleclicked and uj.timesdoubleclicked + 1 or 1
+    end
+  else
+    pulledcards= { constable[uj.conspt][math.random(#constable[uj.conspt])] }
+    uj.conspt = "none"
   end
 
   for i, v in ipairs(pulledcards) do

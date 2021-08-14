@@ -76,6 +76,11 @@ function command.run(message, mt, overwrite)
     cmdre.usemousehole = dofile('reactions/usemousehole.lua')
     cmdre.usebox = dofile('reactions/usebox.lua')
     cmdre.buy = dofile('reactions/buy.lua')
+    cmdre.useconsumable = dofile('reactions/useconsumable.lua')
+    
+    cmdcons.xraygoggles = dofile('consumables/xraygoggles.lua')
+    cmdcons.breadcrumbs = dofile('consumables/breadcrumbs.lua')
+    cmdcons.megaphone = dofile('consumables/megaphone.lua')
     
     print("done loading reactions")
 
@@ -86,6 +91,7 @@ function command.run(message, mt, overwrite)
       medals = {},
       items = {nothing = true},
       equipped = "nothing",
+      conspt = "none",
       lastpull = -24,
       lastprayer = -7,
       lastequip = -24,
@@ -185,14 +191,19 @@ function command.run(message, mt, overwrite)
     _G['ptable'] = {}
     _G['seasontable'] = {}
     _G['cdb'] = {}
+    _G['constable'] = {}
 
     for k, q in pairs(itemdb) do
       ptable[k] = {}
+      constable[k] = {}
       for i, v in ipairs(cdata.groups) do
         for w, x in ipairs(v.cards) do
           local cmult = 1
           if x.bonuses[k] then
             cmult = 10 -- might tweak this??
+            for y=1, (cdata.basemult * v.basechance * x.chance) do
+              table.insert(constable[k],x.filename)
+            end
           end
           for y = 1, (cdata.basemult * v.basechance * x.chance * cmult) do
             table.insert(ptable[k],x.filename)
@@ -585,7 +596,7 @@ function command.run(message, mt, overwrite)
         }
       })
       local tf = dpf.loadjson("savedata/events.json",{})
-      local newevent = {ujf = ("savedata/" .. message.author.id .. ".json") ,etype = etype,ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString, avatarURL = message.author.avatarURL}}}
+      local newevent = {ujf = ("savedata/" .. message.author.id .. ".json") ,etype = etype,ogmessage = {channel = {id = message.channel.id}, id = message.id, author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString, avatarURL = message.author.avatarURL}}}
       for k,v in pairs(data) do
         newevent[k] = v
       end
@@ -935,7 +946,6 @@ function command.run(message, mt, overwrite)
       
     end
     _G['shophas'] = function (x)
-      print("hhh")
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
       local found = false
       for i,v in ipairs(sj.consumables) do
@@ -951,8 +961,6 @@ function command.run(message, mt, overwrite)
       if sj.item == x then
         found = true
       end
-      print(x)
-      print(found)
       return found
     end
 
