@@ -79,7 +79,15 @@ function command.run(message, mt, overwrite)
     cmdre.useconsumable = dofile('reactions/useconsumable.lua')
     
     cmdcons.xraygoggles = dofile('consumables/xraygoggles.lua')
+    cmdcons.decaf = dofile('consumables/decaf.lua')
+    cmdcons.beepingpager = dofile('consumables/beepingpager.lua')
     cmdcons.breadcrumbs = dofile('consumables/breadcrumbs.lua')
+    cmdcons.clownnose = dofile('consumables/clownnose.lua')
+    cmdcons.fancyteaset = dofile('consumables/fancyteaset.lua')
+    cmdcons.lunarrocks = dofile('consumables/lunarrocks.lua')
+    cmdcons.secretadmirersnote = dofile('consumables/secretadmirersnote.lua')
+    cmdcons.stickontabs = dofile('consumables/stickontabs.lua')
+    cmdcons.tapiocapudding = dofile('consumables/tapiocapudding.lua')
     
     print("done loading reactions")
 

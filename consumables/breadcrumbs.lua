@@ -7,12 +7,11 @@ function item.run(uj,ujf,message,mt)
     if uj.consumables.breadcrumbs == 0 then
       uj.consumables.breadcrumbs = nil
     end
-    
     uj.conspt = "deluxebirdseed"
     dpf.savejson(ujf,uj)
-    message.channel:send("You eat the **Breadcrumbs.**")
+    message.channel:send("You eat all of the **Breadcrumbs** yourself. Surely this will lure in some birds into your location.")
   else
-    message.channel:send("You already have a pull affecting item in use! The **Breadcrumbs** were not eaten.")
+    message.channel:send("You already have a pull affecting item in use! You decide against using the **Breadcrumbs** for now.")
   end
   
   

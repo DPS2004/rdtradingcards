@@ -493,7 +493,7 @@ function command.run(message, mt,bypass)
           ynbuttons(message,{
             color = 0x85c5ff,
             title = "Using " .. consfntoname(request) .. "...",
-            description = "Do you want to use your **" .. consfntoname(request) .. "**?",
+            description = "Do you want to use your **" .. consfntoname(request) .. "**? The item will be consumed in the process!",
           },"useconsumable",{crequest=request,mt=mt})
         else
           cmdcons[request].run(uj,"savedata/" .. message.author.id .. ".json",message,mt)
