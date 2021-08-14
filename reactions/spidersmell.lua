@@ -19,7 +19,7 @@ function reaction.run(ef, eom, reaction, userid)
 
   if reaction.emojiName == "❌" then
     print('user1 has denied')
-    reaction.message.channel:send("The Hand smells like nail polish.")
+    reaction.message.channel:send("The **Hand** smells like nail polish.")
   end
 end
 return reaction
