@@ -1877,9 +1877,7 @@
           "description": "(Art by Stamps)",
           "smell": "Sand",
           "season": 7,
-          "bonuses": {
-            
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875247802802929704/rattlesr.png"
         },
         {
@@ -1890,9 +1888,7 @@
           "description": "(Art by Emery)",
           "smell": "Sand",
           "season": 7,
-          "bonuses": {
-
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872353967278002196/rattleur.png"
         },
         {
@@ -1903,9 +1899,7 @@
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Rattle (Art by TrainThemAll)",
           "smell": "Sand",
           "season": 7,
-          "bonuses": {
-
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
         }
       ]
@@ -1935,9 +1929,7 @@
           "description": "(Art by Emery)",
           "smell": "Relaxation",
           "season": 7,
-          "bonuses": {
-            
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872154201575264316/loafysr.png"
         },
         {
@@ -1948,9 +1940,7 @@
           "description": "(Art by MokkaCat)",
           "smell": "Relaxation",
           "season": 7,
-          "bonuses": {
-            
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872153785185763408/loafyur.png"
         },
         {
@@ -1961,9 +1951,7 @@
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Loafy (Art by Vapor)",
           "smell": "Relaxation",
           "season": 7,
-          "bonuses": {
-
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875231308266213386/loafyc.png"
         }
       ]
@@ -2056,8 +2044,7 @@
           "description": "(Art by Peachy6206)",
           "smell": "Protein Shakes",
           "season": 7,
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872153740638031912/bodybuildersr.png"
         },
         {
@@ -2068,8 +2055,7 @@
           "description": "(Art by Emery)",
           "smell": "Protein Shakes",
           "season": 7,
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873788559251873792/bodybuilderur.png"
         },
         {
@@ -2080,8 +2066,7 @@
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Bodybuilder (Art by Pseuu)",
           "smell": "Protein Shakes",
           "season": 7,
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872153740323479572/bodybuilderc.png"
         }
       ]
@@ -2100,7 +2085,7 @@
           "season": 7,
           "bonuses": {
             "okamiiscollar": true,
-			"cafemixtape": true
+            "cafemixtape": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872161241643233300/baristar.png"
         },
@@ -2139,7 +2124,7 @@
           "smell": "A Nice Cup o' Joe",
           "season": 7,
           "bonuses": {
-		    "cafemixtape": true
+            "cafemixtape": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872167858208116826/baristac.png"
         }
@@ -2689,9 +2674,7 @@
           "description": "(Art by Peachy6206)",
           "smell": "Good Bois",
           "season": 7,
-          "bonuses": {
-            
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872146744169873428/animalgroup.png"
         },
         {
@@ -2702,9 +2685,7 @@
           "description": "(Art by MokkaCat)",
           "smell": "Crime",
           "season": 7,
-          "bonuses": {
-            
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875545496331092018/unbeatablegroup.png"
         },
         {
@@ -2807,9 +2788,7 @@
           "description": "Requires Loafy (Collector's), Rattle (Collector's), Dr. Spider (Collector's), and The Animal Group (Art by Peachy6026)",
           "smell": "Good Bois",
           "season": 7,
-          "bonuses": {
-            
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872146746841640960/animalgroupc.png"
         },
         {
@@ -2820,9 +2799,7 @@
           "description": "Requires PLACEHOLDER, and The Unbeatable Group (Art by MokkaCat)",
           "smell": "Crime",
           "season": 7,
-          "bonuses": {
-            
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872146753745457232/unbeatablegroupc.png"
         },
         {
@@ -3771,9 +3748,7 @@
           "description": "(Level by Nocallia)",
           "smell": "Eya",
           "season": 7,
-          "bonuses": {
-
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/575848843049172994/873225869739589662/firetemple.png"
         },
         {
@@ -3805,7 +3780,7 @@
         },
         {
           "chance": 2,
-          "filename": "longfall",
+          "filename": "alongfall",
           "name": "A Long Fall",
           "type": "Super Rare",
           "description": "(Level by Kamayana)",
@@ -3832,7 +3807,7 @@
             "paddedstickersheet": true,
             "cafemixtape": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/575848843049172994/873225850684854282/afterego.png"
+          "embed": "https://cdn.discordapp.com/attachments/715130269576855583/876066495816413255/alterego.png"
         },
         {
           "chance": 2,
@@ -3842,9 +3817,7 @@
           "description": "(Level by NoranOmicron)",
           "smell": "Grass",
           "season": 7,
-          "bonuses": {
-
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/575848843049172994/873225870410649610/wantgnomes.png"
         },
         {
@@ -3856,7 +3829,8 @@
           "smell": "Rhythm",
           "season": 7,
           "bonuses": {
-
+            "rustysword": true,
+            "oversizedstethoscope": true
           },
           "embed": "https://cdn.discordapp.com/attachments/575848843049172994/873226344417341460/lightscameraaction.gif"
         },
@@ -3882,7 +3856,8 @@
           "smell": "The PSP",
           "season": 7,
           "bonuses": {
-            "paddedstickersheet": true
+            "paddedstickersheet": true,
+            "deluxebirdseed": true
           },
           "embed": "https://cdn.discordapp.com/attachments/575848843049172994/873225866119880734/rainingstars.png"
         },
@@ -3974,9 +3949,7 @@
           "description": "(Level by Arkaan Muyassar)",
           "smell": "Terrible Jokes",
           "season": 7,
-          "bonuses": {
-            
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873243320581767198/doornook.png"
         },
         {
@@ -4044,7 +4017,7 @@
           "season": 7,
           "bonuses": {
             "rustysword": true,
-	    "paddedstickersheet": true
+            "paddedstickersheet": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875934910408425542/hollowbastion.png"
         },
@@ -4058,8 +4031,8 @@
           "season": 7,
           "bonuses": {
             "cafemixtape": true,
-	    "oversizedstethoscope": true,
-	    "paddedstickersheet": true
+            "oversizedstethoscope": true,
+            "paddedstickersheet": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875934909166936124/mypiano.png"
         }
@@ -4603,7 +4576,8 @@
           "smell": "Disorganization",
           "season": 7,
           "bonuses": {
-            "okamiiscollar": true
+            "okamiiscollar": true,
+            "oversizedstethoscope": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/870723597684072498/rodneyr.png"
         },
@@ -4615,7 +4589,9 @@
           "description": "(Art by Vapor)",
           "smell": "Disorganization",
           "season": 7,
-          "bonuses": {},
+          "bonuses": {
+            "oversizedstethoscope": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872801762543816744/rodneysr.png"
         },
         {
@@ -4626,7 +4602,9 @@
           "description": "(Art by Kin)",
           "smell": "Disorganization",
           "season": 7,
-          "bonuses": {},
+          "bonuses": {
+            "oversizedstethoscope": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875547348707717150/rodneyur.png"
         },
         {
@@ -4637,7 +4615,9 @@
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Rodney (Art by Stamps)",
           "smell": "Disorganization",
           "season": 7,
-          "bonuses": {},
+          "bonuses": {
+            "oversizedstethoscope": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875547347390709871/rodneyc.png"
         }
       ]
@@ -4659,8 +4639,7 @@
           "description": "(Art by RJ Lake)",
           "smell": "Intense Vibing",
           "season": 7,
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/875763678492889088/quaverr.png"
         } 
       ]
@@ -4677,8 +4656,7 @@
           "description": "(Art by RJ Lake)",
           "smell": "Musical Crimes",
           "season": 7,
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/875762063274811432/beatr.png"
         } 
       ]
@@ -4695,8 +4673,7 @@
           "description": "(Art by RJ Lake)",
           "smell": "Sick Piano Solos",
           "season": 7,
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/875762059399274506/trebler.png"
         } 
       ]
@@ -4713,8 +4690,7 @@
           "description": "(Art by RJ Lake)",
           "smell": "Bass Kick",
           "season": 7,
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/875762060640804884/clefr.png"
         } 
       ]
