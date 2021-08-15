@@ -708,6 +708,7 @@ function command.run(message, mt, overwrite)
     addcommand("p",cmd.pull)
     addcommand("b",cmd.use,0,{"box"})
     addcommand("throw",cmd.throw)
+    addcommand("vipstest",cmd.vipstest,0n)
     addcommand("catch",cmd.catch)
     _G['handlemessage'] = function (message)
       if message.author.id ~= "767445265871142933" then
