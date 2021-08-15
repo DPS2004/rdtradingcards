@@ -40,10 +40,11 @@ function reaction.run(ef, eom, reaction, userid)
     if eom.itemtype == "consumable" then
       sj.consumables[eom.sindex].stock = sj.consumables[eom.sindex].stock - 1
       if not uj.consumables then uj.consumables = {} end
+      local adding = consumabledb[eom.srequest].quantity or 1
       if not uj.consumables[eom.srequest] then
-        uj.consumables[eom.srequest] = 1
+        uj.consumables[eom.srequest] = adding
       else
-        uj.consumables[eom.srequest] = uj.consumables[eom.srequest] + 1
+        uj.consumables[eom.srequest] = uj.consumables[eom.srequest] + adding
       end
     end 
     if eom.itemtype == "card" then

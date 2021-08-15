@@ -90,6 +90,7 @@ function command.run(message, mt, overwrite)
     cmdcons.tapiocapudding = dofile('consumables/tapiocapudding.lua')
     cmdcons.megaphone = dofile('consumables/megaphone.lua')
     cmdcons.caffeinatedsoda = dofile('consumables/caffeinatedsoda.lua')
+    cmdcons.scratchoffticket = dofile('consumables/scratchoffticket.lua')
     
     print("done loading reactions")
 
@@ -489,6 +490,8 @@ function command.run(message, mt, overwrite)
       return ifn
     end
     
+    
+
     
     _G['getcardtype'] = function (x)
       for i, v in ipairs(cdb) do
