@@ -372,6 +372,11 @@ function command.run(message, mt,bypass)
       local sname = ""
       local stock = 0
       local sindex = 0
+      if not mt[2] then
+        cmd.look.run(message, mt)
+        mt[2] = ""
+        return
+      end
       if constexttofn(mt[2]) then
         srequest = constexttofn(mt[2])
         sname = consfntoname(srequest)
@@ -468,7 +473,11 @@ function command.run(message, mt,bypass)
         end--jci please dont kill me
         
       else --unknown request
-        message.channel:send('The **Wolf** looks at you with confusion. It does not appear to know what ' .. mt[2] .. ' is.')
+        if nopeeking then
+          message.channel:send('The **Wolf** looks at you with confusion. It might not be selling ' .. mt[2] .. ', or it might have misunderstood your request.')
+        else
+          message.channel:send('The **Wolf** looks at you with confusion. It does not appear to know what ' .. mt[2] .. ' is.')
+        end
       end
       --error handling
       if result == "notenough" then
@@ -478,7 +487,11 @@ function command.run(message, mt,bypass)
         message.channel:send('The **Wolf** frowns. It is currently out of stock of **' .. sname .. '**.')
       end
       if result == "donthave" then
-        message.channel:send('The **Wolf** looks at you with confusion. It doesn\'t seem to be selling **' .. sname .. '**.')
+        if nopeeking then
+          message.channel:send('The **Wolf** looks at you with confusion. It might not be selling ' .. mt[2] .. ', or it might have misunderstood your request.')
+        else
+          message.channel:send('The **Wolf** looks at you with confusion. It doesn\'t seem to be selling **' .. sname .. '**.')
+        end
       end
       if result == "alreadyhave" then
         message.channel:send('The **Wolf** looks at you with confusion. You already have the **' .. sname .. '** item.')

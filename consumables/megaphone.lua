@@ -13,8 +13,7 @@ function item.run(uj,ujf,message,mt)
     else
       uj.timesitemused = uj.timesitemused + 1
     end
-      
-    uj.conspt = "deluxebirdseed"
+    
     text = mt[2]:gsub("<","")
     text = text:gsub(">","")
     dpf.savejson(ujf,uj)
