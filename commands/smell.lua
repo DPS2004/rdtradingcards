@@ -68,6 +68,7 @@ function command.run(message, mt)
       charcoalpencil = "The **Charcoal Pencil** smells like a burnt-out campfire.",
       fieldjournal = "The **Field Journal** has a faint smell of slime emanating off of it."
     }
+
     request = string.lower(request)
     if request == "strange machine" then
       request = "machine"
