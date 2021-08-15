@@ -5,84 +5,84 @@
     "description": "Sets all your current cooldowns to 0, but adds whatever they were at to your next cooldowns.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873730442656882798/caffeinatedsoda.png",
     "baseprice": 5,
-    "chance":10
+    "chance": 10
   },
   "decaf" : {
     "name": "Decaf",
     "description": "The next card you pull is guaranteed to contain Cole Brew or a coffeeshop worker. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873730443999068210/decaf.png",
     "baseprice": 3,
-    "chance":10
+    "chance": 10
   },
   "beepingpager" : {
     "name": "Beeping Pager",
     "description": "The next card you pull is guaranteed to contain medical staff. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875803468831543356/beepingpager.png",
     "baseprice": 3,
-    "chance":10
+    "chance": 10
   },
   "breadcrumbs" : {
     "name": "Breadcrumbs",
     "description": "The next card you pull is guaranteed to contain a bird. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875803746695794728/breadcrumbs.png",
     "baseprice": 3,
-    "chance":10
+    "chance": 10
   },
   "clownnose" : {
     "name": "Clown Nose",
-    "description": "The next card you pull is guaranteed to be a meme card or humorous. You can only use one item of this type at a time.",
+    "description": "The next card you pull is guaranteed to be humorous or a meme card. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875804021951184976/clownnose.png",
     "baseprice": 3,
-    "chance":10
+    "chance": 10
   },
   "fancyteaset" : {
     "name": "Fancy Tea Set",
     "description": "The next card you pull is guaranteed to contain Samurai or Insomniac. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873730445416730694/fancyteaset.png",
     "baseprice": 3,
-    "chance":10
+    "chance": 10
   },
   "lunarrocks" : {
     "name": "Lunar Rocks",
     "description": "The next card you pull is guaranteed to contain Miner or Lucia. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873730449644589076/lunarrock.png",
     "baseprice": 3,
-    "chance":10
+    "chance": 10
   },
   "secretadmirersnote" : {
     "name": "Secret Admirers Note",
     "description": "The next card you pull is guaranteed to contain Logan or Hailey. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873730453255884820/secretadmirersnote.png",
     "baseprice": 3,
-    "chance":10
+    "chance": 10
   },
   "stickontabs" : {
     "name": "Stick-on Tabs",
     "description": "The next card you pull is guaranteed to be an editor card. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875806027877085235/stickontabs.png",
     "baseprice": 3,
-    "chance":10
+    "chance": 10
   },
   "tapiocapudding" : {
     "name": "Tapioca Pudding",
     "description": "The next card you pull is guaranteed to contain Mr. or Mrs. Stevenson. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875806593382490152/tapiocapudding.png",
     "baseprice": 3,
-    "chance":10
+    "chance": 10
   },
   "replacementvoid" : {
     "name": "Replacement Void",
     "description": "The contents of the Mysterious Box get replaced with a random selection of cards.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875804266206466088/replacementvoid.png",
     "baseprice": 10,
-    "chance":10
+    "chance": 10
   },
   "xraygoggles" : {
     "name": "X-ray Goggles",
     "description": "Sends you a DM with the current contents of the Mysterious Box",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875807168849383535/xraygoggles.png",
     "baseprice": 5,
-    "chance":10
+    "chance": 10
   },
   "scratchoffticket" : {
     "name": "Scratch-off Ticket",
@@ -90,21 +90,21 @@
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875804965086593104/scratchoffticket.png",
     "quantity": 3,
     "baseprice": 3,
-    "chance":10
+    "chance": 10
   },
   "giftairstrike" : {
     "name": "Gift Air Strike",
     "description": "Gives 30 random people a copy of a random card from your inventory.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873730446708584478/giftairstrike.png",
     "baseprice": 35,
-    "chance":1
+    "chance": 1
   },
   "megaphone": {
     "name": "Megaphone",
     "description": "Sends a message in #trading-cards from the RDCards bot.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875927481679487036/megaphone.png",
     "baseprice": 10,
-    "chance":10
+    "chance": 10
   }
   
   

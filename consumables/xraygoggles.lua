@@ -6,19 +6,12 @@ function item.run(uj,ujf,message,mt)
   for i,v in ipairs(wj.boxpool) do
     boxstring = boxstring .. fntoname(v) .. "\n"
   end
-  uj.consumables.xraygoggles = uj.consumables.xraygoggles - 1
-  if uj.consumables.xraygoggles == 0 then
-    uj.consumables.xraygoggles = nil
-  end
-  if not uj.timesitemused then 
-    uj.timesitemused = 1 
-  else
-    uj.timesitemused = uj.timesitemused + 1
-  end
-  dpf.savejson(ujf,uj)
-  message.author:send("The **Mysterious Box** contains:\n"..boxstring)
   
-  
-  
+  uj.consumables["xraygoggles"] = uj.consumables["xraygoggles"] - 1
+  if uj.consumables["xraygoggles"] == 0 then uj.consumables["xraygoggles"] = nil end
+  uj.timesitemused = uj.timesitemused and uj.timesitemused + 1 or 1
+
+  dpf.savejson(ujf, uj)
+  message.author:send("The **Mysterious Box** contains:\n" .. boxstring)
 end
 return item
