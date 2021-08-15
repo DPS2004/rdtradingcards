@@ -97,7 +97,7 @@
     "description": "Gives 30 random people a copy of a random card from your inventory.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873730446708584478/giftairstrike.png",
     "baseprice": 35,
-    "chance": 1
+    "chance": 0
   },
   "megaphone": {
     "name": "Megaphone",

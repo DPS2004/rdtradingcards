@@ -91,6 +91,7 @@ function command.run(message, mt, overwrite)
     cmdcons.megaphone = dofile('consumables/megaphone.lua')
     cmdcons.caffeinatedsoda = dofile('consumables/caffeinatedsoda.lua')
     cmdcons.scratchoffticket = dofile('consumables/scratchoffticket.lua')
+    cmdcons.replacementvoid = dofile('consumables/replacementvoid.lua')
     
     print("done loading reactions")
 
@@ -202,8 +203,9 @@ function command.run(message, mt, overwrite)
     _G['seasontable'] = {}
     _G['cdb'] = {}
     _G['constable'] = {}
-
-    for k, q in pairs(itemdb) do
+    local iterateitemdb = itemdb
+    iterateitemdb["aboveur"] = {}
+    for k, q in pairs(iterateitemdb) do
       ptable[k] = {}
       constable[k] = {}
       for i, v in ipairs(cdata.groups) do
@@ -698,6 +700,7 @@ function command.run(message, mt, overwrite)
     addcommand("savedata",cmd.use,0,{"terminal","savedata"},true)
     addcommand("logs",cmd.use,0,{"terminal","logs"},true)
     addcommand("terminal",cmd.use,0,{"terminal"})
+    addcommand("buy",cmd.use,0,{"shop"})
     addcommand("box",cmd.use,0,{"box"})
     addcommand("show",cmd.show)
     addcommand("p",cmd.pull)

@@ -1015,7 +1015,8 @@
           "smell": "Senior Doctors",
           "season": 7,
           "bonuses": {
-            "oversizedstethoscope": true
+            "oversizedstethoscope": true,
+            "aboveur": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873172939997077504/interndc_alt.png"
         },
@@ -1532,7 +1533,8 @@
           "smell": "Heavy Makeup",
           "season": 6,
           "bonuses": {
-            "rustysword": true
+            "rustysword": true,
+            "aboveur": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849113790711595008/samuraidc_alt.png"
         },
@@ -2423,7 +2425,8 @@
           "smell": "3000 Pixels",
           "season": 1,
           "bonuses": {
-            "scribblednotepad": true
+            "scribblednotepad": true,
+            "aboveur": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832348353274576947/roomsdc_r.png"
         },
@@ -2437,7 +2440,8 @@
           "season": 1,
           "bonuses": {
             "scribblednotepad": true,
-            "rustysword": true
+            "rustysword": true,
+            "aboveur": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832348378263715850/roomsdc_sr.png"
         },
@@ -2450,7 +2454,8 @@
           "smell": "3000 Pixels",
           "season": 1,
           "bonuses": {
-            "scribblednotepad": true
+            "scribblednotepad": true,
+            "aboveur": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832348409393446972/roomsdc_ur.png"
         }
