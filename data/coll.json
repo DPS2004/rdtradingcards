@@ -154,11 +154,11 @@
     
   {
     "require": [
-      "bigbadbirdr",
-      "bigbadbirdsr",
-      "bigbadbirdur"
+      "bbbr",
+      "bbbsr",
+      "bbbur"
     ],
-    "receive": "bigbadbirdc"
+    "receive": "bbbc"
   },
   
   {
@@ -190,7 +190,7 @@
       "mylevel",
       "crystalline"
     ],
-    "receive": "mylevelcrystalline"
+    "receive": "mycrystal"
   },
   {
     "require": [
