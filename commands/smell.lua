@@ -27,8 +27,23 @@ function command.run(message, mt)
       shop = "The **Quaint Shop** smells like healthy competition.",
       barrels = "The **Barrels** smell like trade secrets.",
       clouds = "The **Clouds** are a bit too high up for you to smell!",
-      wolf = "The **Wolf** smells like a good boy."
-      wolf = "Even the **Ghost's** smell tells you it is internally screaming."
+      wolf = "The **Wolf** smells like a good boy.",
+      ghost = "Even the **Ghost's** smell tells you it is internally screaming.",
+      caffeinatedsoda = "The **Caffeinated Soda** tickles your nose as you try to smell it.",
+      decaf = "The **Decaf Coffee** smells of dissapointment.",
+      beepingpager = "The **Beeping Pager** gives a worrying scent. It makes you want to check up on people to make sure they are ok.",
+      breadcrumbs = "The **Breadcrumbs** smell of slightly expired baked goods.",
+      clownnose = "The **Clown Nose** smells funny.",
+      fancyteaset = "The **Fancy Tea Set** gives a scent of peppermint tea.",
+      lunarrocks = "The **Lunar Rocks** reek of...eggs?",
+      secretadmirersnote = "The **Secret Admirers Note** smells of teenage awkwardness.",
+      stickontabs = "The **Stick-on Tabs** smell like those old sticker-sheets you got when you were three."
+      tapiocapudding = "The **Tapioca Pudding** smells like pudding. What did you expect?",
+      replacementvoid = "The **Replacement Void** doesn't smell like anything. You get a bit worried.",
+      xraygoggles = "The **X-Ray Goggles** smell like cheating at poker.",
+      scratchoffticket = "The **Scratch-off Ticket** smells like the lottery.",
+      giftairstrike = "The **Gift Air Strike** smells like santa.",
+      megaphone = "The **Megaphone** smells loud."
     }
     local itemsmells = {
       nothing = "It smells like the **Peculiar Box**.",
@@ -54,21 +69,7 @@ function command.run(message, mt)
       fieldjournal = "The **Field Journal** has a faint smell of slime emanating off of it."
     }
     local consumesmells = {
-      caffeinatedsoda = "The **Caffeinated Soda** tickles your nose as you try to smell it.",
-      decaf = "The **Decaf Coffee** smells of dissapointment.",
-      beepingpager = "The **Beeping Pager** gives a worrying scent. It makes you want to check up on people to make sure they are ok.",
-      breadcrumbs = "The **Breadcrumbs** smell of slightly expired baked goods.",
-      clownnose = "The **Clown Nose** smells funny.",
-      fancyteaset = "The **Fancy Tea Set** gives a scent of peppermint tea.",
-      lunarrocks = "The **Lunar Rocks** reek of...eggs?",
-      secretadmirersnote = "The **Secret Admirers Note** smells of teenage awkwardness.",
-      stickontabs = "The **Stick-on Tabs** smell like those old sticker-sheets you got when you were three."
-      tapiocapudding = "The **Tapioca Pudding** smells like pudding. What did you expect?",
-      replacementvoid = "The **Replacement Void** doesn't smell like anything. You get a bit worried.",
-      xraygoggles = "The **X-Ray Goggles** smell like cheating at poker.",
-      scratchoffticket = "The **Scratch-off Ticket** smells like the lottery.",
-      giftairstrike = "The **Gift Air Strike** smells like santa.",
-      megaphone = "The **Megaphone** smells loud."
+      
     }
     request = string.lower(request)
     if request == "strange machine" then
