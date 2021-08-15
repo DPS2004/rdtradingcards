@@ -2657,13 +2657,13 @@
           "filename": "birdgroup",
           "name": "The Bird Group",
           "type": "Ultra Rare",
-          "description": "(Art by Plant Guy)",
+          "description": "(Art by Kin)",
           "smell": "Government Surveillance",
           "season": 7,
           "bonuses": {
             "deluxebirdseed": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/870627637108813854/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/876299212009140305/birdgroup.png"
         },
         {
           "chance": 1,
