@@ -490,7 +490,7 @@
           "name": "Invisible (Night Shift)",
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Cloud",
+          "smell": "Clouds",
           "season": 7,
           "bonuses": {
             "deluxebirdseed": true,
@@ -506,7 +506,7 @@
           "name": "Worn Out Tapes",
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games, Collaborated with D-CELL GAMES)",
-          "smell": "Illegal Band",
+          "smell": "Illegal Bands",
           "season": 7,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/876502411626303508/wot.png"
