@@ -403,7 +403,7 @@
         },
         {
           "chance": 2,
-          "filename": "invisible",
+          "filename": "invis",
           "name": "Invisible",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
