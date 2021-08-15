@@ -229,6 +229,15 @@ function command.run(message, mt,bypass)
 
         uj.timesusedbox = uj.timesusedbox and uj.timesusedbox + 1 or 1
         uj.lastbox = time:toHours()
+        if uj.sodapt then
+          if uj.sodapt.box then
+            uj.lastbox = uj.lastbox + uj.sodapt.box
+            uj.sodapt.box = nil
+            if uj.sodapt == {} then
+              uj.sodapt = nil
+            end
+          end
+        end
       end
     elseif request == "terminal" then 
       uj.timesused = uj.timesused and uj.timesused + 1 or 1

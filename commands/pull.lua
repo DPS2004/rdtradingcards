@@ -85,6 +85,17 @@ local time = sw:getTime()
   uj.id = message.author.id
   uj.lastpull = time:toHours()
   print(inspect(uj.names) .. " is/are the nickname/s")
+  
+  if uj.sodapt then
+    if uj.sodapt.pull then
+      uj.lastpull = uj.lastpull + uj.sodapt.pull
+      uj.sodapt.pull = nil
+      if uj.sodapt == {} then
+        uj.sodapt = nil
+      end
+    end
+  end
+  
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
 end
 return command

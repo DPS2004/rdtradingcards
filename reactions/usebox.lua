@@ -48,6 +48,16 @@ function reaction.run(ef, eom, reaction, userid)
 
     uj.timesusedbox = uj.timesusedbox and uj.timesusedbox + 1 or 1
     uj.lastbox = time:toHours()
+    
+    if uj.sodapt then
+      if uj.sodapt.box then
+        uj.lastbox = uj.lastbox + uj.sodapt.box
+        uj.sodapt.box = nil
+        if uj.sodapt == {} then
+          uj.sodapt = nil
+        end
+      end
+    end
     dpf.savejson(ujf,uj)
     dpf.savejson("savedata/worldsave.json", wj)
   end

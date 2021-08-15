@@ -6,7 +6,7 @@ local time = sw:getTime()
     message.channel:send("Sorry, but you cannot pray in DMs!")
     return
   end
-
+  
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
   local cooldown = 23/24
   if uj.equipped == "faithfulnecklace" then
@@ -45,6 +45,17 @@ local time = sw:getTime()
   uj.tokens = uj.tokens and uj.tokens + 1 or 1
   uj.timesprayed = uj.timesprayed and uj.timesprayed + 1 or 1
   uj.lastprayer = time:toDays()
+  
+  if uj.sodapt then
+    if uj.sodapt.pray then
+      uj.lastprayer = uj.lastprayer + uj.sodapt.pray
+      uj.sodapt.pray = nil
+      if uj.sodapt == {} then
+        uj.sodapt = nil
+      end
+    end
+  end
+  
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
 end
 return command
