@@ -483,33 +483,6 @@
             "cafemixtape": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202713731530752/songofthesea.png"
-        },
-		{
-          "chance": 1,
-          "filename": "invisnight",
-          "name": "Invisible (Night Shift)",
-          "type": "Ultra Rare",
-          "description": "(Level by 7th Beat Games)",
-          "smell": "Cloud",
-          "season": 7,
-          "bonuses": {
-            "deluxebirdseed": true
-            "valentinesdaycard": true,
-            "lostnametag": true,
-            "charcoalpencil": true
-          },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/876499352481316904/invisnight.png"
-        },
-		{
-          "chance": 1,
-          "filename": "wot",
-          "name": "Worn Out Tapes",
-          "type": "Ultra Rare",
-          "description": "(Level by 7th Beat Games, Collaborated with D-CELL GAMES)",
-          "smell": "Illegal Band",
-          "season": 7,
-          "bonuses": {},
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/876502411626303508/wot.png"
         }
       ]
     },
