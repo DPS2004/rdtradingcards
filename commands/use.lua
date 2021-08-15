@@ -261,8 +261,12 @@ function command.run(message, mt,bypass)
           embeddescription = '`=^•_•^=`'
           embedimage = "https://cdn.discordapp.com/attachments/829197797789532181/838840001310752788/terminalcat.gif"
         elseif string.lower(mt[2]) == "savedata" then
-          embeddescription = '`DATA LOCATED. GENERATING PRINTOUT`'
-          filename = "savedata/" .. uj.id .. ".json"
+          if nopeeking then
+            embeddescription = '`DATA NOT FOUND.`'
+          else
+            embeddescription = '`DATA LOCATED. GENERATING PRINTOUT`'
+            filename = "savedata/" .. uj.id .. ".json"
+          end
         elseif string.lower(mt[2]) == "teikyou" then
           embedimage = "https://cdn.discordapp.com/attachments/829197797789532181/849431570103664640/teikyou.png"
         elseif string.lower(mt[2]) == "help" or mt[2] == "" then
@@ -290,8 +294,8 @@ function command.run(message, mt,bypass)
           embedtitle = "Logs"
           embeddescription = 'https://docs.google.com/document/d/1td9u_n-ou-yIKHKU766T-Ue4EdJGYThjcl-MRxRUA5E/edit?usp=sharing'
         elseif string.lower(mt[2]) == "laureladams" and wj.ws >= 701 then
-          embedtitle = "Logs"
-          embeddescription = "TODO"
+          embedtitle = "Email Logs"
+          embeddescription = "https://docs.google.com/document/d/1_dXPtCVsvDOL_XHpQ6CzX8A2KcLtymPERV3MSEJ5eZo/edit?usp=sharing"
           if wj.ws == 701 then wj.ws = 702 end
         elseif string.lower(mt[2]) == "upgrade" then
           if uj.tokens > 0 then
