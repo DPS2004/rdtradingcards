@@ -41,6 +41,7 @@
           "filename": "dubstep",
           "name": "Samurai Dubstep",
           "type": "Ultra Rare",
+          "description": "(Level by 7th Beat Games)",
           "smell": "The Future",
           "season": 1,
           "bonuses": {
@@ -4029,10 +4030,10 @@
         {
           "chance": 2,
           "filename": "csqn",
-          "name": "CSQN",
+          "name": "c.s.q.n.",
           "type": "Super Rare",
           "description": "(Level by DPS2004 and Rikri)",
-          "smell": "Motion Sickness",
+          "smell": "Honeycombs",
           "season": 7,
           "bonuses": {
             "rustysword": true
