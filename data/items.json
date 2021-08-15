@@ -98,6 +98,11 @@
     "name": "Charcoal Pencil",
     "description": "Makes cards containing Miner or Lucia Moon more likely to be pulled.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/853055152198385684/charcoalpencil.png"
+  },
+  "fieldjournal": {
+    "name": "Field Journal",
+    "description": "Makes cards containing RDRPG Bosses or Levels more likely to be pulled.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/876599201360916490/fieldjournal.png"
   }
 
 }

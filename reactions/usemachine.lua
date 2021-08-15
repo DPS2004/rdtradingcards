@@ -14,7 +14,7 @@ function reaction.run(ef, eom, reaction, userid)
   if reaction.emojiName == "✅" then
     print('user1 has accepted')
 
-    if uj.tokens < 2 then
+    if uj.tokens < 3 then
       reaction.message.channel:send("An error has occured. Please make sure that you have enough tokens!")
       return
     end
@@ -37,7 +37,7 @@ function reaction.run(ef, eom, reaction, userid)
     local newitem = itempt[math.random(#itempt)]
     uj.items[newitem] = true
     uj.tokens = uj.tokens - 3
-    reaction.message.channel:send('After depositing 2 **Tokens** and turning the crank, a capsule comes out of the **Strange Machine**. Inside it is the **' .. itemfntoname(newitem) .. '**! You put the **'.. itemfntoname(newitem) .. '** with your items.')
+    reaction.message.channel:send('After depositing 3 **Tokens** and turning the crank, a capsule comes out of the **Strange Machine**. Inside it is the **' .. itemfntoname(newitem) .. '**! You put the **'.. itemfntoname(newitem) .. '** with your items.')
     dpf.savejson(ujf,uj)
   end
 

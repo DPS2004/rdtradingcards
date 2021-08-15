@@ -26,7 +26,7 @@ function command.run(message, mt)
       bridge = "The **Bridge** smells stable... enough...",
       shop = "The **Quaint Shop** smells like healthy competition.",
       barrels = "The **Barrels** smell like trade secrets.",
-      clouds = "The **Clouds are a bit too high up for you to smell!"
+      clouds = "The **Clouds** are a bit too high up for you to smell!"
     }
     local itemsmells = {
       nothing = "It smells like the **Peculiar Box**.",
