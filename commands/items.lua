@@ -16,9 +16,7 @@ function command.run(message, mt)
     uj.equipped = "nothing"
     dpf.savejson("savedata/" .. message.author.id .. ".json", uj)
   end
-  if not uj.consumables then
-    uj.consumables = {}
-  end
+  if not uj.consumables then uj.consumables = {} end
   
   for k in pairs(uj.items) do numitems = numitems + 1 end
   for k in pairs(uj.consumables) do numitems = numitems + 1 end

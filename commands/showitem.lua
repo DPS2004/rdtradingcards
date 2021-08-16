@@ -5,28 +5,11 @@ function command.run(message, mt)
     message.channel:send("Sorry, but the c!showitem command expects 1 argument. Please see c!help for more details.")
     return
   end
-  
-  local consumable = false
 
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
-  local curfilename = itemtexttofn(mt[1])
-  if not curfilename then
-    if constexttofn(mt[1]) then
-      curfilename = constexttofn(mt[1])
-      consumable = true
-    end
-  end
-  local description = "error"
-  local name = "error"
-  if consumable then
-    description = consumabledb[curfilename].description
-    name = consfntoname(curfilename)
-    url = consumabledb[curfilename].embed
-  else
-    description = itemdb[curfilename].description
-    name = itemfntoname(curfilename)
-    url = itemdb[curfilename].embed
-  end
+  if not uj.consumables then uj.consumables = {} end
+  local curfilename = itemtexttofn(mt[1]) or constexttofn(mt[1])
+
   if not curfilename then
     if nopeeking then
       message.channel:send("Sorry, but I either could not find the " .. mt[1] .. " item in the database, or you do not have it. Make sure that you spelled it right!")
@@ -36,7 +19,11 @@ function command.run(message, mt)
     return
   end
 
-  if ((not uj.items[curfilename]) and (not uj.consumables[curfilename])) and (not shophas(curfilename)) then
+  local description = itemdb[curfilename] and itemdb[curfilename].description or consumabledb[curfilename].description
+  local name = itemfntoname(curfilename) or consfntoname(curfilename)
+  local embedurl = itemdb[curfilename] and itemdb[curfilename].embed or consumabledb[curfilename].embed
+
+  if not (uj.items[curfilename] or uj.consumables[curfilename] or shophas(curfilename)) then
     print("user doesnt have item")
     if nopeeking then
       message.channel:send("Sorry, but I either could not find the " .. mt[1] .. " item in the database, or you do not have it. Make sure that you spelled it right!")
@@ -53,7 +40,7 @@ function command.run(message, mt)
     title = "Showing item...",
     description = 'Here it is! Your **'.. name .. '** item. The shorthand form is **' .. curfilename .. '**.\n\n*The description on the back reads:*\n> ' .. description,
     image = {
-      url = url
+      url = embedurl
     }
   }}
 end
