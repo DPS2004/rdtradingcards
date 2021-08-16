@@ -408,12 +408,12 @@ function command.run(message, mt)
         content = 'The **Quaint Shop** is filled with cards and card accessories, all sold by the **Wolf.** It seems to be doing a pretty good job at running the business. The **Ghost** in the corner is standing guard, watching over the store.',
         file = getshopimage(),
       }
-      shopstr = ""
+      local shopstr = ""
       for i,v in ipairs(sj.cards) do
-        shopstr = shopstr .. "\n**"..fntoname(v.name).."** ("..v.price.." tokens) x"..v.stock
+        shopstr = shopstr .. "\n**"..fntoname(v.name).."** ("..v.price.." token" .. (v.price ~= 1 and "" or "s") .. ") x"..v.stock
       end
       for i,v in ipairs(sj.consumables) do
-        shopstr = shopstr .. "\n**"..consfntoname(v.name).."** ("..v.price.." tokens) x"..v.stock
+        shopstr = shopstr .. "\n**"..consfntoname(v.name).."** ("..v.price.." token" .. (v.price ~= 1 and "" or "s") .. ") x"..v.stock
       end
       shopstr = shopstr .. "\n**"..itemfntoname(sj.item).."** (5 tokens) x"..sj.itemstock
       message.channel:send("The shop is selling:\n"..shopstr)
