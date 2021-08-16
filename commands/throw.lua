@@ -43,15 +43,15 @@ function command.run(message, mt)
 
   if not tj[curfilename] then tj[curfilename] = {tostring(time:toHours())} else table.insert(tj[curfilename], tostring(time:toHours())) end
 
+  message.channel:send(message.author.mentionString .. " has thrown a **" .. fntoname(curfilename) .. "** card in the air! Type this command within " .. timeout .. " seconds to catch it!")
+  message.channel:send("`c!catch " .. curfilename .. "`")
+
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
   print("user had card, removed from original user")
   dpf.savejson("savedata/throwncards.json", tj)
 
-  message.channel:send(message.author.mentionString .. " has thrown a **" .. fntoname(curfilename) .. "** card in the air! Type this command within " .. timeout .. " seconds to catch it!")
-  message.channel:send("`c!catch " .. curfilename .. "`")
-
   if not client:waitFor(tostring(time:toHours()), timeout * 1000) then
-    print("card hasn't been caught!")
+    print(curfilename .. " card hasn't been caught!")
     tj = dpf.loadjson("savedata/throwncards.json", {})
     uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
 
@@ -68,6 +68,7 @@ function command.run(message, mt)
     dpf.savejson("savedata/throwncards.json", tj)
     message.channel:send("The **" .. fntoname(curfilename) .. "** card has fallen back to the ground. " .. message.author.mentionString .. " picked it up and put it back to " .. uj.pronouns["their"] .. " inventory.")
   end
+  print("e")
 end
 return command
   
