@@ -132,7 +132,7 @@ function command.run(message, mt)
         }          
       else
         message.channel:send {
-          content = 'The **Strange Machine** appears to have a slot for two **Tokens**, and a crank. The crank is worn, as if it has been **Used** many times.'
+          content = 'The **Strange Machine** appears to have a slot for three **Tokens**, and a crank. The crank is worn, as if it has been **Used** many times.'
         }
       end
     

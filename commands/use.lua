@@ -32,7 +32,7 @@ function command.run(message, mt,bypass)
           return
         end
         if uj.tokens < 3 then
-          message.channel:send('You try to turn the crank, but it does not budge. There is a slot above it that looks like it could fit two **Tokens**...')
+          message.channel:send('You try to turn the crank, but it does not budge. There is a slot above it that looks like it could fit three **Tokens**...')
           return
         end
         if not uj.skipprompts then
