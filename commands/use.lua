@@ -10,6 +10,7 @@ function command.run(message, mt,bypass)
 
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
   local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
+  if not uj.room then uj.room = 0 end
   local found = true
   local request = string.lower(mt[1])
 
@@ -218,6 +219,7 @@ function command.run(message, mt,bypass)
         print("user giving " .. givecard)
         local boxpoolindex = math.random(#wj.boxpool)
         local getcard = wj.boxpool[boxpoolindex]
+        print("user getting " .. getcard)
         
         uj.inventory[getcard] = uj.inventory[getcard] and uj.inventory[getcard] + 1 or 1
         uj.inventory[givecard] = uj.inventory[givecard] - 1
