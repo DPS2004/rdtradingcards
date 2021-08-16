@@ -37,7 +37,7 @@ function command.run(message, mt)
       fancyteaset = "The **Fancy Tea Set** gives a scent of peppermint tea.",
       lunarrocks = "The **Lunar Rocks** reek of...eggs?",
       secretadmirersnote = "The **Secret Admirers Note** smells of teenage awkwardness.",
-      stickontabs = "The **Stick-on Tabs** smell like those old sticker-sheets you got when you were three."
+      stickontabs = "The **Stick-on Tabs** smell like those old sticker-sheets you got when you were three.",
       tapiocapudding = "The **Tapioca Pudding** smells like pudding. What did you expect?",
       replacementvoid = "The **Replacement Void** doesn't smell like anything. You get a bit worried.",
       xraygoggles = "The **X-Ray Goggles** smell like cheating at poker.",
