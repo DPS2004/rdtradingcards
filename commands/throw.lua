@@ -68,7 +68,6 @@ function command.run(message, mt)
     dpf.savejson("savedata/throwncards.json", tj)
     message.channel:send("The **" .. fntoname(curfilename) .. "** card has fallen back to the ground. " .. message.author.mentionString .. " picked it up and put it back to " .. uj.pronouns["their"] .. " inventory.")
   end
-  print("e")
 end
 return command
   
