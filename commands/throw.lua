@@ -43,8 +43,7 @@ function command.run(message, mt)
 
   if not tj[curfilename] then tj[curfilename] = {tostring(time:toHours())} else table.insert(tj[curfilename], tostring(time:toHours())) end
 
-  message.channel:send(message.author.mentionString .. " has thrown a **" .. fntoname(curfilename) .. "** card in the air! Type this command within " .. timeout .. " seconds to catch it!")
-  message.channel:send("`c!catch " .. curfilename .. "`")
+  message.channel:send(message.author.mentionString .. " has thrown a **" .. fntoname(curfilename) .. "** card in the air! Type this command within " .. timeout .. " seconds to catch it!\n`c!catch " .. curfilename .. "`")
 
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
   print("user had card, removed from original user")
