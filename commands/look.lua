@@ -410,10 +410,10 @@ function command.run(message, mt)
       }
       local shopstr = ""
       for i,v in ipairs(sj.cards) do
-        shopstr = shopstr .. "\n**"..fntoname(v.name).."** ("..v.price.." token" .. (v.price ~= 1 and "" or "s") .. ") x"..v.stock
+        shopstr = shopstr .. "\n**"..fntoname(v.name).."** ("..v.price.." token" .. (v.price == 1 and "" or "s") .. ") x"..v.stock
       end
       for i,v in ipairs(sj.consumables) do
-        shopstr = shopstr .. "\n**"..consfntoname(v.name).."** ("..v.price.." token" .. (v.price ~= 1 and "" or "s") .. ") x"..v.stock
+        shopstr = shopstr .. "\n**"..consfntoname(v.name).."** ("..v.price.." token" .. (v.price == 1 and "" or "s") .. ") x"..v.stock
       end
       shopstr = shopstr .. "\n**"..itemfntoname(sj.item).."** (5 tokens) x"..sj.itemstock
       message.channel:send("The shop is selling:\n"..shopstr)
