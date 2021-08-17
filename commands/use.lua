@@ -364,6 +364,11 @@ function command.run(message, mt,bypass)
       found = false
     end
   end
+  ----------------------------------------------------------WINDY MOUNTAINS
+  if uj.room == 4 then
+    -- add other items?
+    found = false
+  end
   if (uj.room == 5) then ----------------------------------------------------------SHOP
     if request == "shop" then
       checkforreload(time:toDays())
