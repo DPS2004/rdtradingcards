@@ -369,7 +369,7 @@ function command.run(message, mt,bypass)
     if (request == "pyrowmid")  then 
 	  message.channel:send("You make your way back down to the **Pyrowmid**...")
       uj.room = 0
-      cmd.look.run(message, mt)
+      --TODO: find a way to show a location's main c!look?
     elseif (request == "bridge")  then 
       message.channel:send{embed = {
         color = 0x85c5ff,
@@ -379,7 +379,6 @@ function command.run(message, mt,bypass)
     elseif (request == "shop" or request == "quaintshop" or request == "quaint shop")  then 
 	  message.channel:send("You step inside of the **Quaint Shop**...")
       uj.room = 5
-      cmd.look.run(message, mt)
     elseif (request == "barrels")  then 
       message.channel:send{embed = {
         color = 0x85c5ff,
