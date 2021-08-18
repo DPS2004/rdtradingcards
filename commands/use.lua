@@ -548,7 +548,7 @@ function command.run(message, mt,bypass)
       uj.timesused = uj.timesused and uj.timesused + 1 or 1
     elseif constexttofn(request) then
       print("using consumable")
-      
+      if not uj.consumables then uj.consumables = {}
       request = constexttofn(request)
       if uj.consumables[request] then
         if not uj.skipprompts then
