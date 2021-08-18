@@ -711,7 +711,7 @@ function command.run(message, mt, overwrite)
     addcommand("vipstest",cmd.vipstest,0)
     addcommand("catch",cmd.catch)
     _G['handlemessage'] = function (message)
-      if message.author.id ~= "767445265871142933" then
+      if message.author.id ~= client.user.id then
         local hasrun = false
         for i,v in ipairs(commands) do
           if (string.lower(string.sub(message.content, 0, #v.trigger+1)) == v.trigger or string.lower(string.sub(message.content, 0, #v.trigger+1)) == v.trigger.." ") and not hasrun then
