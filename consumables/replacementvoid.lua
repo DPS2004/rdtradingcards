@@ -3,7 +3,7 @@ local item = {}
 function item.run(uj,ujf,message,mt)
   local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
   wj.boxpool = {constable["aboveur"][math.random(#constable["aboveur"])]}
-  for i=1,19 do
+  for i = 1, 21 do
     table.insert(wj.boxpool,ptable["nothing"][math.random(#ptable["nothing"])])
   end
   
