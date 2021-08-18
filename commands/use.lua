@@ -366,8 +366,36 @@ function command.run(message, mt,bypass)
   end
   ----------------------------------------------------------WINDY MOUNTAINS
   if uj.room == 4 then
-    -- add other items?
-    found = false
+    if (request == "pyrowmid")  then 
+	  message.channel:send("You make your way back down to the **Pyrowmid**...")
+      uj.room = 0
+      cmd.look.run(message, mt)
+    elseif (request == "bridge")  then 
+      message.channel:send{embed = {
+        color = 0x85c5ff,
+        title = "Using Bridge...",
+        description = 'Even though the **Bridge** feels relatively sturdy to walk on, it is probably best not to mess with it too much. You never know when it all might come *crash*ing down.',
+      }}
+    elseif (request == "shop" or request == "quaintshop" or request == "quaint shop")  then 
+	  message.channel:send("You step inside of the **Quaint Shop**...")
+      uj.room = 5
+      cmd.look.run(message, mt)
+    elseif (request == "barrels")  then 
+      message.channel:send{embed = {
+        color = 0x85c5ff,
+        title = "Using Barrels...",
+        description = 'Interestingly, you cannot seem to find a way to open the **Barrels**, or even look at what could be inside of them...',
+      }}
+    elseif (request == "clouds")  then 
+      message.channel:send{embed = {
+        color = 0x85c5ff,
+        title = "Using Clouds...",
+        description = 'You try to touch one of the clouds. Unsurprisingly, you cannot actually reach that far.',
+      }}
+       
+    else
+      found = false
+    end
   end
   if (uj.room == 5) then ----------------------------------------------------------SHOP
     if request == "shop" then
