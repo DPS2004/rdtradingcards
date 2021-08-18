@@ -541,7 +541,7 @@ function command.run(message, mt,bypass)
   if (not found) and (not bypass) then ----------------------------------NON-ROOM ITEMS GO HERE!-------------------------------------------------
     if request == "token"  then
       if uj.tokens > 0 then
-        message.channel:send('You flip a **Token** in the air. It lands on **' .. (math.random(2) and "heads" or "tails") .. '**.')
+        message.channel:send('You flip a **Token** in the air. It lands on **' .. (math.random(2) == 1 and "heads" or "tails") .. '**.')
       else
         message.channel:send('Sadly, you do not have any **Tokens**.')
       end
