@@ -118,29 +118,39 @@ function command.run(message, mt)
 
     elseif string.lower(mt[1]) == "panda" or string.lower(mt[1]) == "het" then 
       
-      message.channel:send {
-        content = 'The **Panda** looks confused, and probably would rather not be here in the **Pyrowmid**. That **Throne** he is sitting on sure does look comfortable, though.'
-      }
+        message.channel:send{embed = {
+          color = 0x85c5ff,
+          title = "Looking at Panda...",
+          description = 'The **Panda** looks confused, and probably would rather not be here in the **Pyrowmid**. That **Throne** he is sitting on sure does look comfortable, though.',
+        }}
     elseif string.lower(mt[1]) == "throne" then 
-      message.channel:send {
-        content = 'The **Throne**, like the walls of the **Pyrowmid** are made of Rows (Rare) cards. It is unknown how it is being held together.'
-      }
+        message.channel:send{embed = {
+          color = 0x85c5ff,
+          title = "Looking at Throne...",
+          description = 'The **Throne**, like the walls of the **Pyrowmid** are made of Rows (Rare) cards. It is unknown how it is being held together.',
+        }}
     elseif string.lower(mt[1]) == "strange machine" or string.lower(mt[1]) == "machine" then 
       if wj.ws == 506 then
-        message.channel:send {
-          content = 'The **Strange Machine** appears to have a slot for four **Tokens**, and a crank. The crank is worn, as if it has been **Used** many times. The machine is shaking vigorously.'
-        }          
+        message.channel:send{embed = {
+          color = 0x85c5ff,
+          title = "Looking at Strange Machine...",
+          description = 'The **Strange Machine** appears to have a slot for four **Tokens**, and a crank. The crank is worn, as if it has been **Used** many times. The machine is shaking vigorously.',
+        }}       
       else
-        message.channel:send {
-          content = 'The **Strange Machine** appears to have a slot for three **Tokens**, and a crank. The crank is worn, as if it has been **Used** many times.'
-        }
+        message.channel:send{embed = {
+          color = 0x85c5ff,
+          title = "Looking at Strange Machine...",
+          description = 'The **Strange Machine** appears to have a slot for three **Tokens**, and a crank. The crank is worn, as if it has been **Used** many times.',
+        }}
       end
     
     elseif string.lower(mt[1]) == "hole" then
       if wj.ws < 501 then
-        message.channel:send{
-          content = 'what hole?'
-        }
+        message.channel:send{embed = {
+          color = 0x85c5ff,
+          title = "Looking at Hole...",
+          description = 'what hole?',
+        }}
       elseif wj.ws == 501 then
         message.channel:send{embed = {
           color = 0x85c5ff,
