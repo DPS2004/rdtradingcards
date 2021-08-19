@@ -38,9 +38,11 @@ function command.run(message, mt)
   end
 
   message.channel:send(message.author.mentionString .. " has thrown a **" .. fntoname(curfilename) .. "** card in the air! Type this command within " .. timeout .. " seconds to catch it!\n`c!catch " .. curfilename .. "`")
-
+  
+  uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
   uj.inventory[curfilename] = uj.inventory[curfilename] - 1
   if uj.inventory[curfilename] == 0 then uj.inventory[curfilename] = nil end
+  uj.timesthrown = uj.timesthrown and uj.timesthrown + 1 or 1
 
   local tj = dpf.loadjson("savedata/throwncards.json", {})
   if not tj[curfilename] then tj[curfilename] = {tostring(time:toHours())} else table.insert(tj[curfilename], tostring(time:toHours())) end
