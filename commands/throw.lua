@@ -54,13 +54,14 @@ function command.run(message, mt)
     tj = dpf.loadjson("savedata/throwncards.json", {})
     uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
 
-    uj.inventory[curfilename] = uj.inventory[curfilename] and uj.inventory[curfilename] + 1 or 1
     for x = #tj[curfilename], 1, -1 do
       if tj[curfilename][x] == tostring(time:toHours()) then
         table.remove(tj[curfilename], x)
         break
       end
     end
+
+    uj.inventory[curfilename] = uj.inventory[curfilename] and uj.inventory[curfilename] + 1 or 1
 
     if not next(tj[curfilename]) then tj[curfilename] = nil end
     dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
