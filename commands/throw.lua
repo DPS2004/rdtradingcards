@@ -15,7 +15,6 @@ function command.run(message, mt)
   end
 
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
-  local tj = dpf.loadjson("savedata/throwncards.json", {})
 
   local curfilename = texttofn(mt[1])
   
@@ -38,12 +37,13 @@ function command.run(message, mt)
     return
   end
 
+  message.channel:send(message.author.mentionString .. " has thrown a **" .. fntoname(curfilename) .. "** card in the air! Type this command within " .. timeout .. " seconds to catch it!\n`c!catch " .. curfilename .. "`")
+
   uj.inventory[curfilename] = uj.inventory[curfilename] - 1
   if uj.inventory[curfilename] == 0 then uj.inventory[curfilename] = nil end
 
+  local tj = dpf.loadjson("savedata/throwncards.json", {})
   if not tj[curfilename] then tj[curfilename] = {tostring(time:toHours())} else table.insert(tj[curfilename], tostring(time:toHours())) end
-
-  message.channel:send(message.author.mentionString .. " has thrown a **" .. fntoname(curfilename) .. "** card in the air! Type this command within " .. timeout .. " seconds to catch it!\n`c!catch " .. curfilename .. "`")
 
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
   print("user had card, removed from original user")
