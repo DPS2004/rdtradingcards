@@ -34,7 +34,7 @@ function command.run(message, mt,mc)
             }
           }}
         else
-          message.channel:send{
+          mc:send{
           content = '**Congratulations!**\nAfter collecting and storing some other cards, '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to '..uj.pronouns["their"]..' storage.',
           file = "card_images/SPOILER_" .. newcard .. ".png"
         }
