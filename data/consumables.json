@@ -72,14 +72,14 @@
   },
   "replacementvoid" : {
     "name": "Replacement Void",
-    "description": "The contents of the Mysterious Box get replaced with a random selection of cards.",
+    "description": "The contents of the Peculiar Box get replaced with a random selection of cards.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875804266206466088/replacementvoid.png",
     "baseprice": 10,
     "chance": 10
   },
   "xraygoggles" : {
     "name": "X-ray Goggles",
-    "description": "Sends you a DM with the current contents of the Mysterious Box",
+    "description": "Sends you a DM with the current contents of the Peculiar Box",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875807168849383535/xraygoggles.png",
     "baseprice": 5,
     "chance": 10

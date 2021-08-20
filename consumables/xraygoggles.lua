@@ -12,6 +12,6 @@ function item.run(uj,ujf,message,mt)
   uj.timesitemused = uj.timesitemused and uj.timesitemused + 1 or 1
 
   dpf.savejson(ujf, uj)
-  message.author:send("The **Mysterious Box** contains:\n" .. boxstring)
+  message.author:send("The **Peculiar Box** contains:\n" .. boxstring)
 end
 return item

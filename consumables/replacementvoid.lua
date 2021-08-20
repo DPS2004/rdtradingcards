@@ -12,6 +12,6 @@ function item.run(uj,ujf,message,mt)
   uj.timesitemused = uj.timesitemused and uj.timesitemused + 1 or 1
   dpf.savejson("savedata/worldsave.json", wj)
   dpf.savejson(ujf, uj)
-  message.channel:send("As you put the **Replacement Void** into the **Mysterious Box**, you can feel the box suddenly get much warmer, and then as cold as ice within the blink of an eye.")
+  message.channel:send("As you put the **Replacement Void** into the **Peculiar Box**, you can feel the box suddenly get much warmer, and then as cold as ice within the blink of an eye.")
 end
 return item
