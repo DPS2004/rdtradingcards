@@ -435,9 +435,7 @@ function command.run(message, mt,bypass)
                 title = "Buying " .. sname .. "...",
                 description = "The description for this item reads: \n`".. consumabledb[srequest].description .."`\nWill you buy it for "..sprice.." **Token" .. (sprice == 1 and "" or "s") .. "**?",
               },"buy",{itemtype = "consumable",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest})
-              
-              
-              
+              return
             else
               result = "notenough"
             end
@@ -468,6 +466,7 @@ function command.run(message, mt,bypass)
                   title = "Buying " .. sname .. "...",
                   description = "The description for this item reads: \n`".. itemdb[srequest].description .."`\nWill you buy it for "..sprice.." **Tokens**?",
                 },"buy",{itemtype = "item",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest})
+                return
             else
               result = "notenough"
             end
@@ -498,6 +497,7 @@ function command.run(message, mt,bypass)
                 title = "Buying " .. sname .. "...",
                 description = "The description for this item reads: \n`".. getcarddescription(srequest) .."`\nWill you buy it for "..sprice.." **Tokens**?",
               },"buy",{itemtype = "card",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest})
+              return
             else
               result = "notenough"
             end
