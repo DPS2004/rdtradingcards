@@ -415,7 +415,7 @@ function command.run(message, mt)
       checkforreload(time:toDays())
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
       message.channel:send{ ---todo: make this an embed
-        content = 'The **Quaint Shop** is filled with cards and card accessories, all sold by the **Wolf.** It seems to be doing a pretty good job at running the business. The **Ghost** in the corner is standing guard, watching over the store.',
+        content = 'The **Quaint Shop** is filled with cards and card accessories, all sold by the **Wolf**. It seems to be doing a pretty good job at running the business. As you look around, you also see a framed **Photo** hangning on the wall. The **Ghost** in the corner is standing guard, watching over the store.',
         file = getshopimage(),
       }
       local shopstr = ""
@@ -438,6 +438,13 @@ function command.run(message, mt)
         color = 0x85c5ff,
         title = "Looking at Ghost...",
         description = 'The **Ghost** stands idily by, making sure the shop remains safe. You can tell it is constantly internally screaming.',
+      }}
+    elseif (request == "photo" or request == "framed photo") then
+      message.channel:send{embed = {
+        color = 0x85c5ff,
+        title = "Looking at Photo...",
+        description = 'As you gaze into the framed **Photo**, the dog\'s odd triangular shape reminds you of the Pyrowmid you\'ve just been from.',
+        image = {url = "https://cdn.discordapp.com/attachments/829197797789532181/880110700989673472/okamii_triangle_frame.png"}
       }}
     else
       found = false
