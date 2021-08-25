@@ -29,6 +29,7 @@ function command.run(message, mt)
       clouds = "The **Clouds** are a bit too high up for you to smell!",
       wolf = "The **Wolf** smells like a good boy.",
       ghost = "Even the **Ghost's** smell tells you it is internally screaming.",
+      photo = "The **Photo** smells slightly of moss and spite.",
       caffeinatedsoda = "The **Caffeinated Soda** tickles your nose as you try to smell it.",
       decaf = "The **Decaf Coffee** smells of disappointment.",
       beepingpager = "The **Beeping Pager** gives a worrying scent. It makes you want to check up on people to make sure they are ok.",
