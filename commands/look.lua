@@ -440,11 +440,17 @@ function command.run(message, mt)
         description = 'The **Ghost** stands idily by, making sure the shop remains safe. You can tell it is constantly internally screaming.',
       }}
     elseif (request == "photo" or request == "framed photo") then
+      local randomimages = {
+        "https://cdn.discordapp.com/attachments/829197797789532181/880110700989673472/okamii_triangle_frame.png",
+        "https://cdn.discordapp.com/attachments/829197797789532181/880302232338333747/okamii_triangle_frame_2.png",
+        "https://cdn.discordapp.com/attachments/829197797789532181/880302252278034442/okamii_triangle_frame_3.png"
+      }
+      local imageindex = (uj.equipped == "okamiiscollar" and math.random(#randomimages) or 1)
       message.channel:send{embed = {
         color = 0x85c5ff,
         title = "Looking at Photo...",
-        description = 'As you gaze into the framed **Photo**, the dog\'s odd triangular shape reminds you of the Pyrowmid you\'ve just been from.',
-        image = {url = "https://cdn.discordapp.com/attachments/829197797789532181/880110700989673472/okamii_triangle_frame.png"}
+        description = 'As you gaze into the framed **Photo**, the dog\'s odd triangular shape reminds you of the Pyrowmid you\'ve just been from.' .. (imageindex ~= 1 and " The rotated figure may have been a result from your collar." or ""),
+        image = {url = randomimages[imageindex]}
       }}
     else
       found = false
