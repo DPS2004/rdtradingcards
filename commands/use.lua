@@ -42,6 +42,7 @@ function command.run(message, mt,bypass)
             title = "Using Strange Machine...",
             description = 'Will you put three **Tokens** into the **Strange Machine?** (tokens remaining: ' .. uj.tokens .. ')',
           },"usemachine",{})
+          return
         else
           local newitem = itempt[math.random(#itempt)]
           uj.items[newitem] = true
@@ -56,6 +57,7 @@ function command.run(message, mt,bypass)
           title = "Using Strange Machine...",
           description = 'Will you put four **Tokens** into the **Strange Machine?** (tokens remaining: ' .. uj.tokens .. ')', 
           },"getladder", {})
+          return
         else
           message.channel:send('You try to turn the crank, but it does not budge. There is a slot above it that looks like it could fit four **Tokens**...')
         end
@@ -72,6 +74,7 @@ function command.run(message, mt,bypass)
         title = "Using Hole...",
         description = 'Will you put a **Token** into the **Hole?** (tokens remaining: ' .. uj.tokens .. ')', 
         },"usehole", {})
+        return
       else
         message.channel:send('You have no **Tokens** to offer to the **Hole.**')
       end
@@ -131,6 +134,7 @@ function command.run(message, mt,bypass)
   if (uj.room == 1 or bypass) and wj.labdiscovered then
     if request == "spider" or request == "spiderweb" or request == "web" or request == "spider web" then       
       ynbuttons(message, 'Are you okay with seeing a spider?',"spideruse",{})
+      return
     elseif request == "table" then 
       message.channel:send{embed = {
         color = 0x85c5ff,
@@ -164,6 +168,7 @@ function command.run(message, mt,bypass)
           title = "Using Mouse Hole...",
           description = message.author.mentionString .. ', do you want to put your **Broken Mouse** into the **Mouse Hole?**',
         },"usemousehole",{})
+        return
       else
         message.channel:send{embed = {
           color = 0x85c5ff,
@@ -207,6 +212,7 @@ function command.run(message, mt,bypass)
           title = "Using Peculiar Box...",
           description = message.author.mentionString .. ', will you put a random **Trading Card** from your inventory in the **Peculiar Box?**.',
         },"usebox",{})
+        return
       else
         local iptable = {}
         for k, v in pairs(uj.inventory) do
@@ -559,6 +565,7 @@ function command.run(message, mt,bypass)
             title = "Using " .. consfntoname(request) .. "...",
             description = "Do you want to use your **" .. consfntoname(request) .. "**? The item will be consumed in the process!",
           },"useconsumable",{crequest=request,mt=mt})
+          return
         else
           cmdcons[request].run(uj,"savedata/" .. message.author.id .. ".json",message,mt)
         end
