@@ -1,7 +1,6 @@
 local item = {}
 
 function item.run(uj,ujf,message,mt)
-  local time = sw:getTime()
   uj.consumables.scratchoffticket = uj.consumables.scratchoffticket - 1
   if uj.consumables.scratchoffticket == 0 then
     uj.consumables.scratchoffticket = nil
@@ -11,7 +10,7 @@ function item.run(uj,ujf,message,mt)
   else
     uj.timesitemused = uj.timesitemused + 1
   end
-  message.channel:send("You scratch off the marked spaces with a **Token**.")
+  message.channel:send("You scratch off the marked spaces with a borrowed **Token**.")
   if math.random(1,50) == 1 then
     local winnings = math.random(3,6) *10
     uj.tokens = uj.tokens + winnings
