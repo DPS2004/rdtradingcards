@@ -2,8 +2,9 @@ local command = {}
 function command.run(message, mt,bypass)
   print(message.author.name .. " did !use")
   local time = sw:getTime()
+  local request = string.lower(mt[1])
 
-  if not (message.guild or bypass) then
+  if not (message.guild or bypass or constexttofn(request)) then
     message.channel:send("Sorry, but you cannot use in DMs!")
     return
   end
@@ -12,7 +13,6 @@ function command.run(message, mt,bypass)
   local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
   if not uj.room then uj.room = 0 end
   local found = true
-  local request = string.lower(mt[1])
 
   ----------------------------PYROWMID------------------------
   if uj.room == 0 or bypass then

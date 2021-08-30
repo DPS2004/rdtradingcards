@@ -11,8 +11,8 @@ function item.run(uj,ujf,message,mt)
     local text = mt[2]:gsub("<","")
     text = text:gsub(">","")
     dpf.savejson(ujf, uj)
-    message.guild:getChannel(cardchannel):send("A message comes through the **Megaphone**:\n" .. text)
-    message:delete()
+    client:getChannel(cardchannel):send("A message comes through the **Megaphone**:\n" .. text)
+    if message.guild then message:delete() end
   else
     message.channel:send("The megaphone was not used. Please attach a message with c!use megaphone/(YOUR MESSAGE HERE)")
   end

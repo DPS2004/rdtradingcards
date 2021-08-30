@@ -25,7 +25,7 @@ function reaction.run(ef, eom, reaction, userid)
     end
     
     
-    cmdcons[request].run(uj,ujf,reaction.message.guild:getChannel(eom.ogmessage.channel.id):getMessage(eom.ogmessage.id),eom.mt) -- this is the single worst line of code that i have ever written
+    cmdcons[request].run(uj,ujf,client:getChannel(eom.ogmessage.channel.id):getMessage(eom.ogmessage.id),eom.mt) -- this is the single worst line of code that i have ever written
     
   end
 
