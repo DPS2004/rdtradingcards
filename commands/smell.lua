@@ -4,7 +4,7 @@ function command.run(message, mt)
   if #mt == 1 then
     local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
     local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
-    local request = mt[1]
+    local request = string.lower(mt[1])
     print(request)
     local curfilename = texttofn(request)
     local hcsmells = {
@@ -29,22 +29,7 @@ function command.run(message, mt)
       clouds = "The **Clouds** are a bit too high up for you to smell!",
       wolf = "The **Wolf** smells like a good boy.",
       ghost = "Even the **Ghost's** smell tells you it is internally screaming.",
-      photo = "The **Photo** smells slightly of moss and spite.",
-      caffeinatedsoda = "The **Caffeinated Soda** tickles your nose as you try to smell it.",
-      decaf = "The **Decaf Coffee** smells of disappointment.",
-      beepingpager = "The **Beeping Pager** gives a worrying scent. It makes you want to check up on people to make sure they are ok.",
-      breadcrumbs = "The **Breadcrumbs** smell of slightly expired baked goods.",
-      clownnose = "The **Clown Nose** smells funny.",
-      fancyteaset = "The **Fancy Tea Set** gives a scent of peppermint tea.",
-      lunarrocks = "The **Lunar Rocks** reek of...eggs?",
-      secretadmirersnote = "The **Secret Admirers Note** smells of teenage awkwardness.",
-      stickontabs = "The **Stick-on Tabs** smell like those old sticker-sheets you got when you were three.",
-      tapiocapudding = "The **Tapioca Pudding** smells like pudding. What did you expect?",
-      replacementvoid = "The **Replacement Void** doesn't smell like anything. You get a bit worried.",
-      xraygoggles = "The **X-Ray Goggles** smell like cheating at poker.",
-      scratchoffticket = "The **Scratch-off Ticket** smells like the lottery.",
-      giftairstrike = "The **Gift Air Strike** smells like santa.",
-      megaphone = "The **Megaphone** smells loud."
+      photo = "The **Photo** smells slightly of moss and spite."
     }
     local itemsmells = {
       nothing = "It smells like the **Peculiar Box**.",
@@ -69,8 +54,24 @@ function command.run(message, mt)
       charcoalpencil = "The **Charcoal Pencil** smells like a burnt-out campfire.",
       fieldjournal = "The **Field Journal** has a faint smell of slime emanating off of it."
     }
+    local consumablesmells = {
+      caffeinatedsoda = "The **Caffeinated Soda** tickles your nose as you try to smell it.",
+      decaf = "The **Decaf Coffee** smells of disappointment.",
+      beepingpager = "The **Beeping Pager** gives a worrying scent. It makes you want to check up on people to make sure they are ok.",
+      breadcrumbs = "The **Breadcrumbs** smell of slightly expired baked goods.",
+      clownnose = "The **Clown Nose** smells funny.",
+      fancyteaset = "The **Fancy Tea Set** gives a scent of peppermint tea.",
+      lunarrocks = "The **Lunar Rocks** reek of...eggs?",
+      secretadmirersnote = "The **Secret Admirers Note** smells of teenage awkwardness.",
+      stickontabs = "The **Stick-on Tabs** smell like those old sticker-sheets you got when you were three.",
+      tapiocapudding = "The **Tapioca Pudding** smells like pudding. What did you expect?",
+      replacementvoid = "The **Replacement Void** doesn't smell like anything. You get a bit worried.",
+      xraygoggles = "The **X-Ray Goggles** smell like cheating at poker.",
+      scratchoffticket = "The **Scratch-off Ticket** smells like the lottery.",
+      giftairstrike = "The **Gift Air Strike** smells like santa.",
+      megaphone = "The **Megaphone** smells loud."
+    }
 
-    request = string.lower(request)
     if request == "strange machine" then
       request = "machine"
     elseif request == "abandoned lab" then
@@ -93,7 +94,7 @@ function command.run(message, mt)
     
     print(curfilename)
     if curfilename ~= nil then
-      if uj.inventory[curfilename] or uj.storage[curfilename] then
+      if uj.inventory[curfilename] or uj.storage[curfilename] or shophas(curfilename) then
         print("user has card")
 
         local beginnings = {
@@ -118,7 +119,6 @@ function command.run(message, mt)
             "The card emits a strong odor that reminds you of **____**"
           }
           local random_description = descriptions[math.random(#descriptions)]
-
           message.channel:send(random_description:gsub("____", smell))
         end
       
@@ -131,23 +131,24 @@ function command.run(message, mt)
         end
       end
 
-    elseif (string.lower(request) == "spiderweb" or string.lower(request) == "spider web" or string.lower(request) == "web") and wj.smellable then
-      local newmessage = ynbuttons(message, 'Are you okay with smelling a spider?',"spidersmell",{})
---      addreacts(newmessage)
---      local tf = dpf.loadjson("savedata/events.json",{})
---      tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "spidersmell",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
---      dpf.savejson("savedata/events.json",tf)
+    elseif (request == "spiderweb" or request == "spider web" or request == "web") and wj.smellable then
+      ynbuttons(message, 'Are you okay with smelling a spider?',"spidersmell",{})
     elseif hcsmells[request] then
       message.channel:send(hcsmells[request])
     elseif itemtexttofn(request) then
       print("smelling")
-      if uj.items[itemtexttofn(request)] then
-        
+      if uj.items[itemtexttofn(request)] or shophas() then
         message.channel:send(itemsmells[itemtexttofn(request)])
       else
         message.channel:send("Sorry, but you do not have the **" .. itemfntoname(itemtexttofn(request)) .. "** item.")
       end
-    
+    elseif constexttofn(request) then
+      print("smelling consumable")
+      if uj.consumables[constexttofn(request)] or shophas(constexttofn(request)) then
+        message.channel:send(consumablesmells[constexttofn(request)])
+      else
+        message.channel:send("Sorry, but the **" .. consfntoname(request) .. "** item can't be found in the shop or your inventory.")
+      end
     else
       if nopeeking then
         message.channel:send("Sorry, but I either could not find the " .. request .. " card in the database, or you do not have it. Make sure that you spelled it right!")
