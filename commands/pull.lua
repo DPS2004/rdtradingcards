@@ -60,7 +60,7 @@ local time = sw:getTime()
     if i == 2 then title = "Doubleclick!" end
 
     if v == "rdnot" then
-      message.channel:send("```Woah!\n@" .. message.author.name .. " got a What is RD Not? card! The What is RD Not? card has been added to" .. uj.pronouns["their"] .. "inventory. The shorthand form of this card is rdnot.\n" .. [[
+      message.channel:send("```" .. title .. "\n@" .. message.author.name .. " got a What is RD Not? card! The What is RD Not? card has been added to " .. uj.pronouns["their"] .. " inventory. The shorthand form of this card is rdnot.\n" .. [[
 _________________
 | SR            |
 |               |
