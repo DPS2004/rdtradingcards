@@ -59,7 +59,18 @@ local time = sw:getTime()
     if v == "yor" or v == "yosr" or v == "your" then title = "Yo!" end
     if i == 2 then title = "Doubleclick!" end
 
-    if not getcardspoiler(v) then
+    if v == "rdnot" then
+      message.channel:send("```Woah!\n@" .. message.author.name .. " got a What is RD Not? card! The What is RD Not? card has been added to" .. uj.pronouns["their"] .. "inventory. The shorthand form of this card is rdnot.\n" .. [[
+_________________
+| SR            |
+|               |
+|    \____/     |
+|    / TT \  /  |
+|   /|____|\/   |
+|     l  l      |
+|             𝅘𝅥𝅯 |
+_________________```]])
+    elseif not getcardspoiler(v) then
       message.channel:send{embed = {
         color = 0x85c5ff,
         title = title,
