@@ -513,7 +513,7 @@ function command.run(message, mt,bypass)
         else
           result = "donthave"
         end--jci please dont kill me
-        
+           --i am going to kill you
       else --unknown request
         if nopeeking then
           message.channel:send('The **Wolf** looks at you with confusion. It might not be selling ' .. mt[2] .. ', or it might have misunderstood your request.')
@@ -538,10 +538,26 @@ function command.run(message, mt,bypass)
       if result == "alreadyhave" then
         message.channel:send('The **Wolf** looks at you with confusion. You already have the **' .. sname .. '** item.')
       end
-      
-      
-    
-    
+    elseif request == "wolf" then
+      message.channel:send{embed = {
+        color = 0x85c5ff,
+        title = "Petting Wolf...",
+        description = 'The **Wolf** liked being pet!',
+        image = {url = "https://cdn.discordapp.com/attachments/829197797789532181/882289357128618034/petwolf.gif"}
+      }}
+    elseif request == "ghost" then
+      message.channel:send{embed = {
+        color = 0x85c5ff,
+        title = "Petting Ghost...",
+        description = 'As you move your hand closer, an unknown force prevents you from petting the **Ghost**.'
+      }}
+    elseif request == "photo" or request == "dog" then
+      message.channel:send{embed = {
+        color = 0x85c5ff,
+        title = "Petting Dog...",
+        description = 'You try to pet the **Dog**, but it\'s unfortunately stuck in a two-dimensional **Photo**.',
+        image = {url = "https://cdn.discordapp.com/attachments/829197797789532181/882287705638203443/okamii_triangle_frame_4.png"}
+      }}
     else
       found = false
     end
