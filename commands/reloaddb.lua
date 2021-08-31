@@ -61,6 +61,7 @@ function command.run(message, mt, overwrite)
     cmd.move = dofile('commands/move.lua')
     cmd.throw = dofile('commands/throw.lua')
     cmd.catch = dofile('commands/catch.lua')
+    cmd.giveitem = dofile('commands/giveitem.lua')
     
     print("done loading commands")
 
@@ -710,6 +711,7 @@ function command.run(message, mt, overwrite)
     addcommand("throw",cmd.throw)
     addcommand("vipstest",cmd.vipstest,0)
     addcommand("catch",cmd.catch)
+    addcommand("giveitem",cmd.giveitem)
     _G['handlemessage'] = function (message)
       if message.author.id ~= client.user.id then
         local hasrun = false

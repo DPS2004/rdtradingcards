@@ -13,7 +13,7 @@ function command.run(message, mt)
   end
   
   local user_argument = mt[1]
-  local thing_argument = mt[2]
+  local thing_argument = string.lower(mt[2])
   local numcards = 1
   
   if tonumber(mt[3]) then
@@ -22,8 +22,13 @@ function command.run(message, mt)
     end
   end
   
-  if string.lower(thing_argument) == "token" then
+  if thing_argument == "token" then
     cmd.givetoken.run(message, {user_argument, numcards})
+    return
+  end
+
+  if constexttofn(thing_argument) then
+    cmd.giveitem.run(message, {user_argument, thing_argument, numcards})
     return
   end
     
