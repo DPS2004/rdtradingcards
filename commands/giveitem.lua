@@ -25,6 +25,8 @@ function command.run(message, mt)
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
   local uj2f = usernametojson(user_argument)
 
+  if not uj.consumables then uj.consumables = {} end
+
   if mt[3] == "all" then
     numitems = uj.consumables[thing_argument]
   end
