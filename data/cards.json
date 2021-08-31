@@ -3009,7 +3009,8 @@
           "smell": "Mummies",
           "season": 2,
           "bonuses": {
-            "paddedstickersheet": true
+            "paddedstickersheet": true,
+            "deluxebirdseed": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202865654333470/theoracle.png"
         },
@@ -3808,7 +3809,7 @@
           "embed": "https://cdn.discordapp.com/attachments/575848843049172994/873226361928552458/upinmyjam.gif"
         },
         {
-          "chance": 2,
+          "chance": 100,
           "filename": "rdnot",
           "name": "What is RD Not?",
           "type": "Super Rare",
