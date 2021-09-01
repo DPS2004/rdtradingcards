@@ -504,6 +504,14 @@ function command.run(message, mt, overwrite)
         end
       end
     end
+
+    _G['getcardseason'] = function (x)
+      for i, v in ipairs(cdb) do
+        if v.filename == x then
+          return v.season
+        end
+      end
+    end
     
     _G['getcarddescription'] = function (x)
       print("getting description for " .. x)
@@ -909,17 +917,21 @@ function command.run(message, mt, overwrite)
         local price = 8
         if getcardtype(nc) == "Rare" then
           price = 1
-        elseif getcardtype(nc) == "Super Rare" then
-          price = 3
+        elseif getcardtype(nc) == "Super Rare" or getcardtype(nc) == "PICO-8" then
+          price = 2
         elseif getcardtype(nc) == "Ultra Rare" then
-          price = 5
-        elseif getcardtype(nc) == "PICO-8" then
-          price = 6
+          price = 4
+        elseif getcardtype(nc) == "Discontinued" or getcardtype(nc) == "Alternate" then
+          price = math.random(4, 6)
+        elseif getcardtype(nc) == "Discontinued Alternate" or getcardtype(nc) == "Discontinued Super Rare" then
+          price = math.random(8, 10)
+        elseif getcardtype(nc) == "Discontinued Rare" or getcardtype(nc) == "Discontinued Ultra Rare" then
+          price = math.random(13, 17)
         end
-          
-        
-        
-        
+
+        if getcardseason(nc) == #seasontable then
+          price = price + 1
+        end
         newcards[i] = {name = nc,stock = math.random(5,15), price = price}
         sj.cards = newcards
       end

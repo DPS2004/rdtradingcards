@@ -457,11 +457,11 @@ function command.run(message, mt,bypass)
       elseif itemtexttofn(mt[2]) then
         srequest = itemtexttofn(mt[2])
         sname = itemfntoname(srequest)
-        sprice = 5
+        sprice = 2
         if srequest == sj.item then
           
           if sj.itemstock > 0 then
-            if uj.tokens >= 5 then
+            if uj.tokens >= 2 then
               if not uj.items[srequest] then
                 
                 
@@ -503,7 +503,7 @@ function command.run(message, mt,bypass)
               ynbuttons(message,{
                 color = 0x85c5ff,
                 title = "Buying " .. sname .. "...",
-                description = "The description for this item reads: \n`".. getcarddescription(srequest) .."`\nWill you buy it for "..sprice.." **Tokens**?",
+                description = "The description for this card reads: \n`".. getcarddescription(srequest) .."`\nWill you buy it for "..sprice.." **Tokens**?",
               },"buy",{itemtype = "card",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest})
               return
             else

@@ -425,8 +425,8 @@ function command.run(message, mt)
       for i,v in ipairs(sj.consumables) do
         shopstr = shopstr .. "\n**"..consfntoname(v.name).."** ("..v.price.." token" .. (v.price == 1 and "" or "s") .. ") x"..v.stock
       end
-      shopstr = shopstr .. "\n**"..itemfntoname(sj.item).."** (5 tokens) x"..sj.itemstock
-      message.channel:send("The shop is selling:\n"..shopstr)
+      shopstr = shopstr .. "\n**"..itemfntoname(sj.item).."** (2 tokens) x"..sj.itemstock
+      message.channel:send("The **Shop** is selling:\n"..shopstr)
     elseif (request == "wolf")  then 
       message.channel:send{embed = {
         color = 0x85c5ff,
