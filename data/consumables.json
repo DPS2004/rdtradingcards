@@ -81,7 +81,7 @@
     "name": "X-ray Goggles",
     "description": "Sends you a DM with the current contents of the Peculiar Box",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875807168849383535/xraygoggles.png",
-    "baseprice": 5,
+    "baseprice": 2,
     "chance": 10
   },
   "scratchoffticket" : {
