@@ -23,6 +23,10 @@ function reaction.run(ef, eom, reaction, userid)
     if eom.itemtype == "card" then
       checked = (sj.cards[eom.sindex].name == eom.srequest) and (sj.cards[eom.sindex].stock ~= 0)
     end
+
+    if eom.itemtype == "item" then
+      checked = (sj.item == eom.srequest) and (sj.itemstock ~= 0)
+    end
     
     if not checked then
       reaction.message.channel:send("An error has occured. Please make sure that the thing you want is still in stock!")
