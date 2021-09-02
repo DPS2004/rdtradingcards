@@ -39,8 +39,6 @@ local time = sw:getTime()
     message.channel:send('Please wait ' .. durationtext .. ' before praying again.')
     return
   end
-
-  message.channel:send('The Card Gods have listened to your plight. A **Token** appears in your pocket.')
   
   uj.tokens = uj.tokens and uj.tokens + 1 or 1
   uj.timesprayed = uj.timesprayed and uj.timesprayed + 1 or 1
@@ -57,5 +55,7 @@ local time = sw:getTime()
   end
   
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
+
+  message.channel:send('The Card Gods have listened to your plight. A **Token** appears in your pocket.')
 end
 return command

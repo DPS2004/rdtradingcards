@@ -35,8 +35,27 @@ local time = sw:getTime()
     message.channel:send('Please wait ' .. durationtext .. ' before pulling again.')
     return
   end
+  
+  if not uj.names then
+    uj.names = {}
+    uj.names[message.author.name .. "#" .. message.author.discriminator] = true
+  end
+  uj.id = message.author.id
+  uj.lastpull = time:toHours()
+  print(inspect(uj.names) .. " is/are the nickname/s")
+  
+  if uj.sodapt and uj.sodapt.pull then
+    uj.lastpull = uj.lastpull + uj.sodapt.pull
+    uj.sodapt.pull = nil
+    if uj.sodapt == {} then uj.sodapt = nil end
+  end
+  
+  dpf.savejson("savedata/" .. message.author.id .. ".json", uj)
 
   message.channel:send('Pulling card...')
+
+  uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
+
   local pulledcards = {ptable[uj.equipped][math.random(#ptable[uj.equipped])]}
   if not uj.conspt then
     uj.conspt = "none"
@@ -50,6 +69,13 @@ local time = sw:getTime()
     pulledcards= { constable[uj.conspt][math.random(#constable[uj.conspt])] }
     uj.conspt = "none"
   end
+
+  for i, v in ipairs(pulledcards) do
+    uj.inventory[v] = uj.inventory[v] and uj.inventory[v] + 1 or 1
+    uj.timespulled = uj.timespulled and uj.timespulled + 1 or 1
+  end
+
+  dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
 
   for i, v in ipairs(pulledcards) do
     local cardname = fntoname(v)
@@ -84,29 +110,6 @@ _________________```]])
         file = "card_images/SPOILER_" .. v .. ".png"
       }
     end
-
-    uj.inventory[v] = uj.inventory[v] and uj.inventory[v] + 1 or 1
-    uj.timespulled = uj.timespulled and uj.timespulled + 1 or 1
   end
-  
-  if not uj.names then
-    uj.names = {}
-    uj.names[message.author.name .. "#" .. message.author.discriminator] = true
-  end
-  uj.id = message.author.id
-  uj.lastpull = time:toHours()
-  print(inspect(uj.names) .. " is/are the nickname/s")
-  
-  if uj.sodapt then
-    if uj.sodapt.pull then
-      uj.lastpull = uj.lastpull + uj.sodapt.pull
-      uj.sodapt.pull = nil
-      if uj.sodapt == {} then
-        uj.sodapt = nil
-      end
-    end
-  end
-  
-  dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
 end
 return command
