@@ -503,7 +503,7 @@ function command.run(message, mt,bypass)
               ynbuttons(message,{
                 color = 0x85c5ff,
                 title = "Buying " .. sname .. "...",
-                description = "The description for this card reads: \n`".. getcarddescription(srequest) .."`\nWill you buy it for "..sprice.." **Tokens**?",
+                description = "The description for this card reads: \n`".. getcarddescription(srequest) .."`\nWill you buy it for "..sprice.." **Token" .. (sprice == 1 and "" or "s") .."**?",
               },"buy",{itemtype = "card",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest})
               return
             else
