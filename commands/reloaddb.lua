@@ -862,7 +862,7 @@ function command.run(message, mt, overwrite)
             x,y = 330,293
           end
           
-          card = vips.Image.new_from_file(getcardthumb(v.name))
+          local card = vips.Image.new_from_file(getcardthumb(v.name))
           if v.stock == 0 then
             card = card:Colourspace('b-w')
             card = card:composite2(darkener,"over")

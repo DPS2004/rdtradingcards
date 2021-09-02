@@ -5,7 +5,7 @@ function command.run(message, mt)
   local cmember = message.guild:getMember(message.author)
   if cmember:hasRole(privatestuff.modroleid) then
     for i,v in ipairs(scandir("savedata")) do
-      cuj = dpf.loadjson("savedata/"..v,defaultjson)
+      local cuj = dpf.loadjson("savedata/"..v,defaultjson)
       if cuj.lastpull then
         cuj.lastpull = -24
         cuj.lastprayer = -24
