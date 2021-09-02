@@ -414,10 +414,6 @@ function command.run(message, mt)
       local time = sw:getTime()
       checkforreload(time:toDays())
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
-      message.channel:send{ ---todo: make this an embed
-        content = 'The **Quaint Shop** is filled with cards and card accessories, all sold by the **Wolf**. It seems to be doing a pretty good job at running the business. As you look around, you also see a framed **Photo** hangning on the wall. The **Ghost** in the corner is standing guard, watching over the store.',
-        file = getshopimage(),
-      }
       local shopstr = ""
       for i,v in ipairs(sj.cards) do
         shopstr = shopstr .. "\n**"..fntoname(v.name).."** ("..v.price.." token" .. (v.price == 1 and "" or "s") .. ") x"..v.stock
@@ -426,7 +422,17 @@ function command.run(message, mt)
         shopstr = shopstr .. "\n**"..consfntoname(v.name).."** ("..v.price.." token" .. (v.price == 1 and "" or "s") .. ") x"..v.stock
       end
       shopstr = shopstr .. "\n**"..itemfntoname(sj.item).."** (2 tokens) x"..sj.itemstock
-      message.channel:send("The **Shop** is selling:\n"..shopstr)
+      message.channel:send{embed = {
+        color = 0x85c5ff,
+        title = "Looking at Shop...",
+        description = 'The **Quaint Shop** is filled with cards and card accessories, all sold by the **Wolf**. It seems to be doing a pretty good job at running the business. As you look around, you also see a framed **Photo** hangning on the wall. The **Ghost** in the corner is standing guard, watching over the store.',
+        fields = {{
+          name = "The Shop is selling:",
+          value = shopstr,
+          inline = true
+        }},
+        image = {url = "attachment://shop.png"}},
+        files = {getshopimage()}}
     elseif (request == "wolf")  then 
       message.channel:send{embed = {
         color = 0x85c5ff,
