@@ -5,8 +5,8 @@ function command.run(message, mt)
   print(mt[1])
   if cmember:hasRole(privatestuff.modroleid) then
     message.channel:send('Ok, running!')
-    local request = mt[1]
-    local rfunc = loadstring(request)
+    local request = table.concat(mt, "/")
+    local rfunc = assert(loadstring(request))
     rfunc()
   else
     message.channel:send('Sorry, but only moderators can use this command!')
