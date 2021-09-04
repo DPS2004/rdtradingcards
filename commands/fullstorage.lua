@@ -15,7 +15,7 @@ function command.run(message, mt)
   table.sort(storetable)
   for i = 1, numkey do
     storestring = storestring .. storetable[i]
-    if #storestring > 2048 then
+    if #storestring > 4096 then
       message.author:send{
         content = contentstring,
         embed = {
