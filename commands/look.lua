@@ -410,7 +410,7 @@ function command.run(message, mt)
     
       
     local request = string.lower(mt[1]) --why tf didint i do this for all the other ones?????????????????
-    if (request == "shop" or request == "quaintshop" or request == "quaint shop" or request == "")  then 
+    if (request == "shop" or request == "quaintshop" or request == "quaint shop" or request == "")  then
       local time = sw:getTime()
       checkforreload(time:toDays())
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
@@ -433,11 +433,27 @@ function command.run(message, mt)
         }},
         image = {url = "attachment://shop.png"}},
         files = {getshopimage()}}
-    elseif (request == "wolf")  then 
+    elseif (request == "wolf")  then
+      local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
+      local time = sw:getTime()
+      checkforreload(time:toDays())
+      --extremely jank implementation, please make this cleaner if possible
+      local minutesleft = math.ceil((sj.lastrefresh - time:toDays()) * 24 * 60)
+      print(minutesleft)
+      local durationtext = ""
+      if math.floor(minutesleft / 60) > 0 then
+        durationtext = math.floor(minutesleft / 60) .. " hour"
+        if math.floor(minutesleft / 60) ~= 1 then durationtext = durationtext .. "s" end
+      end
+      if minutesleft % 60 > 0 then
+        if durationtext ~= "" then durationtext = durationtext .. " and " end
+        durationtext = durationtext .. minutesleft % 60 .. " minute"
+        if minutesleft % 60 ~= 1 then durationtext = durationtext .. "s" end
+      end
       message.channel:send{embed = {
         color = 0x85c5ff,
         title = "Looking at Wolf...",
-        description = 'The **Wolf** looks up and gives a friendly wave. They seem quite content with where they are at, but you can see a small amount of worry in their eyes.',
+        description = 'The **Wolf** looks up and gives a friendly wave. They seem quite content with where they are at, but you can see a small amount of worry in their eyes.\n\nWhen asked about the **Shop**, the **Wolf** tells you that it\'s going to be restocked in ' .. durationtext .. '.',
       }}
     elseif (request == "ghost")  then 
       message.channel:send{embed = {
