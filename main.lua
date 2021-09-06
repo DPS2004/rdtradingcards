@@ -13,6 +13,7 @@ _G["vips"] = require('vips')
 _G["trim"] = function (s)
    return s:match "^%s*(.-)%s*$"
 end
+_G["http"] = require('coro-http')
 
 -- import all the commands
 _G['cmd'] = {}
