@@ -105,7 +105,71 @@
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875927481679487036/megaphone.png",
     "baseprice": 10,
     "chance": 10
+  },
+  "s1booster": {
+    "name": "Nostalgic Booster",
+    "description": "The next card you pull is guaranteed to be from Season 1. You can only use one item of this type at a time.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/884781557821366293/unknown.png",
+    "baseprice": 3,
+    "chance": 5,
+    "command": "seasonbooster",
+    "season": 1
+  },
+  "s2booster": {
+    "name": "Customized Booster",
+    "description": "The next card you pull is guaranteed to be from Season 2. You can only use one item of this type at a time.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/884781557821366293/unknown.png",
+    "baseprice": 3,
+    "chance": 5,
+    "command": "seasonbooster",
+    "season": 2
+  },
+  "s3booster": {
+    "name": "Pixelated Booster",
+    "description": "The next card you pull is guaranteed to be from Season 3. You can only use one item of this type at a time.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/884781557821366293/unknown.png",
+    "baseprice": 3,
+    "chance": 5,
+    "command": "seasonbooster",
+    "season": 3
+  },
+  "s4booster": {
+    "name": "Released Booster",
+    "description": "The next card you pull is guaranteed to be from Season 4. You can only use one item of this type at a time.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/884781557821366293/unknown.png",
+    "baseprice": 3,
+    "chance": 5,
+    "command": "seasonbooster",
+    "season": 4
+  },
+  "s5booster": {
+    "name": "Alternative Booster",
+    "description": "The next card you pull is guaranteed to be from Season 5. You can only use one item of this type at a time.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/884781557821366293/unknown.png",
+    "baseprice": 3,
+    "chance": 5,
+    "command": "seasonbooster",
+    "season": 5
+  },
+  "s6booster": {
+    "name": "Diverse Booster",
+    "description": "The next card you pull is guaranteed to be from Season 6 You can only use one item of this type at a time.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/884781557821366293/unknown.png",
+    "baseprice": 3,
+    "chance": 5,
+    "command": "seasonbooster",
+    "season": 6
+  },
+  "s7booster": {
+    "name": "Animal Booster",
+    "description": "The next card you pull is guaranteed to be from Season 7 You can only use one item of this type at a time.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/884781557821366293/unknown.png",
+    "baseprice": 6,
+    "chance": 5,
+    "command": "seasonbooster",
+    "season": 7
   }
+    
   
   
 

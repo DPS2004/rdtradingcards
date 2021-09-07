@@ -88,7 +88,7 @@
     },
     "rollerskates" : {
       "name": "Roller Skates",
-      "description": "Increases your chick's movement speed by about 50%, and the likelyhood of falling off by 100%."
+      "description": "Increases your chick's movement speed by about 50%, and the likelyhood of falling by 100%."
     }
   },
   "other" : {

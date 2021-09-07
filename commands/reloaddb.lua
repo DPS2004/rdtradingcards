@@ -228,10 +228,16 @@ function command.run(message, mt, overwrite)
     for i, v in ipairs(cdata.groups) do
       for w, x in ipairs(v.cards) do
         table.insert(cdb, x)
-        if not seasontable[x.season] then seasontable[x.season] = {} end
+        if not seasontable[x.season] then 
+          seasontable[x.season] = {} 
+          constable["season"..x.season] = {}
+        end
         table.insert(seasontable[x.season], x.filename)
+        table.insert(constable["season"..x.season], x.filename)
       end
     end
+    
+    
     
     -- print("here is cdb")
     -- print(inspect(cdb))
