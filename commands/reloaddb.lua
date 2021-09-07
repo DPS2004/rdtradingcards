@@ -93,6 +93,7 @@ function command.run(message, mt, overwrite)
     cmdcons.caffeinatedsoda = dofile('consumables/caffeinatedsoda.lua')
     cmdcons.scratchoffticket = dofile('consumables/scratchoffticket.lua')
     cmdcons.replacementvoid = dofile('consumables/replacementvoid.lua')
+    cmdcons.seasonbooster = dofile('consumables/seasonbooster.lua')
     
     print("done loading reactions")
 
@@ -454,6 +455,33 @@ function command.run(message, mt, overwrite)
       for k, v in pairs(consumabledb) do
         if string.lower(k) == string.lower(x) then
           return v.name
+        end
+      end
+      
+    end
+    _G['getconsseason'] = function (x)
+      print("finding " .. x)
+      for k, v in pairs(consumabledb) do
+        if string.lower(k) == string.lower(x) then
+          return v.season
+        end
+      end
+      
+    end
+    _G['getconscommand'] = function (x)
+      print("finding " .. x)
+      for k, v in pairs(consumabledb) do
+        if string.lower(k) == string.lower(x) then
+          return v.command
+        end
+      end
+      
+    end
+    _G['getconstext'] = function (x)
+      print("finding " .. x)
+      for k, v in pairs(consumabledb) do
+        if string.lower(k) == string.lower(x) then
+          return v.text
         end
       end
       

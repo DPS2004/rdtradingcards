@@ -113,7 +113,8 @@
     "baseprice": 3,
     "chance": 5,
     "command": "seasonbooster",
-    "season": 1
+    "season": 1,
+    "text": "You tear open the **Nostalgic Booster.** Inside is some dust and un-embedded images."
   },
   "s2booster": {
     "name": "Customized Booster",
@@ -122,7 +123,8 @@
     "baseprice": 3,
     "chance": 5,
     "command": "seasonbooster",
-    "season": 2
+    "season": 2,
+    "text": "You tear open the **Customized Booster.** Inside is a pencil and some certificates."
   },
   "s3booster": {
     "name": "Pixelated Booster",
@@ -131,7 +133,8 @@
     "baseprice": 3,
     "chance": 5,
     "command": "seasonbooster",
-    "season": 3
+    "season": 3,
+    "text": "You tear open the **Pixelated Booster.** Inside is some old video games and a coffee bean."
   },
   "s4booster": {
     "name": "Released Booster",
@@ -140,7 +143,8 @@
     "baseprice": 3,
     "chance": 5,
     "command": "seasonbooster",
-    "season": 4
+    "season": 4,
+    "text": "You tear open the **Released Booster.** Inside is a new game engine and seven years."
   },
   "s5booster": {
     "name": "Alternative Booster",
@@ -149,7 +153,8 @@
     "baseprice": 3,
     "chance": 5,
     "command": "seasonbooster",
-    "season": 5
+    "season": 5,
+    "text": "You tear open the **Alternative Booster.** Inside is a damp cloth and optimized network code."
   },
   "s6booster": {
     "name": "Diverse Booster",
@@ -158,7 +163,8 @@
     "baseprice": 3,
     "chance": 5,
     "command": "seasonbooster",
-    "season": 6
+    "season": 6,
+    "text": "You tear open the **Diverse Booster.** Inside is some pins and a pair of programming socks."
   },
   "s7booster": {
     "name": "Animal Booster",
@@ -167,7 +173,8 @@
     "baseprice": 6,
     "chance": 5,
     "command": "seasonbooster",
-    "season": 7
+    "season": 7,
+    "text": "You tear open the **Animal Booster.** Inside is some fur and a sheet of economics homework."
   }
     
   

@@ -23,9 +23,12 @@ function reaction.run(ef, eom, reaction, userid)
       reaction.message.channel:send("An error has occured. Please make sure that you still have the item!")
       return
     end
+    fn = request
+    if getconscommand(request) then
+      request = getconscommand(request)
+    end
     
-    
-    cmdcons[request].run(uj,ujf,client:getChannel(eom.ogmessage.channel.id):getMessage(eom.ogmessage.id),eom.mt) -- this is the single worst line of code that i have ever written
+    cmdcons[request].run(uj,ujf,client:getChannel(eom.ogmessage.channel.id):getMessage(eom.ogmessage.id),eom.mt,fn) -- this is the single worst line of code that i have ever written
     
   end
 
