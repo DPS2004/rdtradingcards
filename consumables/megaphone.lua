@@ -12,17 +12,18 @@ function item.run(uj,ujf,message,mt)
     local text = table.concat(mt, "/", 2):gsub("[<>]", "")
 
     if message.guild then message:delete() end
-    
+    local newmessage = nil
     if message.attachment then
       local res, body = http.request("GET", message.attachment.url)
-      client:getChannel(cardchannel):send{
+      newmessage = client:getChannel(cardchannel):send{
         content = "A message comes through the **Megaphone**:\n" .. text,
         file = {message.attachment.filename, body}
       }:hideEmbeds()
     else
-      client:getChannel(cardchannel):send("A message comes through the **Megaphone**:\n" .. text):hideEmbeds()
+      newmessage = client:getChannel(cardchannel):send("A message comes through the **Megaphone**:\n" .. text):hideEmbeds()
     end
-
+    newmessage.content = text
+    handlemessage(newmessage,true)
   else
     message.channel:send("The megaphone was not used. Please attach a message with c!use megaphone/(YOUR MESSAGE HERE)")
   end
