@@ -14,6 +14,9 @@ local emuser = dpf.loadjson("emu_users/" .. defaultuser .. ".json", {name = "def
 _G["discordia"] = {
   Client = function()
     return {
+      user = {
+        id = "795144198252658718"
+      },
       on = function(this,trigger, func)
         io.write("EMU: client.on called\n")
         discordia.ons[trigger] = func
@@ -146,12 +149,18 @@ _G["client"] = discordia.Client()
 _G["prefix"] = "c!"
 _G["utils"] = require('libs/utils')
 _G["inspect"] = require('libs/inspect')
+_G["vips"] = require('vips')
 _G["trim"] = function (s)
    return s:match "^%s*(.-)%s*$"
 end
 
 -- import all the commands
 _G['cmd'] = {}
+-- import reaction commands
+_G['cmdre'] = {}
+
+_G['cmdcons'] = {}
+
 local rdb = dofile('commands/reloaddb.lua')
 rdb.run(nil,nil,true)
 print("exited rdb.run")
@@ -165,6 +174,10 @@ print("yay got past load ready")
 
 client:on('messageCreate', function(message)
   handlemessage(message)
+end)
+
+client:on('buttonPressed', function(buttonid, member, message)
+  handlebutton(buttonid, member, message)
 end)
 
 print("ok commands loaded, doing reactions")

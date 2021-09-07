@@ -222,7 +222,17 @@ function command.run(message, mt, overwrite)
           for y = 1, (cdata.basemult * v.basechance * x.chance * cmult) do
             table.insert(ptable[k],x.filename)
           end
+          if k == "nothing" then
+            if not constable["season"..x.season] then
+              print("making season"..x.season)
+              constable["season"..x.season] = {}
+            end
+            for y = 1, (cdata.basemult * v.basechance * x.chance) do
+              table.insert(constable["season"..x.season], x.filename)
+            end
+          end
         end
+        
       end
     end
 
@@ -231,10 +241,8 @@ function command.run(message, mt, overwrite)
         table.insert(cdb, x)
         if not seasontable[x.season] then 
           seasontable[x.season] = {} 
-          constable["season"..x.season] = {}
         end
         table.insert(seasontable[x.season], x.filename)
-        table.insert(constable["season"..x.season], x.filename)
       end
     end
     
@@ -246,7 +254,6 @@ function command.run(message, mt, overwrite)
     -- print(inspect(seasontable))
     -- print("here is ptable")
     -- print(inspect(ptable))
-    
     
     print('loading consumabledb')    
     _G['consumabledb'] = dpf.loadjson("data/consumables.json", defaultjson)

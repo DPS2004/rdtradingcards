@@ -585,7 +585,11 @@ function command.run(message, mt,bypass)
           },"useconsumable",{crequest=request,mt=mt})
           return
         else
-          cmdcons[request].run(uj,"savedata/" .. message.author.id .. ".json",message,mt)
+          fn = request
+          if getconscommand(request) then
+            request = getconscommand(request)
+          end
+          cmdcons[request].run(uj,"savedata/" .. message.author.id .. ".json",message,mt,fn)
         end
       else
         message.channel:send("Sorry, but you don't have the **" .. consfntoname(request) .. "** item.")
