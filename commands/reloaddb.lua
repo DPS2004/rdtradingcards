@@ -724,22 +724,23 @@ function command.run(message, mt, overwrite)
     addcommand("vipstest",cmd.vipstest,0)
     addcommand("catch",cmd.catch)
     addcommand("giveitem",cmd.giveitem)
-    _G['handlemessage'] = function (message,skip)
-      if message.author.id ~= client.user.id or skip then
+    _G['handlemessage'] = function (message,content)
+      if message.author.id ~= client.user.id or content then
         local hasrun = false
+        local messagecontent = content or message.content
         for i,v in ipairs(commands) do
-          if (string.lower(string.sub(message.content, 0, #v.trigger+1)) == v.trigger or string.lower(string.sub(message.content, 0, #v.trigger+1)) == v.trigger.." ") and not hasrun then
+          if (string.lower(string.sub(messagecontent, 0, #v.trigger+1)) == v.trigger or string.lower(string.sub(messagecontent, 0, #v.trigger+1)) == v.trigger.." ") and not hasrun then
             print("found ".. v.trigger)
             local mt = {}
             local nmt = {}
             if v.expectedargs == 0 then
-              mt = string.split(string.sub(message.content, #v.trigger+1),"/")
+              mt = string.split(string.sub(messagecontent, #v.trigger+1),"/")
               for a,b in ipairs(mt) do
                 b = trim(b)
                 nmt[a]=b
               end
             elseif v.expectedargs == 1 then
-              nmt = {trim(string.sub(message.content, #v.trigger+1))}
+              nmt = {trim(string.sub(messagecontent, #v.trigger+1))}
             end --might have to expand later?
             if v.force then
               for c,d in ipairs(v.force) do

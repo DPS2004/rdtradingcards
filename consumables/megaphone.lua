@@ -18,12 +18,13 @@ function item.run(uj,ujf,message,mt)
       newmessage = client:getChannel(cardchannel):send{
         content = "A message comes through the **Megaphone**:\n" .. text,
         file = {message.attachment.filename, body}
-      }:hideEmbeds()
+      }
+      newmessage:hideEmbeds()
     else
-      newmessage = client:getChannel(cardchannel):send("A message comes through the **Megaphone**:\n" .. text):hideEmbeds()
+      newmessage = client:getChannel(cardchannel):send("A message comes through the **Megaphone**:\n" .. text)
+      newmessage:hideEmbeds()
     end
-    newmessage.content = text
-    handlemessage(newmessage,true)
+    handlemessage(newmessage, text)
   else
     message.channel:send("The megaphone was not used. Please attach a message with c!use megaphone/(YOUR MESSAGE HERE)")
   end
