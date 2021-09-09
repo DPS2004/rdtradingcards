@@ -414,23 +414,41 @@ function command.run(message, mt)
       local time = sw:getTime()
       checkforreload(time:toDays())
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
-      local shopstr = ""
+      local itemtext, pricetext, stocktext = "", "" ,""
       for i,v in ipairs(sj.cards) do
-        shopstr = shopstr .. "\n**"..fntoname(v.name).."** ("..v.price.." token" .. (v.price == 1 and "" or "s") .. ") x"..v.stock
+        itemtext = itemtext .. "**" .. fntoname(v.name) .. "**\n"
+        pricetext = pricetext .. v.price .. " token" .. (v.price == 1 and "" or "s") .. "\n"
+        stocktext = stocktext .. "x" .. v.stock .. "\n"
       end
       for i,v in ipairs(sj.consumables) do
-        shopstr = shopstr .. "\n**"..consfntoname(v.name).."** ("..v.price.." token" .. (v.price == 1 and "" or "s") .. ") x"..v.stock
+        itemtext = itemtext .. "\n**" .. consfntoname(v.name) .. "**"
+        pricetext = pricetext .. "\n" .. v.price .. " token" .. (v.price == 1 and "" or "s")
+        stocktext = stocktext .. "\nx" .. v.stock
       end
-      shopstr = shopstr .. "\n**"..itemfntoname(sj.item).."** (2 tokens) x"..sj.itemstock
+      itemtext = itemtext .. "\n**" .. itemfntoname(sj.item) .. "**"
+      pricetext = pricetext .. "\n 2 tokens"
+      stocktext = stocktext .. "\nx" .. sj.itemstock
       message.channel:send{embed = {
         color = 0x85c5ff,
         title = "Looking at Shop...",
-        description = 'The **Quaint Shop** is filled with cards and card accessories, all sold by the **Wolf**. It seems to be doing a pretty good job at running the business. As you look around, you also see a framed **Photo** hangning on the wall. The **Ghost** in the corner is standing guard, watching over the store.',
-        fields = {{
-          name = "The Shop is selling:",
-          value = shopstr,
-          inline = true
-        }},
+        description = 'The **Quaint Shop** is filled with cards and card accessories, all sold by the **Wolf**. It seems to be doing a pretty good job at running the business. As you look around, you also see a framed **Photo** hangning on the wall. The **Ghost** in the corner is standing guard, watching over the store.\n\n**The Shop is selling:**',
+        fields = {
+          {
+            name = "Item",
+            value = itemtext,
+            inline = true
+          },
+          {
+            name = "Price",
+            value = pricetext,
+            inline = true
+          },
+          {
+            name = "Stock",
+            value = stocktext,
+            inline = true
+          }
+        },
         image = {url = "attachment://shop.png"}},
         files = {getshopimage()}}
     elseif (request == "wolf")  then
