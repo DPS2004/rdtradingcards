@@ -2707,7 +2707,9 @@
           "description": "(Art by Peachy6206)",
           "smell": "Good Bois",
           "season": 7,
-          "bonuses": {},
+          "bonuses": {
+            "oversizedstethoscope": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872146744169873428/animalgroup.png"
         },
         {
@@ -2821,7 +2823,9 @@
           "description": "Requires Loafy (Collector's), Rattle (Collector's), Dr. Spider (Collector's), and The Animal Group (Art by Peachy6206)",
           "smell": "Good Bois",
           "season": 7,
-          "bonuses": {},
+          "bonuses": {
+            "oversizedstethoscope": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872146746841640960/animalgroupc.png"
         },
         {
