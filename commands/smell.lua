@@ -45,7 +45,7 @@ function command.run(message, mt)
       faithfulnecklace = "The **Faithful Necklace** smells. You need to take it off and wash it.",
       stainedgloves = "The **Stained Gloves** smell like red.",
       paddedstickersheet = "The **Padded Sticker Sheet** smells like elementary school.",
-      duncecap = "The **Dunce Cap** smells like #insomniacs. That is, to say, bad.",
+      duncecap = "The **Dunce Cap** smells like <#297225076414087170>. That is, to say, bad.",
       deviltail = "The **Devil Tail** smells like fire and brimstone.",
       scribblednotepad = "The **Scribbled-In Notepad** smells like imagination.",
       okamiiscollar = "**okamii's Collar** smells like mirrors.",
