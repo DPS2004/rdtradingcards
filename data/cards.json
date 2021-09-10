@@ -4723,7 +4723,9 @@
           "description": "(Art by RJ Lake)",
           "smell": "Intense Vibing",
           "season": 7,
-          "bonuses": {},
+          "bonuses": {
+            "okamiiscollar": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/875763678492889088/quaverr.png"
         } 
       ]
@@ -4740,7 +4742,9 @@
           "description": "(Art by RJ Lake)",
           "smell": "Musical Crimes",
           "season": 7,
-          "bonuses": {},
+          "bonuses": {
+            "okamiiscollar": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/875762063274811432/beatr.png"
         } 
       ]
@@ -4757,7 +4761,9 @@
           "description": "(Art by RJ Lake)",
           "smell": "Sick Piano Solos",
           "season": 7,
-          "bonuses": {},
+          "bonuses": {
+            "okamiiscollar": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/875762059399274506/trebler.png"
         } 
       ]
@@ -4774,7 +4780,9 @@
           "description": "(Art by RJ Lake)",
           "smell": "Bass Kick",
           "season": 7,
-          "bonuses": {},
+          "bonuses": {
+            "okamiiscollar": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/875762060640804884/clefr.png"
         } 
       ]
