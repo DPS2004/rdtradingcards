@@ -2441,7 +2441,9 @@
           "description": "(Art by Kyle Labriola)",
           "smell": "Time Bending",
           "season": 1,
-          "bonuses": {},
+          "bonuses": {
+            "scribblednotepad": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202521355976715/roomsur.png"
         },
         {
