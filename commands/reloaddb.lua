@@ -10,97 +10,39 @@ function command.run(message, mt, overwrite)
   if authcheck then
     print("authcheck passed")
     _G["privatestuff"] = dofile('privatestuff.lua')
-    cmd.ping = dofile('commands/ping.lua')
-    cmd.help = dofile('commands/help.lua')
-    cmd.resetclock = dofile('commands/resetclock.lua')
-    cmd.uptime = dofile('commands/uptime.lua')
-    cmd.testcards = dofile('commands/testcards.lua')
-    cmd.pull = dofile('commands/pull.lua')
-    cmd.inventory = dofile('commands/inventory.lua')
-    cmd.show = dofile('commands/show.lua')
-    cmd.give = dofile('commands/give.lua')
-    cmd.trade = dofile('commands/trade.lua')
-    cmd.store = dofile('commands/store.lua')
-    cmd.storage = dofile('commands/storage.lua')
-    cmd.checkcollectors = dofile('commands/checkcollectors.lua')
-    cmd.checkmedals = dofile('commands/checkmedals.lua')
-    cmd.reloaddb = dofile('commands/reloaddb.lua')
-    cmd.medals = dofile('commands/medals.lua')
-    cmd.crash = dofile('commands/crash.lua')
-    cmd.showmedal = dofile('commands/showmedal.lua')
-    cmd.runlua = dofile('commands/runlua.lua')
-    cmd.generategive = dofile('commands/generategive.lua')
-    cmd.search = dofile('commands/search.lua')
-    cmd.tell = dofile('commands/tell.lua')
-    cmd.beans = dofile('commands/beans.lua')
-    cmd.nickname = dofile('commands/nickname.lua')
-    cmd.pray = dofile('commands/pray.lua')
-    cmd.smell = dofile('commands/smell.lua')
-    cmd.shred = dofile('commands/shred.lua')
-    cmd.look = dofile('commands/look.lua')
-    cmd.use = dofile('commands/use.lua')
-    cmd.items = dofile('commands/items.lua')
-    cmd.showitem = dofile('commands/showitem.lua')
-    cmd.equip = dofile('commands/equip.lua')
-    cmd.yeetalltokens = dofile('commands/yeetalltokens.lua')
-    cmd.granttoken = dofile('commands/granttoken.lua')
-    cmd.fullinventory = dofile('commands/fullinventory.lua')
-    cmd.fullstorage = dofile('commands/fullstorage.lua')
-    cmd.setworldstate = dofile('commands/setworldstate.lua')
-    cmd.setspecialuser = dofile('commands/setspecialuser.lua')
-    cmd.givetoken = dofile('commands/givetoken.lua')
-    cmd.skipprompts = dofile('commands/skipprompts.lua')
-    cmd.renamefile = dofile('commands/renamefile.lua')
-    cmd.pronounlist = dofile('commands/pronounlist.lua')
-    cmd.pronounform = dofile('commands/pronounform.lua')
-    cmd.pronoun = dofile('commands/pronoun.lua')
-    cmd.getfile = dofile('commands/getfile.lua')
-    cmd.vipstest = dofile('commands/vipstest.lua')
-    cmd.chick = dofile('commands/chick.lua')
-    cmd.move = dofile('commands/move.lua')
-    cmd.throw = dofile('commands/throw.lua')
-    cmd.catch = dofile('commands/catch.lua')
-    cmd.giveitem = dofile('commands/giveitem.lua')
+
+    -- Lua implementation of PHP scandir function
+    _G['scandir'] = function (directory)
+      return fs.readdirSync(directory)
+    end
+    
+    for i, v in ipairs(scandir("commands")) do
+      local filename = string.sub(v, 1, -5)
+      cmd[filename] = dofile('commands/' .. v)
+    end
     
     print("done loading commands")
 
-    cmdre.trade = dofile('reactions/trade.lua')
-    cmdre.store = dofile('reactions/store.lua')
-    cmdre.shred = dofile('reactions/shred.lua')
-    cmdre.equip = dofile('reactions/equip.lua')
-    cmdre.usemachine = dofile('reactions/usemachine.lua')
-    cmdre.usehole = dofile('reactions/usehole.lua')
-    cmdre.spideruse = dofile('reactions/spideruse.lua')
-    cmdre.spiderlook = dofile('reactions/spiderlook.lua')
-    cmdre.spidersmell = dofile('reactions/spidersmell.lua')
-    cmdre.getladder = dofile('reactions/getladder.lua')
-    cmdre.usemousehole = dofile('reactions/usemousehole.lua')
-    cmdre.usebox = dofile('reactions/usebox.lua')
-    cmdre.buy = dofile('reactions/buy.lua')
-    cmdre.useconsumable = dofile('reactions/useconsumable.lua')
-    
-    cmdcons.xraygoggles = dofile('consumables/xraygoggles.lua')
-    cmdcons.decaf = dofile('consumables/decaf.lua')
-    cmdcons.beepingpager = dofile('consumables/beepingpager.lua')
-    cmdcons.breadcrumbs = dofile('consumables/breadcrumbs.lua')
-    cmdcons.clownnose = dofile('consumables/clownnose.lua')
-    cmdcons.fancyteaset = dofile('consumables/fancyteaset.lua')
-    cmdcons.lunarrocks = dofile('consumables/lunarrocks.lua')
-    cmdcons.secretadmirersnote = dofile('consumables/secretadmirersnote.lua')
-    cmdcons.stickontabs = dofile('consumables/stickontabs.lua')
-    cmdcons.tapiocapudding = dofile('consumables/tapiocapudding.lua')
-    cmdcons.megaphone = dofile('consumables/megaphone.lua')
-    cmdcons.caffeinatedsoda = dofile('consumables/caffeinatedsoda.lua')
-    cmdcons.scratchoffticket = dofile('consumables/scratchoffticket.lua')
-    cmdcons.replacementvoid = dofile('consumables/replacementvoid.lua')
-    cmdcons.seasonbooster = dofile('consumables/seasonbooster.lua')
-    
-    tr.ping = dpf.loadtracery('data/tracery/ping.json')
-    tr.throw = dpf.loadtracery('data/tracery/throw.json')
-    tr.smell = dpf.loadtracery('data/tracery/smell.json')
-    
-    
+    for i, v in ipairs(scandir("reactions")) do
+      local filename = string.sub(v, 1, -5)
+      cmdre[filename] = dofile('reactions/' .. v)
+    end
+
     print("done loading reactions")
+
+    for i, v in ipairs(scandir("consumables")) do
+      local filename = string.sub(v, 1, -5)
+      cmdcons[filename] = dofile('consumables/' .. v)
+    end
+
+    print("done loading consumables")
+
+    for i, v in ipairs(scandir("data/tracery")) do
+      local filename = string.sub(v, 1, -6)
+      tr[filename] = dpf.loadtracery('data/tracery/' .. v)
+    end
+
+    print("done loading tracery")
 
     _G['defaultjson'] = {
       inventory = {},
@@ -612,11 +554,6 @@ function command.run(message, mt, overwrite)
           end
         end
       end
-    end
-
-    -- Lua implementation of PHP scandir function
-    _G['scandir'] = function (directory)
-      return fs.readdirSync(directory)
     end
 
     _G['usernametojson'] = function (x)
