@@ -1,0 +1,27 @@
+{
+  "take": [
+    "pull",
+    "pry",
+    "take",
+    "whip"
+  ],
+  "action": [
+    " and smell it",
+    " and give it a whiff",
+    " and put it up your nose",
+    " and shove it in your face",
+    ". It has lines emanating off it"
+  ],
+  "description": [
+    "The smell fondly reminds you of **@smell@**",
+    "It reeks of **@smell@**",
+    "Actually, you taste it. The card tastes like **@smell@**",
+    "A foreign voice enters your mind. It talks about **@smell@**",
+    "A nostalgic memory of **@smell@** passes over you",
+    "You suddenly have an intense feeling of yearning for **@smell@**",
+    "The card emits a strong odor that reminds you of **@smell@**"
+  ],
+  "origin": [
+    "You #take# out your **@card@** card#action#.\n#description#."
+  ]
+}

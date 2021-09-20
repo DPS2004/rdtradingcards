@@ -96,32 +96,8 @@ function command.run(message, mt)
     if curfilename ~= nil then
       if uj.inventory[curfilename] or uj.storage[curfilename] or shophas(curfilename) then
         print("user has card")
-
-        local beginnings = {
-          "You pull out your **____** card and smell it.",
-          "You pull out your **____** card and give it a whiff.",
-          "You take out your **____** card and put it up your nose.",
-          "You whip out your **____** card and shove it in your face.",
-          "You pry out your crumpled **____** card. It has lines emanating off it."
-        }
-        local random_beginning = beginnings[math.random(#beginnings)]
-        message.channel:send(random_beginning:gsub("____", fntoname(curfilename)))
-
         local smell = getcardsmell(curfilename)
-        if smell then
-          local descriptions = {
-            "The smell fondly reminds you of **____**",
-            "It reeks of **____**",
-            "Actually, you taste it. The card tastes like **____**",
-            "A foreign voice enters your mind. It talks about **____**",
-            "A nostalgic memory of **____** passes over you",
-            "You suddenly have an intense feeling of yearning for **____**",
-            "The card emits a strong odor that reminds you of **____**"
-          }
-          local random_description = descriptions[math.random(#descriptions)]
-          message.channel:send(random_description:gsub("____", smell))
-        end
-      
+        message.channel:send(trf("smell", {card = curfilename, smell = smell}))
       else
         print("user doesnt have card")
         if nopeeking then

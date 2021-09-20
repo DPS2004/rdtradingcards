@@ -97,6 +97,7 @@ function command.run(message, mt, overwrite)
     
     tr.ping = dpf.loadtracery('data/tracery/ping.json')
     tr.throw = dpf.loadtracery('data/tracery/throw.json')
+    tr.smell = dpf.loadtracery('data/tracery/smell.json')
     
     
     print("done loading reactions")
