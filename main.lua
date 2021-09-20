@@ -6,6 +6,8 @@ _G["client"] = discordia.Client()
 _G["prefix"] = "c!"
 _G["json"] = require('libs/json')
 _G["fs"] = require('fs')
+--from https://github.com/DeltaF1/lua-tracery, TODO properly follow the license lmao
+_G["tracery"] = require('libs/tracery')
 _G["dpf"] = require('libs/dpf')
 _G["utils"] = require('libs/utils')
 _G["inspect"] = require('libs/inspect')
@@ -22,6 +24,7 @@ _G['cmdre'] = {}
 
 _G['cmdcons'] = {}
 
+_G['tr'] = {}
 local rdb = dofile('commands/reloaddb.lua')
 rdb.run(nil,nil,true)
 print("exited rdb.run")

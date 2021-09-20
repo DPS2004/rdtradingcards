@@ -95,6 +95,9 @@ function command.run(message, mt, overwrite)
     cmdcons.replacementvoid = dofile('consumables/replacementvoid.lua')
     cmdcons.seasonbooster = dofile('consumables/seasonbooster.lua')
     
+    tr.ping = dpf.loadtracery('data/tracery/ping.json')
+    
+    
     print("done loading reactions")
 
     _G['defaultjson'] = {
@@ -370,6 +373,11 @@ function command.run(message, mt, overwrite)
     }
     
     print("loading functions")
+    
+    _G['trf'] = function (x)
+      local t,d = tr[x]:flatten('#origin#')
+      return t
+    end
     
     _G['getletterindex'] = function (x)
       print("finding letterindex of "..x)

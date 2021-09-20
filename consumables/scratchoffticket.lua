@@ -11,10 +11,14 @@ function item.run(uj,ujf,message,mt)
     uj.timesitemused = uj.timesitemused + 1
   end
   message.channel:send("You scratch off the marked spaces with a borrowed **Token**.")
-  if math.random(1,50) == 1 then
+  chance = math.random(1,100)
+  if chance <= 2 then
     local winnings = math.random(3,6) *10
     uj.tokens = uj.tokens + winnings
     message.channel:send("**We have a winner!** <@" .. uj.id .. '> just won **' .. winnings .. ' Tokens**!')
+  elseif chance == 3 then
+    --do something funny here
+    message.channel:send("Your ticket was not a winning one... Better luck next time!")
   else
     message.channel:send("Your ticket was not a winning one... Better luck next time!")
   end
