@@ -1,0 +1,21 @@
+{
+  "action": [
+    "thrown",
+    "yeeted",
+    "launched",
+    "flung",
+    "hurled",
+    "propelled"
+  ],
+  "place": [
+    "the sky",
+    "the air",
+    "the clouds",
+    "the heavens",
+    "the atmosphere",
+    "outer space"
+  ],
+  "origin": [
+    "@ping@ has #action# a @card@ into #place#!"
+  ]
+}

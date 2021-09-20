@@ -96,6 +96,7 @@ function command.run(message, mt, overwrite)
     cmdcons.seasonbooster = dofile('consumables/seasonbooster.lua')
     
     tr.ping = dpf.loadtracery('data/tracery/ping.json')
+    tr.throw = dpf.loadtracery('data/tracery/throw.json')
     
     
     print("done loading reactions")
@@ -374,8 +375,11 @@ function command.run(message, mt, overwrite)
     
     print("loading functions")
     
-    _G['trf'] = function (x)
+    _G['trf'] = function (x,rep)
       local t,d = tr[x]:flatten('#origin#')
+      for k,v in pairs(rep) do
+        t = string.gsub(t,"@"..k.."@", v)
+      end
       return t
     end
     

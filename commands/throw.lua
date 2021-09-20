@@ -37,7 +37,7 @@ function command.run(message, mt)
     return
   end
 
-  message.channel:send(message.author.mentionString .. " has thrown a **" .. fntoname(curfilename) .. "** card in the air! Type this command within " .. timeout .. " seconds to catch it!\n`c!catch " .. curfilename .. "`")
+  message.channel:send(trf("throw",{ping = message.author.mentionString, card = fntoname(curfilename)}) .. " Type this command within " .. timeout .. " seconds to catch it!\n`c!catch " .. curfilename .. "`")
   
   uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
   uj.inventory[curfilename] = uj.inventory[curfilename] - 1
