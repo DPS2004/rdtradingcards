@@ -20,6 +20,10 @@
       "name": "Egg(?)",
       "description": "That sure is an egg. I think."
     },
+    "bow" : {
+      "name": "Bow",
+      "description": "A cute pink bow."
+    },
     "guitaristwig" : {
       "name": "Cute Guitarist Wig",
       "description": "An adorable wig and bow combo that’ll have you looking like a real rockstar! (Includes bonus guitar!)"
@@ -65,7 +69,7 @@
   "clothes" : {
     "nothing" : {
       "name": "Nothing",
-      "description": "(TODO)"
+      "description": "How scandalous!"
     },
     "guitaristoutfit" : {
       "name": "Cute Guitarist Outfit",
@@ -84,7 +88,7 @@
     },
     "sneakers" : {
       "name": "Sneakers",
-      "description": "(TODO)"
+      "description": "yooooooo heart chick wit da drip :flushed:"
     },
     "rollerskates" : {
       "name": "Roller Skates",
@@ -108,13 +112,18 @@
     },
     "cane" : {
       "name": "Cane",
-      "description": "(TODO)",
+      "description": "Equally good for walking and smacking people.",
       "layer": "top"
     },
     "static" : {
       "name": "Static",
       "description": "*BZZT*",
       "layer": "middle"
+    },
+    "grass" : {
+      "name": "Patch of grass",
+      "description": "A nice place to sit.",
+      "layer": "bottom"
     },
     "catears" : {
       "name": "Cat Ears",
