@@ -1,0 +1,34 @@
+{
+  "dep": [
+    "depositing",
+    "inserting",
+    "putting in",
+    "slotting in"
+  ],
+  "size": [
+    " small ",
+    " large ",
+    " ",
+    " "
+  ],
+  "speen": [
+    "spinning",
+    "turning",
+    "rotating",
+    "using"
+  ],
+  "action": [
+    "#speen# the crank",
+    "cranking"
+  ],
+  "action2": [
+    "comes out",
+    "falls out",
+    "tumbles out",
+    "rolls out",
+    "launches out"
+  ],
+  "origin": [
+    "After #dep# 3 **Tokens** and #action#, a#size#capsule #action2# of the **Strange Machine**. Inside it is the **"
+  ]
+}

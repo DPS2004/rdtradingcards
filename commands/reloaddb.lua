@@ -319,6 +319,9 @@ function command.run(message, mt, overwrite)
     print("loading functions")
     
     _G['trf'] = function (x,rep)
+      if not rep then
+        rep = {}
+      end
       local t,d = tr[x]:flatten('#origin#')
       for k,v in pairs(rep) do
         t = string.gsub(t,"@"..k.."@", v)
@@ -706,6 +709,7 @@ function command.run(message, mt, overwrite)
     addcommand("p",cmd.pull)
     addcommand("b",cmd.use,0,{"box"})
     addcommand("throw",cmd.throw)
+    addcommand("yeet",cmd.throw) --im a comedy genius
     addcommand("vipstest",cmd.vipstest,0)
     addcommand("catch",cmd.catch)
     addcommand("giveitem",cmd.giveitem)

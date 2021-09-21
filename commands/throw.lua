@@ -68,7 +68,7 @@ function command.run(message, mt)
     if not next(tj[curfilename]) then tj[curfilename] = nil end
     dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
     dpf.savejson("savedata/throwncards.json", tj)
-    message.channel:send("The **" .. fntoname(curfilename) .. "** card has fallen back to the ground. " .. message.author.mentionString .. " picked it up and put it back to " .. uj.pronouns["their"] .. " inventory.")
+    message.channel:send(trf("fall",{card = fntoname(curfilename)}) .. message.author.mentionString .. " picked it up and put it back in " .. uj.pronouns["their"] .. " inventory.")
   end
 end
 return command
