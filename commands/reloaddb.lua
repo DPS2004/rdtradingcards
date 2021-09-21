@@ -619,15 +619,17 @@ function command.run(message, mt, overwrite)
       end
       tf[newmessage.id] = newevent
       dpf.savejson("savedata/events.json", tf)
-
-      if client:waitFor(newmessage.id, 3600 * 1000) then -- Timeout after 1 hour
-        print("Message successfully reacted to, removing event")
-      else
-        print("Button reaction timed out, removing event")
+      if not EMULATOR then
+        if client:waitFor(newmessage.id, 3600 * 1000) then -- Timeout after 1 hour
+          print("Message successfully reacted to, removing event")
+        else
+          print("Button reaction timed out, removing event")
+        end
+      
+        tf = dpf.loadjson("savedata/events.json",{})
+        tf[newmessage.id] = nil
+        dpf.savejson("savedata/events.json", tf)
       end
-      tf = dpf.loadjson("savedata/events.json",{})
-      tf[newmessage.id] = nil
-      dpf.savejson("savedata/events.json", tf)
 
       return newmessage
     end

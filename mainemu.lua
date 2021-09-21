@@ -8,10 +8,36 @@ _G["fs"] = require('fs')
 _G["tracery"] = require('libs/tracery')
 _G["dpf"] = require('libs/dpf')
 _G["emuser"] = {}
-
+_G["EMULATOR"] = true
 io.write("EMU: What user would you like to load?\n")
 local defaultuser = io.read()
 local emuser = dpf.loadjson("emu_users/" .. defaultuser .. ".json", {name = "defaultuser", id = "481293038594304959", mentionString = "<@481293038594304959>", discriminator = "6969", mod = false})
+
+_G["disc"] = {
+  messageid = 0,
+  send = function(content)
+    local printmsg = content
+    if type(content) ~= "string" then
+      printmsg = inspect(content)
+      if content.components then
+        -- handle and store buttons somehow
+      end
+    end
+    io.write("BOT: " .. printmsg .. "\n")
+    disc.messageid = disc.messageid + 1
+    return {
+      id = tostring(disc.messageid),
+      addReaction = function(self)
+        io.write("EMU: message:addReaction called. Please set a message id: (this will be asked twice, probably)\n")
+        local inp = io.read()
+        self.id = inp --ostor is sus!
+      end
+    }
+    
+  end
+  
+   
+}
 
 _G["discordia"] = {
   Client = function()
@@ -19,6 +45,8 @@ _G["discordia"] = {
       user = {
         id = "795144198252658718"
       },
+      waitFor = function()
+      end,
       on = function(this,trigger, func)
         io.write("EMU: client.on called\n")
         discordia.ons[trigger] = func
@@ -43,19 +71,10 @@ _G["discordia"] = {
               channel = {
                 send = function(this, content)
                   --print("sending")
-                  if type(content) ~= "string" then
-                    content = inspect(content)
-                  end
-                  io.write("BOT: " .. content .. "\n")
+                  return disc.send(content)
                   
-                  return {
-                    addReaction = function(self)
-                      io.write("EMU: message:addReaction called. Please set a message id: (this will be asked twice, probably)\n")
-                      local inp = io.read()
-                      self.id = inp --ostor is sus!
-                    end
                     
-                  }
+                  
                 end
               },
               guild = {
@@ -84,20 +103,7 @@ _G["discordia"] = {
                   id = messageid,
                   channel = {
                     send = function(this, content)
-                      --print("sending")
-                      if type(content) ~= "string" then
-                        content = inspect(content)
-                      end
-                      io.write("BOT: " .. content .. "\n")
-                      
-                      return {
-                        addReaction = function(self)
-                          io.write("EMU: message:addReaction called. Please set a message id: (this will be asked twice, probably)\n")
-                          local inp = io.read()
-                          self.id = inp --ostor is sus!
-                        end
-                        
-                      }
+                      return disc.send(content)
                     end
                   }
                 }
