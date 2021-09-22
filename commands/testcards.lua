@@ -1,6 +1,6 @@
 local command = {}
 function command.run(message, mt)
-  if debug then
+  if botdebug then
     message.channel:send('ok, testing. There are '.. #cdb ..'cards in the database.')
     print(message.author.name .. " did !testcards")
     for i,v in ipairs(cdb) do

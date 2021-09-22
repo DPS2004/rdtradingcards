@@ -134,7 +134,7 @@ function command.run(message, mt, overwrite)
       
     }
 
-    _G['debug'] = false
+    _G['botdebug'] = false
 
     _G['nopeeking'] = false
     
