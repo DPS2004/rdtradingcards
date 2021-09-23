@@ -72,7 +72,7 @@
   },
   "quantummouse" : {
     "name": "Quantum Mouse",
-    "description": "Guarantees an additional card pull, with a chance of **Triple Clicking** with the fixed mouse equipped. You can only use one item of this type at a time.",
+    "description": "Guarantees an additional card pull, with a chance of **Triple Clicking** with the **Fixed Mouse** equipped. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/884781557821366293/unknown.png",
     "baseprice": 4,
     "chance": 10
