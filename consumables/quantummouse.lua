@@ -7,7 +7,7 @@ function item.run(uj, ujf, message, mt)
     if uj.consumables["quantummouse"] == 0 then uj.consumables["quantummouse"] = nil end
     uj.timesitemused = uj.timesitemused and uj.timesitemused + 1 or 1
     
-    uj.conspt = "fixedmouse"
+    uj.conspt = "quantummouse"
     dpf.savejson(ujf, uj)
     message.channel:send("you put down the ***quantum mouse*** or smth. it squeaks lol")
   else

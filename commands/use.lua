@@ -585,7 +585,7 @@ function command.run(message, mt,bypass)
           },"useconsumable",{crequest=request,mt=mt})
           return
         else
-          fn = request
+          local fn = request
           if getconscommand(request) then
             request = getconscommand(request)
           end

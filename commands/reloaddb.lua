@@ -154,6 +154,7 @@ function command.run(message, mt, overwrite)
     _G['constable'] = {}
     local iterateitemdb = itemdb
     iterateitemdb["aboveur"] = {}
+    iterateitemdb["quantummouse"] = {}
     for k, q in pairs(iterateitemdb) do
       ptable[k] = {}
       constable[k] = {}
@@ -178,8 +179,12 @@ function command.run(message, mt, overwrite)
               table.insert(constable["season"..x.season], x.filename)
             end
           end
+          if k == "quantummouse" and (x.type == "Rare" or x.type == "Super Rare" or x.type == "Ultra Rare") then
+            for y = 1, (cdata.basemult * v.basechance * x.chance) do
+              table.insert(constable[k],x.filename)
+            end
+          end
         end
-        
       end
     end
 
@@ -187,7 +192,7 @@ function command.run(message, mt, overwrite)
       for w, x in ipairs(v.cards) do
         table.insert(cdb, x)
         if not seasontable[x.season] then 
-          seasontable[x.season] = {} 
+          seasontable[x.season] = {}
         end
         table.insert(seasontable[x.season], x.filename)
       end

@@ -23,7 +23,7 @@ function reaction.run(ef, eom, reaction, userid)
       reaction.message.channel:send("An error has occured. Please make sure that you still have the item!")
       return
     end
-    fn = request
+    local fn = request
     if getconscommand(request) then
       request = getconscommand(request)
     end
