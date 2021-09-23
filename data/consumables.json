@@ -70,6 +70,13 @@
     "baseprice": 3,
     "chance": 10
   },
+  "quantummouse" : {
+    "name": "Quantum Mouse",
+    "description": "Guarantees an additional card pull, with a chance of **Triple Clicking** with the fixed mouse equipped. You can only use one item of this type at a time.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/884781557821366293/unknown.png",
+    "baseprice": 4,
+    "chance": 10
+  },
   "replacementvoid" : {
     "name": "Replacement Void",
     "description": "The contents of the Peculiar Box get replaced with a random selection of cards.",
