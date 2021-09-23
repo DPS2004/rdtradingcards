@@ -165,7 +165,7 @@
   },
   "s6booster": {
     "name": "Diverse Booster",
-    "description": "The next card you pull is guaranteed to be from Season 6 You can only use one item of this type at a time.",
+    "description": "The next card you pull is guaranteed to be from Season 6. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/884957365110198332/s6booster.png",
     "baseprice": 3,
     "chance": 5,
@@ -175,7 +175,7 @@
   },
   "s7booster": {
     "name": "Animal Booster",
-    "description": "The next card you pull is guaranteed to be from Season 7 You can only use one item of this type at a time.",
+    "description": "The next card you pull is guaranteed to be from Season 7. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/884957380465528832/s7booster.png",
     "baseprice": 6,
     "chance": 5,
