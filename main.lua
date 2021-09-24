@@ -48,6 +48,9 @@ end)
 print("Resetting clocks")
 resetclocks()
 
+print("Stocking shop")
+stockshop()
+
 client:run(privatestuff.botid)
 
 client:setGame("with cards | c!help")

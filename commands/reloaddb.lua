@@ -369,6 +369,9 @@ function command.run(message, mt, overwrite)
           cuj.lastequip = -24
           cuj.lastbox = -24
         end
+        if cuj.lastrefresh then
+          cuj.lastrefresh = 0
+        end
         dpf.savejson("savedata/" .. v, cuj)
       end
     end
@@ -881,13 +884,14 @@ function command.run(message, mt, overwrite)
     getshopimage()
     
     
-    _G['checkforreload'] = function(days) 
+    _G['checkforreload'] = function(days)
+      local cooldown = 46/24
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
       print(days .. "days")
-      if days >= sj.lastrefresh + 46/24 then
+      if days >= sj.lastrefresh + cooldown then
         stockshop()
         sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
-        sj.lastrefresh = sj.lastrefresh + 46/24
+        sj.lastrefresh = cooldown * math.floor(days / cooldown)
         dpf.savejson("savedata/shop.json", sj)
       end
       
