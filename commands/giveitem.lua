@@ -48,7 +48,9 @@ function command.run(message, mt)
   local curfilename = constexttofn(thing_argument)
   
   if not curfilename then
-    if nopeeking then
+    if itemtexttofn(thing_argument) then
+      message.channel:send("Sorry, but you cannot gift equippable items!")
+    elseif nopeeking then
       message.channel:send("Sorry, but I either could not find the " .. thing_argument .. " item in the database, or you do not have it. Make sure that you spelled it right!")
     else
       message.channel:send("Sorry, but I could not find the " .. thing_argument .. " item in the database. Make sure that you spelled it right!")
