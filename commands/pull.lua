@@ -108,7 +108,7 @@ _________________```]])
         color = 0x85c5ff,
         title = title,
         description = message.author.mentionString .. ' got a **' .. cardname .. '** card! The **' .. cardname .. '** card has been added to ' .. uj.pronouns["their"] .. ' inventory. The shorthand form of this card is **' .. v .. '**.',
-        image = {url = cdb[v].embed} --TODO: randomize embed
+        image = {url = type(cdb[v].embed) == "table" and cdb[v].embed[math.random(#cdb[v].embed)] or cdb[v].embed}
       }}
     else
       print("spider moments")

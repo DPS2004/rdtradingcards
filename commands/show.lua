@@ -40,7 +40,7 @@ function command.run(message, mt)
       description = 
       'Here it is! Your **'.. cdb[curfilename].name .. '** card. The shorthand form is **' .. curfilename .. '**.' .. embeddescription,
       image = {
-        url = cdb[curfilename].embed --TODO: randomize embed
+        url = type(cdb[curfilename].embed) == "table" and cdb[curfilename].embed[math.random(#cdb[curfilename].embed)] or cdb[curfilename].embed
       }
     }}
   else
