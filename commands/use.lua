@@ -457,11 +457,11 @@ function command.run(message, mt,bypass)
       elseif itemtexttofn(mt[2]) then
         srequest = itemtexttofn(mt[2])
         sname = itemdb[srequest].name
-        sprice = 2
+        sprice = sj.itemprice
         if srequest == sj.item then
           
           if sj.itemstock > 0 then
-            if uj.tokens >= 2 then
+            if uj.tokens >= sprice then
               if not uj.items[srequest] then
                 --can buy item
                 ynbuttons(message,{

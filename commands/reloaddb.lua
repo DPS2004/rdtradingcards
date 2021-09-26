@@ -130,8 +130,8 @@ function command.run(message, mt, overwrite)
         },
       },
       item = "hardcandy",
-      itemstock = 10
-      
+      itemstock = 10,
+      itemprice = 4
     }
 
     _G['botdebug'] = false
@@ -798,6 +798,7 @@ function command.run(message, mt, overwrite)
       end
       sj.item = itempt[math.random(#itempt)]
       sj.itemstock = math.random(5,15)
+      sj.itemprice = 4
       -----------------------consumables
       local newconsumables = {{name="",stock=0,price=0},{name="",stock=0,price=0},{name="",stock=0,price=0}}
       for i,v in ipairs(sj.consumables) do

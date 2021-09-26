@@ -421,7 +421,7 @@ function command.run(message, mt)
       for i,v in ipairs(sj.consumables) do
         shopstr = shopstr .. "\n**"..consdb[v.name].name.."** ("..v.price.." token" .. (v.price == 1 and "" or "s") .. ") x"..v.stock
       end
-      shopstr = shopstr .. "\n**"..itemdb(sj.item).name.."** (2 tokens) x"..sj.itemstock
+      shopstr = shopstr .. "\n**"..itemdb[sj.item].name.."** (" .. sj.itemprice .. " token" .. (sj.itemprice == 1 and "" or "s") ..") x"..sj.itemstock
       message.channel:send{embed = {
         color = 0x85c5ff,
         title = "Looking at Shop...",
