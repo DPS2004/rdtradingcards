@@ -463,11 +463,6 @@ function command.run(message, mt,bypass)
           if sj.itemstock > 0 then
             if uj.tokens >= 2 then
               if not uj.items[srequest] then
-                
-                
-              else
-                result = "alreadyhave"
-              end
                 --can buy item
                 ynbuttons(message,{
                   color = 0x85c5ff,
@@ -475,6 +470,9 @@ function command.run(message, mt,bypass)
                   description = "The description for this item reads: \n`".. itemdb[srequest].description .."`\nWill you buy it for "..sprice.." **Tokens**?",
                 },"buy",{itemtype = "item",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest})
                 return
+              else
+                result = "alreadyhave"
+              end
             else
               result = "notenough"
             end
