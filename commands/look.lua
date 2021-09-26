@@ -419,7 +419,7 @@ function command.run(message, mt)
         shopstr = shopstr .. "\n**"..cdb[v.name].name.."** ("..v.price.." token" .. (v.price == 1 and "" or "s") .. ") x"..v.stock
       end
       for i,v in ipairs(sj.consumables) do
-        shopstr = shopstr .. "\n**"..consumabledb[v.name].name.."** ("..v.price.." token" .. (v.price == 1 and "" or "s") .. ") x"..v.stock
+        shopstr = shopstr .. "\n**"..consdb[v.name].name.."** ("..v.price.." token" .. (v.price == 1 and "" or "s") .. ") x"..v.stock
       end
       shopstr = shopstr .. "\n**"..itemdb(sj.item).name.."** (2 tokens) x"..sj.itemstock
       message.channel:send{embed = {

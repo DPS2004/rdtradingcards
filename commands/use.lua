@@ -423,7 +423,7 @@ function command.run(message, mt,bypass)
       end
       if constexttofn(mt[2]) then
         srequest = constexttofn(mt[2])
-        sname = consumabledb[srequest].name
+        sname = consdb[srequest].name
         local x = false
         for i,v in ipairs(sj.consumables) do
           if v.name == srequest then
@@ -441,7 +441,7 @@ function command.run(message, mt,bypass)
               ynbuttons(message,{
                 color = 0x85c5ff,
                 title = "Buying " .. sname .. "...",
-                description = "The description for this item reads: \n`".. consumabledb[srequest].description .."`\nWill you buy it for "..sprice.." **Token" .. (sprice == 1 and "" or "s") .. "**?",
+                description = "The description for this item reads: \n`".. consdb[srequest].description .."`\nWill you buy it for "..sprice.." **Token" .. (sprice == 1 and "" or "s") .. "**?",
               },"buy",{itemtype = "consumable",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest})
               return
             else
@@ -580,19 +580,19 @@ function command.run(message, mt,bypass)
         if not uj.skipprompts then
           ynbuttons(message,{
             color = 0x85c5ff,
-            title = "Using " .. consumabledb[request].name .. "...",
-            description = "Do you want to use your **" .. consumabledb[request].name .. "**? The item will be consumed in the process!",
+            title = "Using " .. consdb[request].name .. "...",
+            description = "Do you want to use your **" .. consdb[request].name .. "**? The item will be consumed in the process!",
           },"useconsumable",{crequest=request,mt=mt})
           return
         else
           local fn = request
-          if consumabledb[request].command then
-            request = consumabledb[request].command
+          if consdb[request].command then
+            request = consdb[request].command
           end
           cmdcons[request].run(uj,"savedata/" .. message.author.id .. ".json",message,mt,fn)
         end
       else
-        message.channel:send("Sorry, but you don't have the **" .. consumabledb[request].name .. "** item.")
+        message.channel:send("Sorry, but you don't have the **" .. consdb[request].name .. "** item.")
       end
       
     else

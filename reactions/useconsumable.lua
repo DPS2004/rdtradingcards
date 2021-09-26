@@ -24,8 +24,8 @@ function reaction.run(ef, eom, reaction, userid)
       return
     end
     local fn = request
-    if consumabledb[request].command then
-      request = consumabledb[request].command
+    if consdb[request].command then
+      request = consdb[request].command
     end
 
     
@@ -35,7 +35,7 @@ function reaction.run(ef, eom, reaction, userid)
 
   if reaction.emojiName == "❌" then
     print('user1 has denied')
-    reaction.message.channel:send("You decide to not use the **".. consumabledb[eom.crequest].name .."**.")
+    reaction.message.channel:send("You decide to not use the **".. consdb[eom.crequest].name .."**.")
   end
 end
 return reaction

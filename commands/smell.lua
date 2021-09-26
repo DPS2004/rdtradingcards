@@ -123,7 +123,7 @@ function command.run(message, mt)
       if uj.consumables[constexttofn(request)] or shophas(constexttofn(request)) then
         message.channel:send(consumablesmells[constexttofn(request)])
       else
-        message.channel:send("Sorry, but the **" .. consumabledb[request].name .. "** item can't be found in the shop or your inventory.")
+        message.channel:send("Sorry, but the **" .. consdb[request].name .. "** item can't be found in the shop or your inventory.")
       end
     else
       if nopeeking then

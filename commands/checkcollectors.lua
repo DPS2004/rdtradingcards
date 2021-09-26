@@ -30,7 +30,7 @@ function command.run(message, mt,mc)
             title = "Congratulations!",
             description = 'After collecting and storing some other cards, '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to '..uj.pronouns["their"]..' storage.',
             image = {
-              url = cdb[newcard].embed --TODO: randomize embed?
+              url = cdb[newcard].embed
             }
           }}
         else

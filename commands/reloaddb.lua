@@ -208,14 +208,14 @@ function command.run(message, mt, overwrite)
     -- print("here is ptable")
     -- print(inspect(ptable))
     
-    print('loading consumabledb')    
-    _G['consumabledb'] = dpf.loadjson("data/consumables.json", defaultjson)
+    print('loading consdb')    
+    _G['consdb'] = dpf.loadjson("data/consumables.json", defaultjson)
     
-    print("making cpt")
-    _G['cpt'] = {}
-    for k,v in pairs(consumabledb) do
+    print("making conspt")
+    _G['conspt'] = {}
+    for k,v in pairs(consdb) do
       for i=1,v.chance do
-        table.insert(cpt,k)
+        table.insert(conspt,k)
       end
     end
 
@@ -389,7 +389,7 @@ function command.run(message, mt, overwrite)
     end
     
     _G['consnametofn'] = function (x)
-      for k, v in pairs(consumabledb) do
+      for k, v in pairs(consdb) do
         if string.lower(v.name) == string.lower(x) then
           return k
         end
@@ -397,7 +397,7 @@ function command.run(message, mt, overwrite)
     end
     
     _G['constexttofn'] = function (x)
-      if consnametofn(x) or consumabledb[string.lower(x)] then
+      if consnametofn(x) or consdb[string.lower(x)] then
         return consnametofn(x) or string.lower(x)
       end
     end
@@ -805,7 +805,7 @@ function command.run(message, mt, overwrite)
         local finding = true
         local nc = ""
         while finding do
-          nc = cpt[math.random(#cpt)]
+          nc = conspt[math.random(#conspt)]
           local new = true
           for w,x in ipairs(newconsumables) do
             if x.name == nc then
@@ -817,7 +817,7 @@ function command.run(message, mt, overwrite)
           end
         end
 
-        newconsumables[i] = {name = nc,stock = math.random(5,15), price = consumabledb[nc].baseprice + math.random(-1,1)}
+        newconsumables[i] = {name = nc,stock = math.random(5,15), price = consdb[nc].baseprice + math.random(-1,1)}
         
       end
       sj.consumables = newconsumables
