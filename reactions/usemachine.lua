@@ -37,7 +37,7 @@ function reaction.run(ef, eom, reaction, userid)
     local newitem = itempt[math.random(#itempt)]
     uj.items[newitem] = true
     uj.tokens = uj.tokens - 3
-    message.channel:send(trf("crank") .. itemfntoname(newitem) .. '**! You put the **'.. itemfntoname(newitem) ..'** with your items.')
+    reaction.message.channel:send(trf("crank") .. itemdb[newitem].name .. '**! You put the **'.. itemdb[newitem].name ..'** with your items.')
     dpf.savejson(ujf,uj)
   end
 

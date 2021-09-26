@@ -31,7 +31,7 @@ function command.run(message, mt)
     if nopeeking then
       message.channel:send("Sorry, but I either could not find the " .. mt[1] .. " card in the database, or it's not been thrown. Make sure that you spelled it right!")
     else
-      message.channel:send("Sorry, but the **" .. fntoname(curfilename) .. "** card has not been thrown!")
+      message.channel:send("Sorry, but the **" .. cdb[curfilename].name .. "** card has not been thrown!")
     end
     return
   end
@@ -45,7 +45,7 @@ function command.run(message, mt)
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
   dpf.savejson("savedata/throwncards.json", tj)
 
-  message.channel:send(message.author.mentionString .. " has caught a **" .. fntoname(curfilename) .. "** card! The **" .. fntoname(curfilename) .. "** card has been added to " .. uj.pronouns["their"] .. " inventory.")
+  message.channel:send(message.author.mentionString .. " has caught a **" .. cdb[curfilename].name .. "** card! The **" .. cdb[curfilename].name .. "** card has been added to " .. uj.pronouns["their"] .. " inventory.")
 end
 return command
   

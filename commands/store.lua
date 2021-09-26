@@ -24,7 +24,7 @@ function command.run(message, mt)
     if nopeeking then
       message.channel:send("Sorry, but I either could not find the " .. mt[1] .. " card in the database, or you do not have it. Make sure that you spelled it right!")
     else
-      message.channel:send("Sorry, but you don't have the **" .. fntoname(item1) .. "** card in your inventory.")
+      message.channel:send("Sorry, but you don't have the **" .. cdb[item1].name .. "** card in your inventory.")
     end
     return
   end
@@ -42,12 +42,12 @@ function command.run(message, mt)
   end
 
   if uj.inventory[item1] < numcards then
-    message.channel:send("Sorry, but you do not have enough **" .. fntoname(item1) .. "** cards in your inventory.")
+    message.channel:send("Sorry, but you do not have enough **" .. cdb[item1].name .. "** cards in your inventory.")
       return
   end
 
   if not uj.skipprompts then
-    ynbuttons(message,"<@" .. uj.id .. ">, do you want to put your " .. numcards .. " **" .. fntoname(item1) .. "** card" .. (numcards == 1 and "" or "s") ..  " into storage? This cannot be undone. Click the Yes button to confirm and No to deny.", "store", {numcards = numcards, item1 = item1})
+    ynbuttons(message,"<@" .. uj.id .. ">, do you want to put your " .. numcards .. " **" .. cdb[item1].name .. "** card" .. (numcards == 1 and "" or "s") ..  " into storage? This cannot be undone. Click the Yes button to confirm and No to deny.", "store", {numcards = numcards, item1 = item1})
   else
     uj.inventory[item1] = uj.inventory[item1] - numcards
     if uj.inventory[item1] == 0 then uj.inventory[item1] = nil end
@@ -55,7 +55,7 @@ function command.run(message, mt)
     uj.storage[item1] = uj.storage[item1] and uj.storage[item1] + numcards or numcards
     uj.timesstored = uj.timesstored and uj.timesstored + numcards or numcards
 
-    message.channel:send("<@" .. uj.id .. "> successfully put " .. uj.pronouns["their"] .. " " .. numcards .. " **" .. fntoname(item1) .. "** card" .. (numcards == 1 and "" or "s") .. " into storage.")
+    message.channel:send("<@" .. uj.id .. "> successfully put " .. uj.pronouns["their"] .. " " .. numcards .. " **" .. cdb[item1].name .. "** card" .. (numcards == 1 and "" or "s") .. " into storage.")
     dpf.savejson(ujf, uj)
     cmd.checkcollectors.run(message, mt)
     cmd.checkmedals.run(message, mt)

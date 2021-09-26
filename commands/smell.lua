@@ -96,14 +96,14 @@ function command.run(message, mt)
     if curfilename ~= nil then
       if uj.inventory[curfilename] or uj.storage[curfilename] or shophas(curfilename) then
         print("user has card")
-        local smell = getcardsmell(curfilename)
+        local smell = cdb[curfilename].smell
         message.channel:send(trf("smell", {card = curfilename, smell = smell}))
       else
         print("user doesnt have card")
         if nopeeking then
           message.channel:send("Sorry, but I either could not find the " .. request .. " card in the database, or you do not have it. Make sure that you spelled it right!")
         else
-          message.channel:send("Sorry, but you don't have the **" .. fntoname(curfilename) .. "** card in your inventory or your storage.")
+          message.channel:send("Sorry, but you don't have the **" .. cdb[curfilename].name .. "** card in your inventory or your storage.")
         end
       end
 
@@ -116,14 +116,14 @@ function command.run(message, mt)
       if uj.items[itemtexttofn(request)] or shophas() then
         message.channel:send(itemsmells[itemtexttofn(request)])
       else
-        message.channel:send("Sorry, but you do not have the **" .. itemfntoname(itemtexttofn(request)) .. "** item.")
+        message.channel:send("Sorry, but you do not have the **" .. itemdb[itemtexttofn(request)].name .. "** item.")
       end
     elseif constexttofn(request) then
       print("smelling consumable")
       if uj.consumables[constexttofn(request)] or shophas(constexttofn(request)) then
         message.channel:send(consumablesmells[constexttofn(request)])
       else
-        message.channel:send("Sorry, but the **" .. consfntoname(request) .. "** item can't be found in the shop or your inventory.")
+        message.channel:send("Sorry, but the **" .. consumabledb[request].name .. "** item can't be found in the shop or your inventory.")
       end
     else
       if nopeeking then

@@ -30,22 +30,22 @@ function command.run(message, mt)
             --woo hoo
             print(uj.equipped)
             if not uj.skipprompts then
-              ynbuttons(message,"Would you like to change your equipped item from **" .. itemfntoname(uj.equipped) .. "** to **" .. itemfntoname(curfilename) .. "**? This can be done once every 6 hours.","equip",{newequip = curfilename})
+              ynbuttons(message,"Would you like to change your equipped item from **" .. itemdb[uj.equipped].name .. "** to **" .. itemdb[curfilename].name .. "**? This can be done once every 6 hours.","equip",{newequip = curfilename})
             else
               uj.equipped = curfilename
-              message.channel:send("<@" .. uj.id .. "> successfully set **" .. itemfntoname(curfilename) .. "** as "..uj.pronouns["their"].." equipped item.")
+              message.channel:send("<@" .. uj.id .. "> successfully set **" .. itemdb[curfilename].name .. "** as "..uj.pronouns["their"].." equipped item.")
               uj.lastequip = time:toHours()
               dpf.savejson(ujf,uj)
               print('saved equipped as ' .. curfilename)
             end
           else
-            message.channel:send("You already have the **" .. itemfntoname(curfilename) .. "** item equipped!")
+            message.channel:send("You already have the **" .. itemdb[curfilename].name .. "** item equipped!")
           end
         else
           if nopeeking then
             message.channel:send("Sorry, but I either could not find the " .. request .. " item in the database, or you do not have it. Make sure that you spelled it right!")
           else
-            message.channel:send("Sorry, but you don't have the **" .. itemfntoname(curfilename) .. "** item.")
+            message.channel:send("Sorry, but you don't have the **" .. itemdb[curfilename].name .. "** item.")
           end
         end
         

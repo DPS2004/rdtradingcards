@@ -4,7 +4,7 @@ function item.run(uj,ujf,message,mt)
   local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
   local boxstring = ""
   for i,v in ipairs(wj.boxpool) do
-    boxstring = boxstring .. fntoname(v) .. "\n"
+    boxstring = boxstring .. cdb[v].name .. "\n"
   end
   
   uj.consumables["xraygoggles"] = uj.consumables["xraygoggles"] - 1

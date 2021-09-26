@@ -24,9 +24,10 @@ function reaction.run(ef, eom, reaction, userid)
       return
     end
     local fn = request
-    if getconscommand(request) then
-      request = getconscommand(request)
+    if consumabledb[request].command then
+      request = consumabledb[request].command
     end
+
     
     cmdcons[request].run(uj,ujf,client:getChannel(eom.ogmessage.channel.id):getMessage(eom.ogmessage.id),eom.mt,fn) -- this is the single worst line of code that i have ever written
     
@@ -34,7 +35,7 @@ function reaction.run(ef, eom, reaction, userid)
 
   if reaction.emojiName == "❌" then
     print('user1 has denied')
-    reaction.message.channel:send("You decide to not use the **".. consfntoname(eom.crequest) .."**.")
+    reaction.message.channel:send("You decide to not use the **".. consumabledb[eom.crequest].name .."**.")
   end
 end
 return reaction

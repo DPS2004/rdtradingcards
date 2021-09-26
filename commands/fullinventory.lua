@@ -11,7 +11,7 @@ function command.run(message, mt)
   local titlestring = 'Full Inventory'
   local invstring = ''
   local previnvstring = ''
-  for k,v in pairs(uj.inventory) do table.insert(invtable, "**" .. (fntoname(k) or k) .. "** x" .. v .. "\n") end
+  for k,v in pairs(uj.inventory) do table.insert(invtable, "**" .. (cdb[k].name or k) .. "** x" .. v .. "\n") end
   table.sort(invtable)
   for i = 1, numkey do
     invstring = invstring .. invtable[i]

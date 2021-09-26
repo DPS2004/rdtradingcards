@@ -17,13 +17,11 @@ function command.run(message, mt)
 
   local invtable = {}
   local invstring = ''
-  for k,v in pairs(uj.inventory) do table.insert(invtable, "**" .. (fntoname(k) or k) .. "** x" .. v .. "\n") end
+  print(uj.inventory)
+  for k,v in pairs(uj.inventory) do table.insert(invtable, "**" .. (cdb[k].name or k) .. "** x" .. v) end
   table.sort(invtable)
 
-  for i = (pagenumber - 1) * 10 + 1, (pagenumber) * 10 do
-    print(i)
-    if invtable[i] then invstring = invstring .. invtable[i] end
-  end
+  invstring = table.concat(invtable, "\n", (pagenumber - 1) * 10 + 1, pagenumber * 10)
 
   message.channel:send{
     content = message.author.mentionString .. ", your inventory contains:",

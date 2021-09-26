@@ -11,7 +11,7 @@ function item.run(uj,ujf,message,mt)
     uj.timesitemused = uj.timesitemused + 1
   end
   message.channel:send("You scratch off the marked spaces with a borrowed **Token**.")
-  chance = math.random(1,100)
+  local chance = math.random(100)
   if chance <= 2 then
     local winnings = math.random(3,6) *10
     uj.tokens = uj.tokens + winnings

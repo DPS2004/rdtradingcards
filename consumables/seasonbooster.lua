@@ -1,9 +1,9 @@
 local item = {}
 
 function item.run(uj, ujf, message, mt,fn)
-  local itemname = consfntoname(fn)
-  local itemtext = getconstext(fn)
-  local season = getconsseason(fn)
+  local itemname = consumabledb[fn].name
+  local itemtext = consumabledb[fn].text
+  local season = consumabledb[fn].season
   if not uj.conspt then uj.conspt = "none" end
   if uj.conspt == "none" then
     uj.consumables[fn] = uj.consumables[fn] - 1

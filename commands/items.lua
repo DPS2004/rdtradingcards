@@ -31,7 +31,7 @@ function command.run(message, mt)
     if v then table.insert(invtable, "**" .. itemdb[k].name .. "**" .. (uj.equipped == k and " (equipped)" or "") .. "\n") end
   end
   for k,v in pairs(uj.consumables) do
-    table.insert(invtable,"**".. consfntoname(k)  .. "** x" .. v .. "\n")
+    table.insert(invtable,"**".. consumabledb[k].name  .. "** x" .. v .. "\n")
   end
   table.sort(invtable)
 

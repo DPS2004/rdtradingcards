@@ -21,7 +21,7 @@ function reaction.run(ef, eom, reaction, userid)
     end
 
     if uj.inventory[item1] < numcards then
-      reaction.message.channel:send("An error has occured. Please make sure that you still have enough **" .. fntoname(item1) .. "** cards in your inventory!")
+      reaction.message.channel:send("An error has occured. Please make sure that you still have enough **" .. cdb[item1].name .. "** cards in your inventory!")
       return
     end
 
@@ -34,7 +34,7 @@ function reaction.run(ef, eom, reaction, userid)
 
     uj.timesstored = uj.timesstored and uj.timesstored + numcards or numcards
 
-    reaction.message.channel:send("<@" .. uj.id .. "> successfully put " .. uj.pronouns["their"] .. " " .. numcards .. " **" .. fntoname(item1) .. "** card" .. (numcards == 1 and "" or "s") .. " into storage.")
+    reaction.message.channel:send("<@" .. uj.id .. "> successfully put " .. uj.pronouns["their"] .. " " .. numcards .. " **" .. cdb[item1].name .. "** card" .. (numcards == 1 and "" or "s") .. " into storage.")
     dpf.savejson(ujf,uj)
     cmd.checkcollectors.run(eom.ogmessage, {}, reaction.message.channel)
     cmd.checkmedals.run(eom.ogmessage, {}, reaction.message.channel)
@@ -42,7 +42,7 @@ function reaction.run(ef, eom, reaction, userid)
 
   if reaction.emojiName == "❌" then
     print('user1 has denied')
-    reaction.message.channel:send("<@" .. uj.id .. "> has successfully stopped the storage of " .. uj.pronouns["their"] .. " **" .. fntoname(item1) .. "** card" .. (numcards == 1 and "" or "s") .. ".")
+    reaction.message.channel:send("<@" .. uj.id .. "> has successfully stopped the storage of " .. uj.pronouns["their"] .. " **" .. cdb[item1].name .. "** card" .. (numcards == 1 and "" or "s") .. ".")
   end
 end
 return reaction

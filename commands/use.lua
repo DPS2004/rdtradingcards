@@ -48,7 +48,7 @@ function command.run(message, mt,bypass)
           uj.items[newitem] = true
           uj.tokens = uj.tokens - 3
           uj.timesused = uj.timesused and uj.timesused + 1 or 1
-          message.channel:send(trf("crank") .. itemfntoname(newitem) .. '**! You put the **'.. itemfntoname(newitem) ..'** with your items.')
+          message.channel:send(trf("crank") .. itemdb[newitem].name .. '**! You put the **'.. itemdb[newitem].name ..'** with your items.')
         end
       else
         if uj.tokens >= 4 then
@@ -233,7 +233,7 @@ function command.run(message, mt,bypass)
         
         wj.boxpool[boxpoolindex] = givecard
         
-        message.channel:send('<@' .. uj.id .. '> grabs a **' .. fntoname(givecard) .. '** card from '..uj.pronouns["their"]..' inventory and places it inside the box. As it goes in, a **' .. fntoname(getcard) .. '** card shows up in '..uj.pronouns["their"]..' pocket! The shorthand form of this card is **' .. getcard .. '**.')
+        message.channel:send('<@' .. uj.id .. '> grabs a **' .. cdb[givecard].name .. '** card from '..uj.pronouns["their"]..' inventory and places it inside the box. As it goes in, a **' .. cdb[getcard].name .. '** card shows up in '..uj.pronouns["their"]..' pocket! The shorthand form of this card is **' .. getcard .. '**.')
 
         uj.timesusedbox = uj.timesusedbox and uj.timesusedbox + 1 or 1
         uj.lastbox = time:toHours()
@@ -423,7 +423,7 @@ function command.run(message, mt,bypass)
       end
       if constexttofn(mt[2]) then
         srequest = constexttofn(mt[2])
-        sname = consfntoname(srequest)
+        sname = consumabledb[srequest].name
         local x = false
         for i,v in ipairs(sj.consumables) do
           if v.name == srequest then
@@ -456,7 +456,7 @@ function command.run(message, mt,bypass)
         
       elseif itemtexttofn(mt[2]) then
         srequest = itemtexttofn(mt[2])
-        sname = itemfntoname(srequest)
+        sname = itemdb[srequest].name
         sprice = 2
         if srequest == sj.item then
           
@@ -486,7 +486,7 @@ function command.run(message, mt,bypass)
         end 
       elseif texttofn(mt[2]) then
         srequest = texttofn(mt[2])
-        sname = fntoname(srequest)
+        sname = cdb[srequest].name
         local x = false
         for i,v in ipairs(sj.cards) do
           if v.name == srequest then
@@ -503,7 +503,7 @@ function command.run(message, mt,bypass)
               ynbuttons(message,{
                 color = 0x85c5ff,
                 title = "Buying " .. sname .. "...",
-                description = "The description for this card reads: \n`".. getcarddescription(srequest) .."`\nWill you buy it for "..sprice.." **Token" .. (sprice == 1 and "" or "s") .."**?",
+                description = "The description for this card reads: \n`".. cdb[srequest].description .."`\nWill you buy it for "..sprice.." **Token" .. (sprice == 1 and "" or "s") .."**?",
               },"buy",{itemtype = "card",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest})
               return
             else
@@ -580,19 +580,19 @@ function command.run(message, mt,bypass)
         if not uj.skipprompts then
           ynbuttons(message,{
             color = 0x85c5ff,
-            title = "Using " .. consfntoname(request) .. "...",
-            description = "Do you want to use your **" .. consfntoname(request) .. "**? The item will be consumed in the process!",
+            title = "Using " .. consumabledb[request].name .. "...",
+            description = "Do you want to use your **" .. consumabledb[request].name .. "**? The item will be consumed in the process!",
           },"useconsumable",{crequest=request,mt=mt})
           return
         else
           local fn = request
-          if getconscommand(request) then
-            request = getconscommand(request)
+          if consumabledb[request].command then
+            request = consumabledb[request].command
           end
           cmdcons[request].run(uj,"savedata/" .. message.author.id .. ".json",message,mt,fn)
         end
       else
-        message.channel:send("Sorry, but you don't have the **" .. consfntoname(request) .. "** item.")
+        message.channel:send("Sorry, but you don't have the **" .. consumabledb[request].name .. "** item.")
       end
       
     else

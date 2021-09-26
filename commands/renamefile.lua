@@ -6,7 +6,7 @@ function command.run(message, mt)
   if cmember:hasRole(privatestuff.modroleid) then
     if #mt == 2 then
       -- why did i even add this if statement
-      if fntoname(mt[2]) then
+      if cdb(mt[2]) then
         for i,v in ipairs(scandir("savedata")) do
           local cuj = dpf.loadjson("savedata/"..v,defaultjson)
           if cuj.id then

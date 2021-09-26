@@ -56,7 +56,7 @@ function command.run(message, mt)
     if nopeeking then
       message.channel:send("Sorry, but I either could not find the " .. mt[1] .. " card in the database, or you do not have it. Make sure that you spelled it right!")
     else
-      message.channel:send("Sorry, but you don't have the **" .. fntoname(item1) .. "** card in your inventory.")
+      message.channel:send("Sorry, but you don't have the **" .. cdb[item1].name .. "** card in your inventory.")
     end
     return
   end
@@ -66,12 +66,12 @@ function command.run(message, mt)
     if nopeeking then
       message.channel:send("Sorry, but I either could not find the " .. mt[3] .. " card in the database, or ".. mt[2] .. " does not have it. Make sure that you spelled it right!")
     else
-      message.channel:send("Sorry, but ".. mt[2] .. " doesn't have the **" .. fntoname(item2) .. "** card in " .. uj2.pronouns["their"] .. " inventory.")
+      message.channel:send("Sorry, but ".. mt[2] .. " doesn't have the **" .. cdb[item2].name .. "** card in " .. uj2.pronouns["their"] .. " inventory.")
     end
     return
   end
 
   print("success!!!!!")
-  ynbuttons(message, "<@".. uj2.id ..">, <@" .. uj.id .. "> wants to trade " .. uj.pronouns["their"] .. " **" .. fntoname(item1) .. "** for your **" .. fntoname(item2) .. "**. Click the Yes button to accept and No to deny.", "trade", {uj2f = uj2f, item1 = item1,item2 = item2})
+  ynbuttons(message, "<@".. uj2.id ..">, <@" .. uj.id .. "> wants to trade " .. uj.pronouns["their"] .. " **" .. cdb[item1].name .. "** for your **" .. cdb[item2].name .. "**. Click the Yes button to accept and No to deny.", "trade", {uj2f = uj2f, item1 = item1,item2 = item2})
 end
 return command

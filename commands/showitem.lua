@@ -20,7 +20,7 @@ function command.run(message, mt)
   end
 
   local description = itemdb[curfilename] and itemdb[curfilename].description or consumabledb[curfilename].description
-  local name = itemfntoname(curfilename) or consfntoname(curfilename)
+  local name = itemdb[curfilename].name or consumabledb[curfilename].name
   local embedurl = itemdb[curfilename] and itemdb[curfilename].embed or consumabledb[curfilename].embed
 
   if not (uj.items[curfilename] or uj.consumables[curfilename] or shophas(curfilename)) then

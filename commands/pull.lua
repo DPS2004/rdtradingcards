@@ -84,7 +84,7 @@ local time = sw:getTime()
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
 
   for i, v in ipairs(pulledcards) do
-    local cardname = fntoname(v)
+    local cardname = cdb[v].name
 
     local title = "Woah!"
     if uj.equipped == "okamiiscollar" then title = "Woof!" end
@@ -103,12 +103,12 @@ _________________
 |     l  l      |
 |             𝅘𝅥𝅯 |
 _________________```]])
-    elseif not getcardspoiler(v) then
+    elseif not cdb[v].spoiler then
       message.channel:send{embed = {
         color = 0x85c5ff,
         title = title,
         description = message.author.mentionString .. ' got a **' .. cardname .. '** card! The **' .. cardname .. '** card has been added to ' .. uj.pronouns["their"] .. ' inventory. The shorthand form of this card is **' .. v .. '**.',
-        image = {url = getcardembed(v)}
+        image = {url = cdb[v].embed} --TODO: randomize embed
       }}
     else
       print("spider moments")

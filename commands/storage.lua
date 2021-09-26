@@ -17,7 +17,7 @@ function command.run(message, mt)
 
   local storagetable = {}
   local storagestring = ''
-  for k,v in pairs(uj.storage) do table.insert(storagetable, "**" .. (fntoname(k) or k) .. "** x" .. v .. "\n") end
+  for k,v in pairs(uj.storage) do table.insert(storagetable, "**" .. (cdb[k].name or k) .. "** x" .. v .. "\n") end
   table.sort(storagetable)
 
   for i = (pagenumber - 1) * 10 + 1, (pagenumber) * 10 do

@@ -61,14 +61,14 @@ function command.run(message, mt)
     if nopeeking then
       message.channel:send("Sorry, but I either could not find the " .. thing_argument .. " item in the database, or you do not have it. Make sure that you spelled it right!")
     else
-      message.channel:send("Sorry, but you don't have the **" .. consfntoname(curfilename) .. "** item.")
+      message.channel:send("Sorry, but you don't have the **" .. consumabledb[curfilename].name .. "** item.")
     end
     return
   end
   
   if not (uj.consumables[curfilename] >= numitems) then
     print("user doesn't have enough items")
-    message.channel:send("Sorry, but you do not have enough **" .. consfntoname(curfilename) .. "** items.")
+    message.channel:send("Sorry, but you do not have enough **" .. consumabledb[curfilename].name .. "** items.")
     return
   end
 
@@ -94,7 +94,7 @@ function command.run(message, mt)
   
   local isplural = numitems ~= 1 and "s" or ""
   message.channel:send {
-    content = 'You have gifted ' .. numitems .. ' **' .. consfntoname(curfilename) .. '** item' .. isplural ..' to <@' .. uj2.id .. '>.'
+    content = 'You have gifted ' .. numitems .. ' **' .. consumabledb[curfilename].name .. '** item' .. isplural ..' to <@' .. uj2.id .. '>.'
   }
 
 
