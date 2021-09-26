@@ -27,7 +27,7 @@ function command.run(message, mt)
     return
   end
 
-  if constexttofn(thing_argument) then
+  if constexttofn(thing_argument) or itemtexttofn(thing_argument) then
     cmd.giveitem.run(message, {user_argument, thing_argument, numcards})
     return
   end
