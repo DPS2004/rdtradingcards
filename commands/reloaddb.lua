@@ -192,6 +192,7 @@ function command.run(message, mt, overwrite)
     for i, v in ipairs(cdata.groups) do
       for w, x in ipairs(v.cards) do
         cdb[x.filename] = x
+        cdb.count = cdb.count and cdb.count + 1 or 1
         if not seasontable[x.season] then 
           seasontable[x.season] = {}
         end

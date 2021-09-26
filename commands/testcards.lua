@@ -1,7 +1,7 @@
 local command = {}
 function command.run(message, mt)
   if botdebug then
-    message.channel:send('ok, testing. There are '.. #cdb ..'cards in the database.')
+    message.channel:send('ok, testing. There are '.. cdb.count ..' cards in the database.')
     print(message.author.name .. " did !testcards")
     for i,v in pairs(cdb) do
       local emb = v.embed or ""
