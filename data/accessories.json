@@ -129,6 +129,11 @@
       "description": "(TODO)",
       "layer": "middle"
     },
+    "mask" : {
+      "name": "Disposable Mask",
+      "description": "Stay safe!",
+      "layer": "middle"
+    },
     "grass" : {
       "name": "Patch of grass",
       "description": "A nice place to sit.",
