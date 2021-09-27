@@ -9,13 +9,12 @@ _G["fs"] = require('fs')
 --from https://github.com/DeltaF1/lua-tracery, TODO properly follow the license lmao
 _G["tracery"] = require('libs/tracery')
 _G["dpf"] = require('libs/dpf')
-_G["utils"] = require('libs/utils')
 _G["inspect"] = require('libs/inspect')
 _G["vips"] = require('vips')
-_G["trim"] = function (s)
-   return s:match "^%s*(.-)%s*$"
-end
 _G["http"] = require('coro-http')
+
+-- load all the extensions
+discordia.extensions()
 
 -- import all the commands
 _G['cmd'] = {}

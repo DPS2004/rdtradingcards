@@ -192,7 +192,6 @@ function command.run(message, mt, overwrite)
     for i, v in ipairs(cdata.groups) do
       for w, x in ipairs(v.cards) do
         cdb[x.filename] = x
-        cdb.count = cdb.count and cdb.count + 1 or 1
         if not seasontable[x.season] then 
           seasontable[x.season] = {}
         end
@@ -577,18 +576,18 @@ function command.run(message, mt, overwrite)
       if message.author.id ~= client.user.id or content then
         local messagecontent = content or message.content
         for i,v in ipairs(commands) do
-          if trim(string.lower(string.sub(messagecontent, 0, #v.trigger+1))) == v.trigger then
+          if string.trim(string.lower(string.sub(messagecontent, 0, #v.trigger+1))) == v.trigger then
             print("found ".. v.trigger)
             local mt = {}
             local nmt = {}
             if v.expectedargs == 0 then
               mt = string.split(string.sub(messagecontent, #v.trigger+1),"/")
               for a,b in ipairs(mt) do
-                b = trim(b)
+                b = string.trim(b)
                 nmt[a]=b
               end
             elseif v.expectedargs == 1 then
-              nmt = {trim(string.sub(messagecontent, #v.trigger+1))}
+              nmt = {string.trim(string.sub(messagecontent, #v.trigger+1))}
             end --might have to expand later?
             if v.force then
               for c,d in ipairs(v.force) do
