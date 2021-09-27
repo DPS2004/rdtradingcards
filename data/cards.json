@@ -3621,15 +3621,13 @@
           "type": "Super Rare",
           "description": "(Level by bunner and Xeno)",
           "smell": "Paranoia",
-          "randomized": true,
           "season": 6,
           "bonuses": {
             "paddedstickersheet": true,
             "deviltail": true,
             "valentinesdaycard": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849026745806225448/shade.gif",
-          "embedalt": "https://cdn.discordapp.com/attachments/829197797789532181/849026758685884418/shadealt.gif"
+          "embed": ["https://cdn.discordapp.com/attachments/829197797789532181/849026745806225448/shade.gif", "https://cdn.discordapp.com/attachments/829197797789532181/849026758685884418/shadealt.gif"]
         },
         {
           "chance": 2,

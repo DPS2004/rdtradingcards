@@ -23,7 +23,7 @@ function command.run(message, mt)
     if nopeeking then
       message.channel:send("Sorry, but I either could not find the " .. mt[1] .. " card in the database, or you do not have it. Make sure that you spelled it right!")
     else
-      message.channel:send("Sorry, but you don't have the **" .. fntoname(curfilename) .. "** card in your inventory.")
+      message.channel:send("Sorry, but you don't have the **" .. cdb[curfilename].name .. "** card in your inventory.")
     end
     return
   end
@@ -37,9 +37,9 @@ function command.run(message, mt)
   end
 
   if uj.inventory[curfilename] >= numcards then
-    ynbuttons(message, "<@" .. uj.id .. ">, do you want to shred your " .. numcards .. " **" .. fntoname(curfilename) .. "** card" .. (numcards == 1 and "" or "s") .. "? **This cannot be undone.** Click the Yes button to confirm and No to deny.", "shred", {curfilename = curfilename,numcards = numcards})
+    ynbuttons(message, "<@" .. uj.id .. ">, do you want to shred your " .. numcards .. " **" .. cdb[curfilename].name .. "** card" .. (numcards == 1 and "" or "s") .. "? **This cannot be undone.** Click the Yes button to confirm and No to deny.", "shred", {curfilename = curfilename,numcards = numcards})
   else
-    message.channel:send("Sorry, but you do not have enough **" .. fntoname(curfilename) .. "** cards in your inventory.")
+    message.channel:send("Sorry, but you do not have enough **" .. cdb[curfilename].name .. "** cards in your inventory.")
   end
 end
 return command

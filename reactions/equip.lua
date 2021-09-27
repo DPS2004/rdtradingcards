@@ -22,7 +22,7 @@ function reaction.run(ef, eom, reaction, userid)
     end
 
     uj.equipped = newequip
-    reaction.message.channel:send("<@" .. uj.id .. "> successfully set **" .. itemfntoname(newequip) .. "** as " .. uj.pronouns["their"] .. " equipped item.")
+    reaction.message.channel:send("<@" .. uj.id .. "> successfully set **" .. itemdb[newequip].name .. "** as " .. uj.pronouns["their"] .. " equipped item.")
     uj.lastequip = time:toHours()
     dpf.savejson(ujf, uj)
   end

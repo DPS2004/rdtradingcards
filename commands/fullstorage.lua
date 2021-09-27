@@ -11,7 +11,7 @@ function command.run(message, mt)
   local titlestring = 'Full Storage'
   local storestring = ''
   local prevstorestring = ''
-  for k,v in pairs(uj.storage) do table.insert(storetable, "**" .. (fntoname(k) or k) .. "** x" .. v .. "\n") end
+  for k,v in pairs(uj.storage) do table.insert(storetable, "**" .. (cdb[k].name or k) .. "** x" .. v .. "\n") end
   table.sort(storetable)
   for i = 1, numkey do
     storestring = storestring .. storetable[i]

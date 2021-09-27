@@ -22,7 +22,7 @@ function reaction.run(ef, eom, reaction, userid)
     end
 
     if uj.inventory[curfilename] < numcards then
-      reaction.message.channel:send("An error has occured. Please make sure that you still have enough **" .. fntoname(curfilename) .. "** cards in your inventory!")
+      reaction.message.channel:send("An error has occured. Please make sure that you still have enough **" .. cdb[curfilename].name .. "** cards in your inventory!")
       return
     end
 
@@ -32,7 +32,7 @@ function reaction.run(ef, eom, reaction, userid)
 
     uj.timesshredded = uj.timesshredded and uj.timesshredded + numcards or numcards
 
-    reaction.message.channel:send("<@" .. uj.id .. "> successfully shredded " .. uj.pronouns["their"] .. " " .. numcards .. " **" .. fntoname(curfilename) .. "** card" .. (numcards == 1 and "" or "s") .. ".")
+    reaction.message.channel:send("<@" .. uj.id .. "> successfully shredded " .. uj.pronouns["their"] .. " " .. numcards .. " **" .. cdb[curfilename].name .. "** card" .. (numcards == 1 and "" or "s") .. ".")
 
     dpf.savejson(ujf, uj)
     cmd.checkmedals.run(eom.ogmessage, {}, reaction.message.channel)
@@ -40,7 +40,7 @@ function reaction.run(ef, eom, reaction, userid)
 
   if reaction.emojiName == "❌" then
     print('user1 has denied')
-    reaction.message.channel:send("<@" .. uj.id .. "> has successfully stopped the shredding of " .. uj.pronouns["their"] .. " **" .. fntoname(curfilename) .. "** card" .. (numcards == 1 and "" or "s").. ".")
+    reaction.message.channel:send("<@" .. uj.id .. "> has successfully stopped the shredding of " .. uj.pronouns["their"] .. " **" .. cdb[curfilename].name .. "** card" .. (numcards == 1 and "" or "s").. ".")
   end
 end
 return reaction

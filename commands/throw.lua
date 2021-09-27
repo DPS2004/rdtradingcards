@@ -32,12 +32,12 @@ function command.run(message, mt)
     if nopeeking then
       message.channel:send("Sorry, but I either could not find the " .. mt[1] .. " card in the database, or you do not have it. Make sure that you spelled it right!")
     else
-      message.channel:send("Sorry, but you don't have the **" .. fntoname(curfilename) .. "** card in your inventory.")
+      message.channel:send("Sorry, but you don't have the **" .. cdb[curfilename].name .. "** card in your inventory.")
     end
     return
   end
 
-  message.channel:send(trf("throw",{ping = message.author.mentionString, card = fntoname(curfilename)}) .. " Type this command within " .. timeout .. " seconds to catch it!\n`c!catch " .. curfilename .. "`")
+  message.channel:send(trf("throw",{ping = message.author.mentionString, card = cdb[curfilename].name}) .. " Type this command within " .. timeout .. " seconds to catch it!\n`c!catch " .. curfilename .. "`")
   
   uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
   uj.inventory[curfilename] = uj.inventory[curfilename] - 1
@@ -68,7 +68,7 @@ function command.run(message, mt)
     if not next(tj[curfilename]) then tj[curfilename] = nil end
     dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
     dpf.savejson("savedata/throwncards.json", tj)
-    message.channel:send(trf("fall",{card = fntoname(curfilename)}) .. message.author.mentionString .. " picked it up and put it back in " .. uj.pronouns["their"] .. " inventory.")
+    message.channel:send(trf("fall",{card = cdb[curfilename].name}) .. message.author.mentionString .. " picked it up and put it back in " .. uj.pronouns["their"] .. " inventory.")
   end
 end
 return command

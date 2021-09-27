@@ -1,4 +1,4 @@
-dpf = {}
+_G['dpf'] = {}
 
 
 function dpf.loadjson(f,w)

@@ -23,10 +23,11 @@ function reaction.run(ef, eom, reaction, userid)
       reaction.message.channel:send("An error has occured. Please make sure that you still have the item!")
       return
     end
-    fn = request
-    if getconscommand(request) then
-      request = getconscommand(request)
+    local fn = request
+    if consdb[request].command then
+      request = consdb[request].command
     end
+
     
     cmdcons[request].run(uj,ujf,client:getChannel(eom.ogmessage.channel.id):getMessage(eom.ogmessage.id),eom.mt,fn) -- this is the single worst line of code that i have ever written
     
@@ -34,7 +35,7 @@ function reaction.run(ef, eom, reaction, userid)
 
   if reaction.emojiName == "❌" then
     print('user1 has denied')
-    reaction.message.channel:send("You decide to not use the **".. consfntoname(eom.crequest) .."**.")
+    reaction.message.channel:send("You decide to not use the **".. consdb[eom.crequest].name .."**.")
   end
 end
 return reaction

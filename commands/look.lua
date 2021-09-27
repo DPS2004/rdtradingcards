@@ -416,12 +416,12 @@ function command.run(message, mt)
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
       local shopstr = ""
       for i,v in ipairs(sj.cards) do
-        shopstr = shopstr .. "\n**"..fntoname(v.name).."** ("..v.price.." token" .. (v.price == 1 and "" or "s") .. ") x"..v.stock
+        shopstr = shopstr .. "\n**"..cdb[v.name].name.."** ("..v.price.." token" .. (v.price == 1 and "" or "s") .. ") x"..v.stock
       end
       for i,v in ipairs(sj.consumables) do
-        shopstr = shopstr .. "\n**"..consfntoname(v.name).."** ("..v.price.." token" .. (v.price == 1 and "" or "s") .. ") x"..v.stock
+        shopstr = shopstr .. "\n**"..consdb[v.name].name.."** ("..v.price.." token" .. (v.price == 1 and "" or "s") .. ") x"..v.stock
       end
-      shopstr = shopstr .. "\n**"..itemfntoname(sj.item).."** (2 tokens) x"..sj.itemstock
+      shopstr = shopstr .. "\n**"..itemdb[sj.item].name.."** (" .. sj.itemprice .. " token" .. (sj.itemprice == 1 and "" or "s") ..") x"..sj.itemstock
       message.channel:send{embed = {
         color = 0x85c5ff,
         title = "Looking at Shop...",
@@ -438,7 +438,7 @@ function command.run(message, mt)
       local time = sw:getTime()
       checkforreload(time:toDays())
       --extremely jank implementation, please make this cleaner if possible
-      local minutesleft = math.ceil((sj.lastrefresh - time:toDays()) * 24 * 60)
+      local minutesleft = math.ceil((46/24 - time:toDays() + sj.lastrefresh) * 24 * 60)
       print(minutesleft)
       local durationtext = ""
       if math.floor(minutesleft / 60) > 0 then

@@ -23,7 +23,7 @@ function command.run(message, mt)
     if nopeeking then
       message.channel:send("Sorry, but I either could not find the " .. mt[1] .. " medal in the database, or you do not have it. Make sure that you spelled it right!")
     else
-      message.channel:send("Sorry, but you don't have the **" .. medalfntoname(curfilename) .. "** medal.")
+      message.channel:send("Sorry, but you don't have the **" .. medaldb[curfilename].name .. "** medal.")
     end
     return
   end
@@ -32,7 +32,7 @@ function command.run(message, mt)
   message.channel:send{embed = {
     color = 0x85c5ff,
     title = "Showing medal...",
-    description = 'Here it is! Your **'.. medalfntoname(curfilename) .. '** medal. The shorthand form is **' .. curfilename .. '**.\n\n*The description on the back reads:*\n> ' .. medaldb[curfilename].description,
+    description = 'Here it is! Your **'.. medaldb[curfilename].name .. '** medal. The shorthand form is **' .. curfilename .. '**.\n\n*The description on the back reads:*\n> ' .. medaldb[curfilename].description,
     image = {
       url = medaldb[curfilename].embed
     }

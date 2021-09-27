@@ -23,34 +23,34 @@ function command.run(message, mt)
     if nopeeking then
       message.channel:send("Sorry, but I either could not find the " .. mt[1] .. " card in the database, or you do not have it. Make sure that you spelled it right!")
     else
-      message.channel:send("Sorry, but you don't have the **" .. fntoname(curfilename) .. "** card in your inventory or your storage.")
+      message.channel:send("Sorry, but you don't have the **" .. cdb[curfilename].name .. "** card in your inventory or your storage.")
     end
     return
   end
 
   print("user has card")
-  if not getcardspoiler(curfilename) then
+  if not cdb[curfilename].spoiler then
     local embeddescription = ""
-    if getcarddescription(curfilename) then
-      embeddescription = "\n\n*The description on the back reads:*\n> " .. getcarddescription(curfilename)
+    if cdb[curfilename].description then
+      embeddescription = "\n\n*The description on the back reads:*\n> " .. cdb[curfilename].description
     end
     message.channel:send{embed = {
       color = 0x85c5ff,
       title = "Showing card...",
       description = 
-      'Here it is! Your **'.. fntoname(curfilename) .. '** card. The shorthand form is **' .. curfilename .. '**.' .. embeddescription,
+      'Here it is! Your **'.. cdb[curfilename].name .. '** card. The shorthand form is **' .. curfilename .. '**.' .. embeddescription,
       image = {
-        url = getcardembed(curfilename)
+        url = type(cdb[curfilename].embed) == "table" and cdb[curfilename].embed[math.random(#cdb[curfilename].embed)] or cdb[curfilename].embed
       }
     }}
   else
     print("spiderrrrrrr")
     message.channel:send{
-      content = 'Here it is! Your **'.. fntoname(curfilename) .. '** card. The shorthand form is **' .. curfilename .. '**.',
+      content = 'Here it is! Your **'.. cdb[curfilename].name .. '** card. The shorthand form is **' .. curfilename .. '**.',
       file = "card_images/SPOILER_" .. curfilename .. ".png"
     }
-    if getcarddescription(curfilename) then
-      message.channel:send("The description on the back reads:\n> " .. getcarddescription(curfilename))
+    if cdb[curfilename].description then
+      message.channel:send("The description on the back reads:\n> " .. cdb[curfilename].description)
     end
   end
 end

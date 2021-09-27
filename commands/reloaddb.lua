@@ -130,11 +130,11 @@ function command.run(message, mt, overwrite)
         },
       },
       item = "hardcandy",
-      itemstock = 10
-      
+      itemstock = 10,
+      itemprice = 4
     }
 
-    _G['debug'] = false
+    _G['botdebug'] = false
 
     _G['nopeeking'] = false
     
@@ -154,6 +154,8 @@ function command.run(message, mt, overwrite)
     _G['constable'] = {}
     local iterateitemdb = itemdb
     iterateitemdb["aboveur"] = {}
+    iterateitemdb["quantummouse"] = {}
+
     for k, q in pairs(iterateitemdb) do
       ptable[k] = {}
       constable[k] = {}
@@ -178,16 +180,20 @@ function command.run(message, mt, overwrite)
               table.insert(constable["season"..x.season], x.filename)
             end
           end
+          if k == "quantummouse" and (x.type == "Rare" or x.type == "Super Rare" or x.type == "Ultra Rare") then
+            for y = 1, (cdata.basemult * v.basechance * x.chance) do
+              table.insert(constable[k],x.filename)
+            end
+          end
         end
-        
       end
     end
 
     for i, v in ipairs(cdata.groups) do
       for w, x in ipairs(v.cards) do
-        table.insert(cdb, x)
+        cdb[x.filename] = x
         if not seasontable[x.season] then 
-          seasontable[x.season] = {} 
+          seasontable[x.season] = {}
         end
         table.insert(seasontable[x.season], x.filename)
       end
@@ -202,14 +208,14 @@ function command.run(message, mt, overwrite)
     -- print("here is ptable")
     -- print(inspect(ptable))
     
-    print('loading consumabledb')    
-    _G['consumabledb'] = dpf.loadjson("data/consumables.json", defaultjson)
+    print('loading consdb')    
+    _G['consdb'] = dpf.loadjson("data/consumables.json", defaultjson)
     
-    print("making cpt")
-    _G['cpt'] = {}
-    for k,v in pairs(consumabledb) do
+    print("making conspt")
+    _G['conspt'] = {}
+    for k,v in pairs(consdb) do
       for i=1,v.chance do
-        table.insert(cpt,k)
+        table.insert(conspt,k)
       end
     end
 
@@ -337,23 +343,6 @@ function command.run(message, mt, overwrite)
         end
       end
     end
-    
-    _G['fntoname'] = function (x)
-      print("finding " .. x)
-      for i, v in ipairs(cdb) do
-        if string.lower(v.filename) == string.lower(x) then
-          return v.name
-        end
-      end
-    end
-
-    _G['nametofn'] = function (x)
-      for i, v in ipairs(cdb) do
-        if string.lower(v.name) == string.lower(x) then
-          return v.filename
-        end
-      end
-    end
 
     _G['resetclocks'] = function ()
       for i,v in ipairs(scandir("savedata")) do
@@ -364,19 +353,25 @@ function command.run(message, mt, overwrite)
           cuj.lastequip = -24
           cuj.lastbox = -24
         end
+        if cuj.lastrefresh then
+          cuj.lastrefresh = 0
+        end
         dpf.savejson("savedata/" .. v, cuj)
       end
     end
 
-    _G['texttofn'] = function (x)
-      local cfn = nametofn(x)
-      if not cfn then
-        cfn = fntoname(x)
-        if cfn then
-          cfn = string.lower(x)
+    _G['nametofn'] = function (x)
+      for i, v in pairs(cdb) do
+        if string.lower(v.name) == string.lower(x) then
+          return i
         end
       end
-      return cfn
+    end
+
+    _G['texttofn'] = function (x)
+      if nametofn(x) or cdb[string.lower(x)] then
+        return nametofn(x) or string.lower(x)
+      end
     end
 
     _G['medalnametofn'] = function (x)
@@ -387,80 +382,24 @@ function command.run(message, mt, overwrite)
       end
     end
 
-    _G['medalfntoname'] = function (x)
-      print("finding " .. x)
-      for k, v in pairs(medaldb) do
-        if string.lower(k) == string.lower(x) then
-          return v.name
-        end
-      end
-    end
-
     _G['medaltexttofn'] = function (x)
-      local mfn = medalnametofn(x)
-      if not mfn then
-        mfn = medalfntoname(x)
-        if mfn then
-          mfn = string.lower(x)
-        end
+      if medalnametofn(x) or medaldb[string.lower(x)] then
+        return medalnametofn(x) or string.lower(x)
       end
-      return mfn
     end
     
     _G['consnametofn'] = function (x)
-      for k, v in pairs(consumabledb) do
+      for k, v in pairs(consdb) do
         if string.lower(v.name) == string.lower(x) then
           return k
         end
       end
     end
     
-    _G['consfntoname'] = function (x)
-      print("finding " .. x)
-      for k, v in pairs(consumabledb) do
-        if string.lower(k) == string.lower(x) then
-          return v.name
-        end
-      end
-      
-    end
-    _G['getconsseason'] = function (x)
-      print("finding " .. x)
-      for k, v in pairs(consumabledb) do
-        if string.lower(k) == string.lower(x) then
-          return v.season
-        end
-      end
-      
-    end
-    _G['getconscommand'] = function (x)
-      print("finding " .. x)
-      for k, v in pairs(consumabledb) do
-        if string.lower(k) == string.lower(x) then
-          return v.command
-        end
-      end
-      
-    end
-    _G['getconstext'] = function (x)
-      print("finding " .. x)
-      for k, v in pairs(consumabledb) do
-        if string.lower(k) == string.lower(x) then
-          return v.text
-        end
-      end
-      
-    end
-    
     _G['constexttofn'] = function (x)
-      local ifn = consnametofn(x)
-      if not ifn then
-        ifn = consfntoname(x)
-        if ifn then
-          ifn = string.lower(x)
-        end
+      if consnametofn(x) or consdb[string.lower(x)] then
+        return consnametofn(x) or string.lower(x)
       end
-      return ifn
     end
     
     _G['itemnametofn'] = function (x)
@@ -471,91 +410,9 @@ function command.run(message, mt, overwrite)
       end
     end
 
-    _G['itemfntoname'] = function (x)
-      print("finding " .. x)
-      for k, v in pairs(itemdb) do
-        if string.lower(k) == string.lower(x) then
-          return v.name
-        end
-      end
-      
-    end
-
     _G['itemtexttofn'] = function (x)
-      local ifn = itemnametofn(x)
-      if not ifn then
-        ifn = itemfntoname(x)
-        if ifn then
-          ifn = string.lower(x)
-        end
-      end
-      return ifn
-    end
-    
-    
-
-    
-    _G['getcardtype'] = function (x)
-      for i, v in ipairs(cdb) do
-        if v.filename == x then
-          return v.type
-        end
-      end
-    end
-
-    _G['getcardseason'] = function (x)
-      for i, v in ipairs(cdb) do
-        if v.filename == x then
-          return v.season
-        end
-      end
-    end
-    
-    _G['getcarddescription'] = function (x)
-      print("getting description for " .. x)
-      for i, v in ipairs(cdb) do
-        if v.filename == x then
-          print(v.description)
-          return v.description
-        end
-      end
-    end
-    
-	
-    _G['getcardsmell'] = function (x)
-      print("getting smell for " .. x)
-      for i, v in ipairs(cdb) do
-        if v.filename == x then
-          print(v.smell)
-          return v.smell
-        end
-      end
-    end
-
-    _G['getcardembed'] = function (x)
-      local cembed = nil
-      for i, v in ipairs(cdb) do
-        if v.filename == x then
-          cembed = v.embed
-          if v.randomized then
-            if math.random(2) == 1 then
-              cembed = v.embedalt
-            end
-          end
-        end
-      end
-      return cembed
-    end
-    
-    _G['getcardspoiler'] = function (x)
-      print("getting spoiler for " .. x)
-      for i, v in ipairs(cdb) do
-        if v.filename == x then
-          print(v.spoiler)
-          if v.spoiler then
-            return true
-          end
-        end
+      if itemnametofn(x) or itemdb[string.lower(x)] then
+        return itemnametofn(x) or string.lower(x)
       end
     end
 
@@ -715,23 +572,22 @@ function command.run(message, mt, overwrite)
     addcommand("vipstest",cmd.vipstest,0)
     addcommand("catch",cmd.catch)
     addcommand("giveitem",cmd.giveitem)
-    _G['handlemessage'] = function (message,content)
+    _G['handlemessage'] = function (message, content)
       if message.author.id ~= client.user.id or content then
-        local hasrun = false
         local messagecontent = content or message.content
         for i,v in ipairs(commands) do
-          if (string.lower(string.sub(messagecontent, 0, #v.trigger+1)) == v.trigger or string.lower(string.sub(messagecontent, 0, #v.trigger+1)) == v.trigger.." ") and not hasrun then
+          if string.trim(string.lower(string.sub(messagecontent, 0, #v.trigger+1))) == v.trigger then
             print("found ".. v.trigger)
             local mt = {}
             local nmt = {}
             if v.expectedargs == 0 then
               mt = string.split(string.sub(messagecontent, #v.trigger+1),"/")
               for a,b in ipairs(mt) do
-                b = trim(b)
+                b = string.trim(b)
                 nmt[a]=b
               end
             elseif v.expectedargs == 1 then
-              nmt = {trim(string.sub(messagecontent, #v.trigger+1))}
+              nmt = {string.trim(string.sub(messagecontent, #v.trigger+1))}
             end --might have to expand later?
             if v.force then
               for c,d in ipairs(v.force) do
@@ -739,7 +595,6 @@ function command.run(message, mt, overwrite)
               end
             end
             print("nmt: " .. inspect(nmt))
-            hasrun = true
             local status, err = pcall(function ()
               v.commandfunction.run(message,nmt,v.usebypass)
             end)
@@ -747,6 +602,7 @@ function command.run(message, mt, overwrite)
               print("uh oh")
               message.channel:send("Oops! An error has occured! Error message: ```" .. err .. "``` (<@290582109750427648> <@298722923626364928> please fix this thanks)")
             end
+            break
           end
         end
       end
@@ -876,20 +732,20 @@ function command.run(message, mt, overwrite)
     getshopimage()
     
     
-    _G['checkforreload'] = function(days) 
+    _G['checkforreload'] = function(days)
+      local cooldown = 46/24
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
       print(days .. "days")
-      if days >= sj.lastrefresh + 46/24 then
+      if days >= sj.lastrefresh + cooldown then
         stockshop()
         sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
-        sj.lastrefresh = sj.lastrefresh + 46/24
+        sj.lastrefresh = cooldown * math.floor(days / cooldown)
         dpf.savejson("savedata/shop.json", sj)
       end
       
     end
     
     _G['stockshop'] = function()
-      local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
       
       local newcards = {{name="",stock=0,price=0},{name="",stock=0,price=0},{name="",stock=0,price=0},{name="",stock=0,price=0}}
@@ -911,21 +767,22 @@ function command.run(message, mt, overwrite)
           end
         end
         local price = 8
-        if getcardtype(nc) == "Rare" then
+        local rarity = cdb[nc].type
+        if rarity == "Rare" then
           price = 1
-        elseif getcardtype(nc) == "Super Rare" or getcardtype(nc) == "PICO-8" then
+        elseif rarity == "Super Rare" or rarity == "PICO-8" then
           price = 2
-        elseif getcardtype(nc) == "Ultra Rare" then
+        elseif rarity == "Ultra Rare" then
           price = 4
-        elseif getcardtype(nc) == "Discontinued" or getcardtype(nc) == "Alternate" then
+        elseif rarity == "Discontinued" or rarity == "Alternate" then
           price = math.random(4, 6)
-        elseif getcardtype(nc) == "Discontinued Alternate" or getcardtype(nc) == "Discontinued Super Rare" then
+        elseif rarity == "Discontinued Alternate" or rarity == "Discontinued Super Rare" then
           price = math.random(8, 10)
-        elseif getcardtype(nc) == "Discontinued Rare" or getcardtype(nc) == "Discontinued Ultra Rare" then
+        elseif rarity == "Discontinued Rare" or rarity == "Discontinued Ultra Rare" then
           price = math.random(13, 17)
         end
 
-        if getcardseason(nc) == #seasontable then
+        if cdb[nc].season == #seasontable then
           price = price + 1
         end
         newcards[i] = {name = nc,stock = math.random(5,15), price = price}
@@ -941,6 +798,7 @@ function command.run(message, mt, overwrite)
       end
       sj.item = itempt[math.random(#itempt)]
       sj.itemstock = math.random(5,15)
+      sj.itemprice = 4
       -----------------------consumables
       local newconsumables = {{name="",stock=0,price=0},{name="",stock=0,price=0},{name="",stock=0,price=0}}
       for i,v in ipairs(sj.consumables) do
@@ -948,7 +806,7 @@ function command.run(message, mt, overwrite)
         local finding = true
         local nc = ""
         while finding do
-          nc = cpt[math.random(#cpt)]
+          nc = conspt[math.random(#conspt)]
           local new = true
           for w,x in ipairs(newconsumables) do
             if x.name == nc then
@@ -960,7 +818,7 @@ function command.run(message, mt, overwrite)
           end
         end
 
-        newconsumables[i] = {name = nc,stock = math.random(5,15), price = consumabledb[nc].baseprice + math.random(-1,1)}
+        newconsumables[i] = {name = nc,stock = math.random(5,15), price = consdb[nc].baseprice + math.random(-1,1)}
         
       end
       sj.consumables = newconsumables

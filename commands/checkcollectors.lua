@@ -23,14 +23,14 @@ function command.run(message, mt,mc)
         else
           uj.storage[newcard] = uj.storage[newcard] + 1
         end
-        local ncn = fntoname(newcard)
-        if not getcardspoiler(newcard) then
+        local ncn = cdb[newcard].name
+        if not cdb[newcard].spoiler then
           mc:send{embed = {
             color = 0x85c5ff,
             title = "Congratulations!",
             description = 'After collecting and storing some other cards, '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to '..uj.pronouns["their"]..' storage.',
             image = {
-              url = getcardembed(newcard)
+              url = cdb[newcard].embed
             }
           }}
         else

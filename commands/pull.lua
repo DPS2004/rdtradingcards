@@ -67,6 +67,12 @@ local time = sw:getTime()
     end
   else
     pulledcards= { constable[uj.conspt][math.random(#constable[uj.conspt])] }
+    if uj.conspt == "quantummouse" then
+      table.insert(pulledcards, constable["quantummouse"][math.random(#constable["quantummouse"])])
+      if uj.equipped == "fixedmouse" and math.random(6) == 1 then
+        table.insert(pulledcards, constable["quantummouse"][math.random(#constable["quantummouse"])])
+      end
+    end
     uj.conspt = "none"
   end
 
@@ -78,12 +84,13 @@ local time = sw:getTime()
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
 
   for i, v in ipairs(pulledcards) do
-    local cardname = fntoname(v)
+    local cardname = cdb[v].name
 
     local title = "Woah!"
     if uj.equipped == "okamiiscollar" then title = "Woof!" end
     if v == "yor" or v == "yosr" or v == "your" then title = "Yo!" end
     if i == 2 then title = "Doubleclick!" end
+    if i == 3 then title = "Tripleclick!!!" end
 
     if v == "rdnot" then
       message.channel:send("```" .. title .. "\n@" .. message.author.name .. " got a What is RD Not? card! The What is RD Not? card has been added to " .. uj.pronouns["their"] .. " inventory. The shorthand form of this card is rdnot.\n" .. [[
@@ -96,12 +103,12 @@ _________________
 |     l  l      |
 |             𝅘𝅥𝅯 |
 _________________```]])
-    elseif not getcardspoiler(v) then
+    elseif not cdb[v].spoiler then
       message.channel:send{embed = {
         color = 0x85c5ff,
         title = title,
         description = message.author.mentionString .. ' got a **' .. cardname .. '** card! The **' .. cardname .. '** card has been added to ' .. uj.pronouns["their"] .. ' inventory. The shorthand form of this card is **' .. v .. '**.',
-        image = {url = getcardembed(v)}
+        image = {url = type(cdb[v].embed) == "table" and cdb[v].embed[math.random(#cdb[v].embed)] or cdb[v].embed}
       }}
     else
       print("spider moments")

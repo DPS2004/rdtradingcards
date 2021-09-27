@@ -8,15 +8,15 @@
     "receive": "unlucky"
   },  
   {
-    "require": "function checkrequirements(uj) print('checking rares') local result = false local rarecount = 0 for k, v in pairs(uj.storage) do print(k) if getcardtype(k) == 'Rare' then rarecount = rarecount + v end end print('rarecount is ' .. rarecount) if rarecount >= 20 then result = true end return result end return checkrequirements",
+    "require": "function checkrequirements(uj) print('checking rares') local result = false local rarecount = 0 for k, v in pairs(uj.storage) do print(k) if cdb[k].type == 'Rare' then rarecount = rarecount + v end end print('rarecount is ' .. rarecount) if rarecount >= 20 then result = true end return result end return checkrequirements",
     "receive": "bronzecollector"
   }, 
   {
-    "require": "function checkrequirements(uj) print('checking superrares') local result = false local rarecount = 0 for k, v in pairs(uj.storage) do print(k) if getcardtype(k) == 'Super Rare' then rarecount = rarecount + v end end print('superrarecount is ' .. rarecount) if rarecount >= 20 then result = true end return result end return checkrequirements",
+    "require": "function checkrequirements(uj) print('checking superrares') local result = false local rarecount = 0 for k, v in pairs(uj.storage) do print(k) if cdb[k].type == 'Super Rare' then rarecount = rarecount + v end end print('superrarecount is ' .. rarecount) if rarecount >= 20 then result = true end return result end return checkrequirements",
     "receive": "silversaver"
   }, 
   {
-    "require": "function checkrequirements(uj) print('checking ultrarares') local result = false local rarecount = 0 for k, v in pairs(uj.storage) do print(k) if getcardtype(k) == 'Ultra Rare' then rarecount = rarecount + v end end print('ultrararecount is ' .. rarecount) if rarecount >= 20 then result = true end return result end return checkrequirements",
+    "require": "function checkrequirements(uj) print('checking ultrarares') local result = false local rarecount = 0 for k, v in pairs(uj.storage) do print(k) if cdb[k].type == 'Ultra Rare' then rarecount = rarecount + v end end print('ultrararecount is ' .. rarecount) if rarecount >= 20 then result = true end return result end return checkrequirements",
     "receive": "goldhoarder"
   }, 
   {
@@ -56,7 +56,7 @@
     "receive": "s7maestro"
   },
   {
-    "require": "function checkrequirements(uj) print('checking all cards') local result = false local cardcount = 0 for k, v in pairs(uj.storage) do print(k) if v > 0 then cardcount = cardcount + 1 end end print('storage card count is ' .. cardcount .. ' out of ' .. #cdb) if cardcount >= #cdb - 1 then result = true end return result end return checkrequirements",
+    "require": "function checkrequirements(uj) print('checking all cards') local result = false local cardcount = 0 for k, v in pairs(uj.storage) do print(k) if v > 0 then cardcount = cardcount + 1 end end print('storage card count is ' .. cardcount .. ' out of ' .. table.count(cdb)) if cardcount >= table.count(cdb) - 1 then result = true end return result end return checkrequirements",
     "receive": "cardmaestro"
   },
   {

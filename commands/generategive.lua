@@ -36,7 +36,7 @@ function command.run(message, mt)
   print("saved user2 json with new card")
 
   message.channel:send {
-    content = 'You have given ' .. numcards .. ' **' .. fntoname(curfilename) .. '** card' .. (numcards == 1 and "" or "s") .. ' to <@' .. uj2.id .. '> .'
+    content = 'You have given ' .. numcards .. ' **' .. cdb[curfilename].name .. '** card' .. (numcards == 1 and "" or "s") .. ' to <@' .. uj2.id .. '> .'
   }
 end
 return command

@@ -27,7 +27,7 @@ function command.run(message, mt)
     return
   end
 
-  if constexttofn(thing_argument) then
+  if constexttofn(thing_argument) or itemtexttofn(thing_argument) then
     cmd.giveitem.run(message, {user_argument, thing_argument, numcards})
     return
   end
@@ -67,14 +67,14 @@ function command.run(message, mt)
     if nopeeking then
       message.channel:send("Sorry, but I either could not find the " .. thing_argument .. " card in the database, or you do not have it. Make sure that you spelled it right!")
     else
-      message.channel:send("Sorry, but you don't have the **" .. fntoname(curfilename) .. "** card in your inventory.")
+      message.channel:send("Sorry, but you don't have the **" .. cdb[curfilename].name .. "** card in your inventory.")
     end
     return
   end
   
   if not (uj.inventory[curfilename] >= numcards) then
     print("user doesn't have enough cards")
-    message.channel:send("Sorry, but you do not have enough **" .. fntoname(curfilename) .. "** cards in your inventory.")
+    message.channel:send("Sorry, but you do not have enough **" .. cdb[curfilename].name .. "** cards in your inventory.")
     return
   end
 
@@ -100,7 +100,7 @@ function command.run(message, mt)
   
   local isplural = numcards ~= 1 and "s" or ""
   message.channel:send {
-    content = 'You have gifted ' .. numcards .. ' **' .. fntoname(curfilename) .. '** card' .. isplural ..' to <@' .. uj2.id .. '>.'
+    content = 'You have gifted ' .. numcards .. ' **' .. cdb[curfilename].name .. '** card' .. isplural ..' to <@' .. uj2.id .. '>.'
   }
 
 

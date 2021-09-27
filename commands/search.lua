@@ -24,7 +24,7 @@ function command.run(message, mt)
   if nopeeking and invnum + stornum == 0 then
     message.channel:send("Sorry, but I either could not find the " .. request .. " card in the database, or you do not have it. Make sure that you spelled it right!")
   else
-    message.channel:send("Here is how many **" .. fntoname(curfilename) .. "** cards you have:\n**In your inventory:** x".. invnum .."\n**In your storage:** x".. stornum)
+    message.channel:send("Here is how many **" .. cdb[curfilename].name .. "** cards you have:\n**In your inventory:** x".. invnum .."\n**In your storage:** x".. stornum)
   end
 end
 return command

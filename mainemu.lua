@@ -158,9 +158,9 @@ _G["prefix"] = "c!"
 _G["utils"] = require('libs/utils')
 _G["inspect"] = require('libs/inspect')
 _G["vips"] = require('vips')
-_G["trim"] = function (s)
-   return s:match "^%s*(.-)%s*$"
-end
+
+-- load all the extensions
+discordia.extensions()
 
 -- import all the commands
 _G['cmd'] = {}
@@ -194,6 +194,9 @@ print("ok commands loaded, doing reactions")
 
 print("Resetting clocks...")
 resetclocks()
+
+print("Stocking shop")
+stockshop()
 
 client:run(privatestuff.botid)
 
