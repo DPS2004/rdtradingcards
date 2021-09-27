@@ -42,6 +42,10 @@
       "name": "Cool Shades",
       "description": "Protect your eyes from the sun AND look wicked cool at the same time!"
     },
+    "tintedglasses" : {
+      "name": "Tinted Glasses",
+      "description": "[[Hyperlink Blocked]]."
+    },
     "eyepatch" : {
       "name": "Eyepatch",
       "description": "For the true off-brand James Bond villain look."
@@ -118,6 +122,11 @@
     "static" : {
       "name": "Static",
       "description": "*BZZT*",
+      "layer": "middle"
+    },
+    "rosycheeks" : {
+      "name": "Rosy Cheeks",
+      "description": "(TODO)",
       "layer": "middle"
     },
     "grass" : {
