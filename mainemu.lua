@@ -1,7 +1,7 @@
 -- this is a bad idea
 
 -- BUT IM DOING IT ANYWAYS
-
+_G["realdiscordia"] = require('discordia-with-buttons')
 _G["json"] = require('libs/json')
 _G["fs"] = require('fs')
 --from https://github.com/DeltaF1/lua-tracery, TODO properly follow the license lmao
@@ -155,12 +155,12 @@ _G["discordia"] = {
 }
 _G["client"] = discordia.Client()
 _G["prefix"] = "c!"
-_G["utils"] = require('libs/utils')
+--_G["utils"] = require('libs/utils')
 _G["inspect"] = require('libs/inspect')
 _G["vips"] = require('vips')
 
 -- load all the extensions
-discordia.extensions()
+realdiscordia.extensions()
 
 -- import all the commands
 _G['cmd'] = {}

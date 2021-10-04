@@ -133,6 +133,13 @@ function command.run(message, mt, overwrite)
       itemstock = 10,
       itemprice = 4
     }
+    
+    
+    _G['amtable'] = {
+      "pyrowmid" = {"machine","panda"},
+      "lab" = {"mouse hole","mouse","mousehole","peculiar box","box","peculiarbox"},
+      "shop" = {"shop"}
+    }
 
     _G['botdebug'] = false
 
