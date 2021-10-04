@@ -49,6 +49,7 @@ function command.run(message, mt)
       uj.room = newroom
       message.channel:send("Your location is now the **" .. locations[newroom+1] .. "**.")
       dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
+      return uj
 	end
   else
     message.channel:send("Sorry, but I could not find " .. mt[1] .. ". Make sure that you spelled it right!")

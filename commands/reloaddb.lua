@@ -136,10 +136,30 @@ function command.run(message, mt, overwrite)
     
     
     _G['amtable'] = {
-      "pyrowmid" = {"machine","panda"},
-      "lab" = {"mouse hole","mouse","mousehole","peculiar box","box","peculiarbox"},
-      "shop" = {"shop"}
+      pyrowmid = {"strange machine", "machine","panda"},
+      lab = {"mouse hole","mouse","mousehole","peculiar box","box","peculiarbox"},
+      shop = {"shop"}
     }
+    _G['amids'] = {}
+    amids[0] = "pyrowmid"
+    amids[1] = "lab"
+    amids[5] = "shop"
+    
+    _G['automove'] = function(cr,r,message)
+      print("automove")
+      local reqroom = "none"
+      for k,v in pairs(amtable) do
+        for a,b in ipairs(v) do
+          if b == r then
+            print("trying to use something in " .. k)
+            reqroom = k
+          end
+        end
+      end
+      if reqroom ~= amids[cr] and reqroom ~= "none" then
+        return cmd.move.run(message,{reqroom},false)
+      end
+    end
 
     _G['botdebug'] = false
 

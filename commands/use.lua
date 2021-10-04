@@ -8,10 +8,19 @@ function command.run(message, mt,bypass)
     message.channel:send("Sorry, but you cannot use in DMs!")
     return
   end
-
+  
+  
+  
+  
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
   local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
   if not uj.room then uj.room = 0 end
+  
+  local newuj = automove(uj.room,request,message)
+  if newuj then
+    uj = newuj
+  end
+  
   local found = true
 
   ----------------------------PYROWMID------------------------
