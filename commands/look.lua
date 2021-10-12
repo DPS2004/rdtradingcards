@@ -341,6 +341,13 @@ function command.run(message, mt)
         title = "Looking at Peculiar Box...",
         description = 'The **Peculiar Box** rests on top of the **Table**. The opening on the top of it almost beckons for a **Trading Card** to be placed inside.',
       }}
+    elseif (string.lower(mt[1]) == "scanner") and wj.ws >= 802 then
+      message.channel:send{embed = {
+        color = 0x85c5ff,
+        title = "Looking at scanner...",
+        description = 'TODO: scanner look text',
+      }}
+      
     
     
     

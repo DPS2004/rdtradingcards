@@ -9,7 +9,7 @@ function command.run(message, mt,bypass)
     return
   end
   
-  
+
   
   
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
@@ -256,6 +256,18 @@ function command.run(message, mt,bypass)
           end
         end
       end
+    elseif request == "scanner" and wj.ws >= 802 then
+      if wj.ws < 804 then -- lab not unlocked
+        if uj.storage.key then
+          --interact with key card and unlock hallway
+          wj.ws = 804
+        else
+          -- no key card, but interacted with
+        end
+      else
+        --hallway unlocked
+      end
+      
     elseif request == "terminal" then 
       uj.timesused = uj.timesused and uj.timesused + 1 or 1
       if not mt[2] then mt[2] = "" end
@@ -277,6 +289,9 @@ function command.run(message, mt,bypass)
         elseif string.lower(mt[2]) == "cat" then
           embeddescription = '`=^•_•^=`'
           embedimage = "https://cdn.discordapp.com/attachments/829197797789532181/838840001310752788/terminalcat.gif"
+        elseif string.lower(mt[2]) == "dog" then
+          embeddescription = '   __\no-''|\_____/)\n \_/|_)     )\n    \  __  /\n    (_/ (_/  '
+        end
         elseif string.lower(mt[2]) == "savedata" then
           if nopeeking then
             embeddescription = '`DATA NOT FOUND.`'
@@ -396,7 +411,7 @@ function command.run(message, mt,bypass)
         description = 'Even though the **Bridge** feels relatively sturdy to walk on, it is probably best not to mess with it too much. You never know when it all might come *crash*ing down.',
       }}
     elseif (request == "shop" or request == "quaintshop" or request == "quaint shop")  then 
-	  message.channel:send("You step inside of the **Quaint Shop**...")
+      message.channel:send("You step inside of the **Quaint Shop**...")
       uj.room = 5
     elseif (request == "barrels")  then 
       message.channel:send{embed = {

@@ -34,11 +34,18 @@ function command.run(message, mt)
     --805: someone has flipped a coin in the hallway, and the Shady Casino can be entered:
     --806: The shady casino has been entered for the first time.
     --Shady Casino contains:
-    --The Druid: an npc in a similar vein to The Panda. Sits behind the counter at the Shady Casino. more details tbd.
-    --Battle Box: If the player has less than 20 unique cards in their storage, it puts in common cards to fill in the blanks. Here so that new players can play the card game immediately. Also dispenses the Rules Card, which is a hotlink to a manual for the trading card game.
+    --ATM (Automatic Token Machine)
+    --Slot machine: insert a card of your choice to play
+    --red and blue ddakji: on the counter, for flavor text
+    --locked box: on the counter, for flavor text
+    --giant arcade cabinets of RD-adjacent games (blipblop.io, beatblock, tau, Letters(old fizzd game, on his itch.io)), these will probably be in the bg of the image.
     --Security Camera: flavor text probably
-    --New Machine: chick stuff, see #chick-planning
-    --ATM (Automatic Token Machine): flavor text
+    --The Druid: an npc in a similar vein to The Panda. Sits behind the counter at the Shady Casino. 
+    --Vault door directly behind the desk that the druid is stationed at,
+    
+    --FOR LATER: Battle Box: If the player has less than 20 unique cards in their storage, it puts in common cards to fill in the blanks. Here so that new players can play the card game immediately. Also dispenses the Rules Card, which is a hotlink to a manual for the trading card game.
+    --FOR LATER: New Machine: chick stuff, see #chick-planning
+
     
     --Misc notes:
     --attempting to look at the factory will alias as c!look hallway or casino when in the hallway or casino. This is because the hallway, and the casino, are located in the factory.
