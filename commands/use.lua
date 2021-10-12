@@ -290,7 +290,7 @@ function command.run(message, mt,bypass)
           embeddescription = '`=^•_•^=`'
           embedimage = "https://cdn.discordapp.com/attachments/829197797789532181/838840001310752788/terminalcat.gif"
         elseif string.lower(mt[2]) == "dog" then
-          embeddescription = '   __\no-''|\_____/)\n \_/|_)     )\n    \  __  /\n    (_/ (_/  '
+          --embeddescription = '   __\no-''|\\_____/)\n \\_/|_)     )\n    \\  __  /\n    (_/ (_/  '
         end
         elseif string.lower(mt[2]) == "savedata" then
           if nopeeking then
