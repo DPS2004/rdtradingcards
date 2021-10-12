@@ -290,11 +290,13 @@ function command.run(message, mt,bypass)
           embeddescription = '`=^•_•^=`'
           embedimage = "https://cdn.discordapp.com/attachments/829197797789532181/838840001310752788/terminalcat.gif"
         elseif string.lower(mt[2]) == "dog" then
-          embeddescription =                     "   __" .. '\n' 
-          embeddescription = embeddescription .. "o-''|\\_____/)" .. '\n' 
-          embeddescription = embeddescription .. " \\_/|_)     )" .. '\n' 
-          embeddescription = embeddescription .. "    \\  __  /" .. '\n' 
-          embeddescription = embeddescription .. "    (_/ (_/   "
+          embeddescription = [[```
+   __
+o-''|\\_____/)
+ \\_/|_)     )
+    \\  __  /
+    (_/ (_/
+          ```]]
         elseif string.lower(mt[2]) == "savedata" then
           if nopeeking then
             embeddescription = '`DATA NOT FOUND.`'
