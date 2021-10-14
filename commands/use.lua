@@ -210,7 +210,7 @@ function command.run(message, mt,bypass)
         message.channel:send{embed = {
           color = 0x85c5ff,
           title = "Using Peculiar Box...",
-          description = 'You do not have any cards to put into the **Peculiar Box**',
+          description = 'You do not have any cards to put into the **Peculiar Box**.',
         }}
         return
       end
