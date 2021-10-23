@@ -241,6 +241,15 @@
     ],
     "receive": "unbeatablegroupc"
   },
+   {
+    "require": [
+      "rinr",
+      "buror",
+      "marijar",
+      "musedashgroup"
+    ],
+    "receive": "musedashgroupc"
+  },
   {
     "require": [
       "rattler",
