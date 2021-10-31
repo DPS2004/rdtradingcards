@@ -1,10 +1,10 @@
 {
-
   "caffeinatedsoda" : {
     "name": "Caffeinated Soda",
     "description": "Sets all your current cooldowns to 0, but adds whatever they were at to your next cooldowns.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873730442656882798/caffeinatedsoda.png",
     "baseprice": 5,
+    "basestock": 10,
     "chance": 10
   },
   "decaf" : {
@@ -12,6 +12,7 @@
     "description": "The next card you pull is guaranteed to contain Cole Brew or a coffeeshop worker. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873730443999068210/decaf.png",
     "baseprice": 3,
+    "basestock": 8,
     "chance": 10
   },
   "beepingpager" : {
@@ -19,6 +20,7 @@
     "description": "The next card you pull is guaranteed to contain medical staff. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875803468831543356/beepingpager.png",
     "baseprice": 3,
+    "basestock": 8,
     "chance": 10
   },
   "breadcrumbs" : {
@@ -26,6 +28,7 @@
     "description": "The next card you pull is guaranteed to contain a bird. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875803746695794728/breadcrumbs.png",
     "baseprice": 3,
+    "basestock": 8,
     "chance": 10
   },
   "clownnose" : {
@@ -33,6 +36,7 @@
     "description": "The next card you pull is guaranteed to be humorous or a meme card. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875804021951184976/clownnose.png",
     "baseprice": 3,
+    "basestock": 8,
     "chance": 10
   },
   "fancyteaset" : {
@@ -40,6 +44,7 @@
     "description": "The next card you pull is guaranteed to contain Samurai or Insomniac. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873730445416730694/fancyteaset.png",
     "baseprice": 3,
+    "basestock": 8,
     "chance": 10
   },
   "lunarrocks" : {
@@ -47,6 +52,7 @@
     "description": "The next card you pull is guaranteed to contain Miner or Lucia. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873730449644589076/lunarrock.png",
     "baseprice": 3,
+    "basestock": 8,
     "chance": 10
   },
   "secretadmirersnote" : {
@@ -54,6 +60,7 @@
     "description": "The next card you pull is guaranteed to contain Logan or Hailey. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873730453255884820/secretadmirersnote.png",
     "baseprice": 3,
+    "basestock": 8,
     "chance": 10
   },
   "stickontabs" : {
@@ -61,6 +68,7 @@
     "description": "The next card you pull is guaranteed to be an editor card. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875806027877085235/stickontabs.png",
     "baseprice": 3,
+    "basestock": 8,
     "chance": 10
   },
   "tapiocapudding" : {
@@ -68,6 +76,7 @@
     "description": "The next card you pull is guaranteed to contain Mr. or Mrs. Stevenson. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875806593382490152/tapiocapudding.png",
     "baseprice": 3,
+    "basestock": 8,
     "chance": 10
   },
   "quantummouse" : {
@@ -75,6 +84,7 @@
     "description": "Guarantees an additional card pull, with a chance of **Triple Clicking** with the **Fixed Mouse** equipped. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/884781557821366293/unknown.png",
     "baseprice": 4,
+    "basestock": 8,
     "chance": 10
   },
   "replacementvoid" : {
@@ -82,6 +92,7 @@
     "description": "The contents of the Peculiar Box get replaced with a random selection of cards.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875804266206466088/replacementvoid.png",
     "baseprice": 10,
+    "basestock": 10,
     "chance": 10
   },
   "xraygoggles" : {
@@ -89,6 +100,7 @@
     "description": "Sends you a DM with the current contents of the Peculiar Box",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875807168849383535/xraygoggles.png",
     "baseprice": 2,
+    "basestock": 10,
     "chance": 10
   },
   "scratchoffticket" : {
@@ -97,6 +109,7 @@
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875804965086593104/scratchoffticket.png",
     "quantity": 3,
     "baseprice": 3,
+    "basestock": 12,
     "chance": 10
   },
   "giftairstrike" : {
@@ -104,6 +117,7 @@
     "description": "Gives 30 random people a copy of a random card from your inventory.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873730446708584478/giftairstrike.png",
     "baseprice": 35,
+    "basestock": 10,
     "chance": 0
   },
   "megaphone": {
@@ -111,6 +125,7 @@
     "description": "Sends a message in #trading-cards from the RDCards bot.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875927481679487036/megaphone.png",
     "baseprice": 10,
+    "basestock": 8,
     "chance": 10
   },
   "s1booster": {
@@ -118,6 +133,7 @@
     "description": "The next card you pull is guaranteed to be from Season 1. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/884957331006320730/s1booster.png",
     "baseprice": 3,
+    "basestock": 8,
     "chance": 5,
     "command": "seasonbooster",
     "season": 1,
@@ -128,6 +144,7 @@
     "description": "The next card you pull is guaranteed to be from Season 2. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/888983740427169832/s2booster.png",
     "baseprice": 3,
+    "basestock": 8,
     "chance": 5,
     "command": "seasonbooster",
     "season": 2,
@@ -138,6 +155,7 @@
     "description": "The next card you pull is guaranteed to be from Season 3. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/888983742637568020/s3booster.png",
     "baseprice": 3,
+    "basestock": 8,
     "chance": 5,
     "command": "seasonbooster",
     "season": 3,
@@ -148,6 +166,7 @@
     "description": "The next card you pull is guaranteed to be from Season 4. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/888983744592113674/s4booster.png",
     "baseprice": 3,
+    "basestock": 8,
     "chance": 5,
     "command": "seasonbooster",
     "season": 4,
@@ -158,6 +177,7 @@
     "description": "The next card you pull is guaranteed to be from Season 5. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/884957349754830888/s5booster.png",
     "baseprice": 3,
+    "basestock": 8,
     "chance": 5,
     "command": "seasonbooster",
     "season": 5,
@@ -168,6 +188,7 @@
     "description": "The next card you pull is guaranteed to be from Season 6. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/884957365110198332/s6booster.png",
     "baseprice": 3,
+    "basestock": 8,
     "chance": 5,
     "command": "seasonbooster",
     "season": 6,
@@ -178,13 +199,10 @@
     "description": "The next card you pull is guaranteed to be from Season 7. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/884957380465528832/s7booster.png",
     "baseprice": 6,
+    "basestock": 10,
     "chance": 5,
     "command": "seasonbooster",
     "season": 7,
     "text": "You tear open the **Animal Booster.** Inside is some fur and a sheet of economics homework."
   }
-    
-  
-  
-
 }

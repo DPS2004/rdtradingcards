@@ -811,7 +811,16 @@ function command.run(message, mt, overwrite)
         if cdb[nc].season == #seasontable then
           price = price + 1
         end
-        newcards[i] = {name = nc,stock = math.random(5,15), price = price}
+
+        local stock = cdb[nc].chance * 4 + math.random(2, 5)
+
+        if cdb[nc].season == #seasontable then
+          stock = stock + math.random(4, 8)
+        elseif cdb[nc].season > #seasontable - 3 then
+          stock = stock + math.random(2, 4)
+        end
+
+        newcards[i] = {name = nc,stock = stock, price = price}
         sj.cards = newcards
       end
       ---------------------------------------------item
@@ -823,7 +832,7 @@ function command.run(message, mt, overwrite)
         end
       end
       sj.item = itempt[math.random(#itempt)]
-      sj.itemstock = math.random(5,15)
+      sj.itemstock = math.random(4, 7)
       sj.itemprice = 4
       -----------------------consumables
       local newconsumables = {{name="",stock=0,price=0},{name="",stock=0,price=0},{name="",stock=0,price=0}}
@@ -844,7 +853,7 @@ function command.run(message, mt, overwrite)
           end
         end
 
-        newconsumables[i] = {name = nc,stock = math.random(5,15), price = consdb[nc].baseprice + math.random(-1,1)}
+        newconsumables[i] = {name = nc,stock = consdb[nc].basestock + math.random(0, 4), price = consdb[nc].baseprice + math.random(-1,1)}
         
       end
       sj.consumables = newconsumables
