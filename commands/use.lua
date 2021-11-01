@@ -617,6 +617,7 @@ o-''|\\_____/)
             request = consdb[request].command
           end
           cmdcons[request].run(uj,"savedata/" .. message.author.id .. ".json",message,mt,fn)
+          return
         end
       else
         message.channel:send("Sorry, but you don't have the **" .. consdb[request].name .. "** item.")
