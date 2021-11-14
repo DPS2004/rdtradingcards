@@ -1064,6 +1064,73 @@
       ]
     },
     {
+      "groupname": "janitor",
+      "basechance": 0,
+      "cards": [
+        {
+          "chance": 0,
+          "filename": "janitorr",
+          "name": "Janitor (Rare)",
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "(Undetermined)",
+          "season": 8,
+          "bonuses": {
+            "okamiiscollar": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839164031263571978/janitorr.png"
+        },
+        {
+          "chance": 0,
+          "filename": "janitorsr",
+          "name": "Janitor (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by ?)",
+          "smell": "(Undetermined)",
+          "season": 8,
+          "bonuses": {
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        {
+          "chance": 0,
+          "filename": "janitorur",
+          "name": "Janitor (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by ?)",
+          "smell": "(Undetermined)",
+          "season": 8,
+          "bonuses": {
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        {
+          "chance": 0,
+          "filename": "janitoralt",
+          "name": "Janitor (Alternate)",
+          "type": "Alternate",
+          "description": "(Art by Winston Lee)",
+          "smell": "(Undetermined)",
+          "season": 8,
+          "bonuses": {
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        {
+          "chance": 0,
+          "filename": "janitorc",
+          "name": "Janitor (Collector's)",
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Janitor (Art by ?)",
+          "smell": "(Undetermined)",
+          "season": 8,
+          "bonuses": {
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        }
+      ]
+    },
+    {
       "groupname": "logan",
       "basechance": 3,
       "cards": [
