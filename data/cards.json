@@ -4189,17 +4189,6 @@
           "season": 0,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202779016658994/ssss45.png"
-        },
-        {
-          "chance": 0,
-          "filename": "key",
-          "name": "Key",
-          "type": "Special",
-          "description": "...?",
-          "smell": "ASCII",
-          "season": 0,
-          "bonuses": {},
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/865792363167219722/key.png"
         }
       ]
     },

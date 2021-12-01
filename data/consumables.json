@@ -79,14 +79,6 @@
     "basestock": 8,
     "chance": 10
   },
-  "quantummouse" : {
-    "name": "Quantum Mouse",
-    "description": "Guarantees an additional card pull, with a chance of **Triple Clicking** with the **Fixed Mouse** equipped. You can only use one item of this type at a time.",
-    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/884781557821366293/unknown.png",
-    "baseprice": 4,
-    "basestock": 8,
-    "chance": 10
-  },
   "replacementvoid" : {
     "name": "Replacement Void",
     "description": "The contents of the Peculiar Box get replaced with a random selection of cards.",
@@ -127,82 +119,5 @@
     "baseprice": 10,
     "basestock": 8,
     "chance": 10
-  },
-  "s1booster": {
-    "name": "Nostalgic Booster",
-    "description": "The next card you pull is guaranteed to be from Season 1. You can only use one item of this type at a time.",
-    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/884957331006320730/s1booster.png",
-    "baseprice": 3,
-    "basestock": 8,
-    "chance": 5,
-    "command": "seasonbooster",
-    "season": 1,
-    "text": "You tear open the **Nostalgic Booster.** Inside is some dust and un-embedded images."
-  },
-  "s2booster": {
-    "name": "Customized Booster",
-    "description": "The next card you pull is guaranteed to be from Season 2. You can only use one item of this type at a time.",
-    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/888983740427169832/s2booster.png",
-    "baseprice": 3,
-    "basestock": 8,
-    "chance": 5,
-    "command": "seasonbooster",
-    "season": 2,
-    "text": "You tear open the **Customized Booster.** Inside is a pencil and some certificates."
-  },
-  "s3booster": {
-    "name": "Pixelated Booster",
-    "description": "The next card you pull is guaranteed to be from Season 3. You can only use one item of this type at a time.",
-    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/888983742637568020/s3booster.png",
-    "baseprice": 3,
-    "basestock": 8,
-    "chance": 5,
-    "command": "seasonbooster",
-    "season": 3,
-    "text": "You tear open the **Pixelated Booster.** Inside is some old video games and a coffee bean."
-  },
-  "s4booster": {
-    "name": "Released Booster",
-    "description": "The next card you pull is guaranteed to be from Season 4. You can only use one item of this type at a time.",
-    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/888983744592113674/s4booster.png",
-    "baseprice": 3,
-    "basestock": 8,
-    "chance": 5,
-    "command": "seasonbooster",
-    "season": 4,
-    "text": "You tear open the **Released Booster.** Inside is a new game engine and seven years."
-  },
-  "s5booster": {
-    "name": "Alternative Booster",
-    "description": "The next card you pull is guaranteed to be from Season 5. You can only use one item of this type at a time.",
-    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/884957349754830888/s5booster.png",
-    "baseprice": 3,
-    "basestock": 8,
-    "chance": 5,
-    "command": "seasonbooster",
-    "season": 5,
-    "text": "You tear open the **Alternative Booster.** Inside is a damp cloth and optimized network code."
-  },
-  "s6booster": {
-    "name": "Diverse Booster",
-    "description": "The next card you pull is guaranteed to be from Season 6. You can only use one item of this type at a time.",
-    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/884957365110198332/s6booster.png",
-    "baseprice": 3,
-    "basestock": 8,
-    "chance": 5,
-    "command": "seasonbooster",
-    "season": 6,
-    "text": "You tear open the **Diverse Booster.** Inside is some pins and a pair of programming socks."
-  },
-  "s7booster": {
-    "name": "Animal Booster",
-    "description": "The next card you pull is guaranteed to be from Season 7. You can only use one item of this type at a time.",
-    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/884957380465528832/s7booster.png",
-    "baseprice": 6,
-    "basestock": 10,
-    "chance": 5,
-    "command": "seasonbooster",
-    "season": 7,
-    "text": "You tear open the **Animal Booster.** Inside is some fur and a sheet of economics homework."
   }
 }
