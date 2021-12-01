@@ -137,7 +137,7 @@ function command.run(message, mt, overwrite)
     
     _G['amtable'] = {
       pyrowmid = {"strange machine", "machine","panda"},
-      lab = {"mouse hole","mouse","mousehole","peculiar box","box","peculiarbox"},
+      lab = {"mouse hole","mouse","mousehole","peculiar box","box","peculiarbox","terminal"},
       shop = {"shop"}
     }
     _G['amids'] = {}
