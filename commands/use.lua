@@ -9,9 +9,6 @@ function command.run(message, mt,bypass)
     return
   end
   
-
-  
-  
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
   local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
   if not uj.room then uj.room = 0 end

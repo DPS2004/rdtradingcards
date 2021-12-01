@@ -380,13 +380,5 @@
       "coffeegroup"
     ],
     "receive": "coffeegroupc"
-  },
-  {
-    "require": [
-      "janitorr",
-      "janitorsr",
-      "janitorur"
-    ],
-    "receive": "janitorc"
   }
 ]
