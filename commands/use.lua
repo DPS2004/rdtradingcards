@@ -365,7 +365,7 @@ o-''|\\_____/)
             embedimage = "https://cdn.discordapp.com/attachments/829197797789532181/838894186472275988/terminal5.png"
           end
         elseif string.lower(mt[2]) == "pull" then
-          if (wj.ws >= 804) or (wj.ws == 802 and uj.id == wj.specialuser and (not uj.storage.key)) then
+          if (wj.ws >= 804) or (message.channel.id == privatestuff.specialchannel and uj.id == wj.specialuser and not uj.storage.key) then
             embedtitle = "PULLING CARD... ERROR!"
             embeddescription = '`message.author.mentionString .. " got a **" .. KEY .. "** card! The **" .. KEY .."** card has been added to " .. uj.pronouns["their"] .. "STORAGE. The shorthand form of this card is **" .. newcard .. "**." uj.storage.key = 1 dpf.savejson("savedata/" .. message.author.id .. ".json", uj)`'
             embedimage = "https://cdn.discordapp.com/attachments/829197797789532181/865792363167219722/key.png"
