@@ -70,10 +70,6 @@ local time = sw:getTime()
     uj.conspt = "none"
   end
 
-  if message.channel.id == privatestuff.specialchannel then 
-    pulledcards = {"key"}
-  end
-
   for i, v in ipairs(pulledcards) do
     uj.inventory[v] = uj.inventory[v] and uj.inventory[v] + 1 or 1
     uj.timespulled = uj.timespulled and uj.timespulled + 1 or 1
@@ -90,9 +86,7 @@ local time = sw:getTime()
     if i == 2 then title = "Doubleclick!" end
     if i == 3 then title = "Tripleclick!!!" end
 
-    if v == "key" then
-      message.channel:send("woahhhh") -- dps do the stuff here
-    elseif v == "rdnot" then
+    if v == "rdnot" then
       message.channel:send("```" .. title .. "\n@" .. message.author.name .. " got a What is RD Not? card! The What is RD Not? card has been added to " .. uj.pronouns["their"] .. " inventory. The shorthand form of this card is rdnot.\n" .. [[
 _________________
 | SR            |
