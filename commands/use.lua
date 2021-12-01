@@ -8,7 +8,7 @@ function command.run(message, mt,bypass)
     message.channel:send("Sorry, but you cannot use in DMs!")
     return
   end
-  
+
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
   local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
   if not uj.room then uj.room = 0 end
@@ -485,25 +485,28 @@ o-''|\\_____/)
         sname = itemdb[srequest].name
         sprice = sj.itemprice
         if srequest == sj.item then
-          
-          if sj.itemstock > 0 then
-            if uj.tokens >= sprice then
-              if not uj.items[srequest] then
-                --can buy item
-                ynbuttons(message,{
-                  color = 0x85c5ff,
-                  title = "Buying " .. sname .. "...",
-                  description = "The description for this item reads: \n`".. itemdb[srequest].description .."`\nWill you buy it for "..sprice.." **Tokens**?",
-                },"buy",{itemtype = "item",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest})
-                return
+          if not (sj.item == "brokenmouse" and uj.items["fixedmouse"]) then
+            if sj.itemstock > 0 then
+              if uj.tokens >= sprice then
+                if not uj.items[srequest] then
+                  --can buy item
+                  ynbuttons(message,{
+                    color = 0x85c5ff,
+                    title = "Buying " .. sname .. "...",
+                    description = "The description for this item reads: \n`".. itemdb[srequest].description .."`\nWill you buy it for "..sprice.." **Tokens**?",
+                  },"buy",{itemtype = "item",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest})
+                  return
+                else
+                  result = "alreadyhave"
+                end
               else
-                result = "alreadyhave"
+                result = "notenough"
               end
             else
-              result = "notenough"
+              result = "outofstock"
             end
           else
-            result = "outofstock"
+            result = "hasfixedmouse"
           end
         else
           result = "donthave"
@@ -563,6 +566,9 @@ o-''|\\_____/)
       end
       if result == "alreadyhave" then
         message.channel:send('The **Wolf** looks at you with confusion. You already have the **' .. sname .. '** item.')
+      end
+      if result == "hasfixedmouse" then
+        message.channel:send('The **Wolf** frowns. You already own a Mouse.')
       end
     elseif request == "wolf" then
       message.channel:send{embed = {
