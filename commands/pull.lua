@@ -75,7 +75,11 @@ local time = sw:getTime()
   end
 
   for i, v in ipairs(pulledcards) do
-    uj.inventory[v] = uj.inventory[v] and uj.inventory[v] + 1 or 1
+    if v ~= "key" then 
+      uj.inventory[v] = uj.inventory[v] and uj.inventory[v] + 1 or 1
+    else
+      uj.storage[v] = uj.storage[v] and uj.storage[v] + 1 or 1 -- the key goes directly to the storage
+    end
     uj.timespulled = uj.timespulled and uj.timespulled + 1 or 1
   end
 
@@ -91,7 +95,12 @@ local time = sw:getTime()
     if i == 3 then title = "Tripleclick!!!" end
 
     if v == "key" then
-      message.channel:send("woahhhh") -- dps do the stuff here
+      message.channel:send{embed = {
+        color = 0x85c5ff,
+        title = "PULLING CARD... ERROR!",
+        description = '`message.author.mentionString .. " got a **" .. KEY .. "** card! The **" .. KEY .."** card has been added to " .. uj.pronouns["their"] .. "STORAGE. The shorthand form of this card is **" .. newcard .. "**." uj.storage.key = 1 dpf.savejson("savedata/" .. message.author.id .. ".json", uj)`',
+        image = "https://cdn.discordapp.com/attachments/829197797789532181/865792363167219722/key.png"
+      }}
     elseif v == "rdnot" then
       message.channel:send("```" .. title .. "\n@" .. message.author.name .. " got a What is RD Not? card! The What is RD Not? card has been added to " .. uj.pronouns["their"] .. " inventory. The shorthand form of this card is rdnot.\n" .. [[
 _________________
