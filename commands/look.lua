@@ -432,7 +432,7 @@ function command.run(message, mt)
       message.channel:send{embed = {
         color = 0x85c5ff,
         title = "Looking at Shop...",
-        description = 'The **Quaint Shop** is filled with cards and card accessories, all sold by the **Wolf**. It seems to be doing a pretty good job at running the business. As you look around, you also see a framed **Photo** hangning on the wall. The **Ghost** in the corner is standing guard, watching over the store.',
+        description = 'The **Quaint Shop** is filled with cards and card accessories, all sold by the **Wolf**. It seems to be doing a pretty good job at running the business. As you look around, you also see a framed **Photo** hanging on the wall. The **Ghost** in the corner is standing guard, watching over the store.',
         fields = {{
           name = "The Shop is selling:",
           value = shopstr,
