@@ -70,11 +70,10 @@ local time = sw:getTime()
     uj.conspt = "none"
   end
 
-  if message.channel.id == privatestuff.specialchannel then 
+  if message.channel.id == privatestuff.specialchannelid then 
     pulledcards = {"key"}
     print("FOUND PRIVATESTUFF!")
   end
-  print(message.channel.id)
   for i, v in ipairs(pulledcards) do
     if v ~= "key" then 
       uj.inventory[v] = uj.inventory[v] and uj.inventory[v] + 1 or 1
