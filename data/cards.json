@@ -72,6 +72,134 @@
           "bonuses": {
           },
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        
+        
+        
+        
+        
+        
+        {
+          "chance": 3,
+          "filename": "rinr",
+          "name": "Rin (Rare)",
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "(Undetermined)",
+          "season": 8,
+          "bonuses": {
+            "okamiiscollar": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        {
+          "chance": 3,
+          "filename": "buror",
+          "name": "Buro (Rare)",
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "(Undetermined)",
+          "season": 8,
+          "bonuses": {
+            "okamiiscollar": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        {
+          "chance": 3,
+          "filename": "marijar",
+          "name": "Marija (Rare)",
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "(Undetermined)",
+          "season": 8,
+          "bonuses": {
+            "okamiiscollar": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        {
+          "chance": 1,
+          "filename": "musedashgroup",
+          "name": "The Muse Dash Group",
+          "type": "Ultra Rare",
+          "description": "(Art by Vapor)",
+          "smell": "(Undetermined)",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/908348918906093568/musedashgroup.png"
+        },
+        {
+          "chance": 0,
+          "filename": "musedashgroupc",
+          "name": "The Muse Dash Group (Collector's)",
+          "type": "Collector's",
+          "description": "Requires Rin (Rare), Buro (Rare), Marija (Rare), and The Muse Dash Group (Art by Stamps)",
+          "smell": "(Undetermined)",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/908351722890625104/musedashgroupc.png"
+        },
+        
+        
+        
+        
+        
+        
+        {
+          "chance": 3,
+          "filename": "bulbr",
+          "name": "Bulb (Rare)",
+          "type": "Rare",
+          "description": "(Art by PLACEHOLDER)",
+          "smell": "Chlorophyll",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        {
+          "chance": 2,
+          "filename": "bulbsr",
+          "name": "Bulb (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by PLACEHOLDER)",
+          "smell": "Chlorophyll",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        {
+          "chance": 1,
+          "filename": "bulbur",
+          "name": "Bulb (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by PLACEHOLDER)",
+          "smell": "Chlorophyll",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        {
+          "chance": 0,
+          "filename": "bulbc",
+          "name": "Bulb (Collector's)",
+          "type": "Collector's",
+          "description": "(Art by PLACEHOLDER)",
+          "smell": "Chlorophyll",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        {
+          "chance": 1,
+          "filename": "bulbdc",
+          "name": "Bulb (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Art by PLACEHOLDER)",
+          "smell": "Chlorophyll",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
         }
       
       ]
@@ -2823,17 +2951,6 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875670644229042176/coffeegroup.png"
         },
-       {
-          "chance": 0,
-          "filename": "musedashgroup",
-          "name": "The Muse Dash Group",
-          "type": "Ultra Rare",
-          "description": "(Art by Vapor)",
-          "smell": "(Undetermined)",
-          "season": 8,
-          "bonuses": {},
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/908348918906093568/musedashgroup.png"
-        },
         {
           "chance": 0,
           "filename": "samuraigroupc",
@@ -2950,17 +3067,6 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/876132086191362119/coffeegroupc.png"
         },
-        {
-          "chance": 0,
-          "filename": "musedashgroupc",
-          "name": "The Muse Dash Group (Collector's)",
-          "type": "Collector's",
-          "description": "Requires Rin (Rare), Buro (Rare), Marija (Rare), and The Muse Dash Group (Art by Stamps)",
-          "smell": "(Undetermined)",
-          "season": 8,
-          "bonuses": {},
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/908351722890625104/musedashgroupc.png"
-        }
       ]
     },
     {
@@ -4876,63 +4982,6 @@
             "okamiiscollar": true
           },
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/875762060640804884/clefr.png"
-        } 
-      ]
-    },
-    {
-      "groupname": "rin",
-      "basechance": 3,
-      "cards": [
-        {
-          "chance": 0,
-          "filename": "rinr",
-          "name": "Rin (Rare)",
-          "type": "Rare",
-          "description": "(Art by Winston Lee)",
-          "smell": "(Undetermined)",
-          "season": 8,
-          "bonuses": {
-            "okamiiscollar": true
-          },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
-        } 
-      ]
-    },
-    {
-      "groupname": "buro",
-      "basechance": 3,
-      "cards": [
-        {
-          "chance": 0,
-          "filename": "buror",
-          "name": "Buro (Rare)",
-          "type": "Rare",
-          "description": "(Art by Winston Lee)",
-          "smell": "(Undetermined)",
-          "season": 8,
-          "bonuses": {
-            "okamiiscollar": true
-          },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
-        } 
-      ]
-    },
-    {
-      "groupname": "marija",
-      "basechance": 3,
-      "cards": [
-        {
-          "chance": 0,
-          "filename": "marijar",
-          "name": "Marija (Rare)",
-          "type": "Rare",
-          "description": "(Art by Winston Lee)",
-          "smell": "(Undetermined)",
-          "season": 8,
-          "bonuses": {
-            "okamiiscollar": true
-          },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
         } 
       ]
     }

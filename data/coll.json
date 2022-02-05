@@ -187,6 +187,14 @@
   },
   {
     "require": [
+      "bulbr",
+      "bulbsr",
+      "bulbur"
+    ],
+    "receive": "bulbc"
+  },
+  {
+    "require": [
       "mylevel",
       "crystalline"
     ],
@@ -241,7 +249,7 @@
     ],
     "receive": "unbeatablegroupc"
   },
-   {
+  {
     "require": [
       "rinr",
       "buror",
