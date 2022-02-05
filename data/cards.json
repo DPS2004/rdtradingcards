@@ -2,10 +2,82 @@
   "basemult": 4,
   "groups": [
     {
-      "groupname": "CURRENT ABNORMAL RATES / UNRELEASED CARDS:",
+      "groupname": "S8 CARDS WILL BE MOVED TO THEIR PROPER SPACE ONCE THEY ARE ALL DONE:",
       "basechance": 0,
       "cards": []
     },
+    
+    
+    {
+      "groupname": "SEASON 8",
+      "basechance": 99,
+      "cards": [
+        {
+          "chance": 3,
+          "filename": "janitorr",
+          "name": "Janitor (Rare)",
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "Chemicals",
+          "season": 8,
+          "bonuses": {
+            "okamiiscollar": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839164031263571978/janitorr.png"
+        },
+        {
+          "chance": 2,
+          "filename": "janitorsr",
+          "name": "Janitor (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by ?)",
+          "smell": "Chemicals",
+          "season": 8,
+          "bonuses": {
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        {
+          "chance": 1,
+          "filename": "janitorur",
+          "name": "Janitor (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by ?)",
+          "smell": "Chemicals",
+          "season": 8,
+          "bonuses": {
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        {
+          "chance": 1,
+          "filename": "janitoralt",
+          "name": "Janitor (Alternate)",
+          "type": "Alternate",
+          "description": "(Art by Winston Lee)",
+          "smell": "Organic Products",
+          "season": 8,
+          "bonuses": {
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        {
+          "chance": 0,
+          "filename": "janitorc",
+          "name": "Janitor (Collector's)",
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Janitor (Art by ?)",
+          "smell": "Chemicals",
+          "season": 8,
+          "bonuses": {
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        }
+      
+      ]
+    
+    
+    
     {
       "groupname": "official levels",
       "basechance": 3,
@@ -1060,73 +1132,6 @@
             "oversizedstethoscope": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201827823222824/internc.png"
-        }
-      ]
-    },
-    {
-      "groupname": "janitor",
-      "basechance": 0,
-      "cards": [
-        {
-          "chance": 0,
-          "filename": "janitorr",
-          "name": "Janitor (Rare)",
-          "type": "Rare",
-          "description": "(Art by Winston Lee)",
-          "smell": "(Undetermined)",
-          "season": 8,
-          "bonuses": {
-            "okamiiscollar": true
-          },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839164031263571978/janitorr.png"
-        },
-        {
-          "chance": 0,
-          "filename": "janitorsr",
-          "name": "Janitor (Super Rare)",
-          "type": "Super Rare",
-          "description": "(Art by ?)",
-          "smell": "(Undetermined)",
-          "season": 8,
-          "bonuses": {
-          },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
-        },
-        {
-          "chance": 0,
-          "filename": "janitorur",
-          "name": "Janitor (Ultra Rare)",
-          "type": "Ultra Rare",
-          "description": "(Art by ?)",
-          "smell": "(Undetermined)",
-          "season": 8,
-          "bonuses": {
-          },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
-        },
-        {
-          "chance": 0,
-          "filename": "janitoralt",
-          "name": "Janitor (Alternate)",
-          "type": "Alternate",
-          "description": "(Art by Winston Lee)",
-          "smell": "(Undetermined)",
-          "season": 8,
-          "bonuses": {
-          },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
-        },
-        {
-          "chance": 0,
-          "filename": "janitorc",
-          "name": "Janitor (Collector's)",
-          "type": "Collector's",
-          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Janitor (Art by ?)",
-          "smell": "(Undetermined)",
-          "season": 8,
-          "bonuses": {
-          },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
         }
       ]
     },
