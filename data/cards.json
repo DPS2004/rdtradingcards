@@ -4,13 +4,6 @@
     {
       "groupname": "S8 CARDS WILL BE MOVED TO THEIR PROPER SPACE ONCE THEY ARE ALL DONE:",
       "basechance": 0,
-      "cards": []
-    },
-    
-    
-    {
-      "groupname": "SEASON 8",
-      "basechance": 99,
       "cards": [
         {
           "chance": 3,
@@ -59,7 +52,7 @@
           "season": 8,
           "bonuses": {
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/939372170176524288/janitoralt.png"
         },
         {
           "chance": 0,
@@ -73,10 +66,129 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
         },
+		
+		{
+          "chance": 3,
+          "filename": "nochtr",
+          "name": "Nocht (Rare)",
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+            "okamiiscollar": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944502212330152016/nochtr.png"
+        },
+        {
+          "chance": 2,
+          "filename": "nochtsr",
+          "name": "Nocht (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by saladplainzone)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944502253648224296/nochtsr.png"
+        },
+        {
+          "chance": 1,
+          "filename": "nochtur",
+          "name": "Nocht (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by saladplainzone)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944502287542415391/nochtur.png"
+        },
+        {
+          "chance": 0,
+          "filename": "nochtc",
+          "name": "Nocht (Collector's)",
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Nocht (Art by saladplainzone)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944502315736518706/nochtc.png"
+        },
         
+        {
+          "chance": 3,
+          "filename": "ernelr",
+          "name": "Ernel (Rare)",
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+            "okamiiscollar": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944482943714353172/ernelr.png"
+        },
+        {
+          "chance": 2,
+          "filename": "ernelsr",
+          "name": "Ernel (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by Penny)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944482976727695370/ernelsr.png"
+        },
+        {
+          "chance": 1,
+          "filename": "ernelur",
+          "name": "Ernel (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by Time)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944482999834128404/ernelur.png"
+        },
+        {
+          "chance": 0,
+          "filename": "ernelc",
+          "name": "Ernel (Collector's)",
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Ernel (Art by TatonSlice)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944483022055567410/ernelc.png"
+        },
         
-        
-        
+        {
+          "chance": 1,
+          "filename": "treetopgroup",
+          "name": "The Treetop Group",
+          "type": "Ultra Rare",
+          "description": "(Art by Penny)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        {
+          "chance": 0,
+          "filename": "treetopgroupc",
+          "name": "The Treetop Group (Collector's)",
+          "type": "Collector's",
+          "description": "Requires Nocht (Collector's), Ernel (Collector's), and The Treetop Group (Art by MokkaCat)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
         
         
         {
@@ -85,7 +197,7 @@
           "name": "Rin (Rare)",
           "type": "Rare",
           "description": "(Art by Winston Lee)",
-          "smell": "(Undetermined)",
+          "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
             "okamiiscollar": true
@@ -98,7 +210,7 @@
           "name": "Buro (Rare)",
           "type": "Rare",
           "description": "(Art by Winston Lee)",
-          "smell": "(Undetermined)",
+          "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
             "okamiiscollar": true
@@ -111,7 +223,7 @@
           "name": "Marija (Rare)",
           "type": "Rare",
           "description": "(Art by Winston Lee)",
-          "smell": "(Undetermined)",
+          "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
             "okamiiscollar": true
@@ -124,7 +236,7 @@
           "name": "The Muse Dash Group",
           "type": "Ultra Rare",
           "description": "(Art by Vapor)",
-          "smell": "(Undetermined)",
+          "smell": "(PENDING)",
           "season": 8,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/908348918906093568/musedashgroup.png"
@@ -135,76 +247,127 @@
           "name": "The Muse Dash Group (Collector's)",
           "type": "Collector's",
           "description": "Requires Rin (Rare), Buro (Rare), Marija (Rare), and The Muse Dash Group (Art by Stamps)",
-          "smell": "(Undetermined)",
+          "smell": "(PENDING)",
           "season": 8,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/908351722890625104/musedashgroupc.png"
         },
-        
-        
-        
-        
-        
-        
+
+
         {
           "chance": 3,
           "filename": "bulbr",
           "name": "Bulb (Rare)",
           "type": "Rare",
-          "description": "(Art by PLACEHOLDER)",
+          "description": "(Art by Kin)",
           "smell": "Chlorophyll",
           "season": 8,
           "bonuses": {},
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944482689854091264/bulbr.png"
         },
         {
           "chance": 2,
           "filename": "bulbsr",
           "name": "Bulb (Super Rare)",
           "type": "Super Rare",
-          "description": "(Art by PLACEHOLDER)",
+          "description": "(Art by Kin)",
           "smell": "Chlorophyll",
           "season": 8,
           "bonuses": {},
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944505866172899328/bulbsr.png"
         },
         {
           "chance": 1,
           "filename": "bulbur",
           "name": "Bulb (Ultra Rare)",
           "type": "Ultra Rare",
-          "description": "(Art by PLACEHOLDER)",
+          "description": "(Art by Kin)",
           "smell": "Chlorophyll",
           "season": 8,
           "bonuses": {},
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944505894954229820/bulbur.png"
         },
         {
           "chance": 0,
           "filename": "bulbc",
           "name": "Bulb (Collector's)",
           "type": "Collector's",
-          "description": "(Art by PLACEHOLDER)",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Bulb (Art by Kin)",
           "smell": "Chlorophyll",
           "season": 8,
           "bonuses": {},
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944505915871232020/bulbc.png"
         },
         {
           "chance": 1,
           "filename": "bulbdc",
           "name": "Bulb (Discontinued)",
           "type": "Discontinued",
-          "description": "(Art by PLACEHOLDER)",
+          "description": "(Art by Kin)",
           "smell": "Chlorophyll",
           "season": 8,
           "bonuses": {},
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
-        }
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/939372664013869106/bulbdc.png"
+        },
       
-      ]
+        {
+          "chance": 3,
+          "filename": "coolbirdr",
+          "name": "Cool Bird (Rare)",
+          "type": "Rare",
+          "description": "(Art by DPS2004)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944482748410765352/coolbirdr.png"
+        },
+        {
+          "chance": 2,
+          "filename": "coolbirdsr",
+          "name": "Cool Bird (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by TrainThemAll)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        {
+          "chance": 1,
+          "filename": "coolbirdur",
+          "name": "Cool Bird (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by Time)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        {
+          "chance": 0,
+          "filename": "coolbirdc",
+          "name": "Cool Bird (Collector's)",
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Cool Bird (Art by Time)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944482911242027008/coolbirdc.png"
+        },
+        {
+          "chance": 1,
+          "filename": "coolbirdalt",
+          "name": "Cool Bird (Alternate)",
+          "type": "Alternate",
+          "description": "(Art by DPS2004)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944482786608312341/coolbirdalt.png"
+        }
+	  ]
     
-    
+    },
     
     {
       "groupname": "official levels",

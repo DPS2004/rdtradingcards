@@ -396,5 +396,45 @@
       "janitorur"
     ],
     "receive": "janitorc"
+  },
+  {
+    "require": [
+      "nochtr",
+      "nochtsr",
+      "nochtur"
+    ],
+    "receive": "nochtc"
+  },
+  {
+    "require": [
+      "ernelr",
+      "ernelsr",
+      "ernelur"
+    ],
+    "receive": "ernelc"
+  },
+  {
+    "require": [
+      "nochtc",
+      "ernelc",
+      "treetopgroup"
+    ],
+    "receive": "treetopgroupc"
+  },
+  {
+    "require": [
+      "bulbr",
+      "bulbsr",
+      "bulbur"
+    ],
+    "receive": "bulbc"
+  },
+  {
+    "require": [
+      "coolbirdr",
+      "coolbirdsr",
+      "coolbirdur"
+    ],
+    "receive": "coolbirdc"
   }
 ]
