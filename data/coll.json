@@ -423,6 +423,22 @@
   },
   {
     "require": [
+      "unodosr",
+      "unodossr",
+      "unodosur"
+    ],
+    "receive": "unodosc"
+  },
+  {
+    "require": [
+      "ottoc",
+      "unodosc",
+      "editorgroup"
+    ],
+    "receive": "editorgroupc"
+  },
+  {
+    "require": [
       "bulbr",
       "bulbsr",
       "bulbur"

@@ -23,24 +23,24 @@
           "filename": "janitorsr",
           "name": "Janitor (Super Rare)",
           "type": "Super Rare",
-          "description": "(Art by ?)",
+          "description": "(Art by BluPen)",
           "smell": "Chemicals",
           "season": 8,
           "bonuses": {
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/945174111636828230/janitorsr.png"
         },
         {
           "chance": 1,
           "filename": "janitorur",
           "name": "Janitor (Ultra Rare)",
           "type": "Ultra Rare",
-          "description": "(Art by ?)",
+          "description": "(Art by Kyle Labriola, edited by Lumina)",
           "smell": "Chemicals",
           "season": 8,
           "bonuses": {
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/945174192398139432/janitorur.png"
         },
         {
           "chance": 1,
@@ -59,12 +59,12 @@
           "filename": "janitorc",
           "name": "Janitor (Collector's)",
           "type": "Collector's",
-          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Janitor (Art by ?)",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Janitor (Art by BluPen)",
           "smell": "Chemicals",
           "season": 8,
           "bonuses": {
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/945174244529168424/janitorc.png"
         },
 		
 		{
@@ -190,7 +190,80 @@
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
         },
         
+        {
+          "chance": 3,
+          "filename": "unodosr",
+          "name": "Uno and Dos (Rare)",
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+            "okamiiscollar": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        {
+          "chance": 2,
+          "filename": "unodossr",
+          "name": "Uno and Dos (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by Stamps)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        {
+          "chance": 1,
+          "filename": "unodosur",
+          "name": "Uno and Dos (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by Stamps)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        {
+          "chance": 0,
+          "filename": "unodosc",
+          "name": "Uno and Dos (Collector's)",
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Ernel (Art by Stamps)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+       
+        {
+          "chance": 1,
+          "filename": "editorgroup",
+          "name": "The Editor Group",
+          "type": "Ultra Rare",
+          "description": "(Art by Stamps)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        {
+          "chance": 0,
+          "filename": "editorgroupc",
+          "name": "The Editor Group (Collector's)",
+          "type": "Collector's",
+          "description": "Requires Otto (Collector's), Uno and Dos (Collector's), and The Editor Group (Art by Stamps)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
         
+	   
         {
           "chance": 3,
           "filename": "rinr",
@@ -5067,7 +5140,7 @@
         }
       ]
     },
-	  {
+	{
       "groupname": "----------------------------------------COLLAB CHARACTERS------------------------------------------------",
       "basechance": 0,
       "cards": []
