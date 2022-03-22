@@ -37,6 +37,12 @@ function command.run(message, mt)
               uj.lastequip = time:toHours()
               dpf.savejson(ujf,uj)
               print('saved equipped as ' .. curfilename)
+
+              if uj.sodapt and uj.sodapt.equip then
+                uj.lastequip = uj.lastequip + uj.sodapt.equip
+                uj.sodapt.equip = nil
+                if uj.sodapt == {} then uj.sodapt = nil end
+              end
             end
           else
             message.channel:send("You already have the **" .. itemdb[curfilename].name .. "** item equipped!")
