@@ -437,7 +437,310 @@
           "season": 8,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944482786608312341/coolbirdalt.png"
-        }
+        },
+		
+		
+		
+		
+		
+		
+		{
+          "chance": 2,
+          "filename": "leperv",
+          "name": "Le Perv",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "lepervdc",
+          "name": "Le Perv (Discontinued)",
+          "type": "Discontinued",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "marionette",
+          "name": "Marionette",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "psycho",
+          "name": "Psycho",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "pleasureisland",
+          "name": "Take Me to Pleasure Island",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "pleasureisland",
+          "name": "Take Me to Pleasure Island",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "september",
+          "name": "september",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "sdivine",
+          "name": "Something Divine",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "lycoris",
+          "name": "Lycoris",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "Ban evasion",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "deadlyslot",
+          "name": "Deadly Slot Game",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "dicebet",
+          "name": "賽の賭け目",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "hotmilk",
+          "name": "Hot Milk",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "Ass",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "thelick",
+          "name": "\"The Lick\" in all 12 keys",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        {
+          "chance": 2,
+          "filename": "rhythmfrog",
+          "name": "Rhythm Frog",
+          "type": "PICO-8",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "godrace",
+          "name": "God Race",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "bdgn",
+          "name": "By Day, By Night VIP",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "dearfellow",
+          "name": "Dear Fellow Traveler",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "kidsnoreturn",
+          "name": "Kids No Return",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "yesman",
+          "name": "yesman",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "uprising",
+          "name": "Uprising",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "bukiyona",
+          "name": "不器用な男",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "bukiyona",
+          "name": "不器用な男",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "stillfeel",
+          "name": "不器用な男",
+          "type": "still feel.",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
 	  ]
     
     },
