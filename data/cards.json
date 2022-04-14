@@ -73,7 +73,7 @@
           "name": "Nocht (Rare)",
           "type": "Rare",
           "description": "(Art by Winston Lee)",
-          "smell": "(PENDING)",
+          "smell": "ʎʞs ʇɥƃıu ǝɥʇ",
           "season": 8,
           "bonuses": {
             "okamiiscollar": true
@@ -86,7 +86,7 @@
           "name": "Nocht (Super Rare)",
           "type": "Super Rare",
           "description": "(Art by saladplainzone)",
-          "smell": "(PENDING)",
+          "smell": "ʎʞs ʇɥƃıu ǝɥʇ",
           "season": 8,
           "bonuses": {
           },
@@ -98,7 +98,7 @@
           "name": "Nocht (Ultra Rare)",
           "type": "Ultra Rare",
           "description": "(Art by saladplainzone)",
-          "smell": "(PENDING)",
+          "smell": "ʎʞs ʇɥƃıu ǝɥʇ",
           "season": 8,
           "bonuses": {
           },
@@ -110,7 +110,7 @@
           "name": "Nocht (Collector's)",
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Nocht (Art by saladplainzone)",
-          "smell": "(PENDING)",
+          "smell": "ʎʞs ʇɥƃıu ǝɥʇ",
           "season": 8,
           "bonuses": {
           },
@@ -123,7 +123,7 @@
           "name": "Ernel (Rare)",
           "type": "Rare",
           "description": "(Art by Winston Lee)",
-          "smell": "(PENDING)",
+          "smell": "Firemen",
           "season": 8,
           "bonuses": {
             "okamiiscollar": true
@@ -136,7 +136,7 @@
           "name": "Ernel (Super Rare)",
           "type": "Super Rare",
           "description": "(Art by Penny)",
-          "smell": "(PENDING)",
+          "smell": "Firemen",
           "season": 8,
           "bonuses": {
           },
@@ -148,7 +148,7 @@
           "name": "Ernel (Ultra Rare)",
           "type": "Ultra Rare",
           "description": "(Art by Time)",
-          "smell": "(PENDING)",
+          "smell": "Firemen",
           "season": 8,
           "bonuses": {
           },
@@ -160,7 +160,7 @@
           "name": "Ernel (Collector's)",
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Ernel (Art by TatonSlice)",
-          "smell": "(PENDING)",
+          "smell": "Firemen",
           "season": 8,
           "bonuses": {
           },
@@ -172,8 +172,8 @@
           "filename": "treetopgroup",
           "name": "The Treetop Group",
           "type": "Ultra Rare",
-          "description": "(Art by Penny)",
-          "smell": "(PENDING)",
+          "description": "(PENDING)",
+          "smell": "Sleepovers",
           "season": 8,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
@@ -183,8 +183,8 @@
           "filename": "treetopgroupc",
           "name": "The Treetop Group (Collector's)",
           "type": "Collector's",
-          "description": "Requires Nocht (Collector's), Ernel (Collector's), and The Treetop Group (Art by MokkaCat)",
-          "smell": "(PENDING)",
+          "description": "Requires Nocht (Collector's), Ernel (Collector's), and The Treetop Group (Art by PENDING)",
+          "smell": "Sleepovers",
           "season": 8,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
@@ -196,7 +196,7 @@
           "name": "Uno and Dos (Rare)",
           "type": "Rare",
           "description": "(Art by Winston Lee)",
-          "smell": "(PENDING)",
+          "smell": "Collaboration",
           "season": 8,
           "bonuses": {
             "okamiiscollar": true
@@ -209,7 +209,7 @@
           "name": "Uno and Dos (Super Rare)",
           "type": "Super Rare",
           "description": "(Art by Stamps)",
-          "smell": "(PENDING)",
+          "smell": "Collaboration",
           "season": 8,
           "bonuses": {
           },
@@ -221,7 +221,7 @@
           "name": "Uno and Dos (Ultra Rare)",
           "type": "Ultra Rare",
           "description": "(Art by Stamps)",
-          "smell": "(PENDING)",
+          "smell": "Collaboration",
           "season": 8,
           "bonuses": {
           },
@@ -233,7 +233,7 @@
           "name": "Uno and Dos (Collector's)",
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Ernel (Art by Stamps)",
-          "smell": "(PENDING)",
+          "smell": "Collaboration",
           "season": 8,
           "bonuses": {
           },
@@ -246,7 +246,7 @@
           "name": "The Editor Group",
           "type": "Ultra Rare",
           "description": "(Art by Stamps)",
-          "smell": "(PENDING)",
+          "smell": "JSON",
           "season": 8,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
@@ -257,7 +257,7 @@
           "name": "The Editor Group (Collector's)",
           "type": "Collector's",
           "description": "Requires Otto (Collector's), Uno and Dos (Collector's), and The Editor Group (Art by Stamps)",
-          "smell": "(PENDING)",
+          "smell": "JSON",
           "season": 8,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
@@ -270,7 +270,7 @@
           "name": "Rin (Rare)",
           "type": "Rare",
           "description": "(Art by Winston Lee)",
-          "smell": "(PENDING)",
+          "smell": "Sharps Disposal",
           "season": 8,
           "bonuses": {
             "okamiiscollar": true
@@ -283,7 +283,7 @@
           "name": "Buro (Rare)",
           "type": "Rare",
           "description": "(Art by Winston Lee)",
-          "smell": "(PENDING)",
+          "smell": "Poor Depth Perception",
           "season": 8,
           "bonuses": {
             "okamiiscollar": true
@@ -296,7 +296,7 @@
           "name": "Marija (Rare)",
           "type": "Rare",
           "description": "(Art by Winston Lee)",
-          "smell": "(PENDING)",
+          "smell": "Roller Skates",
           "season": 8,
           "bonuses": {
             "okamiiscollar": true
@@ -309,7 +309,7 @@
           "name": "The Muse Dash Group",
           "type": "Ultra Rare",
           "description": "(Art by Maki)",
-          "smell": "(PENDING)",
+          "smell": "Donuts",
           "season": 8,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/908348918906093568/musedashgroup.png"
@@ -320,7 +320,7 @@
           "name": "The Muse Dash Group (Collector's)",
           "type": "Collector's",
           "description": "Requires Rin (Rare), Buro (Rare), Marija (Rare), and The Muse Dash Group (Art by Stamps)",
-          "smell": "(PENDING)",
+          "smell": "Donuts",
           "season": 8,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/908351722890625104/musedashgroupc.png"
@@ -388,8 +388,8 @@
           "filename": "coolbirdr",
           "name": "Cool Bird (Rare)",
           "type": "Rare",
-          "description": "(Art by DPS2004)",
-          "smell": "(PENDING)",
+          "description": "(Art by DPS2004 and FirecatFG)",
+          "smell": "Embers",
           "season": 8,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944482748410765352/coolbirdr.png"
@@ -400,7 +400,7 @@
           "name": "Cool Bird (Super Rare)",
           "type": "Super Rare",
           "description": "(Art by TrainThemAll)",
-          "smell": "(PENDING)",
+          "smell": "Embers",
           "season": 8,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
@@ -411,7 +411,7 @@
           "name": "Cool Bird (Ultra Rare)",
           "type": "Ultra Rare",
           "description": "(Art by Time)",
-          "smell": "(PENDING)",
+          "smell": "Embers",
           "season": 8,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
@@ -422,7 +422,7 @@
           "name": "Cool Bird (Collector's)",
           "type": "Collector's",
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Cool Bird (Art by Time)",
-          "smell": "(PENDING)",
+          "smell": "Embers",
           "season": 8,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944482911242027008/coolbirdc.png"
@@ -432,8 +432,8 @@
           "filename": "coolbirdalt",
           "name": "Cool Bird (Alternate)",
           "type": "Alternate",
-          "description": "(Art by DPS2004)",
-          "smell": "(PENDING)",
+          "description": "(Art by DPS2004 and FirecatFG)",
+          "smell": "Sleigh Bells",
           "season": 8,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944482786608312341/coolbirdalt.png"
@@ -450,7 +450,7 @@
           "name": "Le Perv",
           "type": "Super Rare",
           "description": "(PENDING)",
-          "smell": "(PENDING)",
+          "smell": "Innovation",
           "season": 8,
           "bonuses": {
 			  
@@ -463,7 +463,7 @@
           "name": "Le Perv (Discontinued)",
           "type": "Discontinued",
           "description": "(PENDING)",
-          "smell": "(PENDING)",
+          "smell": "Dreams",
           "season": 8,
           "bonuses": {
 			  
@@ -476,7 +476,7 @@
           "name": "Marionette",
           "type": "Super Rare",
           "description": "(PENDING)",
-          "smell": "(PENDING)",
+          "smell": "Puppetry",
           "season": 8,
           "bonuses": {
 			  
@@ -489,7 +489,7 @@
           "name": "Psycho",
           "type": "Super Rare",
           "description": "(PENDING)",
-          "smell": "(PENDING)",
+          "smell": "A Bad Time",
           "season": 8,
           "bonuses": {
 			  
@@ -502,20 +502,7 @@
           "name": "Take Me to Pleasure Island",
           "type": "Super Rare",
           "description": "(PENDING)",
-          "smell": "(PENDING)",
-          "season": 8,
-          "bonuses": {
-			  
-          },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
-        },
-		{
-          "chance": 2,
-          "filename": "pleasureisland",
-          "name": "Take Me to Pleasure Island",
-          "type": "Super Rare",
-          "description": "(PENDING)",
-          "smell": "(PENDING)",
+          "smell": "The Beach",
           "season": 8,
           "bonuses": {
 			  
@@ -528,7 +515,7 @@
           "name": "september",
           "type": "Super Rare",
           "description": "(PENDING)",
-          "smell": "(PENDING)",
+          "smell": "Sapphires",
           "season": 8,
           "bonuses": {
 			  
@@ -541,7 +528,7 @@
           "name": "Something Divine",
           "type": "Super Rare",
           "description": "(PENDING)",
-          "smell": "(PENDING)",
+          "smell": "Supernatural Companionship",
           "season": 8,
           "bonuses": {
 			  
@@ -554,7 +541,7 @@
           "name": "Lycoris",
           "type": "Super Rare",
           "description": "(PENDING)",
-          "smell": "Ban evasion",
+          "smell": "Ban Evasion",
           "season": 8,
           "bonuses": {
 			  
@@ -566,8 +553,8 @@
           "filename": "deadlyslot",
           "name": "Deadly Slot Game",
           "type": "Super Rare",
-          "description": "(PENDING)",
-          "smell": "(PENDING)",
+          "description": "Cherries",
+          "smell": "",
           "season": 8,
           "bonuses": {
 			  
@@ -580,7 +567,7 @@
           "name": "賽の賭け目",
           "type": "Super Rare",
           "description": "(PENDING)",
-          "smell": "(PENDING)",
+          "smell": "Green Felt",
           "season": 8,
           "bonuses": {
 			  
@@ -593,7 +580,7 @@
           "name": "Hot Milk",
           "type": "Super Rare",
           "description": "(PENDING)",
-          "smell": "Ass",
+          "smell": "Cake",
           "season": 8,
           "bonuses": {
 			  
@@ -606,7 +593,7 @@
           "name": "\"The Lick\" in all 12 keys",
           "type": "Super Rare",
           "description": "(PENDING)",
-          "smell": "(PENDING)",
+          "smell": "Repetition",
           "season": 8,
           "bonuses": {
 			  
@@ -619,7 +606,7 @@
           "name": "Rhythm Frog",
           "type": "PICO-8",
           "description": "(PENDING)",
-          "smell": "(PENDING)",
+          "smell": "Anniversaries",
           "season": 8,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
@@ -630,7 +617,7 @@
           "name": "God Race",
           "type": "Super Rare",
           "description": "(PENDING)",
-          "smell": "(PENDING)",
+          "smell": "Ink Plates",
           "season": 8,
           "bonuses": {
 			  
@@ -639,11 +626,11 @@
         },
 		{
           "chance": 2,
-          "filename": "bdgn",
+          "filename": "bdbn",
           "name": "By Day, By Night VIP",
           "type": "Super Rare",
           "description": "(PENDING)",
-          "smell": "(PENDING)",
+          "smell": "Thunder",
           "season": 8,
           "bonuses": {
 			  
@@ -656,7 +643,7 @@
           "name": "Dear Fellow Traveler",
           "type": "Super Rare",
           "description": "(PENDING)",
-          "smell": "(PENDING)",
+          "smell": "The Wilderness",
           "season": 8,
           "bonuses": {
 			  
@@ -669,7 +656,7 @@
           "name": "Kids No Return",
           "type": "Super Rare",
           "description": "(PENDING)",
-          "smell": "(PENDING)",
+          "smell": "Differences in Perspective",
           "season": 8,
           "bonuses": {
 			  
@@ -678,11 +665,11 @@
         },
 		{
           "chance": 2,
-          "filename": "yesman",
+          "filename": "イヱスマン",
           "name": "yesman",
           "type": "Super Rare",
           "description": "(PENDING)",
-          "smell": "(PENDING)",
+          "smell": "Mycology",
           "season": 8,
           "bonuses": {
 			  
@@ -695,7 +682,7 @@
           "name": "Uprising",
           "type": "Super Rare",
           "description": "(PENDING)",
-          "smell": "(PENDING)",
+          "smell": "Revolution",
           "season": 8,
           "bonuses": {
 			  
@@ -708,20 +695,7 @@
           "name": "不器用な男",
           "type": "Super Rare",
           "description": "(PENDING)",
-          "smell": "(PENDING)",
-          "season": 8,
-          "bonuses": {
-			  
-          },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
-        },
-		{
-          "chance": 2,
-          "filename": "bukiyona",
-          "name": "不器用な男",
-          "type": "Super Rare",
-          "description": "(PENDING)",
-          "smell": "(PENDING)",
+          "smell": "Journals",
           "season": 8,
           "bonuses": {
 			  
@@ -734,13 +708,59 @@
           "name": "不器用な男",
           "type": "still feel.",
           "description": "(PENDING)",
-          "smell": "(PENDING)",
+          "smell": "Stardust",
           "season": 8,
           "bonuses": {
 			  
           },
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
-        }
+        },
+		
+		
+		
+		
+		{
+          "chance": 1,
+          "filename": "samuraialtalt",
+          "name": "Samurai (Alternate Alternate)",
+          "type": "Alternate",
+          "description": "(Art by PixelEyeBat)",
+          "smell": "Merchandising",
+          "season": 8,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964269545000951858/samuraialtalt.png"
+        },
+		
+		
+		{
+          "chance": 3,
+          "filename": "kanyer",
+          "name": "Kanye (Rare)",
+          "type": "Rare",
+          "description": "get ready, here comes Kanye! (Art by Winston Lee)",
+          "smell": "Fingers",
+          "season": 8,
+          "bonuses": {
+            "okamiiscollar": true,
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964276389534642296/kanyer.png"
+        },
+        {
+          "chance": 1,
+          "filename": "kanyeur",
+          "name": "Kanye (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "get ready, here comes Kanye! (Art by Stamps)",
+          "smell": "Fingers",
+          "season": 8,
+          "bonuses": {
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964276418055897208/kanyeur.png"
+        },
 	  ]
     
     },
