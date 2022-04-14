@@ -35,7 +35,7 @@
           "filename": "janitorur",
           "name": "Janitor (Ultra Rare)",
           "type": "Ultra Rare",
-          "description": "(Art by Kyle Labriola, edited by Lumina)",
+          "description": "(Art by Kyle Labriola, edited by BIrDIS)",
           "smell": "Chemicals",
           "season": 8,
           "bonuses": {
@@ -308,7 +308,7 @@
           "filename": "musedashgroup",
           "name": "The Muse Dash Group",
           "type": "Ultra Rare",
-          "description": "(Art by Vapor)",
+          "description": "(Art by Maki)",
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {},
@@ -2040,7 +2040,7 @@
           "filename": "nicolesr",
           "name": "Nicole Ting (Super Rare)",
           "type": "Super Rare",
-          "description": "(Art by Kyle Labriola, edited by Lumina)",
+          "description": "(Art by Kyle Labriola, edited by BIrDIS)",
           "smell": "Minimum Wage",
           "season": 3,
           "bonuses": {
@@ -2053,7 +2053,7 @@
           "filename": "nicoleur",
           "name": "Nicole Ting (Ultra Rare)",
           "type": "Ultra Rare",
-          "description": "(Art by Kyle Labriola, edited by Lumina)",
+          "description": "(Art by Kyle Labriola, edited by BIrDIS)",
           "smell": "Minimum Wage",
           "season": 3,
           "bonuses": {
@@ -2066,7 +2066,7 @@
           "filename": "nicolec",
           "name": "Nicole Ting (Collector's)",
           "type": "Collector's",
-          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Nicole Ting (Art by Lumina, based on art by Kyle Labriola)",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Nicole Ting (Art by BIrDIS, based on art by Kyle Labriola)",
           "smell": "Minimum Wage",
           "season": 3,
           "bonuses": {
@@ -2099,7 +2099,7 @@
           "filename": "luciasr",
           "name": "Lucia Moon (Super Rare)",
           "type": "Super Rare",
-          "description": "(Art by Kyle Labriola, edited by Lumina)",
+          "description": "(Art by Kyle Labriola, edited by BIrDIS)",
           "smell": "Imagination",
           "season": 3,
           "bonuses": {
@@ -2112,7 +2112,7 @@
           "filename": "luciaur",
           "name": "Lucia Moon (Ultra Rare)",
           "type": "Ultra Rare",
-          "description": "(Art by Kyle Labriola, edited by Lumina)",
+          "description": "(Art by Kyle Labriola, edited by BIrDIS)",
           "smell": "Imagination",
           "season": 3,
           "bonuses": {
@@ -2125,7 +2125,7 @@
           "filename": "luciac",
           "name": "Lucia Moon (Collector's)",
           "type": "Collector's",
-          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Lucia Moon (Art by Lumina, based on art by Kyle Labriola)",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Lucia Moon (Art by BIrDIS, based on art by Kyle Labriola)",
           "smell": "Imagination",
           "season": 3,
           "bonuses": {
@@ -2184,7 +2184,7 @@
           "filename": "yoc",
           "name": "Yo (Collector's)",
           "type": "Collector's",
-          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Yo (Art by Lumina, based on art by Kyle Labriola)",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Yo (Art by BIrDIS, based on art by Kyle Labriola)",
           "smell": "Freestyle Rap",
           "season": 3,
           "bonuses": {
@@ -2227,7 +2227,7 @@
           "filename": "ottour",
           "name": "Otto (Ultra Rare)",
           "type": "Ultra Rare",
-          "description": "(Art by Lumina)",
+          "description": "(Art by BIrDIS)",
           "smell": "Computer Chips",
           "season": 5,
           "bonuses": {},
@@ -2238,7 +2238,7 @@
           "filename": "ottoc",
           "name": "Otto (Collector's)",
           "type": "Collector's",
-          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Otto (Art by Lumina)",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Otto (Art by BIrDIS)",
           "smell": "Computer Chips",
           "season": 5,
           "bonuses": {},
@@ -2269,7 +2269,7 @@
           "filename": "heartchicksr",
           "name": "Heart Chick (Super Rare)",
           "type": "Super Rare",
-          "description": "(Art by Lumina)",
+          "description": "(Art by BIrDIS)",
           "smell": "Broken Glass",
           "season": 5,
           "bonuses": {
@@ -2295,7 +2295,7 @@
           "filename": "heartchickc",
           "name": "Heart Chick (Collector's)",
           "type": "Collector's",
-          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Heart Chick (Art by Lumina, based on art by Kyle Labriola)",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Heart Chick (Art by BIrDIS, based on art by Kyle Labriola)",
           "smell": "Broken Glass",
           "season": 5,
           "bonuses": {
@@ -2414,7 +2414,7 @@
           "filename": "loafyc",
           "name": "Loafy (Collector's)",
           "type": "Collector's",
-          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Loafy (Art by Vapor)",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Loafy (Art by Maki)",
           "smell": "Relaxation",
           "season": 7,
           "bonuses": {},
@@ -2632,7 +2632,7 @@
           "filename": "cockatielur",
           "name": "Cockatiel (Ultra Rare)",
           "type": "Ultra Rare",
-          "description": "(Art by Vapor)",
+          "description": "(Art by Maki)",
           "smell": "Bananas",
           "season": 7,
           "bonuses": {
@@ -2678,7 +2678,7 @@
           "filename": "parrotsr",
           "name": "Parrot (Super Rare)",
           "type": "Super Rare",
-          "description": "(Art by Vapor)",
+          "description": "(Art by Maki)",
           "smell": "Fancy Things",
           "season": 7,
           "bonuses": {
@@ -2691,7 +2691,7 @@
           "filename": "parrotur",
           "name": "Parrot (Ultra Rare)",
           "type": "Ultra Rare",
-          "description": "(Art by Vapor)",
+          "description": "(Art by Maki)",
           "smell": "Fancy Things",
           "season": 7,
           "bonuses": {
@@ -2796,7 +2796,7 @@
           "filename": "oriolesr",
           "name": "Oriole (Super Rare)",
           "type": "Super Rare",
-          "description": "(Art by Vapor)",
+          "description": "(Art by Maki)",
           "smell": "Big Bill's",
           "season": 7,
           "bonuses": {
@@ -3166,7 +3166,7 @@
           "filename": "hughgroup",
           "name": "The Hugh Group",
           "type": "Ultra Rare",
-          "description": "(Art by Lumina, based on art by Kyle Labriola)",
+          "description": "(Art by BIrDIS, based on art by Kyle Labriola)",
           "smell": "Mistaken Identities",
           "season": 7,
           "bonuses": {
@@ -3179,7 +3179,7 @@
           "filename": "coffeegroup",
           "name": "The Coffee Group",
           "type": "Ultra Rare",
-          "description": "(Art by Lumina, based on art by Kyle Labriola)",
+          "description": "(Art by BIrDIS, based on art by Kyle Labriola)",
           "smell": "Coffee, Obviously",
           "season": 7,
           "bonuses": {
@@ -3282,7 +3282,7 @@
           "filename": "hughgroupc",
           "name": "The Hugh Group (Collector's)",
           "type": "Collector's",
-          "description": "Requires Politician (Collector's), Farmer (Collector's), and The Hugh Group (Art by Lumina, based on art by Kyle Labriola)",
+          "description": "Requires Politician (Collector's), Farmer (Collector's), and The Hugh Group (Art by BIrDIS, based on art by Kyle Labriola)",
           "smell": "Mistaken Identities",
           "season": 7,
           "bonuses": {
@@ -3295,7 +3295,7 @@
           "filename": "coffeegroupc",
           "name": "The Coffee Group (Collector's)",
           "type": "Collector's",
-          "description": "Requires Cole Brew (Collector's), Nicole Ting (Collector's), and The Coffee Group (Art by Lumina, based on art by Kyle Labriola)",
+          "description": "Requires Cole Brew (Collector's), Nicole Ting (Collector's), and The Coffee Group (Art by BIrDIS, based on art by Kyle Labriola)",
           "smell": "Coffee, Obviously",
           "season": 7,
           "bonuses": {
@@ -4616,7 +4616,7 @@
           "filename": "doctahur",
           "name": "Doctah (Ultra Rare)",
           "type": "Ultra Rare",
-          "description": "(Art by Lumina, based on art by Fizzd) ***weh heheh***",
+          "description": "(Art by BIrDIS, based on art by Fizzd) ***weh heheh***",
           "smell": "Malpractice",
           "season": 0,
           "bonuses": {
@@ -5045,7 +5045,7 @@
           "filename": "connectifiasr",
           "name": "Connectifia Abortus (Super Rare)",
           "type": "Super Rare",
-          "description": "(Art by Lumina)",
+          "description": "(Art by BIrDIS)",
           "smell": "ERROR SMELL NOT FOUND",
           "season": 7,
           "bonuses": {
@@ -5071,7 +5071,7 @@
           "filename": "connectifiac",
           "name": "Connectifia Abortus (Collector's)",
           "type": "Collector's",
-          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Connectifia Abortus (Art by Lumina)",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Connectifia Abortus (Art by BIrDIS)",
           "smell": "ERROR SMELL NOT FOUND",
           "season": 7,
           "bonuses": {
@@ -5104,7 +5104,7 @@
           "filename": "rodneysr",
           "name": "Rodney (Super Rare)",
           "type": "Super Rare",
-          "description": "(Art by Vapor)",
+          "description": "(Art by Maki)",
           "smell": "Disorganization",
           "season": 7,
           "bonuses": {
