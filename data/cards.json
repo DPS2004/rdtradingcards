@@ -225,20 +225,46 @@
           "season": 8,
           "bonuses": {
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964732957220814858/unodosur.png"
         },
         {
           "chance": 0,
           "filename": "unodosc",
           "name": "Uno and Dos (Collector's)",
           "type": "Collector's",
-          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Ernel (Art by Stamps)",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Uno and Dos (Art by Stamps)",
           "smell": "Collaboration",
           "season": 8,
           "bonuses": {
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964733031556468756/unodosc.png"
         },
+        {
+          "chance": 1,
+          "filename": "unodosdc",
+          "name": "Uno and Dos (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Art by 04.jp.org)",
+          "smell": "Typography",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964734048402571264/unodosdc.png"
+        },
+		
+		
+		
+        {
+          "chance": 1,
+          "filename": "ottodc",
+          "name": "Otto (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Art by 04.jp.org)",
+          "smell": "Typography",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964734115117154324/ottodc.png"
+        },
+		
        
         {
           "chance": 1,
@@ -771,7 +797,7 @@
           "bonuses": {
 			  
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964734780061143050/ioverdose.png"
         },
 		{
           "chance": 2,
@@ -797,7 +823,7 @@
           "bonuses": {
 			  
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964727654622326794/4am.png"
         },
 		{
           "chance": 2,
