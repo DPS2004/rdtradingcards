@@ -79,10 +79,26 @@
     "basestock": 8,
     "chance": 10
   },
+  "oldfiles" : {
+    "name": "Old Files",
+    "description": "The next card you pull is guaranteed to be a Discontinued card. You can only use one item of this type at a time.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964895213908811837/oldfiles.png",
+    "baseprice": 5,
+    "basestock": 8,
+    "chance": 10
+  },
+  "pocketdimension" : {
+    "name": "Pocket Dimension",
+    "description": "The next card you pull is guaranteed to be an Alternate card. You can only use one item of this type at a time.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964897268799008808/pocketdimension.png",
+    "baseprice": 5,
+    "basestock": 8,
+    "chance": 10
+  },
   "quantummouse" : {
     "name": "Quantum Mouse",
     "description": "Guarantees an additional card pull, with a chance of **Triple Clicking** with the **Fixed Mouse** equipped. You can only use one item of this type at a time.",
-    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/884781557821366293/unknown.png",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964899293708296242/quantummouse.png",
     "baseprice": 4,
     "basestock": 8,
     "chance": 10

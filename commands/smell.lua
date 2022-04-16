@@ -52,7 +52,8 @@ function command.run(message, mt)
       coolhat = "The **Cool Hat** smells really cool :sunglasses:",
       lostnametag = "The **Lost Name Tag** smells like the Department of Agriculture",
       charcoalpencil = "The **Charcoal Pencil** smells like a burnt-out campfire.",
-      fieldjournal = "The **Field Journal** has a faint smell of slime emanating off of it."
+      fieldjournal = "The **Field Journal** has a faint smell of slime emanating off of it.",
+      driftingmetronome = "The **Drifting Metronome** smells slightly out of sync."
     }
     local consumablesmells = {
       caffeinatedsoda = "The **Caffeinated Soda** tickles your nose as you try to smell it.",
@@ -69,7 +70,8 @@ function command.run(message, mt)
       xraygoggles = "The **X-Ray Goggles** smell like cheating at poker.",
       scratchoffticket = "The **Scratch-off Ticket** smells like the lottery.",
       giftairstrike = "The **Gift Air Strike** smells like santa.",
-      megaphone = "The **Megaphone** smells loud."
+      megaphone = "The **Megaphone** smells loud.",
+      oldfiles = "The **Old Files** smell like programmer art."
     }
 
     if request == "strange machine" then

@@ -87,7 +87,7 @@
   "coolhat": {
     "name": "Cool Hat",
     "description": "Makes you look cooler.",
-    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203115609292810/coolhat.png"
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964894244189904916/coolhat.png"
   },
   "lostnametag": {
     "name": "Lost Name Tag",
@@ -103,6 +103,11 @@
     "name": "Field Journal",
     "description": "Makes cards containing RDRPG Bosses or Levels more likely to be pulled.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/876599201360916490/fieldjournal.png"
+  },
+  "driftingmetronome": {
+    "name": "Drifting Metronome",
+    "description": "Makes cards containing Editor characters more likely to be pulled.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964900753619681313/driftingmetronome.png"
   }
 
 }
