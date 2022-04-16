@@ -1057,8 +1057,184 @@
             "scribblednotepad": true
           },
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
-        }
+        },
 		
+
+
+        {
+          "chance": 1,
+          "filename": "bidc",
+          "name": "Battleworn Insomniac (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Retro Glitchiness",
+          "season": 8,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964942677214900384/bidc.png"
+        },
+        {
+          "chance": 1,
+          "filename": "technodc",
+          "name": "Samurai Techno (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "The Far Past",
+          "season": 8,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964942676933894294/technodc.png"
+        },
+        {
+          "chance": 1,
+          "filename": "dubstepdc",
+          "name": "Samurai Dubstep (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Green Samurai",
+          "season": 8,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964942677542051860/dubstepdc.png"
+        },
+        {
+          "chance": 1,
+          "filename": "osmdc",
+          "name": "One Shift More (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Incredibly Long Waiting Times",
+          "season": 8,
+          "bonuses": {
+            "oversizedstethoscope": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964942676711575642/osmdc.png"
+        },
+        {
+          "chance": 1,
+          "filename": "intimatedc",
+          "name": "Intimate (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Everlasting Love",
+          "season": 8,
+          "bonuses": {
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964942676497682483/intimatedc.png"
+        },
+        {
+          "chance": 1,
+          "filename": "cnydc",
+          "name": "Chinese New Year (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Tradition",
+          "season": 8,
+          "bonuses": {
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964958984190693406/cnydc.png"
+        },
+        {
+          "chance": 1,
+          "filename": "intimatenightdc",
+          "name": "Intimate (Night Shift) (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Blind Dates",
+          "season": 8,
+          "bonuses": {
+            "rustysword": true,
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964958983335071744/intimatenightdc.png"
+        },
+        {
+          "chance": 1,
+          "filename": "steinwaydc",
+          "name": "Steinway (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Old Piano",
+          "season": 8,
+          "bonuses": {
+            "rustysword": true,
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964958983695761418/steinwaydc.png"
+        },
+        {
+          "chance": 1,
+          "filename": "steinwayreprisedc",
+          "name": "Steinway Reprise (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Antique Piano",
+          "season": 8,
+          "bonuses": {
+            "rustysword": true,
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964958983943233536/steinwayreprisedc.png"
+        },
+        {
+          "chance": 1,
+          "filename": "classydc",
+          "name": "Classy (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "See-Through Teeth",
+          "season": 8,
+          "bonuses": {
+            "rustysword": true,
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964962284147462164/classydc.png"
+        },
+        {
+          "chance": 1,
+          "filename": "classynightdc",
+          "name": "Classy (Night Shift) (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Nurse Beatboxing",
+          "season": 8,
+          "bonuses": {
+            "rustysword": true,
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964962283686084688/classynightdc.png"
+        },
+        {
+          "chance": 1,
+          "filename": "loungedc",
+          "name": "Lounge (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "40% Approval Rate",
+          "season": 8,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964962283883204708/loungedc.png"
+        },
+        {
+          "chance": 1,
+          "filename": "svtdc",
+          "name": "Supraventricular Tachycardia (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Screen Tiles",
+          "season": 8,
+          "bonuses": {
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964964821902704680/svtdc.png"
+        },
 	  ]
     
     },
