@@ -172,11 +172,11 @@
           "filename": "treetopgroup",
           "name": "The Treetop Group",
           "type": "Ultra Rare",
-          "description": "(PENDING)",
+          "description": "(Art by Penny)",
           "smell": "Sleepovers",
           "season": 8,
           "bonuses": {},
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964289280635727882/treetopgroup.png"
         },
         {
           "chance": 0,
@@ -382,6 +382,38 @@
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/939372664013869106/bulbdc.png"
         },
+		
+		
+		
+        {
+          "chance": 3,
+          "filename": "rodneydc",
+          "name": "Rodney (Discontinued)",
+          "type": "Rare",
+          "description": "(Art by Xeno, DPS2004)",
+          "smell": "Disorganization",
+          "season": 8,
+          "bonuses": {
+            "oversizedstethoscope": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		
+        {
+          "chance": 3,
+          "filename": "rodneyr",
+          "name": "Rodney (Rare)",
+          "type": "Rare",
+          "description": "(Art by AdipemDragon, Xeno)",
+          "smell": "Disorganization",
+          "season": 7,
+          "bonuses": {
+            "okamiiscollar": true,
+            "oversizedstethoscope": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		
       
         {
           "chance": 3,
@@ -715,6 +747,201 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
         },
+		{
+          "chance": 2,
+          "filename": "ohurricane",
+          "name": "OTENAMI Hurricane",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "Marketable Plushies",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "ioverdose",
+          "name": "INTERNET OVERDOSE",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "Death, as well as Bending",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "madiq",
+          "name": "MAD IQs",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "Pipe Bombs",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "4am",
+          "name": "4AM",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "Sleeplessness",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "dreamland",
+          "name": "DREAMLAND",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "Smoke",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964724801438634004/dreamland.png"
+        },
+		{
+          "chance": 2,
+          "filename": "bukiyona",
+          "name": "不器用な男",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "Journals",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "kuguru",
+          "name": "くぐる",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "Ivory",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "finallylanding",
+          "name": "We're Finally Landing",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "Sodium Chloride",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964724541349826560/finallylanding.png"
+        },
+		{
+          "chance": 2,
+          "filename": "sneakman",
+          "name": "Sneakman",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "Vandalism",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964724004827066398/sneakman.png"
+        },
+		{
+          "chance": 2,
+          "filename": "trafficjam",
+          "name": "Traffic Jam",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "Asphalt",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "analys",
+          "name": "ANALYS",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "Vaporwave",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964723672009039942/analys.png"
+        },
+		{
+          "chance": 2,
+          "filename": "mpp",
+          "name": "Mad Piano Party",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "Magic Shapes",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "sad",
+          "name": "SAD",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "A Disproportionately Small Gap",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964724263485599854/sad.png"
+        },
+		{
+          "chance": 2,
+          "filename": "transformation",
+          "name": "変身",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "Gregor Samsa",
+          "season": 8,
+          "bonuses": {
+			  
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964723384166539304/transformation.png"
+        },
+        {
+          "chance": 2,
+          "filename": "coffeebreak",
+          "name": "Coffee Break",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "Normal Pills",
+          "season": 8,
+          "bonuses": {
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
 		
 		
 		
@@ -761,6 +988,51 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964276418055897208/kanyeur.png"
         },
+		
+		
+		
+		
+		{
+          "chance": 3,
+          "filename": "decor",
+          "name": "Decorations (Rare)",
+          "type": "Rare",
+          "description": "(PENDING)",
+          "smell": "Shapes",
+          "season": 8,
+          "bonuses": {
+            "scribblednotepad": true,
+            "okamiiscollar": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        {
+          "chance": 2,
+          "filename": "decosr",
+          "name": "Decorations (Super Rare)",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "Shapes",
+          "season": 8,
+          "bonuses": {
+            "scribblednotepad": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        {
+          "chance": 1,
+          "filename": "decour",
+          "name": "Decorations (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(PENDING)",
+          "smell": "Shapes",
+          "season": 8,
+          "bonuses": {
+            "scribblednotepad": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        }
+		
 	  ]
     
     },
@@ -5408,20 +5680,6 @@
       "groupname": "rodney",
       "basechance": 3,
       "cards": [
-        {
-          "chance": 3,
-          "filename": "rodneyr",
-          "name": "Rodney (Rare)",
-          "type": "Rare",
-          "description": "(Art by Xeno, DPS2004)",
-          "smell": "Disorganization",
-          "season": 7,
-          "bonuses": {
-            "okamiiscollar": true,
-            "oversizedstethoscope": true
-          },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/870723597684072498/rodneyr.png"
-        },
         {
           "chance": 2,
           "filename": "rodneysr",
