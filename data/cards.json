@@ -1235,6 +1235,43 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964964821902704680/svtdc.png"
         },
+
+
+        {
+          "chance": 2,
+          "filename": "unwell",
+          "name": "Unwell",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Endless Loops",
+          "season": 8,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/965029510720421888/unwell.png"
+        },
+        {
+          "chance": 2,
+          "filename": "power",
+          "name": "Power",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "The Twenty-first Century",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/965029510938509382/power.png"
+        },
+        {
+          "chance": 2,
+          "filename": "starboy",
+          "name": "Starboy",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Finger Snaps",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/965029510485528637/starboy.png"
+        }
 	  ]
     
     },
