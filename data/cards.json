@@ -1284,6 +1284,86 @@
           "season": 8,
           "bonuses": { },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/965029510485528637/starboy.png"
+        },
+        {
+          "chance": 2,
+          "filename": "driveby",
+          "name": "Drive By",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Not Looking Behind You",
+          "season": 8,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967978435534274650/driveby.png"
+        },
+        {
+          "chance": 2,
+          "filename": "pumpedupkicks",
+          "name": "Pumped Up Kicks",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Forbidden Content",
+          "season": 8,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967978434993225789/pumpedupkicks.png"
+        },
+        {
+          "chance": 2,
+          "filename": "leanon",
+          "name": "Lean On",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Pressing Space on the Clap",
+          "season": 8,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967978538256969728/leanon.png"
+        },
+        {
+          "chance": 2,
+          "filename": "delaypedal",
+          "name": "Delay Pedal",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Bad Habits",
+          "season": 8,
+          "bonuses": {
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967978435240665188/delaypedal.png"
+        },
+        {
+          "chance": 2,
+          "filename": "murmurs",
+          "name": "Murmurs",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Urban Pop Beats",
+          "season": 8,
+          "bonuses": {
+            "cafemixtape": true,
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967978434749943889/murmurs.png"
+        },
+        {
+          "chance": 2,
+          "filename": "mannequin",
+          "name": "Mannequin Challenge",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "Extremely Dated Trends",
+          "season": 8,
+          "bonuses": {
+            "rustysword": true,
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967978434523447356/mannequin.png"
         }
 	  ]
     
