@@ -970,6 +970,19 @@
         },
 		
 		
+		{
+          "chance": 1,
+          "filename": "pixelplantdc",
+          "name": "Pixel Plantation (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Level by Kin)",
+          "smell": "Potted Plants",
+          "season": 8,
+          "bonuses": {
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967950366987677707/pixelplantdc.png"
+        },
 		
 		
 		{
@@ -4405,7 +4418,7 @@
           "bonuses": {
             "paddedstickersheet": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202389634383872/pixelplantation.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967950366735998986/pixelplant.png"
         },
         {
           "chance": 2,
