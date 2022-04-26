@@ -439,6 +439,14 @@
   },
   {
     "require": [
+      "samuraic",
+      "insomniacc",
+      "swordgroup"
+    ],
+    "receive": "swordgroupc"
+  },
+  {
+    "require": [
       "bulbr",
       "bulbsr",
       "bulbur"

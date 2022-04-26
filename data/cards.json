@@ -213,7 +213,7 @@
           "season": 8,
           "bonuses": {
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968538101687406602/unodossr.png"
         },
         {
           "chance": 1,
@@ -275,7 +275,7 @@
           "smell": "JSON",
           "season": 8,
           "bonuses": {},
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967943742394871859/editorgroup.png"
         },
         {
           "chance": 0,
@@ -286,7 +286,31 @@
           "smell": "JSON",
           "season": 8,
           "bonuses": {},
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968537920468287518/editorgroupc.png"
+        },
+        
+        
+        {
+          "chance": 1,
+          "filename": "swordgroup",
+          "name": "The Sword Group",
+          "type": "Ultra Rare",
+          "description": "(Art by TatonSlice)",
+          "smell": "Fencing",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968535895160553573/swordgroup.png"
+        },
+        {
+          "chance": 0,
+          "filename": "swordgroupc",
+          "name": "The Sword Group (Collector's)",
+          "type": "Collector's",
+          "description": "Requires Samurai (Collector's), Insomniac (Collector's), and The Sword Group (Art by TatonSlice)",
+          "smell": "Fencing",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968537195650621450/swordgroupc.png"
         },
         
 	   
