@@ -1388,6 +1388,348 @@
             "valentinesdaycard": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967978434523447356/mannequin.png"
+        },
+		
+		{
+          "chance": 2,
+          "filename": "1-x",
+          "name": "A Dance of Fire and Ice",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865645083119616/1-x.png"
+        },
+		{
+          "chance": 2,
+          "filename": "2-x",
+          "name": "Offbeats",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865669514944603/2-x.png"
+        },
+		{
+          "chance": 2,
+          "filename": "3-x",
+          "name": "THE WIND-UP",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865686594125844/3-x.png"
+        },
+		{
+          "chance": 2,
+          "filename": "4-x",
+          "name": "Love Letters",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865703010664548/4-x.png"
+        },
+		{
+          "chance": 2,
+          "filename": "5-x",
+          "name": "The Midnight Train",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865720890957874/5-x.png"
+        },
+		{
+          "chance": 2,
+          "filename": "6-x",
+          "name": "PULSE",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865737483645009/6-x.png"
+        },
+		{
+          "chance": 1,
+          "filename": "b-x",
+          "name": "Thanks For Playing My Game",
+          "type": "Ultra Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "7-x",
+          "name": "Spin 2 Win",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865755020005456/7-x.png"
+        },
+		{
+          "chance": 2,
+          "filename": "8-x",
+          "name": "Jungle City",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865771071610880/8-x.png"
+        },
+		{
+          "chance": 2,
+          "filename": "9-x",
+          "name": "Classic Pursiut",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games, based on level by The Drawer)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865789811781632/9-x.png"
+        },
+		{
+          "chance": 2,
+          "filename": "10-x",
+          "name": "Butterfly Planet",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865807905988688/10-x.png"
+        },
+		{
+          "chance": 2,
+          "filename": "11-x",
+          "name": "Heracles",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games, based on level by Exschwasion)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866225998426112/11-x.png"
+        },
+		{
+          "chance": 2,
+          "filename": "12-x",
+          "name": "Artificial Chariot",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games with SimsimHI)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866253441744968/12-x.png"
+        },
+		{
+          "chance": 2,
+          "filename": "xf-x",
+          "name": "Third Wave Flip-Flop",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866291949654096/xf-x.png"
+        },
+		{
+          "chance": 2,
+          "filename": "xc-x",
+          "name": "Credits",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games with Exschwasion)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866325999009852/xc-x.png"
+        },
+		{
+          "chance": 2,
+          "filename": "xh-x",
+          "name": "Final Hope",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games, based on level by Rikry)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866417669734410/xh-x.png"
+        },
+		{
+          "chance": 2,
+          "filename": "pa-x",
+          "name": "Distance",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games with Fancybread)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866484556292208/pa-x.png"
+        },
+		{
+          "chance": 2,
+          "filename": "xr-x",
+          "name": "Rose Garden",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games with hotduck, KanoKaz, NumbEr07)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866506131779615/xr-x.png"
+        },
+		{
+          "chance": 2,
+          "filename": "rj-x",
+          "name": "Fear Grows",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866527988297748/rj-x.png"
+        },
+		{
+          "chance": 1,
+          "filename": "xo-x",
+          "name": "One Forgotten Night",
+          "type": "Ultra Rare",
+          "description": "(Level by Star4th)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 1,
+          "filename": "xt-x",
+          "name": "Options",
+          "type": "Ultra Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "mn-x",
+          "name": "Night Wander (cnsouka Remix)(ADOFAI)",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games with Rikri)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866575925002240/mn-x.png"
+        },
+		{
+          "chance": 2,
+          "filename": "ml-x",
+          "name": "La nuit de vif",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games with Rikri)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866597290799204/ml-x.png"
+        },
+		{
+          "chance": 1,
+          "filename": "mo-x",
+          "name": "EMOMOMO",
+          "type": "Ultra Rare",
+          "description": "(Level by Riya, Nichipe)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "funkynow",
+          "name": "MAKE IT FUNKY NOW",
+          "type": "Super Rare",
+          "description": "(Level by PizzaLovers007)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866660196954192/funkynow.png"
+        },
+		{
+          "chance": 2,
+          "filename": "barrage",
+          "name": "Barrage",
+          "type": "Super Rare",
+          "description": "(Level by NumbEr07)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866683613741066/barrage.png"
+        },
+		{
+          "chance": 2,
+          "filename": "finalphase",
+          "name": "Final Phase",
+          "type": "Super Rare",
+          "description": "(Level by Daming)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866708347555890/finalphase.png"
+        },
+		{
+          "chance": 2,
+          "filename": "siriusa",
+          "name": "Sirius A",
+          "type": "Super Rare",
+          "description": "(Level by HanB)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866815113560104/siriusa.png"
+        },
+		{
+          "chance": 2,
+          "filename": "ruby",
+          "name": "Ruby",
+          "type": "Super Rare",
+          "description": "(Level by Pharah)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866847380357200/ruby.png"
+        },
+		{
+          "chance": 2,
+          "filename": "burn",
+          "name": "Burn",
+          "type": "Super Rare",
+          "description": "(Level by Ssimille)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866884227330098/burn.png"
+        },
+		{
+          "chance": 1,
+          "filename": "greatfury",
+          "name": "Great Fury of Heaven",
+          "type": "Ultra Rare",
+          "description": "(Level by Daming)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
         }
 	  ]
     
