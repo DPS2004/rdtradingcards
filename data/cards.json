@@ -787,8 +787,8 @@
 		{
           "chance": 2,
           "filename": "stillfeel",
-          "name": "不器用な男",
-          "type": "still feel.",
+          "name": "still feel.",
+          "type": "Super Rare",
           "description": "(PENDING)",
           "smell": "Stardust",
           "season": 8,
@@ -861,19 +861,6 @@
 			  
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964724801438634004/dreamland.png"
-        },
-		{
-          "chance": 2,
-          "filename": "bukiyona",
-          "name": "不器用な男",
-          "type": "Super Rare",
-          "description": "(PENDING)",
-          "smell": "Journals",
-          "season": 8,
-          "bonuses": {
-			  
-          },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
         },
 		{
           "chance": 2,
