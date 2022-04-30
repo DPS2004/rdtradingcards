@@ -1717,6 +1717,95 @@
           "season": 8,
           "bonuses": { },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969937047232065536/greatfury.gif"
+        },
+		{
+          "chance": 1,
+          "chance": 1,
+          "filename": "1-x",
+          "name": "A Dance of Fire and Ice (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969974350474268722/1-xdc.png"
+        },
+		{
+          "chance": 1,
+          "filename": "2-x",
+          "name": "Offbeats (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969974368451035176/2-xdc.png"
+        },
+		{
+          "chance": 1,
+          "filename": "3-x",
+          "name": "THE WIND-UP (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969974416102555658/3-xdc.png"
+        },
+		{
+          "chance": 1,
+          "filename": "4-x",
+          "name": "Love Letters (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969974434628780032/4-xdc.png"
+        },
+		{
+          "chance": 1,
+          "filename": "5-x",
+          "name": "The Midnight Train (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969974455688384542/5-xdc.png"
+        },
+		{
+          "chance": 1,
+          "filename": "6-x",
+          "name": "PULSE (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969974474881503282/6-xdc.png"
+        },
+		{
+          "chance": 1,
+          "filename": "b-x",
+          "name": "Thanks For Playing My Game (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969974516589690970/b-xdc.png"
+        },
+		{
+          "chance": 2,
+          "filename": "xf-x",
+          "name": "Third Wave Flip-Flop (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969974549707907112/xf-xdc.png"
         }
 	  ]
     
