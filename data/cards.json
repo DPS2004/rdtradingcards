@@ -1376,6 +1376,17 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967978434523447356/mannequin.png"
         },
+        {
+          "chance": 1,
+          "filename": "rdproto",
+          "name": "Rhythm Doctor (Prototype)",
+          "type": "Discontinued",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/970190911415922688/rdproto.png"
+        },
 		
 		{
           "chance": 2,
