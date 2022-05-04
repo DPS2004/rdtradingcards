@@ -1387,6 +1387,220 @@
           "bonuses": { },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/970190911415922688/rdproto.png"
         },
+        
+        
+        
+        {
+          "chance": 2,
+          "filename": "nightwander",
+          "name": "Night Wander (cnsouka remix)",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        
+        {
+          "chance": 2,
+          "filename": "unmelting",
+          "name": "Unmelting",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        
+        {
+          "chance": 2,
+          "filename": "motivation",
+          "name": "Motivation",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        
+        
+        {
+          "chance": 3,
+          "filename": "pogsomniacr",
+          "name": "Pogsomniac (Rare)",
+          "type": "Rare",
+          "description": "(PENDING)",
+          "smell": "Cardboard",
+          "season": 8,
+          "bonuses": {
+            "okamiiscollar": true,
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        {
+          "chance": 1,
+          "filename": "pogsomniacur",
+          "name": "Pogsomniac (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Pending)",
+          "smell": "Cardboard",
+          "season": 8,
+          "bonuses": {
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        
+        {
+          "chance": 2,
+          "filename": "pinedrop",
+          "name": "パインドロップ",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        
+        {
+          "chance": 2,
+          "filename": "panopticon",
+          "name": "Panopticon",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        
+        {
+          "chance": 2,
+          "filename": "ebcs",
+          "name": "Electronic Behavior Control System",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        
+        {
+          "chance": 2,
+          "filename": "turinglove",
+          "name": "Turing Love",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        
+        {
+          "chance": 2,
+          "filename": "sunset",
+          "name": "斜陽",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        
+        {
+          "chance": 2,
+          "filename": "options",
+          "name": "Options",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "Not Enough Information",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        
+        {
+          "chance": 2,
+          "filename": "underground",
+          "name": "Underground Theme (SSBB Remix)",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        
+        {
+          "chance": 2,
+          "filename": "hymnweekend",
+          "name": "Hymn for the Weekend",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        
+        {
+          "chance": 3,
+          "filename": "blipblop",
+          "name": "blipblop.io",
+          "type": "Rare",
+          "description": "(PENDING)",
+          "smell": "Tinnitus",
+          "season": 8,
+          "bonuses": {
+            "okamiiscollar": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        
+        {
+          "chance": 2,
+          "filename": "tunnelvision",
+          "name": "tunnel vision",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        
+        {
+          "chance": 2,
+          "filename": "stuffisway",
+          "name": "Stuff Is Way",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        
+        {
+          "chance": 2,
+          "filename": "cblues",
+          "name": "Computer Blues",
+          "type": "Super Rare",
+          "description": "(PENDING)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+        
 		
 		{
           "chance": 2,
@@ -1611,7 +1825,7 @@
 		{
           "chance": 1,
           "filename": "xt-x",
-          "name": "Options",
+          "name": "Options (ADOFAI)",
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
           "smell": "Information",
@@ -1622,7 +1836,7 @@
 		{
           "chance": 2,
           "filename": "mn-x",
-          "name": "Night Wander (cnsouka Remix)(ADOFAI)",
+          "name": "Night Wander (cnsouka Remix) (ADOFAI)",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games with Rikri)",
           "smell": "(PENDING)",
