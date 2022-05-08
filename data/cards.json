@@ -1047,40 +1047,40 @@
           "filename": "decor",
           "name": "Decorations (Rare)",
           "type": "Rare",
-          "description": "(PENDING)",
+          "description": "(Art by Kyle Labriola)",
           "smell": "Shapes",
           "season": 8,
           "bonuses": {
             "scribblednotepad": true,
             "okamiiscollar": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972709931956449340/decor.png"
         },
         {
           "chance": 2,
           "filename": "decosr",
           "name": "Decorations (Super Rare)",
           "type": "Super Rare",
-          "description": "(PENDING)",
+          "description": "(Art by Kyle Labriola)",
           "smell": "Shapes",
           "season": 8,
           "bonuses": {
             "scribblednotepad": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972711757099454494/decosr.png"
         },
         {
           "chance": 1,
           "filename": "decour",
           "name": "Decorations (Ultra Rare)",
           "type": "Ultra Rare",
-          "description": "(PENDING)",
+          "description": "(Art by Kyle Labriola)",
           "smell": "Shapes",
           "season": 8,
           "bonuses": {
             "scribblednotepad": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972711780361060383/decour.png"
         },
 		
 
