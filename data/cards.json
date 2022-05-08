@@ -531,11 +531,12 @@
           "filename": "leperv",
           "name": "Le Perv",
           "type": "Super Rare",
-          "description": "(PENDING)",
+          "description": "(Level by notDonte, Kneeckoh, noche, Samario, Ladybug, and Fancybread)",
           "smell": "Innovation",
           "season": 8,
           "bonuses": {
-			  
+            "charcoalpencil": true,
+            "rustysword": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968571722141925436/leperv.png"
         },
@@ -544,11 +545,13 @@
           "filename": "lepervdc",
           "name": "Le Perv (Discontinued)",
           "type": "Discontinued",
-          "description": "(PENDING)",
+          "description": "(Level by notDonte)",
           "smell": "Dreamed Combinations",
           "season": 8,
           "bonuses": {
-			  
+            "charcoalpencil": true,
+            "rustysword": true,
+            "lostnametag": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968559070044897370/lepervdc.png"
         },
@@ -1397,11 +1400,13 @@
           "filename": "nightwander",
           "name": "Night Wander (cnsouka remix)",
           "type": "Super Rare",
-          "description": "(PENDING)",
-          "smell": "(PENDING)",
+          "description": "(Level by Juandif)",
+          "smell": "Neon Lights",
           "season": 8,
-          "bonuses": { },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972981235133599804/nightwander.png"
         },
         
         {
@@ -1409,11 +1414,13 @@
           "filename": "unmelting",
           "name": "Unmelting",
           "type": "Super Rare",
-          "description": "(PENDING)",
-          "smell": "(PENDING)",
+          "description": "(Level by Shareoff)",
+          "smell": "Snowflakes",
           "season": 8,
-          "bonuses": { },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "bonuses": {
+            "oversizedstethoscope": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972981292285194260/unmelting.png"
         },
         
         {
@@ -1421,11 +1428,14 @@
           "filename": "motivation",
           "name": "Motivation",
           "type": "Super Rare",
-          "description": "(PENDING)",
-          "smell": "(PENDING)",
+          "description": "(Level by Shareoff)",
+          "smell": "Jelly Cubes",
           "season": 8,
-          "bonuses": { },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "bonuses": {
+            "rustysword": true,
+            "charcoalpencil": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972981398757589082/motivation.png"
         },
         
         
@@ -1441,7 +1451,7 @@
             "okamiiscollar": true,
             "duncecap": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973005387320164362/pogsomniacr.png"
         },
         {
           "chance": 1,
@@ -1466,7 +1476,7 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": { },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973005669844254770/pinedrop.png"
         },
         
         {
@@ -1474,11 +1484,11 @@
           "filename": "panopticon",
           "name": "Panopticon",
           "type": "Super Rare",
-          "description": "(PENDING)",
+          "description": "(Level by Pseuu)",
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": { },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973005669517103104/panopticon.png"
         },
         
         {
@@ -1486,11 +1496,11 @@
           "filename": "ebcs",
           "name": "Electronic Behavior Control System",
           "type": "Super Rare",
-          "description": "(PENDING)",
-          "smell": "(PENDING)",
+          "description": "(Level by Provolone)",
+          "smell": "Channel Surfing",
           "season": 8,
           "bonuses": { },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973005669059944479/ebcs.png"
         },
         
         {
@@ -1502,7 +1512,7 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": { },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973006006697213953/turinglove.png"
         },
         
         {
@@ -1514,7 +1524,7 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": { },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973006006453927986/sunset.png"
         },
         
         {
@@ -1526,7 +1536,7 @@
           "smell": "Not Enough Information",
           "season": 8,
           "bonuses": { },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973006006999212082/options.png"
         },
         
         {
@@ -1538,7 +1548,7 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": { },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973006640074878976/underground.png"
         },
         
         {
@@ -1550,7 +1560,7 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": { },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973006640771125308/hymnweekend.png"
         },
         
         {
@@ -1564,7 +1574,7 @@
           "bonuses": {
             "okamiiscollar": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973006640506867742/blipblop.png"
         },
         
         {
@@ -1576,7 +1586,7 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": { },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973007022356303942/tunnelvision.png"
         },
         
         {
@@ -1588,7 +1598,7 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": { },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973007021785886730/stuffisway.png"
         },
         
         {
@@ -1597,10 +1607,10 @@
           "name": "Computer Blues",
           "type": "Super Rare",
           "description": "(PENDING)",
-          "smell": "(PENDING)",
+          "smell": "Compiler Errors",
           "season": 8,
           "bonuses": { },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973007022628962394/cblues.png"
         },
         
 		
