@@ -596,13 +596,13 @@
           "filename": "september",
           "name": "september",
           "type": "Super Rare",
-          "description": "(PENDING)",
+          "description": "(Level by lugi)",
           "smell": "Sapphires",
           "season": 8,
           "bonuses": {
-			  
+            "valentinesdaycard": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972722034046038056/september.png"
         },
 		{
           "chance": 2,
@@ -622,26 +622,28 @@
           "filename": "lycoris",
           "name": "Lycoris",
           "type": "Super Rare",
-          "description": "(PENDING)",
+          "description": "(Level by Zack101155)",
           "smell": "Ban Evasion",
           "season": 8,
           "bonuses": {
-			  
+            "valentinesdaycard": true,
+            "rustysword": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972722033781801000/lycoris.png"
         },
 		{
           "chance": 2,
           "filename": "deadlyslot",
           "name": "Deadly Slot Game",
           "type": "Super Rare",
-          "description": "Cherries",
-          "smell": "",
+          "description": "(Level by Emdyion and Zisos)",
+          "smell": "Cherries",
           "season": 8,
           "bonuses": {
-			  
+            "valentinesdaycard": true,
+            "lostnametag": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972722034327044166/deadlyslot.png"
         },
 		{
           "chance": 2,
@@ -1054,7 +1056,7 @@
             "scribblednotepad": true,
             "okamiiscollar": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972709931956449340/decor.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972724095328321556/decor.png"
         },
         {
           "chance": 2,
