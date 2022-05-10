@@ -761,7 +761,7 @@
           "bonuses": {
 			  
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973610432403222558/yesman.gif"
         },
 		{
           "chance": 2,
@@ -769,12 +769,12 @@
           "name": "Uprising",
           "type": "Super Rare",
           "description": "(PENDING)",
-          "smell": "Revolution",
+          "smell": "Vyrmstuff",
           "season": 8,
           "bonuses": {
 			  
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973617695692042251/uprising.gif"
         },
 		{
           "chance": 2,
@@ -787,7 +787,7 @@
           "bonuses": {
 			  
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973619585678970951/bukiyona.png"
         },
 		{
           "chance": 2,
@@ -800,7 +800,7 @@
           "bonuses": {
 			  
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973621443432677427/stillfeel.png"
         },
 		{
           "chance": 2,
@@ -1320,7 +1320,7 @@
           "name": "Pumped Up Kicks",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Forbidden Content",
+          "smell": "Gunpowder",
           "season": 8,
           "bonuses": {
             "rustysword": true
@@ -1460,6 +1460,20 @@
           "type": "Ultra Rare",
           "description": "(Pending)",
           "smell": "Cardboard",
+          "season": 8,
+          "bonuses": {
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		
+        {
+          "chance": 1,
+          "filename": "beansur",
+          "name": "Beans (Ultra Rare)",
+          "type": "Ultra Rare",
+		  "description": "(Art by Fancybread)",
+          "smell": ":beans:",
           "season": 8,
           "bonuses": {
             "duncecap": true
