@@ -1627,6 +1627,17 @@
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973007022628962394/cblues.png"
         },
         
+        {
+          "chance": 2,
+          "filename": "zircon",
+          "name": "Zircon",
+          "type": "Super Rare",
+          "description": "(Level by Timeshark)",
+          "smell": "Cave Rescues",
+          "season": 8,
+          "bonuses": { },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/975469891157127188/zircon.png"
+        },
 		
 		{
           "chance": 2,
@@ -6075,7 +6086,7 @@
           "filename": "pools",
           "name": "Pools",
           "type": "Super Rare",
-          "description": "(Level by Ceo of Overanalysis)",
+          "description": "(Level by Timeshark)",
           "smell": "Bird-related Injuries",
           "season": 7,
           "bonuses": {
