@@ -720,7 +720,7 @@
           "season": 8,
           "bonuses": {
 			"rustysword": true,
-			"charcoalpencil": true
+			"charcoalpencil": true,
 			"lostnametag": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973576271445495859/dicebet.png"
@@ -759,7 +759,7 @@
           "filename": "rhythmfrog",
           "name": "Rhythm Frog",
           "type": "PICO-8",
-          "description": "(Cart by 7th Beat Games. Playable with the PICO-8 app or online at https://giacomopc.itch.io/rhythm-frog .)"",
+          "description": "(Cart by 7th Beat Games. Playable with the PICO-8 app or online at https://giacomopc.itch.io/rhythm-frog .)",
           "smell": "Anniversaries",
           "season": 8,
           "bonuses": {},
@@ -818,9 +818,8 @@
           "description": "(Level by Het)",
           "smell": "Differences in Perspective",
           "season": 8,
-          "bonuses": {,
-			"valentinesdaycard": true
-			  
+          "bonuses": {
+			      "valentinesdaycard": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973600631103316019/kidsnoreturn.png"
         },
@@ -833,9 +832,8 @@
           "smell": "Mycology",
           "season": 8,
           "bonuses": {
-			"filmreel": true,
-			"oversizedstethoscope": true
-			  
+            "filmreel": true,
+            "oversizedstethoscope": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973610432403222558/yesman.gif"
         },
@@ -1861,7 +1859,7 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			  "filmreel": true,
+			  "filmreel": true
 		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969936611678748682/b-x.gif"
         },
@@ -2138,7 +2136,6 @@
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969937047232065536/greatfury.gif"
         },
 		{
-          "chance": 1,
           "chance": 1,
           "filename": "1-xdc",
           "name": "A Dance of Fire and Ice (Discontinued)",
