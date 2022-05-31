@@ -541,14 +541,14 @@
           "filename": "coolbirdur",
           "name": "Cool Bird (Ultra Rare)",
           "type": "Ultra Rare",
-          "description": "(Art by Time)",
+          "description": "(Art by DPS2004)",
           "smell": "Embers",
           "season": 8,
           "bonuses": {
 			"fanonplaceholder": true,
 			"deluxebirdseed": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981261474506895421/coolbirdur.png"
         },
         {
           "chance": 0,
@@ -1575,7 +1575,7 @@
           "bonuses": {
             "duncecap": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981261431578165298/pogsomniacur.png"
         },
 		
         {
@@ -1689,7 +1689,7 @@
           "name": "Underground Theme (SSBB Remix)",
           "type": "Super Rare",
           "description": "(Level by Willow)",
-          "smell": "(PENDING)",
+          "smell": "Sewage",
           "season": 8,
           "bonuses": {
 			"rustysword": true
@@ -1745,7 +1745,7 @@
           "name": "Stuff Is Way",
           "type": "Super Rare",
           "description": "(Level by Stamps)",
-          "smell": "(PENDING)",
+          "smell": "Phony Ponies",
           "season": 8,
           "bonuses": {
 			"deluxebirdseed": true
@@ -2377,7 +2377,7 @@
 			"okamiiscollar": true,
 			"swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981008313250631681/overseerr.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981255803547832400/overseerr.png"
         },
 		{
           "chance": 3,

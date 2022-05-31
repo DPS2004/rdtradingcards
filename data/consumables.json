@@ -23,6 +23,14 @@
     "basestock": 8,
     "chance": 10
   },
+  "spicymintgum" : {
+    "name": "Spicy Mint Gum",
+    "description": "The next card you pull is guaranteed to be ADOFAI related. You can only use one item of this type at a time.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981264566870765708/spicymintgum.png",
+    "baseprice": 3,
+    "basestock": 8,
+    "chance": 10
+  },
   "butterypopcorn" : {
     "name": "Buttery Popcorn",
     "description": "The next card you pull is guaranteed to be animated. You can only use one item of this type at a time.",
