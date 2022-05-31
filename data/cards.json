@@ -1792,7 +1792,9 @@
           "description": "(Level by 7th Beat Games)",
           "smell": "(PENDING)",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+            "swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865645083119616/1-x.png"
         },
 		{
@@ -1803,7 +1805,9 @@
           "description": "(Level by 7th Beat Games)",
           "smell": "(PENDING)",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+            "swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865669514944603/2-x.png"
         },
 		{
@@ -1814,7 +1818,9 @@
           "description": "(Level by 7th Beat Games)",
           "smell": "(PENDING)",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+            "swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865686594125844/3-x.png"
         },
 		{
@@ -1825,7 +1831,9 @@
           "description": "(Level by 7th Beat Games)",
           "smell": "(PENDING)",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+            "swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865703010664548/4-x.png"
         },
 		{
@@ -1836,7 +1844,9 @@
           "description": "(Level by 7th Beat Games)",
           "smell": "(PENDING)",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+            "swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865720890957874/5-x.png"
         },
 		{
@@ -1847,7 +1857,9 @@
           "description": "(Level by 7th Beat Games)",
           "smell": "(PENDING)",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+            "swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865737483645009/6-x.png"
         },
 		{
@@ -1859,7 +1871,8 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			  "filmreel": true
+			  "filmreel": true,
+			  "swirlymarbles": true
 		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969936611678748682/b-x.gif"
         },
@@ -1871,7 +1884,9 @@
           "description": "(Level by 7th Beat Games)",
           "smell": "(PENDING)",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+            "swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865755020005456/7-x.png"
         },
 		{
@@ -1882,7 +1897,9 @@
           "description": "(Level by 7th Beat Games)",
           "smell": "(PENDING)",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+            "swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968888650010083378/8-x.png"
         },
 		{
@@ -1893,7 +1910,9 @@
           "description": "(Level by 7th Beat Games, based on level by The Drawer)",
           "smell": "(PENDING)",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+            "swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865789811781632/9-x.png"
         },
 		{
@@ -1904,7 +1923,9 @@
           "description": "(Level by 7th Beat Games)",
           "smell": "(PENDING)",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+            "swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865807905988688/10-x.png"
         },
 		{
@@ -1915,7 +1936,9 @@
           "description": "(Level by 7th Beat Games, based on level by Exschwasion)",
           "smell": "(PENDING)",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+            "swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866225998426112/11-x.png"
         },
 		{
@@ -1926,7 +1949,9 @@
           "description": "(Level by 7th Beat Games with SimsimHI)",
           "smell": "(PENDING)",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+            "swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866253441744968/12-x.png"
         },
 		{
@@ -1937,7 +1962,9 @@
           "description": "(Level by 7th Beat Games)",
           "smell": "(PENDING)",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+            "swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866291949654096/xf-x.png"
         },
 		{
@@ -1948,7 +1975,9 @@
           "description": "(Level by 7th Beat Games with Exschwasion)",
           "smell": "Code page 437",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+            "swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968888692095717437/xc-x.png"
         },
 		{
@@ -1959,7 +1988,9 @@
           "description": "(Level by 7th Beat Games, based on level by Rikry)",
           "smell": "(PENDING)",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+            "swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866417669734410/xh-x.png"
         },
 		{
@@ -1970,7 +2001,9 @@
           "description": "(Level by 7th Beat Games with Fancybread)",
           "smell": "(PENDING)",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+            "swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866484556292208/pa-x.png"
         },
 		{
@@ -1981,7 +2014,9 @@
           "description": "(Level by 7th Beat Games with hotduck, KanoKaz, NumbEr07)",
           "smell": "(PENDING)",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+            "swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866506131779615/xr-x.png"
         },
 		{
@@ -1992,7 +2027,9 @@
           "description": "(Level by 7th Beat Games)",
           "smell": "(PENDING)",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+            "swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866527988297748/rj-x.png"
         },
 		{
@@ -2004,7 +2041,8 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"filmreel": true
+			"filmreel": true,
+			"swirlymarbles": true
 		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969936734169219102/xo-x.gif"
         },
@@ -2017,7 +2055,8 @@
           "smell": "Information",
           "season": 8,
           "bonuses": {
-			"filmreel": true
+			"filmreel": true,
+			"swirlymarbles": true
 		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969936919842680842/xt-x.gif"
         },
@@ -2029,7 +2068,9 @@
           "description": "(Level by 7th Beat Games with Rikri)",
           "smell": "(PENDING)",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+            "swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866575925002240/mn-x.png"
         },
 		{
@@ -2040,7 +2081,9 @@
           "description": "(Level by 7th Beat Games with Rikri)",
           "smell": "(PENDING)",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+            "swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866597290799204/ml-x.png"
         },
 		{
@@ -2052,7 +2095,8 @@
           "smell": ":thinking:",
           "season": 8,
           "bonuses": {
-			"filmreel": true
+			"filmreel": true,
+			"swirlymarbles": true
 		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969936942466744360/mo-x.gif"
         },
@@ -2064,7 +2108,9 @@
           "description": "(Level by PizzaLovers007)",
           "smell": "(PENDING)",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+            "swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866660196954192/funkynow.png"
         },
 		{
@@ -2075,7 +2121,9 @@
           "description": "(Level by NumbEr07)",
           "smell": "(PENDING)",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+            "swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866683613741066/barrage.png"
         },
 		{
@@ -2086,7 +2134,9 @@
           "description": "(Level by Daming)",
           "smell": "(PENDING)",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+            "swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866708347555890/finalphase.png"
         },
 		{
@@ -2097,7 +2147,9 @@
           "description": "(Level by HanB)",
           "smell": "(PENDING)",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+            "swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866815113560104/siriusa.png"
         },
 		{
@@ -2108,7 +2160,9 @@
           "description": "(Level by Pharah)",
           "smell": "(PENDING)",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+            "swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866847380357200/ruby.png"
         },
 		{
@@ -2119,7 +2173,9 @@
           "description": "(Level by Ssimille)",
           "smell": "(PENDING)",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+            "swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866884227330098/burn.png"
         },
 		{
@@ -2131,7 +2187,8 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"filmreel": true
+			"filmreel": true,
+			"swirlymarbles": true
 		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969937047232065536/greatfury.gif"
         },
@@ -2144,7 +2201,8 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"oldfiles": true
+			"oldfiles": true,
+			"swirlymarbles": true
 		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969974350474268722/1-xdc.png"
         },
@@ -2157,7 +2215,8 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"oldfiles": true
+			"oldfiles": true,
+			"swirlymarbles": true
 		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969974368451035176/2-xdc.png"
         },
@@ -2169,7 +2228,10 @@
           "description": "(Level by 7th Beat Games)",
           "smell": "(PENDING)",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {
+			"oldfiles": true,
+			"swirlymarbles": true
+		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969974416102555658/3-xdc.png"
         },
 		{
@@ -2181,7 +2243,8 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"oldfiles": true
+			"oldfiles": true,
+			"swirlymarbles": true
 		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969974434628780032/4-xdc.png"
         },
@@ -2194,7 +2257,8 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"oldfiles": true
+			"oldfiles": true,
+			"swirlymarbles": true
 		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969974455688384542/5-xdc.png"
         },
@@ -2207,7 +2271,8 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"oldfiles": true
+			"oldfiles": true,
+			"swirlymarbles": true
 		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969974474881503282/6-xdc.png"
         },
@@ -2220,7 +2285,8 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"oldfiles": true
+			"oldfiles": true,
+			"swirlymarbles": true
 		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969974516589690970/b-xdc.png"
         },
@@ -2233,9 +2299,98 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"oldfiles": true
+			"oldfiles": true,
+			"swirlymarbles": true
 		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969977667799629864/xf-xdc.png"
+        },
+		
+		
+		{
+          "chance": 3,
+          "filename": "charlier",
+          "name": "Charlie (Rare)",
+          "type": "Rare",
+          "description": "(Art by TaroNuke)",
+          "smell": "Pentagons",
+          "season": 8,
+          "bonuses": {
+			"okamiiscollar": true,
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/980991324679462993/charlier.png"
+        },
+		{
+          "chance": 3,
+          "filename": "charlieur",
+          "name": "Charlie (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by Supercomputation)",
+          "smell": "Pentagons",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/980993747343015967/charlieur.png"
+        },
+		
+		
+		{
+          "chance": 3,
+          "filename": "setr",
+          "name": "Set (Rare)",
+          "type": "Rare",
+          "description": "(Art by teri (electr1ca))",
+          "smell": "Mutiny",
+          "season": 8,
+          "bonuses": {
+			"okamiiscollar": true,
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/980991178159816724/setr.png"
+        },
+		{
+          "chance": 3,
+          "filename": "setur",
+          "name": "Set (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by Supercomputation)",
+          "smell": "Mutiny",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/980992952765652992/setur.png"
+        },
+		
+		
+		
+		{
+          "chance": 3,
+          "filename": "overseerr",
+          "name": "Overseer (Rare)",
+          "type": "Rare",
+          "description": "(Art by Supercomputation)",
+          "smell": "Order",
+          "season": 8,
+          "bonuses": {
+			"okamiiscollar": true,
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981008313250631681/overseerr.png"
+        },
+		{
+          "chance": 3,
+          "filename": "overseerur",
+          "name": "Overseer (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by Supercomputation)",
+          "smell": "Order",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/980994386458447932/overseerur.png"
         }
 	  ]
     
