@@ -1803,7 +1803,7 @@
           "name": "Offbeats",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Convention",
+          "smell": "Beanstalks",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -1882,7 +1882,7 @@
           "name": "Spin 2 Win",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "(PENDING)",
+          "smell": "Roulette",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
