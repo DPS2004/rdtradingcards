@@ -2734,6 +2734,7 @@
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
         },
 
+		{
           "chance": 3,
           "filename": "goatr",
           "name": "Goat (Rare)",
