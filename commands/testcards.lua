@@ -5,6 +5,9 @@ function command.run(message, mt)
     print(message.author.name .. " did !testcards")
     for i,v in pairs(cdb) do
       local emb = v.embed or ""
+	  if type(emb) == 'table' then
+		emb = 'shade embed exception'
+	  end
       message.channel:send {
         content = 'TESTCARDS: '.. v.name .. ' smells like ' .. cdb[v.filename].smell .. ', ' .. cdb[v.filename].description .. emb
       }

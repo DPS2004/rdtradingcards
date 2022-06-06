@@ -825,8 +825,8 @@
         },
 		{
           "chance": 2,
-          "filename": "イヱスマン",
-          "name": "yesman",
+          "filename": "yesman",
+          "name": "イヱスマン",
           "type": "Super Rare",
           "description": "(Level by Jams and starry skies)",
           "smell": "Mycology",
@@ -1495,7 +1495,7 @@
           "name": "Rhythm Doctor (Prototype)",
           "type": "Discontinued",
           "description": "(Level by 7th Beat Games)",
-          "smell": "(PENDING)",
+          "smell": "Where it all began",
           "season": 8,
           "bonuses": {
 			"oldfiles": true
@@ -1555,7 +1555,7 @@
           "filename": "pogsomniacr",
           "name": "Pogsomniac (Rare)",
           "type": "Rare",
-          "description": "(PENDING)",
+          "description": "(Based on art by Winston Lee)",
           "smell": "Cardboard",
           "season": 8,
           "bonuses": {
@@ -1569,7 +1569,7 @@
           "filename": "pogsomniacur",
           "name": "Pogsomniac (Ultra Rare)",
           "type": "Ultra Rare",
-          "description": "(Pending)",
+          "description": "(Art by Penny)",
           "smell": "Cardboard",
           "season": 8,
           "bonuses": {
@@ -1598,7 +1598,7 @@
           "name": "パインドロップ",
           "type": "Super Rare",
           "description": "(Level by tepid)",
-          "smell": "(PENDING)",
+          "smell": "Natural Notes",
           "season": 8,
           "bonuses": {
 			"valentinesdaycard": true
@@ -1612,7 +1612,7 @@
           "name": "Panopticon",
           "type": "Super Rare",
           "description": "(Level by Pseuu)",
-          "smell": "(PENDING)",
+          "smell": "Observation",
           "season": 8,
           "bonuses": {
 			"deviltail": true,
@@ -1647,7 +1647,7 @@
           "name": "Turing Love",
           "type": "Super Rare",
           "description": "(Level by thefinals)",
-          "smell": "(PENDING)",
+          "smell": "Artificial Emotions",
           "season": 8,
           "bonuses": { },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973006006697213953/turinglove.png"
@@ -1659,7 +1659,7 @@
           "name": "斜陽",
           "type": "Super Rare",
           "description": "(Level by Xeno)",
-          "smell": "(PENDING)",
+          "smell": "Solid Colors",
           "season": 8,
           "bonuses": {
 			"rustysword": true,
@@ -1703,7 +1703,7 @@
           "name": "Hymn for the Weekend",
           "type": "Super Rare",
           "description": "(Level by 1257Plays)",
-          "smell": "(PENDING)",
+          "smell": "Alcohol",
           "season": 8,
           "bonuses": { },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973006640771125308/hymnweekend.png"
@@ -1729,7 +1729,7 @@
           "name": "tunnel vision",
           "type": "Super Rare",
           "description": "(Level by Zack101155)",
-          "smell": "(PENDING)",
+          "smell": "Dimmed Lights",
           "season": 8,
           "bonuses": {
 			"valentinesdaycard": true,
@@ -1790,7 +1790,7 @@
           "name": "A Dance of Fire and Ice",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "(PENDING)",
+          "smell": "Tutorials",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -1803,7 +1803,7 @@
           "name": "Offbeats",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "(PENDING)",
+          "smell": "Convention",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -1816,7 +1816,7 @@
           "name": "THE WIND-UP",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "(PENDING)",
+          "smell": "Difficulty Spikes",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -1829,7 +1829,7 @@
           "name": "Love Letters",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "(PENDING)",
+          "smell": "Triplets",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -1842,7 +1842,7 @@
           "name": "The Midnight Train",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "(PENDING)",
+          "smell": "Snowy Swing",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
