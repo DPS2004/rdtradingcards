@@ -1882,7 +1882,7 @@
           "name": "Spin 2 Win",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Roulette",
+          "smell": "Wheel of Fortune",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -1921,7 +1921,7 @@
           "name": "Butterfly Planet",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "(PENDING)",
+          "smell": "Constellations",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -1934,7 +1934,7 @@
           "name": "Heracles",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games, based on level by Exschwasion)",
-          "smell": "(PENDING)",
+          "smell": "Circus",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
