@@ -1790,12 +1790,12 @@
           "name": "A Dance of Fire and Ice",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Tutorials",
+          "smell": "Lanterns",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865645083119616/1-x.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981265498731839528/1-x.png"
         },
 		{
           "chance": 2,
@@ -1808,7 +1808,7 @@
           "bonuses": {
             "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865669514944603/2-x.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981265518956802048/2-x.png"
         },
 		{
           "chance": 2,
@@ -1821,7 +1821,7 @@
           "bonuses": {
             "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865686594125844/3-x.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981265539731161148/3-x.png"
         },
 		{
           "chance": 2,
@@ -1834,7 +1834,7 @@
           "bonuses": {
             "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865703010664548/4-x.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981265555564679218/4-x.png"
         },
 		{
           "chance": 2,
@@ -1847,7 +1847,7 @@
           "bonuses": {
             "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865720890957874/5-x.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981265570655772682/5-x.png"
         },
 		{
           "chance": 2,
@@ -1855,12 +1855,12 @@
           "name": "PULSE",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "(PENDING)",
+          "smell": "Planets",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865737483645009/6-x.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981265589492387840/6-x.png"
         },
 		{
           "chance": 1,
@@ -1874,7 +1874,7 @@
 			  "filmreel": true,
 			  "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969936611678748682/b-x.gif"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983038686503530556/b-x.gif"
         },
 		{
           "chance": 2,
@@ -1887,7 +1887,7 @@
           "bonuses": {
             "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865755020005456/7-x.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981265651857510460/7-x.png"
         },
 		{
           "chance": 2,
@@ -1900,7 +1900,7 @@
           "bonuses": {
             "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968888650010083378/8-x.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981265671046447124/8-x.png"
         },
 		{
           "chance": 2,
@@ -1908,12 +1908,12 @@
           "name": "Classic Pursiut",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games, based on level by The Drawer)",
-          "smell": "(PENDING)",
+          "smell": "UFO",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865789811781632/9-x.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981265696803676281/9-x.png"
         },
 		{
           "chance": 2,
@@ -1926,7 +1926,7 @@
           "bonuses": {
             "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968865807905988688/10-x.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981265717607399434/10-x.png"
         },
 		{
           "chance": 2,
@@ -1939,7 +1939,7 @@
           "bonuses": {
             "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866225998426112/11-x.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981265741145866240/11-x.png"
         },
 		{
           "chance": 2,
@@ -1952,7 +1952,7 @@
           "bonuses": {
             "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866253441744968/12-x.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981265757973393518/12-x.png"
         },
 		{
           "chance": 2,
@@ -1965,7 +1965,7 @@
           "bonuses": {
             "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866291949654096/xf-x.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981266714274721862/xf-x.png"
         },
 		{
           "chance": 2,
@@ -1978,7 +1978,7 @@
           "bonuses": {
             "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968888692095717437/xc-x.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981266729315471420/xc-x.png"
         },
 		{
           "chance": 2,
@@ -1991,7 +1991,7 @@
           "bonuses": {
             "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866417669734410/xh-x.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981266834051453050/xh-x.png"
         },
 		{
           "chance": 2,
@@ -2004,7 +2004,7 @@
           "bonuses": {
             "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866484556292208/pa-x.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981266900170473532/pa-x.png"
         },
 		{
           "chance": 2,
@@ -2017,7 +2017,7 @@
           "bonuses": {
             "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866506131779615/xr-x.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981266959293353984/xr-x.png"
         },
 		{
           "chance": 2,
@@ -2030,7 +2030,7 @@
           "bonuses": {
             "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866527988297748/rj-x.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267000913444895/rj-x.png"
         },
 		{
           "chance": 1,
@@ -2044,7 +2044,7 @@
 			"filmreel": true,
 			"swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969936734169219102/xo-x.gif"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983038742698803250/xo-x.gif"
         },
 		{
           "chance": 1,
@@ -2058,7 +2058,7 @@
 			"filmreel": true,
 			"swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969936919842680842/xt-x.gif"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983038771366875136/xt-x.gif"
         },
 		{
           "chance": 2,
@@ -2071,7 +2071,7 @@
           "bonuses": {
             "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866575925002240/mn-x.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267628318412840/mn-x.png"
         },
 		{
           "chance": 2,
@@ -2084,7 +2084,7 @@
           "bonuses": {
             "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866597290799204/ml-x.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267649717755944/ml-x.png"
         },
 		{
           "chance": 1,
@@ -2098,7 +2098,7 @@
 			"filmreel": true,
 			"swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969936942466744360/mo-x.gif"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983038840350572544/mo-x.gif"
         },
 		{
           "chance": 2,
@@ -2111,7 +2111,7 @@
           "bonuses": {
             "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866660196954192/funkynow.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267361229324289/funkynow.png"
         },
 		{
           "chance": 2,
@@ -2124,7 +2124,7 @@
           "bonuses": {
             "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866683613741066/barrage.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267381269692466/barrage.png"
         },
 		{
           "chance": 2,
@@ -2137,7 +2137,7 @@
           "bonuses": {
             "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866708347555890/finalphase.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267416405393449/finalphase.png"
         },
 		{
           "chance": 2,
@@ -2150,7 +2150,7 @@
           "bonuses": {
             "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866815113560104/siriusa.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267471531134976/siriusa.png"
         },
 		{
           "chance": 2,
@@ -2163,7 +2163,7 @@
           "bonuses": {
             "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866847380357200/ruby.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267502015320064/ruby.png"
         },
 		{
           "chance": 2,
@@ -2176,7 +2176,7 @@
           "bonuses": {
             "swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968866884227330098/burn.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267544642043964/burn.png"
         },
 		{
           "chance": 1,
@@ -2190,7 +2190,89 @@
 			"filmreel": true,
 			"swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969937047232065536/greatfury.gif"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983038889553977384/greatfury.gif"
+        },
+		{
+          "chance": 2,
+          "filename": "feraleasy",
+          "name": "Feral (Easy)",
+          "type": "Super Rare",
+          "description": "(Level by Ma6icCu8e)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			"filmreel": true,
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983039173290233856/feraleasy.gif"
+        },
+		{
+          "chance": 1,
+          "filename": "feralnormal",
+          "name": "Feral (Normal)",
+          "type": "Ultra Rare",
+          "description": "(Level by Ma6icCu8e)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			"filmreel": true,
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983039209583570985/feralnormal.gif"
+        },
+		{
+          "chance": 2,
+          "filename": "blackandwhite",
+          "name": "Black And White (short)",
+          "type": "Super Rare",
+          "description": "(Level by Star4th)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			"filmreel": true,
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983039281025134682/blackandwhite.gif"
+        },
+		{
+          "chance": 2,
+          "filename": "skyscape",
+          "name": "Skyscape",
+          "type": "Super Rare",
+          "description": "(Level by Strode)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983039058701869106/skyscape.png"
+        },
+		{
+          "chance": 2,
+          "filename": "skyscapeorgel",
+          "name": "Skyscape (Orgel Ver.)",
+          "type": "Super Rare",
+          "description": "(Level by Strode)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983039082038984805/skyscapeorgel.png"
+        },
+		{
+          "chance": 1,
+          "filename": "greatgreat",
+          "name": "Great Great",
+          "type": "Ultra Rare",
+          "description": "(Level by PowerFactory)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			"filmreel": true,
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983039357600559144/greatgreat.gif"
         },
 		{
           "chance": 1,
@@ -2204,7 +2286,7 @@
 			"oldfiles": true,
 			"swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969974350474268722/1-xdc.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267114654568468/1-xdc.png"
         },
 		{
           "chance": 1,
@@ -2218,7 +2300,7 @@
 			"oldfiles": true,
 			"swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969974368451035176/2-xdc.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267133424074752/2-xdc.png"
         },
 		{
           "chance": 1,
@@ -2232,7 +2314,7 @@
 			"oldfiles": true,
 			"swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969974416102555658/3-xdc.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267152529145906/3-xdc.png"
         },
 		{
           "chance": 1,
@@ -2246,7 +2328,7 @@
 			"oldfiles": true,
 			"swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969974434628780032/4-xdc.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267171030204586/4-xdc.png"
         },
 		{
           "chance": 1,
@@ -2260,7 +2342,7 @@
 			"oldfiles": true,
 			"swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969974455688384542/5-xdc.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267190244331640/5-xdc.png"
         },
 		{
           "chance": 1,
@@ -2274,7 +2356,7 @@
 			"oldfiles": true,
 			"swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969974474881503282/6-xdc.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267209269673995/6-xdc.png"
         },
 		{
           "chance": 1,
@@ -2288,7 +2370,7 @@
 			"oldfiles": true,
 			"swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969974516589690970/b-xdc.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267243159679027/b-xdc.png"
         },
 		{
           "chance": 1,
@@ -2302,9 +2384,560 @@
 			"oldfiles": true,
 			"swirlymarbles": true
 		  },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969977667799629864/xf-xdc.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267277645234246/xf-xdc.png"
         },
-		
+		{
+          "chance": 2,
+          "filename": "t1-x",
+          "name": "NEW LIFE",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983023216928915496/t1-x.png"
+        },
+		{
+          "chance": 2,
+          "filename": "t2-x",
+          "name": "sing sing red indigo",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983023247803174952/t2-x.png"
+        },
+		{
+          "chance": 2,
+          "filename": "t3-x",
+          "name": "No Hints Here! - A Minigame Collection of Fire and Ice!",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983023271098335242/t3-x.png"
+        },
+		{
+          "chance": 2,
+          "filename": "t4-x",
+          "name": "Third Sun",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983023287791657040/t4-x.png"
+        },
+		{
+          "chance": 1,
+          "filename": "t5-x",
+          "name": "Divine Intervention",
+          "type": "Ultra Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983023312726818847/t5-x.png"
+        },
+		{
+          "chance": 1,
+          "filename": "t1-ex",
+          "name": "NEW LIFE (EX)",
+          "type": "Ultra Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983024094368919612/t1-ex.gif"
+        },
+		{
+          "chance": 1,
+          "filename": "t2-ex",
+          "name": "sing sing red indigo (EX)",
+          "type": "Ultra Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983024281556496384/t2-ex.gif"
+        },
+		{
+          "chance": 1,
+          "filename": "t3-ex",
+          "name": "No Hints Here! - The Slumpage Edition",
+          "type": "Ultra Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983024357590855690/t3-ex.gif"
+        },
+		{
+          "chance": 1,
+          "filename": "t4-ex",
+          "name": "Third Sun (EX)",
+          "type": "Ultra Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983024386573496380/t4-ex.gif"
+        },
+		{
+          "chance": 2,
+          "filename": "puzzlerooms",
+          "name": "Puzzle Rooms",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983025505466974248/puzzlerooms.png"
+        },
+		{
+          "chance": 2,
+          "filename": "minesweeper",
+          "name": "Minesweeper",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983025558302621777/minesweeper.png"
+        },
+
+		{
+          "chance": 3,
+          "filename": "statuer",
+          "name": "Statue (Rare)",
+          "type": "Rare",
+          "description": "(Art by Kyle Labriola)",
+          "smell": "Chains",
+          "season": 8,
+          "bonuses": {
+			"okamiiscollar": true,
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "statuesr",
+          "name": "Statue (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by BIrDIS)",
+          "smell": "Chains",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 1,
+          "filename": "statueur",
+          "name": "Statue (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by BIrDIS)",
+          "smell": "Chains",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 0,
+          "filename": "statuec",
+          "name": "Statue (Collector's)",
+          "type": "Collector's",
+          "description": "(Art by BIrDIS)",
+          "smell": "Chains",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 1,
+          "filename": "statuedc",
+          "name": "Statue (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Art by Kyle Labriola)",
+          "smell": "Brush",
+          "season": 8,
+          "bonuses": {
+			"oldfiles": true,
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+
+		{
+          "chance": 3,
+          "filename": "pigr",
+          "name": "Pig (Rare)",
+          "type": "Rare",
+          "description": "(Art by Kyle Labriola)",
+          "smell": "Throne",
+          "season": 8,
+          "bonuses": {
+			"okamiiscollar": true,
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "pigsr",
+          "name": "Pig (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by Stamps)",
+          "smell": "Throne",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 1,
+          "filename": "pigur",
+          "name": "Pig (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by BIrDIS)",
+          "smell": "Throne",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 0,
+          "filename": "pigc",
+          "name": "Pig (Collector's)",
+          "type": "Collector's",
+          "description": "(Art by BIrDIS)",
+          "smell": "Throne",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 1,
+          "filename": "pigalt",
+          "name": "Pig (Alternate)",
+          "type": "Alternate",
+          "description": "(Art by Kyle Labriola)",
+          "smell": "Trumpet",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true,
+			"pocketdimension": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+
+		{
+          "chance": 3,
+          "filename": "ratr",
+          "name": "Rat (Rare)",
+          "type": "Rare",
+          "description": "(Art by Kyle Labriola)",
+          "smell": "Scepter",
+          "season": 8,
+          "bonuses": {
+			"okamiiscollar": true,
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "ratsr",
+          "name": "Rat (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by Stamps)",
+          "smell": "Scepter",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 1,
+          "filename": "ratur",
+          "name": "Rat (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by DPS2004)",
+          "smell": "Scepter",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 0,
+          "filename": "ratc",
+          "name": "Rat (Collector's)",
+          "type": "Collector's",
+          "description": "(Art by BIrDIS)",
+          "smell": "Scepter",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 1,
+          "filename": "ratalt",
+          "name": "Rat (Alternate)",
+          "type": "Alternate",
+          "description": "(Art by Kyle Labriola)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true,
+			"pocketdimension": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+
+		{
+          "chance": 3,
+          "filename": "goatr",
+          "name": "Goat (Rare)",
+          "type": "Rare",
+          "description": "(Art by Kyle Labriola)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			"okamiiscollar": true,
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "goatsr",
+          "name": "Goat (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by Penny)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 1,
+          "filename": "goatur",
+          "name": "Goat (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by Maki)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 0,
+          "filename": "goatc",
+          "name": "Goat (Collector's)",
+          "type": "Collector's",
+          "description": "(Art by BIrDIS)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 1,
+          "filename": "goatalt",
+          "name": "Goat (Alternate)",
+          "type": "Alternate",
+          "description": "(Art by Kyle Labriola)",
+          "smell": "(PENDING)",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true,
+			"pocketdimension": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+
+
+		{
+          "chance": 3,
+          "filename": "rabbitr",
+          "name": "Rabbit (Rare)",
+          "type": "Rare",
+          "description": "(Art by Kyle Labriola)",
+          "smell": "x2",
+          "season": 8,
+          "bonuses": {
+			"okamiiscollar": true,
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "rabbitsr",
+          "name": "Rabbit (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by Penny)",
+          "smell": "x2",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 1,
+          "filename": "rabbitur",
+          "name": "Rabbit (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by Penny)",
+          "smell": "x2",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 0,
+          "filename": "rabbitc",
+          "name": "Rabbit (Collector's)",
+          "type": "Collector's",
+          "description": "(Art by Penny)",
+          "smell": "x2",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 1,
+          "filename": "rabbitalt",
+          "name": "Rabbit (Alternate)",
+          "type": "Alternate",
+          "description": "(Art by Kyle Labriola)",
+          "smell": "x4",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true,
+			"pocketdimension": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+
+		{
+          "chance": 3,
+          "filename": "snailr",
+          "name": "Snail (Rare)",
+          "type": "Rare",
+          "description": "(Art by Kyle Labriola)",
+          "smell": "x0.5",
+          "season": 8,
+          "bonuses": {
+			"okamiiscollar": true,
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 2,
+          "filename": "snailsr",
+          "name": "Snail (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by Penny)",
+          "smell": "x0.5",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 1,
+          "filename": "snailur",
+          "name": "Snail (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by Penny)",
+          "smell": "x0.5",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 0,
+          "filename": "snailc",
+          "name": "Rabbit (Collector's)",
+          "type": "Collector's",
+          "description": "(Art by Penny)",
+          "smell": "x0.5",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
+		{
+          "chance": 1,
+          "filename": "snailalt",
+          "name": "Snail (Alternate)",
+          "type": "Alternate",
+          "description": "(Art by Kyle Labriola)",
+          "smell": "x0.25",
+          "season": 8,
+          "bonuses": {
+			"swirlymarbles": true,
+			"pocketdimension": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
+        },
 		
 		{
           "chance": 3,

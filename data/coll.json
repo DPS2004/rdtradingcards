@@ -460,5 +460,53 @@
       "coolbirdur"
     ],
     "receive": "coolbirdc"
+  },
+  {
+    "require": [
+      "statuer",
+      "statuesr",
+      "statueur"
+    ],
+    "receive": "statuec"
+  },
+  {
+    "require": [
+      "pigr",
+      "pigsr",
+      "pigur"
+    ],
+    "receive": "pigc"
+  },
+  {
+    "require": [
+      "ratr",
+      "ratsr",
+      "ratur"
+    ],
+    "receive": "ratc"
+  },
+  {
+    "require": [
+      "goatr",
+      "goatsr",
+      "goatur"
+    ],
+    "receive": "goatc"
+  },
+  {
+    "require": [
+      "rabbitr",
+      "rabbitsr",
+      "rabbitur"
+    ],
+    "receive": "rabbitc"
+  },
+  {
+    "require": [
+      "snailr",
+      "snailsr",
+      "snailur"
+    ],
+    "receive": "snailc"
   }
 ]
