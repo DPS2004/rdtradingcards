@@ -2033,7 +2033,7 @@
           "name": "Barrage",
           "type": "Super Rare",
           "description": "(Level by NumbEr07)",
-          "smell": "(PENDING)",
+          "smell": "Gems",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -2690,7 +2690,7 @@
           "name": "Goat (Alternate)",
           "type": "Alternate",
           "description": "(Art by Kyle Labriola)",
-          "smell": "(PENDING)",
+          "smell": "Watchmen",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true,
