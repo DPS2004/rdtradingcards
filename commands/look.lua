@@ -445,7 +445,7 @@ function command.run(message, mt)
       local time = sw:getTime()
       checkforreload(time:toDays())
       --extremely jank implementation, please make this cleaner if possible
-      local minutesleft = math.ceil((46/24 - time:toDays() + sj.lastrefresh) * 24 * 60)
+      local minutesleft = math.ceil((26/24 - time:toDays() + sj.lastrefresh) * 24 * 60)
       print(minutesleft)
       local durationtext = ""
       if math.floor(minutesleft / 60) > 0 then

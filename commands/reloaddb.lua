@@ -760,7 +760,7 @@ function command.run(message, mt, overwrite)
     
     
     _G['checkforreload'] = function(days)
-      local cooldown = 46/24
+      local cooldown = 26/24
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
       print(days .. "days")
       if days >= sj.lastrefresh + cooldown then
