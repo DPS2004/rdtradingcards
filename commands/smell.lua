@@ -45,7 +45,7 @@ function command.run(message, mt)
       faithfulnecklace = "The **Faithful Necklace** smells. You need to take it off and wash it.",
       stainedgloves = "The **Stained Gloves** smell like red.",
       paddedstickersheet = "The **Padded Sticker Sheet** smells like elementary school.",
-      duncecap = "The **Dunce Cap** smells like <#297225076414087170>. That is, to say, bad.",
+      duncecap = "The **Dunce Cap** smells like <#944290668086448148>. That is, to say, bad.",
       deviltail = "The **Devil Tail** smells like fire and brimstone.",
       scribblednotepad = "The **Scribbled-In Notepad** smells like imagination.",
       okamiiscollar = "**okamii's Collar** smells like mirrors.",
@@ -53,7 +53,9 @@ function command.run(message, mt)
       lostnametag = "The **Lost Name Tag** smells like the Department of Agriculture",
       charcoalpencil = "The **Charcoal Pencil** smells like a burnt-out campfire.",
       fieldjournal = "The **Field Journal** has a faint smell of slime emanating off of it.",
-      driftingmetronome = "The **Drifting Metronome** smells slightly out of sync."
+      driftingmetronome = "The **Drifting Metronome** smells slightly out of sync.",
+      filmreel = "The **Film Reel** smells like *really* outdated video formats. Why are we still using these?",
+      swirlymarbles = "You can almost swear the **Swirly Marbles** smell like celestial objects."
     }
     local consumablesmells = {
       caffeinatedsoda = "The **Caffeinated Soda** tickles your nose as you try to smell it.",
@@ -71,7 +73,18 @@ function command.run(message, mt)
       scratchoffticket = "The **Scratch-off Ticket** smells like the lottery.",
       giftairstrike = "The **Gift Air Strike** smells like santa.",
       megaphone = "The **Megaphone** smells loud.",
-      oldfiles = "The **Old Files** smell like programmer art."
+      oldfiles = "The **Old Files** smell like programmer art.",
+      spicymintgum = "The **Spicy Mint Gum** smells like peppermint",
+      butterypopcorn = "The **Buttery Popcorn** smell reminds you of movie nights.",
+      pocketdimension = "The **Pocket Dimension** smells uncannily familiar, yet slighty different.",
+      quantummouse = "The **Quantum Mouse** simultaneously smells like high-quality alloys and really cheap plastic.",
+      s1booster = "The **Nostalgic Booster** smells like plastic packaging and blueberry lemonade.",
+      s2booster = "The **Customized Booster** smells like plastic packaging and child pyramids.",
+      s3booster = "The **Pixelated Booster** smells like plastic packaging and 32:41 ratios.",
+      s4booster = "The **Released Booster** smells like plastic packaging and bamboo.",
+      s5booster = "The **Alternative Booster** smells like plastic packaging and cat posters.",
+      s6booster = "The **Diverse Booster** smells like plastic packaging and gender juice.",
+      s7booster = "The **Animal Booster** smells like plastic packaging and wolf shop-owners."
     }
 
     if request == "strange machine" then
