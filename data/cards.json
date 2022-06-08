@@ -455,7 +455,7 @@
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/939372664013869106/bulbdc.png"
         },
         {
-          "chance": 3,
+          "chance": 1,
           "filename": "rodneydc",
           "name": "Rodney (Discontinued)",
           "type": "Rare",
@@ -468,21 +468,6 @@
             "fanonplaceholder": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968949040081428490/rodneydc.png"
-        },
-        {
-          "chance": 3,
-          "filename": "rodneyr",
-          "name": "Rodney (Rare)",
-          "type": "Rare",
-          "description": "(Art by AdipemDragon, Xeno)",
-          "smell": "Disorganization",
-          "season": 7,
-          "bonuses": {
-            "okamiiscollar": true,
-            "oversizedstethoscope": true,
-            "fanonplaceholder": true
-          },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968949039779426334/rodneyr.png"
         },
         {
           "chance": 3,
@@ -2912,6 +2897,42 @@
             "swirlymarbles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/980994386458447932/overseerur.png"
+        },
+        {
+          "chance": 2,
+          "filename": "luxurycar",
+          "name": "Blackest Luxury Car",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games, Collaborated with PeroPero Games)",
+          "smell": "Donut Thievery",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/984229842197286912/luxurycar.png"
+        },
+        {
+          "chance": 2,
+          "filename": "tapestopnight",
+          "name": "tape/stop/night",
+          "type": "Super Rare",
+          "description": "(Level by 7th Beat Games, Collaborated with PeroPero Games)",
+          "smell": "Stomach Aches",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/984229865169506364/tapestopnight.png"
+        },
+        {
+          "chance": 1,
+          "filename": "90sdecision",
+          "name": "The 90's Decision",
+          "type": "Ultra Rare",
+          "description": "(Level by 7th Beat Games, Collaborated with PeroPero Games)",
+          "smell": "Skate Rentals",
+          "season": 8,
+          "bonuses": {
+            "rustysword": true,
+			"deluxebirdseed": true
+		  },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/984230412698128384/90sdecision.png"
         }
       ]
     },
@@ -7631,6 +7652,21 @@
       "basechance": 3,
       "cards": [
         {
+          "chance": 3,
+          "filename": "rodneyr",
+          "name": "Rodney (Rare)",
+          "type": "Rare",
+          "description": "(Art by AdipemDragon, Xeno)",
+          "smell": "Disorganization",
+          "season": 7,
+          "bonuses": {
+            "okamiiscollar": true,
+            "oversizedstethoscope": true,
+            "fanonplaceholder": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968949039779426334/rodneyr.png"
+        },
+		{
           "chance": 2,
           "filename": "rodneysr",
           "name": "Rodney (Super Rare)",
