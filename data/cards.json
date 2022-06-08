@@ -499,20 +499,6 @@
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944482748410765352/coolbirdr.png"
         },
         {
-          "chance": 2,
-          "filename": "coolbirdsr",
-          "name": "Cool Bird (Super Rare)",
-          "type": "Super Rare",
-          "description": "(Art by TrainThemAll)",
-          "smell": "Embers",
-          "season": 8,
-          "bonuses": {
-            "fanonplaceholder": true,
-            "deluxebirdseed": true
-          },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
-        },
-        {
           "chance": 1,
           "filename": "coolbirdur",
           "name": "Cool Bird (Ultra Rare)",
@@ -2684,19 +2670,6 @@
             "swirlymarbles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996593705468014/goatsr.png"
-        },
-        {
-          "chance": 1,
-          "filename": "goatur",
-          "name": "Goat (Ultra Rare)",
-          "type": "Ultra Rare",
-          "description": "(Art by Maki)",
-          "smell": "(PENDING)",
-          "season": 8,
-          "bonuses": {
-            "swirlymarbles": true
-          },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
         },
         {
           "chance": 0,

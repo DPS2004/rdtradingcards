@@ -456,7 +456,6 @@
   {
     "require": [
       "coolbirdr",
-      "coolbirdsr",
       "coolbirdur"
     ],
     "receive": "coolbirdc"
@@ -489,7 +488,6 @@
     "require": [
       "goatr",
       "goatsr",
-      "goatur"
     ],
     "receive": "goatc"
   },
