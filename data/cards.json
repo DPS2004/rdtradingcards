@@ -1783,7 +1783,19 @@
 		  },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/975469891157127188/zircon.png"
         },
-		
+		{
+      "chance": 2,
+      "filename": "mybrothe",
+      "name": "My Brothe: An Email Funk Opera",
+      "type": "Super Rare",
+      "description": "(Level By Random Guy JCI)",
+      "smell": "Blackmail",
+      "season": 8,
+      "bonuses": {
+        "cafemixtape": true
+      },
+      "embed": "https://cdn.discordapp.com/attachments/829197797789532181/984011370003582976/mybrothe.png"
+    },
 		{
           "chance": 2,
           "filename": "1-x",
