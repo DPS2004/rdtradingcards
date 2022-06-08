@@ -1782,7 +1782,7 @@
           "name": "Thanks For Playing My Game",
           "type": "Ultra Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "(PENDING)",
+          "smell": "Finality",
           "season": 8,
           "bonuses": {
             "filmreel": true,
@@ -1796,7 +1796,7 @@
           "name": "Spin 2 Win",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "Wheel of Fortune",
+          "smell": "Game shows",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -1809,7 +1809,7 @@
           "name": "Jungle City",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "(PENDING)",
+          "smell": "Bananas",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -1822,7 +1822,7 @@
           "name": "Classic Pursuit",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games, based on level by The Drawer)",
-          "smell": "UFO",
+          "smell": "UFOs",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -1848,7 +1848,7 @@
           "name": "Heracles",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games, based on level by Exschwasion)",
-          "smell": "Circus",
+          "smell": "Circuses",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -1861,7 +1861,7 @@
           "name": "Artificial Chariot",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games with SimsimHI)",
-          "smell": "Monitor",
+          "smell": "Monitors",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -1874,7 +1874,7 @@
           "name": "Third Wave Flip-Flop",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "(PENDING)",
+          "smell": "\*doot*",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -1900,7 +1900,7 @@
           "name": "Final Hope",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games, based on level by Rikry)",
-          "smell": "(PENDING)",
+          "smell": "Avalanches",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -1913,7 +1913,7 @@
           "name": "Distance",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games with Fancybread)",
-          "smell": "(PENDING)",
+          "smell": "Vitamins",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -1926,7 +1926,7 @@
           "name": "Rose Garden",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games with hotduck, KanoKaz, NumbEr07)",
-          "smell": "(PENDING)",
+          "smell": "bnuuy",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -1939,7 +1939,7 @@
           "name": "Fear Grows",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "(PENDING)",
+          "smell": "Fairy Tales",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -1952,7 +1952,7 @@
           "name": "One Forgotten Night",
           "type": "Ultra Rare",
           "description": "(Level by Star4th)",
-          "smell": "(PENDING)",
+          "smell": "Sepia",
           "season": 8,
           "bonuses": {
             "filmreel": true,
@@ -1980,7 +1980,7 @@
           "name": "Night Wander (cnsouka Remix) (ADOFAI)",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games with Rikri)",
-          "smell": "(PENDING)",
+          "smell": "Candies",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -1993,7 +1993,7 @@
           "name": "La nuit de vif",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games with Rikri)",
-          "smell": "(PENDING)",
+          "smell": "Vampires",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -2306,7 +2306,7 @@
           "name": "NEW LIFE",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "(PENDING)",
+          "smell": "Holds",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -2319,7 +2319,7 @@
           "name": "sing sing red indigo",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "(PENDING)",
+          "smell": "Sequences",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -2332,7 +2332,7 @@
           "name": "No Hints Here! - A Minigame Collection of Fire and Ice!",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "(PENDING)",
+          "smell": "Garlic",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -2502,7 +2502,7 @@
           "name": "Statue (Discontinued)",
           "type": "Discontinued",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Brush",
+          "smell": "Bristles",
           "season": 8,
           "bonuses": {
             "oldfiles": true,
@@ -2516,7 +2516,7 @@
           "name": "Pig (Rare)",
           "type": "Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Throne",
+          "smell": "Thrones",
           "season": 8,
           "bonuses": {
             "okamiiscollar": true,
@@ -2530,7 +2530,7 @@
           "name": "Pig (Super Rare)",
           "type": "Super Rare",
           "description": "(Art by Stamps)",
-          "smell": "Throne",
+          "smell": "Thrones",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -2543,7 +2543,7 @@
           "name": "Pig (Ultra Rare)",
           "type": "Ultra Rare",
           "description": "(Art by BIrDIS)",
-          "smell": "Throne",
+          "smell": "Thrones",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -2556,7 +2556,7 @@
           "name": "Pig (Collector's)",
           "type": "Collector's",
           "description": "(Art by BIrDIS)",
-          "smell": "Throne",
+          "smell": "Thrones",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -2569,7 +2569,7 @@
           "name": "Pig (Alternate)",
           "type": "Alternate",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Trumpet",
+          "smell": "Trumpets",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true,
@@ -2583,7 +2583,7 @@
           "name": "Rat (Rare)",
           "type": "Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "Scepter",
+          "smell": "Rule Making",
           "season": 8,
           "bonuses": {
             "okamiiscollar": true,
@@ -2597,7 +2597,7 @@
           "name": "Rat (Super Rare)",
           "type": "Super Rare",
           "description": "(Art by Stamps)",
-          "smell": "Scepter",
+          "smell": "Rule Making",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -2610,7 +2610,7 @@
           "name": "Rat (Ultra Rare)",
           "type": "Ultra Rare",
           "description": "(Art by DPS2004)",
-          "smell": "Scepter",
+          "smell": "Rule Making",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -2623,7 +2623,7 @@
           "name": "Rat (Collector's)",
           "type": "Collector's",
           "description": "(Art by BIrDIS)",
-          "smell": "Scepter",
+          "smell": "Rule Making",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -2636,7 +2636,7 @@
           "name": "Rat (Alternate)",
           "type": "Alternate",
           "description": "(Art by Kyle Labriola)",
-          "smell": "(PENDING)",
+          "smell": "Stalking",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true,
@@ -2650,7 +2650,7 @@
           "name": "Goat (Rare)",
           "type": "Rare",
           "description": "(Art by Kyle Labriola)",
-          "smell": "(PENDING)",
+          "smell": "Private Surveillance",
           "season": 8,
           "bonuses": {
             "okamiiscollar": true,
@@ -2664,7 +2664,7 @@
           "name": "Goat (Super Rare)",
           "type": "Super Rare",
           "description": "(Art by Penny)",
-          "smell": "(PENDING)",
+          "smell": "Private Surveillance",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
@@ -2677,7 +2677,7 @@
           "name": "Goat (Collector's)",
           "type": "Collector's",
           "description": "(Art by BIrDIS)",
-          "smell": "(PENDING)",
+          "smell": "Private Surveillance",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
