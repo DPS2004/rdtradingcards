@@ -810,8 +810,8 @@ function command.run(message, mt, overwrite)
           price = math.random(13, 17)
         end
 
-        if cdb[nc].season == #seasontable then
-          price = price + 1
+        if cdb[nc].season == 8 then
+          price = price + 2
         end
 
         local stock = cdb[nc].chance * 4 + math.random(2, 5)

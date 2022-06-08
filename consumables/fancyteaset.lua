@@ -8,8 +8,11 @@ function item.run(uj, ujf, message, mt)
     uj.timesitemused = uj.timesitemused and uj.timesitemused + 1 or 1
     
     uj.conspt = "rustysword"
-    dpf.savejson(ujf, uj)
     message.channel:send("You set the **Fancy Tea Set** down on the traditional tea-drinking rug. This will surely lure in some battle-worn samurai into your location.")
+	local randtime = math.random(4,8)
+	uj.lastpull = uj.lastpull - randtime
+	message.channel:send('Also, your pull cooldown was decreased by '..randtime..' hours!')
+    dpf.savejson(ujf, uj)
   else
     message.channel:send("You already have a pull affecting item in use! You decide against using the **Fancy Tea Set** at this time.")
   end

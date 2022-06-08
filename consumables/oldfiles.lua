@@ -8,8 +8,11 @@ function item.run(uj, ujf, message, mt)
     uj.timesitemused = uj.timesitemused and uj.timesitemused + 1 or 1
     
     uj.conspt = "oldfiles"
-    dpf.savejson(ujf, uj)
     message.channel:send("You install some **Old Files** onto your computer. This will surely attract some old video game sprites.")
+	local randtime = math.random(4,8)
+	uj.lastpull = uj.lastpull - randtime
+	message.channel:send('Also, your pull cooldown was decreased by '..randtime..' hours!')
+    dpf.savejson(ujf, uj)
   else
     message.channel:send("You already have a pull affecting item in use! You decide against using the **Old Files** at this time.")
   end
