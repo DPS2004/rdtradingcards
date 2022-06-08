@@ -67,12 +67,10 @@
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Janitor (Art by BluPen)",
           "smell": "Chemicals",
           "season": 8,
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/945174244529168424/janitorc.png"
         },
-		
-		{
+        {
           "chance": 3,
           "filename": "nochtr",
           "name": "Nocht (Rare)",
@@ -120,11 +118,9 @@
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Nocht (Art by saladplainzone)",
           "smell": "ʎʞs ʇɥƃıu ǝɥʇ",
           "season": 8,
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944502315736518706/nochtc.png"
         },
-        
         {
           "chance": 3,
           "filename": "ernelr",
@@ -173,11 +169,9 @@
           "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Ernel (Art by TatonSlice)",
           "smell": "Firemen",
           "season": 8,
-          "bonuses": {
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944483022055567410/ernelc.png"
         },
-        
         {
           "chance": 1,
           "filename": "treetopgroup",
@@ -188,7 +182,7 @@
           "season": 8,
           "bonuses": {
             "animalplaceholder": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964289280635727882/treetopgroup.png"
         },
         {
@@ -202,7 +196,6 @@
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/975756010285322250/treetopgroupc.png"
         },
-        
         {
           "chance": 3,
           "filename": "unodosr",
@@ -213,7 +206,7 @@
           "season": 8,
           "bonuses": {
             "okamiiscollar": true,
-			"driftingmetronome": true
+            "driftingmetronome": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968948977590480936/unodosr.PNG"
         },
@@ -226,7 +219,7 @@
           "smell": "Collaboration",
           "season": 8,
           "bonuses": {
-			"driftingmetronome": true
+            "driftingmetronome": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968538101687406602/unodossr.png"
         },
@@ -239,7 +232,7 @@
           "smell": "Collaboration",
           "season": 8,
           "bonuses": {
-			"driftingmetronome": true
+            "driftingmetronome": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964732957220814858/unodosur.png"
         },
@@ -252,7 +245,7 @@
           "smell": "Collaboration",
           "season": 8,
           "bonuses": {
-			"driftingmetronome": true
+            "driftingmetronome": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964733031556468756/unodosc.png"
         },
@@ -265,13 +258,10 @@
           "smell": "Typography",
           "season": 8,
           "bonuses": {
-			"driftingmetronome": true
-		  },
+            "driftingmetronome": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964734048402571264/unodosdc.png"
         },
-		
-		
-		
         {
           "chance": 1,
           "filename": "ottodc",
@@ -281,13 +271,11 @@
           "smell": "Typography",
           "season": 8,
           "bonuses": {
-			"oldfiles": true,
-			"driftingmetronome": true
-		  },
+            "oldfiles": true,
+            "driftingmetronome": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964734115117154324/ottodc.png"
         },
-		
-       
         {
           "chance": 1,
           "filename": "editorgroup",
@@ -297,8 +285,8 @@
           "smell": "JSON",
           "season": 8,
           "bonuses": {
-			"driftingmetronome": true
-		  },
+            "driftingmetronome": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967943742394871859/editorgroup.png"
         },
         {
@@ -312,8 +300,6 @@
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968537920468287518/editorgroupc.png"
         },
-        
-        
         {
           "chance": 1,
           "filename": "swordgroup",
@@ -323,8 +309,8 @@
           "smell": "Fencing",
           "season": 8,
           "bonuses": {
-			"rustysword": true
-		  },
+            "rustysword": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968535895160553573/swordgroup.png"
         },
         {
@@ -338,8 +324,6 @@
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968537195650621450/swordgroupc.png"
         },
-        
-	   
         {
           "chance": 3,
           "filename": "rinr",
@@ -392,7 +376,7 @@
           "season": 8,
           "bonuses": {
             "collabplaceholder": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/908348918906093568/musedashgroup.png"
         },
         {
@@ -406,8 +390,6 @@
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/908351722890625104/musedashgroupc.png"
         },
-
-
         {
           "chance": 3,
           "filename": "bulbr",
@@ -417,8 +399,8 @@
           "smell": "Chlorophyll",
           "season": 8,
           "bonuses": {
-			"fanonplaceholder": true
-		  },
+            "fanonplaceholder": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944482689854091264/bulbr.png"
         },
         {
@@ -430,8 +412,8 @@
           "smell": "Chlorophyll",
           "season": 8,
           "bonuses": {
-			"fanonplaceholder": true
-		  },
+            "fanonplaceholder": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944505866172899328/bulbsr.png"
         },
         {
@@ -443,8 +425,8 @@
           "smell": "Chlorophyll",
           "season": 8,
           "bonuses": {
-			"fanonplaceholder": true
-		  },
+            "fanonplaceholder": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944505894954229820/bulbur.png"
         },
         {
@@ -467,14 +449,11 @@
           "smell": "Chlorophyll",
           "season": 8,
           "bonuses": {
-			"oldfiles": true,
-			"fanonplaceholder": true
-		  },
+            "oldfiles": true,
+            "fanonplaceholder": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/939372664013869106/bulbdc.png"
         },
-		
-		
-		
         {
           "chance": 3,
           "filename": "rodneydc",
@@ -485,12 +464,11 @@
           "season": 8,
           "bonuses": {
             "oversizedstethoscope": true,
-			"oldfiles": true,
-			"fanonplaceholder": true
+            "oldfiles": true,
+            "fanonplaceholder": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968949040081428490/rodneydc.png"
         },
-		
         {
           "chance": 3,
           "filename": "rodneyr",
@@ -502,12 +480,10 @@
           "bonuses": {
             "okamiiscollar": true,
             "oversizedstethoscope": true,
-			"fanonplaceholder": true
+            "fanonplaceholder": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968949039779426334/rodneyr.png"
         },
-		
-      
         {
           "chance": 3,
           "filename": "coolbirdr",
@@ -517,9 +493,9 @@
           "smell": "Embers",
           "season": 8,
           "bonuses": {
-			"fanonplaceholder": true,
-			"deluxebirdseed": true
-		  },
+            "fanonplaceholder": true,
+            "deluxebirdseed": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944482748410765352/coolbirdr.png"
         },
         {
@@ -531,9 +507,9 @@
           "smell": "Embers",
           "season": 8,
           "bonuses": {
-			"fanonplaceholder": true,
-			"deluxebirdseed": true
-		  },
+            "fanonplaceholder": true,
+            "deluxebirdseed": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
         },
         {
@@ -545,9 +521,9 @@
           "smell": "Embers",
           "season": 8,
           "bonuses": {
-			"fanonplaceholder": true,
-			"deluxebirdseed": true
-		  },
+            "fanonplaceholder": true,
+            "deluxebirdseed": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981261474506895421/coolbirdur.png"
         },
         {
@@ -571,18 +547,12 @@
           "season": 8,
           "bonuses": {
             "pocketdimension": true,
-			"fanonplaceholder": true,
-			"deluxebirdseed": true
-		  },
+            "fanonplaceholder": true,
+            "deluxebirdseed": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944482786608312341/coolbirdalt.png"
         },
-		
-		
-		
-		
-		
-		
-		{
+        {
           "chance": 2,
           "filename": "leperv",
           "name": "Le Perv",
@@ -596,7 +566,7 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968571722141925436/leperv.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "lepervdc",
           "name": "Le Perv (Discontinued)",
@@ -608,11 +578,11 @@
             "charcoalpencil": true,
             "rustysword": true,
             "lostnametag": true,
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968559070044897370/lepervdc.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "marionette",
           "name": "Marionette",
@@ -621,11 +591,11 @@
           "smell": "Puppetry",
           "season": 8,
           "bonuses": {
-			"valentinesdaycard": true
+            "valentinesdaycard": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973568970026270801/marionette.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "psycho",
           "name": "Psycho",
@@ -634,12 +604,12 @@
           "smell": "A Bad Time",
           "season": 8,
           "bonuses": {
-			"oversizedstethoscope": true,
-			"filmreel": true
+            "oversizedstethoscope": true,
+            "filmreel": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964743832413560882/psycho.gif"
         },
-		{
+        {
           "chance": 2,
           "filename": "pleasureisland",
           "name": "Take Me to Pleasure Island",
@@ -648,12 +618,12 @@
           "smell": "The Beach",
           "season": 8,
           "bonuses": {
-			"valentinesdaycard": true,
-			"rustysword": true
+            "valentinesdaycard": true,
+            "rustysword": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973572611600687104/pleasureisland.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "september",
           "name": "september",
@@ -666,7 +636,7 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972722034046038056/september.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "sdivine",
           "name": "Something Divine",
@@ -675,14 +645,13 @@
           "smell": "Supernatural Companionship",
           "season": 8,
           "bonuses": {
-			"cafemixtape": true,
-			"rustysword": true,
-			"paddedstickersheet": true
-			  
+            "cafemixtape": true,
+            "rustysword": true,
+            "paddedstickersheet": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973573566870224966/sdivine.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "lycoris",
           "name": "Lycoris",
@@ -696,7 +665,7 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972722033781801000/lycoris.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "deadlyslot",
           "name": "Deadly Slot Game",
@@ -710,7 +679,7 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972722034327044166/deadlyslot.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "dicebet",
           "name": "賽の賭け目",
@@ -719,13 +688,13 @@
           "smell": "Green Felt",
           "season": 8,
           "bonuses": {
-			"rustysword": true,
-			"charcoalpencil": true,
-			"lostnametag": true
+            "rustysword": true,
+            "charcoalpencil": true,
+            "lostnametag": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973576271445495859/dicebet.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "hotmilk",
           "name": "Hot Milk",
@@ -734,13 +703,13 @@
           "smell": "Cake",
           "season": 8,
           "bonuses": {
-			"duncecap": true,
-			"rustysword": true,
-			"filmreel": true
+            "duncecap": true,
+            "rustysword": true,
+            "filmreel": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964747864263774220/hotmilk.gif"
         },
-		{
+        {
           "chance": 2,
           "filename": "thelick",
           "name": "\"The Lick\" in all 12 keys",
@@ -749,8 +718,7 @@
           "smell": "Repetition",
           "season": 8,
           "bonuses": {
-			"duncecap": true
-			  
+            "duncecap": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973577552067190804/thelick.png"
         },
@@ -765,7 +733,7 @@
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967933162187542599/rhythmfrog.p8.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "godrace",
           "name": "God Race",
@@ -774,12 +742,11 @@
           "smell": "Ink Plates",
           "season": 8,
           "bonuses": {
-			"paddedstickersheet": true
-			  
+            "paddedstickersheet": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973579412824018974/godrace.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "bdbn",
           "name": "By Day, By Night VIP",
@@ -788,13 +755,12 @@
           "smell": "Thunder",
           "season": 8,
           "bonuses": {
-			"filmreel": true,
-			"paddedstickersheet": true
-			  
+            "filmreel": true,
+            "paddedstickersheet": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973588973559615598/bdbn.gif"
         },
-		{
+        {
           "chance": 2,
           "filename": "dearfellow",
           "name": "Dear Fellow Traveler",
@@ -803,14 +769,13 @@
           "smell": "The Wilderness",
           "season": 8,
           "bonuses": {
-			"deluxebirdseed": true,
-			"paddedstickersheet": true,
-			"valentinesdaycard": true
-			  
+            "deluxebirdseed": true,
+            "paddedstickersheet": true,
+            "valentinesdaycard": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973597092457107516/dearfellow.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "kidsnoreturn",
           "name": "Kids No Return",
@@ -819,11 +784,11 @@
           "smell": "Differences in Perspective",
           "season": 8,
           "bonuses": {
-			      "valentinesdaycard": true
+            "valentinesdaycard": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973600631103316019/kidsnoreturn.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "yesman",
           "name": "イヱスマン",
@@ -837,7 +802,7 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973610432403222558/yesman.gif"
         },
-		{
+        {
           "chance": 2,
           "filename": "uprising",
           "name": "Uprising",
@@ -846,14 +811,13 @@
           "smell": "Vyrmstuff",
           "season": 8,
           "bonuses": {
-			"filmreel": true,
-			"deviltail": true,
-			"paddedstickersheet": true
-			  
+            "filmreel": true,
+            "deviltail": true,
+            "paddedstickersheet": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973617695692042251/uprising.gif"
         },
-		{
+        {
           "chance": 2,
           "filename": "bukiyona",
           "name": "不器用な男",
@@ -862,12 +826,11 @@
           "smell": "Journals",
           "season": 8,
           "bonuses": {
-			"valentinesdaycard": true
-			  
+            "valentinesdaycard": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973619585678970951/bukiyona.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "stillfeel",
           "name": "still feel.",
@@ -875,12 +838,10 @@
           "description": "(Level by DPS2004, huantian, ThatOneGuy, and bunner)",
           "smell": "Stardust",
           "season": 8,
-          "bonuses": {
-			  
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973621443432677427/stillfeel.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "ohurricane",
           "name": "OTENAMI Hurricane",
@@ -888,12 +849,10 @@
           "description": "(Level by MarioMak967)",
           "smell": "Marketable Plushies",
           "season": 8,
-          "bonuses": {
-			  
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967919656306372668/ohurricane.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "ioverdose",
           "name": "INTERNET OVERDOSE",
@@ -902,12 +861,11 @@
           "smell": "Death, as well as Bending",
           "season": 8,
           "bonuses": {
-			"valentinesdaycard":true
-			  
+            "valentinesdaycard": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964734780061143050/ioverdose.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "madiq",
           "name": "MAD IQs",
@@ -916,13 +874,12 @@
           "smell": "Pipe Bombs",
           "season": 8,
           "bonuses": {
-			"filmreel": true,
-			"rustysword": true
-			  
+            "filmreel": true,
+            "rustysword": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/975762667195236403/madiqs.gif"
         },
-		{
+        {
           "chance": 2,
           "filename": "4am",
           "name": "4AM",
@@ -930,12 +887,10 @@
           "description": "(Level by Kin and CrazedJack)",
           "smell": "Sleeplessness",
           "season": 8,
-          "bonuses": {
-			  
-          },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964727654622326794/4am.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "dreamland",
           "name": "DREAMLAND",
@@ -944,14 +899,13 @@
           "smell": "Smoke",
           "season": 8,
           "bonuses": {
-			"cafemixtape": true,
-			"rustysword": true,
-			"oversizedstethoscope": true
-			  
+            "cafemixtape": true,
+            "rustysword": true,
+            "oversizedstethoscope": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964724801438634004/dreamland.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "kuguru",
           "name": "くぐる",
@@ -960,12 +914,12 @@
           "smell": "Ivory",
           "season": 8,
           "bonuses": {
-			"cafemixtape": true,
-			"oversizedstethoscope": true
+            "cafemixtape": true,
+            "oversizedstethoscope": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/975765344742424646/kuguru.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "finallylanding",
           "name": "We're Finally Landing",
@@ -974,13 +928,12 @@
           "smell": "Sodium Chloride",
           "season": 8,
           "bonuses": {
-			"charcoalpencil": true,
-			"rustysword": true
-			  
+            "charcoalpencil": true,
+            "rustysword": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964724541349826560/finallylanding.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "sneakman",
           "name": "Sneakman",
@@ -989,11 +942,11 @@
           "smell": "Vandalism",
           "season": 8,
           "bonuses": {
-			"cafemixtape": true
+            "cafemixtape": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964724004827066398/sneakman.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "trafficjam",
           "name": "Traffic Jam",
@@ -1002,13 +955,13 @@
           "smell": "Asphalt",
           "season": 8,
           "bonuses": {
-			"filmreel": true,
-			"rustysword": true,
-			"lostnametag": true
+            "filmreel": true,
+            "rustysword": true,
+            "lostnametag": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/975768922102071306/trafficjam.gif"
         },
-		{
+        {
           "chance": 2,
           "filename": "analys",
           "name": "ANALYS",
@@ -1017,12 +970,12 @@
           "smell": "Vaporwave",
           "season": 8,
           "bonuses": {
-			"rustysword": true,
-			"cafemixtape": true
+            "rustysword": true,
+            "cafemixtape": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964723672009039942/analys.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "mpp",
           "name": "Mad Piano Party",
@@ -1031,13 +984,13 @@
           "smell": "Magic Shapes",
           "season": 8,
           "bonuses": {
-			"filmreel": true,
-			"paddedstickersheet": true,
-			"deviltail": true
+            "filmreel": true,
+            "paddedstickersheet": true,
+            "deviltail": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968847975226933258/mpp.gif"
         },
-		{
+        {
           "chance": 2,
           "filename": "sad",
           "name": "SAD",
@@ -1046,13 +999,12 @@
           "smell": "A Disproportionately Small Gap",
           "season": 8,
           "bonuses": {
-			  "deluxebirdseed": true,
-			  "rustysword": true
-			  
+            "deluxebirdseed": true,
+            "rustysword": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964724263485599854/sad.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "transformation",
           "name": "変身",
@@ -1061,7 +1013,7 @@
           "smell": "Gregor Samsa",
           "season": 8,
           "bonuses": {
-	        "cafemixtape": true
+            "cafemixtape": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964723384166539304/transformation.png"
         },
@@ -1075,13 +1027,11 @@
           "season": 8,
           "bonuses": {
             "duncecap": true,
-			"oversizedstethoscope": true
+            "oversizedstethoscope": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964919132279689267/coffeebreak.png"
         },
-		
-		
-		{
+        {
           "chance": 1,
           "filename": "pixelplantdc",
           "name": "Pixel Plantation (Discontinued)",
@@ -1090,13 +1040,11 @@
           "smell": "Potted Plants",
           "season": 8,
           "bonuses": {
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967950366987677707/pixelplantdc.png"
         },
-		
-		
-		{
+        {
           "chance": 1,
           "filename": "samuraialtalt",
           "name": "Samurai (Alternate Alternate)",
@@ -1110,9 +1058,7 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964269545000951858/samuraialtalt.png"
         },
-		
-		
-		{
+        {
           "chance": 3,
           "filename": "kanyer",
           "name": "Kanye (Rare)",
@@ -1139,11 +1085,7 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964276418055897208/kanyeur.png"
         },
-		
-		
-		
-		
-		{
+        {
           "chance": 3,
           "filename": "decor",
           "name": "Decorations (Rare)",
@@ -1183,9 +1125,6 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972711780361060383/decour.png"
         },
-		
-
-
         {
           "chance": 1,
           "filename": "bidc",
@@ -1196,7 +1135,7 @@
           "season": 8,
           "bonuses": {
             "rustysword": true,
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964942677214900384/bidc.png"
         },
@@ -1210,7 +1149,7 @@
           "season": 8,
           "bonuses": {
             "rustysword": true,
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964942676933894294/technodc.png"
         },
@@ -1224,7 +1163,7 @@
           "season": 8,
           "bonuses": {
             "rustysword": true,
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964942677542051860/dubstepdc.png"
         },
@@ -1251,7 +1190,7 @@
           "season": 8,
           "bonuses": {
             "valentinesdaycard": true,
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964942676497682483/intimatedc.png"
         },
@@ -1265,7 +1204,7 @@
           "season": 8,
           "bonuses": {
             "valentinesdaycard": true,
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964958984190693406/cnydc.png"
         },
@@ -1280,7 +1219,7 @@
           "bonuses": {
             "rustysword": true,
             "valentinesdaycard": true,
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964958983335071744/intimatenightdc.png"
         },
@@ -1295,7 +1234,7 @@
           "bonuses": {
             "rustysword": true,
             "valentinesdaycard": true,
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964958983695761418/steinwaydc.png"
         },
@@ -1310,7 +1249,7 @@
           "bonuses": {
             "rustysword": true,
             "valentinesdaycard": true,
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964958983943233536/steinwayreprisedc.png"
         },
@@ -1325,7 +1264,7 @@
           "bonuses": {
             "rustysword": true,
             "valentinesdaycard": true,
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964962284147462164/classydc.png"
         },
@@ -1340,7 +1279,7 @@
           "bonuses": {
             "rustysword": true,
             "valentinesdaycard": true,
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964962283686084688/classynightdc.png"
         },
@@ -1354,7 +1293,7 @@
           "season": 8,
           "bonuses": {
             "rustysword": true,
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964962283883204708/loungedc.png"
         },
@@ -1368,12 +1307,10 @@
           "season": 8,
           "bonuses": {
             "cafemixtape": true,
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964964821902704680/svtdc.png"
         },
-
-
         {
           "chance": 2,
           "filename": "unwell",
@@ -1395,7 +1332,7 @@
           "description": "(Level by 7th Beat Games)",
           "smell": "The Twenty-first Century",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/965029510938509382/power.png"
         },
         {
@@ -1406,7 +1343,7 @@
           "description": "(Level by 7th Beat Games)",
           "smell": "Finger Snaps",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/965029510485528637/starboy.png"
         },
         {
@@ -1498,13 +1435,10 @@
           "smell": "Where it all began",
           "season": 8,
           "bonuses": {
-			"oldfiles": true
-		  },
+            "oldfiles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/970190911415922688/rdproto.png"
         },
-        
-        
-        
         {
           "chance": 2,
           "filename": "nightwander",
@@ -1518,7 +1452,6 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972981235133599804/nightwander.png"
         },
-        
         {
           "chance": 2,
           "filename": "unmelting",
@@ -1529,11 +1462,10 @@
           "season": 8,
           "bonuses": {
             "oversizedstethoscope": true,
-			"paddedstickersheet": true
+            "paddedstickersheet": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972981292285194260/unmelting.png"
         },
-        
         {
           "chance": 2,
           "filename": "motivation",
@@ -1548,8 +1480,6 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972981398757589082/motivation.png"
         },
-        
-        
         {
           "chance": 3,
           "filename": "pogsomniacr",
@@ -1577,13 +1507,12 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981261431578165298/pogsomniacur.png"
         },
-		
         {
           "chance": 1,
           "filename": "beansur",
           "name": "Beans (Ultra Rare)",
           "type": "Ultra Rare",
-		  "description": "(Art by Fancybread)",
+          "description": "(Art by Fancybread)",
           "smell": ":beans:",
           "season": 8,
           "bonuses": {
@@ -1591,7 +1520,6 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973621696558940170/beansur.png"
         },
-        
         {
           "chance": 2,
           "filename": "pinedrop",
@@ -1601,11 +1529,10 @@
           "smell": "Natural Notes",
           "season": 8,
           "bonuses": {
-			"valentinesdaycard": true
-		  },
+            "valentinesdaycard": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973005669844254770/pinedrop.png"
         },
-        
         {
           "chance": 2,
           "filename": "panopticon",
@@ -1615,12 +1542,11 @@
           "smell": "Observation",
           "season": 8,
           "bonuses": {
-			"deviltail": true,
-			"paddedstickersheet": true
-		  },
+            "deviltail": true,
+            "paddedstickersheet": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973005669517103104/panopticon.png"
         },
-        
         {
           "chance": 2,
           "filename": "ebcs",
@@ -1630,17 +1556,16 @@
           "smell": "Channel Surfing",
           "season": 8,
           "bonuses": {
-			"cafemixtape": true,
-			"oversizedstethoscope": true,
-			"hardcandy": true,
-			"charcoalpencil": true,
-			"valentinesdaycard": true,
-			"rustysword": true,
-			"deluxebirdseed": true
-		  },
+            "cafemixtape": true,
+            "oversizedstethoscope": true,
+            "hardcandy": true,
+            "charcoalpencil": true,
+            "valentinesdaycard": true,
+            "rustysword": true,
+            "deluxebirdseed": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973005669059944479/ebcs.png"
         },
-        
         {
           "chance": 2,
           "filename": "turinglove",
@@ -1649,10 +1574,9 @@
           "description": "(Level by thefinals)",
           "smell": "Artificial Emotions",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973006006697213953/turinglove.png"
         },
-        
         {
           "chance": 2,
           "filename": "sunset",
@@ -1662,12 +1586,11 @@
           "smell": "Solid Colors",
           "season": 8,
           "bonuses": {
-			"rustysword": true,
-			"valentinesdaycard": true
-		  },
+            "rustysword": true,
+            "valentinesdaycard": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973006006453927986/sunset.png"
         },
-        
         {
           "chance": 2,
           "filename": "options",
@@ -1677,12 +1600,11 @@
           "smell": "Not Enough Information",
           "season": 8,
           "bonuses": {
-			"lostnametag": true,
-			"paddedstickersheet": true
-		  },
+            "lostnametag": true,
+            "paddedstickersheet": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973006006999212082/options.png"
         },
-        
         {
           "chance": 2,
           "filename": "underground",
@@ -1692,11 +1614,10 @@
           "smell": "Sewage",
           "season": 8,
           "bonuses": {
-			"rustysword": true
-		  },
+            "rustysword": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973006640074878976/underground.png"
         },
-        
         {
           "chance": 2,
           "filename": "hymnweekend",
@@ -1705,10 +1626,9 @@
           "description": "(Level by 1257Plays)",
           "smell": "Alcohol",
           "season": 8,
-          "bonuses": { },
+          "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973006640771125308/hymnweekend.png"
         },
-        
         {
           "chance": 3,
           "filename": "blipblop",
@@ -1722,7 +1642,6 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973006640506867742/blipblop.png"
         },
-        
         {
           "chance": 2,
           "filename": "tunnelvision",
@@ -1732,13 +1651,12 @@
           "smell": "Dimmed Lights",
           "season": 8,
           "bonuses": {
-			"valentinesdaycard": true,
-			"cafemixtape": true,
-			"rustysword": true
-		  },
+            "valentinesdaycard": true,
+            "cafemixtape": true,
+            "rustysword": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973007022356303942/tunnelvision.png"
         },
-        
         {
           "chance": 2,
           "filename": "stuffisway",
@@ -1748,11 +1666,10 @@
           "smell": "Phony Ponies",
           "season": 8,
           "bonuses": {
-			"deluxebirdseed": true
-		  },
+            "deluxebirdseed": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973007021785886730/stuffisway.png"
         },
-        
         {
           "chance": 2,
           "filename": "cblues",
@@ -1762,13 +1679,12 @@
           "smell": "Compiler Errors",
           "season": 8,
           "bonuses": {
-			"fieldjournal": true,
-			"valentinesdaycard": true,
-			"paddedstickersheet": true
-		  },
+            "fieldjournal": true,
+            "valentinesdaycard": true,
+            "paddedstickersheet": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973007022628962394/cblues.png"
         },
-        
         {
           "chance": 2,
           "filename": "zircon",
@@ -1778,25 +1694,25 @@
           "smell": "Cave Rescues",
           "season": 8,
           "bonuses": {
-			"deluxebirdseed": true,
-			"rustysword": true
-		  },
+            "deluxebirdseed": true,
+            "rustysword": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/975469891157127188/zircon.png"
         },
-		{
-      "chance": 2,
-      "filename": "mybrothe",
-      "name": "My Brothe: An Email Funk Opera",
-      "type": "Super Rare",
-      "description": "(Level By Random Guy JCI)",
-      "smell": "Blackmail",
-      "season": 8,
-      "bonuses": {
-        "cafemixtape": true
-      },
-      "embed": "https://cdn.discordapp.com/attachments/829197797789532181/984011370003582976/mybrothe.png"
-    },
-		{
+        {
+          "chance": 2,
+          "filename": "mybrothe",
+          "name": "My Brothe: An Email Funk Opera",
+          "type": "Super Rare",
+          "description": "(Level By Random Guy JCI)",
+          "smell": "Blackmail",
+          "season": 8,
+          "bonuses": {
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/984011370003582976/mybrothe.png"
+        },
+        {
           "chance": 2,
           "filename": "1-x",
           "name": "A Dance of Fire and Ice",
@@ -1806,10 +1722,10 @@
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981265498731839528/1-x.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "2-x",
           "name": "Offbeats",
@@ -1819,10 +1735,10 @@
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981265518956802048/2-x.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "3-x",
           "name": "THE WIND-UP",
@@ -1832,10 +1748,10 @@
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981265539731161148/3-x.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "4-x",
           "name": "Love Letters",
@@ -1845,10 +1761,10 @@
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981265555564679218/4-x.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "5-x",
           "name": "The Midnight Train",
@@ -1858,10 +1774,10 @@
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981265570655772682/5-x.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "6-x",
           "name": "PULSE",
@@ -1871,10 +1787,10 @@
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981265589492387840/6-x.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "b-x",
           "name": "Thanks For Playing My Game",
@@ -1883,12 +1799,12 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			  "filmreel": true,
-			  "swirlymarbles": true
-		  },
+            "filmreel": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983038686503530556/b-x.gif"
         },
-		{
+        {
           "chance": 2,
           "filename": "7-x",
           "name": "Spin 2 Win",
@@ -1898,10 +1814,10 @@
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981265651857510460/7-x.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "8-x",
           "name": "Jungle City",
@@ -1911,10 +1827,10 @@
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981265671046447124/8-x.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "9-x",
           "name": "Classic Pursuit",
@@ -1924,10 +1840,10 @@
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981265696803676281/9-x.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "10-x",
           "name": "Butterfly Planet",
@@ -1937,10 +1853,10 @@
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981265717607399434/10-x.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "11-x",
           "name": "Heracles",
@@ -1950,10 +1866,10 @@
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981265741145866240/11-x.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "12-x",
           "name": "Artificial Chariot",
@@ -1963,10 +1879,10 @@
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981265757973393518/12-x.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "xf-x",
           "name": "Third Wave Flip-Flop",
@@ -1976,10 +1892,10 @@
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981266714274721862/xf-x.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "xc-x",
           "name": "Credits",
@@ -1989,10 +1905,10 @@
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981266729315471420/xc-x.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "xh-x",
           "name": "Final Hope",
@@ -2002,10 +1918,10 @@
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981266834051453050/xh-x.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "pa-x",
           "name": "Distance",
@@ -2015,10 +1931,10 @@
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981266900170473532/pa-x.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "xr-x",
           "name": "Rose Garden",
@@ -2028,10 +1944,10 @@
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981266959293353984/xr-x.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "rj-x",
           "name": "Fear Grows",
@@ -2041,10 +1957,10 @@
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267000913444895/rj-x.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "xo-x",
           "name": "One Forgotten Night",
@@ -2053,12 +1969,12 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"filmreel": true,
-			"swirlymarbles": true
-		  },
+            "filmreel": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983038742698803250/xo-x.gif"
         },
-		{
+        {
           "chance": 1,
           "filename": "xt-x",
           "name": "Options (ADOFAI)",
@@ -2067,12 +1983,12 @@
           "smell": "Information",
           "season": 8,
           "bonuses": {
-			"filmreel": true,
-			"swirlymarbles": true
-		  },
+            "filmreel": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983038771366875136/xt-x.gif"
         },
-		{
+        {
           "chance": 2,
           "filename": "mn-x",
           "name": "Night Wander (cnsouka Remix) (ADOFAI)",
@@ -2082,10 +1998,10 @@
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267628318412840/mn-x.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "ml-x",
           "name": "La nuit de vif",
@@ -2095,10 +2011,10 @@
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267649717755944/ml-x.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "mo-x",
           "name": "EMOMOMO",
@@ -2107,12 +2023,12 @@
           "smell": ":thinking:",
           "season": 8,
           "bonuses": {
-			"filmreel": true,
-			"swirlymarbles": true
-		  },
+            "filmreel": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983038840350572544/mo-x.gif"
         },
-		{
+        {
           "chance": 2,
           "filename": "funkynow",
           "name": "MAKE IT FUNKY NOW",
@@ -2122,10 +2038,10 @@
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267361229324289/funkynow.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "barrage",
           "name": "Barrage",
@@ -2135,10 +2051,10 @@
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267381269692466/barrage.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "finalphase",
           "name": "Final Phase",
@@ -2148,10 +2064,10 @@
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267416405393449/finalphase.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "siriusa",
           "name": "Sirius A",
@@ -2161,10 +2077,10 @@
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267471531134976/siriusa.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "ruby",
           "name": "Ruby",
@@ -2174,10 +2090,10 @@
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267502015320064/ruby.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "burn",
           "name": "Burn",
@@ -2187,10 +2103,10 @@
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267544642043964/burn.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "greatfury",
           "name": "Great Fury of Heaven",
@@ -2199,12 +2115,12 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"filmreel": true,
-			"swirlymarbles": true
-		  },
+            "filmreel": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983038889553977384/greatfury.gif"
         },
-		{
+        {
           "chance": 2,
           "filename": "feraleasy",
           "name": "Feral (Easy)",
@@ -2213,12 +2129,12 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"filmreel": true,
-			"swirlymarbles": true
-		  },
+            "filmreel": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983039173290233856/feraleasy.gif"
         },
-		{
+        {
           "chance": 1,
           "filename": "feralnormal",
           "name": "Feral (Normal)",
@@ -2227,12 +2143,12 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"filmreel": true,
-			"swirlymarbles": true
-		  },
+            "filmreel": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983039209583570985/feralnormal.gif"
         },
-		{
+        {
           "chance": 2,
           "filename": "blackandwhite",
           "name": "Black And White (short)",
@@ -2241,12 +2157,12 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"filmreel": true,
-			"swirlymarbles": true
-		  },
+            "filmreel": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983039281025134682/blackandwhite.gif"
         },
-		{
+        {
           "chance": 2,
           "filename": "skyscape",
           "name": "Skyscape",
@@ -2255,11 +2171,11 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983039058701869106/skyscape.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "skyscapeorgel",
           "name": "Skyscape (Orgel Ver.)",
@@ -2268,11 +2184,11 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983039082038984805/skyscapeorgel.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "greatgreat",
           "name": "Great Great",
@@ -2281,12 +2197,12 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"filmreel": true,
-			"swirlymarbles": true
-		  },
+            "filmreel": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983039357600559144/greatgreat.gif"
         },
-		{
+        {
           "chance": 1,
           "filename": "1-xdc",
           "name": "A Dance of Fire and Ice (Discontinued)",
@@ -2295,12 +2211,12 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"oldfiles": true,
-			"swirlymarbles": true
-		  },
+            "oldfiles": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267114654568468/1-xdc.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "2-xdc",
           "name": "Offbeats (Discontinued)",
@@ -2309,12 +2225,12 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"oldfiles": true,
-			"swirlymarbles": true
-		  },
+            "oldfiles": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267133424074752/2-xdc.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "3-xdc",
           "name": "THE WIND-UP (Discontinued)",
@@ -2323,12 +2239,12 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"oldfiles": true,
-			"swirlymarbles": true
-		  },
+            "oldfiles": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267152529145906/3-xdc.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "4-xdc",
           "name": "Love Letters (Discontinued)",
@@ -2337,12 +2253,12 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"oldfiles": true,
-			"swirlymarbles": true
-		  },
+            "oldfiles": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267171030204586/4-xdc.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "5-xdc",
           "name": "The Midnight Train (Discontinued)",
@@ -2351,12 +2267,12 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"oldfiles": true,
-			"swirlymarbles": true
-		  },
+            "oldfiles": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267190244331640/5-xdc.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "6-xdc",
           "name": "PULSE (Discontinued)",
@@ -2365,12 +2281,12 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"oldfiles": true,
-			"swirlymarbles": true
-		  },
+            "oldfiles": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267209269673995/6-xdc.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "b-xdc",
           "name": "Thanks For Playing My Game (Discontinued)",
@@ -2379,12 +2295,12 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"oldfiles": true,
-			"swirlymarbles": true
-		  },
+            "oldfiles": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267243159679027/b-xdc.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "xf-xdc",
           "name": "Third Wave Flip-Flop (Discontinued)",
@@ -2393,12 +2309,12 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"oldfiles": true,
-			"swirlymarbles": true
-		  },
+            "oldfiles": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267277645234246/xf-xdc.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "t1-x",
           "name": "NEW LIFE",
@@ -2407,11 +2323,11 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983023216928915496/t1-x.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "t2-x",
           "name": "sing sing red indigo",
@@ -2420,11 +2336,11 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983023247803174952/t2-x.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "t3-x",
           "name": "No Hints Here! - A Minigame Collection of Fire and Ice!",
@@ -2433,11 +2349,11 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983023271098335242/t3-x.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "t4-x",
           "name": "Third Sun",
@@ -2446,11 +2362,11 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983023287791657040/t4-x.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "t5-x",
           "name": "Divine Intervention",
@@ -2459,11 +2375,11 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983023312726818847/t5-x.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "t1-ex",
           "name": "NEW LIFE (EX)",
@@ -2472,11 +2388,11 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983024094368919612/t1-ex.gif"
         },
-		{
+        {
           "chance": 1,
           "filename": "t2-ex",
           "name": "sing sing red indigo (EX)",
@@ -2485,11 +2401,11 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983024281556496384/t2-ex.gif"
         },
-		{
+        {
           "chance": 1,
           "filename": "t3-ex",
           "name": "No Hints Here! - The Slumpage Edition",
@@ -2498,11 +2414,11 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983024357590855690/t3-ex.gif"
         },
-		{
+        {
           "chance": 1,
           "filename": "t4-ex",
           "name": "Third Sun (EX)",
@@ -2511,11 +2427,11 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983024386573496380/t4-ex.gif"
         },
-		{
+        {
           "chance": 2,
           "filename": "puzzlerooms",
           "name": "Puzzle Rooms",
@@ -2524,11 +2440,11 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983025505466974248/puzzlerooms.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "minesweeper",
           "name": "Minesweeper",
@@ -2537,12 +2453,11 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983025558302621777/minesweeper.png"
         },
-
-		{
+        {
           "chance": 3,
           "filename": "statuer",
           "name": "Statue (Rare)",
@@ -2551,12 +2466,12 @@
           "smell": "Chains",
           "season": 8,
           "bonuses": {
-			"okamiiscollar": true,
-			"swirlymarbles": true
-		  },
+            "okamiiscollar": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996214007709706/statuer.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "statuesr",
           "name": "Statue (Super Rare)",
@@ -2565,11 +2480,11 @@
           "smell": "Chains",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996230860406844/statuesr.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "statueur",
           "name": "Statue (Ultra Rare)",
@@ -2578,11 +2493,11 @@
           "smell": "Chains",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996250758185040/statueur.png"
         },
-		{
+        {
           "chance": 0,
           "filename": "statuec",
           "name": "Statue (Collector's)",
@@ -2591,11 +2506,11 @@
           "smell": "Chains",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996266679775262/statuec.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "statuedc",
           "name": "Statue (Discontinued)",
@@ -2604,13 +2519,12 @@
           "smell": "Brush",
           "season": 8,
           "bonuses": {
-			"oldfiles": true,
-			"swirlymarbles": true
-		  },
+            "oldfiles": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996282655870976/statuedc.png"
         },
-
-		{
+        {
           "chance": 3,
           "filename": "pigr",
           "name": "Pig (Rare)",
@@ -2619,12 +2533,12 @@
           "smell": "Throne",
           "season": 8,
           "bonuses": {
-			"okamiiscollar": true,
-			"swirlymarbles": true
-		  },
+            "okamiiscollar": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996325253226556/pigr.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "pigsr",
           "name": "Pig (Super Rare)",
@@ -2633,11 +2547,11 @@
           "smell": "Throne",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996347923435520/pigsr.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "pigur",
           "name": "Pig (Ultra Rare)",
@@ -2646,11 +2560,11 @@
           "smell": "Throne",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996368387465246/pigur.png"
         },
-		{
+        {
           "chance": 0,
           "filename": "pigc",
           "name": "Pig (Collector's)",
@@ -2659,11 +2573,11 @@
           "smell": "Throne",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996396527034398/pigc.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "pigalt",
           "name": "Pig (Alternate)",
@@ -2672,13 +2586,12 @@
           "smell": "Trumpet",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true,
-			"pocketdimension": true
-		  },
+            "swirlymarbles": true,
+            "pocketdimension": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996418865901609/pigalt.png"
         },
-
-		{
+        {
           "chance": 3,
           "filename": "ratr",
           "name": "Rat (Rare)",
@@ -2687,12 +2600,12 @@
           "smell": "Scepter",
           "season": 8,
           "bonuses": {
-			"okamiiscollar": true,
-			"swirlymarbles": true
-		  },
+            "okamiiscollar": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996464915185694/ratr.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "ratsr",
           "name": "Rat (Super Rare)",
@@ -2701,11 +2614,11 @@
           "smell": "Scepter",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996482552221776/ratsr.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "ratur",
           "name": "Rat (Ultra Rare)",
@@ -2714,11 +2627,11 @@
           "smell": "Scepter",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996495852355634/ratur.png"
         },
-		{
+        {
           "chance": 0,
           "filename": "ratc",
           "name": "Rat (Collector's)",
@@ -2727,11 +2640,11 @@
           "smell": "Scepter",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996520007360562/ratc.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "ratalt",
           "name": "Rat (Alternate)",
@@ -2740,13 +2653,12 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true,
-			"pocketdimension": true
-		  },
+            "swirlymarbles": true,
+            "pocketdimension": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996538202247188/ratalt.png"
         },
-
-		{
+        {
           "chance": 3,
           "filename": "goatr",
           "name": "Goat (Rare)",
@@ -2755,12 +2667,12 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"okamiiscollar": true,
-			"swirlymarbles": true
-		  },
+            "okamiiscollar": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996580950585344/goatr.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "goatsr",
           "name": "Goat (Super Rare)",
@@ -2769,11 +2681,11 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996593705468014/goatsr.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "goatur",
           "name": "Goat (Ultra Rare)",
@@ -2782,11 +2694,11 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png"
         },
-		{
+        {
           "chance": 0,
           "filename": "goatc",
           "name": "Goat (Collector's)",
@@ -2795,11 +2707,11 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996610310721576/goatc.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "goatalt",
           "name": "Goat (Alternate)",
@@ -2808,14 +2720,12 @@
           "smell": "(PENDING)",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true,
-			"pocketdimension": true
-		  },
+            "swirlymarbles": true,
+            "pocketdimension": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996630984433724/goatalt.png"
         },
-
-
-		{
+        {
           "chance": 3,
           "filename": "rabbitr",
           "name": "Rabbit (Rare)",
@@ -2824,12 +2734,12 @@
           "smell": "x2",
           "season": 8,
           "bonuses": {
-			"okamiiscollar": true,
-			"swirlymarbles": true
-		  },
+            "okamiiscollar": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983994600643510373/rabbitr.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "rabbitsr",
           "name": "Rabbit (Super Rare)",
@@ -2838,11 +2748,11 @@
           "smell": "x2",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983994622244179979/rabbitsr.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "rabbitur",
           "name": "Rabbit (Ultra Rare)",
@@ -2851,11 +2761,11 @@
           "smell": "x2",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983994656020918322/rabbitur.png"
         },
-		{
+        {
           "chance": 0,
           "filename": "rabbitc",
           "name": "Rabbit (Collector's)",
@@ -2864,11 +2774,11 @@
           "smell": "x2",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983994708672000010/rabbitc.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "rabbitalt",
           "name": "Rabbit (Alternate)",
@@ -2877,13 +2787,12 @@
           "smell": "x4",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true,
-			"pocketdimension": true
-		  },
+            "swirlymarbles": true,
+            "pocketdimension": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983994735154835507/rabbitalt.png"
         },
-
-		{
+        {
           "chance": 3,
           "filename": "snailr",
           "name": "Snail (Rare)",
@@ -2892,12 +2801,12 @@
           "smell": "x0.5",
           "season": 8,
           "bonuses": {
-			"okamiiscollar": true,
-			"swirlymarbles": true
-		  },
+            "okamiiscollar": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983995984294064198/snailr.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "snailsr",
           "name": "Snail (Super Rare)",
@@ -2906,11 +2815,11 @@
           "smell": "x0.5",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983995999548751922/snailsr.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "snailur",
           "name": "Snail (Ultra Rare)",
@@ -2919,11 +2828,11 @@
           "smell": "x0.5",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996017089318952/snailur.png"
         },
-		{
+        {
           "chance": 0,
           "filename": "snailc",
           "name": "Rabbit (Collector's)",
@@ -2932,11 +2841,11 @@
           "smell": "x0.5",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996034067886150/snailc.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "snailalt",
           "name": "Snail (Alternate)",
@@ -2945,13 +2854,12 @@
           "smell": "x0.25",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true,
-			"pocketdimension": true
-		  },
+            "swirlymarbles": true,
+            "pocketdimension": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996053869174834/snailalt.png"
         },
-		
-		{
+        {
           "chance": 3,
           "filename": "charlier",
           "name": "Charla Tan (Rare)",
@@ -2960,12 +2868,12 @@
           "smell": "Pentagons",
           "season": 8,
           "bonuses": {
-			"okamiiscollar": true,
-			"swirlymarbles": true
-		  },
+            "okamiiscollar": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/980991324679462993/charlier.png"
         },
-		{
+        {
           "chance": 3,
           "filename": "charlieur",
           "name": "Charla Tan (Ultra Rare)",
@@ -2974,13 +2882,11 @@
           "smell": "Pentagons",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/980993747343015967/charlieur.png"
         },
-		
-		
-		{
+        {
           "chance": 3,
           "filename": "sefr",
           "name": "Sef (Rare)",
@@ -2989,12 +2895,12 @@
           "smell": "Mutiny",
           "season": 8,
           "bonuses": {
-			"okamiiscollar": true,
-			"swirlymarbles": true
-		  },
+            "okamiiscollar": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/984008845531697182/sefr.png"
         },
-		{
+        {
           "chance": 3,
           "filename": "sefur",
           "name": "Sef (Ultra Rare)",
@@ -3003,14 +2909,11 @@
           "smell": "Mutiny",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/984008869346951178/sefur.png"
         },
-		
-		
-		
-		{
+        {
           "chance": 3,
           "filename": "overseerr",
           "name": "Overseer (Rare)",
@@ -3019,12 +2922,12 @@
           "smell": "Order",
           "season": 8,
           "bonuses": {
-			"okamiiscollar": true,
-			"swirlymarbles": true
-		  },
+            "okamiiscollar": true,
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981255803547832400/overseerr.png"
         },
-		{
+        {
           "chance": 3,
           "filename": "overseerur",
           "name": "Overseer (Ultra Rare)",
@@ -3033,14 +2936,12 @@
           "smell": "Order",
           "season": 8,
           "bonuses": {
-			"swirlymarbles": true
-		  },
+            "swirlymarbles": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/980994386458447932/overseerur.png"
         }
-	  ]
-    
+      ]
     },
-    
     {
       "groupname": "official levels",
       "basechance": 3,
@@ -3162,7 +3063,7 @@
             "rustysword": true,
             "duncecap": true,
             "paddedstickersheet": true,
-			"filmreel": true
+            "filmreel": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200730547421194/beanshopper.gif"
         },
@@ -3521,7 +3422,7 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202713731530752/songofthesea.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "invisnight",
           "name": "Invisible (Night Shift)",
@@ -3537,7 +3438,7 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/876499352481316904/invisnight.png"
         },
-		{
+        {
           "chance": 1,
           "filename": "wot",
           "name": "Worn Out Tapes",
@@ -3609,7 +3510,7 @@
           "season": 1,
           "bonuses": {
             "cafemixtape": true,
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839163452689219598/coledc.png"
         },
@@ -3696,7 +3597,7 @@
           "season": 1,
           "bonuses": {
             "lostnametag": true,
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839163230022271047/farmerdc.png"
         },
@@ -3769,7 +3670,7 @@
           "season": 5,
           "bonuses": {
             "valentinesdaycard": true,
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839163086031814767/haileydc.png"
         },
@@ -3974,7 +3875,7 @@
           "season": 5,
           "bonuses": {
             "rustysword": true,
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162815780618291/insomniacdc.png"
         },
@@ -4061,7 +3962,7 @@
           "season": 5,
           "bonuses": {
             "oversizedstethoscope": true,
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162624151126027/interndc.png"
         },
@@ -4090,7 +3991,7 @@
           "bonuses": {
             "oversizedstethoscope": true,
             "aboveur": true,
-			"oldfiles": true,
+            "oldfiles": true,
             "pocketdimension": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873172939997077504/interndc_alt.png"
@@ -4164,7 +4065,7 @@
           "season": 5,
           "bonuses": {
             "valentinesdaycard": true,
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162445271924787/logandc.png"
         },
@@ -4251,7 +4152,7 @@
           "season": 5,
           "bonuses": {
             "charcoalpencil": true,
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162170129514506/minerdc.png"
         },
@@ -4324,7 +4225,7 @@
           "season": 5,
           "bonuses": {
             "hardcandy": true,
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839161328199270430/mrsstevensondc.png"
         },
@@ -4397,7 +4298,7 @@
           "season": 5,
           "bonuses": {
             "hardcandy": true,
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839161132719276032/mrstevensondc.png"
         },
@@ -4588,7 +4489,7 @@
           "season": 5,
           "bonuses": {
             "rustysword": true,
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839160092858253332/samuraidc.png"
         },
@@ -4617,7 +4518,7 @@
           "bonuses": {
             "rustysword": true,
             "aboveur": true,
-			"oldfiles": true,
+            "oldfiles": true,
             "pocketdimension": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849113790711595008/samuraidc_alt.png"
@@ -4828,7 +4729,7 @@
           "season": 5,
           "bonuses": {
             "okamiiscollar": true,
-			"driftingmetronome": true
+            "driftingmetronome": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202327361552444/ottor.png"
         },
@@ -4841,8 +4742,8 @@
           "smell": "Computer Chips",
           "season": 5,
           "bonuses": {
-			"driftingmetronome": true
-		  },
+            "driftingmetronome": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202332351856671/ottosr.png"
         },
         {
@@ -4854,8 +4755,8 @@
           "smell": "Computer Chips",
           "season": 5,
           "bonuses": {
-			"driftingmetronome": true
-		  },
+            "driftingmetronome": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202342809174036/ottour.png"
         },
         {
@@ -4972,7 +4873,7 @@
           "season": 7,
           "bonuses": {
             "animalplaceholder": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875247802802929704/rattlesr.png"
         },
         {
@@ -4985,7 +4886,7 @@
           "season": 7,
           "bonuses": {
             "animalplaceholder": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872353967278002196/rattleur.png"
         },
         {
@@ -5029,7 +4930,7 @@
           "season": 7,
           "bonuses": {
             "animalplaceholder": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872154201575264316/loafysr.png"
         },
         {
@@ -5042,7 +4943,7 @@
           "season": 7,
           "bonuses": {
             "animalplaceholder": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872153785185763408/loafyur.png"
         },
         {
@@ -5533,7 +5434,7 @@
           "bonuses": {
             "scribblednotepad": true,
             "aboveur": true,
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832348353274576947/roomsdc_r.png"
         },
@@ -5549,7 +5450,7 @@
             "scribblednotepad": true,
             "rustysword": true,
             "aboveur": true,
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832348378263715850/roomsdc_sr.png"
         },
@@ -5564,7 +5465,7 @@
           "bonuses": {
             "scribblednotepad": true,
             "aboveur": true,
-			"oldfiles": true
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832348409393446972/roomsdc_ur.png"
         }
@@ -5804,7 +5705,7 @@
           "season": 7,
           "bonuses": {
             "collabplaceholder": true
-		  },
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875545496331092018/unbeatablegroup.png"
         },
         {
@@ -6085,7 +5986,7 @@
           "bonuses": {
             "valentinesdaycard": true,
             "fieldjournal": true,
-			"filmreel": true
+            "filmreel": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202842149453834/superstrongcavity.gif"
         },
@@ -6362,7 +6263,7 @@
           "bonuses": {
             "deviltail": true,
             "fieldjournal": true,
-			"filmreel": true
+            "filmreel": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202919563067392/underworld.gif"
         },
@@ -6557,7 +6458,7 @@
           "bonuses": {
             "valentinesdaycard": true,
             "lostnametag": true,
-			"filmreel": true
+            "filmreel": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/831155101553000458/enchantedlove.gif"
         },
@@ -6572,7 +6473,7 @@
           "bonuses": {
             "rustysword": true,
             "lostnametag": true,
-			"filmreel": true
+            "filmreel": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/838954510172553236/retrofunky.gif"
         },
@@ -6712,9 +6613,12 @@
             "paddedstickersheet": true,
             "deviltail": true,
             "valentinesdaycard": true,
-			"filmreel": true
+            "filmreel": true
           },
-          "embed": ["https://cdn.discordapp.com/attachments/829197797789532181/849026745806225448/shade.gif", "https://cdn.discordapp.com/attachments/829197797789532181/849026758685884418/shadealt.gif"]
+          "embed": [
+            "https://cdn.discordapp.com/attachments/829197797789532181/849026745806225448/shade.gif",
+            "https://cdn.discordapp.com/attachments/829197797789532181/849026758685884418/shadealt.gif"
+          ]
         },
         {
           "chance": 2,
@@ -6748,7 +6652,7 @@
           "season": 6,
           "bonuses": {
             "deluxebirdseed": true,
-			"filmreel": true
+            "filmreel": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849048355593125898/goldenrule.gif"
         },
@@ -6897,7 +6801,7 @@
           "season": 7,
           "bonuses": {
             "paddedstickersheet": true,
-			"filmreel": true
+            "filmreel": true
           },
           "embed": "https://cdn.discordapp.com/attachments/575848843049172994/873226361928552458/upinmyjam.gif"
         },
@@ -6968,7 +6872,7 @@
           "bonuses": {
             "rustysword": true,
             "oversizedstethoscope": true,
-			"filmreel": true
+            "filmreel": true
           },
           "embed": "https://cdn.discordapp.com/attachments/575848843049172994/873226344417341460/lightscameraaction.gif"
         },
@@ -7705,7 +7609,7 @@
           "season": 7,
           "bonuses": {
             "fieldjournal": true,
-			"filmreel": true
+            "filmreel": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873762001439060038/connectifiasr.gif"
         },
@@ -7719,7 +7623,7 @@
           "season": 7,
           "bonuses": {
             "fieldjournal": true,
-			"filmreel": true
+            "filmreel": true
           },
           "embed": "https://cdn.discordapp.com/attachments/362784581344034816/901866186374021161/connectifiaur.gif"
         },
@@ -7752,7 +7656,7 @@
           "season": 7,
           "bonuses": {
             "oversizedstethoscope": true,
-			"fanonplaceholder": true
+            "fanonplaceholder": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872801762543816744/rodneysr.png"
         },
@@ -7766,7 +7670,7 @@
           "season": 7,
           "bonuses": {
             "oversizedstethoscope": true,
-			"fanonplaceholder": true
+            "fanonplaceholder": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875547348707717150/rodneyur.png"
         },
@@ -7780,13 +7684,13 @@
           "season": 7,
           "bonuses": {
             "oversizedstethoscope": true,
-			"fanonplaceholder": true
+            "fanonplaceholder": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/909336496337715232/rodneyc.png"
         }
       ]
     },
-	{
+    {
       "groupname": "----------------------------------------COLLAB CHARACTERS------------------------------------------------",
       "basechance": 0,
       "cards": []
@@ -7808,7 +7712,7 @@
             "collabplaceholder": true
           },
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/875763678492889088/quaverr.png"
-        } 
+        }
       ]
     },
     {
@@ -7828,7 +7732,7 @@
             "collabplaceholder": true
           },
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/875762063274811432/beatr.png"
-        } 
+        }
       ]
     },
     {
@@ -7848,7 +7752,7 @@
             "collabplaceholder": true
           },
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/875762059399274506/trebler.png"
-        } 
+        }
       ]
     },
     {
@@ -7868,7 +7772,7 @@
             "collabplaceholder": true
           },
           "embed": "https://cdn.discordapp.com/attachments/705963512983191566/875762060640804884/clefr.png"
-        } 
+        }
       ]
     }
   ]
