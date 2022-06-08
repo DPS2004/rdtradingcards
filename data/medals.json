@@ -69,6 +69,11 @@
     "description": "Collect every single Season 7 card!",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/876562636597248010/season7maestro.png"
   },
+  "s8maestro": {
+    "name": "Season 8 Maestro",
+    "description": "Collect every single Season 8 card!",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/984056689332482088/season8maestro.png"
+  },
   "cardmaestro": {
     "name": "Card Maestro",
     "description": "Collect every single card that's currently available! This medal is not permanent, and will be removed every time new cards are added.",

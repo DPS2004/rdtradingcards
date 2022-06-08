@@ -83,6 +83,10 @@ local time = sw:getTime()
 
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
 
+	if doinfodeskpull then
+		pulledcards = {'rdcards'}
+	end
+
   for i, v in ipairs(pulledcards) do
     local cardname = cdb[v].name
 

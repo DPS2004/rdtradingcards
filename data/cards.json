@@ -7084,8 +7084,8 @@
           "filename": "rdcards",
           "name": "RDCards",
           "type": "Special",
-          "description": "Hi, thank you for playing RDCards for all this time. With the release of season 8, I will be stepping down from RDCards's development.\nIt has been a ton of fun working on this project, but I think the time for this is right.\nBut, this does not mean the end of RDCards!\nOnce someone gets Card Maestro, the bot's source code will go public on GitHub, and if people make Pull Requests to add new cards or features, they will be merged and added to the bot.\nThank you to all contributors to this project for the support, whether it was code, or art, for all of your help.\n\n-DPS2004",
-          "smell": "Thanks",
+          "description": "Hi, thank you for playing RDCards for all this time. With the release of season 8, I will be stepping down from RDCards's development.\n> It has been a ton of fun working on this project, but I think the time for this is right.\n> But, this does not mean the end of RDCards!\n> Once someone gets Card Maestro, the bot's source code will go public on GitHub, and if people make Pull Requests to add new cards or features, they will be merged and added to the bot.\n> Thank you to all contributors to this project for the support, whether it was code, or art, for all of your help.\n> \n> -DPS2004",
+          "smell": "Thanks for playing!",
           "season": 0,
           "bonuses": {},
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/984035988974239774/rdcards.png"

@@ -4,19 +4,19 @@
     "receive": "itainteasybeinggreen"
   },
   {
-    "require": "function checkrequirements(uj) print('pepis') local result = false for k,v in pairs(uj.storage) do print(k) print(v) if v >= 10 then result = true end end return result end return checkrequirements",
+    "require": "function checkrequirements(uj) print('pepis') local result = false for k,v in pairs(uj.storage) do  if v >= 10 then result = true end end return result end return checkrequirements",
     "receive": "unlucky"
   },  
   {
-    "require": "function checkrequirements(uj) print('checking rares') local result = false local rarecount = 0 for k, v in pairs(uj.storage) do print(k) if cdb[k].type == 'Rare' then rarecount = rarecount + v end end print('rarecount is ' .. rarecount) if rarecount >= 20 then result = true end return result end return checkrequirements",
+    "require": "function checkrequirements(uj) print('checking rares') local result = false local rarecount = 0 for k, v in pairs(uj.storage) do  if cdb[k].type == 'Rare' then rarecount = rarecount + v end end print('rarecount is ' .. rarecount) if rarecount >= 20 then result = true end return result end return checkrequirements",
     "receive": "bronzecollector"
   }, 
   {
-    "require": "function checkrequirements(uj) print('checking superrares') local result = false local rarecount = 0 for k, v in pairs(uj.storage) do print(k) if cdb[k].type == 'Super Rare' then rarecount = rarecount + v end end print('superrarecount is ' .. rarecount) if rarecount >= 20 then result = true end return result end return checkrequirements",
+    "require": "function checkrequirements(uj) print('checking superrares') local result = false local rarecount = 0 for k, v in pairs(uj.storage) do  if cdb[k].type == 'Super Rare' then rarecount = rarecount + v end end print('superrarecount is ' .. rarecount) if rarecount >= 20 then result = true end return result end return checkrequirements",
     "receive": "silversaver"
   }, 
   {
-    "require": "function checkrequirements(uj) print('checking ultrarares') local result = false local rarecount = 0 for k, v in pairs(uj.storage) do print(k) if cdb[k].type == 'Ultra Rare' then rarecount = rarecount + v end end print('ultrararecount is ' .. rarecount) if rarecount >= 20 then result = true end return result end return checkrequirements",
+    "require": "function checkrequirements(uj) print('checking ultrarares') local result = false local rarecount = 0 for k, v in pairs(uj.storage) do if cdb[k].type == 'Ultra Rare' then rarecount = rarecount + v end end print('ultrararecount is ' .. rarecount) if rarecount >= 20 then result = true end return result end return checkrequirements",
     "receive": "goldhoarder"
   }, 
   {
@@ -28,39 +28,43 @@
     "receive": "mememaestro"
   },
   {
-    "require": "function checkrequirements(uj) print('checking season 1') local result = false local cardcount = 0 for i, v in ipairs(seasontable[1]) do print(v) if uj.storage[v] then cardcount = cardcount + 1 end end print('season 1 card count is ' .. cardcount .. ' out of ' .. #seasontable[1]) if cardcount >= #seasontable[1] then result = true end return result end return checkrequirements",
+    "require": "function checkrequirements(uj) print('checking season 1') local result = false local cardcount = 0 for i, v in ipairs(seasontable[1]) do if uj.storage[v] then cardcount = cardcount + 1 end end print('season 1 card count is ' .. cardcount .. ' out of ' .. #seasontable[1]) if cardcount >= #seasontable[1] then result = true end return result end return checkrequirements",
     "receive": "s1maestro"
   },
   {
-    "require": "function checkrequirements(uj) print('checking season 2') local result = false local cardcount = 0 for i, v in ipairs(seasontable[2]) do print(v) if uj.storage[v] then cardcount = cardcount + 1 end end print('season 2 card count is ' .. cardcount .. ' out of ' .. #seasontable[2]) if cardcount >= #seasontable[2] then result = true end return result end return checkrequirements",
+    "require": "function checkrequirements(uj) print('checking season 2') local result = false local cardcount = 0 for i, v in ipairs(seasontable[2]) do if uj.storage[v] then cardcount = cardcount + 1 end end print('season 2 card count is ' .. cardcount .. ' out of ' .. #seasontable[2]) if cardcount >= #seasontable[2] then result = true end return result end return checkrequirements",
     "receive": "s2maestro"
   },
   {
-    "require": "function checkrequirements(uj) print('checking season 3') local result = false local cardcount = 0 for i, v in ipairs(seasontable[3]) do print(v) if uj.storage[v] then cardcount = cardcount + 1 end end print('season 3 card count is ' .. cardcount .. ' out of ' .. #seasontable[3]) if cardcount >= #seasontable[3] then result = true end return result end return checkrequirements",
+    "require": "function checkrequirements(uj) print('checking season 3') local result = false local cardcount = 0 for i, v in ipairs(seasontable[3]) do if uj.storage[v] then cardcount = cardcount + 1 end end print('season 3 card count is ' .. cardcount .. ' out of ' .. #seasontable[3]) if cardcount >= #seasontable[3] then result = true end return result end return checkrequirements",
     "receive": "s3maestro"
   },
   {
-    "require": "function checkrequirements(uj) print('checking season 4') local result = false local cardcount = 0 for i, v in ipairs(seasontable[4]) do print(v) if uj.storage[v] then cardcount = cardcount + 1 end end print('season 4 card count is ' .. cardcount .. ' out of ' .. #seasontable[4]) if cardcount >= #seasontable[4] then result = true end return result end return checkrequirements",
+    "require": "function checkrequirements(uj) print('checking season 4') local result = false local cardcount = 0 for i, v in ipairs(seasontable[4]) do if uj.storage[v] then cardcount = cardcount + 1 end end print('season 4 card count is ' .. cardcount .. ' out of ' .. #seasontable[4]) if cardcount >= #seasontable[4] then result = true end return result end return checkrequirements",
     "receive": "s4maestro"
   },
   {
-    "require": "function checkrequirements(uj) print('checking season 5') local result = false local cardcount = 0 for i, v in ipairs(seasontable[5]) do print(v) if uj.storage[v] then cardcount = cardcount + 1 end end print('season 5 card count is ' .. cardcount .. ' out of ' .. #seasontable[5]) if cardcount >= #seasontable[5] then result = true end return result end return checkrequirements",
+    "require": "function checkrequirements(uj) print('checking season 5') local result = false local cardcount = 0 for i, v in ipairs(seasontable[5]) do if uj.storage[v] then cardcount = cardcount + 1 end end print('season 5 card count is ' .. cardcount .. ' out of ' .. #seasontable[5]) if cardcount >= #seasontable[5] then result = true end return result end return checkrequirements",
     "receive": "s5maestro"
   },
   {
-    "require": "function checkrequirements(uj) print('checking season 6') local result = false local cardcount = 0 for i, v in ipairs(seasontable[6]) do print(v) if uj.storage[v] then cardcount = cardcount + 1 end end print('season 6 card count is ' .. cardcount .. ' out of ' .. #seasontable[6]) if cardcount >= #seasontable[6] then result = true end return result end return checkrequirements",
+    "require": "function checkrequirements(uj) print('checking season 6') local result = false local cardcount = 0 for i, v in ipairs(seasontable[6]) do if uj.storage[v] then cardcount = cardcount + 1 end end print('season 6 card count is ' .. cardcount .. ' out of ' .. #seasontable[6]) if cardcount >= #seasontable[6] then result = true end return result end return checkrequirements",
     "receive": "s6maestro"
   },
   {
-    "require": "function checkrequirements(uj) print('checking season 7') local result = false local cardcount = 0 for i, v in ipairs(seasontable[7]) do print(v) if uj.storage[v] then cardcount = cardcount + 1 end end print('season 7 card count is ' .. cardcount .. ' out of ' .. #seasontable[7]) if cardcount >= #seasontable[7] then result = true end return result end return checkrequirements",
+    "require": "function checkrequirements(uj) print('checking season 7') local result = false local cardcount = 0 for i, v in ipairs(seasontable[7]) do if uj.storage[v] then cardcount = cardcount + 1 end end print('season 7 card count is ' .. cardcount .. ' out of ' .. #seasontable[7]) if cardcount >= #seasontable[7] then result = true end return result end return checkrequirements",
     "receive": "s7maestro"
   },
   {
-    "require": "function checkrequirements(uj) print('checking all cards') local result = false local cardcount = 0 for k, v in pairs(uj.storage) do print(k) if v > 0 and k ~= 'rdcards' then cardcount = cardcount + 1 end end print('storage card count is ' .. cardcount .. ' out of ' .. table.count(cdb)) if cardcount >= table.count(cdb) - 1 then result = true end return result end return checkrequirements",
+    "require": "function checkrequirements(uj) print('checking season 8') local result = false local cardcount = 0 for i, v in ipairs(seasontable[8]) do  if uj.storage[v] then cardcount = cardcount + 1 end end print('season 8 card count is ' .. cardcount .. ' out of ' .. #seasontable[8]) if cardcount >= #seasontable[8] then result = true end return result end return checkrequirements",
+    "receive": "s8maestro"
+  },
+  {
+    "require": "function checkrequirements(uj) print('checking all cards') local result = false local cardcount = 0 for k, v in pairs(cdb) do if uj.storage[k] and uj.storage[k] > 0 and k ~= 'rdcards' then cardcount = cardcount + 1 else print('MISSING ' ..k) end end print('storage card count is ' .. cardcount .. ' out of ' .. (table.count(cdb) - 2)) if cardcount >= table.count(cdb) - 2 then result = true end return result end return checkrequirements",
     "receive": "cardmaestro"
   },
   {
-    "require": "function checkrequirements(uj) print('pyramid time') local result = false for k,v in pairs(uj.storage) do print(k) print(v) if v >= 50 then result = true end end return result end return checkrequirements",
+    "require": "function checkrequirements(uj) print('pyramid time') local result = false for k,v in pairs(uj.storage) do if v >= 50 then result = true end end return result end return checkrequirements",
     "receive": "pyramidal"
   }, 
   {

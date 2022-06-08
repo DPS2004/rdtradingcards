@@ -7,7 +7,7 @@ function command.run(message, mt,mc)
   local ujf = ("savedata/" .. message.author.id .. ".json")
   local uj = dpf.loadjson(ujf, defaultjson)
   for i,v in ipairs(medalrequires) do
-    print(inspect(v.require))
+    --print(inspect(v.require))
     local rfunc = loadstring(v.require)()
     if rfunc(uj) then
       print("user can have "..v.receive)

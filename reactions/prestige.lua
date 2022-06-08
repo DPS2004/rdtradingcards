@@ -16,7 +16,6 @@ function reaction.run(ef, eom, reaction, userid)
 
   if reaction.emojiName == "✅" then
     print('user1 has accepted')
-	uj.medals = {}
     for k, v in pairs(uj.storage) do
       if k ~= "rdcards" then
         uj.storage[k] = uj.storage[k] - 1
@@ -27,8 +26,10 @@ function reaction.run(ef, eom, reaction, userid)
     uj.storage["rdcards"] = uj.storage["rdcards"] and uj.storage["rdcards"] + 1 or 1
 
     cmd.checkmedals.run(eom.ogmessage, {}, reaction.message.channel)
-
+	
     reaction.message.channel:send("You feel your storage getting a lot lighter. The **RDCards** card gets added to your storage.") -- Add some flair here yadda yadda
+	
+	dpf.savejson(ujf,uj)
   end
 
   if reaction.emojiName == "❌" then
