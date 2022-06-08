@@ -12,10 +12,11 @@ function reaction.run(ef, eom, reaction, userid)
 
   print('user1 has reacted')
   client:emit(reaction.message.id)
+  
 
   if reaction.emojiName == "✅" then
     print('user1 has accepted')
-
+	uj.medals = {}
     for k, v in pairs(uj.storage) do
       if k ~= "rdcards" then
         uj.storage[k] = uj.storage[k] - 1
@@ -27,12 +28,12 @@ function reaction.run(ef, eom, reaction, userid)
 
     cmd.checkmedals.run(eom.ogmessage, {}, reaction.message.channel)
 
-    reaction.message.channel:send("prestige, poggers") -- Add some flair here yadda yadda
+    reaction.message.channel:send("You feel your storage getting a lot lighter. The **RDCards** card gets added to your storage.") -- Add some flair here yadda yadda
   end
 
   if reaction.emojiName == "❌" then
     print('user1 has denied')
-    reaction.message.channel:send("You decide not to prestige. LOL!")
+    reaction.message.channel:send("You decide not to prestige.")
   end
 end
 return reaction
