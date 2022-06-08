@@ -20,11 +20,11 @@
     "receive": "goldhoarder"
   }, 
   {
-    "require": "function checkrequirements(uj) if uj.storage['roomsr'] and uj.storage['roomssr'] and uj.storage['roomsur'] and uj.storage['rowsr'] and uj.storage['rowssr'] and uj.storage['rowsur'] and uj.storage['vfxr'] and uj.storage['vfxsr'] and uj.storage['vfxur'] and uj.storage['soundr'] and uj.storage['soundsr'] and uj.storage['soundur'] then return true else return false end end return checkrequirements",
+    "require": "function checkrequirements(uj) if uj.storage['roomsr'] and uj.storage['roomssr'] and uj.storage['roomsur'] and uj.storage['rowsr'] and uj.storage['rowssr'] and uj.storage['rowsur'] and uj.storage['vfxr'] and uj.storage['vfxsr'] and uj.storage['vfxur'] and uj.storage['soundr'] and uj.storage['soundsr'] and uj.storage['soundur'] and uj.storage['decor'] and uj.storage ['decosr'] and uj.storage['decour'] then return true else return false end end return checkrequirements",
     "receive": "editorenthusiast"
   },
   {
-    "require": "function checkrequirements(uj) if uj.storage['beansr'] and uj.storage['oeufr'] and uj.storage['oeufur'] and uj.storage['doctahr'] and uj.storage['doctahur'] and uj.storage['iantrashcanr'] and uj.storage['iantrashcanur'] and uj.storage['wallclockr'] and uj.storage['wallclockur'] and uj.storage['logunr'] and uj.storage['logunsr'] and uj.storage['logunur'] then return true else return false end end return checkrequirements",
+    "require": "function checkrequirements(uj) if uj.storage['beansr'] and uj.storage['beansur'] and uj.storage['oeufr'] and uj.storage['oeufur'] and uj.storage['doctahr'] and uj.storage['doctahur'] and uj.storage['iantrashcanr'] and uj.storage['iantrashcanur'] and uj.storage['wallclockr'] and uj.storage['wallclockur'] and uj.storage['logunr'] and uj.storage['logunsr'] and uj.storage['logunur'] then return true else return false end end return checkrequirements",
     "receive": "mememaestro"
   },
   {
