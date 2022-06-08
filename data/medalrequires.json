@@ -24,7 +24,7 @@
     "receive": "editorenthusiast"
   },
   {
-    "require": "function checkrequirements(uj) if uj.storage['beansr'] and uj.storage['beansur'] and uj.storage['oeufr'] and uj.storage['oeufur'] and uj.storage['doctahr'] and uj.storage['doctahur'] and uj.storage['iantrashcanr'] and uj.storage['iantrashcanur'] and uj.storage['wallclockr'] and uj.storage['wallclockur'] and uj.storage['logunr'] and uj.storage['logunsr'] and uj.storage['logunur'] then return true else return false end end return checkrequirements",
+    "require": "function checkrequirements(uj) if uj.storage['beansr'] and uj.storage['beansur'] and uj.storage['oeufr'] and uj.storage['oeufur'] and uj.storage['doctahr'] and uj.storage['doctahur'] and uj.storage['iantrashcanr'] and uj.storage['iantrashcanur'] and uj.storage['wallclockr'] and uj.storage['wallclockur'] and uj.storage['logunr'] and uj.storage['logunsr'] and uj.storage['logunur'] and uj.storage['pogsomniacr'] and uj.storage['pogsomniacur'] then return true else return false end end return checkrequirements",
     "receive": "mememaestro"
   },
   {
