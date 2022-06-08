@@ -15,7 +15,7 @@ function command.run(message)
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
   
   if not uj.medals["cardmaestro"] then
-    message.channel:send("You are still missing cards.")
+    message.channel:send("...")
 	--todo say how many?
     return
   end

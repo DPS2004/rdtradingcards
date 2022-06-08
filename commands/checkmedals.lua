@@ -22,6 +22,9 @@ function command.run(message, mt,mc)
             url = medaldb[v.receive].embed
           }
         }}
+		if v.receive == 'cardmaestro' then
+			mc:send("You also unlocked the ability to use **c!prestige**.")
+		end
       end
     else
       print("user cannot have "..v.receive)
