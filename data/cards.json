@@ -1874,7 +1874,7 @@
           "name": "Third Wave Flip-Flop",
           "type": "Super Rare",
           "description": "(Level by 7th Beat Games)",
-          "smell": "\*doot*",
+          "smell": "\\*doot*",
           "season": 8,
           "bonuses": {
             "swirlymarbles": true
