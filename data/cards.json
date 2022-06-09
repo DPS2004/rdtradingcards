@@ -484,6 +484,20 @@
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944482748410765352/coolbirdr.png"
         },
         {
+          "chance": 2,
+          "filename": "coolbirdsr",
+          "name": "Cool Bird (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by Delta)",
+          "smell": "Embers",
+          "season": 8,
+          "bonuses": {
+            "fanonplaceholder": true,
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/984463205382357032/coolbirdsr.png"
+        },
+        {
           "chance": 1,
           "filename": "coolbirdur",
           "name": "Cool Bird (Ultra Rare)",
