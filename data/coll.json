@@ -456,6 +456,7 @@
   {
     "require": [
       "coolbirdr",
+      "coolbirdsr",
       "coolbirdur"
     ],
     "receive": "coolbirdc"
