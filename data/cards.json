@@ -258,6 +258,7 @@
           "smell": "Typography",
           "season": 8,
           "bonuses": {
+            "oldfiles": true,
             "driftingmetronome": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964734048402571264/unodosdc.png"
@@ -1161,7 +1162,8 @@
           "smell": "Incredibly Long Waiting Times",
           "season": 8,
           "bonuses": {
-            "oversizedstethoscope": true
+            "oversizedstethoscope": true,
+            "oldfiles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964942676711575642/osmdc.png"
         },
