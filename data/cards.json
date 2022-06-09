@@ -2671,6 +2671,22 @@
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996593705468014/goatsr.png"
         },
         {
+          "chance": 2,
+          "filename": "goatur",
+          "name": "Goat (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by Maki)",
+          "smell": "Private Surveillance",
+          "season": 8,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": [
+		    "https://cdn.discordapp.com/attachments/829197797789532181/984524540707237978/goatur.png",
+		    "https://cdn.discordapp.com/attachments/829197797789532181/984527299963670640/goatur2.png"
+		  ]
+        },
+        {
           "chance": 0,
           "filename": "goatc",
           "name": "Goat (Collector's)",
