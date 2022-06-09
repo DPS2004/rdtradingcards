@@ -182,6 +182,8 @@ function command.run(message, mt, overwrite)
     local iterateitemdb = itemdb
     iterateitemdb["aboveur"] = {}
     iterateitemdb["quantummouse"] = {}
+    iterateitemdb["oldfiles"] = {}
+    iterateitemdb["pocketdimension"] = {}
 
     for k, q in pairs(iterateitemdb) do
       ptable[k] = {}
