@@ -22,7 +22,7 @@ function command.run(message, mt)
     
     dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
 
-    if not uj.lastequip + 6 <= time:toHours() then
+    if uj.lastequip + 6 > time:toHours() then
       --extremely jank implementation, please make this cleaner if possible
       local minutesleft = math.ceil(uj.lastequip * 60 - time:toMinutes() + 360.00)
       local durationtext = ""
