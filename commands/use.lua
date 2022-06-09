@@ -294,7 +294,7 @@ o-''|\\_____/)
     (_/ (_/
           ```]]
         elseif string.lower(mt[2]) == "savedata" then
-          if nopeeking then
+          if false then
             embeddescription = '`DATA NOT FOUND.`'
           else
             embeddescription = '`DATA LOCATED. GENERATING PRINTOUT`'
