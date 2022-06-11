@@ -8,7 +8,7 @@ First, you will want to download this repo, and make a new file in it called "pr
 
 Next, install [Discordia](https://github.com/SinisterRectus/Discordia) by following its readme.
 
-Install [Discordia-With-Buttons](https://github.com/Readof/Discordia-With-Buttons) by downloading the repo as a zip, and unzip it in deps/ as a folder named "discordia-with-buttons". make sure this folder has an "init.lua" in it.
+You also need to install [discordia-interactions](https://github.com/Bilal2453/discordia-interactions) and [discordia-components](https://github.com/Bilal2453/discordia-components) by running `git clone https://github.com/Bilal2453/discordia-components.git ./deps/discordia-components && git clone https://github.com/Bilal2453/discordia-interactions ./deps/discordia-interactions` in the root folder.
 
 To install vips, follow the installation instructions from the [libvips website](https://libvips.github.io/libvips/install.html), then set your PATH to the libvips bin folder. Afterwards, clone the [lua-vips repo](https://github.com/libvips/lua-vips) and copy the src/vips folder to your repo and the src/vips.lua file to the deps folder.
 
