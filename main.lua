@@ -44,6 +44,9 @@ end)
 print("Resetting clocks")
 resetclocks()
 
+print("Clearing cache")
+clearcache()
+
 print("Stocking shop")
 stockshop()
 

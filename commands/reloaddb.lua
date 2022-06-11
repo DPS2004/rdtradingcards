@@ -675,12 +675,11 @@ function command.run(message, mt, overwrite)
       end
       return "vips_out/cache/cards/"..card..".png"
     end
-    getitemthumb("decaf",true)
-    getitemthumb("stainedgloves")
-    getcardthumb("knowyou")
+    -- getitemthumb("decaf",true)
+    -- getitemthumb("stainedgloves")
+    -- getcardthumb("knowyou")
     
     _G['getshopimage'] = function()
-      local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
       local osj = dpf.loadjson("vips_out/cache/shop/lastshop.json", {})
       
@@ -732,8 +731,26 @@ function command.run(message, mt, overwrite)
       end
       return "vips_out/shop.png"
     end
-    getshopimage()
-    
+    -- getshopimage()
+
+    _G['clearcache'] = function()
+      os.remove("test.txt")
+      print("deleting card cache")
+      for i, v in ipairs(scandir("vips_out/cache/cards")) do
+        local status, err = os.remove("vips_out/cache/cards/" .. v)
+        if not status then
+          print(err)
+        end
+      end
+
+      print("deleting item cache")
+      for i, v in ipairs(scandir("vips_out/cache/items")) do
+        local status, err = os.remove("vips_out/cache/items/" .. v)
+        if not status then
+          print(err)
+        end
+      end
+    end
     
     _G['checkforreload'] = function(days)
       local cooldown = 26/24
