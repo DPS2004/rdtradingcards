@@ -442,7 +442,7 @@ o-''|\\_____/)
       local sname = ""
       local stock = 0
       local sindex = 0
-      if not mt[2] then
+      if (not mt[2]) or (mt[2] = "") then
         cmd.look.run(message, mt)
         mt[2] = ""
         return
