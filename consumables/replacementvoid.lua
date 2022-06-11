@@ -1,6 +1,6 @@
 local item = {}
 
-function item.run(uj,ujf,message,mt)
+function item.run(uj, ujf, message, mt, interaction)
   local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
   wj.boxpool = {constable["aboveur"][math.random(#constable["aboveur"])]}
   for i = 1, 21 do
@@ -12,6 +12,6 @@ function item.run(uj,ujf,message,mt)
   uj.timesitemused = uj.timesitemused and uj.timesitemused + 1 or 1
   dpf.savejson("savedata/worldsave.json", wj)
   dpf.savejson(ujf, uj)
-  message.channel:send("As you put the **Replacement Void** into the **Peculiar Box**, you can feel the box suddenly get much warmer, and then as cold as ice within the blink of an eye.")
+  interaction:reply("As you put the **Replacement Void** into the **Peculiar Box**, you can feel the box suddenly get much warmer, and then as cold as ice within the blink of an eye.")
 end
 return item

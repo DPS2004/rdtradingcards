@@ -1,6 +1,6 @@
 local item = {}
 
-function item.run(uj, ujf, message, mt)
+function item.run(uj, ujf, message, mt, interaction)
   local time = sw:getTime()
   uj.consumables["caffeinatedsoda"] = uj.consumables["caffeinatedsoda"] - 1
   if uj.consumables["caffeinatedsoda"] == 0 then uj.consumables["caffeinatedsoda"] = nil end
@@ -31,6 +31,6 @@ function item.run(uj, ujf, message, mt)
   uj.lastbox = -12
   uj.lastequip = -12
   dpf.savejson(ujf, uj)
-  message.channel:send("Your cooldowns have been removed! For now...")
+  interaction:reply("Your cooldowns have been removed! For now...")
 end
 return item

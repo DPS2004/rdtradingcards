@@ -1,6 +1,6 @@
 local item = {}
 
-function item.run(uj, ujf, message, mt,fn)
+function item.run(uj, ujf, message, mt, interaction, fn)
   local itemname = consdb[fn].name
   local itemtext = consdb[fn].text
   local season = consdb[fn].season
@@ -11,13 +11,13 @@ function item.run(uj, ujf, message, mt,fn)
     uj.timesitemused = uj.timesitemused and uj.timesitemused + 1 or 1
       
     uj.conspt = "season"..season
-    message.channel:send(itemtext)
+    interaction:reply(itemtext)
 	local randtime = math.random(4,8)
 	uj.lastpull = uj.lastpull - randtime
-	message.channel:send('Also, your pull cooldown was decreased by '..randtime..' hours!')
+	interaction:reply('Also, your pull cooldown was decreased by '..randtime..' hours!')
     dpf.savejson(ujf, uj)
   else
-    message.channel:send("You already have a pull affecting item in use! You decide against using the **"..itemname.."** for now.")
+    interaction:reply("You already have a pull affecting item in use! You decide against using the **"..itemname.."** for now.")
   end
 end
 return item

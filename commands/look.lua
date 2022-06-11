@@ -254,13 +254,7 @@ function command.run(message, mt)
       wj.lablookindex = wj.lablookindex % string.len(wj.lablooktext)
       dpf.savejson("savedata/worldsave.json", wj)
     elseif (string.lower(mt[1]) == "spider" or string.lower(mt[1]) == "spiderweb" or string.lower(mt[1]) == "web" or string.lower(mt[1]) == "spider web") and wj.labdiscovered then       
-      
-        
       local newmessage = ynbuttons(message,'Are you okay with seeing a spider?',"spiderlook",{})
---          addreacts(newmessage)
---          local tf = dpf.loadjson("savedata/events.json",{})
---          tf[newmessage.id] ={ujf = "savedata/" .. message.author.id .. ".json",etype = "spiderlook",ogmessage = {author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString}}}
---          dpf.savejson("savedata/events.json",tf)
     elseif (string.lower(mt[1]) == "terminal") and wj.labdiscovered  then  --FONT IS MS GOTHIC AT 24PX, 8PX FOR SMALL FONT
       if wj.ws < 508 then
         message.channel:send{embed = {

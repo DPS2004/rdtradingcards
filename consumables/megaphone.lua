@@ -1,6 +1,6 @@
 local item = {}
 
-function item.run(uj,ujf,message,mt)
+function item.run(uj, ujf, message, mt, interaction)
   local cardchannel = privatestuff.cardchannel or '793993844789870603'
   if not uj.conspt then uj.conspt = "none" end
   if #mt ~= 1 or message.attachment then
@@ -26,7 +26,7 @@ function item.run(uj,ujf,message,mt)
     end
     handlemessage(newmessage, text)
   else
-    message.channel:send("The megaphone was not used. Please attach a message with c!use megaphone/(YOUR MESSAGE HERE)")
+    interaction:reply("The megaphone was not used. Please attach a message with c!use megaphone/(YOUR MESSAGE HERE)")
   end
 end
 return item

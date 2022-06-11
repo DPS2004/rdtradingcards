@@ -1,7 +1,8 @@
 -- ok i know ths code is hot stinky garbage but it *works*, god damn-it.
 
 -- it works most of the time. most of the time.
-_G["discordia"] = require('discordia-with-buttons')
+_G["discordia"] = require('discordia')
+require("discordia-components")
 _G["client"] = discordia.Client()
 _G["prefix"] = "c!"
 _G["json"] = require('libs/json')
@@ -38,10 +39,6 @@ print("yay got past load ready")
 
 client:on('messageCreate', function(message)
   handlemessage(message)
-end)
-
-client:on('buttonPressed', function(buttonid, member, message)
-  handlebutton(buttonid, member, message)
 end)
 
 print("Resetting clocks")

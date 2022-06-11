@@ -1,21 +1,14 @@
 local reaction = {}
-function reaction.run(ef, eom, reaction, userid)
-  local ujf = eom.ujf
+function reaction.run(message, interaction, data, response)
+  local ujf = "savedata/" .. message.author.id .. ".json"
   local uj = dpf.loadjson(ujf, defaultjson)
   print("Loaded uj")
   local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
-  if uj.id ~= userid then
-    print("It's not uj1 reacting")
-    return
-  end
 
-  print('user1 has reacted')
-  client:emit(reaction.message.id)
-
-  if reaction.emojiName == "✅" then
+  if response == "yes" then
     print('user1 has accepted')
     if uj.tokens < 1 then
-      reaction.message.channel:send("An error has occured. Please make sure that you still have a token!")
+      interaction:reply("An error has occured. Please make sure that you still have a token!")
       return
     end
 
@@ -24,9 +17,9 @@ function reaction.run(ef, eom, reaction, userid)
     uj.tokensdonated = uj.tokensdonated and uj.tokensdonated + 1 or 1
 
     if not wj.labdiscovered then
-      reaction.message.channel:send('A **Token** has been dropped into the **Hole.** Thank you for your generosity!')
+      interaction:reply('A **Token** has been dropped into the **Hole.** Thank you for your generosity!')
     else
-      reaction.message.channel:send{embed = {
+      interaction:reply{embed = {
         color = 0x85c5ff,
         title = "Using Terminal...",
         description = 'The **Terminal** whirrs happily. A printout lets you know that ' .. wj.tokensdonated .. ' tokens have been donated so far.',
@@ -34,8 +27,8 @@ function reaction.run(ef, eom, reaction, userid)
           url = upgradeimages[math.random(#upgradeimages)]
         },
         footer = {
-          text =  eom.ogmessage.author.name,
-          icon_url = eom.ogmessage.author.avatarURL
+          text =  message.author.name,
+          icon_url = message.author.avatarURL
         }
       }}
     end
@@ -44,24 +37,24 @@ function reaction.run(ef, eom, reaction, userid)
 
     if wj.ws >= 501 and wj.ws < 506 and wj.tokensdonated >= (wj.ws - 500) * 5 then
       wj.ws = wj.ws + 1
-      reaction.message.channel:send("***The ground rumbles..." .. (wj.ws == 506 and " and so does the Strange Machine***" or "***"))
+      interaction:reply("***The ground rumbles..." .. (wj.ws == 506 and " and so does the Strange Machine***" or "***"))
     end
 
     if not wj.smellable and wj.tokensdonated >= 100 then
       wj.smellable = true
-      reaction.message.channel:send('***The Database lets out a loud BEEP, before the Hole above you closes off. The Terminal begins spewing a noxious gas. ***\n.\n..\n...\n***When you wake up, the Hole has opened again, and your sense of Smell feels much more potent.***')
+      interaction:reply('***The Database lets out a loud BEEP, before the Hole above you closes off. The Terminal begins spewing a noxious gas. ***\n.\n..\n...\n***When you wake up, the Hole has opened again, and your sense of Smell feels much more potent.***')
     end
 
     dpf.savejson(ujf, uj)
     dpf.savejson("savedata/worldsave.json", wj)
   end
 
-  if reaction.emojiName == "❌" then
+  if response == "no" then
     print('user1 has denied')
     if not wj.labdiscovered then
-      reaction.message.channel:send("You decide to not put a **Token** into the **Hole.** (how rude!)")
+      interaction:reply("You decide to not put a **Token** into the **Hole.** (how rude!)")
     else
-      reaction.message.channel:send("You decide to not put a **Token** into the **Terminal.** (how rude!)")
+      interaction:reply("You decide to not put a **Token** into the **Terminal.** (how rude!)")
     end
   end
 end

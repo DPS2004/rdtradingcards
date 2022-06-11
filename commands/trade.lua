@@ -72,6 +72,6 @@ function command.run(message, mt)
   end
 
   print("success!!!!!")
-  ynbuttons(message, "<@".. uj2.id ..">, <@" .. uj.id .. "> wants to trade " .. uj.pronouns["their"] .. " **" .. cdb[item1].name .. "** for your **" .. cdb[item2].name .. "**. Click the Yes button to accept and No to deny.", "trade", {uj2f = uj2f, item1 = item1,item2 = item2})
+  ynbuttons(message, "<@".. uj2.id ..">, <@" .. uj.id .. "> wants to trade " .. uj.pronouns["their"] .. " **" .. cdb[item1].name .. "** for your **" .. cdb[item2].name .. "**. Click the Yes button to accept and No to deny.", "trade", {uj2f = uj2f, item1 = item1,item2 = item2}, uj2.id)
 end
 return command

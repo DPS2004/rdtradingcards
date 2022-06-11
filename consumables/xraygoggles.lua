@@ -1,6 +1,6 @@
 local item = {}
 
-function item.run(uj,ujf,message,mt)
+function item.run(uj, ujf, message, mt, interaction)
   local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
   local boxstring = ""
   for i,v in ipairs(wj.boxpool) do

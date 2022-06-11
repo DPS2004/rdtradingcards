@@ -1,26 +1,19 @@
 local reaction = {}
-function reaction.run(ef, eom, reaction, userid)
+function reaction.run(message, interaction, data, response)
   print('It is a trade message being reacted to')
-  local ujf = eom.ujf
-  local uj2f = eom.uj2f
-  local item1 = eom.item1
-  local item2 = eom.item2
+  local ujf = "savedata/" .. message.author.id .. ".json"
+  local uj2f = data.uj2f
+  local item1 = data.item1
+  local item2 = data.item2
   local uj = dpf.loadjson(ujf, defaultjson)
   print("Loaded uj")
   local uj2 = dpf.loadjson(uj2f, defaultjson)
   print("Loaded uj2")
-  if uj2.id ~= userid then
-    print("It's not uj2 reacting")
-    return
-  end
 
-  print('user2 has reacted')
-  client:emit(reaction.message.id)
-
-  if reaction.emojiName == "✅" then
+  if response == "yes" then
     print('user2 has accepted')
     if not (uj.inventory[item1] and uj2.inventory[item2]) then
-      reaction.message.channel:send("An error has occured. Please make sure that both parties still have the cards in their inventories!")
+      interaction:reply("An error has occured. Please make sure that both parties still have the cards in their inventories!")
       return
     end
 
@@ -39,14 +32,14 @@ function reaction.run(ef, eom, reaction, userid)
     uj.timestraded = uj.timestraded and uj.timestraded + 1 or 1
     uj2.timestraded = uj2.timestraded and uj2.timestraded + 1 or 1
     
-    reaction.message.channel:send("The trade between <@".. uj2.id .."> and <@" .. uj.id .. "> has completed.")
+    interaction:reply("The trade between <@".. uj2.id .."> and <@" .. uj.id .. "> has completed.")
     dpf.savejson(uj2f,uj2)
     dpf.savejson(ujf,uj)
   end
 
-  if reaction.emojiName == "❌" then
+  if response == "no" then
     print('user2 has denied')
-    reaction.message.channel:send("<@".. uj2.id .."> has successfully denied the trade with <@" .. uj.id .. ">.")
+    interaction:reply("<@".. uj2.id .."> has successfully denied the trade with <@" .. uj.id .. ">.")
   end
 end
 return reaction

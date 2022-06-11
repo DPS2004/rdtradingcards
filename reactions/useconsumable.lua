@@ -1,41 +1,29 @@
 local reaction = {}
-function reaction.run(ef, eom, reaction, userid)
-  local ujf = eom.ujf
+function reaction.run(message, interaction, data, response)
+  local ujf = "savedata/" .. message.author.id .. ".json"
   local uj = dpf.loadjson(ujf, defaultjson)
-  local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
-  local request = eom.crequest
+  local request = data.crequest
   print("Loaded uj")
-  if uj.id ~= userid then
-    print("It's not uj1 reacting")
-    return
-  end
 
-  print('user1 has reacted')
-  client:emit(reaction.message.id)
+  if response == "yes" then
+    print('user has accepted')
 
-  if reaction.emojiName == "✅" then
-    print('user1 has accepted')
-    --sanity check
-    local checked = (uj.consumables[request])
-
-    
-    if not checked then
-      reaction.message.channel:send("An error has occured. Please make sure that you still have the item!")
+    if not uj.consumables[request] then
+      interaction:reply("An error has occured. Please make sure that you still have the item!")
       return
     end
+
     local fn = request
     if consdb[request].command then
       request = consdb[request].command
     end
 
-    
-    cmdcons[request].run(uj,ujf,client:getChannel(eom.ogmessage.channel.id):getMessage(eom.ogmessage.id),eom.mt,fn) -- this is the single worst line of code that i have ever written
-    
+    cmdcons[request].run(uj, ujf, message, data.mt, interaction, fn)
   end
 
-  if reaction.emojiName == "❌" then
-    print('user1 has denied')
-    reaction.message.channel:send("You decide to not use the **".. consdb[eom.crequest].name .."**.")
+  if response == "no" then
+    print('user has denied')
+    interaction:reply("You decide to not use the **".. consdb[data.crequest].name .."**.")
   end
 end
 return reaction

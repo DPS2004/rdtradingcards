@@ -464,60 +464,64 @@ function command.run(message, mt, overwrite)
       end
     end
 
-    _G['ynbuttons'] = function(message, content, etype, data, yesoption, nooption)
-      yesoption = yesoption or "Yes"
-      nooption = nooption or "No"
+    _G['ynbuttons'] = function(message, content, etype, data, userid)
       local messagecontent, messageembed
+
       if type(content) == "table" then
         messageembed = content
       else
         messagecontent = content
       end
-      local newmessage = message.channel:send({
+
+      print('making yesbutton')
+      local yesbutton = discordia.Button {
+        id = "yes",
+        label = "Yes",
+        style = "success"
+      }
+      
+      print("making nobutton")
+      local nobutton = discordia.Button {
+        id = "no",
+        label = "No",
+        style = "danger"
+      }
+
+      print("writing message")
+      local newmessage = message.channel:sendComponents {
         embed = messageembed,
         content = messagecontent,
-        components = {
-          { --whyyyyyy
-            type = 1, -- make button container
-            components = {
-              {
-                type = 2, -- make a button
-                style = 3, -- green
-                label = yesoption, -- add text
-                custom_id = etype .. "_yes",
-                disabled = "false"
-              },
-              {
-                type = 2, -- make a button
-                style = 4, -- red
-                label = nooption, -- add text
-                custom_id = etype .. "_no",
-                disabled = "false"
-              }
-            }
-          } --discord pls
-        }
-      })
-      local tf = dpf.loadjson("savedata/events.json",{})
-      local newevent = {ujf = ("savedata/" .. message.author.id .. ".json") ,etype = etype,ogmessage = {channel = {id = message.channel.id}, id = message.id, author = {name=message.author.name, id=message.author.id,mentionString = message.author.mentionString, avatarURL = message.author.avatarURL}}}
-      for k,v in pairs(data) do
-        newevent[k] = v
-      end
-      tf[newmessage.id] = newevent
-      dpf.savejson("savedata/events.json", tf)
-      if not EMULATOR then
-        if client:waitFor(newmessage.id, 3600 * 1000) then -- Timeout after 1 hour
-          print("Message successfully reacted to, removing event")
-        else
-          print("Button reaction timed out, removing event")
+        components = discordia.Components {yesbutton, nobutton}
+      }
+
+      local pressed, interaction = newmessage:waitComponent(nil, nil, nil, function(interaction)
+        local reactionid = userid or message.author.id
+
+        if interaction.member.id ~= reactionid then
+          interaction:reply("Sorry, but you cannot react to this button!", true)
         end
-      
-        tf = dpf.loadjson("savedata/events.json",{})
-        tf[newmessage.id] = nil
-        dpf.savejson("savedata/events.json", tf)
+
+        return interaction.member.id == reactionid
+      end)
+
+      newmessage:update{components = discordia.Components {yesbutton:disable(), nobutton:disable()}}
+
+      if not pressed then
+        print("Button timed out")
+        return
       end
 
-      return newmessage
+      print("Button pressed, running " .. etype)
+
+      local status, err = pcall(function ()
+        cmdre[etype].run(message, interaction, data, interaction.data.custom_id)
+      end)
+
+      if not status then
+        print("uh oh")
+        message.channel:send("Oops! An error has occured! Error message: ```" .. err .. "``` (<@290582109750427648> <@298722923626364928> please fix this thanks)")
+      end
+
     end
     
     _G['commands'] = {}
@@ -636,38 +640,6 @@ function command.run(message, mt, overwrite)
             break
           end
         end
-      end
-    end
-    
-    print("handlebutton")
-    _G['handlebutton'] = function (buttonid, member, message)
-      local ef = dpf.loadjson("savedata/events.json",{})
-      if ef[message.id] then
-        local reaction = {
-          emojiName = "✅",
-          message = message
-        }
-        print("looking for " .. ef[reaction.message.id].etype .. "_no")
-        if buttonid == ef[reaction.message.id].etype .. "_no" then
-          print("reaction is no")
-          reaction.emojiName = "❌"
-        end
-
-        local userid = member.id
-        print('a button named '.. buttonid .. ' was pressed on a message with the id of ' .. reaction.message.id ..' by a user with the id of' .. userid)
-        local eom = ef[reaction.message.id]
-        if eom then
-          print('it is an event message being reacted to')
-          local status, err = pcall(function ()
-            cmdre[eom.etype].run(ef, eom, reaction, userid)
-          end)
-          if not status then
-            print("uh oh")
-            reaction.message.channel:send("Oops! An error has occured! Error message: ```" .. err .. "``` (<@290582109750427648> <@298722923626364928> please fix this thanks)")
-          end
-        end
-      else
-        print("user reacted to a finished button")
       end
     end
     

@@ -1,27 +1,20 @@
 local reaction = {}
-function reaction.run(ef, eom, reaction, userid)
-  local ujf = eom.ujf
-  local item1 = eom.item1
-  local numcards = eom.numcards
+function reaction.run(message, interaction, data, response)
+  local item1 = data.item1
+  local numcards = data.numcards
+  local ujf = "savedata/" .. message.author.id .. ".json"
   local uj = dpf.loadjson(ujf, defaultjson)
   print("Loaded uj")
-  if uj.id ~= userid then
-    print("It's not uj1 reacting")
-    return
-  end
 
-  print('user1 has reacted')
-  client:emit(reaction.message.id)
-
-  if reaction.emojiName == "✅" then
+  if response == "yes" then
     print('user1 has accepted')
     if not uj.inventory[item1] then
-      reaction.message.channel:send("An error has occured. Please make sure that you still have the card in your inventory!")
+      interaction:reply("An error has occured. Please make sure that you still have the card in your inventory!")
       return
     end
 
     if uj.inventory[item1] < numcards then
-      reaction.message.channel:send("An error has occured. Please make sure that you still have enough **" .. cdb[item1].name .. "** cards in your inventory!")
+      interaction:reply("An error has occured. Please make sure that you still have enough **" .. cdb[item1].name .. "** cards in your inventory!")
       return
     end
 
@@ -34,15 +27,15 @@ function reaction.run(ef, eom, reaction, userid)
 
     uj.timesstored = uj.timesstored and uj.timesstored + numcards or numcards
 
-    reaction.message.channel:send("<@" .. uj.id .. "> successfully put " .. uj.pronouns["their"] .. " " .. numcards .. " **" .. cdb[item1].name .. "** card" .. (numcards == 1 and "" or "s") .. " into storage.")
+    interaction:reply("<@" .. uj.id .. "> successfully put " .. uj.pronouns["their"] .. " " .. numcards .. " **" .. cdb[item1].name .. "** card" .. (numcards == 1 and "" or "s") .. " into storage.")
     dpf.savejson(ujf,uj)
-    cmd.checkcollectors.run(eom.ogmessage, {}, reaction.message.channel)
-    cmd.checkmedals.run(eom.ogmessage, {}, reaction.message.channel)
+    cmd.checkcollectors.run(message, {}, message.channel)
+    cmd.checkmedals.run(message, {}, message.channel)
   end
 
-  if reaction.emojiName == "❌" then
+  if response == "no" then
     print('user1 has denied')
-    reaction.message.channel:send("<@" .. uj.id .. "> has successfully stopped the storage of " .. uj.pronouns["their"] .. " **" .. cdb[item1].name .. "** card" .. (numcards == 1 and "" or "s") .. ".")
+    interaction:reply("<@" .. uj.id .. "> has successfully stopped the storage of " .. uj.pronouns["their"] .. " **" .. cdb[item1].name .. "** card" .. (numcards == 1 and "" or "s") .. ".")
   end
 end
 return reaction

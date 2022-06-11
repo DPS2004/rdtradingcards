@@ -467,7 +467,7 @@ o-''|\\_____/)
               ynbuttons(message,{
                 color = 0x85c5ff,
                 title = "Buying " .. sname .. "...",
-                description = "The description for this item reads: \n`".. consdb[srequest].description .."`\nWill you buy it for "..sprice.." **Token" .. (sprice == 1 and "" or "s") .. "**?",
+                description = "The description for this item reads: \n`".. consdb[srequest].description .."`\n<@" .. message.author.id .. ">, will you buy it for "..sprice.." **Token" .. (sprice == 1 and "" or "s") .. "**?",
               },"buy",{itemtype = "consumable",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest})
               return
             else
@@ -493,7 +493,7 @@ o-''|\\_____/)
                   ynbuttons(message,{
                     color = 0x85c5ff,
                     title = "Buying " .. sname .. "...",
-                    description = "The description for this item reads: \n`".. itemdb[srequest].description .."`\nWill you buy it for "..sprice.." **Tokens**?",
+                    description = "The description for this item reads: \n`".. itemdb[srequest].description .."`\n<@" .. message.author.id .. ">, will you buy it for "..sprice.." **Tokens**?",
                   },"buy",{itemtype = "item",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest})
                   return
                 else
@@ -530,7 +530,7 @@ o-''|\\_____/)
               ynbuttons(message,{
                 color = 0x85c5ff,
                 title = "Buying " .. sname .. "...",
-                description = "The description for this card reads: \n`".. cdb[srequest].description .."`\nWill you buy it for "..sprice.." **Token" .. (sprice == 1 and "" or "s") .."**?",
+                description = "The description for this card reads: \n`".. cdb[srequest].description .."`\n<@" .. message.author.id .. ">, will you buy it for "..sprice.." **Token" .. (sprice == 1 and "" or "s") .."**?",
               },"buy",{itemtype = "card",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest})
               return
             else

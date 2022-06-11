@@ -1,28 +1,21 @@
 local reaction = {}
-function reaction.run(ef, eom, reaction, userid)
-  local ujf = eom.ujf
-  local curfilename = eom.curfilename
-  local numcards = eom.numcards
+function reaction.run(message, interaction, data, response)
+  local curfilename = data.curfilename
+  local numcards = data.numcards
+  local ujf = "savedata/" .. message.author.id .. ".json"
   local uj = dpf.loadjson(ujf, defaultjson)
   print("Loaded uj")
 
-  if uj.id ~= userid then
-    print("It's not uj1 reacting")
-    return
-  end
-
-  print('user1 has reacted')
-  client:emit(reaction.message.id)
-
-  if reaction.emojiName == "✅" then
+  if response == "yes" then
     print('user1 has accepted')
+
     if not uj.inventory[curfilename] then
-      reaction.message.channel:send("An error has occured. Please make sure that you still have the card in your inventory!")
+      interaction:reply("An error has occured. Please make sure that you still have the card in your inventory!")
       return
     end
 
     if uj.inventory[curfilename] < numcards then
-      reaction.message.channel:send("An error has occured. Please make sure that you still have enough **" .. cdb[curfilename].name .. "** cards in your inventory!")
+      interaction:reply("An error has occured. Please make sure that you still have enough **" .. cdb[curfilename].name .. "** cards in your inventory!")
       return
     end
 
@@ -32,15 +25,15 @@ function reaction.run(ef, eom, reaction, userid)
 
     uj.timesshredded = uj.timesshredded and uj.timesshredded + numcards or numcards
 
-    reaction.message.channel:send("<@" .. uj.id .. "> successfully shredded " .. uj.pronouns["their"] .. " " .. numcards .. " **" .. cdb[curfilename].name .. "** card" .. (numcards == 1 and "" or "s") .. ".")
+    interaction:reply("<@" .. uj.id .. "> successfully shredded " .. uj.pronouns["their"] .. " " .. numcards .. " **" .. cdb[curfilename].name .. "** card" .. (numcards == 1 and "" or "s") .. ".")
 
     dpf.savejson(ujf, uj)
-    cmd.checkmedals.run(eom.ogmessage, {}, reaction.message.channel)
+    cmd.checkmedals.run(message, {}, message.channel)
   end
 
-  if reaction.emojiName == "❌" then
+  if response == "no" then
     print('user1 has denied')
-    reaction.message.channel:send("<@" .. uj.id .. "> has successfully stopped the shredding of " .. uj.pronouns["their"] .. " **" .. cdb[curfilename].name .. "** card" .. (numcards == 1 and "" or "s").. ".")
+    interaction:reply("<@" .. uj.id .. "> has successfully stopped the shredding of " .. uj.pronouns["their"] .. " **" .. cdb[curfilename].name .. "** card" .. (numcards == 1 and "" or "s").. ".")
   end
 end
 return reaction
