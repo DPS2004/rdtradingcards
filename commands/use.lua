@@ -300,6 +300,9 @@ o-''|\\_____/)
             embeddescription = '`DATA LOCATED. GENERATING PRINTOUT`'
             filename = "savedata/" .. uj.id .. ".json"
           end
+        elseif string.lower(mt[2]) == "piss" then
+          embeddescription = '`peachy moment 😳😳😳`'
+          embedimage = "https://cdn.discordapp.com/attachments/793993844789870603/880369620442304552/unknown.png"
         elseif string.lower(mt[2]) == "teikyou" then
           embedimage = "https://cdn.discordapp.com/attachments/829197797789532181/849431570103664640/teikyou.png"
         elseif string.lower(mt[2]) == "help" or mt[2] == "" then

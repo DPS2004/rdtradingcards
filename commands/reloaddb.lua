@@ -602,6 +602,7 @@ function command.run(message, mt, overwrite)
     addcommand("catch",cmd.catch)
     addcommand("giveitem",cmd.giveitem)
     addcommand("prestige",cmd.prestige)
+    addcommand("piss",cmd.use,0,{"terminal", "piss"},true)
     _G['handlemessage'] = function (message, content)
       if message.author.id ~= client.user.id or content then
         local messagecontent = content or message.content
