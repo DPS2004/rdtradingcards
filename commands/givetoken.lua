@@ -32,6 +32,10 @@ function command.run(message, mt)
 
   if not uj.tokens then uj.tokens = 0 end
 
+  if mt[2] == "all" then
+    numtokens = uj.tokens
+  end
+
   if uj.tokens < numtokens then
     message.channel:send("Sorry, but you do not have enough tokens to do that!")
     return
