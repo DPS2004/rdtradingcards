@@ -494,7 +494,7 @@ function command.run(message, mt, overwrite)
         components = discordia.Components {yesbutton, nobutton}
       }
 
-      local pressed, interaction = newmessage:waitComponent(nil, nil, nil, function(interaction)
+      local pressed, interaction = newmessage:waitComponent("button", nil, 1000 * 1800, function(interaction)
         local reactionid = userid or message.author.id
 
         if interaction.member.id ~= reactionid then
