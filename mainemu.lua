@@ -186,14 +186,13 @@ client:on('messageCreate', function(message)
   handlemessage(message)
 end)
 
-client:on('buttonPressed', function(buttonid, member, message)
-  handlebutton(buttonid, member, message)
-end)
-
 print("ok commands loaded, doing reactions")
 
 print("Resetting clocks...")
 resetclocks()
+
+print("Clearing cache")
+clearcache()
 
 print("Stocking shop")
 stockshop()
