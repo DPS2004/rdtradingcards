@@ -3,7 +3,7 @@ function command.run(message, mt, overwrite)
   local authcheck
   if overwrite then
     authcheck = true
-  else
+  elseif message.guild then
     local cmember = message.guild:getMember(message.author)
     authcheck = cmember:hasRole(privatestuff.modroleid)
   end
@@ -497,11 +497,11 @@ function command.run(message, mt, overwrite)
       local pressed, interaction = newmessage:waitComponent("button", nil, 1000 * 1800, function(interaction)
         local reactionid = userid or message.author.id
 
-        if interaction.member.id ~= reactionid then
+        if interaction.user.id ~= reactionid then
           interaction:reply("Sorry, but you cannot react to this button!", true)
         end
 
-        return interaction.member.id == reactionid
+        return interaction.user.id == reactionid
       end)
 
       newmessage:update{components = discordia.Components {yesbutton:disable(), nobutton:disable()}}
