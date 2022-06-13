@@ -619,7 +619,7 @@ o-''|\\_____/)
           if consdb[request].command then
             request = consdb[request].command
           end
-          cmdcons[request].run(uj,"savedata/" .. message.author.id .. ".json",message,mt,fn)
+          cmdcons[request].run(uj, "savedata/" .. message.author.id .. ".json", message, mt, nil , fn)
           return
         end
       else

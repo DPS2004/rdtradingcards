@@ -15,22 +15,24 @@ function item.run(uj, ujf, message, mt, interaction)
     if uj.sodapt["box"] then box = uj.sodapt["box"] end
     if uj.sodapt["equip"] then box = uj.sodapt["equip"] end
   end
-  
+
   pull = uj.lastpull - time:toHours() + 11.5 + pull
   if pull < 0 then pull = 0 end
-  pray = uj.lastprayer - time:toDays() + 23/24 + pray
+  pray = uj.lastprayer - time:toDays() + 23 / 24 + pray
   if pray < 0 then pray = 0 end
   box = uj.lastbox - time:toHours() + 11.5 + box
   if box < 0 then box = 0 end
   equip = uj.lastequip - time:toHours() + 6 + equip
   if equip < 0 then equip = 0 end
 
-  uj.sodapt = {pull = pull, pray = pray, box = box, equip = equip}
+  uj.sodapt = { pull = pull, pray = pray, box = box, equip = equip }
   uj.lastpull = -12
   uj.lastprayer = -3
   uj.lastbox = -12
   uj.lastequip = -12
   dpf.savejson(ujf, uj)
-  interaction:reply("Your cooldowns have been removed! For now...")
+  local replying = interaction or message
+  replying:reply("Your cooldowns have been removed! For now...")
 end
+
 return item

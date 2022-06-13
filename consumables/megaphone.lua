@@ -8,16 +8,17 @@ function item.run(uj, ujf, message, mt, interaction)
     if uj.consumables["megaphone"] == 0 then uj.consumables["megaphone"] = nil end
     uj.timesitemused = uj.timesitemused and uj.timesitemused + 1 or 1
     dpf.savejson(ujf, uj)
-    
+
     local text = table.concat(mt, "/", 2):gsub("[<>]", "")
 
+    if interaction then interaction:updateDeferred() end
     if message.guild then message:delete() end
     local newmessage = nil
     if message.attachment then
       local res, body = http.request("GET", message.attachment.url)
-      newmessage = client:getChannel(cardchannel):send{
+      newmessage = client:getChannel(cardchannel):send {
         content = "A message comes through the **Megaphone**:\n" .. text,
-        file = {message.attachment.filename, body}
+        file = { message.attachment.filename, body }
       }
       newmessage:hideEmbeds()
     else
@@ -26,7 +27,9 @@ function item.run(uj, ujf, message, mt, interaction)
     end
     handlemessage(newmessage, text)
   else
-    interaction:reply("The megaphone was not used. Please attach a message with c!use megaphone/(YOUR MESSAGE HERE)")
+    local replying = interaction or message
+    replying:reply("The megaphone was not used. Please attach a message with c!use megaphone/(YOUR MESSAGE HERE)")
   end
 end
+
 return item
