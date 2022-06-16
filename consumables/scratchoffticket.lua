@@ -18,8 +18,10 @@ function item.run(uj, ujf, message, mt, interaction)
     uj.tokens = uj.tokens + winnings
     message:reply("**We have a winner!** <@" .. uj.id .. '> just won **' .. winnings .. ' Tokens**!')
   elseif chance == 3 then
-    --do something funny here
-    message:reply("Your ticket was not a winning one... Better luck next time!")
+    message:reply{
+      content = "Your ticket was not a winning one... Better luck next time!",
+      file = "assets/keep_gambling.jpg"
+    }
   else
     message:reply("Your ticket was not a winning one... Better luck next time!")
   end
