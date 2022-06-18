@@ -1,11 +1,9 @@
 {
   "basemult": 4,
-  "groups": [
-    {
+  "groups": [{
       "groupname": "S8 CARDS WILL BE MOVED TO THEIR PROPER SPACE SOON:tm:",
       "basechance": 5,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "janitorr",
           "name": "Janitor (Rare)",
@@ -553,7 +551,7 @@
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968571722141925436/leperv.png"
         },
         {
-          "chance": 2,
+          "chance": 1,
           "filename": "lepervdc",
           "name": "Le Perv (Discontinued)",
           "type": "Discontinued",
@@ -704,7 +702,8 @@
           "smell": "Repetition",
           "season": 8,
           "bonuses": {
-            "duncecap": true
+            "duncecap": true,
+            "cafemixtape": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973577552067190804/thelick.png"
         },
@@ -835,7 +834,9 @@
           "description": "(Level by MarioMak967)",
           "smell": "Marketable Plushies",
           "season": 8,
-          "bonuses": {},
+          "bonuses": {
+            "collabplaceholder": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967919656306372668/ohurricane.png"
         },
         {
@@ -1026,7 +1027,8 @@
           "smell": "Potted Plants",
           "season": 8,
           "bonuses": {
-            "oldfiles": true
+            "oldfiles": true,
+            "paddedstickersheet": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967950366987677707/pixelplantdc.png"
         },
@@ -1477,7 +1479,8 @@
           "season": 8,
           "bonuses": {
             "okamiiscollar": true,
-            "duncecap": true
+            "duncecap": true,
+            "rustysword": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973005387320164362/pogsomniacr.png"
         },
@@ -1490,7 +1493,8 @@
           "smell": "Cardboard",
           "season": 8,
           "bonuses": {
-            "duncecap": true
+            "duncecap": true,
+            "rustysword": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981261431578165298/pogsomniacur.png"
         },
@@ -1588,7 +1592,7 @@
           "season": 8,
           "bonuses": {
             "lostnametag": true,
-            "paddedstickersheet": true
+            "collabplaceholder": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973006006999212082/options.png"
         },
@@ -1695,7 +1699,8 @@
           "smell": "Blackmail",
           "season": 8,
           "bonuses": {
-            "cafemixtape": true
+            "cafemixtape": true,
+            "duncecap": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/984011370003582976/mybrothe.png"
         },
@@ -2375,6 +2380,7 @@
           "smell": "Releases",
           "season": 8,
           "bonuses": {
+            "filmreel": true,
             "swirlymarbles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983024094368919612/t1-ex.gif"
@@ -2388,6 +2394,7 @@
           "smell": "Constants",
           "season": 8,
           "bonuses": {
+            "filmreel": true,
             "swirlymarbles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983024281556496384/t2-ex.gif"
@@ -2401,6 +2408,7 @@
           "smell": "Passing Out",
           "season": 8,
           "bonuses": {
+            "filmreel": true,
             "swirlymarbles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983024357590855690/t3-ex.gif"
@@ -2414,6 +2422,7 @@
           "smell": "Solar Systems",
           "season": 8,
           "bonuses": {
+            "filmreel": true,
             "swirlymarbles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983024386573496380/t4-ex.gif"
@@ -2673,7 +2682,7 @@
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996593705468014/goatsr.png"
         },
         {
-          "chance": 2,
+          "chance": 1,
           "filename": "goatur",
           "name": "Goat (Ultra Rare)",
           "type": "Ultra Rare",
@@ -2684,9 +2693,9 @@
             "swirlymarbles": true
           },
           "embed": [
-		    "https://cdn.discordapp.com/attachments/829197797789532181/984524540707237978/goatur.png",
-		    "https://cdn.discordapp.com/attachments/829197797789532181/984527299963670640/goatur2.png"
-		  ]
+            "https://cdn.discordapp.com/attachments/829197797789532181/984524540707237978/goatur.png",
+            "https://cdn.discordapp.com/attachments/829197797789532181/984527299963670640/goatur2.png"
+          ]
         },
         {
           "chance": 0,
@@ -2864,7 +2873,7 @@
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/980991324679462993/charlier.png"
         },
         {
-          "chance": 3,
+          "chance": 1,
           "filename": "charlieur",
           "name": "Charla Tan (Ultra Rare)",
           "type": "Ultra Rare",
@@ -2891,7 +2900,7 @@
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/984008845531697182/sefr.png"
         },
         {
-          "chance": 3,
+          "chance": 1,
           "filename": "sefur",
           "name": "Sef (Ultra Rare)",
           "type": "Ultra Rare",
@@ -2918,7 +2927,7 @@
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981255803547832400/overseerr.png"
         },
         {
-          "chance": 3,
+          "chance": 1,
           "filename": "overseerur",
           "name": "Overseer (Ultra Rare)",
           "type": "Ultra Rare",
@@ -2938,7 +2947,10 @@
           "description": "(Level by 7th Beat Games, Collaborated with PeroPero Games)",
           "smell": "Donut Thievery",
           "season": 8,
-          "bonuses": {},
+          "bonuses": {
+            "collabplaceholder": true,
+            "lostnametag": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/984229842197286912/luxurycar.png"
         },
         {
@@ -2949,7 +2961,9 @@
           "description": "(Level by 7th Beat Games, Collaborated with PeroPero Games)",
           "smell": "Stomach Aches",
           "season": 8,
-          "bonuses": {},
+          "bonuses": {
+            "collabplaceholder": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/984229865169506364/tapestopnight.png"
         },
         {
@@ -2962,8 +2976,9 @@
           "season": 8,
           "bonuses": {
             "rustysword": true,
-			"deluxebirdseed": true
-		  },
+            "deluxebirdseed": true,
+            "collabplaceholder": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/984230412698128384/90sdecision.png"
         }
       ]
@@ -2971,8 +2986,7 @@
     {
       "groupname": "official levels",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 2,
           "filename": "bi",
           "name": "Battleworn Insomniac",
@@ -3033,7 +3047,8 @@
           "smell": "Understaffing",
           "season": 1,
           "bonuses": {
-            "oversizedstethoscope": true
+            "oversizedstethoscope": true,
+            "lostnametag": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/830804331090673694/oneshiftmore.png"
         },
@@ -3472,7 +3487,9 @@
           "description": "(Level by 7th Beat Games, Collaborated with D-CELL GAMES)",
           "smell": "Illegal Bands",
           "season": 7,
-          "bonuses": {},
+          "bonuses": {
+            "collabplaceholder": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/876502411626303508/wot.png"
         }
       ]
@@ -3485,8 +3502,7 @@
     {
       "groupname": "cole",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "coler",
           "name": "Cole Brew (Rare)",
@@ -3572,8 +3588,7 @@
     {
       "groupname": "farmer",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "farmerr",
           "name": "Farmer (Rare)",
@@ -3645,8 +3660,7 @@
     {
       "groupname": "hailey",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "haileyr",
           "name": "Hailey (Rare)",
@@ -3732,8 +3746,7 @@
     {
       "groupname": "ian",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "ianr",
           "name": "Ian (Rare)",
@@ -3791,8 +3804,7 @@
     {
       "groupname": "edega",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "edegar",
           "name": "Edega (Rare)",
@@ -3850,8 +3862,7 @@
     {
       "groupname": "insomniac",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "insomniacr",
           "name": "Insomniac (Rare)",
@@ -3937,8 +3948,7 @@
     {
       "groupname": "intern",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "internr",
           "name": "Intern (Rare)",
@@ -4040,8 +4050,7 @@
     {
       "groupname": "logan",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "loganr",
           "name": "Logan (Rare)",
@@ -4127,8 +4136,7 @@
     {
       "groupname": "miner",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "minerr",
           "name": "Miner (Rare)",
@@ -4200,8 +4208,7 @@
     {
       "groupname": "mrsstevenson",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "mrsstevensonr",
           "name": "Mrs. Stevenson (Rare)",
@@ -4273,8 +4280,7 @@
     {
       "groupname": "mrstevenson",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "mrstevensonr",
           "name": "Mr. Stevenson (Rare)",
@@ -4346,8 +4352,7 @@
     {
       "groupname": "paige",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "paiger",
           "name": "Paige (Rare)",
@@ -4405,8 +4410,7 @@
     {
       "groupname": "politician",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "politicianr",
           "name": "Politician (Rare)",
@@ -4464,8 +4468,7 @@
     {
       "groupname": "samurai",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "samurair",
           "name": "Samurai (Rare)",
@@ -4567,8 +4570,7 @@
     {
       "groupname": "nicole",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "nicoler",
           "name": "Nicole Ting (Rare)",
@@ -4626,8 +4628,7 @@
     {
       "groupname": "lucia",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "luciar",
           "name": "Lucia Moon (Rare)",
@@ -4685,8 +4686,7 @@
     {
       "groupname": "yo",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "yor",
           "name": "Yo (Rare)",
@@ -4744,8 +4744,7 @@
     {
       "groupname": "otto",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "ottor",
           "name": "Otto (Rare)",
@@ -4801,8 +4800,7 @@
     {
       "groupname": "heartchick",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "heartchickr",
           "name": "Heart Chick (Rare)",
@@ -4874,8 +4872,7 @@
     {
       "groupname": "rattle",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "rattler",
           "name": "Rattle (Rare)",
@@ -4931,8 +4928,7 @@
     {
       "groupname": "loafy",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "loafyr",
           "name": "Loafy (Rare)",
@@ -4988,8 +4984,7 @@
     {
       "groupname": "spider",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "spiderr",
           "name": "Dr. Spider, PHD (Rare)",
@@ -5055,8 +5050,7 @@
     {
       "groupname": "bodybuilder",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "bodybuilderr",
           "name": "Bodybuilder (Rare)",
@@ -5107,8 +5101,7 @@
     {
       "groupname": "barista",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "baristar",
           "name": "Barista (Rare)",
@@ -5166,8 +5159,7 @@
     {
       "groupname": "cockatiel",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "cockatielr",
           "name": "Cockatiel (Rare)",
@@ -5225,8 +5217,7 @@
     {
       "groupname": "parrot",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "parrotr",
           "name": "Parrot (Rare)",
@@ -5284,8 +5275,7 @@
     {
       "groupname": "owl",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "owlr",
           "name": "Owl (Rare)",
@@ -5343,8 +5333,7 @@
     {
       "groupname": "oriole",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "orioler",
           "name": "Oriole (Rare)",
@@ -5407,8 +5396,7 @@
     {
       "groupname": "rooms",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "roomsr",
           "name": "Rooms (Rare)",
@@ -5500,8 +5488,7 @@
     {
       "groupname": "rows",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "rowsr",
           "name": "Rows (Rare)",
@@ -5548,8 +5535,7 @@
     {
       "groupname": "sound",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "soundr",
           "name": "Sound (Rare)",
@@ -5594,8 +5580,7 @@
     {
       "groupname": "vfx",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "vfxr",
           "name": "VFX (Rare)",
@@ -5640,8 +5625,7 @@
     {
       "groupname": "groups",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 1,
           "filename": "samuraigroup",
           "name": "The Samurai Group",
@@ -5881,8 +5865,7 @@
     {
       "groupname": "custom level cards",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 2,
           "filename": "alienalien",
           "name": "Alien Alien",
@@ -6235,7 +6218,8 @@
           "smell": "Fun:tm:",
           "season": 3,
           "bonuses": {
-            "oversizedstethoscope": true
+            "oversizedstethoscope": true,
+            "fanonplaceholder": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202555467857990/rrr.png"
         },
@@ -6317,7 +6301,8 @@
           "smell": "FlingSmash for the Nintendo Wii",
           "season": 3,
           "bonuses": {
-            "cafemixtape": true
+            "cafemixtape": true,
+            "duncecap": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202971593408522/whydontyouplaythem.png"
         },
@@ -6330,7 +6315,8 @@
           "smell": "Pure Crystals",
           "season": 2,
           "bonuses": {
-            "oversizedstethoscope": true
+            "oversizedstethoscope": true,
+            "duncecap": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202217264611348/mylevelcrystalline.png"
         },
@@ -6595,7 +6581,8 @@
           "smell": "Breakups",
           "season": 6,
           "bonuses": {
-            "valentinesdaycard": true
+            "valentinesdaycard": true,
+            "paddedstickersheet": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849011169212497920/bluebear.png"
         },
@@ -6884,7 +6871,9 @@
           "description": "(Level by NoranOmicron)",
           "smell": "Grass",
           "season": 7,
-          "bonuses": {},
+          "bonuses": {
+            "rustysword": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/575848843049172994/873225870410649610/wantgnomes.png"
         },
         {
@@ -7109,8 +7098,7 @@
     {
       "groupname": "special cards",
       "basechance": 0,
-      "cards": [
-        {
+      "cards": [{
           "chance": 0,
           "filename": "ssss45",
           "name": "Shaun's Server Statistics Sampling #45",
@@ -7148,8 +7136,7 @@
     {
       "groupname": "memes",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "beansr",
           "name": "Beans (Rare)",
@@ -7323,8 +7310,7 @@
     {
       "groupname": "pico8",
       "basechance": 4,
-      "cards": [
-        {
+      "cards": [{
           "chance": 2,
           "filename": "rhythmstacker",
           "name": "Rhythm Stacker",
@@ -7343,7 +7329,10 @@
           "season": 3,
           "description": "(Cart by auburn. Playable with the PICO-8 app or online at https://auburnsummer.itch.io/acofoi . The password is meaculpa)",
           "smell": "Indecisiveness",
-          "bonuses": {},
+          "bonuses": {
+            "swirlymarbles": true,
+            "driftingmetronome": true
+          },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200274178572318/acofoi.p8.png"
         },
         {
@@ -7367,8 +7356,7 @@
     {
       "groupname": "big bad bird",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "bbbr",
           "name": "Big Bad Bird (Rare)",
@@ -7430,8 +7418,7 @@
     {
       "groupname": "draemon",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "draemonr",
           "name": "Draemon (Rare)",
@@ -7503,8 +7490,7 @@
     {
       "groupname": "inima",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "inimar",
           "name": "Inima (Rare)",
@@ -7562,8 +7548,7 @@
     {
       "groupname": "fhotto",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "fhottor",
           "name": "Fire Hazard Otto (Rare)",
@@ -7621,8 +7606,7 @@
     {
       "groupname": "connectifia",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "connectifiar",
           "name": "Connectifia Abortus (Rare)",
@@ -7682,8 +7666,7 @@
     {
       "groupname": "rodney",
       "basechance": 3,
-      "cards": [
-        {
+      "cards": [{
           "chance": 3,
           "filename": "rodneyr",
           "name": "Rodney (Rare)",
@@ -7698,7 +7681,7 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968949039779426334/rodneyr.png"
         },
-		{
+        {
           "chance": 2,
           "filename": "rodneysr",
           "name": "Rodney (Super Rare)",
@@ -7750,82 +7733,74 @@
     {
       "groupname": "quaver",
       "basechance": 3,
-      "cards": [
-        {
-          "chance": 3,
-          "filename": "quaverr",
-          "name": "Quaver (Rare)",
-          "type": "Rare",
-          "description": "(Art by RJ Lake)",
-          "smell": "Intense Vibing",
-          "season": 7,
-          "bonuses": {
-            "okamiiscollar": true,
-            "collabplaceholder": true
-          },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/875763678492889088/quaverr.png"
-        }
-      ]
+      "cards": [{
+        "chance": 3,
+        "filename": "quaverr",
+        "name": "Quaver (Rare)",
+        "type": "Rare",
+        "description": "(Art by RJ Lake)",
+        "smell": "Intense Vibing",
+        "season": 7,
+        "bonuses": {
+          "okamiiscollar": true,
+          "collabplaceholder": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/705963512983191566/875763678492889088/quaverr.png"
+      }]
     },
     {
       "groupname": "beat",
       "basechance": 3,
-      "cards": [
-        {
-          "chance": 3,
-          "filename": "beatr",
-          "name": "Beat (Rare)",
-          "type": "Rare",
-          "description": "(Art by RJ Lake)",
-          "smell": "Musical Crimes",
-          "season": 7,
-          "bonuses": {
-            "okamiiscollar": true,
-            "collabplaceholder": true
-          },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/875762063274811432/beatr.png"
-        }
-      ]
+      "cards": [{
+        "chance": 3,
+        "filename": "beatr",
+        "name": "Beat (Rare)",
+        "type": "Rare",
+        "description": "(Art by RJ Lake)",
+        "smell": "Musical Crimes",
+        "season": 7,
+        "bonuses": {
+          "okamiiscollar": true,
+          "collabplaceholder": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/705963512983191566/875762063274811432/beatr.png"
+      }]
     },
     {
       "groupname": "treble",
       "basechance": 3,
-      "cards": [
-        {
-          "chance": 3,
-          "filename": "trebler",
-          "name": "Treble (Rare)",
-          "type": "Rare",
-          "description": "(Art by RJ Lake)",
-          "smell": "Sick Piano Solos",
-          "season": 7,
-          "bonuses": {
-            "okamiiscollar": true,
-            "collabplaceholder": true
-          },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/875762059399274506/trebler.png"
-        }
-      ]
+      "cards": [{
+        "chance": 3,
+        "filename": "trebler",
+        "name": "Treble (Rare)",
+        "type": "Rare",
+        "description": "(Art by RJ Lake)",
+        "smell": "Sick Piano Solos",
+        "season": 7,
+        "bonuses": {
+          "okamiiscollar": true,
+          "collabplaceholder": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/705963512983191566/875762059399274506/trebler.png"
+      }]
     },
     {
       "groupname": "clef",
       "basechance": 3,
-      "cards": [
-        {
-          "chance": 3,
-          "filename": "clefr",
-          "name": "Clef (Rare)",
-          "type": "Rare",
-          "description": "(Art by RJ Lake)",
-          "smell": "Bass Kick",
-          "season": 7,
-          "bonuses": {
-            "okamiiscollar": true,
-            "collabplaceholder": true
-          },
-          "embed": "https://cdn.discordapp.com/attachments/705963512983191566/875762060640804884/clefr.png"
-        }
-      ]
+      "cards": [{
+        "chance": 3,
+        "filename": "clefr",
+        "name": "Clef (Rare)",
+        "type": "Rare",
+        "description": "(Art by RJ Lake)",
+        "smell": "Bass Kick",
+        "season": 7,
+        "bonuses": {
+          "okamiiscollar": true,
+          "collabplaceholder": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/705963512983191566/875762060640804884/clefr.png"
+      }]
     }
   ]
 }
