@@ -16,3 +16,8 @@ luvit.exe
 .directory
 .idea/
 .vscode/
+
+# for the linux terminal
+nhrun.sh
+nohup.out
+runmain.sh
