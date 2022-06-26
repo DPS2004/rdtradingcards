@@ -453,48 +453,47 @@ o-''|\\_____/)
       end
 
       --error handling
-      local function sendshoperror(result)
-        print(result)
-        if result == "notenough" then
+      local sendshoperror = {
+        notenough = function()
           message.channel:send('The **Wolf** frowns. You don\'t have the ' .. sprice .. ' **Tokens** required to buy the **' .. sname .. '**!')
-        end
+        end,
 
-        if result == "outofstock" then
+        outofstock = function()
           message.channel:send('The **Wolf** frowns. It is currently out of stock of **' .. sname .. '**.')
-        end
+        end,
 
-        if result == "toomanyrequested" then
+        toomanyrequested = function()
           message.channel:send('The **Wolf** frowns. You can only buy ' .. stock .. ' **' .. sname .. '** at most.')
-        end
+        end,
 
-        if result == "donthave" then
+        donthave = function()
           if nopeeking then
             message.channel:send('The **Wolf** looks at you with confusion. It might not be selling ' .. mt[2] .. ', or it might have misunderstood your request.')
           else
             message.channel:send('The **Wolf** looks at you with confusion. It doesn\'t seem to be selling **' .. sname .. '**.')
           end
-        end
+        end,
 
-        if result == "alreadyhave" then
+        alreadyhave = function()
           message.channel:send('The **Wolf** looks at you with confusion. You already have the **' .. sname .. '** item.')
-        end
+        end,
         
-        if result == "hasfixedmouse" then
+        hasfixedmouse = function()
           message.channel:send('The **Wolf** frowns. You already own a Mouse.')
-        end
+        end,
 
-        if result == "oneitemonly" then
+        oneitemonly = function()
           message.channel:send('The **Wolf** frowns. You can only own one of each equippable item.')
-        end
+        end,
 
-        if result == "unknownrequest" then
+        unknownrequest = function()
           if nopeeking then
             message.channel:send('The **Wolf** looks at you with confusion. It might not be selling ' .. mt[2] .. ', or it might have misunderstood your request.')
           else
             message.channel:send('The **Wolf** looks at you with confusion. It does not appear to know what ' .. mt[2] .. ' is.')
           end
         end
-      end
+      }
 
       if constexttofn(mt[2]) then
         srequest = constexttofn(mt[2])
@@ -508,24 +507,24 @@ o-''|\\_____/)
         end
 
         if not sindex then
-          sendshoperror("donthave")
+          sendshoperror["donthave"]()
           return
         end
 
         stock = sj.consumables[sindex].stock
         if stock <= 0 then
-          sendshoperror("outofstock")
+          sendshoperror["outofstock"]()
           return
         end
 
         if numrequest > stock then
-          sendshoperror("toomanyrequested")
+          sendshoperror["toomanyrequested"]()
           return
         end
 
         sprice = sj.consumables[sindex].price * numrequest
         if uj.tokens < sprice then
-          sendshoperror("notenough")
+          sendshoperror["notenough"]()
           return
         end
 
@@ -544,32 +543,32 @@ o-''|\\_____/)
         sprice = sj.itemprice
 
         if srequest ~= sj.item then
-          sendshoperror("donthave")
+          sendshoperror["donthave"]()
           return
         end
 
         if uj.items[srequest] then
-          sendshoperror("alreadyhave")
+          sendshoperror["alreadyhave"]()
           return
         end
 
         if sj.item == "brokenmouse" and uj.items["fixedmouse"] then
-          sendshoperror("hasfixedmouse")
+          sendshoperror["hasfixedmouse"]()
           return
         end
 
         if sj.itemstock <= 0 then
-          sendshoperror("outofstock")
+          sendshoperror["outofstock"]()
           return
         end
 
         if numrequest > 1 then
-          sendshoperror("oneitemonly")
+          sendshoperror["oneitemonly"]()
           return
         end
 
         if uj.tokens < sprice then
-          sendshoperror("notenough")
+          sendshoperror["notenough"]()
           return
         end
 
@@ -595,24 +594,24 @@ o-''|\\_____/)
         end
 
         if not sindex then
-          sendshoperror("donthave")
+          sendshoperror["donthave"]()
           return
         end
 
         stock = sj.cards[sindex].stock
         if stock <= 0 then
-          sendshoperror("outofstock")
+          sendshoperror["outofstock"]()
           return
         end
 
         if numrequest > stock then
-          sendshoperror("toomanyrequested")
+          sendshoperror["toomanyrequested"]()
           return
         end
 
         sprice = sj.cards[sindex].price * numrequest
         if uj.tokens< sprice then
-          sendshoperror("notenough")
+          sendshoperror["notenough"]()
           return
         end
 
@@ -625,7 +624,7 @@ o-''|\\_____/)
         return
       end
 
-      sendshoperror("unknownrequest")
+      sendshoperror["unknownrequest"]()
       return
     elseif request == "wolf" then
       message.channel:send{embed = {
