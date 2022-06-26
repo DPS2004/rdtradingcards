@@ -436,140 +436,197 @@ o-''|\\_____/)
     if request == "shop" then
       checkforreload(time:toDays())
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
-      local result = ""
-      local sprice = 0
-      local srequest = ""
-      local sname = ""
-      local stock = 0
-      local sindex = 0
+      local sprice
+      local srequest
+      local sname
+      local stock
+      local sindex
+      local numrequest = 1
+      if tonumber(mt[3]) then
+        if tonumber(mt[3]) > 1 then numrequest = math.floor(mt[3]) end
+      end
+
       if (not mt[2]) or (mt[2] == "") then
         cmd.look.run(message, mt)
         mt[2] = ""
         return
       end
+
+      --error handling
+      local function sendshoperror(result)
+        print(result)
+        if result == "notenough" then
+          message.channel:send('The **Wolf** frowns. You don\'t have the ' .. sprice .. ' **Tokens** required to buy the **' .. sname .. '**!')
+        end
+
+        if result == "outofstock" then
+          message.channel:send('The **Wolf** frowns. It is currently out of stock of **' .. sname .. '**.')
+        end
+
+        if result == "toomanyrequested" then
+          message.channel:send('The **Wolf** frowns. You can only buy ' .. stock .. ' **' .. sname .. '** at most.')
+        end
+
+        if result == "donthave" then
+          if nopeeking then
+            message.channel:send('The **Wolf** looks at you with confusion. It might not be selling ' .. mt[2] .. ', or it might have misunderstood your request.')
+          else
+            message.channel:send('The **Wolf** looks at you with confusion. It doesn\'t seem to be selling **' .. sname .. '**.')
+          end
+        end
+
+        if result == "alreadyhave" then
+          message.channel:send('The **Wolf** looks at you with confusion. You already have the **' .. sname .. '** item.')
+        end
+        
+        if result == "hasfixedmouse" then
+          message.channel:send('The **Wolf** frowns. You already own a Mouse.')
+        end
+
+        if result == "oneitemonly" then
+          message.channel:send('The **Wolf** frowns. You can only own one of each equippable item.')
+        end
+
+        if result == "unknownrequest" then
+          if nopeeking then
+            message.channel:send('The **Wolf** looks at you with confusion. It might not be selling ' .. mt[2] .. ', or it might have misunderstood your request.')
+          else
+            message.channel:send('The **Wolf** looks at you with confusion. It does not appear to know what ' .. mt[2] .. ' is.')
+          end
+        end
+      end
+
       if constexttofn(mt[2]) then
         srequest = constexttofn(mt[2])
         sname = consdb[srequest].name
-        local x = false
+
         for i,v in ipairs(sj.consumables) do
           if v.name == srequest then
-            x = true
-            stock = v.stock
-            sprice = v.price
             sindex = i
+            break
           end
         end
-        if x then 
-          if stock > 0 then
-            if uj.tokens >= sprice then
-              --can buy consumable
-              
-              ynbuttons(message,{
-                color = 0x85c5ff,
-                title = "Buying " .. sname .. "...",
-                description = "The description for this item reads: \n`".. consdb[srequest].description .."`\n<@" .. message.author.id .. ">, will you buy it for "..sprice.." **Token" .. (sprice == 1 and "" or "s") .. "**?",
-              },"buy",{itemtype = "consumable",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest})
-              return
-            else
-              result = "notenough"
-            end
-          else
-            result = "outofstock"
-          end
-        else
-          result = "donthave"
+
+        if not sindex then
+          sendshoperror("donthave")
+          return
         end
-        
-      elseif itemtexttofn(mt[2]) then
+
+        stock = sj.consumables[sindex].stock
+        if stock <= 0 then
+          sendshoperror("outofstock")
+          return
+        end
+
+        if numrequest > stock then
+          sendshoperror("toomanyrequested")
+          return
+        end
+
+        sprice = sj.consumables[sindex].price * numrequest
+        if uj.tokens < sprice then
+          sendshoperror("notenough")
+          return
+        end
+
+        --can buy consumable
+        ynbuttons(message,{
+          color = 0x85c5ff,
+          title = "Buying " .. sname .. "...",
+          description = "The description for this item reads: \n`".. consdb[srequest].description .."`\n<@" .. message.author.id .. ">, will you buy " .. numrequest .. " for "..sprice.." **Token" .. (sprice == 1 and "" or "s") .. "**?",
+        },"buy",{itemtype = "consumable",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest,numrequest=numrequest})
+        return
+      end
+
+      if itemtexttofn(mt[2]) then
         srequest = itemtexttofn(mt[2])
         sname = itemdb[srequest].name
         sprice = sj.itemprice
-        if srequest == sj.item then
-          if not (sj.item == "brokenmouse" and uj.items["fixedmouse"]) then
-            if sj.itemstock > 0 then
-              if uj.tokens >= sprice then
-                if not uj.items[srequest] then
-                  --can buy item
-                  ynbuttons(message,{
-                    color = 0x85c5ff,
-                    title = "Buying " .. sname .. "...",
-                    description = "The description for this item reads: \n`".. itemdb[srequest].description .."`\n<@" .. message.author.id .. ">, will you buy it for "..sprice.." **Tokens**?",
-                  },"buy",{itemtype = "item",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest})
-                  return
-                else
-                  result = "alreadyhave"
-                end
-              else
-                result = "notenough"
-              end
-            else
-              result = "outofstock"
-            end
-          else
-            result = "hasfixedmouse"
-          end
-        else
-          result = "donthave"
-        end 
-      elseif texttofn(mt[2]) then
+
+        if srequest ~= sj.item then
+          sendshoperror("donthave")
+          return
+        end
+
+        if uj.items[srequest] then
+          sendshoperror("alreadyhave")
+          return
+        end
+
+        if sj.item == "brokenmouse" and uj.items["fixedmouse"] then
+          sendshoperror("hasfixedmouse")
+          return
+        end
+
+        if sj.itemstock <= 0 then
+          sendshoperror("outofstock")
+          return
+        end
+
+        if numrequest > 1 then
+          sendshoperror("oneitemonly")
+          return
+        end
+
+        if uj.tokens < sprice then
+          sendshoperror("notenough")
+          return
+        end
+
+        --can buy item
+        ynbuttons(message,{
+          color = 0x85c5ff,
+          title = "Buying " .. sname .. "...",
+          description = "The description for this item reads: \n`".. itemdb[srequest].description .."`\n<@" .. message.author.id .. ">, will you buy it for "..sprice.." **Tokens**?",
+        },"buy",{itemtype = "item",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest,numrequest=1})
+        return
+      end
+
+      if texttofn(mt[2]) then
+        print("card!")
         srequest = texttofn(mt[2])
         sname = cdb[srequest].name
-        local x = false
+
         for i,v in ipairs(sj.cards) do
           if v.name == srequest then
-            x = true
-            stock = v.stock
-            sprice = v.price
             sindex = i
+            break
           end
         end
-        if x then 
-          if stock > 0 then
-            if uj.tokens >= sprice then
-              --can buy card
-              ynbuttons(message,{
-                color = 0x85c5ff,
-                title = "Buying " .. sname .. "...",
-                description = "The description for this card reads: \n`".. cdb[srequest].description .."`\n<@" .. message.author.id .. ">, will you buy it for "..sprice.." **Token" .. (sprice == 1 and "" or "s") .."**?",
-              },"buy",{itemtype = "card",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest})
-              return
-            else
-              result = "notenough"
-            end
-          else
-            result = "outofstock"
-          end
-        else
-          result = "donthave"
-        end--jci please dont kill me
-           --i am going to kill you
-      else --unknown request
-        if nopeeking then
-          message.channel:send('The **Wolf** looks at you with confusion. It might not be selling ' .. mt[2] .. ', or it might have misunderstood your request.')
-        else
-          message.channel:send('The **Wolf** looks at you with confusion. It does not appear to know what ' .. mt[2] .. ' is.')
+
+        if not sindex then
+          sendshoperror("donthave")
+          return
         end
-      end
-      --error handling
-      if result == "notenough" then
-        message.channel:send('The **Wolf** frowns. You don\'t have the ' .. sprice .. ' **Tokens** required to buy the **' .. sname .. '**!')
-      end
-      if result == "outofstock" then
-        message.channel:send('The **Wolf** frowns. It is currently out of stock of **' .. sname .. '**.')
-      end
-      if result == "donthave" then
-        if nopeeking then
-          message.channel:send('The **Wolf** looks at you with confusion. It might not be selling ' .. mt[2] .. ', or it might have misunderstood your request.')
-        else
-          message.channel:send('The **Wolf** looks at you with confusion. It doesn\'t seem to be selling **' .. sname .. '**.')
+
+        stock = sj.cards[sindex].stock
+        if stock <= 0 then
+          sendshoperror("outofstock")
+          return
         end
+
+        if numrequest > stock then
+          sendshoperror("toomanyrequested")
+          return
+        end
+
+        sprice = sj.cards[sindex].price * numrequest
+        if uj.tokens< sprice then
+          sendshoperror("notenough")
+          return
+        end
+
+        --can buy card
+        ynbuttons(message,{
+          color = 0x85c5ff,
+          title = "Buying " .. sname .. "...",
+          description = "The description for this card reads: \n`".. cdb[srequest].description .."`\n<@" .. message.author.id .. ">, will you buy " .. numrequest .. " of them for "..sprice.." **Token" .. (sprice == 1 and "" or "s") .."**?",
+        },"buy",{itemtype = "card",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest,numrequest=numrequest})
+        return
       end
-      if result == "alreadyhave" then
-        message.channel:send('The **Wolf** looks at you with confusion. You already have the **' .. sname .. '** item.')
-      end
-      if result == "hasfixedmouse" then
-        message.channel:send('The **Wolf** frowns. You already own a Mouse.')
-      end
+
+      sendshoperror("unknownrequest")
+      return
     elseif request == "wolf" then
       message.channel:send{embed = {
         color = 0x85c5ff,

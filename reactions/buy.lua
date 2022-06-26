@@ -10,11 +10,11 @@ function reaction.run(message, interaction, data, response)
     --sanity check
     local checked = false
     if data.itemtype == "consumable" then
-      checked = (sj.consumables[data.sindex].name == data.srequest) and (sj.consumables[data.sindex].stock ~= 0)
+      checked = (sj.consumables[data.sindex].name == data.srequest) and (sj.consumables[data.sindex].stock >= data.numrequest)
     end --other types also go up here
     
     if data.itemtype == "card" then
-      checked = (sj.cards[data.sindex].name == data.srequest) and (sj.cards[data.sindex].stock ~= 0)
+      checked = (sj.cards[data.sindex].name == data.srequest) and (sj.cards[data.sindex].stock >= data.numrequest)
     end
 
     if data.itemtype == "item" then
@@ -35,9 +35,9 @@ function reaction.run(message, interaction, data, response)
     --do the fucking thing here
     
     if data.itemtype == "consumable" then
-      sj.consumables[data.sindex].stock = sj.consumables[data.sindex].stock - 1
+      sj.consumables[data.sindex].stock = sj.consumables[data.sindex].stock - data.numrequest
       if not uj.consumables then uj.consumables = {} end
-      local adding = consdb[data.srequest].quantity or 1
+      local adding = (consdb[data.srequest].quantity or 1) * data.numrequest
       if not uj.consumables[data.srequest] then
         uj.consumables[data.srequest] = adding
       else
@@ -45,12 +45,12 @@ function reaction.run(message, interaction, data, response)
       end
     end 
     if data.itemtype == "card" then
-      sj.cards[data.sindex].stock = sj.cards[data.sindex].stock - 1
+      sj.cards[data.sindex].stock = sj.cards[data.sindex].stock - data.numrequest
       if not uj.inventory then uj.inventory = {} end
       if not uj.inventory[data.srequest] then
-        uj.inventory[data.srequest] = 1
+        uj.inventory[data.srequest] = data.numrequest
       else
-        uj.inventory[data.srequest] = uj.inventory[data.srequest] + 1
+        uj.inventory[data.srequest] = uj.inventory[data.srequest] + data.numrequest
       end
     end 
     if data.itemtype == "item" then
