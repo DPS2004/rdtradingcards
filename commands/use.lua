@@ -533,7 +533,7 @@ o-''|\\_____/)
         ynbuttons(message,{
           color = 0x85c5ff,
           title = "Buying " .. sname .. "...",
-          description = "The description for this item reads: \n`".. consdb[srequest].description .."`\n<@" .. message.author.id .. ">, will you buy " .. numrequest .. " for "..sprice.." **Token" .. (sprice == 1 and "" or "s") .. "**?",
+          description = "The description for this item reads: \n`".. consdb[srequest].description .."`\n<@" .. message.author.id .. ">, will you buy " .. numrequest .. "of them for "..sprice.." **Token" .. (sprice == 1 and "" or "s") .. "**?",
         },"buy",{itemtype = "consumable",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest,numrequest=numrequest})
         return
       end
