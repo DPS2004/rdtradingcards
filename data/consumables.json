@@ -245,4 +245,12 @@
     "basestock": 10,
     "chance": 10
   },
+  "hauntedgrass" : {
+    "name": "Haunted Grass",
+    "description": "The next card you pull is guaranteed to be horror themed. You can only use one item of this type at a time.",
+    "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png",
+    "baseprice": 3,
+    "basestock": 8,
+    "chance": 10
+  },
 }
