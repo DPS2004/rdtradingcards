@@ -6595,7 +6595,8 @@
           "smell": "sandwich",
           "season": 6,
           "bonuses": {
-            "duncecap": true
+            "duncecap": true,
+			"sbubby": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849015688018001951/sandwich.png"
         },

@@ -58,7 +58,9 @@ function command.run(message, mt)
       swirlymarbles = "You can almost swear the **Swirly Marbles** smell like celestial objects.",
 	  
 	  granolabar = "The **Granola Bar** smells like sand.",
-	  hauntedgrass = "The **Haunted Grass** smells very petrichor." --unsure if this is the right usage but whatevs
+	  hauntedgrass = "The **Haunted Grass** smells very petrichor.", --unsure if this is the right usage but whatevs
+	  --cryopod
+	  subwayticket = "The **Subway Ticket** smells."
     }
     local consumablesmells = {
       caffeinatedsoda = "The **Caffeinated Soda** tickles your nose as you try to smell it.",
