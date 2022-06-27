@@ -128,15 +128,17 @@ function command.run(message, mt)
       message.channel:send(hcsmells[request])
     elseif itemtexttofn(request) then
       print("smelling")
-      if uj.items[itemtexttofn(request)] or shophas() then
-        message.channel:send(itemsmells[itemtexttofn(request)])
+      request = itemtexttofn(request)
+      if uj.items[request] or shophas(request) then
+        message.channel:send(itemsmells[request])
       else
-        message.channel:send("Sorry, but you do not have the **" .. itemdb[itemtexttofn(request)].name .. "** item.")
+        message.channel:send("Sorry, but you do not have the **" .. itemdb[request].name .. "** item.")
       end
     elseif constexttofn(request) then
       print("smelling consumable")
-      if uj.consumables[constexttofn(request)] or shophas(constexttofn(request)) then
-        message.channel:send(consumablesmells[constexttofn(request)])
+      request = constexttofn(request)
+      if uj.consumables[request] or shophas(request) then
+        message.channel:send(consumablesmells[request])
       else
         message.channel:send("Sorry, but the **" .. consdb[request].name .. "** item can't be found in the shop or your inventory.")
       end
