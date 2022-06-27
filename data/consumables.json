@@ -243,7 +243,7 @@
     "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png",
     "baseprice": 3,
     "basestock": 10,
-    "chance": 10
+    "chance": 0
   },
   "hauntedgrass" : {
     "name": "Haunted Grass",
@@ -251,7 +251,7 @@
     "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png",
     "baseprice": 3,
     "basestock": 8,
-    "chance": 10
+    "chance": 0
   },
   
   "subwayticket" : {
@@ -260,6 +260,6 @@
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/990822635485138964/subwayticket.png",
     "baseprice": 1,
     "basestock": 20,
-    "chance": 5
+    "chance": 0
   }
 }
