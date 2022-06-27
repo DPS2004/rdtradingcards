@@ -66,7 +66,11 @@ local time = sw:getTime()
       uj.timesdoubleclicked = uj.timesdoubleclicked and uj.timesdoubleclicked + 1 or 1
     end
   else
-    pulledcards= { constable[uj.conspt][math.random(#constable[uj.conspt])] }
+    if uj.conspt == "sbubby" then
+      pulledcards = { "sandwich" }
+    else
+      pulledcards= { constable[uj.conspt][math.random(#constable[uj.conspt])] }
+    end
     if uj.conspt == "quantummouse" then
       table.insert(pulledcards, constable["quantummouse"][math.random(#constable["quantummouse"])])
       if uj.equipped == "fixedmouse" and math.random(6) == 1 then
