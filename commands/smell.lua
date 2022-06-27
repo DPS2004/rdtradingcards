@@ -55,7 +55,9 @@ function command.run(message, mt)
       fieldjournal = "The **Field Journal** has a faint smell of slime emanating off of it.",
       driftingmetronome = "The **Drifting Metronome** smells slightly out of sync.",
       filmreel = "The **Film Reel** smells like *really* outdated video formats. Why are we still using these?",
-      swirlymarbles = "You can almost swear the **Swirly Marbles** smell like celestial objects."
+      swirlymarbles = "You can almost swear the **Swirly Marbles** smell like celestial objects.",
+	  
+	  granolabar = "The granola bar smells like sand."
     }
     local consumablesmells = {
       caffeinatedsoda = "The **Caffeinated Soda** tickles your nose as you try to smell it.",
