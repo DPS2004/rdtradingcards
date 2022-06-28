@@ -16,6 +16,7 @@ function reaction.run(message, interaction, data, response)
 
     uj.storage["rdcards"] = uj.storage["rdcards"] and uj.storage["rdcards"] + 1 or 1
 
+    cmd.checkcollectors.run(message, nil, message.channel)
     cmd.checkmedals.run(message, nil, message.channel)
 
     interaction:reply("You feel your storage getting a lot lighter. The **RDCards** card gets added to your storage.")

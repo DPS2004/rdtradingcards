@@ -2,8 +2,7 @@ local command = {}
 function command.run(message)
 
   print(message.author.name .. " did !prestige")
-  
-  
+
 	cmd.checkcollectors.run(message, mt)
 	cmd.checkmedals.run(message, mt)
 
@@ -11,9 +10,9 @@ function command.run(message)
     message.channel:send("You cannot prestige in DMs.") -- You could probably add some flair to these error messages lol
     return
   end
-  
+
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
-  
+
   if not uj.medals["cardmaestro"] then
     message.channel:send("...")
 	--todo say how many?
