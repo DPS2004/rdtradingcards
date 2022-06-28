@@ -797,9 +797,11 @@ function command.run(message, mt, overwrite)
           price = 4
         elseif rarity == "Discontinued" or rarity == "Alternate" then
           price = math.random(4, 6)
+        elseif rarity == "Discontinued Rare" then
+          price = math.random(5, 8)
         elseif rarity == "Discontinued Alternate" or rarity == "Discontinued Super Rare" then
           price = math.random(8, 10)
-        elseif rarity == "Discontinued Rare" or rarity == "Discontinued Ultra Rare" then
+        elseif rarity == "Discontinued Ultra Rare" then
           price = math.random(13, 17)
         end
 
