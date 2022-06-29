@@ -14,14 +14,19 @@ function reaction.run(message, interaction, data, response)
       end
     end
 
+    for k, v in pairs(uj.medals) do
+      uj.medals[k] = false
+    end
+
     uj.storage["rdcards"] = uj.storage["rdcards"] and uj.storage["rdcards"] + 1 or 1
+
+    dpf.savejson(ujf,uj)
 
     cmd.checkcollectors.run(message, nil, message.channel)
     cmd.checkmedals.run(message, nil, message.channel)
 
     interaction:reply("You feel your storage getting a lot lighter. The **RDCards** card gets added to your storage.")
 
-	  dpf.savejson(ujf,uj)
   end
 
   if response == "no" then
