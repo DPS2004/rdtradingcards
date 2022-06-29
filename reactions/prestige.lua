@@ -22,10 +22,12 @@ function reaction.run(message, interaction, data, response)
 
     dpf.savejson(ujf,uj)
 
+    interaction:updateDeferred()
+
     cmd.checkcollectors.run(message, nil, message.channel)
     cmd.checkmedals.run(message, nil, message.channel)
 
-    interaction:reply("You feel your storage getting a lot lighter. The **RDCards** card gets added to your storage.")
+    message:reply("You feel your storage getting a lot lighter. The **RDCards** card gets added to your storage.")
 
   end
 
