@@ -256,7 +256,7 @@ function command.run(message, mt, overwrite)
     _G['itemdb'] = dpf.loadjson("data/items.json", defaultjson)
     
     print("loading medal requires")
-    _G['medalrequires'] = dpf.loadjson("data/medalrequires.json",defaultjson)
+    _G['medalrequires'] = dofile("data/medalrequires.lua")
     
     _G['upgradeimages'] = {
       "https://cdn.discordapp.com/attachments/829197797789532181/838908505192661022/upgrade1.png",
