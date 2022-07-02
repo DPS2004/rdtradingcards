@@ -10,6 +10,6 @@
     "earth"
   ],
   "origin": [
-    "The **@card@** card has #fall# back to the #ground#. "
+    "The **@name@** @item@ has #fall# back to the #ground#. "
   ]
 }

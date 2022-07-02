@@ -16,6 +16,6 @@
     "outer space"
   ],
   "origin": [
-    "@ping@ has #action# a **@card@** into #place#!"
+    "@ping@ has #action# a **@name@** into #place#!"
   ]
 }

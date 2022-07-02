@@ -3677,7 +3677,7 @@
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202521355976715/roomsur.png"
         },
         {
-          "chance": 0.25,
+          "chance": 0.75,
           "filename": "roomsdc_r",
           "name": "Rooms (Discontinued Rare)",
           "type": "Discontinued Rare",
@@ -4975,8 +4975,7 @@
           "smell": "sandwich",
           "season": 6,
           "bonuses": {
-            "duncecap": true,
-			"sbubby": true
+            "duncecap": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849015688018001951/sandwich.png"
         },

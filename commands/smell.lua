@@ -117,7 +117,7 @@ function command.run(message, mt)
       if uj.inventory[curfilename] or uj.storage[curfilename] or shophas(curfilename) then
         print("user has card")
         local smell = cdb[curfilename].smell
-        message.channel:send(trf("smell", {card = curfilename, smell = smell}))
+        message.channel:send(trf("smell", {card = cdb[curfilename].name, smell = smell}))
       else
         print("user doesnt have card")
         if nopeeking then
