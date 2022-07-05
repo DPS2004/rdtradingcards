@@ -488,7 +488,8 @@
   {
     "require": [
       "goatr",
-      "goatsr"
+      "goatsr",
+      "goatur"
     ],
     "receive": "goatc"
   },
