@@ -2630,7 +2630,7 @@
           "filename": "luciaur",
           "name": "Lucia Moon (Ultra Rare)",
           "type": "Ultra Rare",
-          "description": "(Art by Kyle Labriola, edited by BIrDIS)",
+          "description": "(Art by BIrDIS, based on art by Kyle Labriola)",
           "smell": "Imagination",
           "season": 3,
           "bonuses": {
@@ -6550,7 +6550,7 @@
           "bonuses": {
             "duncecap": true
           },
-          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202955785207818/wallclockur.png"
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/994077689898082304/wallclockur.png"
         },
         {
           "chance": 3,
