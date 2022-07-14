@@ -1,13 +1,24 @@
 local command = {}
 function command.run(message, mt)
   print(message.author.name .. " did !fullstorage")
+  local filename = "savedata/" .. message.author.id .. ".json"
+
+  if not (mt[1] == "") then
+    filename = usernametojson(mt[1])
+  end
+
+  if not filename then
+    message.channel:send("Sorry, but I could not find a user named " .. mt[1] .. " in the database. Make sure that you have spelled it right, and that they have at least pulled a card to register!")
+    return
+  end
+
   message:addReaction("✅")
-  local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
+  local uj = dpf.loadjson(filename, defaultjson)
   local numkey = 0
   for k in pairs(uj.storage) do numkey = numkey + 1 end
   
   local storetable = {}
-  local contentstring = 'Your storage contains:'
+  local contentstring = (uj.id == message.author.id and "Your" or "<@" .. uj.id .. ">'s") .. " storage contains:"
   local titlestring = 'Full Storage'
   local storestring = ''
   local prevstorestring = ''
