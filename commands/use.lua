@@ -294,11 +294,15 @@ o-''|\\_____/)
     (_/ (_/
           ```]]
         elseif string.lower(mt[2]) == "savedata" then
-          if false then
-            embeddescription = '`DATA NOT FOUND.`'
+          local data = "savedata/" .. uj.id .. ".json"
+          if mt[3] then
+            data = usernametojson(mt[3])
+          end
+          if not data then
+            embeddescription = '`ERROR: DATA NOT FOUND.`'
           else
             embeddescription = '`DATA LOCATED. GENERATING PRINTOUT`'
-            filename = "savedata/" .. uj.id .. ".json"
+            filename = data
           end
         elseif string.lower(mt[2]) == "piss" then
           embeddescription = '`peachy moment 😳😳😳`'
