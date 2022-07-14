@@ -379,11 +379,16 @@ o-''|\\_____/)
           else
             embeddescription = '`ERROR: CARD PRINTER JAMMED. PLEASE WAIT.`'
           end
-        elseif string.lower(mt[2]) == "pleaseriseforthephilippinenationalanthem" and message.author.id == "298722923626364928" then
-          embedtitle = "Happy Triple Filipino Birthday! 🎉"
-          embeddescription = [[```
-🎓  🎓   🎓
-❔   🍑   😭```]]
+        elseif string.lower(mt[2]) == "pleaseriseforthephilippinenationalanthem" then
+          local filipinos = {"298722923626364928", "714072598480420864", "492698668399591425"}
+          if not table.search(filipinos, message.author.id) then
+            embeddescription = '`COMMAND "' .. mt[2] ..  '" NOT RECOGNIZED`'
+          else
+            embedtitle = "Happy Triple Filipino Birthday! 🎉"
+            embeddescription = [[```
+  🎓  🎓   🎓
+  ❔   🍑   😭```]]
+          end
         else
           embeddescription = '`COMMAND "' .. mt[2] ..  '" NOT RECOGNIZED`'
         end
