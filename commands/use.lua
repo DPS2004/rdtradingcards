@@ -379,6 +379,11 @@ o-''|\\_____/)
           else
             embeddescription = '`ERROR: CARD PRINTER JAMMED. PLEASE WAIT.`'
           end
+        elseif string.lower(mt[2]) == "pleaseriseforthephilippinenationalanthem" and message.author.id == "298722923626364928" then
+          embedtitle = "Happy Triple Filipino Birthday! 🎉"
+          embeddescription = [[```
+🎓  🎓   🎓
+❔   🍑   😭```]]
         else
           embeddescription = '`COMMAND "' .. mt[2] ..  '" NOT RECOGNIZED`'
         end
