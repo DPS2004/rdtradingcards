@@ -1,10 +1,11 @@
 local item = {}
 
 function item.run(uj, ujf, message, mt, interaction)
+  message:addReaction("✅")
   local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
   local boxstring = ""
-  for i, v in ipairs(wj.boxpool) do
-    boxstring = boxstring .. cdb[v].name .. "\n"
+  for i, v in ipairs(table.sorted(wj.boxpool)) do
+    boxstring = boxstring .. "**" .. cdb[v].name .. "**\n"
   end
 
   uj.consumables["xraygoggles"] = uj.consumables["xraygoggles"] - 1
@@ -13,7 +14,11 @@ function item.run(uj, ujf, message, mt, interaction)
 
   dpf.savejson(ujf, uj)
   if interaction then interaction:updateDeferred() end
-  message.author:send("The **Peculiar Box** contains:\n" .. boxstring)
+  message.author:send{embed = {
+    title = "The Peculiar Box Contains:",
+    description = boxstring,
+    color = 0x85c5ff,
+  }}
 end
 
 return item
