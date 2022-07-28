@@ -14,11 +14,14 @@ function item.run(uj, ujf, message, mt, interaction)
 
   dpf.savejson(ujf, uj)
   if interaction then interaction:updateDeferred() end
-  message.author:send{embed = {
-    title = "The Peculiar Box Contains:",
-    description = boxstring,
-    color = 0x85c5ff,
-  }}
+  message.author:send{
+    content = "The **Peculiar Box** contains:",
+    embed = {
+      title = "Peculiar Box",
+      description = boxstring,
+      color = 0x85c5ff,
+    }
+  }
 end
 
 return item
