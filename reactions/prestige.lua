@@ -19,6 +19,7 @@ function reaction.run(message, interaction, data, response)
     end
 
     uj.storage["rdcards"] = uj.storage["rdcards"] and uj.storage["rdcards"] + 1 or 1
+    uj.timesprestiged = uj.timesprestiged and uj.timesprestiged + 1 or 1
 
     dpf.savejson(ujf,uj)
 
