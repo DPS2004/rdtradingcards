@@ -24,3 +24,6 @@ You also need to install [discordia-interactions](https://github.com/Bilal2453/d
 To install vips, follow the installation instructions from the [libvips website](https://libvips.github.io/libvips/install.html), then add the libvips bin folder to your PATH. Afterwards, clone the [lua-vips repo](https://github.com/libvips/lua-vips) and copy the src/vips folder to your repo and the src/vips.lua file to the deps folder.
 
 I think you also have to make a folder named `savedata` in here in case you get an error that's like `Uncaught exception: error in error handling`.
+
+# NOTICE
+The MIT license only applies to the underlying RDCards code. The license does *not* apply to any other media, including characters, games, art, and screenshots.
