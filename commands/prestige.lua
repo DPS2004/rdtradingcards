@@ -14,8 +14,15 @@ function command.run(message)
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
 
   if not uj.medals["cardmaestro"] then
-    message.channel:send("...")
-	--todo say how many?
+    local excludedcards = { "rdcards", "key" }
+    local missingcount = 0
+
+    for k, v in pairs(cdb) do
+      if not table.search(excludedcards, k) and not uj.storage[k] then
+        missingcount = missingcount + 1
+      end
+    end
+    message.channel:send("You are still missing " .. missingcount .. " cards.")
     return
   end
 
