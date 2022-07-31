@@ -668,7 +668,7 @@ function command.run(message, mt, overwrite)
             end
             print("nmt: " .. inspect(nmt))
             local status, err = pcall(function ()
-              v.commandfunction.run(message,nmt,v.usebypass)
+              v.commandfunction.run(message,nmt,v.usebypass,content)
             end)
             if not status then
               print("uh oh")
