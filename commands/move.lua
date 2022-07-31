@@ -7,17 +7,17 @@ function command.run(message, mt)
   if not mt[1] then
     mt[1] = "pyrowmid"
   end
-  local locations = {"Pyrowmid", "Abandoned Lab", "Dark Hallway", "Shady Casino", "Windy Mountains", "Quaint Shop"}
+  local locations = {"Pyrowmid", "Abandoned Lab", "Windy Mountains", "Quaint Shop", "Dark Hallway", "Shady Casino"}
   local success = false
   local request = string.lower(mt[1])
   local newroom = 0
   
   --0: pyrowmid
   --1: lab
-  --2: hallway
-  --3: casino
-  --4: mountain
-  --5: shop
+  --2: mountain
+  --3: shop
+  --4: hallway
+  --5: casino
   
   if request == "pyrowmid" or request == "the pyrowmid" then
     success = true
@@ -25,16 +25,16 @@ function command.run(message, mt)
   elseif request == "lab" or request == "abandonedlab" or request == "the abandoned lab" or request == "abandoned lab" then
     success = true
     newroom = 1
-  elseif wj.ws >= 804 and (request == "hallway" or request == "darkhallway" or request == "the dark hallway" or request == "dark hallway") then
-    success = true
-    newroom = 2
-  elseif wj.ws >= 805 and (request == "casino" or request == "shadycasino" or request == "the shady casino" or request == "shady casino") then
-    success = true
-    newroom = 3
   elseif wj.ws >= 702 and (request == "mountains" or request == "mountain" or request == "windymountains" or request == "the windy mountains" or request == "windy mountains") then
     success = true
-    newroom = 4
+    newroom = 2
   elseif wj.ws >= 702 and (request == "shop" or request == "quaintshop" or request == "quaint shop" or request == "the quaint shop") then
+    success = true
+    newroom = 3
+  elseif wj.ws >= 804 and (request == "hallway" or request == "darkhallway" or request == "the dark hallway" or request == "dark hallway") then
+    success = true
+    newroom = 4
+  elseif wj.ws >= 805 and (request == "casino" or request == "shadycasino" or request == "the shady casino" or request == "shady casino") then
     success = true
     newroom = 5
   end
