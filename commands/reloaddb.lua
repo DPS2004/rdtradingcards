@@ -202,7 +202,7 @@ function command.run(message, mt, overwrite)
 	end
 	
 	
-	dpf.savejson('outcards.json',cdata)
+	--dpf.savejson('outcards.json',cdata)
     
     print('loading itemdb')    
     _G['itemdb'] = dpf.loadjson("data/items.json", defaultjson)
