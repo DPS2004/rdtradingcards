@@ -1,7 +1,7 @@
 local item = {}
 
 function item.run(uj, ujf, message, mt, interaction)
-  local cardchannel = privatestuff.cardchannel or '767533475603283978'
+  local cardchannel = privatestuff.cardchannel or '793993844789870603'
   if not uj.conspt then uj.conspt = "none" end
   if #mt ~= 1 or message.attachment then
     uj.consumables["megaphone"] = uj.consumables["megaphone"] - 1
