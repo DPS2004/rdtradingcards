@@ -1,0 +1,60 @@
+{
+      "groupname": "connectifia",
+      "basechance": 3,
+      "cards": [{
+          "chance": 3,
+          "filename": "connectifiar",
+          "name": "Connectifia Abortus (Rare)",
+          "type": "Rare",
+          "description": "(Art by Axobotl)",
+          "smell": "ERROR SMELL NOT FOUND",
+          "season": 7,
+          "bonuses": {
+            "okamiiscollar": true,
+            "fieldjournal": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872901361258344448/connectifiar.png"
+        },
+        {
+          "chance": 2,
+          "filename": "connectifiasr",
+          "name": "Connectifia Abortus (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by BIrDIS)",
+          "smell": "ERROR SMELL NOT FOUND",
+          "season": 7,
+          "bonuses": {
+            "fieldjournal": true,
+            "filmreel": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873762001439060038/connectifiasr.gif"
+        },
+        {
+          "chance": 1,
+          "filename": "connectifiaur",
+          "name": "Connectifia Abortus (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by Plant Guy)",
+          "smell": "ERROR SMELL NOT FOUND",
+          "season": 7,
+          "bonuses": {
+            "fieldjournal": true,
+            "filmreel": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/362784581344034816/901866186374021161/connectifiaur.gif"
+        },
+        {
+          "chance": 0,
+          "filename": "connectifiac",
+          "name": "Connectifia Abortus (Collector's)",
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Connectifia Abortus (Art by BIrDIS)",
+          "smell": "ERROR SMELL NOT FOUND",
+          "season": 7,
+          "bonuses": {
+            "fieldjournal": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872071967509983322/connectifiac.png"
+        }
+      ]
+    }

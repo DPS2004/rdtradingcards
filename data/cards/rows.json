@@ -1,0 +1,47 @@
+{
+  "groupname": "rows",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "rowsr",
+	  "name": "Rows (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Overcharting",
+	  "season": 1,
+	  "bonuses": {
+		"scribblednotepad": true,
+		"okamiiscollar": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202527185797160/rowsr.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "rowssr",
+	  "name": "Rows (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Overcharting",
+	  "season": 1,
+	  "bonuses": {
+		"scribblednotepad": true,
+		"rustysword": true,
+		"oversizedstethoscope": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202531665969192/rowssr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "rowsur",
+	  "name": "Rows (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Overcharting",
+	  "season": 1,
+	  "bonuses": {
+		"scribblednotepad": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202537780609064/rowsur.png"
+	}
+  ]
+}

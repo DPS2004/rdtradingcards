@@ -1,0 +1,181 @@
+{
+      "groupname": "s8 adofai customs",
+      "basechance": 3,
+      "cards": [
+	  {
+          "chance": 2,
+          "filename": "funkynow",
+          "name": "MAKE IT FUNKY NOW",
+          "type": "Super Rare",
+          "description": "(Level by PizzaLovers007)",
+          "smell": "Broken Records",
+          "season": 8,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267361229324289/funkynow.png"
+        },
+        {
+          "chance": 2,
+          "filename": "barrage",
+          "name": "Barrage",
+          "type": "Super Rare",
+          "description": "(Level by NumbEr07)",
+          "smell": "Gems",
+          "season": 8,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267381269692466/barrage.png"
+        },
+        {
+          "chance": 2,
+          "filename": "finalphase",
+          "name": "Final Phase",
+          "type": "Super Rare",
+          "description": "(Level by Daming)",
+          "smell": "Dilapidation",
+          "season": 8,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267416405393449/finalphase.png"
+        },
+        {
+          "chance": 2,
+          "filename": "siriusa",
+          "name": "Sirius A",
+          "type": "Super Rare",
+          "description": "(Level by HanB)",
+          "smell": "Octagons",
+          "season": 8,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267471531134976/siriusa.png"
+        },
+        {
+          "chance": 2,
+          "filename": "ruby",
+          "name": "Ruby",
+          "type": "Super Rare",
+          "description": "(Level by Pharah)",
+          "smell": "Jewelry",
+          "season": 8,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267502015320064/ruby.png"
+        },
+        {
+          "chance": 2,
+          "filename": "burn",
+          "name": "Burn",
+          "type": "Super Rare",
+          "description": "(Level by Ssimille)",
+          "smell": "Paint",
+          "season": 8,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267544642043964/burn.png"
+        },
+        {
+          "chance": 1,
+          "filename": "greatfury",
+          "name": "Great Fury of Heaven",
+          "type": "Ultra Rare",
+          "description": "(Level by Daming)",
+          "smell": "Graph Paper",
+          "season": 8,
+          "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983038889553977384/greatfury.gif"
+        },
+        {
+          "chance": 2,
+          "filename": "feraleasy",
+          "name": "Feral (Easy)",
+          "type": "Super Rare",
+          "description": "(Level by Ma6icCu8e)",
+          "smell": "Prey",
+          "season": 8,
+          "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983039173290233856/feraleasy.gif"
+        },
+        {
+          "chance": 1,
+          "filename": "feralnormal",
+          "name": "Feral (Normal)",
+          "type": "Ultra Rare",
+          "description": "(Level by Ma6icCu8e)",
+          "smell": "Predators",
+          "season": 8,
+          "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983039209583570985/feralnormal.gif"
+        },
+        {
+          "chance": 2,
+          "filename": "blackandwhite",
+          "name": "Black And White (short)",
+          "type": "Super Rare",
+          "description": "(Level by Star4th)",
+          "smell": "Rhythm Games",
+          "season": 8,
+          "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983039281025134682/blackandwhite.gif"
+        },
+        {
+          "chance": 2,
+          "filename": "skyscape",
+          "name": "Skyscape",
+          "type": "Super Rare",
+          "description": "(Level by Strode)",
+          "smell": "Meteorology",
+          "season": 8,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983039058701869106/skyscape.png"
+        },
+        {
+          "chance": 2,
+          "filename": "skyscapeorgel",
+          "name": "Skyscape (Orgel Ver.)",
+          "type": "Super Rare",
+          "description": "(Level by Strode)",
+          "smell": "Advanced Meteorology",
+          "season": 8,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983039082038984805/skyscapeorgel.png"
+        },
+        {
+          "chance": 1,
+          "filename": "greatgreat",
+          "name": "Great Great",
+          "type": "Ultra Rare",
+          "description": "(Level by PowerFactory)",
+          "smell": "Hues",
+          "season": 8,
+          "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983039357600559144/greatgreat.gif"
+        }
+		
+      ]
+    }

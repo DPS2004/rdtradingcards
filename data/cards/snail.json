@@ -1,0 +1,73 @@
+{
+  "groupname": "snail",
+  "basechance": 3,
+  "cards": [
+	{
+	  "chance": 3,
+	  "filename": "snailr",
+	  "name": "Snail (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "x0.5",
+	  "season": 8,
+	  "bonuses": {
+		"okamiiscollar": true,
+		"swirlymarbles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983995984294064198/snailr.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "snailsr",
+	  "name": "Snail (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Penny)",
+	  "smell": "x0.5",
+	  "season": 8,
+	  "bonuses": {
+		"swirlymarbles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983995999548751922/snailsr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "snailur",
+	  "name": "Snail (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Penny)",
+	  "smell": "x0.5",
+	  "season": 8,
+	  "bonuses": {
+		"swirlymarbles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996017089318952/snailur.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "snailc",
+	  "name": "Snail (Collector's)",
+	  "type": "Collector's",
+	  "description": "(Art by Penny)",
+	  "smell": "x0.5",
+	  "season": 8,
+	  "bonuses": {
+		"swirlymarbles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996034067886150/snailc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "snailalt",
+	  "name": "Snail (Alternate)",
+	  "type": "Alternate",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "x0.25",
+	  "season": 8,
+	  "bonuses": {
+		"swirlymarbles": true,
+		"pocketdimension": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996053869174834/snailalt.png"
+	}
+  ]
+}

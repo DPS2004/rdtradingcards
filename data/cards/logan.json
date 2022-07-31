@@ -1,0 +1,86 @@
+{
+  "groupname": "logan",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "loganr",
+	  "name": "Logan (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Young Love",
+	  "season": 1,
+	  "bonuses": {
+		"valentinesdaycard": true,
+		"okamiiscollar": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162416591798323/loganr.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "logansr",
+	  "name": "Logan (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Young Love",
+	  "season": 1,
+	  "bonuses": {
+		"valentinesdaycard": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201967398125618/logansr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "loganur",
+	  "name": "Logan (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Young Love",
+	  "season": 1,
+	  "bonuses": {
+		"valentinesdaycard": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201974314139648/loganur.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "logandc",
+	  "name": "Logan (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Young Love",
+	  "season": 5,
+	  "bonuses": {
+		"valentinesdaycard": true,
+		"oldfiles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162445271924787/logandc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "loganalt",
+	  "name": "Logan (Alternate)",
+	  "type": "Alternate",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Old Friendship",
+	  "season": 6,
+	  "bonuses": {
+		"valentinesdaycard": true,
+		"pocketdimension": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849106277556944936/loganalt.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "loganc",
+	  "name": "Logan (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Logan (Art by Kyle Labriola)",
+	  "smell": "Young Love",
+	  "season": 1,
+	  "bonuses": {
+		"valentinesdaycard": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201928134852628/loganc.png"
+	}
+  ]
+}

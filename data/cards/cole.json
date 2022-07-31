@@ -1,0 +1,86 @@
+{
+  "groupname": "cole",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "coler",
+	  "name": "Cole Brew (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "lofi beats",
+	  "season": 1,
+	  "bonuses": {
+		"cafemixtape": true,
+		"okamiiscollar": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839163428576034856/coler.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "colesr",
+	  "name": "Cole Brew (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "lofi beats",
+	  "season": 1,
+	  "bonuses": {
+		"cafemixtape": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200772579196948/colesr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "coleur",
+	  "name": "Cole Brew (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "lofi beats",
+	  "season": 1,
+	  "bonuses": {
+		"cafemixtape": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201399824646154/coleur.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "coledc",
+	  "name": "Cole Brew (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "lofi beats",
+	  "season": 1,
+	  "bonuses": {
+		"cafemixtape": true,
+		"oldfiles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839163452689219598/coledc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "colealt",
+	  "name": "Cole Brew (Alternate)",
+	  "type": "Alternate",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "THRASH METAL",
+	  "season": 5,
+	  "bonuses": {
+		"cafemixtape": true,
+		"pocketdimension": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839198356608909332/colealt.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "colec",
+	  "name": "Cole Brew (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Cole (Art by Kyle Labriola)",
+	  "smell": "lofi beats",
+	  "season": 1,
+	  "bonuses": {
+		"cafemixtape": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200745173352448/colec.png"
+	}
+  ]
+}

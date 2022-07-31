@@ -1,0 +1,49 @@
+{
+  "groupname": "logun",
+  "basechance": 3,
+  "cards": [
+	{
+          "chance": 3,
+          "filename": "logunr",
+          "name": "Logun (Rare)",
+          "type": "Rare",
+          "description": "(Art by Winston Lee, edited by Kin)",
+          "smell": "Bad Opinions",
+          "season": 0,
+          "bonuses": {
+            "okamiiscollar": true,
+            "valentinesdaycard": true,
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201982429331456/logunr.png"
+        },
+        {
+          "chance": 2,
+          "filename": "logunsr",
+          "name": "Logun (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by Het)",
+          "smell": "Bad Opinions",
+          "season": 0,
+          "bonuses": {
+            "valentinesdaycard": true,
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202023110934538/logunsr.png"
+        },
+        {
+          "chance": 1,
+          "filename": "logunur",
+          "name": "Logun (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by Het)",
+          "smell": "Bad Opinions",
+          "season": 0,
+          "bonuses": {
+            "valentinesdaycard": true,
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202036000161812/logunur.png"
+        }
+  ]
+}

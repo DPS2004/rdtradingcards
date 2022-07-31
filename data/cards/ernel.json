@@ -1,0 +1,56 @@
+{
+  "groupname": "ernel",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "ernelr",
+	  "name": "Ernel (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Firemen",
+	  "season": 8,
+	  "bonuses": {
+		"okamiiscollar": true,
+		"animalplaceholder": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944482943714353172/ernelr.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "ernelsr",
+	  "name": "Ernel (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Penny)",
+	  "smell": "Firemen",
+	  "season": 8,
+	  "bonuses": {
+		"animalplaceholder": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944482976727695370/ernelsr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "ernelur",
+	  "name": "Ernel (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Time)",
+	  "smell": "Firemen",
+	  "season": 8,
+	  "bonuses": {
+		"animalplaceholder": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944482999834128404/ernelur.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "ernelc",
+	  "name": "Ernel (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Ernel (Art by TatonSlice)",
+	  "smell": "Firemen",
+	  "season": 8,
+	  "bonuses": {},
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944483022055567410/ernelc.png"
+	}
+  ]
+}

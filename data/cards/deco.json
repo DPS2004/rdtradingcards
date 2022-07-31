@@ -1,0 +1,45 @@
+{
+      "groupname": "deco",
+      "basechance": 3,
+      "cards": [{
+          "chance": 3,
+          "filename": "decor",
+          "name": "Decorations (Rare)",
+          "type": "Rare",
+          "description": "(Art by Kyle Labriola)",
+          "smell": "Shapes",
+          "season": 8,
+          "bonuses": {
+            "scribblednotepad": true,
+            "okamiiscollar": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972724095328321556/decor.png"
+        },
+        {
+          "chance": 2,
+          "filename": "decosr",
+          "name": "Decorations (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by Kyle Labriola)",
+          "smell": "Shapes",
+          "season": 8,
+          "bonuses": {
+            "scribblednotepad": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972711757099454494/decosr.png"
+        },
+        {
+          "chance": 1,
+          "filename": "decour",
+          "name": "Decorations (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by Kyle Labriola)",
+          "smell": "Shapes",
+          "season": 8,
+          "bonuses": {
+            "scribblednotepad": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972711780361060383/decour.png"
+        }
+      ]
+    }

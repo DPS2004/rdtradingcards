@@ -1,0 +1,18 @@
+{
+      "groupname": "rin",
+      "basechance": 3,
+      "cards": [{
+          "chance": 3,
+          "filename": "rinr",
+          "name": "Rin (Rare)",
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "Sharps Disposal",
+          "season": 8,
+          "bonuses": {
+            "okamiiscollar": true,
+            "collabplaceholder": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969026647405776896/rinr.png"
+        }]
+    }

@@ -1,0 +1,33 @@
+{
+  "groupname": "doctah",
+  "basechance": 3,
+  "cards": [
+	{
+          "chance": 3,
+          "filename": "doctahr",
+          "name": "Doctah (Rare)",
+          "type": "Rare",
+          "description": "(Art by Fizzd) ***weh***",
+          "smell": "Malpractice",
+          "season": 0,
+          "bonuses": {
+            "okamiiscollar": true,
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201476747526144/doctahr.png"
+        },
+        {
+          "chance": 1,
+          "filename": "doctahur",
+          "name": "Doctah (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by BIrDIS, based on art by Fizzd) ***weh heheh***",
+          "smell": "Malpractice",
+          "season": 0,
+          "bonuses": {
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201484137627648/doctahur.png"
+        }
+  ]
+}

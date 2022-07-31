@@ -1,0 +1,72 @@
+{
+  "groupname": "miner",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "minerr",
+	  "name": "Miner (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Coal",
+	  "season": 1,
+	  "bonuses": {
+		"okamiiscollar": true,
+		"charcoalpencil": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839170156877447198/minerr.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "minersr",
+	  "name": "Miner (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Coal",
+	  "season": 1,
+	  "bonuses": {
+		"charcoalpencil": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202087949762600/minersr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "minerur",
+	  "name": "Miner (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Coal",
+	  "season": 1,
+	  "bonuses": {
+		"charcoalpencil": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202094220509234/minerur.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "minerdc",
+	  "name": "Miner (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Coal",
+	  "season": 5,
+	  "bonuses": {
+		"charcoalpencil": true,
+		"oldfiles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162170129514506/minerdc.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "minerc",
+	  "name": "Miner (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Miner (Art by Kyle Labriola)",
+	  "smell": "Coal",
+	  "season": 1,
+	  "bonuses": {
+		"charcoalpencil": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202076215148565/minerc.png"
+	}
+  ]
+}

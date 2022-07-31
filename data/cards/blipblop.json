@@ -1,0 +1,19 @@
+{
+  "groupname": "blipblop",
+  "basechance": 3,
+  "cards": [
+	{
+	  "chance": 3,
+	  "filename": "blipblop",
+	  "name": "blipblop.io",
+	  "type": "Rare",
+	  "description": "(Game by Fizzd)",
+	  "smell": "Tinnitus",
+	  "season": 8,
+	  "bonuses": {
+		"okamiiscollar": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973006640506867742/blipblop.png"
+	}
+  ]
+}

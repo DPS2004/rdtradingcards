@@ -1,0 +1,74 @@
+{
+  "groupname": "rat",
+  "basechance": 3,
+  "cards": [
+	
+	{
+	  "chance": 3,
+	  "filename": "ratr",
+	  "name": "Rat (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Rule Making",
+	  "season": 8,
+	  "bonuses": {
+		"okamiiscollar": true,
+		"swirlymarbles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996464915185694/ratr.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "ratsr",
+	  "name": "Rat (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Stamps)",
+	  "smell": "Rule Making",
+	  "season": 8,
+	  "bonuses": {
+		"swirlymarbles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996482552221776/ratsr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "ratur",
+	  "name": "Rat (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by DPS2004)",
+	  "smell": "Rule Making",
+	  "season": 8,
+	  "bonuses": {
+		"swirlymarbles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996495852355634/ratur.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "ratc",
+	  "name": "Rat (Collector's)",
+	  "type": "Collector's",
+	  "description": "(Art by BIrDIS)",
+	  "smell": "Rule Making",
+	  "season": 8,
+	  "bonuses": {
+		"swirlymarbles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996520007360562/ratc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "ratalt",
+	  "name": "Rat (Alternate)",
+	  "type": "Alternate",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Stalking",
+	  "season": 8,
+	  "bonuses": {
+		"swirlymarbles": true,
+		"pocketdimension": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996538202247188/ratalt.png"
+	}
+  ]
+}

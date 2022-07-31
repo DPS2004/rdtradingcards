@@ -1,0 +1,58 @@
+{
+  "groupname": "lucia",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "luciar",
+	  "name": "Lucia Moon (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by AdipemDragon)",
+	  "smell": "Imagination",
+	  "season": 3,
+	  "bonuses": {
+		"okamiiscollar": true,
+		"charcoalpencil": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162341920210984/luciar.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "luciasr",
+	  "name": "Lucia Moon (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Kyle Labriola, edited by BIrDIS)",
+	  "smell": "Imagination",
+	  "season": 3,
+	  "bonuses": {
+		"charcoalpencil": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202060981436446/luciasr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "luciaur",
+	  "name": "Lucia Moon (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by BIrDIS, based on art by Kyle Labriola)",
+	  "smell": "Imagination",
+	  "season": 3,
+	  "bonuses": {
+		"charcoalpencil": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202070208118784/luciaur.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "luciac",
+	  "name": "Lucia Moon (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Lucia Moon (Art by BIrDIS, based on art by Kyle Labriola)",
+	  "smell": "Imagination",
+	  "season": 3,
+	  "bonuses": {
+		"charcoalpencil": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202045797924864/luciac.png"
+	}
+  ]
+}

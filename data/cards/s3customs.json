@@ -1,0 +1,249 @@
+{
+      "groupname": "s3 customs",
+      "basechance": 3,
+      "cards": [
+	  {
+          "chance": 2,
+          "filename": "alovelynight",
+          "name": "A Lovely Night",
+          "type": "Super Rare",
+          "description": "(Level by fartiliumstation)",
+          "smell": "Hollywood",
+          "season": 3,
+          "bonuses": {
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200336619175987/alovelynight.png"
+        },
+        {
+          "chance": 2,
+          "filename": "hideandseek",
+          "name": "Hide and Seek",
+          "type": "Super Rare",
+          "description": "(Level by MarioMak967)",
+          "smell": "Mahogany",
+          "season": 3,
+          "bonuses": {
+            "deviltail": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201667860856843/hideandseek.png"
+        },
+        {
+          "chance": 2,
+          "filename": "514",
+          "name": "514",
+          "type": "Super Rare",
+          "description": "(Level by void)",
+          "smell": "Dabbing",
+          "season": 3,
+          "bonuses": {
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829197843687931934/514.png"
+        },
+        {
+          "chance": 2,
+          "filename": "pancakefever",
+          "name": "Pancake Fever",
+          "type": "Super Rare",
+          "description": "(Level by Kin, Xeno, MarioMak967, and Econ)",
+          "smell": "Maple Syrup",
+          "season": 3,
+          "bonuses": {
+            "deluxebirdseed": true,
+            "paddedstickersheet": true,
+            "fieldjournal": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202380876808222/pancakefever.png"
+        },
+        {
+          "chance": 2,
+          "filename": "pixelplant",
+          "name": "Pixel Plantation",
+          "type": "Super Rare",
+          "description": "(Level by Kin)",
+          "smell": "Potted Plants",
+          "season": 3,
+          "bonuses": {
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967950366735998986/pixelplant.png"
+        },
+        {
+          "chance": 2,
+          "filename": "chirp",
+          "name": "Chirp",
+          "type": "Super Rare",
+          "description": "(Level by Nocallia)",
+          "smell": "Airplane Peanuts",
+          "season": 3,
+          "bonuses": {
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201385253634108/chirp.png"
+        },
+        {
+          "chance": 2,
+          "filename": "aighgrayn",
+          "name": "Aigh Grayn",
+          "type": "Super Rare",
+          "description": "(Level by Kin, Xeno, MarioMak967, and Econ)",
+          "smell": "High-end Audio Equipment",
+          "season": 3,
+          "bonuses": {
+            "fieldjournal": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200305966809088/aighgrayn.png"
+        },
+        {
+          "chance": 2,
+          "filename": "feedthemachine",
+          "name": "Feed the Machine",
+          "type": "Super Rare",
+          "description": "(Level by MarioMak967)",
+          "smell": "The Industrial Revolution",
+          "season": 3,
+          "bonuses": {
+            "valentinesdaycard": true,
+            "rustysword": true,
+            "paddedstickersheet": true,
+            "deviltail": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201557450129448/feedthemachine.png"
+        },
+        {
+          "chance": 2,
+          "filename": "discord",
+          "name": "Discord",
+          "type": "Super Rare",
+          "description": "(Level by Willow)",
+          "smell": "Flamewars",
+          "season": 3,
+          "bonuses": {
+            "valentinesdaycard": true,
+            "rustysword": true,
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201445685166100/discord.png"
+        },
+        {
+          "chance": 2,
+          "filename": "reverence",
+          "name": "Reverence",
+          "type": "Super Rare",
+          "description": "(Level by InfectiousStepocity)",
+          "smell": "16ths",
+          "season": 3,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202441458548796/reverence.png"
+        },
+        {
+          "chance": 2,
+          "filename": "rpg",
+          "name": "Role-Playing Game",
+          "type": "Super Rare",
+          "description": "(Level by Lin Gamerz and Xeno)",
+          "smell": "Tryhards",
+          "season": 3,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202545892524082/rpg.png"
+        },
+        {
+          "chance": 2,
+          "filename": "rrr",
+          "name": "Rodney's Rhythm Rounds!",
+          "type": "Super Rare",
+          "description": "(Level by Emdyion, Samario, DPS2004, thefinals, Some J Name, and Xeno)",
+          "smell": "Fun:tm:",
+          "season": 3,
+          "bonuses": {
+            "oversizedstethoscope": true,
+            "fanonplaceholder": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202555467857990/rrr.png"
+        },
+        {
+          "chance": 2,
+          "filename": "someonelikeme",
+          "name": "Someone Like Me",
+          "type": "Super Rare",
+          "description": "(Level by Emdyion)",
+          "smell": "Dubstep",
+          "season": 3,
+          "bonuses": {
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202705138319380/someonelikeme.png"
+        },
+        {
+          "chance": 2,
+          "filename": "musclemuseum",
+          "name": "Muscle Museum",
+          "type": "Super Rare",
+          "description": "(Level by notDonte and Xeno)",
+          "smell": "Protein Shakes",
+          "season": 3,
+          "bonuses": {
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202194602393600/musclemuseum.png"
+        },
+        {
+          "chance": 2,
+          "filename": "wlae",
+          "name": "Walk Like An Egyptian",
+          "type": "Super Rare",
+          "description": "(Level by CV35W)",
+          "smell": "Guitar Solos",
+          "season": 3,
+          "bonuses": {
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202990795587604/wlae.png"
+        },
+        {
+          "chance": 2,
+          "filename": "underworld",
+          "name": "Underworld",
+          "type": "Super Rare",
+          "description": "(Level by Kin, Xeno, and MarioMak967)",
+          "smell": "The 7th Layer of Hell",
+          "season": 3,
+          "bonuses": {
+            "deviltail": true,
+            "fieldjournal": true,
+            "filmreel": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202919563067392/underworld.gif"
+        },
+        {
+          "chance": 2,
+          "filename": "baddream",
+          "name": "Bad Dream",
+          "type": "Super Rare",
+          "description": "(Level by Noche)",
+          "smell": "nightmarenightmarenightmarenightmare",
+          "season": 3,
+          "bonuses": {
+            "rustysword": true,
+            "oversizedstethoscope": true,
+            "deviltail": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200410504986694/baddream.png"
+        },
+        {
+          "chance": 2,
+          "filename": "whydontyou",
+          "name": "Why Don't You Play Them?",
+          "type": "Super Rare",
+          "description": "(Level by Colon)",
+          "smell": "FlingSmash for the Nintendo Wii",
+          "season": 3,
+          "bonuses": {
+            "cafemixtape": true,
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202971593408522/whydontyouplaythem.png"
+        }
+      ]
+    }

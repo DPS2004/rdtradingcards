@@ -1,0 +1,18 @@
+{
+      "groupname": "marija",
+      "basechance": 3,
+      "cards": [{
+          "chance": 3,
+          "filename": "marijar",
+          "name": "Marija (Rare)",
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "Roller Skates",
+          "season": 8,
+          "bonuses": {
+            "okamiiscollar": true,
+            "collabplaceholder": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/969026840842870845/marijar.png"
+        }]
+    }

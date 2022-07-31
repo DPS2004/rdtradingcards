@@ -1,0 +1,868 @@
+{
+  "groupname": "official rd levels",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 2,
+	  "filename": "bi",
+	  "name": "Battleworn Insomniac",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Glitchiness",
+	  "season": 1,
+	  "bonuses": {
+		"rustysword": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200407825612820/battleworninsomniac.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "techno",
+	  "name": "Samurai Techno",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "The Past",
+	  "season": 1,
+	  "bonuses": {
+		"rustysword": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201904554475520/kotoshokotechno.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "dubstep",
+	  "name": "Samurai Dubstep",
+	  "type": "Ultra Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "The Future",
+	  "season": 1,
+	  "bonuses": {
+		"rustysword": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202580198129674/samuraidubstep.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "att",
+	  "name": "All The Times",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Coffee Beans",
+	  "season": 1,
+	  "bonuses": {
+		"cafemixtape": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/830804365593149490/allthetimes.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "osm",
+	  "name": "One Shift More",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Understaffing",
+	  "season": 1,
+	  "bonuses": {
+		"oversizedstethoscope": true,
+		"lostnametag": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/830804331090673694/oneshiftmore.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "intimate",
+	  "name": "Intimate",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Love",
+	  "season": 1,
+	  "bonuses": {
+		"valentinesdaycard": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201863832371251/intimate.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "sbi",
+	  "name": "Super Battleworn Insomniac",
+	  "type": "Ultra Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Super Glitchiness",
+	  "season": 1,
+	  "bonuses": {
+		"rustysword": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202833034444830/superbattleworninsomniac.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "cny",
+	  "name": "Chinese New Year",
+	  "type": "Ultra Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Celebration",
+	  "season": 4,
+	  "bonuses": {
+		"rustysword": true,
+		"valentinesdaycard": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201394611126282/cny.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "beanshopper",
+	  "name": "Beans Hopper",
+	  "type": "Ultra Rare",
+	  "description": "Samurai is jumping over a box of beans (Level by Colon)",
+	  "smell": "Beans",
+	  "season": 4,
+	  "bonuses": {
+		"rustysword": true,
+		"duncecap": true,
+		"paddedstickersheet": true,
+		"filmreel": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200730547421194/beanshopper.gif"
+	},
+	{
+	  "chance": 1,
+	  "filename": "artex",
+	  "name": "Art Exercise",
+	  "type": "Ultra Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Pencil Lead",
+	  "season": 4,
+	  "bonuses": {
+		"charcoalpencil": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200373872721990/artexercise.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "helpinghands",
+	  "name": "Helping Hands",
+	  "type": "Ultra Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Tears",
+	  "season": 4,
+	  "bonuses": {
+		"oversizedstethoscope": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201655026286602/helpinghands.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "careless",
+	  "name": "wish i could care less",
+	  "type": "Ultra Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Cluttered Files",
+	  "season": 4,
+	  "bonuses": {
+		"cafemixtape": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202980468949032/wishicouldcareless.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "op10no4",
+	  "name": "Op.10 No.4",
+	  "type": "Ultra Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Revolution",
+	  "season": 4,
+	  "bonuses": {
+		"rustysword": true,
+		"valentinesdaycard": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202304678887424/op10no4.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "intimatenight",
+	  "name": "Intimate (Night Shift)",
+	  "type": "Ultra Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Role Reversal",
+	  "season": 4,
+	  "bonuses": {
+		"valentinesdaycard": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832390546450284554/intimatenight.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "songoftheseanight",
+	  "name": "Song of the Sea (Night Shift)",
+	  "type": "Ultra Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Smooth Jazz",
+	  "season": 4,
+	  "bonuses": {
+		"cafemixtape": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202724540907540/songoftheseanight.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "distantduetnight",
+	  "name": "Distant Duet (Night Shift)",
+	  "type": "Ultra Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Mutual Loneliness",
+	  "season": 4,
+	  "bonuses": {
+		"hardcandy": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201469806608444/distantduetnight.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "steinwayreprise",
+	  "name": "Steinway Reprise",
+	  "type": "Ultra Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Intense Piano",
+	  "season": 4,
+	  "bonuses": {
+		"hardcandy": true,
+		"deluxebirdseed": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202794279075850/steinwayreprise.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "dogtor",
+	  "name": "Rhythm Dogtor",
+	  "type": "Ultra Rare",
+	  "description": "(Level by Morphious86)",
+	  "smell": "The Vet's Office",
+	  "season": 4,
+	  "bonuses": {
+		"duncecap": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202450056609862/rhythmdogtor.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "bombsniffing",
+	  "name": "Bomb-Sniffing Pomeranian",
+	  "type": "Ultra Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Fighting Game Tournaments",
+	  "season": 4,
+	  "bonuses": {
+		"cafemixtape": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200749698875402/bombsniffingpomeranian.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "unreachable",
+	  "name": "Unreachable",
+	  "type": "Ultra Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Drum&Bass",
+	  "season": 5,
+	  "bonuses": {
+		"cafemixtape": true,
+		"rustysword": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839142546219335690/unreachable.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "lounge",
+	  "name": "Lounge",
+	  "type": "Ultra Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Venting",
+	  "season": 5,
+	  "bonuses": {
+		"valentinesdaycard": true,
+		"deluxebirdseed": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839142847134433331/lounge.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "classynight",
+	  "name": "Classy (Night Shift)",
+	  "type": "Ultra Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Aristocracy",
+	  "season": 5,
+	  "bonuses": {
+		"valentinesdaycard": true,
+		"rustysword": true,
+		"lostnametag": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839143947929780224/classynight.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "mfg",
+	  "name": "My Future Girlfriend",
+	  "type": "Ultra Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "TV Remotes",
+	  "season": 5,
+	  "bonuses": {
+		"rustysword": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839273404200386600/fgirlfriend.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "rollerdisco",
+	  "name": "Rollerdisco Rumble",
+	  "type": "Ultra Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Demoscene",
+	  "season": 5,
+	  "bonuses": {
+		"cafemixtape": true,
+		"charcoalpencil": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839273511914962974/rollerdisco.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "sleepygarden",
+	  "name": "Sleepy Garden",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "School Dances",
+	  "season": 4,
+	  "bonuses": {
+		"valentinesdaycard": true,
+		"deluxebirdseed": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202693674369024/sleepygarden.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "classy",
+	  "name": "Classy",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Bureaucracy",
+	  "season": 5,
+	  "bonuses": {
+		"valentinesdaycard": true,
+		"rustysword": true,
+		"lostnametag": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839143334370869278/classy.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "trainingdoctor",
+	  "name": "Training Doctor's Train Ride Performance",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Pebbles",
+	  "season": 5,
+	  "bonuses": {
+		"rustysword": true,
+		"charcoalpencil": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839272847213068298/trainingdoctor.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "knowyou",
+	  "name": "Know You",
+	  "type": "Super Rare",
+	  "description": "(Level by lugi)",
+	  "smell": "The Cosmos",
+	  "season": 4,
+	  "bonuses": {
+		"valentinesdaycard": true,
+		"cafemixtape": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201891489349692/knowyou.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "puffpiece",
+	  "name": "Puff Piece",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Nicotine",
+	  "season": 4,
+	  "bonuses": {
+		"cafemixtape": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202429437542410/puffpiece.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "invis",
+	  "name": "Invisible",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Mist",
+	  "season": 4,
+	  "bonuses": {
+		"rustysword": true,
+		"valentinesdaycard": true,
+		"lostnametag": true,
+		"charcoalpencil": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201878784671775/invisible.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "steinway",
+	  "name": "Steinway",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Piano",
+	  "season": 4,
+	  "bonuses": {
+		"hardcandy": true,
+		"deluxebirdseed": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202786901688360/steinway.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "distantduet",
+	  "name": "Distant Duet",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Loneliness",
+	  "season": 4,
+	  "bonuses": {
+		"hardcandy": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201466777403423/distantduet.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "svt",
+	  "name": "Supraventricular Tachycardia",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Electricity",
+	  "season": 4,
+	  "bonuses": {
+		"cafemixtape": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202848108904478/svt.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "lofi",
+	  "name": "lo-fi hip-hop beats to treat patients to",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Music Production",
+	  "season": 4,
+	  "bonuses": {
+		"cafemixtape": true,
+		"rustysword": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201917720133682/lofi.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "songofthesea",
+	  "name": "Song of the Sea",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Improvisation",
+	  "season": 4,
+	  "bonuses": {
+		"cafemixtape": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202713731530752/songofthesea.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "invisnight",
+	  "name": "Invisible (Night Shift)",
+	  "type": "Ultra Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Clouds",
+	  "season": 7,
+	  "bonuses": {
+		"deluxebirdseed": true,
+		"valentinesdaycard": true,
+		"lostnametag": true,
+		"charcoalpencil": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/876499352481316904/invisnight.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "wot",
+	  "name": "Worn Out Tapes",
+	  "type": "Ultra Rare",
+	  "description": "(Level by 7th Beat Games, Collaborated with D-CELL GAMES)",
+	  "smell": "Illegal Bands",
+	  "season": 7,
+	  "bonuses": {
+		"collabplaceholder": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/876502411626303508/wot.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "bidc",
+	  "name": "Battleworn Insomniac (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Retro Glitchiness",
+	  "season": 8,
+	  "bonuses": {
+		"rustysword": true,
+		"oldfiles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964942677214900384/bidc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "technodc",
+	  "name": "Samurai Techno (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "The Far Past",
+	  "season": 8,
+	  "bonuses": {
+		"rustysword": true,
+		"oldfiles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964942676933894294/technodc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "dubstepdc",
+	  "name": "Samurai Dubstep (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Green Samurai",
+	  "season": 8,
+	  "bonuses": {
+		"rustysword": true,
+		"oldfiles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964942677542051860/dubstepdc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "osmdc",
+	  "name": "One Shift More (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Incredibly Long Waiting Times",
+	  "season": 8,
+	  "bonuses": {
+		"oversizedstethoscope": true,
+		"oldfiles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964942676711575642/osmdc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "intimatedc",
+	  "name": "Intimate (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Everlasting Love",
+	  "season": 8,
+	  "bonuses": {
+		"valentinesdaycard": true,
+		"oldfiles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964942676497682483/intimatedc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "cnydc",
+	  "name": "Chinese New Year (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Tradition",
+	  "season": 8,
+	  "bonuses": {
+		"valentinesdaycard": true,
+		"oldfiles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964958984190693406/cnydc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "intimatenightdc",
+	  "name": "Intimate (Night Shift) (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Blind Dates",
+	  "season": 8,
+	  "bonuses": {
+		"rustysword": true,
+		"valentinesdaycard": true,
+		"oldfiles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964958983335071744/intimatenightdc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "steinwaydc",
+	  "name": "Steinway (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Old Piano",
+	  "season": 8,
+	  "bonuses": {
+		"rustysword": true,
+		"valentinesdaycard": true,
+		"oldfiles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964958983695761418/steinwaydc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "steinwayreprisedc",
+	  "name": "Steinway Reprise (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Antique Piano",
+	  "season": 8,
+	  "bonuses": {
+		"rustysword": true,
+		"valentinesdaycard": true,
+		"oldfiles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964958983943233536/steinwayreprisedc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "classydc",
+	  "name": "Classy (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "See-Through Teeth",
+	  "season": 8,
+	  "bonuses": {
+		"rustysword": true,
+		"valentinesdaycard": true,
+		"oldfiles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964962284147462164/classydc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "classynightdc",
+	  "name": "Classy (Night Shift) (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Nurse Beatboxing",
+	  "season": 8,
+	  "bonuses": {
+		"rustysword": true,
+		"valentinesdaycard": true,
+		"oldfiles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964962283686084688/classynightdc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "loungedc",
+	  "name": "Lounge (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "40% Approval Rate",
+	  "season": 8,
+	  "bonuses": {
+		"rustysword": true,
+		"oldfiles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964962283883204708/loungedc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "svtdc",
+	  "name": "Supraventricular Tachycardia (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Screen Tiles",
+	  "season": 8,
+	  "bonuses": {
+		"cafemixtape": true,
+		"oldfiles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964964821902704680/svtdc.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "unwell",
+	  "name": "Unwell",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Endless Loops",
+	  "season": 8,
+	  "bonuses": {
+		"rustysword": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/965029510720421888/unwell.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "power",
+	  "name": "Power",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "The Twenty-first Century",
+	  "season": 8,
+	  "bonuses": {},
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/965029510938509382/power.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "starboy",
+	  "name": "Starboy",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Finger Snaps",
+	  "season": 8,
+	  "bonuses": {},
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/965029510485528637/starboy.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "driveby",
+	  "name": "Drive By",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Not Looking Behind You",
+	  "season": 8,
+	  "bonuses": {
+		"rustysword": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967978435534274650/driveby.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "pumpedupkicks",
+	  "name": "Pumped Up Kicks",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Gunpowder",
+	  "season": 8,
+	  "bonuses": {
+		"rustysword": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967978434993225789/pumpedupkicks.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "leanon",
+	  "name": "Lean On",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Pressing Space on the Clap",
+	  "season": 8,
+	  "bonuses": {
+		"rustysword": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967978538256969728/leanon.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "delaypedal",
+	  "name": "Delay Pedal",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Bad Habits",
+	  "season": 8,
+	  "bonuses": {
+		"cafemixtape": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967978435240665188/delaypedal.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "murmurs",
+	  "name": "Murmurs",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Urban Pop Beats",
+	  "season": 8,
+	  "bonuses": {
+		"cafemixtape": true,
+		"rustysword": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967978434749943889/murmurs.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "mannequin",
+	  "name": "Mannequin Challenge",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Extremely Dated Trends",
+	  "season": 8,
+	  "bonuses": {
+		"rustysword": true,
+		"valentinesdaycard": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967978434523447356/mannequin.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "rdproto",
+	  "name": "Rhythm Doctor (Prototype)",
+	  "type": "Discontinued",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Where it all began",
+	  "season": 8,
+	  "bonuses": {
+		"oldfiles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/970190911415922688/rdproto.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "luxurycar",
+	  "name": "Blackest Luxury Car",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games, Collaborated with PeroPero Games)",
+	  "smell": "Donut Thievery",
+	  "season": 8,
+	  "bonuses": {
+		"collabplaceholder": true,
+		"lostnametag": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/984229842197286912/luxurycar.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "tapestopnight",
+	  "name": "tape/stop/night",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games, Collaborated with PeroPero Games)",
+	  "smell": "Stomach Aches",
+	  "season": 8,
+	  "bonuses": {
+		"collabplaceholder": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/984229865169506364/tapestopnight.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "90sdecision",
+	  "name": "The 90's Decision",
+	  "type": "Ultra Rare",
+	  "description": "(Level by 7th Beat Games, Collaborated with PeroPero Games)",
+	  "smell": "Skate Rentals",
+	  "season": 8,
+	  "bonuses": {
+		"rustysword": true,
+		"deluxebirdseed": true,
+		"collabplaceholder": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/984230412698128384/90sdecision.png"
+	}
+  ]
+}

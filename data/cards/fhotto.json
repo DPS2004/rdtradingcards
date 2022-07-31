@@ -1,0 +1,58 @@
+{
+  "groupname": "fhotto",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "fhottor",
+	  "name": "Fire Hazard Otto (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by AdipemDragon)",
+	  "smell": "Abandoned Factories",
+	  "season": 5,
+	  "bonuses": {
+		"okamiiscollar": true,
+		"fieldjournal": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201571261710376/fhottor.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "fhottosr",
+	  "name": "Fire Hazard Otto (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Plant Guy)",
+	  "smell": "Abandoned Factories",
+	  "season": 5,
+	  "bonuses": {
+		"fieldjournal": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201580800475146/fhottosr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "fhottour",
+	  "name": "Fire Hazard Otto (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Plant Guy)",
+	  "smell": "Abandoned Factories",
+	  "season": 5,
+	  "bonuses": {
+		"fieldjournal": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201592703385610/fhottour.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "fhottoc",
+	  "name": "Fire Hazard Otto (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Fire Hazard Otto (Art by Plant Guy)",
+	  "smell": "Abandoned Factories",
+	  "season": 5,
+	  "bonuses": {
+		"fieldjournal": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201569643233300/fhottoc.png"
+	}
+  ]
+}

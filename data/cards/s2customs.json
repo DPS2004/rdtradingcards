@@ -1,0 +1,216 @@
+{
+      "groupname": "s2 customs",
+      "basechance": 3,
+      "cards": [{"chance": 2,
+          "filename": "alienalien",
+          "name": "Alien Alien",
+          "type": "Super Rare",
+          "description": "(Level by fartiliumstation)",
+          "smell": "Otherworldly Beings",
+          "season": 2,
+          "bonuses": {
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200317018144778/alienalien.png"
+        },
+        {
+          "chance": 2,
+          "filename": "ayakashi",
+          "name": "AYAKASHI",
+          "type": "Super Rare",
+          "description": "(Level by noonhead)",
+          "smell": "Two Halves of a Whole",
+          "season": 2,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200384974520320/ayakashi.png"
+        },
+        {
+          "chance": 2,
+          "filename": "circles",
+          "name": "Circles",
+          "type": "Super Rare",
+          "description": "(Level by Nocallia)",
+          "smell": "Elliptical Orbits",
+          "season": 2,
+          "bonuses": {
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200777166979092/circles.png"
+        },
+        {
+          "chance": 2,
+          "filename": "specialdelivery",
+          "name": "Special Delivery",
+          "type": "Super Rare",
+          "description": "(Level by CV35W)",
+          "smell": "Murder",
+          "season": 2,
+          "bonuses": {
+            "paddedstickersheet": true,
+            "deviltail": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202751841107978/specialdelivery.png"
+        },
+        {
+          "chance": 2,
+          "filename": "rollermobster",
+          "name": "Roller Mobster",
+          "type": "Super Rare",
+          "description": "(Level by Some J Name, Het, DPS2004, and Samario)",
+          "smell": "Freshly Cooked Lobster",
+          "season": 2,
+          "bonuses": {
+            "duncecap": true,
+            "fieldjournal": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202480369500160/rollermobster.png"
+        },
+        {
+          "chance": 2,
+          "filename": "ghostsplay",
+          "name": "Ghosts Play to the Audience",
+          "type": "Super Rare",
+          "description": "(Level by thefinals)",
+          "smell": "Ectoplasm",
+          "season": 2,
+          "bonuses": {
+            "deviltail": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201610488020993/ghostsplay.png"
+        },
+        {
+          "chance": 2,
+          "filename": "creativeex",
+          "name": "Creative Exercise",
+          "type": "Super Rare",
+          "description": "(Level by Szprycha)",
+          "smell": "16 Bits",
+          "season": 2,
+          "bonuses": {
+            "rustysword": true,
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201415947812905/creativeexercise.png"
+        },
+        {
+          "chance": 2,
+          "filename": "square",
+          "name": "Square",
+          "type": "Super Rare",
+          "description": "(Level by Kneeckoh)",
+          "smell": "Quadrilateral Shapes",
+          "season": 2,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202768963174400/square.png"
+        },
+        {
+          "chance": 2,
+          "filename": "disper",
+          "name": "Disperagioia",
+          "type": "Super Rare",
+          "description": "(Level by Samario)",
+          "smell": "[undefined]",
+          "season": 2,
+          "bonuses": {
+            "oversizedstethoscope": true,
+            "charcoalpencil": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201454807515196/disperagioia.png"
+        },
+        {
+          "chance": 2,
+          "filename": "superstrongcavity",
+          "name": "Super Strong Cavity Reconstructor Drill Chu",
+          "type": "Super Rare",
+          "description": "(Level by thefinals)",
+          "smell": "Fluoride",
+          "season": 2,
+          "bonuses": {
+            "valentinesdaycard": true,
+            "fieldjournal": true,
+            "filmreel": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202842149453834/superstrongcavity.gif"
+        },
+        {
+          "chance": 2,
+          "filename": "theoracle",
+          "name": "The Oracle",
+          "type": "Super Rare",
+          "description": "(Level by DPS2004 and Xeno)",
+          "smell": "Mummies",
+          "season": 2,
+          "bonuses": {
+            "paddedstickersheet": true,
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202865654333470/theoracle.png"
+        },
+        {
+          "chance": 2,
+          "filename": "momotaro",
+          "name": "Momotaro",
+          "type": "Super Rare",
+          "description": "(Level by CV35W)",
+          "smell": "Spiderwebs",
+          "season": 2,
+          "bonuses": {
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202105188220988/momotaro.png"
+        },
+        {
+          "chance": 2,
+          "filename": "flowerthief",
+          "name": "Goodbye, Ms. Flower Thief",
+          "type": "Super Rare",
+          "description": "(Level by thefinals)",
+          "smell": "Pollen",
+          "season": 2,
+          "bonuses": {
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201602497609728/flowerthief.png"
+        },
+        {
+          "chance": 2,
+          "filename": "mylevel",
+          "name": "My Level",
+          "type": "Super Rare",
+          "description": "(Level by auth)",
+          "smell": "Emergency Services",
+          "season": 2,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202203809677322/mylevel.png"
+        },
+        {
+          "chance": 2,
+          "filename": "crystalline",
+          "name": "Crystalline",
+          "type": "Super Rare",
+          "description": "(Level by Noche)",
+          "smell": "Crystals",
+          "season": 2,
+          "bonuses": {
+            "oversizedstethoscope": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201426176933898/crystalline.png"
+        },
+		{
+          "chance": 0,
+          "filename": "mycrystal",
+          "name": "My Level, Crystalline",
+          "type": "Collector's",
+          "description": "Requires My Level and Crystalline (Level by auth, Noche, and notDonte)",
+          "smell": "Pure Crystals",
+          "season": 2,
+          "bonuses": {
+            "oversizedstethoscope": true,
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202217264611348/mylevelcrystalline.png"
+        }
+      ]
+    }

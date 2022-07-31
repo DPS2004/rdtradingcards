@@ -1,0 +1,92 @@
+{
+  "groupname": "rooms",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "roomsr",
+	  "name": "Rooms (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Time Bending",
+	  "season": 1,
+	  "bonuses": {
+		"scribblednotepad": true,
+		"okamiiscollar": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202506919313428/roomsr.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "roomssr",
+	  "name": "Rooms (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Time Bending",
+	  "season": 1,
+	  "bonuses": {
+		"scribblednotepad": true,
+		"rustysword": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202512145547264/roomssr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "roomsur",
+	  "name": "Rooms (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Time Bending",
+	  "season": 1,
+	  "bonuses": {
+		"scribblednotepad": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202521355976715/roomsur.png"
+	},
+	{
+	  "chance": 0.75,
+	  "filename": "roomsdc_r",
+	  "name": "Rooms (Discontinued Rare)",
+	  "type": "Discontinued Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "3000 Pixels",
+	  "season": 1,
+	  "bonuses": {
+		"scribblednotepad": true,
+		"aboveur": true,
+		"oldfiles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832348353274576947/roomsdc_r.png"
+	},
+	{
+	  "chance": 0.5,
+	  "filename": "roomsdc_sr",
+	  "name": "Rooms (Discontinued Super Rare)",
+	  "type": "Discontinued Super Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "3000 Pixels",
+	  "season": 1,
+	  "bonuses": {
+		"scribblednotepad": true,
+		"rustysword": true,
+		"aboveur": true,
+		"oldfiles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832348378263715850/roomsdc_sr.png"
+	},
+	{
+	  "chance": 0.25,
+	  "filename": "roomsdc_ur",
+	  "name": "Rooms (Discontinued Ultra Rare)",
+	  "type": "Discontinued Ultra Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "3000 Pixels",
+	  "season": 1,
+	  "bonuses": {
+		"scribblednotepad": true,
+		"aboveur": true,
+		"oldfiles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832348409393446972/roomsdc_ur.png"
+	}
+  ]
+}

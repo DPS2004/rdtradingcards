@@ -1,0 +1,35 @@
+{
+  "groupname": "ian trash can",
+  "basechance": 3,
+  "cards": [
+	{
+          "chance": 3,
+          "filename": "iantrashcanr",
+          "name": "Ian in a Trash Can (Rare)",
+          "type": "Rare",
+          "description": "(Art by Winston Lee, edited by Axobotl)",
+          "smell": "Dumpster Diving",
+          "season": 0,
+          "bonuses": {
+            "okamiiscollar": true,
+            "oversizedstethoscope": true,
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201700006527006/iantrashcanr.png"
+        },
+        {
+          "chance": 1,
+          "filename": "iantrashcanur",
+          "name": "Ian in a Trash Can (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by Dr Levi)",
+          "smell": "Dumpster Diving",
+          "season": 0,
+          "bonuses": {
+            "oversizedstethoscope": true,
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201715412598804/iantrashcanur.png"
+        }
+  ]
+}

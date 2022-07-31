@@ -1,0 +1,58 @@
+{
+      "groupname": "owl",
+      "basechance": 3,
+      "cards": [{
+          "chance": 3,
+          "filename": "owlr",
+          "name": "Owl (Rare)",
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "Wisdom",
+          "season": 7,
+          "bonuses": {
+            "okamiiscollar": true,
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/870720074628104222/owlr.png"
+        },
+        {
+          "chance": 2,
+          "filename": "owlsr",
+          "name": "Owl (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by Plant Guy)",
+          "smell": "Wisdom",
+          "season": 7,
+          "bonuses": {
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873788985523187722/owlsr.png"
+        },
+        {
+          "chance": 1,
+          "filename": "owlur",
+          "name": "Owl (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by Plant Guy)",
+          "smell": "Wisdom",
+          "season": 7,
+          "bonuses": {
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872903408569450526/owlur.png"
+        },
+        {
+          "chance": 0,
+          "filename": "owlc",
+          "name": "Owl (Collector's)",
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Owl (Art by Stamps)",
+          "smell": "Wisdom",
+          "season": 7,
+          "bonuses": {
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/876277783502942218/owlc.png"
+        }
+      ]
+    }

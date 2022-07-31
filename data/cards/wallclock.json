@@ -1,0 +1,33 @@
+{
+  "groupname": "wallclock",
+  "basechance": 3,
+  "cards": [
+	{
+          "chance": 3,
+          "filename": "wallclockr",
+          "name": "Wall Clock (Rare)",
+          "type": "Rare",
+          "description": "(Art by Giacomo)",
+          "smell": "Accuracy",
+          "season": 0,
+          "bonuses": {
+            "okamiiscollar": true,
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202946058223656/wallclockr.png"
+        },
+        {
+          "chance": 1,
+          "filename": "wallclockur",
+          "name": "Wall Clock (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by DPS2004)",
+          "smell": "Accuracy",
+          "season": 0,
+          "bonuses": {
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/994077689898082304/wallclockur.png"
+        }
+  ]
+}

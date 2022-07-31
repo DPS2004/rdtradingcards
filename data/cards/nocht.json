@@ -1,0 +1,56 @@
+{
+      "groupname": "nocht",
+      "basechance": 3,
+      "cards": [{
+          "chance": 3,
+          "filename": "nochtr",
+          "name": "Nocht (Rare)",
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "ʎʞs ʇɥƃıu ǝɥʇ",
+          "season": 8,
+          "bonuses": {
+            "okamiiscollar": true,
+            "animalplaceholder": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944502212330152016/nochtr.png"
+        },
+        {
+          "chance": 2,
+          "filename": "nochtsr",
+          "name": "Nocht (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by saladplainzone)",
+          "smell": "ʎʞs ʇɥƃıu ǝɥʇ",
+          "season": 8,
+          "bonuses": {
+            "animalplaceholder": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944502253648224296/nochtsr.png"
+        },
+        {
+          "chance": 1,
+          "filename": "nochtur",
+          "name": "Nocht (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by saladplainzone)",
+          "smell": "ʎʞs ʇɥƃıu ǝɥʇ",
+          "season": 8,
+          "bonuses": {
+            "animalplaceholder": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944502287542415391/nochtur.png"
+        },
+        {
+          "chance": 0,
+          "filename": "nochtc",
+          "name": "Nocht (Collector's)",
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Nocht (Art by saladplainzone)",
+          "smell": "ʎʞs ʇɥƃıu ǝɥʇ",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944502315736518706/nochtc.png"
+        }
+	  ]
+    }

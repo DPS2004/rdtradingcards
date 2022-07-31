@@ -1,0 +1,45 @@
+{
+      "groupname": "sound",
+      "basechance": 3,
+      "cards": [{
+          "chance": 3,
+          "filename": "soundr",
+          "name": "Sound (Rare)",
+          "type": "Rare",
+          "description": "(Art by Kyle Labriola)",
+          "smell": "Kneecaps",
+          "season": 1,
+          "bonuses": {
+            "scribblednotepad": true,
+            "okamiiscollar": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202730912055346/soundr.png"
+        },
+        {
+          "chance": 2,
+          "filename": "soundsr",
+          "name": "Sound (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by Kyle Labriola)",
+          "smell": "Kneecaps",
+          "season": 1,
+          "bonuses": {
+            "scribblednotepad": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202736829825034/soundsr.png"
+        },
+        {
+          "chance": 1,
+          "filename": "soundur",
+          "name": "Sound (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by Kyle Labriola)",
+          "smell": "Kneecaps",
+          "season": 1,
+          "bonuses": {
+            "scribblednotepad": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202743481729064/soundur.png"
+        }
+      ]
+    }

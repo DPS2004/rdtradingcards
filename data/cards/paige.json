@@ -1,0 +1,58 @@
+{
+  "groupname": "paige",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "paiger",
+	  "name": "Paige (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Sweat and Tears",
+	  "season": 1,
+	  "bonuses": {
+		"oversizedstethoscope": true,
+		"okamiiscollar": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839160822864543804/paiger.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "paigesr",
+	  "name": "Paige (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Sweat and Tears",
+	  "season": 1,
+	  "bonuses": {
+		"oversizedstethoscope": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202361544343592/paigesr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "paigeur",
+	  "name": "Paige (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Sweat and Tears",
+	  "season": 1,
+	  "bonuses": {
+		"oversizedstethoscope": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202369166311444/paigeur.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "paigec",
+	  "name": "Paige (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Paige (Art by Kyle Labriola)",
+	  "smell": "Sweat and Tears",
+	  "season": 1,
+	  "bonuses": {
+		"oversizedstethoscope": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202348417089556/paigec.png"
+	}
+  ]
+}

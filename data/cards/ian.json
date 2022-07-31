@@ -1,0 +1,58 @@
+{
+  "groupname": "ian",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "ianr",
+	  "name": "Ian (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Gaming",
+	  "season": 1,
+	  "bonuses": {
+		"oversizedstethoscope": true,
+		"okamiiscollar": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162915617374228/ianr.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "iansr",
+	  "name": "Ian (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Gaming",
+	  "season": 1,
+	  "bonuses": {
+		"oversizedstethoscope": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201689441337384/iansr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "ianur",
+	  "name": "Ian (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Gaming",
+	  "season": 1,
+	  "bonuses": {
+		"oversizedstethoscope": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201722266222602/ianur.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "ianc",
+	  "name": "Ian (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Ian (Art by Kyle Labriola)",
+	  "smell": "Gaming",
+	  "season": 1,
+	  "bonuses": {
+		"oversizedstethoscope": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201675729371206/ianc.png"
+	}
+  ]
+}

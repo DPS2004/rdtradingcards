@@ -1,0 +1,62 @@
+{
+  "groupname": "big bad bird",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "bbbr",
+	  "name": "Big Bad Bird (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Noche)",
+	  "smell": "Fall Damage",
+	  "season": 3,
+	  "bonuses": {
+		"deluxebirdseed": true,
+		"okamiiscollar": true,
+		"fieldjournal": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200734246666280/bigbadbirdr.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "bbbsr",
+	  "name": "Big Bad Bird (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Noche)",
+	  "smell": "Fall Damage",
+	  "season": 3,
+	  "bonuses": {
+		"deluxebirdseed": true,
+		"fieldjournal": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200735148179456/bigbadbirdsr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "bbbur",
+	  "name": "Big Bad Bird (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Noche)",
+	  "smell": "Fall Damage",
+	  "season": 3,
+	  "bonuses": {
+		"deluxebirdseed": true,
+		"fieldjournal": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200741028855828/bigbadbirdur.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "bbbc",
+	  "name": "Big Bad Bird (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Big Bad Bird (Art by Noche)",
+	  "smell": "Fall Damage",
+	  "season": 3,
+	  "bonuses": {
+		"deluxebirdseed": true,
+		"fieldjournal": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200734674616390/bigbadbirdc.png"
+	}
+  ]
+}

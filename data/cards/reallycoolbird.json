@@ -1,0 +1,73 @@
+{
+  "groupname": "reallycoolbird",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "coolbirdr",
+	  "name": "Cool Bird (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by DPS2004 and FirecatFG)",
+	  "smell": "Embers",
+	  "season": 8,
+	  "bonuses": {
+		"fanonplaceholder": true,
+		"deluxebirdseed": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944482748410765352/coolbirdr.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "coolbirdsr",
+	  "name": "Cool Bird (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Delta)",
+	  "smell": "Embers",
+	  "season": 8,
+	  "bonuses": {
+		"fanonplaceholder": true,
+		"deluxebirdseed": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/984495565394022400/coolbirdsr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "coolbirdur",
+	  "name": "Cool Bird (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by DPS2004)",
+	  "smell": "Embers",
+	  "season": 8,
+	  "bonuses": {
+		"fanonplaceholder": true,
+		"deluxebirdseed": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981261474506895421/coolbirdur.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "coolbirdc",
+	  "name": "Cool Bird (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Cool Bird (Art by Time)",
+	  "smell": "Embers",
+	  "season": 8,
+	  "bonuses": {},
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944482911242027008/coolbirdc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "coolbirdalt",
+	  "name": "Cool Bird (Alternate)",
+	  "type": "Alternate",
+	  "description": "(Art by DPS2004 and FirecatFG)",
+	  "smell": "Sleigh Bells",
+	  "season": 8,
+	  "bonuses": {
+		"pocketdimension": true,
+		"fanonplaceholder": true,
+		"deluxebirdseed": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944482786608312341/coolbirdalt.png"
+	}
+  ]
+}

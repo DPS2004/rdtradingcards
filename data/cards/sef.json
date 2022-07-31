@@ -1,0 +1,33 @@
+{
+  "groupname": "sef",
+  "basechance": 3,
+  "cards": [
+	{
+          "chance": 3,
+          "filename": "sefr",
+          "name": "Sef (Rare)",
+          "type": "Rare",
+          "description": "(Art by teri (electr1ca))",
+          "smell": "Mutiny",
+          "season": 8,
+          "bonuses": {
+            "okamiiscollar": true,
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/984008845531697182/sefr.png"
+        },
+        {
+          "chance": 1,
+          "filename": "sefur",
+          "name": "Sef (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by Supercomputation)",
+          "smell": "Mutiny",
+          "season": 8,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/984008869346951178/sefur.png"
+        }
+  ]
+}

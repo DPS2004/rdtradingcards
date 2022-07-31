@@ -1,0 +1,45 @@
+{
+      "groupname": "vfx",
+      "basechance": 3,
+      "cards": [{
+          "chance": 3,
+          "filename": "vfxr",
+          "name": "VFX (Rare)",
+          "type": "Rare",
+          "description": "(Art by Kyle Labriola)",
+          "smell": "Too Much Gray",
+          "season": 1,
+          "bonuses": {
+            "scribblednotepad": true,
+            "okamiiscollar": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202925557383199/vfxr.png"
+        },
+        {
+          "chance": 2,
+          "filename": "vfxsr",
+          "name": "VFX (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by Kyle Labriola)",
+          "smell": "Too Much Gray",
+          "season": 1,
+          "bonuses": {
+            "scribblednotepad": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202931021643796/vfxsr.png"
+        },
+        {
+          "chance": 1,
+          "filename": "vfxur",
+          "name": "VFX (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by Kyle Labriola)",
+          "smell": "Too Much Gray",
+          "season": 1,
+          "bonuses": {
+            "scribblednotepad": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202938240958514/vfxur.png"
+        }
+      ]
+    }

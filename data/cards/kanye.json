@@ -1,0 +1,33 @@
+{
+  "groupname": "kanye",
+  "basechance": 3,
+  "cards": [
+	{
+          "chance": 3,
+          "filename": "kanyer",
+          "name": "Kanye (Rare)",
+          "type": "Rare",
+          "description": "get ready, here comes Kanye! (Art by Winston Lee)",
+          "smell": "Fingers",
+          "season": 8,
+          "bonuses": {
+            "okamiiscollar": true,
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964276389534642296/kanyer.png"
+        },
+        {
+          "chance": 1,
+          "filename": "kanyeur",
+          "name": "Kanye (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "get ready, here comes Kanye! (Art by Stamps)",
+          "smell": "Fingers",
+          "season": 8,
+          "bonuses": {
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964276418055897208/kanyeur.png"
+        }
+  ]
+}

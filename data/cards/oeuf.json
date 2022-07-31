@@ -1,0 +1,35 @@
+{
+  "groupname": "oeuf",
+  "basechance": 3,
+  "cards": [
+	{
+          "chance": 3,
+          "filename": "oeufr",
+          "name": "Oeuf (Rare)",
+          "type": "Rare",
+          "description": "(Art by Winston Lee, edited by Szprycha)",
+          "smell": "Eggs",
+          "season": 0,
+          "bonuses": {
+            "okamiiscollar": true,
+            "rustysword": true,
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202269656186930/oeufr.png"
+        },
+        {
+          "chance": 1,
+          "filename": "oeufur",
+          "name": "Oeuf (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by Kyle Labriola, edited by DeadlySprinklez)",
+          "smell": "Eggs",
+          "season": 0,
+          "bonuses": {
+            "rustysword": true,
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202280716304384/oeufur.png"
+        }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "groupname": "intern",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "internr",
+	  "name": "Intern (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Fingernails",
+	  "season": 1,
+	  "bonuses": {
+		"okamiiscollar": true,
+		"oversizedstethoscope": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162606311964762/internr.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "internsr",
+	  "name": "Intern (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Fingernails",
+	  "season": 1,
+	  "bonuses": {
+		"oversizedstethoscope": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201837969375242/internsr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "internur",
+	  "name": "Intern (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Fingernails",
+	  "season": 1,
+	  "bonuses": {
+		"oversizedstethoscope": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201845477572618/internur.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "interndc",
+	  "name": "Intern (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Dithering",
+	  "season": 5,
+	  "bonuses": {
+		"oversizedstethoscope": true,
+		"oldfiles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162624151126027/interndc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "internalt",
+	  "name": "Intern (Alternate)",
+	  "type": "Alternate",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Toenails",
+	  "season": 5,
+	  "bonuses": {
+		"oversizedstethoscope": true,
+		"pocketdimension": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839233681624137738/internalt.png"
+	},
+	{
+	  "chance": 0.5,
+	  "filename": "interndc_alt",
+	  "name": "Intern (Discontinued Alternate)",
+	  "type": "Discontinued Alternate",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Senior Doctors",
+	  "season": 7,
+	  "bonuses": {
+		"oversizedstethoscope": true,
+		"aboveur": true,
+		"oldfiles": true,
+		"pocketdimension": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873172939997077504/interndc_alt.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "internc",
+	  "name": "Intern (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of the Intern (Art by Kyle Labriola)",
+	  "smell": "Fingernails",
+	  "season": 1,
+	  "bonuses": {
+		"oversizedstethoscope": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201827823222824/internc.png"
+	}
+  ]
+}

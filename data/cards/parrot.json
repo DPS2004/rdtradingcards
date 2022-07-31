@@ -1,0 +1,58 @@
+{
+  "groupname": "parrot",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "parrotr",
+	  "name": "Parrot (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Fancy Things",
+	  "season": 7,
+	  "bonuses": {
+		"okamiiscollar": true,
+		"deluxebirdseed": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/870720029245702164/parrotr.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "parrotsr",
+	  "name": "Parrot (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Maki)",
+	  "smell": "Fancy Things",
+	  "season": 7,
+	  "bonuses": {
+		"deluxebirdseed": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872902243316293713/parrotsr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "parrotur",
+	  "name": "Parrot (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Maki)",
+	  "smell": "Fancy Things",
+	  "season": 7,
+	  "bonuses": {
+		"deluxebirdseed": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875989249386766366/parrotur.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "parrotc",
+	  "name": "Parrot (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Parrot (Art by Stamps)",
+	  "smell": "Fancy Things",
+	  "season": 7,
+	  "bonuses": {
+		"deluxebirdseed": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875579653878870056/parrotc.png"
+	}
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "groupname": "insomniac",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "insomniacr",
+	  "name": "Insomniac (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "WiFi",
+	  "season": 1,
+	  "bonuses": {
+		"rustysword": true,
+		"okamiiscollar": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162801967726603/insomniacr.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "insomniacsr",
+	  "name": "Insomniac (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "WiFi",
+	  "season": 1,
+	  "bonuses": {
+		"rustysword": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201811939917884/insomniacsr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "insomniacur",
+	  "name": "Insomniac (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "WiFi",
+	  "season": 1,
+	  "bonuses": {
+		"rustysword": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201820550692884/insomniacur.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "insomniacdc",
+	  "name": "Insomniac (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "WiFi",
+	  "season": 5,
+	  "bonuses": {
+		"rustysword": true,
+		"oldfiles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162815780618291/insomniacdc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "insomniacalt",
+	  "name": "Insomniac (Alternate)",
+	  "type": "Alternate",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Bluetooth",
+	  "season": 5,
+	  "bonuses": {
+		"rustysword": true,
+		"pocketdimension": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839227753538912287/insomniacalt.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "insomniacc",
+	  "name": "Insomniac (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of the Insomniac (Art by Kyle Labriola)",
+	  "smell": "WiFi",
+	  "season": 1,
+	  "bonuses": {
+		"rustysword": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201798559957022/insomniacc.png"
+	}
+  ]
+}

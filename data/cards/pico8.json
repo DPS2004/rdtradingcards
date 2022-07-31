@@ -1,0 +1,52 @@
+{
+  "groupname": "pico8",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 2,
+	  "filename": "rhythmstacker",
+	  "name": "Rhythm Stacker",
+	  "type": "PICO-8",
+	  "description": "(Cart by auburn. Playable with the PICO-8 app or online at https://auburnsummer.itch.io/rhythm-stacker . The password is rhythmdoctah)",
+	  "smell": "Pancakes",
+	  "season": 3,
+	  "bonuses": {},
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202454527606814/rhythmstacker.p8.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "acofoi",
+	  "name": "A Chance of Fire or Ice",
+	  "type": "PICO-8",
+	  "season": 3,
+	  "description": "(Cart by auburn. Playable with the PICO-8 app or online at https://auburnsummer.itch.io/acofoi . The password is meaculpa)",
+	  "smell": "Indecisiveness",
+	  "bonuses": {
+		"swirlymarbles": true,
+		"driftingmetronome": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200274178572318/acofoi.p8.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "nndmtribute",
+	  "name": "Nico Nico Douga Megacollab Tribute",
+	  "type": "PICO-8",
+	  "season": 6,
+	  "description": "(Cart by DPS2004. Playable with the PICO-8 app or online at https://dps2004.itch.io/n-n-d-m-collab .)",
+	  "smell": "Particle Effects",
+	  "bonuses": {},
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849102646983000084/nndmtribute.p8.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "rhythmfrog",
+	  "name": "Rhythm Frog",
+	  "type": "PICO-8",
+	  "description": "(Cart by 7th Beat Games. Playable with the PICO-8 app or online at https://giacomopc.itch.io/rhythm-frog .)",
+	  "smell": "Anniversaries",
+	  "season": 8,
+	  "bonuses": {},
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967933162187542599/rhythmfrog.p8.png"
+	}
+  ]
+}

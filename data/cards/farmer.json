@@ -1,0 +1,72 @@
+{
+  "groupname": "farmer",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "farmerr",
+	  "name": "Farmer (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Haybales",
+	  "season": 1,
+	  "bonuses": {
+		"okamiiscollar": true,
+		"lostnametag": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839163216042786866/farmerr.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "farmersr",
+	  "name": "Farmer (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Haybales",
+	  "season": 1,
+	  "bonuses": {
+		"lostnametag": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201531168489542/farmersr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "farmerur",
+	  "name": "Farmer (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Haybales",
+	  "season": 1,
+	  "bonuses": {
+		"lostnametag": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201538429485066/farmerur.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "farmerdc",
+	  "name": "Farmer (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Game Development",
+	  "season": 1,
+	  "bonuses": {
+		"lostnametag": true,
+		"oldfiles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839163230022271047/farmerdc.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "farmerc",
+	  "name": "Farmer (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Farmer (Art by Kyle Labriola)",
+	  "smell": "Haybales",
+	  "season": 1,
+	  "bonuses": {
+		"lostnametag": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201514341728286/farmerc.png"
+	}
+  ]
+}
