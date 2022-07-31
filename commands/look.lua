@@ -361,7 +361,6 @@ function command.run(message, mt)
         color = 0x85c5ff,
         title = "Looking at Mountains...",
         description = "The **Windy Mountains** can be found near the **Pyrowmid.** Across a **Bridge** is a **Quaint Shop**, which seems to have some **Barrels** next to it. The sky is filled with **Clouds.**",
-        --TODO: mention Quaint Shop, Bridge, Pyrowmid, Barrels, Clouds. Also edit picture to only have one pyramid,
         image = {
           url = "https://cdn.discordapp.com/attachments/829197797789532181/871433038280675348/windymountains.png"
         }
@@ -487,8 +486,6 @@ function command.run(message, mt)
         content = ':eye:`the card factory looks back`:eye:'
       }
     elseif string.lower(mt[1]) == "token"  then
-      -- message.channel:send('You do not know how, but lots of these **Tokens** have been showing up recently. If only there were somewhere to **Use** them...')
-      -- message.channel:send('https://cdn.discordapp.com/attachments/829197797789532181/829255830485598258/token.png')
       message.channel:send{embed = {
         color = 0x85c5ff,
         title = "Looking at Token...",
