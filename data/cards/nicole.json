@@ -1,0 +1,58 @@
+{
+  "groupname": "nicole",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "nicoler",
+	  "name": "Nicole Ting (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Minimum Wage",
+	  "season": 3,
+	  "bonuses": {
+		"cafemixtape": true,
+		"okamiiscollar": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839160949796896898/nicoler.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "nicolesr",
+	  "name": "Nicole Ting (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Kyle Labriola, edited by BIrDIS)",
+	  "smell": "Minimum Wage",
+	  "season": 3,
+	  "bonuses": {
+		"cafemixtape": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202246206095380/nicolesr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "nicoleur",
+	  "name": "Nicole Ting (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Kyle Labriola, edited by BIrDIS)",
+	  "smell": "Minimum Wage",
+	  "season": 3,
+	  "bonuses": {
+		"cafemixtape": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202262349447169/nicoleur.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "nicolec",
+	  "name": "Nicole Ting (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Nicole Ting (Art by BIrDIS, based on art by Kyle Labriola)",
+	  "smell": "Minimum Wage",
+	  "season": 3,
+	  "bonuses": {
+		"cafemixtape": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202231559061534/nicolec.png"
+	}
+  ]
+}

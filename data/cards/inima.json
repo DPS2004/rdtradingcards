@@ -1,0 +1,58 @@
+{
+  "groupname": "inima",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "inimar",
+	  "name": "Inima (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by AdipemDragon)",
+	  "smell": "Icicles",
+	  "season": 3,
+	  "bonuses": {
+		"okamiiscollar": true,
+		"fieldjournal": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201772270583858/inimar.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "inimasr",
+	  "name": "Inima (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Kin)",
+	  "smell": "Icicles",
+	  "season": 3,
+	  "bonuses": {
+		"fieldjournal": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201779350568990/inimasr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "inimaur",
+	  "name": "Inima (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Kin)",
+	  "smell": "Icicles",
+	  "season": 3,
+	  "bonuses": {
+		"fieldjournal": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201792439943199/inimaur.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "inimac",
+	  "name": "Inima (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Inima (Art by Kin)",
+	  "smell": "Icicles",
+	  "season": 3,
+	  "bonuses": {
+		"fieldjournal": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201742738620436/inimac.png"
+	}
+  ]
+}

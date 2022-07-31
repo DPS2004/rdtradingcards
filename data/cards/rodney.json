@@ -1,0 +1,77 @@
+{
+  "groupname": "rodney",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "rodneyr",
+	  "name": "Rodney (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by AdipemDragon, Xeno)",
+	  "smell": "Disorganization",
+	  "season": 7,
+	  "bonuses": {
+		"okamiiscollar": true,
+		"oversizedstethoscope": true,
+		"fanonplaceholder": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968949039779426334/rodneyr.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "rodneysr",
+	  "name": "Rodney (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Maki)",
+	  "smell": "Disorganization",
+	  "season": 7,
+	  "bonuses": {
+		"oversizedstethoscope": true,
+		"fanonplaceholder": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872801762543816744/rodneysr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "rodneyur",
+	  "name": "Rodney (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Kin)",
+	  "smell": "Disorganization",
+	  "season": 7,
+	  "bonuses": {
+		"oversizedstethoscope": true,
+		"fanonplaceholder": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875547348707717150/rodneyur.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "rodneyc",
+	  "name": "Rodney (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Rodney (Art by Stamps)",
+	  "smell": "Disorganization",
+	  "season": 7,
+	  "bonuses": {
+		"oversizedstethoscope": true,
+		"fanonplaceholder": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/909336496337715232/rodneyc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "rodneydc",
+	  "name": "Rodney (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Art by Xeno, DPS2004)",
+	  "smell": "Disorganization",
+	  "season": 8,
+	  "bonuses": {
+		"oversizedstethoscope": true,
+		"oldfiles": true,
+		"fanonplaceholder": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968949040081428490/rodneydc.png"
+	}
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "groupname": "bodybuilder",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "bodybuilderr",
+	  "name": "Bodybuilder (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Protein Shakes",
+	  "season": 7,
+	  "bonuses": {
+		"okamiiscollar": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872161240066187275/bodybuilderr.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "bodybuildersr",
+	  "name": "Bodybuilder (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Peachy6206)",
+	  "smell": "Protein Shakes",
+	  "season": 7,
+	  "bonuses": {},
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872153740638031912/bodybuildersr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "bodybuilderur",
+	  "name": "Bodybuilder (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Time)",
+	  "smell": "Protein Shakes",
+	  "season": 7,
+	  "bonuses": {},
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873788559251873792/bodybuilderur.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "bodybuilderc",
+	  "name": "Bodybuilder (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Bodybuilder (Art by Pseuu)",
+	  "smell": "Protein Shakes",
+	  "season": 7,
+	  "bonuses": {},
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872153740323479572/bodybuilderc.png"
+	}
+  ]
+}

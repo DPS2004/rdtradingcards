@@ -1,0 +1,58 @@
+{
+      "groupname": "barista",
+      "basechance": 3,
+      "cards": [{
+          "chance": 3,
+          "filename": "baristar",
+          "name": "Barista (Rare)",
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "A Nice Cup o' Joe",
+          "season": 7,
+          "bonuses": {
+            "okamiiscollar": true,
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872161241643233300/baristar.png"
+        },
+        {
+          "chance": 2,
+          "filename": "baristasr",
+          "name": "Barista (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by Stamps)",
+          "smell": "A Nice Cup o' Joe",
+          "season": 7,
+          "bonuses": {
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872138749415395358/baristasr.png"
+        },
+        {
+          "chance": 1,
+          "filename": "baristaur",
+          "name": "Barista (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by Kin)",
+          "smell": "A Nice Cup o' Joe",
+          "season": 7,
+          "bonuses": {
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872138750682075236/baristaur.png"
+        },
+        {
+          "chance": 0,
+          "filename": "baristac",
+          "name": "Barista (Collector's)",
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Barista (Art by Kin)",
+          "smell": "A Nice Cup o' Joe",
+          "season": 7,
+          "bonuses": {
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872167858208116826/baristac.png"
+        }
+      ]
+    }

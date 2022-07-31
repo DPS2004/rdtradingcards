@@ -1,0 +1,58 @@
+{
+  "groupname": "oriole",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "orioler",
+	  "name": "Oriole (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Big Bill's",
+	  "season": 7,
+	  "bonuses": {
+		"okamiiscollar": true,
+		"deluxebirdseed": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/870720104160178258/orioler.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "oriolesr",
+	  "name": "Oriole (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Maki)",
+	  "smell": "Big Bill's",
+	  "season": 7,
+	  "bonuses": {
+		"deluxebirdseed": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872171855665057842/oriolesr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "orioleur",
+	  "name": "Oriole (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by MokkaCat)",
+	  "smell": "Big Bill's",
+	  "season": 7,
+	  "bonuses": {
+		"deluxebirdseed": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873766333144264744/orioleur.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "oriolec",
+	  "name": "Oriole (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Oriole (Art by MokkaCat)",
+	  "smell": "Big Bill's",
+	  "season": 7,
+	  "bonuses": {
+		"deluxebirdseed": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872139590335619082/oriolec.png"
+	}
+  ]
+}

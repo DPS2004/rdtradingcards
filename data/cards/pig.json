@@ -1,0 +1,74 @@
+{
+  "groupname": "pig",
+  "basechance": 3,
+  "cards": [
+	
+	{
+	  "chance": 3,
+	  "filename": "pigr",
+	  "name": "Pig (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Thrones",
+	  "season": 8,
+	  "bonuses": {
+		"okamiiscollar": true,
+		"swirlymarbles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996325253226556/pigr.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "pigsr",
+	  "name": "Pig (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Stamps)",
+	  "smell": "Thrones",
+	  "season": 8,
+	  "bonuses": {
+		"swirlymarbles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996347923435520/pigsr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "pigur",
+	  "name": "Pig (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by BIrDIS)",
+	  "smell": "Thrones",
+	  "season": 8,
+	  "bonuses": {
+		"swirlymarbles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996368387465246/pigur.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "pigc",
+	  "name": "Pig (Collector's)",
+	  "type": "Collector's",
+	  "description": "(Art by BIrDIS)",
+	  "smell": "Thrones",
+	  "season": 8,
+	  "bonuses": {
+		"swirlymarbles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996396527034398/pigc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "pigalt",
+	  "name": "Pig (Alternate)",
+	  "type": "Alternate",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Trumpets",
+	  "season": 8,
+	  "bonuses": {
+		"swirlymarbles": true,
+		"pocketdimension": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996418865901609/pigalt.png"
+	}
+  ]
+}

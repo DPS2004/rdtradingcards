@@ -1,0 +1,72 @@
+{
+  "groupname": "mrsstevenson",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "mrsstevensonr",
+	  "name": "Mrs. Stevenson (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Old Women",
+	  "season": 1,
+	  "bonuses": {
+		"hardcandy": true,
+		"okamiiscollar": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839161314005745734/mrsstevensonr.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "mrsstevensonsr",
+	  "name": "Mrs. Stevenson (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Old Women",
+	  "season": 1,
+	  "bonuses": {
+		"hardcandy": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202131646677022/mrsstevensonsr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "mrsstevensonur",
+	  "name": "Mrs. Stevenson (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Old Women",
+	  "season": 1,
+	  "bonuses": {
+		"hardcandy": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202138725875752/mrsstevensonur.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "mrsstevensondc",
+	  "name": "Mrs. Stevenson (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Really Old Women",
+	  "season": 5,
+	  "bonuses": {
+		"hardcandy": true,
+		"oldfiles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839161328199270430/mrsstevensondc.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "mrsstevensonc",
+	  "name": "Mrs. Stevenson (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Mrs. Stevenson (Art by Kyle Labriola)",
+	  "smell": "Old Women",
+	  "season": 1,
+	  "bonuses": {
+		"hardcandy": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202119789772810/mrsstevensonc.png"
+	}
+  ]
+}

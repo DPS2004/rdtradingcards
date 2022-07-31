@@ -1,0 +1,215 @@
+{
+      "groupname": "s5 customs",
+      "basechance": 3,
+      "cards": [
+		{
+          "chance": 2,
+          "filename": "sugarpills",
+          "name": "Sugar Pills",
+          "type": "Super Rare",
+          "description": "(Level by DPS2004 and Xeno)",
+          "smell": "The Placebo Effect",
+          "season": 5,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/831155010997977158/sugarpills.png"
+        },
+        {
+          "chance": 2,
+          "filename": "cardboardworld",
+          "name": "Through A Cardboard World",
+          "type": "Super Rare",
+          "description": "(Level by megaminerzero)",
+          "smell": "The Post Office",
+          "season": 5,
+          "bonuses": {
+            "rustysword": true,
+            "oversizedstethoscope": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/831155026395004968/cardboardworld.png"
+        },
+        {
+          "chance": 2,
+          "filename": "madness",
+          "name": "Madness",
+          "type": "Super Rare",
+          "description": "(Level by Samario)",
+          "smell": "Nevada",
+          "season": 5,
+          "bonuses": {
+            "rustysword": true,
+            "cafemixtape": true,
+            "deluxebirdseed": true,
+            "deviltail": true,
+            "lostnametag": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/831155038126473266/madness.png"
+        },
+        {
+          "chance": 2,
+          "filename": "properrhythm",
+          "name": "Proper Rhythm",
+          "type": "Super Rare",
+          "description": "(Level by yoshikirby26, based on the level by CV35W, go support UNBEATABLE on their SLACKER BACKER page! https://www.unbeatablegame.com/slackerbacker)",
+          "smell": "Ink Ribbons",
+          "season": 5,
+          "bonuses": {
+            "valentinesdaycard": true,
+            "oversizedstethoscope": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/831155051208114196/properrhythm.png"
+        },
+        {
+          "chance": 2,
+          "filename": "coolbird",
+          "name": "theme of really cool bird",
+          "type": "Super Rare",
+          "description": "(Level by DPS2004)",
+          "smell": "Sick Flips",
+          "season": 5,
+          "bonuses": {
+            "deluxebirdseed": true,
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/831155073710293062/coolbird.png"
+        },
+        {
+          "chance": 2,
+          "filename": "fistedcosmo",
+          "name": "Fisted Cosmo",
+          "type": "Super Rare",
+          "description": "(Level by Plant Guy)",
+          "smell": "Invasion",
+          "season": 5,
+          "bonuses": {
+            "rustysword": true,
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/831155075392208997/fistedcosmo.png"
+        },
+        {
+          "chance": 2,
+          "filename": "inthehalls",
+          "name": "In The Halls of the Usurper (Kubbi Remix)",
+          "type": "Super Rare",
+          "description": "(Level by CrazedJack and Kin)",
+          "smell": "Propeller Rats",
+          "season": 5,
+          "bonuses": {
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/831155078831407134/inthehalls.png"
+        },
+        {
+          "chance": 2,
+          "filename": "setmefree",
+          "name": "Set Me Free",
+          "type": "Super Rare",
+          "description": "(Level by Hyphex)",
+          "smell": "Common Core",
+          "season": 5,
+          "bonuses": {
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/831155078937313280/setmefree.png"
+        },
+        {
+          "chance": 2,
+          "filename": "moai",
+          "name": "MOAI",
+          "type": "Super Rare",
+          "description": "(Level by ddrr0077)",
+          "smell": "Easter Island",
+          "season": 5,
+          "bonuses": {
+            "rustysword": true,
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/831155092010172446/moai.png"
+        },
+        {
+          "chance": 2,
+          "filename": "patchwork",
+          "name": "Patchwork Staccato",
+          "type": "Super Rare",
+          "description": "(Level by lugi, Qerewe, and Seven)",
+          "smell": "Fabric",
+          "season": 5,
+          "bonuses": {
+            "fieldjournal": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/831712853559214142/patchworkstaccato.png"
+        },
+        {
+          "chance": 2,
+          "filename": "enchantedlove",
+          "name": "Enchanted Love",
+          "type": "Super Rare",
+          "description": "(Level by Kin)",
+          "smell": "Lilypads",
+          "season": 5,
+          "bonuses": {
+            "valentinesdaycard": true,
+            "lostnametag": true,
+            "filmreel": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/831155101553000458/enchantedlove.gif"
+        },
+        {
+          "chance": 2,
+          "filename": "retrofunky",
+          "name": "Retro Funky (SUNDANCE Remix)",
+          "type": "Super Rare",
+          "description": "(Level by MarioMak967)",
+          "smell": "Stay-Puft",
+          "season": 5,
+          "bonuses": {
+            "rustysword": true,
+            "lostnametag": true,
+            "filmreel": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/838954510172553236/retrofunky.gif"
+        },
+        {
+          "chance": 2,
+          "filename": "kickstarts",
+          "name": "Kickstarts",
+          "type": "Super Rare",
+          "description": "(Level by Fritzy)",
+          "smell": "Crowdfunding",
+          "season": 5,
+          "bonuses": {
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/838954671740813312/kickstarts.png"
+        },
+        {
+          "chance": 2,
+          "filename": "machinegun",
+          "name": "Machine Gun",
+          "type": "Super Rare",
+          "description": "(Level by lugi)",
+          "smell": "Current Events",
+          "season": 5,
+          "bonuses": {
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/838954744046157854/machinegun.png"
+        },
+        {
+          "chance": 2,
+          "filename": "pharamatara",
+          "name": "Pharamatara",
+          "type": "Super Rare",
+          "description": "(Level by Some J Name, Het, and DPS2004)",
+          "smell": "Marching Orders",
+          "season": 5,
+          "bonuses": {
+            "paddedstickersheet": true,
+            "fieldjournal": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839152086812983366/pharamatara.png"
+        }
+      ]
+    }

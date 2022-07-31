@@ -1,0 +1,17 @@
+{
+  "groupname": "ssss45",
+  "basechance": 3,
+  "cards": [
+	{
+          "chance": 0,
+          "filename": "ssss45",
+          "name": "Shaun's Server Statistics Sampling #45",
+          "type": "Special",
+          "description": "(this field intentionally left blank)",
+          "smell": "THE ONE",
+          "season": 0,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202779016658994/ssss45.png"
+        }
+  ]
+}

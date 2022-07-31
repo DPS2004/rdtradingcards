@@ -1,0 +1,58 @@
+{
+  "groupname": "politician",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "politicianr",
+	  "name": "Politician (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Democracy",
+	  "season": 1,
+	  "bonuses": {
+		"okamiiscollar": true,
+		"lostnametag": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839160716299731024/politicianr.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "politiciansr",
+	  "name": "Politician (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Democracy",
+	  "season": 1,
+	  "bonuses": {
+		"lostnametag": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202407238008904/politiciansr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "politicianur",
+	  "name": "Politician (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Democracy",
+	  "season": 1,
+	  "bonuses": {
+		"lostnametag": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202413432733746/politicianur.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "politicianc",
+	  "name": "Politician (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of the Politician (Art by Kyle Labriola)",
+	  "smell": "Democracy",
+	  "season": 1,
+	  "bonuses": {
+		"lostnametag": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202395971715082/politicianc.png"
+	}
+  ]
+}

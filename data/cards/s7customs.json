@@ -1,0 +1,333 @@
+{
+      "groupname": "s7 customs",
+      "basechance": 3,
+      "cards": [
+		{
+          "chance": 2,
+          "filename": "bamboo",
+          "name": "Bamboo",
+          "type": "Super Rare",
+          "description": "(Level by 吾夜犹明)",
+          "smell": "Pandas",
+          "season": 7,
+          "bonuses": {
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/575848843049172994/873225855256625192/bamboo.png"
+        },
+        {
+          "chance": 2,
+          "filename": "birdonthewing",
+          "name": "Bird on the Wing",
+          "type": "Super Rare",
+          "description": "(Level by FirecatFG)",
+          "smell": ":skateboard: zzshhhhhh clk clk zshhhhhh clk clk szhhhhhhh clk clk",
+          "season": 7,
+          "bonuses": {
+            "paddedstickersheet": true,
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/575848843049172994/873225865163587654/birdonthewing.png"
+        },
+        {
+          "chance": 2,
+          "filename": "firetemple",
+          "name": "Fire Temple",
+          "type": "Super Rare",
+          "description": "(Level by Nocallia)",
+          "smell": "Eya",
+          "season": 7,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/575848843049172994/873225869739589662/firetemple.png"
+        },
+        {
+          "chance": 2,
+          "filename": "injam",
+          "name": "Up in my Jam (All of a Sudden)",
+          "type": "Super Rare",
+          "description": "(Level by thefinals, MarioMak967, NotXeno, CrazedJack)",
+          "smell": "Cardboard",
+          "season": 7,
+          "bonuses": {
+            "paddedstickersheet": true,
+            "filmreel": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/575848843049172994/873226361928552458/upinmyjam.gif"
+        },
+        {
+          "chance": 2,
+          "filename": "rdnot",
+          "name": "What is RD Not?",
+          "type": "Super Rare",
+          "description": "(\"Level\" by Dee)",
+          "smell": "Exceptions",
+          "season": 7,
+          "bonuses": {
+            "rustysword": true,
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875803100928151562/rdnot.png"
+        },
+        {
+          "chance": 2,
+          "filename": "alongfall",
+          "name": "A Long Fall",
+          "type": "Super Rare",
+          "description": "(Level by Kamayana)",
+          "smell": "Raids",
+          "season": 7,
+          "bonuses": {
+            "paddedstickersheet": true,
+            "rustysword": true,
+            "lostnametag": true,
+            "oversizedstethoscope": true,
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/575848843049172994/873225869303357533/alongfall.png"
+        },
+        {
+          "chance": 2,
+          "filename": "alterego",
+          "name": "Alter Ego",
+          "type": "Super Rare",
+          "description": "(Level by Rorrogi_)",
+          "smell": "Old RPGs",
+          "season": 7,
+          "bonuses": {
+            "paddedstickersheet": true,
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/715130269576855583/876066495816413255/alterego.png"
+        },
+        {
+          "chance": 2,
+          "filename": "wantgnomes",
+          "name": "You Want Gnomes",
+          "type": "Super Rare",
+          "description": "(Level by NoranOmicron)",
+          "smell": "Grass",
+          "season": 7,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/575848843049172994/873225870410649610/wantgnomes.png"
+        },
+        {
+          "chance": 2,
+          "filename": "lightscameraaction",
+          "name": "Lights Camera Action",
+          "type": "Super Rare",
+          "description": "(Level by Purple0702, ddrr0077, LimonSoda, Daming)",
+          "smell": "Rhythm",
+          "season": 7,
+          "bonuses": {
+            "rustysword": true,
+            "oversizedstethoscope": true,
+            "filmreel": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/575848843049172994/873226344417341460/lightscameraaction.gif"
+        },
+        {
+          "chance": 2,
+          "filename": "peacefulseabed",
+          "name": "Peaceful Seabed",
+          "type": "Super Rare",
+          "description": "(Level by soggoru waffle)",
+          "smell": "Salt Water",
+          "season": 7,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/575848843049172994/873225861782966272/peacefulseabed.png"
+        },
+        {
+          "chance": 2,
+          "filename": "rainingstars",
+          "name": "On the Street of Raining Stars",
+          "type": "Super Rare",
+          "description": "(Level by CooMonkey)",
+          "smell": "The PSP",
+          "season": 7,
+          "bonuses": {
+            "paddedstickersheet": true,
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/575848843049172994/873225866119880734/rainingstars.png"
+        },
+        {
+          "chance": 2,
+          "filename": "arctic",
+          "name": "Arctic Oscillation",
+          "type": "Super Rare",
+          "description": "(Level by DNH, DeadlySprinklez, Xeno, and Some J Name)",
+          "smell": "Acid Rain",
+          "season": 7,
+          "bonuses": {
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/871947037988491294/arctic.png"
+        },
+        {
+          "chance": 1,
+          "filename": "initiation",
+          "name": "Initiation -aggressive solicitation mix-",
+          "type": "Ultra Rare",
+          "description": "(Level by Emdyion, Xeno)",
+          "smell": "Forever",
+          "season": 7,
+          "bonuses": {
+            "rustysword": true,
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/871950217556148244/initiation.png"
+        },
+        {
+          "chance": 2,
+          "filename": "drgaster",
+          "name": "Dr. Gaster",
+          "type": "Super Rare",
+          "description": "(Level by MayorSeb)",
+          "smell": "Bones",
+          "season": 7,
+          "bonuses": {
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/871952828682371102/drgaster.png"
+        },
+        {
+          "chance": 2,
+          "filename": "goodbyesengen",
+          "name": "Goodbye Sengen",
+          "type": "Super Rare",
+          "description": "(Level by thefinals)",
+          "smell": "Poppies",
+          "season": 7,
+          "bonuses": {
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/871954310299267112/byesengen.png"
+        },
+        {
+          "chance": 2,
+          "filename": "mineore",
+          "name": "wish i could care less (minecraft parody)",
+          "type": "Super Rare",
+          "description": "(Original by fizzd, Parody by Colon)",
+          "smell": "The Cave Update",
+          "season": 7,
+          "bonuses": {
+            "cafemixtape": true,
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873247709451141120/mineore.png"
+        },
+        {
+          "chance": 2,
+          "filename": "stormlofi",
+          "name": "storm (EXT4NT lofi rmx)",
+          "type": "Super Rare",
+          "description": "(Level by WolfPlay013)",
+          "smell": "Raindroplets",
+          "season": 7,
+          "bonuses": {
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873242062454145074/stormlofi.png"
+        },
+        {
+          "chance": 2,
+          "filename": "doornock",
+          "name": "Door Nock",
+          "type": "Super Rare",
+          "description": "(Level by Arkaan Muyassar)",
+          "smell": "Terrible Jokes",
+          "season": 7,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873243320581767198/doornook.png"
+        },
+        {
+          "chance": 2,
+          "filename": "cursed",
+          "name": "Cursed",
+          "type": "Super Rare",
+          "description": "(Level by 1257Plays)",
+          "smell": "Nightmares",
+          "season": 7,
+          "bonuses": {
+            "rustysword": true,
+            "deviltail": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873244966892212254/cursed.png"
+        },
+        {
+          "chance": 2,
+          "filename": "pools",
+          "name": "Pools",
+          "type": "Super Rare",
+          "description": "(Level by Timeshark)",
+          "smell": "Bird-related Injuries",
+          "season": 7,
+          "bonuses": {
+            "deluxebirdseed": true,
+            "deviltail": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873246652742397972/pools.png"
+        },
+        {
+          "chance": 2,
+          "filename": "bornsurvivor",
+          "name": "Born Survivor",
+          "type": "Super Rare",
+          "description": "(Level by Noche)",
+          "smell": "Future Doubts",
+          "season": 7,
+          "bonuses": {
+            "rustysword": true,
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875934908936224788/bornsurvivor.png"
+        },
+        {
+          "chance": 2,
+          "filename": "csqn",
+          "name": "c.s.q.n.",
+          "type": "Super Rare",
+          "description": "(Level by DPS2004 and Rikri)",
+          "smell": "Honeycombs",
+          "season": 7,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875934906142830622/csqn.png"
+        },
+        {
+          "chance": 2,
+          "filename": "hollowbastion",
+          "name": "Hollow Bastion",
+          "type": "Super Rare",
+          "description": "(Level by Nocallia)",
+          "smell": "Convoluted Storylines",
+          "season": 7,
+          "bonuses": {
+            "rustysword": true,
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875934910408425542/hollowbastion.png"
+        },
+        {
+          "chance": 2,
+          "filename": "mypiano",
+          "name": "My Piano Is Escaping (8bit)",
+          "type": "Super Rare",
+          "description": "(Level by BluPen)",
+          "smell": "Old Platformers",
+          "season": 7,
+          "bonuses": {
+            "cafemixtape": true,
+            "oversizedstethoscope": true,
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875934909166936124/mypiano.png"
+        }
+      ]
+    }

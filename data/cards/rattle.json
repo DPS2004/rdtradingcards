@@ -1,0 +1,56 @@
+{
+  "groupname": "rattle",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "rattler",
+	  "name": "Rattle (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Sand",
+	  "season": 6,
+	  "bonuses": {
+		"okamiiscollar": true,
+		"animalplaceholder": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872076809221574686/rattler.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "rattlesr",
+	  "name": "Rattle (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Stamps)",
+	  "smell": "Sand",
+	  "season": 7,
+	  "bonuses": {
+		"animalplaceholder": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875247802802929704/rattlesr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "rattleur",
+	  "name": "Rattle (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Time)",
+	  "smell": "Sand",
+	  "season": 7,
+	  "bonuses": {
+		"animalplaceholder": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872353967278002196/rattleur.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "rattlec",
+	  "name": "Rattle (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Rattle (Art by TrainThemAll)",
+	  "smell": "Sand",
+	  "season": 7,
+	  "bonuses": {},
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/876276960253313044/rattlec.png"
+	}
+  ]
+}

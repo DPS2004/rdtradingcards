@@ -1,0 +1,711 @@
+{
+      "groupname": "s8 customs",
+      "basechance": 3,
+      "cards": [
+		{
+          "chance": 2,
+          "filename": "leperv",
+          "name": "Le Perv",
+          "type": "Super Rare",
+          "description": "(Level by notDonte, Kneeckoh, noche, Samario, auburnsummer, and Fancybread)",
+          "smell": "Innovation",
+          "season": 8,
+          "bonuses": {
+            "charcoalpencil": true,
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968571722141925436/leperv.png"
+        },
+        {
+          "chance": 1,
+          "filename": "lepervdc",
+          "name": "Le Perv (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Level by notDonte)",
+          "smell": "Dreamed Combinations",
+          "season": 8,
+          "bonuses": {
+            "charcoalpencil": true,
+            "rustysword": true,
+            "lostnametag": true,
+            "oldfiles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968559070044897370/lepervdc.png"
+        },
+        {
+          "chance": 2,
+          "filename": "marionette",
+          "name": "Marionette",
+          "type": "Super Rare",
+          "description": "(Level by yoshikirby26)",
+          "smell": "Puppetry",
+          "season": 8,
+          "bonuses": {
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973568970026270801/marionette.png"
+        },
+        {
+          "chance": 2,
+          "filename": "psycho",
+          "name": "Psycho",
+          "type": "Super Rare",
+          "description": "(level by GavLizard)",
+          "smell": "A Bad Time",
+          "season": 8,
+          "bonuses": {
+            "oversizedstethoscope": true,
+            "filmreel": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964743832413560882/psycho.gif"
+        },
+        {
+          "chance": 2,
+          "filename": "pleasureisland",
+          "name": "Take Me to Pleasure Island",
+          "type": "Super Rare",
+          "description": "(Level by Pastel, TriPizza, CooMonkey, prod, Purple0702, Not Xenogenesis, Rorrogi_, and MrCube_)",
+          "smell": "The Beach",
+          "season": 8,
+          "bonuses": {
+            "valentinesdaycard": true,
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973572611600687104/pleasureisland.png"
+        },
+        {
+          "chance": 2,
+          "filename": "september",
+          "name": "september",
+          "type": "Super Rare",
+          "description": "(Level by lugi)",
+          "smell": "Sapphires",
+          "season": 8,
+          "bonuses": {
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972722034046038056/september.png"
+        },
+        {
+          "chance": 2,
+          "filename": "sdivine",
+          "name": "Something Divine",
+          "type": "Super Rare",
+          "description": "(Level by auburnsummer and Xeno)",
+          "smell": "Supernatural Companionship",
+          "season": 8,
+          "bonuses": {
+            "cafemixtape": true,
+            "rustysword": true,
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973573566870224966/sdivine.png"
+        },
+        {
+          "chance": 2,
+          "filename": "lycoris",
+          "name": "Lycoris",
+          "type": "Super Rare",
+          "description": "(Level by Zack101155)",
+          "smell": "Ban Evasion",
+          "season": 8,
+          "bonuses": {
+            "valentinesdaycard": true,
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972722033781801000/lycoris.png"
+        },
+        {
+          "chance": 2,
+          "filename": "deadlyslot",
+          "name": "Deadly Slot Game",
+          "type": "Super Rare",
+          "description": "(Level by Emdyion and Zisos)",
+          "smell": "Cherries",
+          "season": 8,
+          "bonuses": {
+            "valentinesdaycard": true,
+            "lostnametag": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972722034327044166/deadlyslot.png"
+        },
+        {
+          "chance": 2,
+          "filename": "dicebet",
+          "name": "賽の賭け目",
+          "type": "Super Rare",
+          "description": "(Level by Pseuu)",
+          "smell": "Green Felt",
+          "season": 8,
+          "bonuses": {
+            "rustysword": true,
+            "charcoalpencil": true,
+            "lostnametag": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973576271445495859/dicebet.png"
+        },
+        {
+          "chance": 2,
+          "filename": "hotmilk",
+          "name": "Hot Milk",
+          "type": "Super Rare",
+          "description": "(Level by DPS2004 and OctaChora)",
+          "smell": "Cake",
+          "season": 8,
+          "bonuses": {
+            "duncecap": true,
+            "rustysword": true,
+            "filmreel": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964747864263774220/hotmilk.gif"
+        },
+        {
+          "chance": 2,
+          "filename": "thelick",
+          "name": "\"The Lick\" in all 12 keys",
+          "type": "Super Rare",
+          "description": "(Level by huantian)",
+          "smell": "Repetition",
+          "season": 8,
+          "bonuses": {
+            "duncecap": true,
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973577552067190804/thelick.png"
+        },{
+          "chance": 2,
+          "filename": "godrace",
+          "name": "God Race",
+          "type": "Super Rare",
+          "description": "(Level by MrCube_)",
+          "smell": "Ink Plates",
+          "season": 8,
+          "bonuses": {
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973579412824018974/godrace.png"
+        },
+        {
+          "chance": 2,
+          "filename": "bdbn",
+          "name": "By Day, By Night VIP",
+          "type": "Super Rare",
+          "description": "(Level by 3T)",
+          "smell": "Thunder",
+          "season": 8,
+          "bonuses": {
+            "filmreel": true,
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973588973559615598/bdbn.gif"
+        },
+        {
+          "chance": 2,
+          "filename": "dearfellow",
+          "name": "Dear Fellow Traveler",
+          "type": "Super Rare",
+          "description": "(Level by Timeshark)",
+          "smell": "The Wilderness",
+          "season": 8,
+          "bonuses": {
+            "deluxebirdseed": true,
+            "paddedstickersheet": true,
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973597092457107516/dearfellow.png"
+        },
+        {
+          "chance": 2,
+          "filename": "kidsnoreturn",
+          "name": "Kids No Return",
+          "type": "Super Rare",
+          "description": "(Level by Het)",
+          "smell": "Differences in Perspective",
+          "season": 8,
+          "bonuses": {
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973600631103316019/kidsnoreturn.png"
+        },
+        {
+          "chance": 2,
+          "filename": "yesman",
+          "name": "イヱスマン",
+          "type": "Super Rare",
+          "description": "(Level by Jams and starry skies)",
+          "smell": "Mycology",
+          "season": 8,
+          "bonuses": {
+            "filmreel": true,
+            "oversizedstethoscope": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973610432403222558/yesman.gif"
+        },
+        {
+          "chance": 2,
+          "filename": "uprising",
+          "name": "Uprising",
+          "type": "Super Rare",
+          "description": "(Level by Noche, AdipemDragon, and notDonte)",
+          "smell": "Vyrmstuff",
+          "season": 8,
+          "bonuses": {
+            "filmreel": true,
+            "deviltail": true,
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/362784581344034816/989815292949585920/uprising.gif"
+        },
+        {
+          "chance": 2,
+          "filename": "bukiyona",
+          "name": "不器用な男",
+          "type": "Super Rare",
+          "description": "(Level by Lrial, CooMonkey, and Richancit)",
+          "smell": "Journals",
+          "season": 8,
+          "bonuses": {
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973619585678970951/bukiyona.png"
+        },
+        {
+          "chance": 2,
+          "filename": "stillfeel",
+          "name": "still feel.",
+          "type": "Super Rare",
+          "description": "(Level by DPS2004, huantian, ThatOneGuy, and bunner)",
+          "smell": "Stardust",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973621443432677427/stillfeel.png"
+        },
+        {
+          "chance": 2,
+          "filename": "ohurricane",
+          "name": "OTENAMI Hurricane",
+          "type": "Super Rare",
+          "description": "(Level by MarioMak967)",
+          "smell": "Marketable Plushies",
+          "season": 8,
+          "bonuses": {
+            "collabplaceholder": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967919656306372668/ohurricane.png"
+        },
+        {
+          "chance": 2,
+          "filename": "ioverdose",
+          "name": "INTERNET OVERDOSE",
+          "type": "Super Rare",
+          "description": "(Level by thefinals)",
+          "smell": "Death, as well as Bending",
+          "season": 8,
+          "bonuses": {
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964734780061143050/ioverdose.png"
+        },
+        {
+          "chance": 2,
+          "filename": "madiq",
+          "name": "MAD IQs",
+          "type": "Super Rare",
+          "description": "(Level by DPS2004 and MarioMak967)",
+          "smell": "Pipe Bombs",
+          "season": 8,
+          "bonuses": {
+            "filmreel": true,
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/975762667195236403/madiqs.gif"
+        },
+        {
+          "chance": 2,
+          "filename": "4am",
+          "name": "4AM",
+          "type": "Super Rare",
+          "description": "(Level by Kin and CrazedJack)",
+          "smell": "Sleeplessness",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964727654622326794/4am.png"
+        },
+        {
+          "chance": 2,
+          "filename": "dreamland",
+          "name": "DREAMLAND",
+          "type": "Super Rare",
+          "description": "(Level by TheXinventor)",
+          "smell": "Smoke",
+          "season": 8,
+          "bonuses": {
+            "cafemixtape": true,
+            "rustysword": true,
+            "oversizedstethoscope": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964724801438634004/dreamland.png"
+        },
+        {
+          "chance": 2,
+          "filename": "kuguru",
+          "name": "くぐる",
+          "type": "Super Rare",
+          "description": "(Level by Het)",
+          "smell": "Ivory",
+          "season": 8,
+          "bonuses": {
+            "cafemixtape": true,
+            "oversizedstethoscope": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/975765344742424646/kuguru.png"
+        },
+        {
+          "chance": 2,
+          "filename": "finallylanding",
+          "name": "We're Finally Landing",
+          "type": "Super Rare",
+          "description": "(Level by ddrr0077)",
+          "smell": "Sodium Chloride",
+          "season": 8,
+          "bonuses": {
+            "charcoalpencil": true,
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964724541349826560/finallylanding.png"
+        },
+        {
+          "chance": 2,
+          "filename": "sneakman",
+          "name": "Sneakman",
+          "type": "Super Rare",
+          "description": "(Level by Zack101155 and Xeno)",
+          "smell": "Vandalism",
+          "season": 8,
+          "bonuses": {
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964724004827066398/sneakman.png"
+        },
+        {
+          "chance": 2,
+          "filename": "trafficjam",
+          "name": "Traffic Jam",
+          "type": "Super Rare",
+          "description": "(Level by Pseuu, okamii, Delta, and Xeno)",
+          "smell": "Asphalt",
+          "season": 8,
+          "bonuses": {
+            "filmreel": true,
+            "rustysword": true,
+            "lostnametag": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/975768922102071306/trafficjam.gif"
+        },
+        {
+          "chance": 2,
+          "filename": "analys",
+          "name": "ANALYS",
+          "type": "Super Rare",
+          "description": "(Level by Maki)",
+          "smell": "Vaporwave",
+          "season": 8,
+          "bonuses": {
+            "rustysword": true,
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964723672009039942/analys.png"
+        },
+        {
+          "chance": 2,
+          "filename": "mpp",
+          "name": "Mad Piano Party",
+          "type": "Super Rare",
+          "description": "(Level by Xeno and CrazedJack)",
+          "smell": "Magic Shapes",
+          "season": 8,
+          "bonuses": {
+            "filmreel": true,
+            "paddedstickersheet": true,
+            "deviltail": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968847975226933258/mpp.gif"
+        },
+        {
+          "chance": 2,
+          "filename": "sad",
+          "name": "SAD",
+          "type": "Super Rare",
+          "description": "(Level by Kin)",
+          "smell": "A Disproportionately Small Gap",
+          "season": 8,
+          "bonuses": {
+            "deluxebirdseed": true,
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964724263485599854/sad.png"
+        },
+        {
+          "chance": 2,
+          "filename": "transformation",
+          "name": "変身",
+          "type": "Super Rare",
+          "description": "(Level by okamii)",
+          "smell": "Gregor Samsa",
+          "season": 8,
+          "bonuses": {
+            "cafemixtape": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964723384166539304/transformation.png"
+        },
+        {
+          "chance": 2,
+          "filename": "coffeebreak",
+          "name": "Coffee Break",
+          "type": "Super Rare",
+          "description": "(Level by KirbyCreep and Penny)",
+          "smell": "Normal Pills",
+          "season": 8,
+          "bonuses": {
+            "duncecap": true,
+            "oversizedstethoscope": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964919132279689267/coffeebreak.png"
+        },
+        {
+          "chance": 1,
+          "filename": "pixelplantdc",
+          "name": "Pixel Plantation (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Level by Kin)",
+          "smell": "Potted Plants",
+          "season": 8,
+          "bonuses": {
+            "oldfiles": true,
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967950366987677707/pixelplantdc.png"
+        },
+		{
+          "chance": 2,
+          "filename": "nightwander",
+          "name": "Night Wander (cnsouka remix)",
+          "type": "Super Rare",
+          "description": "(Level by Juandif)",
+          "smell": "Neon Lights",
+          "season": 8,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972981235133599804/nightwander.png"
+        },
+        {
+          "chance": 2,
+          "filename": "unmelting",
+          "name": "Unmelting",
+          "type": "Super Rare",
+          "description": "(Level by Shareoff)",
+          "smell": "Snowflakes",
+          "season": 8,
+          "bonuses": {
+            "oversizedstethoscope": true,
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972981292285194260/unmelting.png"
+        },
+        {
+          "chance": 2,
+          "filename": "motivation",
+          "name": "Motivation",
+          "type": "Super Rare",
+          "description": "(Level by Shareoff)",
+          "smell": "Jelly Cubes",
+          "season": 8,
+          "bonuses": {
+            "rustysword": true,
+            "charcoalpencil": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/972981398757589082/motivation.png"
+        },
+		{
+          "chance": 2,
+          "filename": "pinedrop",
+          "name": "パインドロップ",
+          "type": "Super Rare",
+          "description": "(Level by tepid)",
+          "smell": "Natural Notes",
+          "season": 8,
+          "bonuses": {
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973005669844254770/pinedrop.png"
+        },
+        {
+          "chance": 2,
+          "filename": "panopticon",
+          "name": "Panopticon",
+          "type": "Super Rare",
+          "description": "(Level by Pseuu)",
+          "smell": "Observation",
+          "season": 8,
+          "bonuses": {
+            "deviltail": true,
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973005669517103104/panopticon.png"
+        },
+        {
+          "chance": 2,
+          "filename": "ebcs",
+          "name": "Electronic Behavior Control System",
+          "type": "Super Rare",
+          "description": "(Level by Provolone)",
+          "smell": "Channel Surfing",
+          "season": 8,
+          "bonuses": {
+            "cafemixtape": true,
+            "oversizedstethoscope": true,
+            "hardcandy": true,
+            "charcoalpencil": true,
+            "valentinesdaycard": true,
+            "rustysword": true,
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973005669059944479/ebcs.png"
+        },
+        {
+          "chance": 2,
+          "filename": "turinglove",
+          "name": "Turing Love",
+          "type": "Super Rare",
+          "description": "(Level by thefinals)",
+          "smell": "Artificial Emotions",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973006006697213953/turinglove.png"
+        },
+        {
+          "chance": 2,
+          "filename": "sunset",
+          "name": "斜陽",
+          "type": "Super Rare",
+          "description": "(Level by Xeno)",
+          "smell": "Solid Colors",
+          "season": 8,
+          "bonuses": {
+            "rustysword": true,
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973006006453927986/sunset.png"
+        },
+        {
+          "chance": 2,
+          "filename": "options",
+          "name": "Options",
+          "type": "Super Rare",
+          "description": "(Level by _Chtty_Bang_)",
+          "smell": "Not Enough Information",
+          "season": 8,
+          "bonuses": {
+            "lostnametag": true,
+            "collabplaceholder": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973006006999212082/options.png"
+        },
+        {
+          "chance": 2,
+          "filename": "underground",
+          "name": "Underground Theme (SSBB Remix)",
+          "type": "Super Rare",
+          "description": "(Level by Willow)",
+          "smell": "Sewage",
+          "season": 8,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973006640074878976/underground.png"
+        },
+        {
+          "chance": 2,
+          "filename": "hymnweekend",
+          "name": "Hymn for the Weekend",
+          "type": "Super Rare",
+          "description": "(Level by 1257Plays)",
+          "smell": "Alcohol",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973006640771125308/hymnweekend.png"
+        },
+        {
+          "chance": 2,
+          "filename": "tunnelvision",
+          "name": "tunnel vision",
+          "type": "Super Rare",
+          "description": "(Level by Zack101155)",
+          "smell": "Dimmed Lights",
+          "season": 8,
+          "bonuses": {
+            "valentinesdaycard": true,
+            "cafemixtape": true,
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973007022356303942/tunnelvision.png"
+        },
+        {
+          "chance": 2,
+          "filename": "stuffisway",
+          "name": "Stuff Is Way",
+          "type": "Super Rare",
+          "description": "(Level by Stamps)",
+          "smell": "Phony Ponies",
+          "season": 8,
+          "bonuses": {
+            "deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973007021785886730/stuffisway.png"
+        },
+        {
+          "chance": 2,
+          "filename": "cblues",
+          "name": "Computer Blues",
+          "type": "Super Rare",
+          "description": "(Level by Some J Name, Het, DPS2004, and Samario)",
+          "smell": "Compiler Errors",
+          "season": 8,
+          "bonuses": {
+            "fieldjournal": true,
+            "valentinesdaycard": true,
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973007022628962394/cblues.png"
+        },
+        {
+          "chance": 2,
+          "filename": "zircon",
+          "name": "Zircon",
+          "type": "Super Rare",
+          "description": "(Level by Timeshark)",
+          "smell": "Cave Rescues",
+          "season": 8,
+          "bonuses": {
+            "deluxebirdseed": true,
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/975469891157127188/zircon.png"
+        },
+        {
+          "chance": 2,
+          "filename": "mybrothe",
+          "name": "My Brothe: An Email Funk Opera",
+          "type": "Super Rare",
+          "description": "(Level By Random Guy JCI)",
+          "smell": "Blackmail",
+          "season": 8,
+          "bonuses": {
+            "cafemixtape": true,
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/984011370003582976/mybrothe.png"
+        }
+      ]
+    }

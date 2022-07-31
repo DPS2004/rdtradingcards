@@ -1,0 +1,69 @@
+{ "groupname": "janitor",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "janitorr",
+	  "name": "Janitor (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Chemicals",
+	  "season": 8,
+	  "bonuses": {
+		"okamiiscollar": true,
+		"oversizedstethoscope": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839164031263571978/janitorr.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "janitorsr",
+	  "name": "Janitor (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by BluPen)",
+	  "smell": "Chemicals",
+	  "season": 8,
+	  "bonuses": {
+		"oversizedstethoscope": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/945174111636828230/janitorsr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "janitorur",
+	  "name": "Janitor (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Kyle Labriola, edited by BIrDIS)",
+	  "smell": "Chemicals",
+	  "season": 8,
+	  "bonuses": {
+		"oversizedstethoscope": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/945174192398139432/janitorur.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "janitoralt",
+	  "name": "Janitor (Alternate)",
+	  "type": "Alternate",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Organic Products",
+	  "season": 8,
+	  "bonuses": {
+		"oversizedstethoscope": true,
+		"pocketdimension": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/939372170176524288/janitoralt.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "janitorc",
+	  "name": "Janitor (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Janitor (Art by BluPen)",
+	  "smell": "Chemicals",
+	  "season": 8,
+	  "bonuses": {},
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/945174244529168424/janitorc.png"
+	}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+      "groupname": "treble",
+      "basechance": 3,
+      "cards": [{
+        "chance": 3,
+        "filename": "trebler",
+        "name": "Treble (Rare)",
+        "type": "Rare",
+        "description": "(Art by RJ Lake)",
+        "smell": "Sick Piano Solos",
+        "season": 7,
+        "bonuses": {
+          "okamiiscollar": true,
+          "collabplaceholder": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/705963512983191566/875762059399274506/trebler.png"
+      }]
+    }

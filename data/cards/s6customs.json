@@ -1,0 +1,227 @@
+{
+      "groupname": "s6 customs",
+      "basechance": 3,
+      "cards": [
+		{
+          "chance": 2,
+          "filename": "orchid",
+          "name": "Orchid (GosT Remix)",
+          "type": "Super Rare",
+          "description": "(Level by notDonte)",
+          "smell": "THE FASTEST AVAILABLE ROUTE",
+          "season": 6,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849007377168465939/orchid.png"
+        },
+        {
+          "chance": 2,
+          "filename": "streak",
+          "name": "Streak",
+          "type": "Super Rare",
+          "description": "(Level by vincentw)",
+          "smell": "Addition",
+          "season": 6,
+          "bonuses": {
+            "cafemixtape": true,
+            "charcoalpencil": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849009356439552000/streak.png"
+        },
+        {
+          "chance": 2,
+          "filename": "bluebear",
+          "name": "Blue Bear",
+          "type": "Super Rare",
+          "description": "(Level by Noche)",
+          "smell": "Breakups",
+          "season": 6,
+          "bonuses": {
+            "valentinesdaycard": true,
+            "paddedstickersheet": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849011169212497920/bluebear.png"
+        },
+        {
+          "chance": 2,
+          "filename": "sandwich",
+          "name": "sandwich",
+          "type": "Super Rare",
+          "description": "(Level by sandwich)",
+          "smell": "sandwich",
+          "season": 6,
+          "bonuses": {
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849015688018001951/sandwich.png"
+        },
+        {
+          "chance": 2,
+          "filename": "watchingbirds",
+          "name": "we like watching birds",
+          "type": "Super Rare",
+          "description": "(Level by Firestix)",
+          "smell": "Applebee's ®",
+          "season": 6,
+          "bonuses": {
+            "valentinesdaycard": true,
+            "deluxebirdseed": true,
+            "deviltail": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849018170910965760/watchingbirds.png"
+        },
+        {
+          "chance": 2,
+          "filename": "shade",
+          "name": "Shade",
+          "type": "Super Rare",
+          "description": "(Level by bunner and Xeno)",
+          "smell": "Paranoia",
+          "season": 6,
+          "bonuses": {
+            "paddedstickersheet": true,
+            "deviltail": true,
+            "valentinesdaycard": true,
+            "filmreel": true
+          },
+          "embed": [
+            "https://cdn.discordapp.com/attachments/829197797789532181/849026745806225448/shade.gif",
+            "https://cdn.discordapp.com/attachments/829197797789532181/849026758685884418/shadealt.gif"
+          ]
+        },
+        {
+          "chance": 2,
+          "filename": "niconico",
+          "name": "組曲『ニコニコ動画』（10周年記念REMIX）",
+          "type": "Super Rare",
+          "description": "(Level by Kin, Seven, DPS2004, Nocallia, Het, CrazyGuySmash, Rikri, CrazedJack, WillFlame, Doctor Jazz, Not Xenogenesis, GameyfanC, Willow, TNTz, Pastel, Xeno, and Hexakon)",
+          "smell": "Smiles",
+          "season": 6,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849048302628503552/niconico.png"
+        },
+        {
+          "chance": 0,
+          "filename": "blackwater",
+          "name": "Blackwater",
+          "type": "Collector's",
+          "description": "Requires Feed the Machine, Retro Funky (SUNDANCE Remix), and Nice Logo (Level by MarioMak967)",
+          "smell": "Westerns",
+          "season": 6,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849051250784075816/blackwater.png"
+        },
+        {
+          "chance": 2,
+          "filename": "goldenrule",
+          "name": "GOLDEN RULE",
+          "type": "Super Rare",
+          "description": "(Level by Het)",
+          "smell": "Recursion",
+          "season": 6,
+          "bonuses": {
+            "deluxebirdseed": true,
+            "filmreel": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849048355593125898/goldenrule.gif"
+        },
+        {
+          "chance": 2,
+          "filename": "nicelogo",
+          "name": "Nice Logo",
+          "type": "Super Rare",
+          "description": "(Level by MarioMak967)",
+          "smell": "Pepsi",
+          "season": 6,
+          "bonuses": {
+            "paddedstickersheet": true,
+            "cafemixtape": true,
+            "valentinesdaycard": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849065148354396170/nicelogo.png"
+        },
+        {
+          "chance": 2,
+          "filename": "artofwar",
+          "name": "The Art of War",
+          "type": "Super Rare",
+          "description": "(Level by Not Xenogenesis)",
+          "smell": "Inaccurate Quotations",
+          "season": 6,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849079322786004992/artofwar.png"
+        },
+        {
+          "chance": 2,
+          "filename": "remember",
+          "name": "Remember",
+          "type": "Super Rare",
+          "description": "(Level by Zack101155)",
+          "smell": "Interviews",
+          "season": 6,
+          "bonuses": {
+            "cafemixtape": true,
+            "oversizedstethoscope": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849080044487573584/remember.png"
+        },
+        {
+          "chance": 2,
+          "filename": "escargou",
+          "name": "The Escar'gou",
+          "type": "Super Rare",
+          "description": "(Level by Xeno)",
+          "smell": "French Cuisine",
+          "season": 6,
+          "bonuses": {
+            "rustysword": true,
+            "lostnametag": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849106823885488138/escargou.png"
+        },
+        {
+          "chance": 2,
+          "filename": "laidbackthrills",
+          "name": "Laidback Thrills",
+          "type": "Super Rare",
+          "description": "(Level by Szprycha)",
+          "smell": "Buckled Pants",
+          "season": 6,
+          "bonuses": {
+            "paddedstickersheet": true,
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849268217939492894/laidbackthrills.png"
+        },
+        {
+          "chance": 2,
+          "filename": "endisanguish",
+          "name": "The End Is Anguish",
+          "type": "Super Rare",
+          "description": "(Level by Lunaduskjr)",
+          "smell": "Arbitrary Code Execution",
+          "season": 6,
+          "bonuses": {
+            "rustysword": true,
+            "fieldjournal": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849271565153730590/endisanguish.png"
+        },
+        {
+          "chance": 2,
+          "filename": "darksheep",
+          "name": "Dark Sheep",
+          "type": "Super Rare",
+          "description": "(Level by Willow)",
+          "smell": "Spite",
+          "season": 6,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849268709348081724/darksheep.png"
+        }
+      ]
+    }

@@ -1,0 +1,33 @@
+{
+  "groupname": "beans",
+  "basechance": 3,
+  "cards": [
+	{
+          "chance": 3,
+          "filename": "beansr",
+          "name": "Beans (Rare)",
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": ":beans:",
+          "season": 0,
+          "bonuses": {
+            "okamiiscollar": true,
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200733840605254/beansr.png"
+        },
+        {
+          "chance": 1,
+          "filename": "beansur",
+          "name": "Beans (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by Fancybread)",
+          "smell": ":beans:",
+          "season": 8,
+          "bonuses": {
+            "duncecap": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/973621696558940170/beansur.png"
+        }
+  ]
+}

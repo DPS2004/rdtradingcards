@@ -1,0 +1,73 @@
+{
+  "groupname": "statue",
+  "basechance": 3,
+  "cards": [
+	{
+	  "chance": 3,
+	  "filename": "statuer",
+	  "name": "Statue (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Chains",
+	  "season": 8,
+	  "bonuses": {
+		"okamiiscollar": true,
+		"swirlymarbles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996214007709706/statuer.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "statuesr",
+	  "name": "Statue (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by BIrDIS)",
+	  "smell": "Chains",
+	  "season": 8,
+	  "bonuses": {
+		"swirlymarbles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996230860406844/statuesr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "statueur",
+	  "name": "Statue (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by BIrDIS)",
+	  "smell": "Chains",
+	  "season": 8,
+	  "bonuses": {
+		"swirlymarbles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996250758185040/statueur.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "statuec",
+	  "name": "Statue (Collector's)",
+	  "type": "Collector's",
+	  "description": "(Art by BIrDIS)",
+	  "smell": "Chains",
+	  "season": 8,
+	  "bonuses": {
+		"swirlymarbles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996266679775262/statuec.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "statuedc",
+	  "name": "Statue (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Bristles",
+	  "season": 8,
+	  "bonuses": {
+		"oldfiles": true,
+		"swirlymarbles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996282655870976/statuedc.png"
+	}
+  ]
+}

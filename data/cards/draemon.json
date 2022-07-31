@@ -1,0 +1,72 @@
+{
+  "groupname": "draemon",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "draemonr",
+	  "name": "Draemon (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by AdipemDragon)",
+	  "smell": "Unconventional Gameplay",
+	  "season": 5,
+	  "bonuses": {
+		"okamiiscollar": true,
+		"fieldjournal": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/830814942231789578/draemonr.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "draemonsr",
+	  "name": "Draemon (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Noche)",
+	  "smell": "Unconventional Gameplay",
+	  "season": 5,
+	  "bonuses": {
+		"fieldjournal": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/830815043016196106/draemonsr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "draemonur",
+	  "name": "Draemon (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Plant Guy)",
+	  "smell": "Unconventional Gameplay",
+	  "season": 5,
+	  "bonuses": {
+		"fieldjournal": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/830815056899080232/draemonur.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "draemonalt",
+	  "name": "Draemon (Alternate)",
+	  "type": "Alternate",
+	  "description": "(Art by AdipemDragon)",
+	  "smell": "1 Tick Classic Rows",
+	  "season": 6,
+	  "bonuses": {
+		"fieldjournal": true,
+		"pocketdimension": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849055814525648896/draemonalt.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "draemonc",
+	  "name": "Draemon (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Draemon (Art by Plant Guy)",
+	  "smell": "Unconventional Gameplay",
+	  "season": 5,
+	  "bonuses": {
+		"fieldjournal": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/830815068093415445/draemonc.png"
+	}
+  ]
+}

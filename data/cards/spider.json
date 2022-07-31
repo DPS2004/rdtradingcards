@@ -1,0 +1,66 @@
+{
+  "groupname": "spider",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "spiderr",
+	  "name": "Dr. Spider, PHD (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Professionalism",
+	  "season": 6,
+	  "spoiler": true,
+	  "bonuses": {
+		"okamiiscollar": true,
+		"oversizedstethoscope": true,
+		"animalplaceholder": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872138965359149096/spiderr.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "spidersr",
+	  "name": "Dr. Spider, PHD (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Stamps)",
+	  "smell": "Professionalism",
+	  "season": 7,
+	  "spoiler": true,
+	  "bonuses": {
+		"oversizedstethoscope": true,
+		"animalplaceholder": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875237515437694998/spidersr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "spiderur",
+	  "name": "Dr. Spider, PHD (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Pseuu)",
+	  "smell": "Professionalism",
+	  "season": 7,
+	  "spoiler": true,
+	  "bonuses": {
+		"oversizedstethoscope": true,
+		"animalplaceholder": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875228717104898079/spiderur.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "spiderc",
+	  "name": "Dr. Spider, PHD (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Dr. Spider, PHD (Art by Time)",
+	  "smell": "Professionalism",
+	  "season": 7,
+	  "spoiler": true,
+	  "bonuses": {
+		"oversizedstethoscope": true,
+		"animalplaceholder": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872354834643300352/spiderc.png"
+	}
+  ]
+}

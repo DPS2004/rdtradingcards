@@ -1,0 +1,72 @@
+{
+  "groupname": "heartchick",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "heartchickr",
+	  "name": "Heart Chick (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Broken Glass",
+	  "season": 5,
+	  "bonuses": {
+		"okamiiscollar": true,
+		"deluxebirdseed": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832647184163143751/heartchickr.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "heartchicksr",
+	  "name": "Heart Chick (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by BIrDIS)",
+	  "smell": "Broken Glass",
+	  "season": 5,
+	  "bonuses": {
+		"deluxebirdseed": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832647186780782700/heartchicksr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "heartchickur",
+	  "name": "Heart Chick (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Broken Glass",
+	  "season": 5,
+	  "bonuses": {
+		"deluxebirdseed": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832648380047163392/heartchickur.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "heartchickc",
+	  "name": "Heart Chick (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Heart Chick (Art by BIrDIS, based on art by Kyle Labriola)",
+	  "smell": "Broken Glass",
+	  "season": 5,
+	  "bonuses": {
+		"deluxebirdseed": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839530317366034472/heartchickc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "heartchickalt",
+	  "name": "Heart Chick (Alternate)",
+	  "type": "Alternate",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Scratchless Eggshells",
+	  "season": 5,
+	  "bonuses": {
+		"deluxebirdseed": true,
+		"pocketdimension": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839199088058433566/heartchickalt.png"
+	}
+  ]
+}

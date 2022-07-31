@@ -1,0 +1,22 @@
+{
+  "groupname": "the weed card",
+  "basechance": 3,
+  "cards": [
+	{
+	  "chance": 2,
+	  "filename": "nichijoint",
+	  "name": "Nichijoint - My Ordinary Weed",
+	  "type": "Super Rare",
+	  "description": "its here. its the weed card. (Level by megaminerzero, notDonte, and AdipemDragon)",
+	  "smell": "April 20th",
+	  "season": 0,
+	  "bonuses": {
+		"paddedstickersheet": true,
+		"rustysword": true,
+		"cafemixtape": true,
+		"duncecap": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839603874943074385/nichijoint.png"
+	}
+  ]
+}

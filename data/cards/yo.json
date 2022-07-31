@@ -1,0 +1,58 @@
+{
+  "groupname": "yo",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "yor",
+	  "name": "Yo (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Freestyle Rap",
+	  "season": 3,
+	  "bonuses": {
+		"okamiiscollar": true,
+		"oversizedstethoscope": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203012345004093/yor.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "yosr",
+	  "name": "Yo (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by DeadlySprinklez)",
+	  "smell": "Freestyle Rap",
+	  "season": 3,
+	  "bonuses": {
+		"oversizedstethoscope": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203019974574080/yosr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "your",
+	  "name": "Yo (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by DeadlySprinklez)",
+	  "smell": "Freestyle Rap",
+	  "season": 3,
+	  "bonuses": {
+		"oversizedstethoscope": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203033362923530/your.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "yoc",
+	  "name": "Yo (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Yo (Art by BIrDIS, based on art by Kyle Labriola)",
+	  "smell": "Freestyle Rap",
+	  "season": 3,
+	  "bonuses": {
+		"oversizedstethoscope": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203005357555762/yoc.png"
+	}
+  ]
+}

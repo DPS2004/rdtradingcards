@@ -1,0 +1,336 @@
+{
+  "groupname": "groups",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 1,
+	  "filename": "samuraigroup",
+	  "name": "The Samurai Group",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Butterflies",
+	  "season": 1,
+	  "bonuses": {
+		"rustysword": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202610333417512/samuraigroup.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "stevensongroup",
+	  "name": "The Stevenson Group",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Old Age",
+	  "season": 1,
+	  "bonuses": {
+		"hardcandy": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202800045981716/stevensongroup.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "couplegroup",
+	  "name": "The Couple Group",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Blushing",
+	  "season": 1,
+	  "bonuses": {
+		"valentinesdaycard": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201406501322772/couplegroup.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "doctorgroup",
+	  "name": "The Doctor Group",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Overworking",
+	  "season": 1,
+	  "bonuses": {
+		"oversizedstethoscope": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201486566391868/doctorgroup.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "birdgroup",
+	  "name": "The Bird Group",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Kin)",
+	  "smell": "Government Surveillance",
+	  "season": 7,
+	  "bonuses": {
+		"deluxebirdseed": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/876299212009140305/birdgroup.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "animalgroup",
+	  "name": "The Animal Group",
+	  "spoiler": true,
+	  "type": "Ultra Rare",
+	  "description": "(Art by Peachy6206)",
+	  "smell": "Good Bois",
+	  "season": 7,
+	  "bonuses": {
+		"oversizedstethoscope": true,
+		"animalplaceholder": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872146744169873428/animalgroup.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "unbeatablegroup",
+	  "name": "The Unbeatable Group",
+	  "type": "Ultra Rare",
+	  "description": "(Art by MokkaCat)",
+	  "smell": "Crime",
+	  "season": 7,
+	  "bonuses": {
+		"collabplaceholder": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875545496331092018/unbeatablegroup.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "hughgroup",
+	  "name": "The Hugh Group",
+	  "type": "Ultra Rare",
+	  "description": "(Art by BIrDIS, based on art by Kyle Labriola)",
+	  "smell": "Mistaken Identities",
+	  "season": 7,
+	  "bonuses": {
+		"lostnametag": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875670682502049822/hughgroup.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "coffeegroup",
+	  "name": "The Coffee Group",
+	  "type": "Ultra Rare",
+	  "description": "(Art by BIrDIS, based on art by Kyle Labriola)",
+	  "smell": "Coffee, Obviously",
+	  "season": 7,
+	  "bonuses": {
+		"cafemixtape": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875670644229042176/coffeegroup.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "treetopgroup",
+	  "name": "The Treetop Group",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Penny)",
+	  "smell": "Sleepovers",
+	  "season": 8,
+	  "bonuses": {
+		"animalplaceholder": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964289280635727882/treetopgroup.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "editorgroup",
+	  "name": "The Editor Group",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Stamps)",
+	  "smell": "JSON",
+	  "season": 8,
+	  "bonuses": {
+		"driftingmetronome": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967943742394871859/editorgroup.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "swordgroup",
+	  "name": "The Sword Group",
+	  "type": "Ultra Rare",
+	  "description": "(Art by TatonSlice)",
+	  "smell": "Fencing",
+	  "season": 8,
+	  "bonuses": {
+		"rustysword": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968535895160553573/swordgroup.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "musedashgroup",
+	  "name": "The Muse Dash Group",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Maki)",
+	  "smell": "Donuts",
+	  "season": 8,
+	  "bonuses": {
+		"collabplaceholder": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/908348918906093568/musedashgroup.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "samuraigroupc",
+	  "name": "The Samurai Group (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires Samurai (Collector's) and The Samurai Group (Art by Kyle Labriola)",
+	  "smell": "Butterflies",
+	  "season": 2,
+	  "bonuses": {
+		"rustysword": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202630349684787/samuraigroupc.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "stevensongroupc",
+	  "name": "The Stevenson Group (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires Mrs. Stevenson (Collector's), Mr. Stevenson (Collector's), and The Stevenson Group (Art by Kyle Labriola)",
+	  "smell": "Old Age",
+	  "season": 2,
+	  "bonuses": {
+		"hardcandy": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202816202702878/stevensongroupc.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "couplegroupc",
+	  "name": "The Couple Group (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires Logan (Collector's), Hailey (Collector's), and The Couple Group (Art by Kyle Labriola)",
+	  "smell": "Blushing",
+	  "season": 2,
+	  "bonuses": {
+		"valentinesdaycard": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829200777599909918/couplegroupc.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "doctorgroupc",
+	  "name": "The Doctor Group (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires Paige (Collector's), Ian (Collector's), and The Doctor Group (Art by Kyle Labriola)",
+	  "smell": "Overworking",
+	  "season": 2,
+	  "bonuses": {
+		"oversizedstethoscope": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201507349561379/doctorgroupc.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "birdgroupc",
+	  "name": "The Bird Group (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires Cockatiel (Collector's), Parrot (Collector's), Owl (Collector's), Oriole (Collector's), and The Bird Group (Art by Plant Guy)",
+	  "smell": "Government Surveillance",
+	  "season": 7,
+	  "bonuses": {
+		"deluxebirdseed": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872696084202397736/birdgroupc.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "animalgroupc",
+	  "name": "The Animal Group (Collector's)",
+	  "spoiler": true,
+	  "type": "Collector's",
+	  "description": "Requires Loafy (Collector's), Rattle (Collector's), Dr. Spider (Collector's), and The Animal Group (Art by Peachy6206)",
+	  "smell": "Good Bois",
+	  "season": 7,
+	  "bonuses": {
+		"oversizedstethoscope": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872146746841640960/animalgroupc.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "unbeatablegroupc",
+	  "name": "The Unbeatable Group (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires Quaver (Rare), Beat (Rare), Treble (Rare), Clef (Rare), and The Unbeatable Group (Art by MokkaCat)",
+	  "smell": "Crime",
+	  "season": 7,
+	  "bonuses": {},
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872146753745457232/unbeatablegroupc.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "hughgroupc",
+	  "name": "The Hugh Group (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires Politician (Collector's), Farmer (Collector's), and The Hugh Group (Art by BIrDIS, based on art by Kyle Labriola)",
+	  "smell": "Mistaken Identities",
+	  "season": 7,
+	  "bonuses": {
+		"lostnametag": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/876132058412490792/hughgroupc.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "coffeegroupc",
+	  "name": "The Coffee Group (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires Cole Brew (Collector's), Nicole Ting (Collector's), and The Coffee Group (Art by BIrDIS, based on art by Kyle Labriola)",
+	  "smell": "Coffee, Obviously",
+	  "season": 7,
+	  "bonuses": {
+		"cafemixtape": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/876132086191362119/coffeegroupc.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "treetopgroupc",
+	  "name": "The Treetop Group (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires Nocht (Collector's), Ernel (Collector's), and The Treetop Group (Art by Peachy6206)",
+	  "smell": "Sleepovers",
+	  "season": 8,
+	  "bonuses": {},
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/975756010285322250/treetopgroupc.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "editorgroupc",
+	  "name": "The Editor Group (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires Otto (Collector's), Uno and Dos (Collector's), and The Editor Group (Art by Stamps)",
+	  "smell": "JSON",
+	  "season": 8,
+	  "bonuses": {},
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968537920468287518/editorgroupc.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "swordgroupc",
+	  "name": "The Sword Group (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires Samurai (Collector's), Insomniac (Collector's), and The Sword Group (Art by TatonSlice)",
+	  "smell": "Fencing",
+	  "season": 8,
+	  "bonuses": {},
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968537195650621450/swordgroupc.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "musedashgroupc",
+	  "name": "The Muse Dash Group (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires Rin (Rare), Buro (Rare), Marija (Rare), and The Muse Dash Group (Art by Stamps)",
+	  "smell": "Donuts",
+	  "season": 8,
+	  "bonuses": {},
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/908351722890625104/musedashgroupc.png"
+	}
+  ]
+}

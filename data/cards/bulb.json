@@ -1,0 +1,69 @@
+{
+      "groupname": "bulb",
+      "basechance": 3,
+      "cards": [{
+          "chance": 3,
+          "filename": "bulbr",
+          "name": "Bulb (Rare)",
+          "type": "Rare",
+          "description": "(Art by Kin)",
+          "smell": "Chlorophyll",
+          "season": 8,
+          "bonuses": {
+            "fanonplaceholder": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944482689854091264/bulbr.png"
+        },
+        {
+          "chance": 2,
+          "filename": "bulbsr",
+          "name": "Bulb (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by Kin)",
+          "smell": "Chlorophyll",
+          "season": 8,
+          "bonuses": {
+            "fanonplaceholder": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944505866172899328/bulbsr.png"
+        },
+        {
+          "chance": 1,
+          "filename": "bulbur",
+          "name": "Bulb (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by Kin)",
+          "smell": "Chlorophyll",
+          "season": 8,
+          "bonuses": {
+            "fanonplaceholder": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944505894954229820/bulbur.png"
+        },
+        {
+          "chance": 0,
+          "filename": "bulbc",
+          "name": "Bulb (Collector's)",
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Bulb (Art by Kin)",
+          "smell": "Chlorophyll",
+          "season": 8,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/944505915871232020/bulbc.png"
+        },
+        {
+          "chance": 1,
+          "filename": "bulbdc",
+          "name": "Bulb (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Art by Kin)",
+          "smell": "Chlorophyll",
+          "season": 8,
+          "bonuses": {
+            "oldfiles": true,
+            "fanonplaceholder": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/939372664013869106/bulbdc.png"
+        }
+      ]
+    }

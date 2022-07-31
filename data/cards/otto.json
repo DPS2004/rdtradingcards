@@ -1,0 +1,70 @@
+{
+  "groupname": "otto",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "ottor",
+	  "name": "Otto (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Giacomo)",
+	  "smell": "Computer Chips",
+	  "season": 5,
+	  "bonuses": {
+		"okamiiscollar": true,
+		"driftingmetronome": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202327361552444/ottor.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "ottosr",
+	  "name": "Otto (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Axobotl)",
+	  "smell": "Computer Chips",
+	  "season": 5,
+	  "bonuses": {
+		"driftingmetronome": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202332351856671/ottosr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "ottour",
+	  "name": "Otto (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by BIrDIS)",
+	  "smell": "Computer Chips",
+	  "season": 5,
+	  "bonuses": {
+		"driftingmetronome": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202342809174036/ottour.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "ottodc",
+	  "name": "Otto (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Art by 04.jp.org)",
+	  "smell": "Typography",
+	  "season": 8,
+	  "bonuses": {
+		"oldfiles": true,
+		"driftingmetronome": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964734115117154324/ottodc.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "ottoc",
+	  "name": "Otto (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Otto (Art by BIrDIS)",
+	  "smell": "Computer Chips",
+	  "season": 5,
+	  "bonuses": {},
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202317097041950/ottoc.png"
+	}
+  ]
+}

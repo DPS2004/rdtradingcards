@@ -1,0 +1,58 @@
+{
+  "groupname": "cockatiel",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "cockatielr",
+	  "name": "Cockatiel (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Bananas",
+	  "season": 7,
+	  "bonuses": {
+		"okamiiscollar": true,
+		"deluxebirdseed": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/870719647308197929/cockatielr.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "cockatielsr",
+	  "name": "Cockatiel (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Plant Guy)",
+	  "smell": "Bananas",
+	  "season": 7,
+	  "bonuses": {
+		"deluxebirdseed": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873788752517021756/cockatielsr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "cockatielur",
+	  "name": "Cockatiel (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Maki)",
+	  "smell": "Bananas",
+	  "season": 7,
+	  "bonuses": {
+		"deluxebirdseed": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872138781946441768/cockatielur.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "cockatielc",
+	  "name": "Cockatiel (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Cockatiel (Art by Penny)",
+	  "smell": "Bananas",
+	  "season": 7,
+	  "bonuses": {
+		"deluxebirdseed": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875247371091603496/cockatielc.png"
+	}
+  ]
+}

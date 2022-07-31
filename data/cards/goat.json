@@ -1,0 +1,76 @@
+{
+  "groupname": "goat",
+  "basechance": 3,
+  "cards": [
+	{
+	  "chance": 3,
+	  "filename": "goatr",
+	  "name": "Goat (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Private Surveillance",
+	  "season": 8,
+	  "bonuses": {
+		"okamiiscollar": true,
+		"swirlymarbles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996580950585344/goatr.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "goatsr",
+	  "name": "Goat (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Penny)",
+	  "smell": "Private Surveillance",
+	  "season": 8,
+	  "bonuses": {
+		"swirlymarbles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996593705468014/goatsr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "goatur",
+	  "name": "Goat (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Maki)",
+	  "smell": "Private Surveillance",
+	  "season": 8,
+	  "bonuses": {
+		"swirlymarbles": true
+	  },
+	  "embed": [
+		"https://cdn.discordapp.com/attachments/829197797789532181/984524540707237978/goatur.png",
+		"https://cdn.discordapp.com/attachments/829197797789532181/984527299963670640/goatur2.png"
+	  ]
+	},
+	{
+	  "chance": 0,
+	  "filename": "goatc",
+	  "name": "Goat (Collector's)",
+	  "type": "Collector's",
+	  "description": "(Art by BIrDIS)",
+	  "smell": "Private Surveillance",
+	  "season": 8,
+	  "bonuses": {
+		"swirlymarbles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996610310721576/goatc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "goatalt",
+	  "name": "Goat (Alternate)",
+	  "type": "Alternate",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Watchmen",
+	  "season": 8,
+	  "bonuses": {
+		"swirlymarbles": true,
+		"pocketdimension": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983996630984433724/goatalt.png"
+	}
+  ]
+}

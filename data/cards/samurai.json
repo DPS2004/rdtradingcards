@@ -1,0 +1,116 @@
+{
+      "groupname": "samurai",
+      "basechance": 3,
+      "cards": [{
+          "chance": 3,
+          "filename": "samurair",
+          "name": "Samurai (Rare)",
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "Metal",
+          "season": 1,
+          "bonuses": {
+            "rustysword": true,
+            "okamiiscollar": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839160070368526366/samurair.png"
+        },
+        {
+          "chance": 2,
+          "filename": "samuraisr",
+          "name": "Samurai (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by Kyle Labriola)",
+          "smell": "Metal",
+          "season": 1,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202674778898442/samuraisr.png"
+        },
+        {
+          "chance": 1,
+          "filename": "samuraiur",
+          "name": "Samurai (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by Kyle Labriola)",
+          "smell": "Metal",
+          "season": 1,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202682064404480/samuraiur.png"
+        },
+        {
+          "chance": 1,
+          "filename": "samuraidc",
+          "name": "Samurai (Discontinued)",
+          "type": "Discontinued",
+          "description": "(Art by Winston Lee)",
+          "smell": "Metal",
+          "season": 5,
+          "bonuses": {
+            "rustysword": true,
+            "oldfiles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839160092858253332/samuraidc.png"
+        },
+        {
+          "chance": 1,
+          "filename": "samuraialt",
+          "name": "Samurai (Alternate)",
+          "type": "Alternate",
+          "description": "(Art by Winston Lee)",
+          "smell": "Plastic",
+          "season": 5,
+          "bonuses": {
+            "rustysword": true,
+            "pocketdimension": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839226590885314570/samuraialt.png"
+        },
+        {
+          "chance": 0.5,
+          "filename": "samuraidc_alt",
+          "name": "Samurai (Discontinued Alternate)",
+          "type": "Discontinued Alternate",
+          "description": "(Art by Winston Lee)",
+          "smell": "Heavy Makeup",
+          "season": 6,
+          "bonuses": {
+            "rustysword": true,
+            "aboveur": true,
+            "oldfiles": true,
+            "pocketdimension": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849113790711595008/samuraidc_alt.png"
+        },
+		{
+          "chance": 0.5,
+          "filename": "samuraialtalt",
+          "name": "Samurai (Alternate Alternate)",
+          "type": "Alternate",
+          "description": "(Art by PixelEyeBat)",
+          "smell": "Merchandising",
+          "season": 8,
+          "bonuses": {
+            "rustysword": true,
+            "pocketdimension": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964269545000951858/samuraialtalt.png"
+        },
+        {
+          "chance": 0,
+          "filename": "samuraic",
+          "name": "Samurai (Collector's)",
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Samurai (Art by Kyle Labriola)",
+          "smell": "Samurai",
+          "season": 1,
+          "bonuses": {
+            "rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829202563370057748/samuraic.png"
+        }
+      ]
+    }

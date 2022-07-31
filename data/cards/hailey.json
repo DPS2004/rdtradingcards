@@ -1,0 +1,86 @@
+{
+  "groupname": "hailey",
+  "basechance": 3,
+  "cards": [{
+	  "chance": 3,
+	  "filename": "haileyr",
+	  "name": "Hailey (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Trains",
+	  "season": 1,
+	  "bonuses": {
+		"valentinesdaycard": true,
+		"okamiiscollar": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839163069405986836/haileyr.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "haileysr",
+	  "name": "Hailey (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Trains",
+	  "season": 1,
+	  "bonuses": {
+		"valentinesdaycard": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201634667659314/haileysr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "haileyur",
+	  "name": "Hailey (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Kyle Labriola)",
+	  "smell": "Trains",
+	  "season": 1,
+	  "bonuses": {
+		"valentinesdaycard": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201643165712434/haileyur.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "haileydc",
+	  "name": "Hailey (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Trains",
+	  "season": 5,
+	  "bonuses": {
+		"valentinesdaycard": true,
+		"oldfiles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839163086031814767/haileydc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "haileyalt",
+	  "name": "Hailey (Alternate)",
+	  "type": "Alternate",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Planes and Automobiles",
+	  "season": 6,
+	  "bonuses": {
+		"valentinesdaycard": true,
+		"pocketdimension": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849108089520914472/haileyalt.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "haileyc",
+	  "name": "Hailey (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Hailey (Art by Kyle Labriola)",
+	  "smell": "Trains",
+	  "season": 1,
+	  "bonuses": {
+		"valentinesdaycard": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201618921586768/haileyc.png"
+	}
+  ]
+}

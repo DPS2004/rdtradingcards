@@ -1,0 +1,56 @@
+{
+      "groupname": "loafy",
+      "basechance": 3,
+      "cards": [{
+          "chance": 3,
+          "filename": "loafyr",
+          "name": "Loafy (Rare)",
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "Relaxation",
+          "season": 6,
+          "bonuses": {
+            "okamiiscollar": true,
+            "animalplaceholder": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872138837747458130/loafyr.png"
+        },
+        {
+          "chance": 2,
+          "filename": "loafysr",
+          "name": "Loafy (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by Time)",
+          "smell": "Relaxation",
+          "season": 7,
+          "bonuses": {
+            "animalplaceholder": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872154201575264316/loafysr.png"
+        },
+        {
+          "chance": 1,
+          "filename": "loafyur",
+          "name": "Loafy (Ultra Rare)",
+          "type": "Ultra Rare",
+          "description": "(Art by MokkaCat)",
+          "smell": "Relaxation",
+          "season": 7,
+          "bonuses": {
+            "animalplaceholder": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872153785185763408/loafyur.png"
+        },
+        {
+          "chance": 0,
+          "filename": "loafyc",
+          "name": "Loafy (Collector's)",
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Loafy (Art by Maki)",
+          "smell": "Relaxation",
+          "season": 7,
+          "bonuses": {},
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/875231308266213386/loafyc.png"
+        }
+      ]
+    }

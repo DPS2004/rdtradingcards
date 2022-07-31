@@ -1,0 +1,73 @@
+{
+  "groupname": "unodos",
+  "basechance": 3,
+  "cards": [
+	{
+	  "chance": 3,
+	  "filename": "unodosr",
+	  "name": "Uno and Dos (Rare)",
+	  "type": "Rare",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Collaboration",
+	  "season": 8,
+	  "bonuses": {
+		"okamiiscollar": true,
+		"driftingmetronome": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968948977590480936/unodosr.PNG"
+	},
+	{
+	  "chance": 2,
+	  "filename": "unodossr",
+	  "name": "Uno and Dos (Super Rare)",
+	  "type": "Super Rare",
+	  "description": "(Art by Stamps)",
+	  "smell": "Collaboration",
+	  "season": 8,
+	  "bonuses": {
+		"driftingmetronome": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/968538101687406602/unodossr.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "unodosur",
+	  "name": "Uno and Dos (Ultra Rare)",
+	  "type": "Ultra Rare",
+	  "description": "(Art by Stamps)",
+	  "smell": "Collaboration",
+	  "season": 8,
+	  "bonuses": {
+		"driftingmetronome": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964732957220814858/unodosur.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "unodosc",
+	  "name": "Uno and Dos (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Uno and Dos (Art by Stamps)",
+	  "smell": "Collaboration",
+	  "season": 8,
+	  "bonuses": {
+		"driftingmetronome": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964733031556468756/unodosc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "unodosdc",
+	  "name": "Uno and Dos (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Art by 04.jp.org)",
+	  "smell": "Typography",
+	  "season": 8,
+	  "bonuses": {
+		"oldfiles": true,
+		"driftingmetronome": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964734048402571264/unodosdc.png"
+	}
+  ]
+}

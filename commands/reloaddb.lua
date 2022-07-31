@@ -166,7 +166,43 @@ function command.run(message, mt, overwrite)
     _G['nopeeking'] = false
     
     print("loading cards")
-    _G['cdata'] = dpf.loadjson("data/cards.json", defaultjson)
+	
+	
+    --_G['cdata'] = dpf.loadjson("data/cards.json", defaultjson)
+	
+	_G['cdata'] = {basemult = 4, groups = {}}
+	
+	_G['jsonfiles']	= {}
+	
+	for i, v in ipairs(scandir("data/cards")) do --TODO: replace with something that supports subdirectories
+		if string.sub(v, -4, -1) == 'json' then
+			--print('loading json '..v)
+			local groupdata = dpf.loadjson("data/cards/"..v, defaultjson)
+			local groupname = string.sub(v, 1, -6)
+			jsonfiles[groupname] = groupdata
+			
+		end
+    end
+	_G['jsongroups'] = {}
+	for k,v in pairs(jsonfiles) do
+		if jsongroups[k] then
+			print('adding existing')
+			for _i,_v in ipairs(v.cards) do
+				table.insert(jsongroups[k].cards, _v)
+			end
+		else
+			jsongroups[k] = v
+			print('adding new')
+		end
+	end
+	
+	for k,v in pairs(jsongroups) do
+		print('added group '..k)
+		table.insert(cdata.groups,v)
+	end
+	
+	
+	--dpf.savejson('outcards.json',cdata)
     
     print('loading itemdb')    
     _G['itemdb'] = dpf.loadjson("data/items.json", defaultjson)
@@ -632,7 +668,7 @@ function command.run(message, mt, overwrite)
             end
             print("nmt: " .. inspect(nmt))
             local status, err = pcall(function ()
-              v.commandfunction.run(message,nmt,v.usebypass)
+              v.commandfunction.run(message,nmt,v.usebypass,content)
             end)
             if not status then
               print("uh oh")
