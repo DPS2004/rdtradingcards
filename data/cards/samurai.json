@@ -95,7 +95,8 @@
           "season": 8,
           "bonuses": {
             "rustysword": true,
-            "pocketdimension": true
+            "pocketdimension": true,
+            "aboveur": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964269545000951858/samuraialtalt.png"
         },
