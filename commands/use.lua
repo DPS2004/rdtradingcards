@@ -406,7 +406,7 @@ o-''|\\_____/)
     end
   end
   ----------------------------------------------------------WINDY MOUNTAINS
-  if uj.room == 4 then
+  if uj.room == 2 then
     if (request == "pyrowmid")  then 
 	  message.channel:send("You make your way back down to the **Pyrowmid**...")
       uj.room = 0
@@ -437,7 +437,7 @@ o-''|\\_____/)
       found = false
     end
   end
-  if (uj.room == 5) then ----------------------------------------------------------SHOP
+  if (uj.room == 3) then ----------------------------------------------------------SHOP
     if request == "shop" then
       checkforreload(time:toDays())
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)

@@ -39,8 +39,6 @@ function command.run(message, mt)
     
     
     if string.lower(mt[1]) == "pyrowmid" or mt[1] == "" then -----------------PYROWMID--------------------------
-      -- message.channel:send('The **Pyrowmid** has recently opened itself, revealing a **Panda** and a **Strange Machine** inside. The walls are made of Rows (Rare) cards.')
-      -- message.channel:send('https://cdn.discordapp.com/attachments/829197797789532181/829255814169493535/pyr7.png')
       if wj.ws < 501 then
         message.channel:send{embed = {
           color = 0x85c5ff,
@@ -157,7 +155,7 @@ function command.run(message, mt)
           title = "Looking at Hole...",
           description = 'A very small **Hole** has appeared next to the **Pyrowmid**. A **Token** could probably fit in it, but just barely.',
           image = {
-            url = 'https://cdn.discordapp.com/attachments/829197797789532181/831507279975153754/holeclose.png' --holeclose.png
+            url = 'https://cdn.discordapp.com/attachments/829197797789532181/831507279975153754/holeclose.png'
           }
         }}
       elseif wj.ws == 502 then
@@ -211,7 +209,7 @@ function command.run(message, mt)
           title = "Looking at Hole...",
           description = 'A very large **Hole** has appeared next to the **Pyrowmid**. If you **Used** the ladder propped up inside it, you could probably climb down it.',
           image = {
-            url = 'https://cdn.discordapp.com/attachments/829197797789532181/831507279164997642/holeclosefinal.png' --TODO
+            url = 'https://cdn.discordapp.com/attachments/829197797789532181/831507279164997642/holeclosefinal.png'
           }
         }}
       end
@@ -352,7 +350,7 @@ function command.run(message, mt)
     end
   end
   
-  if uj.room == 4 then     --------------------------------------------------MOUNTAINS--------------------------------------------------------------------------   
+  if uj.room == 2 then     --------------------------------------------------MOUNTAINS--------------------------------------------------------------------------   
     
       
     local request = string.lower(mt[1]) --why tf didint i do this for all the other ones?????????????????
@@ -406,7 +404,7 @@ function command.run(message, mt)
     end
   end
   
-  if uj.room == 5 then     --------------------------------------------------SHOP--------------------------------------------------------------------------   
+  if uj.room == 3 then     --------------------------------------------------SHOP--------------------------------------------------------------------------   
     
       
     local request = string.lower(mt[1]) --why tf didint i do this for all the other ones?????????????????
