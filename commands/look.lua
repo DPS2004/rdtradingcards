@@ -405,21 +405,47 @@ function command.run(message, mt)
   end
   
   if uj.room == 3 then     --------------------------------------------------SHOP--------------------------------------------------------------------------   
-    
+    args = {}
+    for substring in mt[1]:gmatch("%S+") do
+      table.insert(args, substring)
+    end
       
-    local request = string.lower(mt[1]) --why tf didint i do this for all the other ones?????????????????
+    local request = string.lower(args[1]) --why tf didint i do this for all the other ones?????????????????
     if (request == "shop" or request == "quaintshop" or request == "quaint shop" or request == "")  then
       local time = sw:getTime()
       checkforreload(time:toDays())
+
+      local showShortHandForm = false
+
+      if args[#args] == "-s" then
+        showShortHandForm = true
+        table.remove(args, #args)
+      end
+
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
       local shopstr = ""
       for i,v in ipairs(sj.cards) do
-        shopstr = shopstr .. "\n**"..cdb[v.name].name.."** ("..v.price.." token" .. (v.price == 1 and "" or "s") .. ") x"..v.stock
+        if showShortHandForm == true then
+          shopstr = shopstr .. "\n**"..cdb[v.name].name.."** ("..v.price.." token" .. (v.price == 1 and "" or "s") .. ") x"..v.stock .. " | ("..v.name..")"
+        else
+          shopstr = shopstr .. "\n**"..cdb[v.name].name.."** ("..v.price.." token" .. (v.price == 1 and "" or "s") .. ") x"..v.stock
+        end
       end
       for i,v in ipairs(sj.consumables) do
-        shopstr = shopstr .. "\n**"..consdb[v.name].name.."** ("..v.price.." token" .. (v.price == 1 and "" or "s") .. ") x"..v.stock
+        if showShortHandForm == true then
+          shopstr = shopstr .. "\n**"..consdb[v.name].name.."** ("..v.price.." token" .. (v.price == 1 and "" or "s") .. ") x"..v.stock .. " | ("..v.name..")"
+        else
+          shopstr = shopstr .. "\n**"..consdb[v.name].name.."** ("..v.price.." token" .. (v.price == 1 and "" or "s") .. ") x"..v.stock
+        end
       end
-      shopstr = shopstr .. "\n**"..itemdb[sj.item].name.."** (" .. sj.itemprice .. " token" .. (sj.itemprice == 1 and "" or "s") ..") x"..sj.itemstock
+
+
+      if showShortHandForm == true then        
+        shopstr = shopstr .. "\n**"..itemdb[sj.item].name.."** (" .. sj.itemprice .. " token" .. (sj.itemprice == 1 and "" or "s") ..") x"..sj.itemstock.." | ("..sj.item..")"
+      else
+        shopstr = shopstr .. "\n**"..itemdb[sj.item].name.."** (" .. sj.itemprice .. " token" .. (sj.itemprice == 1 and "" or "s") ..") x"..sj.itemstock
+      end
+
       message.channel:send{embed = {
         color = 0x85c5ff,
         title = "Looking at Shop...",
