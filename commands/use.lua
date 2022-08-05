@@ -240,6 +240,9 @@ function command.run(message, mt,bypass)
         
         message.channel:send('<@' .. uj.id .. '> grabs a **' .. cdb[givecard].name .. '** card from '..uj.pronouns["their"]..' inventory and places it inside the box. As it goes in, a **' .. cdb[getcard].name .. '** card shows up in '..uj.pronouns["their"]..' pocket! The shorthand form of this card is **' .. getcard .. '**.')
 
+        if not uj.storage[v] then
+            message.channel:send('You do not have the **' .. cdb[getcard].name .. '** card in your storage!')
+        end
         uj.timesusedbox = uj.timesusedbox and uj.timesusedbox + 1 or 1
         uj.lastbox = time:toHours()
         if uj.sodapt then
