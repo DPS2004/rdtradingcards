@@ -634,7 +634,12 @@ o-''|\\_____/)
         return
       end
 
-      sendshoperror["unknownrequest"]()
+      -- for c!shop -s
+      if mt[2] == "-s" then
+        cmd.look.run(message, { "shop -s" }) 
+      else
+        sendshoperror["unknownrequest"]()
+      end
       return
     elseif request == "wolf" then
       message.channel:send{embed = {
