@@ -125,6 +125,9 @@ _________________```]])
         file = "card_images/SPOILER_" .. v .. ".png"
       }
     end
+    if not uj.storage[v] then
+        message.channel:send('You do not have the **' .. cardname.. '** card in your storage!')
+    end
   end
 end
 return command
