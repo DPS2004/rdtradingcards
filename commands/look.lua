@@ -410,8 +410,12 @@ function command.run(message, mt)
       table.insert(args, substring)
     end
       
-    local request = string.lower(args[1]) --why tf didint i do this for all the other ones?????????????????
-    if (request == "shop" or request == "quaintshop" or request == "quaint shop" or request == "")  then
+    if args[1] == nil or args[1] == "-s" then
+	  _G["request"] = ""
+	else
+	  _G["request"] = string.lower(args[1]) --why tf didint i do this for all the other ones?????????????????
+    end
+	if (request == "shop" or request == "quaintshop" or request == "quaint shop" or request == "")  then
       local time = sw:getTime()
       checkforreload(time:toDays())
 
