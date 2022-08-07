@@ -416,9 +416,13 @@ function command.run(message, mt)
       checkforreload(time:toDays())
 
       local showShortHandForm = false
+      local showSeasons = false
 
       if args[#args] == "-s" then
         showShortHandForm = true
+        table.remove(args, #args)
+      elseif args[#args] == "-season" then
+        showSeasons = true
         table.remove(args, #args)
       end
 
@@ -427,6 +431,8 @@ function command.run(message, mt)
       for i,v in ipairs(sj.cards) do
         if showShortHandForm == true then
           shopstr = shopstr .. "\n**"..cdb[v.name].name.."** ("..v.price.." token" .. (v.price == 1 and "" or "s") .. ") x"..v.stock .. " | ("..v.name..")"
+        elseif showSeasons == true then
+          shopstr = shopstr .. "\n**"..cdb[v.name].name.."** ("..v.price.." token" .. (v.price == 1 and "" or "s") .. ") x"..v.stock .. " | (Season "..cdb[v.name].season..")"
         else
           shopstr = shopstr .. "\n**"..cdb[v.name].name.."** ("..v.price.." token" .. (v.price == 1 and "" or "s") .. ") x"..v.stock
         end

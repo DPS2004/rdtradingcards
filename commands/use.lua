@@ -637,6 +637,8 @@ o-''|\\_____/)
       -- for c!shop -s
       if mt[2] == "-s" then
         cmd.look.run(message, { "shop -s" }) 
+      elseif mt[2] == "-season" then
+        cmd.look.run(message, { "shop -season"})
       else
         sendshoperror["unknownrequest"]()
       end
