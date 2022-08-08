@@ -55,5 +55,10 @@ function command.run(message, mt)
 
   local item = cardfilename and "card" or "item"
   message.channel:send(message.author.mentionString .. " has caught a **" .. caughtname .. "** " .. item .. "! The **" .. caughtname .. "** " .. item .. " has been added to " .. uj.pronouns["their"] .. " inventory.")
+  if not uj.togglecheckcard then
+    if not uj.storage[caughtname] then
+      message.channel:send('You do not have the **' .. caughtname.. '** card in your storage!')
+    end
+  end
 end
 return command
