@@ -51,8 +51,10 @@ function command.run(message, mt)
   dpf.savejson(uj2f,uj2)
 
   message.channel:send {
-    content = 'You have gifted ' .. numtokens .. ' **Token' .. (numtokens == 1 and "" or "s") ..'** to <@' .. uj2.id .. '>.'
-  }
+    content = 'You have gifted ' .. numtokens .. ' **Token' .. (numtokens == 1 and "" or "s") ..'** to <@' .. uj2.id .. '>.'}
+  if not uj.checktoken then
+    message.channel:send('You currently have ' .. uj.tokens .. ' **Token' .. (uj.tokens == 1 and "" or "s") .. '** left.')
+  end
 end
 return command
   
