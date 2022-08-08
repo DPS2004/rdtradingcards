@@ -4,6 +4,7 @@ function command.run(message, mt)
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
 
   local enableShortNames = false
+  local enableSeason = false
 
   local pagenumber = 1
 
@@ -18,6 +19,8 @@ function command.run(message, mt)
     end
     if value == "-s" then
       enableShortNames = true
+    elseif value == "-season" then
+      enableSeason = true
     end
   end
 
@@ -33,6 +36,8 @@ function command.run(message, mt)
   local invstring = ''
   if enableShortNames == true then
     for k,v in pairs(uj.inventory) do table.insert(invtable, "**" .. (cdb[k].name or k) .. "** x" .. v .. " (" .. k.. ")\n") end
+  elseif enableSeason == true then
+    for k,v in pairs(uj.inventory) do table.insert(invtable, "**" .. (cdb[k].name or k) .. "** x" .. v .. " (Season " .. cdb[k].season.. ")\n") end
   else
     for k,v in pairs(uj.inventory) do table.insert(invtable, "**" .. (cdb[k].name or k) .. "** x" .. v .. "\n") end
   end
