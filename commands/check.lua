@@ -26,7 +26,7 @@ function command.run(message, mt)
       message.channel:send("Sorry, but the c!check command expects 1 argument. Please see c!help for more details.")
       return
     else
-      message.channel:send("Sorry, but I cannot find " .. mt[1] .. ".You can either set to check **cards** or **tokens**.")
+      message.channel:send("Sorry, but I cannot find " .. mt[1] .. ". You can either set to check **cards** or **tokens**.")
     end
   end
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
