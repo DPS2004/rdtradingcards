@@ -68,8 +68,13 @@ local time = sw:getTime()
   else
     if uj.conspt == "sbubby" then
       pulledcards = { "sandwich" }
+    elseif uj.conspt:sub(1, 6) == "season" then
+      pulledcards = {}
+      table.insert(pulledcards, constable[uj.conspt][math.random(#constable[uj.conspt])])
+      table.insert(pulledcards, constable[uj.conspt][math.random(#constable[uj.conspt])])
+      table.insert(pulledcards, constable[uj.conspt][math.random(#constable[uj.conspt])])
     else
-      pulledcards= { constable[uj.conspt][math.random(#constable[uj.conspt])] }
+      pulledcards = { constable[uj.conspt][math.random(#constable[uj.conspt])] }
     end
     if uj.conspt == "quantummouse" then
       table.insert(pulledcards, constable["quantummouse"][math.random(#constable["quantummouse"])])
