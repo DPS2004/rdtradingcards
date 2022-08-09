@@ -215,6 +215,10 @@ function command.run(message, mt, overwrite)
     _G['seasontable'] = {}
     _G['cdb'] = {}
     _G['constable'] = {}
+	
+    _G['ptablenc'] = {}
+    _G['constablenc'] = {}
+	
     local iterateitemdb = itemdb
     iterateitemdb["aboveur"] = {}
     iterateitemdb["quantummouse"] = {}
@@ -224,6 +228,9 @@ function command.run(message, mt, overwrite)
     for k, q in pairs(iterateitemdb) do
       ptable[k] = {}
       constable[k] = {}
+	  
+	  ptablenc[k] = {}
+      constablenc[k] = {}
       for i, v in ipairs(cdata.groups) do
         for w, x in ipairs(v.cards) do
           local cmult = 1
@@ -231,10 +238,16 @@ function command.run(message, mt, overwrite)
             cmult = 10 -- might tweak this??
             for y=1, (cdata.basemult * v.basechance * x.chance) do
               table.insert(constable[k],x.filename)
+			  if x.season <= 8 then
+				table.insert(constablenc[k],x.filename)
+			  end
             end
           end
           for y = 1, (cdata.basemult * v.basechance * x.chance * cmult) do
             table.insert(ptable[k],x.filename)
+			if x.season <= 8 then
+				table.insert(ptablenc[k],x.filename)
+			end
           end
           if k == "nothing" then
             if not constable["season"..x.season] then
@@ -243,6 +256,7 @@ function command.run(message, mt, overwrite)
             end
             for y = 1, (cdata.basemult * v.basechance * x.chance) do
               table.insert(constable["season"..x.season], x.filename)
+			  
             end
           end
           if k == "quantummouse" and (x.type == "Rare" or x.type == "Super Rare" or x.type == "Ultra Rare") then
@@ -644,6 +658,7 @@ function command.run(message, mt, overwrite)
     addcommand("giveitem",cmd.giveitem)
     addcommand("prestige",cmd.prestige)
     addcommand("togglecheck",cmd.togglecheck)
+    addcommand("togglecc",cmd.togglecc)
     addcommand("piss",cmd.use,0,{"terminal", "piss"},true)
     _G['handlemessage'] = function (message, content)
       if message.author.id ~= client.user.id or content then
