@@ -56,13 +56,24 @@ local time = sw:getTime()
 
   uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
 
-  local pulledcards = {ptable[uj.equipped][math.random(#ptable[uj.equipped])]}
+  local pulledcards = {}
+  if uj.disablecommunity then
+    pulledcards = {ptablenc[uj.equipped][math.random(#ptablenc[uj.equipped])]}
+  else
+    pulledcards = {ptable[uj.equipped][math.random(#ptable[uj.equipped])]}
+  end
+  
   if not uj.conspt then
     uj.conspt = "none"
   end
   if uj.conspt == "none" then
     if uj.equipped == "fixedmouse" and math.random(6) == 1 then
-      table.insert(pulledcards, ptable[uj.equipped][math.random(#ptable[uj.equipped])])
+	
+	  if uj.disablecommunity then
+		table.insert(pulledcards, ptablenc[uj.equipped][math.random(#ptablenc[uj.equipped])])
+	  else
+		table.insert(pulledcards, ptable[uj.equipped][math.random(#ptable[uj.equipped])])
+	  end
       uj.timesdoubleclicked = uj.timesdoubleclicked and uj.timesdoubleclicked + 1 or 1
     end
   else
@@ -77,9 +88,18 @@ local time = sw:getTime()
       pulledcards = { constable[uj.conspt][math.random(#constable[uj.conspt])] }
     end
     if uj.conspt == "quantummouse" then
-      table.insert(pulledcards, constable["quantummouse"][math.random(#constable["quantummouse"])])
+	  if uj.disablecommunity then
+        table.insert(pulledcards, constablenc["quantummouse"][math.random(#constablenc["quantummouse"])])
+	  else
+	    table.insert(pulledcards, constable["quantummouse"][math.random(#constable["quantummouse"])])
+	  end
+	  
       if uj.equipped == "fixedmouse" and math.random(6) == 1 then
-        table.insert(pulledcards, constable["quantummouse"][math.random(#constable["quantummouse"])])
+        if uj.disablecommunity then
+			table.insert(pulledcards, constablenc["quantummouse"][math.random(#constablenc["quantummouse"])])
+		  else
+			table.insert(pulledcards, constable["quantummouse"][math.random(#constable["quantummouse"])])
+		  end
       end
     end
     uj.conspt = "none"
@@ -102,7 +122,7 @@ local time = sw:getTime()
     local title = "Woah!"
     if uj.equipped == "okamiiscollar" then title = "Woof!" end
     if v == "yor" or v == "yosr" or v == "your" then title = "Yo!" end
-    if i == 2 then title = "Doubleclick!" end
+    if i == 2 then title = "Doubleclick!!" end
     if i == 3 then title = "Tripleclick!!!" end
 
     if v == "rdnot" then

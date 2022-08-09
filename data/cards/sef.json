@@ -2,7 +2,7 @@
   "groupname": "sef",
   "basechance": 3,
   "cards": [
-	{
+		{
           "chance": 3,
           "filename": "sefr",
           "name": "Sef (Rare)",
@@ -16,6 +16,19 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/984008845531697182/sefr.png"
         },
+		{
+          "chance": 2,
+          "filename": "sefsr",
+          "name": "Sef (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by wheelnaxel)",
+          "smell": "Mutiny",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1006438123024158720/sefsr.png"
+        },
         {
           "chance": 1,
           "filename": "sefur",
@@ -28,6 +41,18 @@
             "swirlymarbles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/984008869346951178/sefur.png"
+        },
+		{
+          "chance": 0,
+          "filename": "sefc",
+          "name": "Sef (Collector's)",
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Sef (Art by wheelnaxel)",
+          "smell": "Mutiny",
+          "season": 9,
+          "bonuses": {
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1006438153223143554/sefc.png"
         }
   ]
 }

@@ -173,6 +173,19 @@
 	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/908348918906093568/musedashgroup.png"
 	},
 	{
+	  "chance": 1,
+	  "filename": "guardiangroup",
+	  "name": "The Guardian Group",
+	  "type": "Ultra Rare",
+	  "description": "(Art by MokkaCat, Penny, and wheelnaxel)",
+	  "smell": "Divinity",
+	  "season": 9,
+	  "bonuses": {
+		"swirlymarbles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1006440573135241266/guardiangroup.png"
+	},
+	{
 	  "chance": 0,
 	  "filename": "samuraigroupc",
 	  "name": "The Samurai Group (Collector's)",
@@ -331,6 +344,17 @@
 	  "season": 8,
 	  "bonuses": {},
 	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/908351722890625104/musedashgroupc.png"
+	},
+	{
+	  "chance": 0,
+	  "filename": "guardiangroupc",
+	  "name": "The Guardian Group (Collector's)",
+	  "type": "Collector's",
+	  "description": "Requires Overseer (Collector's), Charla Tan (Collector's), Sef (Collector's), and The Guardian Group (Art by Penny)",
+	  "smell": "Divinity",
+	  "season": 9,
+	  "bonuses": {},
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1006440608329629746/guardiangroupc.png"
 	}
   ]
 }

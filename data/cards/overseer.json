@@ -2,7 +2,7 @@
   "groupname": "overseer",
   "basechance": 3,
   "cards": [
-	{
+		{
           "chance": 3,
           "filename": "overseerr",
           "name": "Overseer (Rare)",
@@ -16,6 +16,19 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981255803547832400/overseerr.png"
         },
+		{
+          "chance": 2,
+          "filename": "overseersr",
+          "name": "Overseer (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by Penny)",
+          "smell": "Order",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1006437200440856639/overseersr.png"
+        },
         {
           "chance": 1,
           "filename": "overseerur",
@@ -28,6 +41,18 @@
             "swirlymarbles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/980994386458447932/overseerur.png"
+        },
+		{
+          "chance": 0,
+          "filename": "overseerc",
+          "name": "Overseer (Collector's)",
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Overseer (Art by Penny)",
+          "smell": "Order",
+          "season": 9,
+          "bonuses": {
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1006437390698688582/overseerc.png"
         }
   ]
 }
