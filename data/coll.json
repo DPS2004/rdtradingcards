@@ -391,6 +391,15 @@
   },
   {
     "require": [
+      "overseerc",
+      "charliec",
+	  "sefc",
+      "guardiangroup"
+    ],
+    "receive": "guardiangroupc"
+  },
+  {
+    "require": [
       "janitorr",
       "janitorsr",
       "janitorur"
@@ -508,5 +517,29 @@
       "snailur"
     ],
     "receive": "snailc"
+  },
+  {
+    "require": [
+      "overseerr",
+      "overseersr",
+      "overseerur"
+    ],
+    "receive": "overseerc"
+  },
+  {
+    "require": [
+      "sefr",
+      "sefsr",
+      "sefur"
+    ],
+    "receive": "sefc"
+  },
+  {
+    "require": [
+      "charlier",
+      "charliesr",
+      "charlieur"
+    ],
+    "receive": "charliec"
   }
 ]

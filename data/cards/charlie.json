@@ -2,7 +2,7 @@
   "groupname": "charlie",
   "basechance": 3,
   "cards": [
-	{
+		{
           "chance": 3,
           "filename": "charlier",
           "name": "Charla Tan (Rare)",
@@ -16,6 +16,19 @@
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/980991324679462993/charlier.png"
         },
+		{
+          "chance": 2,
+          "filename": "charliesr",
+          "name": "Charla Tan (Super Rare)",
+          "type": "Super Rare",
+          "description": "(Art by MokkaCat)",
+          "smell": "Pentagons",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1006439404698607677/charliesr.png"
+        },
         {
           "chance": 1,
           "filename": "charlieur",
@@ -28,6 +41,18 @@
             "swirlymarbles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/980993747343015967/charlieur.png"
+        },
+		{
+          "chance": 0,
+          "filename": "charliec",
+          "name": "Charla Tan (Collector's)",
+          "type": "Collector's",
+          "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Charla Tan (Art by MokkaCat)",
+          "smell": "Pentagons",
+          "season": 9,
+          "bonuses": {
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1006439442472517682/charliec.png"
         }
   ]
 }
