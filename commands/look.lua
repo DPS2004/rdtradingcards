@@ -410,7 +410,7 @@ function command.run(message, mt)
       table.insert(args, substring)
     end
       
-    if args[1] == nil or args[1] == "-s" then
+    if args[1] == nil or args[1] == "-s" or args[1] == "-season" then
 	  _G["request"] = ""
 	else
 	  _G["request"] = string.lower(args[1]) --why tf didint i do this for all the other ones?????????????????
@@ -467,6 +467,9 @@ function command.run(message, mt)
         }},
         image = {url = "attachment://shop.png"}},
         files = {getshopimage()}}
+      if not uj.togglechecktoken then
+        message.channel:send('You currently have ' .. uj.tokens .. ' **Token' .. (uj.tokens == 1 and "" or "s") .. '**.')
+      end
     elseif (request == "wolf")  then
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
       local time = sw:getTime()
