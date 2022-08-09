@@ -18,7 +18,7 @@ function command.run(message)
     local missingcount = 0
 
     for k, v in pairs(cdb) do
-      if not table.search(excludedcards, k) and not uj.storage[k] then
+      if not table.search(excludedcards, k) and not uj.storage[k] and v.season <= 8 then
         missingcount = missingcount + 1
       end
     end

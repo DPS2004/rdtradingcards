@@ -193,7 +193,7 @@ return {
       local excludedcards = { "rdcards", "key" }
 
       for k, v in pairs(cdb) do
-        if not table.search(excludedcards, k) and not uj.storage[k] then
+	    if not table.search(excludedcards, k) and not uj.storage[k] and v.season <= 8 then
           print('Missing ' .. k)
           return false
         end
