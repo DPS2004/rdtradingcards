@@ -50,8 +50,12 @@ function command.run(message, mt)
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
   dpf.savejson(uj2f,uj2)
 
-  message.channel:send {
-    content = 'You have gifted ' .. numtokens .. ' **Token' .. (numtokens == 1 and "" or "s") ..'** to <@' .. uj2.id .. '>.'}
+  if not uj2.togglechecktoken then
+    message.channel:send {content = 'You have gifted ' .. numtokens .. ' **Token' .. (numtokens == 1 and "" or "s") ..'** to <@' .. uj2.id .. '>.\nThere are ' .. uj2.tokens .. ' **Token' .. (uj2.tokens == 1 and "" or "s") .. '** in ' .. uj2.pronouns["their"] .. ' pocket.'}
+  else
+    message.channel:send {
+      content = 'You have gifted ' .. numtokens .. ' **Token' .. (numtokens == 1 and "" or "s") ..'** to <@' .. uj2.id .. '>.'}
+  end
   if not uj.togglechecktoken then
     message.channel:send('You currently have ' .. uj.tokens .. ' **Token' .. (uj.tokens == 1 and "" or "s") .. '** left.')
   end
