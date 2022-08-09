@@ -30,6 +30,11 @@ function command.run(message, mt)
       message.channel:send("You cannot set your ID as a nickname!")
       return
     end
+    
+    if mt[2] == '-season' or '-s' then
+      message.channel:send("You cannot set that as a nickname!")
+      return
+    end
 
     if usernametojson(mt[2]) then
       if string.find(usernametojson(mt[2]), uj.id, 10) then
