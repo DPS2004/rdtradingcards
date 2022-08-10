@@ -57,7 +57,7 @@ local time = sw:getTime()
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
 
   message.channel:send('The Card Gods have listened to your plight. A **Token** appears in your pocket.')
-  if not uj.checktoken then
+  if not uj.togglechecktoken then
     message.channel:send('You currently have ' .. uj.tokens .. ' **Token' .. (uj.tokens == 1 and "" or "s") .. '**.')
   end
 end
