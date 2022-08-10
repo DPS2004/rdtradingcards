@@ -431,6 +431,21 @@
 	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981267277645234246/xf-xdc.png"
 	},
 	{
+	  "chance": 1,
+	  "filename": "xo-xdc",
+	  "name": "One Forgotten Night (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Level by Star4th)",
+	  "smell": "Pseudos",
+	  "season": 9,
+	  "bonuses": {
+		"oldfiles": true,
+		"filmreel": true,
+		"swirlymarbles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1006854521277927455/xo-xdc.gif"
+	},
+	{
 	  "chance": 2,
 	  "filename": "t1-x",
 	  "name": "NEW LIFE",
