@@ -2,10 +2,6 @@ local command = {}
 function command.run(message, mt)
   print(message.author.name .. " did !togglecc")
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
-  if #mt ~= 1 then
-    message.channel:send("Sorry, but the c!togglecheck command expects 1 argument. You can either set to check **card** or **token**.")
-    return
-  end
     
 	uj.disablecommunity = not uj.disablecommunity
 	if uj.disablecommunity then
