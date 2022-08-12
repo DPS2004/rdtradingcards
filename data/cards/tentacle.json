@@ -1,0 +1,17 @@
+{
+  "groupname": "tentacle",
+  "basechance": 3,
+  "cards": [{
+	"chance": 3,
+	"filename": "tentacler",
+	"name": "Tentacle (Rare)",
+	"type": "Rare",
+	"description": "(Art by GlitchyPSI)",
+	"smell": "Point & Click Games",
+	"season": 7,
+	"bonuses": {
+	  "okamiiscollar": true
+	},
+	"embed": "https://cdn.discordapp.com/attachments/829197797789532181/1007450486632349726/tentacler.png"
+  }]
+}
