@@ -14,7 +14,48 @@
             "filmreel": true
         },
         "embed": "https://media.discordapp.net/attachments/881795785811963915/1003244649189744781/hiasobi.gif"
-    },
+        },
+	  {
+ 	    "chance":2,
+	    "filename": "wishcant",
+          "name": "WISH 〜君を待てなくて〜",
+          "type": "Super Rare",
+          "description": "(Level by BluPen)",
+          "smell": "Desire",
+          "season": 9,
+          "bonuses": {
+            "cafemixtape": true,
+		"rustysword":true
+          },
+          "embed": "https://media.discordapp.net/attachments/786203629756481539/1008512128610742292/wishcant.png"
+        },	
+	  {
+ 	    "chance":2,
+	    "filename": "r",
+          "name": "R",
+          "type": "Super Rare",
+          "description": "(Level by BluPen)",
+          "smell": "Stars",
+          "season": 9,
+          "bonuses": {
+		"rustysword":true
+          },
+          "embed": "https://media.discordapp.net/attachments/786203629756481539/1008512075439558706/r.png"
+        },	
+	  {
+ 	    "chance":0,
+	    "filename": "chronomia",
+          "name": "Chronomia",
+          "type": "Collector's",
+          "description": "Requires My Piano Is Escaping (8bit), WISH 〜君を待てなくて〜, and R (Level by BluPen)",
+          "smell": "Time",
+          "season": 9,
+          "bonuses": {
+            "cafemixtape": true,
+		"rustysword":true
+          },
+          "embed": "https://media.discordapp.net/attachments/786203629756481539/1008512095861608508/chronomia.png"
+        },	
 	{
 		"chance": 2,
         "filename": "cogispush",
