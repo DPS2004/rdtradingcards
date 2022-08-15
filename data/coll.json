@@ -541,5 +541,13 @@
       "charlieur"
     ],
     "receive": "charliec"
+  },
+  {
+    "require": [
+      "mypiano",
+      "wishcant",
+      "r"
+    ],
+    "receive": "chronomia"
   }
 ]
