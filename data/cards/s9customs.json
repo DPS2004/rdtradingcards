@@ -1,7 +1,9 @@
 {
     "groupname": "fanmade customs (real)",
     "basechance": 3,
-    "cards": [{"chance": 2,
+    "cards": [
+	{
+		"chance": 2,
         "filename": "hiasobi",
         "name": "Play With Fire",
         "type": "Super Rare",
@@ -54,5 +56,47 @@
           },
           "embed": "https://media.discordapp.net/attachments/786203629756481539/1008512095861608508/chronomia.png"
         },	
+	{
+		"chance": 2,
+        "filename": "cogispush",
+        "name": "Cog Is Push",
+        "type": "Super Rare",
+        "description": "(Level by Poppers)",
+        "smell": "Rules",
+        "season": 9,
+        "bonuses": {
+            "oversizedstethoscope": true,
+            "cafemixtape": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1007469677083111464/cogispush.png"
+    },
+	{
+		"chance": 2,
+        "filename": "ladders",
+        "name": "Ladders",
+        "type": "Super Rare",
+        "description": "(Level by bunner)",
+        "smell": "Billboards",
+        "season": 9,
+        "bonuses": {
+            "valentinesdaycard": true,
+            "cafemixtape": true,
+            "paddedstickersheet": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1007469695751950336/ladders.png"
+    },
+	{
+		"chance": 2,
+        "filename": "punchdrunk",
+        "name": "Punch Drunk Destiny",
+        "type": "Super Rare",
+        "description": "(Level by CV35W, Salerj1219, and Xeno)",
+        "smell": "Yearning",
+        "season": 9,
+        "bonuses": {
+            "valentinesdaycard": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1007469730606612640/punchdrunk.png"
+    }
     ]
 }
