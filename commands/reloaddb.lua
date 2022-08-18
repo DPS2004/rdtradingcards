@@ -143,7 +143,7 @@ function command.run(message, mt, overwrite)
     _G['amids'] = {}
     amids[0] = "pyrowmid"
     amids[1] = "lab"
-    amids[5] = "shop"
+    amids[3] = "shop"
     
     _G['automove'] = function(cr,r,message)
       print("automove")
