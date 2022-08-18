@@ -152,7 +152,7 @@ function command.run(message, mt, overwrite)
         for a,b in ipairs(v) do
           if b == r then
             print("trying to use something in " .. k)
-            reqroom = k
+            _G['reqroom'] = k
           end
         end
       end
