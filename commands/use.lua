@@ -12,9 +12,11 @@ function command.run(message, mt,bypass)
   local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
   if not uj.room then uj.room = 0 end
   
-  local newuj = automove(uj.room,request,message)
-  if newuj then
-    uj = newuj
+  if uj.room ~= 2 and request ~= "shop" then
+	local newuj = automove(uj.room,request,message)
+	if newuj then
+		uj = newuj
+	end
   end
   
   local found = true
@@ -424,7 +426,7 @@ o-''|\\_____/)
       }}
     elseif (request == "shop" or request == "quaintshop" or request == "quaint shop")  then 
       message.channel:send("You step inside of the **Quaint Shop**...")
-      uj.room = 5
+      uj.room = 3
     elseif (request == "barrels")  then 
       message.channel:send{embed = {
         color = 0x85c5ff,
