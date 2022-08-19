@@ -100,15 +100,15 @@
 	},
 		{
 		"chance": 2,
-        "filename": "recklessbatteryburns",
+        "filename": "rbb",
         "name": "Reckless Battery Burns",
         "type": "Super Rare",
         "description": "(Level by MarioMak967)",
         "smell": "Battery Acid",
         "season": 9,
         "bonuses": {
-            "filmreel": true
-		"deviltail": true
+            "filmreel": true,
+			"deviltail": true
         },
         "embed": "https://media.discordapp.net/attachments/964283298140536912/1010163134570438746/recklessbatteryburns.gif"
         }
