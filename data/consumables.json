@@ -240,7 +240,7 @@
   "granolabar" : {
     "name": "Granola Bar",
     "description": "Decreases all of your cooldowns by 3 hours.",
-    "embed": "https://cdn.discordapp.com/attachments/705963512983191566/873737586823274506/PlaceholderCard.png",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1010245678741594162/granolabar.png",
     "baseprice": 3,
     "basestock": 10,
     "chance": 0
