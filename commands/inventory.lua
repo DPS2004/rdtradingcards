@@ -187,7 +187,6 @@ function command.run(message, mt)
   for i = (pagenumber - 1) * 10 + 1, (pagenumber) * 10 do
     print(i)
     if invtable[i] then invstring = invstring .. invtable[i] end
-	print(invstring)
   end
 
   message.channel:send{
