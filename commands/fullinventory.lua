@@ -165,8 +165,98 @@ function command.run(message, mt)
     for k in pairs(uj.inventory) do numkey = numkey + 1 end
   end
   
+  local seasonnum = ""
+  local multipleSeasons = false
+  if filterSeason == true then
+    if filterSeason0 == true then
+		seasonnum = "0"
+	end
+	if filterSeason1 == true then
+		if seasonnum ~= "" then
+			seasonnum = seasonnum .. ", 1"
+			multipleSeasons = true
+		else
+			seasonnum = "1"
+		end
+	end
+	if filterSeason2 == true then
+		if seasonnum ~= "" then
+			seasonnum = seasonnum .. ", 2"
+			multipleSeasons = true
+		else
+			seasonnum = "2"
+		end
+	end
+	if filterSeason3 == true then
+		if seasonnum ~= "" then
+			seasonnum = seasonnum .. ", 3"
+			multipleSeasons = true
+		else
+			seasonnum = "3"
+		end
+	end
+	if filterSeason4 == true then
+		if seasonnum ~= "" then
+			seasonnum = seasonnum .. ", 4"
+			multipleSeasons = true
+		else
+			seasonnum = "4"
+		end
+	end
+	if filterSeason5 == true then
+		if seasonnum ~= "" then
+			seasonnum = seasonnum .. ", 5"
+			multipleSeasons = true
+		else
+			seasonnum = "5"
+		end
+	end
+	if filterSeason6 == true then
+		if seasonnum ~= "" then
+			seasonnum = seasonnum .. ", 6"
+			multipleSeasons = true
+		else
+			seasonnum = "6"
+		end
+	end
+	if filterSeason7 == true then
+		if seasonnum ~= "" then
+			seasonnum = seasonnum .. ", 7"
+			multipleSeasons = true
+		else
+			seasonnum = "7"
+		end
+	end
+	if filterSeason8 == true then
+		if seasonnum ~= "" then
+			seasonnum = seasonnum .. ", 8"
+			multipleSeasons = true
+		else
+			seasonnum = "8"
+		end
+	end
+	if filterSeason9 == true then
+		if seasonnum ~= "" then
+			seasonnum = seasonnum .. ", 9"
+			multipleSeasons = true
+		else
+			seasonnum = "9"
+		end
+	end
+  end
+	
+  local embedtitle = "Full Inventory"
+  if filterSeason == true then
+	local filtertitle = ""
+	if multipleSeasons == true then
+		filtertitle = "s " .. seasonnum
+	else
+		filtertitle = " " .. seasonnum
+	end
+	embedtitle = "Full Inventory (Season" .. filtertitle .. ")"
+  end
+  
   local contentstring = (uj.id == message.author.id and "Your" or "<@" .. uj.id .. ">'s") .. " inventory contains:"
-  local titlestring = 'Full Inventory'
   local previnvstring = ''
   if filterSeason == true then
     if enableShortNames == true then
@@ -189,13 +279,13 @@ function command.run(message, mt)
         content = contentstring,
         embed = {
           color = 0x85c5ff,
-          title = titlestring,
+          title = embedtitle,
           description = previnvstring
         },
       }
       invstring = invtable[i]
       contentstring = ''
-      titlestring = 'Full Inventory (cont.)'
+      embedtitle = embedtitle .. " (cont.)"
     end
     previnvstring = invstring
   end
@@ -203,7 +293,7 @@ function command.run(message, mt)
     content = contentstring,
     embed = {
       color = 0x85c5ff,
-      title = titlestring,
+      title = embedtitle,
       description = previnvstring
     },
   }
