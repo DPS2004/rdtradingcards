@@ -53,6 +53,33 @@
             "swirlymarbles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/1006816961046519819/1006817056362070016/jazzcandy.gif"
-        }	
+        },
+        {
+          "chance": 2,
+          "filename": "carefree",
+          "name": "Carefree",
+          "type": "Super Rare",
+          "description": "(Level by Colon)",
+          "smell": "Tutorials",
+          "season": 9,
+          "bonuses": {
+		    "duncecap": true,
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1010406533433139240/carefree.png"
+        },
+        {
+          "chance": 2,
+          "filename": "starship",
+          "name": "Starship Showdown",
+          "type": "Super Rare",
+          "description": "(Level by robotups)",
+          "smell": "Hexagons",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1010409275564236830/starship.png"
+        }
       ]
     }
