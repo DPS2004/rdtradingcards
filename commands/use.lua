@@ -12,11 +12,12 @@ function command.run(message, mt,bypass)
   local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
   if not uj.room then uj.room = 0 end
   
-  if uj.room ~= 2 and request ~= "shop" then
-	local newuj = automove(uj.room,request,message)
-	if newuj then
-		uj = newuj
-	end
+  if request == "shop" and uj.room == 2 then
+  else
+	  local newuj = automove(uj.room,request,message)
+	  if newuj then
+		  uj = newuj
+	  end
   end
   
   local found = true
