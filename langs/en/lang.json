@@ -1,7 +1,7 @@
 {
 	"lang_changed": "Language changed to English!",
 	"no_value_1": "Please enter a language. Your current language is ",
-	"no_value_2": ".",
+	"no_value_2": ". You can view a full list of languages using c!langlist.",
 	"no_database_1": "Sorry, but I could not find ",
 	"no_database_2": " from the database. See if you mispelled, or your language is in c!langlist.",
 	
