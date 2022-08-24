@@ -1,28 +1,30 @@
 local command = {}
 function command.run(message, mt)
   print(message.author.name .. " did !trade")
+  local ujf = ("savedata/" .. message.author.id .. ".json")
+  local uj = dpf.loadjson(ujf, defaultjson)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/trade.json", "")
   if not message.guild then
-    message.channel:send("Sorry, but you cannot trade cards in DMs!")
+    message.channel:send(lang.dm_message)
     return
   end
 
   if #mt ~= 3 then
-    message.channel:send("Sorry, but the c!trade command expects 3 arguments. Please see c!help for more details.")
+    message.channel:send(lang.no_arguments)
     return
   end
 
-  local ujf = ("savedata/" .. message.author.id .. ".json")
   local uj2f = usernametojson(mt[2])
 
   print("checking if user 2 exists")
   if not uj2f then
-    message.channel:send("Sorry, but I could not find a user named " .. mt[2] .. " in the database. Make sure that you have spelled it right, and that they have at least pulled a card to register!")
+    message.channel:send(lang.no_user_1 .. mt[2] .. lang.no_user_2)
     return
   end
 
   print("checking if users are different people")
   if uj2f == ujf then
-    message.channel:send("Sorry, you cannot trade with yourself!")
+    message.channel:send(lang.same_user)
     return
   end
 
@@ -30,9 +32,9 @@ function command.run(message, mt)
   local item1 = texttofn(mt[1])
   if not item1 then
     if nopeeking then
-      message.channel:send("Sorry, but I either could not find the " .. mt[1] .. " card in the database, or you do not have it. Make sure that you spelled it right!")
+      message.channel:send(lang.no_item_nopeeking_1 .. mt[1] .. lang.no_item_nopeeking_2 .. lang.no_item1_nopeeking)
     else
-      message.channel:send("Sorry, but I could not find the " .. mt[1] .. " card in the database. Make sure that you spelled it right!")
+      message.channel:send(lang.no_item_1 .. mt[1] .. lang.no_item_2)
     end
     return
   end
@@ -41,22 +43,22 @@ function command.run(message, mt)
   local item2 = texttofn(mt[3])
   if not item2 then
     if nopeeking then
-      message.channel:send("Sorry, but I either could not find the " .. mt[3] .. " card in the database, or ".. mt[2] .. " does not have it. Make sure that you spelled it right!")
+      message.channel:send(lang.no_item_nopeeking_1 .. mt[3] .. lang.no_item_nopeeking_2.. mt[2] .. lang.no_item2_nopeeking)
     else
-      message.channel:send("Sorry, but I could not find the " .. mt[3] .. " card in the database. Make sure that you spelled it right!")
+      message.channel:send(lang.no_item_1 .. mt[3] .. lang.no_item_2)
     end
     return
   end
 
-  local uj = dpf.loadjson(ujf, defaultjson)
   local uj2 = dpf.loadjson(uj2f, defaultjson)
-
+  local lang2 = dpf.loadjson("langs/" .. uj2.lang .. "/trade.json", "")
+  
   print("checking if u1 has i1")
   if not uj.inventory[item1] then
     if nopeeking then
-      message.channel:send("Sorry, but I either could not find the " .. mt[1] .. " card in the database, or you do not have it. Make sure that you spelled it right!")
+      message.channel:send(lang.no_item_nopeeking_1 .. mt[1] .. lang.no_item_nopeeking_2 .. lang.no_item1_nopeeking)
     else
-      message.channel:send("Sorry, but you don't have the **" .. cdb[item1].name .. "** card in your inventory.")
+      message.channel:send(lang.dont_have_user1_1 .. cdb[item1].name .. lang.dont_have_user1_2)
     end
     return
   end
@@ -64,14 +66,22 @@ function command.run(message, mt)
   print("checking if u2 has i2")
   if not uj2.inventory[item2] then
     if nopeeking then
-      message.channel:send("Sorry, but I either could not find the " .. mt[3] .. " card in the database, or ".. mt[2] .. " does not have it. Make sure that you spelled it right!")
+      message.channel:send(lang.no_item_nopeeking_1 .. mt[3] .. lang.no_item_nopeeking_2.. mt[2] .. lang.no_item2_nopeeking)
     else
-      message.channel:send("Sorry, but ".. mt[2] .. " doesn't have the **" .. cdb[item2].name .. "** card in " .. uj2.pronouns["their"] .. " inventory.")
-    end
+	  if uj.lang == "ko" then
+        message.channel:send(lang.dont_have_user2_1 .. mt[2] .. lang.dont_have_user2_2 .. cdb[item2].name .. lang.dont_have_user2_3 .. lang.dont_have_user2_4)
+      else
+        message.channel:send(lang.dont_have_user2_1 .. mt[2] .. lang.dont_have_user2_2 .. cdb[item2].name .. lang.dont_have_user2_3 .. prosel.getPronoun(uj.lang, uj2.pronouns["selection"], "their") .. lang.dont_have_user2_4)
+	  end
+	end
     return
   end
 
   print("success!!!!!")
-  ynbuttons(message, "<@".. uj2.id ..">, <@" .. uj.id .. "> wants to trade " .. uj.pronouns["their"] .. " **" .. cdb[item1].name .. "** for your **" .. cdb[item2].name .. "**. Click the Yes button to accept and No to deny.", "trade", {uj2f = uj2f, item1 = item1,item2 = item2}, uj2.id)
+  if uj2.lang == "ko" then
+    ynbuttons(message, "<@".. uj2.id .. lang2.confirm_message_1 .. uj.id .. lang2.confirm_message_2 .. lang2.confirm_message_3 .. cdb[item1].name .. lang2.confirm_message_4 .. cdb[item2].name .. lang2.confirm_message_5, "trade", {uj2f = uj2f, item1 = item1,item2 = item2}, uj2.id, uj2.lang)
+  else
+    ynbuttons(message, "<@".. uj2.id .. lang2.confirm_message_1 .. uj.id .. lang2.confirm_message_2 .. prosel.getPronoun(uj2.lang, uj.pronouns["selection"], "their") .. lang2.confirm_message_3 .. cdb[item1].name .. lang2.confirm_message_4 .. cdb[item2].name .. lang2.confirm_message_5, "trade", {uj2f = uj2f, item1 = item1,item2 = item2}, uj2.id, uj2.lang)
+  end
 end
 return command

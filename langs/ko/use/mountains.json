@@ -1,0 +1,22 @@
+{
+	"request_pyrowmid": "행라미드",
+	"use_pyrowmid": "당신은 **행라미드**로의 길을 돌아간다...",
+	
+	"request_bridge": "다리",
+	"using_bridge": "다리를 사용하니...",
+	"use_bridge": "**다리**는 걷기에는 어느 정도 튼튼해 보이지만, 다리를 너무 많이 가지고 놀지 않는 것이 최선일 것 같다. 언제 다리가 *무너질지* 모르니까...",
+	
+	"request_shop_1": "가게",
+	"request_shop_2": "진기한 가게",
+	"request_shop_3": "진기한가게",
+	"request_shop_4": "상점",
+	"use_shop": "당신은 **진기한 가게** 안으로 들어선다...",
+	
+	"request_barrels": "통",
+	"using_barrels": "통을 사용하니...",
+	"use_barrels": "흥미롭게도, **통**을 열 방법, 아니, 안에 뭐가 있는지 볼 수 있는 방법조차 찾을 수 없는 것 같다...",
+
+	"request_clouds": "구름",
+	"using_clouds": "구름을 사용하니...",
+	"use_clouds": "당신은 구름 하나를 만지려고 한다. 당연하게도, 그 정도 높이까지 손을 뻗을 수는 없었다.",
+}

@@ -1,0 +1,37 @@
+{
+	"needs_plural_s": false,
+	
+	"request_shop_1": "가게",
+	"request_shop_2": "진기한 가게",
+	"request_shop_3": "진기한가게",
+	"request_shop_4": "상점",
+	"looking_at_shop": "가게를 보니...",
+	"looking_shop": "**진기한 가게**는 **늑대**가 팔고 있는 카드와 카드 액세서리로 가득 차 있다. 생각보다 사업이 잘 되고 있는 것 같다. 주위를 둘러보니, 당신은 벽에 걸린 액자 **사진**을 발견했다. 모서리에 있는 **유령**은 가게 안을 감시하며 지키고 있다. ",
+	"shop_selling": "가게에서 다음 물건을 팔고 있다.",
+	
+	"shop_token_1": "토큰 ",
+	"shop_token_2": "개",
+	
+	"checktoken_1": "당신의 주머니에 **토큰** ",
+	"checktoken_2": "개가 남아 있습니다.",
+	"checktoken_3": "",
+	"plural_s": "",
+	
+	"time_hour": "시간",
+	"time_and": " ",
+	"time_minute": "분",
+	
+	"request_wolf": "늑대",
+	"looking_at_wolf": "늑대를 보니...",
+	"looking_wolf_1": "**늑대**가 당신을 올려다 보고는, 친근하게 손을 흔든다. 자신이 있는 곳에 꽤 만족하는 것 처럼 보이지만, 작은 걱정이 눈에 드러나고 있다.\n\n**가게**에 대해 물으니, ",
+	"looking_wolf_2": " 뒤에 재입고된다고 **늑대**가 전해 주었다.",
+	
+	"request_ghost": "유령",
+	"looking_at_ghost": "유령을 보니...",
+	"looking_ghost": "**유령**은 하릴없이 서 있으며, 가게가 안전한 것을 확인하고 있다. 마음 속에서 끊임없이 비명을 지르고 있는 것처럼 보인다.",
+	
+	"request_photo": "사진",
+	"looking_at_photo": "사진을 보니...",
+	"looking_photo": "액자에 담긴 **사진**을 보니, 강아지의 이상한 삼각형 모양이 당신이 있었던 행라미드를 떠올리게 한다.",
+	"looking_photo_ookami": " 회전된 건 당신의 목걸이 때문일 수도 있다.",
+}

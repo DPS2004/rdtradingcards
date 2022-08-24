@@ -1,20 +1,21 @@
 local command = {}
 function command.run(message, mt)
   print(message.author.name .. " did !showitem")
+  local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/showitem.json","")
   if #mt ~= 1 then
-    message.channel:send("Sorry, but the c!showitem command expects 1 argument. Please see c!help for more details.")
+    message.channel:send(lang.no_arguments)
     return
   end
 
-  local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
   if not uj.consumables then uj.consumables = {} end
   local curfilename = itemtexttofn(mt[1]) or constexttofn(mt[1])
 
   if not curfilename then
     if nopeeking then
-      message.channel:send("Sorry, but I either could not find the " .. mt[1] .. " item in the database, or you do not have it. Make sure that you spelled it right!")
+      message.channel:send(lang.error_nopeeking_1 .. mt[1] .. lang.error_nopeeking_2)
     else
-      message.channel:send("Sorry, but I could not find the " .. mt[1] .. " item in the database. Make sure that you spelled it right!")
+      message.channel:send(lang.no_item_1 .. mt[1] .. lang.no_item_1)
     end
     return
   end
@@ -26,9 +27,9 @@ function command.run(message, mt)
   if not (uj.items[curfilename] or uj.consumables[curfilename] or shophas(curfilename)) then
     print("user doesnt have item")
     if nopeeking then
-      message.channel:send("Sorry, but I either could not find the " .. mt[1] .. " item in the database, or you do not have it. Make sure that you spelled it right!")
+      message.channel:send(lang.error_nopeeking_1 .. mt[1] .. lang.error_nopeeking_2)
     else
-      message.channel:send("Sorry, but you don't have the **" .. name .. "** item.")
+      message.channel:send(lang.dont_have_1 .. name .. lang.dont_have_2)
     end
     return
   end
@@ -37,8 +38,8 @@ function command.run(message, mt)
   
   message.channel:send{embed = {
     color = 0x85c5ff,
-    title = "Showing item...",
-    description = 'Here it is! Your **'.. name .. '** item. The shorthand form is **' .. curfilename .. '**.\n\n*The description on the back reads:*\n> ' .. description,
+    title = lang.showing_item,
+    description = lang.show_item_1 .. name .. lang.show_item_2 .. curfilename .. lang.show_item_3 .. description,
     image = {
       url = embedurl
     }

@@ -2,13 +2,14 @@ local reaction = {}
 function reaction.run(message, interaction, data, response)
   local ujf = "savedata/" .. message.author.id .. ".json"
   local uj = dpf.loadjson(ujf, defaultjson)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/use/usehole.json", "")
   print("Loaded uj")
   local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
 
   if response == "yes" then
     print('user1 has accepted')
     if uj.tokens < 1 then
-      interaction:reply("An error has occured. Please make sure that you still have a token!")
+      interaction:reply(lang.error_no_tokens)
       return
     end
 
@@ -17,12 +18,12 @@ function reaction.run(message, interaction, data, response)
     uj.tokensdonated = uj.tokensdonated and uj.tokensdonated + 1 or 1
 
     if not wj.labdiscovered then
-      interaction:reply('A **Token** has been dropped into the **Hole.** Thank you for your generosity!')
+      interaction:reply(lang.donated_hole)
     else
       interaction:reply{embed = {
         color = 0x85c5ff,
-        title = "Using Terminal...",
-        description = 'The **Terminal** whirrs happily. A printout lets you know that ' .. wj.tokensdonated .. ' tokens have been donated so far.',
+        title = lang.using_terminal,
+        description = lang.donated_terminal_1 .. wj.tokensdonated .. lang.donated_terminal_2,
         image = {
           url = upgradeimages[math.random(#upgradeimages)]
         },
@@ -37,12 +38,12 @@ function reaction.run(message, interaction, data, response)
 
     if wj.ws >= 501 and wj.ws < 506 and wj.tokensdonated >= (wj.ws - 500) * 5 then
       wj.ws = wj.ws + 1
-      interaction:reply("***The ground rumbles..." .. (wj.ws == 506 and " and so does the Strange Machine***" or "***"))
+      interaction:reply(lang.donated_hole_ws_1 .. (wj.ws == 506 and lang.donated_hole_ws_506 or lang.donated_hole_ws_2))
     end
 
     if not wj.smellable and wj.tokensdonated >= 100 then
       wj.smellable = true
-      interaction:reply('***The Database lets out a loud BEEP, before the Hole above you closes off. The Terminal begins spewing a noxious gas. ***\n.\n..\n...\n***When you wake up, the Hole has opened again, and your sense of Smell feels much more potent.***')
+      interaction:reply(lang.donated_terminal_smell)
     end
 
     dpf.savejson(ujf, uj)
@@ -52,9 +53,9 @@ function reaction.run(message, interaction, data, response)
   if response == "no" then
     print('user1 has denied')
     if not wj.labdiscovered then
-      interaction:reply("You decide to not put a **Token** into the **Hole.** (how rude!)")
+      interaction:reply(lang.denied_hole)
     else
-      interaction:reply("You decide to not put a **Token** into the **Terminal.** (how rude!)")
+      interaction:reply(lang.denied_terminal)
     end
   end
 end

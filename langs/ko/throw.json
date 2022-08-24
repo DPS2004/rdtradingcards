@@ -1,0 +1,24 @@
+{
+	"dm_message": "죄송하지만, DM에서는 뭔가를 던질 수 없습니다!",
+	"no_arguments": "죄송하지만, c!throw 명령어는 인수 1개를 필요로 합니다. 자세한 내용은 c!help를 확인해 주세요.",
+	
+	"error_nopeeking_1": "죄송하지만, 데이터베이스에서 ",
+	"error_nopeeking_2": " 카드를 찾을 수 없었거나, 당신이 해당 카드를 갖고 있지 않습니다. 철자가 맞는지 확인해 주세요!",
+	"no_item_1": "죄송하지만, 데이터베이스에서 ",
+	"no_item_2": " 카드를 찾을 수 없었습니다. 철자가 맞는지 확인해 주세요!",
+	"dont_have_1": "죄송하지만, 당신의 인벤토리에 **",
+	"dont_have_2": "** 카드가 없습니다.",
+	
+	"thrown_message_1": " ",
+	"thrown_message_2": "초 안에 아래 명령어를 쳐서 잡으세요!\n",
+	"thrown_command_1": "`c!catch ",
+	"thrown_command_2": "`",
+	
+	"card_thrown": "카드를 ",
+	"item_thrown": "아이템을 ",
+	"card_fall": "카드가 ",
+	"item_fall": "아이템이 ",
+	
+	"fall_message_1": "님이 그것을 집어서 자신의 인벤토리에 다시 넣습니다.",
+	"fall_message_2": "",
+}

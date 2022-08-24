@@ -1,0 +1,21 @@
+{
+	"spider_alert": "Are you okay with seeing a spider?",
+	"using_spider": "Using Spider...",
+	"use_spider": "The **Spider** waves at you. You wave back. A true bond between the two of you has been formed!",
+	"using_spiderweb": "Using Spiderweb...",
+	"use_spiderweb": "There is a **Spiderweb** here, but there is no **Spider**. There never **was** and there never **will** be a **Spider** in this location.",
+	
+	"using_table": "Using Table...",
+	"use_table": "You dust off the **Table**. But as soon as you look away, the **Table** is covered in dust again.",
+	
+	"using_poster_before801": "What poster?",
+	"using_poster": "Using Cat Poster...",
+	"use_poster": "By **Pull**ing away the **Cat Poster** and putting it up elsewhere in the room, you have revealed a **Scanner**.",
+	
+	"using_hole": "Using Mouse Hole...",
+	"use_hole_mouse": ", do you want to put your **Broken Mouse** into the **Mouse Hole?**",
+	"use_hole": "You do not have anything to put into the **Mouse Hole.**",
+	
+	"used_hole": "You start to push your **Broken Mouse** into the hole, but two grey furry hands pull it in the rest of the way. You can hear the mouse using a saw to open up the **Broken Mouse**, which seems terribly unsafe! After a few minutes of tinkering, the mouse pushes out a **Fixed Mouse**, complete with a green sticker denoting its newfound functionality. You put the **Fixed Mouse** with your other items.",
+	"denied_hole": "You decide to not put the **Broken Mouse** in the **Mouse Hole**.",
+}

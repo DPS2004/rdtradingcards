@@ -1,0 +1,40 @@
+{
+	"needs_plural_s": false,
+	"plural_s": "",
+	
+	"no_arguments": "죄송하지만, c!shred 명령어는 인수 1개 또는 2개를 필요로 합니다. 자세한 내용은 c!help를 확인해 주세요.",
+	
+	"error_nopeeking_1": "죄송하지만, 데이터베이스에서 ",
+	"error_nopeeking_2": 	" 카드를 찾을 수 없었거나, 당신이 해당 카드를 갖고 있지 않습니다. 철자가 맞는지 확인해 주세요!",
+	
+	"no_item_1": "죄송하지만, 데이터베이스에서 ",
+	"no_item_2": " 카드를 찾을 수 없었습니다. 철자가 맞는지 확인해 주세요!",
+	"dont_have_1": "죄송하지만, 당신의 인벤토리에 **",
+	"dont_have_2": "** 카드가 없습니다.",
+	
+	"not_enough_1": "죄송하지만, 당신의 인벤토리의 **",
+	"not_enough_2": "** 카드 수가 부족합니다.",
+	
+	"shred_confirm_1": "<@",
+	"shred_confirm_2": ">님, 인벤토리에 있는 **",
+	"shred_confirm_3": "** 카드 ",
+	"shred_confirm_4": "장을 찢으시겠습니까? **이는 되돌릴 수 없습니다.** 예 버튼을 눌러서 승인, 아니요 버튼을 눌러서 취소하세요.",
+	"shred_confirm_5": "",
+	
+	"reaction_dont_have": "에러가 발생했습니다. 자신의 인벤토리에 해당 카드가 있는지 확인해 주세요!",
+	"reaction_not_enough_1": "에러가 발생했습니다. 자신의 인벤토리에 자신이 찢고 싶은 만큼 **",
+	"reaction_not_enough_2": "** 카드가 있는지 확인해 주세요!",
+	
+	"shredded_message_1": "<@",
+	"shredded_message_2": ">님이 **",
+	"shredded_message_3": "** 카드 ",
+	"shredded_message_4": "장을 찢으셨습니다.",
+	"shredded_message_5": "",
+	"shredded_message_6": "",
+	
+	"denied_message_1": "<@",
+	"denied_message_2": ">님이 **",
+	"denied_message_3": "** 카드를 찢는 것을 취소하셨습니다.",
+	"denied_message_4": "",
+	"denied_message_5": "",
+}

@@ -1,6 +1,7 @@
 local item = {}
 
 function item.run(uj, ujf, message, mt, interaction)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/use/cons.json")
   if not uj.conspt then uj.conspt = "none" end
   local replying = interaction or message
   if uj.conspt == "none" then
@@ -9,13 +10,13 @@ function item.run(uj, ujf, message, mt, interaction)
     uj.timesitemused = uj.timesitemused and uj.timesitemused + 1 or 1
 
     uj.conspt = "scribblednotepad"
-    replying:reply("You stick the **Stick-on Tabs** inside of your level design notepad. This will surely improve your organizational skills... and also attract some editor cards I guess.")
+    replying:reply(lang.stickontabs_message)
     local randtime = math.random(4, 8)
     uj.lastpull = uj.lastpull - randtime
-    message:reply('Also, your pull cooldown was decreased by ' .. randtime .. ' hours!')
+    message:reply(lang.cooldown_decrease_1 .. randtime .. lang.cooldown_decrease_2)
     dpf.savejson(ujf, uj)
   else
-    replying:reply("You already have a pull affecting item in use! You decide against using the **Stick-on Tabs** at this time.")
+    replying:reply(lang.stickontabs_conspt)
   end
 end
 

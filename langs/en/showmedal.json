@@ -1,0 +1,16 @@
+{
+	"no_arguments": "Sorry, but the c!showmedal command expects 1 argument. Please see c!help for more details.",
+	
+	"error_nopeeking_1": "Sorry, but I either could not find the ",
+	"error_nopeeking_2": " medal in the database, or you do not have it. Make sure that you spelled it right!",
+	
+	"no_medal_1": "Sorry, but I could not find the ",
+	"no_medal_2": " medal in the database. Make sure that you spelled it right!",
+	"dont_have_1": "Sorry, but you don't have the **",
+	"dont_have_2": "** medal.",
+	
+	"showing_medal": "Showing medal...",
+	"show_medal_1": "Here it is! Your **",
+	"show_medal_2": "** medal. The shorthand form is **",
+	"show_medal_3": "**.\n\n*The description on the back reads:*\n> ",
+}

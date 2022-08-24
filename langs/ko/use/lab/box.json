@@ -1,0 +1,26 @@
+{
+	"needs_plural_s": false,
+	
+	"time_hour":  "시간",
+	"time_plural_s": "",
+	"time_and": " ",
+	"time_minute": "분",
+	"wait_message_1": "다시 상자를 사용하기 전에 ",
+	"wait_message_2": " 만큼 기다려 주세요.",
+	
+	"embed_title": "기묘한 상자를 사용하는 중...",
+	"embed_no_card": "**기묘한 상자**에 넣을 카드가 없습니다.",
+	
+	"confirm_message": "님, 인벤토리에 있는 임의의 **트레이딩 카드**를 **기묘한 상자**에 넣으시겠습니까?",
+	
+	"boxed_message_1": "<@",
+	"boxed_message_2": ">님이 인벤토리에서 **",
+	"boxed_message_3": "** 카드를 꺼내서 상자 안에 넣습니다. 카드가 들어가면서, **",
+	"boxed_message_4": "** 카드가 주머니에서 나타납니다! 이 카드의 축약명은 **",
+	"boxed_message_5": "**입니다.",
+	
+	"not_in_storage_1": "**",
+	"not_in_storage_2": "** 카드가 당신의 저장고에 저장되어 있지 않습니다!",
+	
+	"reaction_stopped": "**기묘한 상자**에 **트레이딩 카드**를 넣지 않기로 했습니다.",
+}

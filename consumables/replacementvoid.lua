@@ -2,6 +2,7 @@ local item = {}
 
 function item.run(uj, ujf, message, mt, interaction)
   local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/use/cons.json")
   wj.boxpool = { constable["aboveur"][math.random(#constable["aboveur"])] }
   for i = 1, 21 do
     table.insert(wj.boxpool, ptable["nothing"][math.random(#ptable["nothing"])])
@@ -14,7 +15,7 @@ function item.run(uj, ujf, message, mt, interaction)
   dpf.savejson(ujf, uj)
 
   local replying = interaction or message
-  replying:reply("As you put the **Replacement Void** into the **Peculiar Box**, you can feel the box suddenly get much warmer, and then as cold as ice within the blink of an eye.")
+  replying:reply(lang.replacementvoid_message)
 end
 
 return item

@@ -169,7 +169,8 @@
     "chance": 5,
     "command": "seasonbooster",
     "season": 1,
-    "text": "You tear open the **Nostalgic Booster.** Inside is some dust and un-embedded images."
+    "text_en": "You tear open the **Nostalgic Booster.** Inside is some dust and un-embedded images.",
+	"text_ko": "당신은 **Nostalgic Booster**의 봉지를 열었다. 먼지와 임베드되지 않은 이미지가 들어 있다."
   },
   "s2booster": {
     "name": "Customized Booster",
@@ -180,7 +181,8 @@
     "chance": 5,
     "command": "seasonbooster",
     "season": 2,
-    "text": "You tear open the **Customized Booster.** Inside is a pencil and some certificates."
+    "text_en": "You tear open the **Customized Booster.** Inside is a pencil and some certificates.",
+	"text_ko": "당신은 **Customized Booster**의 봉지를 열었다. 연필과 상장 몇개가 들어 있다."
   },
   "s3booster": {
     "name": "Pixelated Booster",
@@ -191,7 +193,8 @@
     "chance": 5,
     "command": "seasonbooster",
     "season": 3,
-    "text": "You tear open the **Pixelated Booster.** Inside is some old video games and a coffee bean."
+    "text_en": "You tear open the **Pixelated Booster.** Inside is some old video games and a coffee bean.",
+	"text_ko": "당신은 **Pixelated Booster**의 봉지를 열었다. 옛날 게임과 커피콩이 들어 있다."
   },
   "s4booster": {
     "name": "Released Booster",
@@ -202,7 +205,8 @@
     "chance": 5,
     "command": "seasonbooster",
     "season": 4,
-    "text": "You tear open the **Released Booster.** Inside is a new game engine and seven years."
+    "text_en": "You tear open the **Released Booster.** Inside is a new game engine and seven years.",
+	"text_ko": "당신은 **Released Booster**의 봉지를 열었다. 새로운 게임 엔진과 7년이 들어 있다."
   },
   "s5booster": {
     "name": "Alternative Booster",
@@ -213,7 +217,8 @@
     "chance": 5,
     "command": "seasonbooster",
     "season": 5,
-    "text": "You tear open the **Alternative Booster.** Inside is a damp cloth and optimized network code."
+    "text_en": "You tear open the **Alternative Booster.** Inside is a damp cloth and optimized network code.",
+	"text_ko": "당신은 **Alternative Booster**의 봉지를 열었다. 젖은 천과 최적화된 네트워크 코드가 들어 있다."
   },
   "s6booster": {
     "name": "Diverse Booster",
@@ -224,7 +229,8 @@
     "chance": 5,
     "command": "seasonbooster",
     "season": 6,
-    "text": "You tear open the **Diverse Booster.** Inside is some pins and a pair of programming socks."
+    "text_en": "You tear open the **Diverse Booster.** Inside is some pins and a pair of programming socks.",
+	"text_ko": "당신은 **Diverse Booster**의 봉지를 열었다. 몇몇 핀과 프로그래밍 양말 한 짝이 들어 있다."
   },
   "s7booster": {
     "name": "Animal Booster",
@@ -235,7 +241,8 @@
     "chance": 5,
     "command": "seasonbooster",
     "season": 7,
-    "text": "You tear open the **Animal Booster.** Inside is some fur and a sheet of economics homework."
+    "text_en": "You tear open the **Animal Booster.** Inside is some fur and a sheet of economics homework.",
+	"text_ko": "당신은 **Animal Booster**의 봉지를 열었다. 털과 경제학 숙제 한 장이 들어 있다."
   },
   "granolabar" : {
     "name": "Granola Bar",

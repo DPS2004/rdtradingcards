@@ -1,0 +1,14 @@
+{
+	"needs_plural_s": true,
+	"plural_s": "s",
+	
+	"embed_title": "'s Storage",
+	"embed_title_season_1": "'s Storage (Season",
+	"embed_title_season_2": ")",
+	"embed_contains": ", your storage contains:",
+	
+	"embed_page_1": "(Page ",
+	"embed_page_2": " of ",
+	"embed_page_3": ")",
+	
+}

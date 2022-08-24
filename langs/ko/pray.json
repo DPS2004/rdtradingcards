@@ -1,0 +1,18 @@
+{
+	"needs_plural_s": false,
+
+	"dm_message": "죄송하지만, DM에서는 기도할 수 없습니다!",
+	
+	"time_hour": "시간",
+	"time_plural_s": "",
+	"time_and": " ",
+	"time_minute": "분",
+	"wait_message_1": "다시 기도하기 전에 ",
+	"wait_message_2": " 만큼 기다려 주세요.",
+	
+	"prayed_message": "카드의 신들이 당신의 소원을 들어 주었습니다. **토큰** 1개가 주머니에서 나타납니다.",
+	
+	"checktoken_1": "당신의 주머니에 **토큰** ",
+	"checktoken_2": "개가 들어 있습니다.",
+	"checktoken_3": "",
+}

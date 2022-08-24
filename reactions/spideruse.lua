@@ -2,6 +2,7 @@ local reaction = {}
 function reaction.run(message, interaction, data, response)
   local ujf = "savedata/" .. message.author.id .. ".json"
   local uj = dpf.loadjson(ujf, defaultjson)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/use/lab/lab.json")
   print("Loaded uj")
 
   uj.timesused = uj.timesused and uj.timesused + 1 or 1
@@ -11,8 +12,8 @@ function reaction.run(message, interaction, data, response)
     print('user1 has accepted')
     interaction:reply{embed = {
       color = 0x85c5ff,
-      title = "Using Spider...",
-      description = "The **Spider** waves at you. You wave back. A true bond between the two of you has been formed!",
+      title = lang.using_spider,
+      description = lang.use_spider,
       image = {
         url = 'https://cdn.discordapp.com/attachments/829197797789532181/831930184482422824/spiderwave.png'
       }
@@ -23,8 +24,8 @@ function reaction.run(message, interaction, data, response)
     print('user1 has denied')
     interaction:reply{embed = {
       color = 0x85c5ff,
-      title = "Using Spiderweb...",
-      description = "There is a **Spiderweb** here, but there is no **Spider**. There never **was** and there never **will** be a **Spider** in this location.",
+      title = lang.using_spiderweb,
+      description = lang.use_spiderweb,
       image = {
         url = 'https://cdn.discordapp.com/attachments/829197797789532181/831930243249864704/hand.png'
       }

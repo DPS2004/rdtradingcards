@@ -1,0 +1,35 @@
+{
+	"needs_plural_s": false,
+	
+	"time_hour":  "시간",
+	"time_plural_s": "",
+	"time_and": " ",
+	"time_minute": "분",
+	"wait_message_1": "장착한 아이템을 바꾸기 전에 ",
+	"wait_message_2":  " 만큼 기다려 주세요.",
+	
+	"nopeeking_1": "죄송하지만, 데이터베이스에서 ",
+	"nopeeking_2": " 아이템을 찾을 수 없었거나, 당신이 해당 아이템을 갖고 있지 않습니다. 철자가 맞는지 확인해 주세요!",
+	
+	"nodatabase_1": "죄송하지만, 데이터베이스에서 ",
+	"nodatabase_2": " 아이템을 찾을 수 없었습니다. 철자가 맞는지 확인해 주세요!",
+	"donthave_1": "죄송하지만, 당신이 **",
+	"donthave_2": "** 아이템을 갖고 있지 않습니다.",
+	"already_equipped_1": "이미 **",
+	"already_equipped_2": "** 아이템이 장착되어 있습니다!",
+	
+	"prompt_1": "장착된 아이템을 **",
+	"prompt_2": "**에서 **",
+	"prompt_3": "**로 바꾸시겠습니까? 6시간마다 아이템을 바꾸실 수 있습니다.",
+	
+	"equipped_1": "님이 장착된 아이템을 **",
+	"equipped_2": "**으로 바꾸셨습니다.",
+	"equipped_3": "",
+	
+	"no_arguments": "죄송하지만, c!equip 명령어는 인수 1개를 필요로 합니다. 자세한 내용은 c!help를 확인해 주세요.",
+	
+	
+	"reaction_not_cooldown": "에러가 발생했습니다. 최근 다른 아이템을 장착하지 않았는지 확인해 주세요!",
+	"stopped_1": "님이 자신의 장착된 아이템을 바꾸지 않기로 했습니다.",
+	"stopped_2": ""
+}

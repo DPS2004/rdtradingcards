@@ -2,6 +2,7 @@ local item = {}
 
 function item.run(uj, ujf, message, mt, interaction)
   if not uj.conspt then uj.conspt = "none" end
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/use/cons.json")
   local replying = interaction or message
   if uj.conspt == "none" then
     uj.consumables["decaf"] = uj.consumables["decaf"] - 1
@@ -9,13 +10,13 @@ function item.run(uj, ujf, message, mt, interaction)
     uj.timesitemused = uj.timesitemused and uj.timesitemused + 1 or 1
 
     uj.conspt = "cafemixtape"
-    replying:reply("You set down the **Decaf** cup near the set of a medieval fantasy TV show being filmed. This will surely attract the attention of coffeeshop staff and regulars.")
+    replying:reply(lang.decaf_message)
     local randtime = math.random(4, 8)
     uj.lastpull = uj.lastpull - randtime
-    message:reply('Also, your pull cooldown was decreased by ' .. randtime .. ' hours!')
+    message:reply(lang.cooldown_decrease_1 .. randtime .. lang.cooldown_decrease_2)
     dpf.savejson(ujf, uj)
   else
-    replying:reply("You already have a pull affecting item in use! You decide against using the **Decaf** for now.")
+    replying:reply(lang.decaf_conspt)
   end
 end
 

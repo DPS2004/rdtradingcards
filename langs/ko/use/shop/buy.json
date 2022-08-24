@@ -1,0 +1,65 @@
+{
+	"needs_plural_s": false,
+	"no_tokens_1": "**늑대**가 찌푸린다. **",
+	"no_tokens_2": "** 아이템을 살 **토큰** ",
+	"no_tokens_3": "개를 갖고 있지 않다!",
+	
+	"out_of_stock_1": "**늑대**가 찌푸린다. 현재 **",
+	"out_of_stock_2": "** 아이템의 잔고가 없는 것 같다.",
+	
+	"too_many_requested_1": "**늑대**가 찌푸린다. **",
+	"too_many_requested_2": "** 아이템은 최대 ",
+	"too_many_requested_3": "개까지 살 수 있다.",
+	
+	"nopeeking_error_1": "**늑대**가 당신을 혼란스럽게 쳐다본다. ",
+	"nopeeking_error_2": "을(를) 팔고 있지 않거나, 당신의 요구를 잘못 알아들은 것 같다.",
+	
+	"donthave_1": "**늑대**가 당신을 혼란스럽게 쳐다본다. **",
+	"donthave_2": "**을(를) 팔고 있지 않은 것 같다.",
+	
+	"alreadyhave_1": "**늑대**가 당신을 혼란스럽게 쳐다본다. 이미 **",
+	"alreadyhave_2": "** 아이템을 갖고 있다.",
+	
+	"hasfixedmouse": "**늑대**가 찌푸린다. 이미 마우스를 갖고 있다.",
+	
+	"oneitemonly": "**늑대**가 찌푸린다. 장착 가능한 아이템은 1종류당 1개씩만 갖고 있을 수 있다.",
+	
+	"unknownrequest_1": "**늑대**가 당신을 혼란스럽게 쳐다본다. ",
+	"unknownrequest_2": "이(가) 무엇인지 모르는 것 같다.",
+	
+	"buying_item_1": "",
+	"buying_item_2": " 아이템을 사는 중...",
+	
+	"consumable_desc": "아이템의 설명이 적혀 있다.",
+	"consumable_buy_1": "<@",
+	"consumable_buy_2": ">님, 이 아이템 ",
+	"consumable_buy_3": "개를 **토큰** ",
+	"consumable_buy_4": "개로 구매하시겠습니까?",
+	"consumable_buy_5": "",
+	"plural_s": "",
+	
+	"item_desc": "아이템의 설명이 적혀 있다.",
+	"item_buy_1": "<@",
+	"item_buy_2": ">님, 이 아이템을 **토큰** ",
+	"item_buy_3": "개로 구매하시겠습니까?",
+	
+	"buying_card_1": "",
+	"buying_card_2": " 카드를 사는 중...",
+	
+	"card_desc": "카드의 설명이 적혀 있다.",
+	"card_buy_1": "<@",
+	"card_buy_2": ">님, 이 카드 ",
+	"card_buy_3": "장을 **토큰** ",
+	"card_buy_4": "개로 구매하시겠습니까?",
+	"card_buy_5": "",
+	
+	"error_not_in_stock": "에러가 발생했습니다. 사고 싶은 것이 아직 잔고가 있는지 확인해 주세요!",
+	"error_not_enough_tokens": "에러가 발생했습니다. 토큰이 충분한지 확인해 주세요!",
+	
+	"bought_message_1": "<@",
+	"bought_message_2": ">님이 가게에서 **",
+	"bought_message_3": "**을(를) 구매하셨습니다.",
+	
+	"denied_message_1": "**",
+	"denied_message_2": "**을(를) 구매하지 않기로 했습니다.",
+}

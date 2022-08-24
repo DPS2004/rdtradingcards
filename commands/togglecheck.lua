@@ -2,31 +2,32 @@ local command = {}
 function command.run(message, mt)
   print(message.author.name .. " did !togglecheck")
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/togglecheck.json","")
   if #mt ~= 1 then
-    message.channel:send("Sorry, but the c!togglecheck command expects 1 argument. You can either set to check **card** or **token**.")
+    message.channel:send(lang.no_arguments)
     return
   end
     
-  if (mt[1] == "card") then
+  if (mt[1] == "card" or mt[1] == "cards" or mt[1] == "카드") then
     uj.togglecheckcard = not uj.togglecheckcard
     if uj.togglecheckcard then
-      message.channel:send("Getting a card that you have none of in your storage will no longer be notified!")
+      message.channel:send(lang.card_disabled_message)
     else
-      message.channel:send("Getting a card that you have none of in your storage will now be notified!")
+      message.channel:send(lang.card_enabled_message)
     end
-  elseif (mt[1] == "token") then
+  elseif (mt[1] == "token" or mt[1] == "tokens" or mt[1] == "토큰") then
     uj.togglechecktoken = not uj.togglechecktoken
     if uj.togglechecktoken then
-      message.channel:send("How many tokens you have after receiving or giving will no longer be notified!")
+      message.channel:send(lang.token_disabled_message)
     else
-      message.channel:send("How many tokens you have after receiving or giving will now be notified!")
+      message.channel:send(lang.token_enabled_message)
     end
   else
     if mt[1] == "" then
-      message.channel:send("Sorry, but the c!togglecheck command expects 1 argument. You can either set to check **card** or **token**.")
+      message.channel:send(lang.no_arguments)
       return
     else
-      message.channel:send("Sorry, but I cannot find " .. mt[1] .. ". You can either set to check **card** or **token**.")
+      message.channel:send(lang.no_database_1 .. mt[1] .. lang.no_database_2)
     end
   end
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)

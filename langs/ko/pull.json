@@ -1,0 +1,33 @@
+{
+	"needs_plural_s": false,
+	
+	"dm_message": "죄송하지만, DM에서 카드를 뽑으실 수는 없습니다!",
+	
+	"time_hour":  "시간",
+	"time_plural_s": "",
+	"time_and": " ",
+	"time_minute": "분",
+	"wait_message_1": "다시 뽑기 전에 ",
+	"wait_message_2":  " 만큼 기다려 주세요.",
+	
+	"pulling_card": "카드를 뽑는 중...",
+	
+	"pulled_woah": "와!",
+	"pulled_woof": "멍!",
+	"pulled_yo": "요!",
+	"pulled_doubleclick": "더블클릭!",
+	"pulled_tripleclick": "트리플클릭!!!",
+	
+	"rdnot_message_1": "님이 What is RD Not? 카드를 얻으셨어요! What is RD Not? 카드가 ",
+	"rdnot_message_2": "인벤토리에 들어갑니다. 이 카드의 축약명은 rdnot입니다.\n",
+	
+	
+	"pulled_message_1": "님이 **",
+	"pulled_message_2": "** 카드를 얻으셨어요! **",
+	"pulled_message_3": "** 카드가 ",
+	"pulled_message_4": "인벤토리에 들어갑니다. 이 카드의 축약명은 **",
+	"pulled_message_5": "**입니다.",
+	
+	"not_in_storage_1": "**",
+	"not_in_storage_2": "** 카드가 당신의 저장고에 저장되어 있지 않습니다!",
+}

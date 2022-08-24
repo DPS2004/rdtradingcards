@@ -2,6 +2,7 @@ local command = {}
 function command.run(message, mt)
   print(message.author.name .. " did !medals")
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/medals.json","")
 
   local pagenumber = tonumber(mt[1]) and math.floor(mt[1]) or 1
   pagenumber = math.max(1, pagenumber)
@@ -28,17 +29,32 @@ function command.run(message, mt)
     if medaltable[i] then medalstring = medalstring .. medaltable[i] end
   end
   
-  message.channel:send{
-    content = message.author.mentionString .. ", you have the following medals:",
-    embed = {
-      color = 0x85c5ff,
-      title = message.author.name .. "'s Medals",
-      description = medalstring,
+  if uj.lang == "ko" then
+    message.channel:send{
+      content = message.author.mentionString .. lang.embed_contains,
+      embed = {
+        color = 0x85c5ff,
+        title = message.author.name .. lang.embed_title,
+        description = medalstring,
       footer = {
-        text =  "(Page " .. pagenumber .. " of " .. maxpn .. ")",
+        text =  lang.embed_page_1 .. maxpn .. lang.embed_page_2 .. pagenumber .. lang.embed_page_3,
         icon_url = message.author.avatarURL
       }
     }
   }
+  else
+    message.channel:send{
+      content = message.author.mentionString .. lang.embed_contains,
+      embed = {
+        color = 0x85c5ff,
+        title = message.author.name .. lang.embed_title,
+        description = medalstring,
+      footer = {
+        text =  lang.embed_page_1 .. pagenumber .. lang.embed_page_2 .. maxpn .. lang.embed_page_3,
+        icon_url = message.author.avatarURL
+      }
+    }
+  }
+  end
 end
 return command

@@ -1,0 +1,36 @@
+{
+	"needs_plural_s": false,
+	
+	"dm_message": "죄송하지만, DM에서는 아이템을 선물할 수 없습니다!",
+	"no_arguments": "죄송하지만, c!giveitem 명령어는 인수 2개 또는 3개를 필요로 합니다. 자세한 내용은 c!help를 확인해 주세요.",
+	
+	"no_user_1": "죄송하지만, 데이터베이스에서 ",
+	"no_user_2": "라는 사용자를 찾을 수 없었습니다. 철자가 맞는지, 해당 사용자가 적어도 카드 한 장은 뽑았는지 확인해 주세요.",
+	"same_user": "죄송하지만, 자신에게 뭔가를 줄 수는 없습니다!",
+	
+	"equippable_item": "죄송하지만, 장착 가능한 아이템은 선물할 수 없습니다!",
+	
+	"no_item_nopeeking_1": "죄송하지만, 데이터베이스에서 ",
+	"no_item_nopeeking_2": " 아이템를 찾을 수 없었거나, 당신이 해당 아이템을 갖고 있지 않습니다. 철자가 맞는지 확인해 주세요!",
+	
+	"no_item_1": "죄송하지만, 데이터베이스에서 ",
+	"no_item_2": " 아이템를 찾을 수 없었습니다. 철자가 맞는지 확인해 주세요!",
+	
+	"dont_have_1": "죄송하지만, 당신이 **",
+	"dont_have_2": "** 아이템을 갖고 있지 않습니다.",
+	
+	"not_enough_1": "죄송하지만, 당신이 갖고 있는 **",
+	"not_enough_2": "** 아이템 수가 부족합니다.",
+	
+	"gifted_message_1": "<@",
+	"gifted_message_2": ">님에게 **",
+	"gifted_message_3": "** 아이템을 ",
+	"gifted_message_4": "개 선물했습니다.",
+	"gifted_message_5": "",
+	
+	"recieved_message_1": "<@",
+	"recieved_message_2": ">님께서 **",
+	"recieved_message_3": "** 아이템를 ",
+	"recieved_message_4": "개 선물하셨습니다.",
+	"recieved_message_5": "",
+}

@@ -4,17 +4,18 @@ function reaction.run(message, interaction, data, response)
   local numcards = data.numcards
   local ujf = "savedata/" .. message.author.id .. ".json"
   local uj = dpf.loadjson(ujf, defaultjson)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/store.json", "")
   print("Loaded uj")
 
   if response == "yes" then
     print('user1 has accepted')
     if not uj.inventory[item1] then
-      interaction:reply("An error has occured. Please make sure that you still have the card in your inventory!")
+      interaction:reply(lang.reaction_dont_have)
       return
     end
 
     if uj.inventory[item1] < numcards then
-      interaction:reply("An error has occured. Please make sure that you still have enough **" .. cdb[item1].name .. "** cards in your inventory!")
+      interaction:reply(lang.reaction_not_enough_1 .. cdb[item1].name .. lang.reaction_not_enough_2)
       return
     end
 
@@ -27,7 +28,11 @@ function reaction.run(message, interaction, data, response)
 
     uj.timesstored = uj.timesstored and uj.timesstored + numcards or numcards
 
-    interaction:reply("<@" .. uj.id .. "> successfully put " .. uj.pronouns["their"] .. " " .. numcards .. " **" .. cdb[item1].name .. "** card" .. (numcards == 1 and "" or "s") .. " into storage.")
+	if uj.lang == "ko" then
+		interaction:reply(lang.stored_message_1 .. uj.id .. lang.stored_message_2 .. lang.stored_message_3 .. lang.stored_message_4 .. cdb[item1].name .. lang.stored_message_5 .. numcards .. lang.stored_message_6)
+	else
+		interaction:reply(lang.stored_message_1 .. uj.id .. lang.stored_message_2 .. uj.pronouns["their"] .. lang.stored_message_3 .. numcards .. lang.stored_message_4 .. cdb[item1].name .. lang.stored_message_5 .. (numcards == 1 and "" or lang.needs_plural_s == "true" and lang.plural_s) .. lang.stored_message_6)
+    end
     dpf.savejson(ujf,uj)
     cmd.checkcollectors.run(message, {}, message.channel)
     cmd.checkmedals.run(message, {}, message.channel)
@@ -35,7 +40,11 @@ function reaction.run(message, interaction, data, response)
 
   if response == "no" then
     print('user1 has denied')
-    interaction:reply("<@" .. uj.id .. "> has successfully stopped the storage of " .. uj.pronouns["their"] .. " **" .. cdb[item1].name .. "** card" .. (numcards == 1 and "" or "s") .. ".")
+	if uj.lang == "ko" then
+		interaction:reply(lang.reaction_stopped_1 .. uj.id .. lang.reaction_stopped_2 .. lang.reaction_stopped_3 .. cdb[item1].name .. lang.reaction_stopped_4 .. lang.reaction_stopped_5)
+    else
+		interaction:reply(lang.reaction_stopped_1 .. uj.id .. lang.reaction_stopped_2 .. uj.pronouns["their"] .. lang.reaction_stopped_3 .. cdb[item1].name .. lang.reaction_stopped_4 .. (numcards == 1 and "" or lang.needs_plural_s == "true" and lang.plural_s) .. lang.reaction_stopped_5)
+	end
   end
 end
 return reaction

@@ -1,27 +1,29 @@
 local command = {}
 function command.run(message, mt)
   print(message.author.name .. " did !givetoken")
+  local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/givetoken.json","")
   if not message.guild then
-    message.channel:send("Sorry, but you cannot give tokens in DMs!")
+    message.channel:send(lang.dm_message)
     return
   end
 
   if not (#mt == 1 or #mt == 2)  then
-    message.channel:send("Sorry, but the c!givetoken command expects 1 or 2 arguments. Please see c!help for more details.")
+    message.channel:send(lang.no_arguments)
     return
   end
 
-  local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
   local uj2f = usernametojson(mt[1])
 
   if not uj2f then
-    message.channel:send("Sorry, but I could not find a user named " .. mt[1] .. " in the database. Make sure that you have spelled it right, and that they have at least pulled a card to register!")
+    message.channel:send(lang.no_user_1 .. mt[1] .. lang.no_user_2)
     return
   end
 
   local uj2 = dpf.loadjson(uj2f,defaultjson)
+  local lang2 = dpf.loadjson("langs/" .. uj2.lang .. "/givetoken.json")
   if uj2.id == uj.id then
-    message.channel:send("Sorry, but you cannot give tokens to yourself!")
+    message.channel:send(lang.same_user)
     return
   end
 
@@ -37,7 +39,7 @@ function command.run(message, mt)
   end
 
   if uj.tokens < numtokens then
-    message.channel:send("Sorry, but you do not have enough tokens to do that!")
+    message.channel:send(lang.not_enough)
     return
   end
 
@@ -50,14 +52,58 @@ function command.run(message, mt)
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
   dpf.savejson(uj2f,uj2)
 
-  if not uj2.togglechecktoken then
-    message.channel:send {content = 'You have gifted ' .. numtokens .. ' **Token' .. (numtokens == 1 and "" or "s") ..'** to <@' .. uj2.id .. '>.\nThere are ' .. uj2.tokens .. ' **Token' .. (uj2.tokens == 1 and "" or "s") .. '** in ' .. uj2.pronouns["their"] .. ' pocket.'}
+  local isplural = numtokens ~= 1 and lang.needs_plural_s == true and lang.plural_s or ""
+  local isplural2 = numtokens ~= 1 and lang2.needs_plural_s == true and lang2.plural_s or ""
+  
+  local checktoken_isplural = uj.tokens ~= 1 and lang.needs_plural_s == true and lang.plural_s or ""
+  
+  if uj.lang == "ko" then
+    _G['giftedmessage'] = lang.gifted_message_1 .. uj2.id .. lang.gifted_message_2 .. numtokens .. lang.gifted_message_3
+    if uj.lang == uj2.lang then
+	  if not uj2.togglechecktoken then
+	    _G['giftedmessage'] = giftedmessage .. "\n" .. lang.checktoken2g_1 .. uj2.tokens .. lang.checktoken2g_2
+	  end
+	  _G['samelang'] = true
+	else
+	  _G['samelang'] = false
+	end
+	if not uj.togglechecktoken then
+      _G['giftedmessage'] = giftedmessage .. "\n" .. lang.checktoken_1 .. uj.tokens .. lang.checktoken_2
+	end
   else
-    message.channel:send {
-      content = 'You have gifted ' .. numtokens .. ' **Token' .. (numtokens == 1 and "" or "s") ..'** to <@' .. uj2.id .. '>.'}
+    _G['giftedmessage'] = lang.gifted_message_1 .. numtokens .. lang.gifted_message_2 .. isplural .. lang.gifted_message_3 .. uj2.id .. lang.gifted_message_4
+	if uj.lang == uj2.lang then
+	  if not uj2.togglechecktoken then
+	    _G['giftedmessage'] = giftedmessage .. "\n" .. lang.checktoken2g_1 .. uj2.tokens .. lang.checktoken2g_2 .. (uj2.tokens ~= 1 and lang.needs_plural_s == true and lang.plural_s or "") .. lang.checktoken2g_3 .. uj2.pronouns["their"] .. lang.checktoken2g_4	  
+	  end
+	  _G['samelang'] = true
+	else
+	  _G['samelang'] = false
+	end
+    if not uj.togglechecktoken then
+      _G['giftedmessage'] = giftedmessage .. "\n" .. lang.checktoken_1 .. uj.tokens .. lang.checktoken_2 .. checktoken_isplural .. lang.checktoken_3
+	end
   end
-  if not uj.togglechecktoken then
-    message.channel:send('You currently have ' .. uj.tokens .. ' **Token' .. (uj.tokens == 1 and "" or "s") .. '** left.')
+  if uj2.lang == "ko" then
+    _G['recievedmessage'] = lang2.recieved_message_1 .. uj.id .. lang2.recieved_message_2 .. numtokens .. lang2.recieved_message_3
+	if samelang ~= true then
+	  if not uj2.togglechecktoken then
+	    _G['recievedmessage'] = recievedmessage .. "\n" .. lang2.checktoken2r_1 .. uj2.tokens .. lang2.checktoken2r_2
+      end
+	end
+  else
+    _G['recievedmessage'] = lang2.recieved_message_1 .. uj.id .. lang2.recieved_message_2 .. numtokens .. lang2.recieved_message_3 .. isplural2 .. lang2.recieved_message_4
+    if samelang ~= true then
+	  if not uj2.togglechecktoken then
+	    _G['recievedmessage'] = recievedmessage .. "\n" .. lang2.checktoken2r_1 .. uj2.tokens .. lang2.checktoken2r_2 .. (uj2.tokens ~= 1 and lang2.needs_plural_s == true and lang2.plural_s or "") .. lang2.checktoken2r_3
+      end
+	end
+  end
+
+  if samelang == true then
+    message.channel:send {content = giftedmessage}
+  else
+    message.channel:send {content = giftedmessage .. "\n" .. recievedmessage}
   end
 end
 return command

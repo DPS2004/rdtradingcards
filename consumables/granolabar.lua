@@ -12,7 +12,8 @@ function item.run(uj, ujf, message, mt, interaction)
   uj.lastequip = uj.lastequip - 3
   dpf.savejson(ujf, uj)
   local replying = interaction or message
-  replying:reply("Your cooldowns have been reduced by 3 hours!")
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/use/cons.json")
+  replying:reply(lang.granolabar_message)
 end
 
 return item

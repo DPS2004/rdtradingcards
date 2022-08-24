@@ -1,0 +1,22 @@
+{
+	"dm_message": "Sorry, but you cannot throw in DMs!",
+	"no_arguments": "Sorry, but the c!throw command expects 1 argument. Please see c!help for more details.",
+	
+	"error_nopeeking_1": "Sorry, but I either could not find ",
+	"error_nopeeking_2": " in the database, or you do not have it. Make sure that you spelled it right!",
+	"no_item_1": "Sorry, but I could not find ",
+	"no_item_2": " in the database. Make sure that you spelled it right!",
+	"dont_have_1": "Sorry, but you don't have **",
+	"dont_have_2": "** in your inventory.",
+	
+	"thrown_message_1": " Type this command within ",
+	"thrown_message_2": " seconds to catch it!\n",
+	"thrown_command_1": "`c!catch ",
+	"thrown_command_2": "`",
+	
+	"card_fall": "card",
+	"item_fall": "item",
+	
+	"fall_message_1": " picked it up and put it back in ",
+	"fall_message_2": " inventory.",
+}

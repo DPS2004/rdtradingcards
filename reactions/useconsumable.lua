@@ -2,6 +2,7 @@ local reaction = {}
 function reaction.run(message, interaction, data, response)
   local ujf = "savedata/" .. message.author.id .. ".json"
   local uj = dpf.loadjson(ujf, defaultjson)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/use/cons.json")
   local request = data.crequest
   print("Loaded uj")
 
@@ -9,7 +10,7 @@ function reaction.run(message, interaction, data, response)
     print('user has accepted')
 
     if not uj.consumables[request] then
-      interaction:reply("An error has occured. Please make sure that you still have the item!")
+      interaction:reply(lang.no_item)
       return
     end
 
@@ -23,7 +24,7 @@ function reaction.run(message, interaction, data, response)
 
   if response == "no" then
     print('user has denied')
-    interaction:reply("You decide to not use the **".. consdb[data.crequest].name .."**.")
+    interaction:reply(lang.denied_message_1 .. consdb[data.crequest].name .. lang.denied_message_2)
   end
 end
 return reaction

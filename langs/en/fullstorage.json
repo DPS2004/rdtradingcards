@@ -1,0 +1,16 @@
+{
+	"needs_plural_s": true,
+	"plural_s": "s",
+	
+	"no_user_1": "Sorry, but I could not find a user named ",
+	"no_user_2": " in the database. Make sure that you have spelled it right, and that they have at least pulled a card to register!",
+	
+	"embed_title": "Full Storage",
+	"embed_title_season_1": "Full Storage (Season",
+	"embed_title_season_2": ")",
+	"embed_your": "Your",
+	"embed_s": "'s",
+	"embed_contains": " storage contains:",
+	"embed_conts": " (cont.)",
+	
+}

@@ -1,0 +1,53 @@
+{
+	"using_terminal": "Using Terminal...",
+	
+	"logged_in": "`ERROR: USER ALREADY LOGGED IN`",
+	"savedata_not_found": "`ERROR: DATA NOT FOUND.`",
+	"savedata_success": "`DATA LOCATED. GENERATING PRINTOUT`",
+	
+	"piss_message": "`peachy moment 😳😳😳`",
+	
+	"help_message": "`AVAILABLE COMMANDS: ",
+	
+	"stats_message": "The **Terminal** prints out a slip of paper. It reads:",
+	"stats_timespulled": "Times Pulled: ",
+	"stats_timesused": "Times Used: ",
+	"stats_timesitemused": "Items Used: ",
+	"stats_timeslooked": "Times Looked: ",
+	"stats_timesprayed": "Times Prayed: ",
+	"stats_timesshredded": "Times Shredded: ",
+	"stats_timesstored": "Times Stored: ",
+	"stats_timestraded": "Times Traded: ",
+	"stats_timesusedbox": "Times Peculiar Box has been Used: ",
+	"stats_timesdoubleclicked": "Times Doubleclicked: ",
+	"stats_timesdonated": "Tokens Donated: ",
+	"stats_timesitemgiven": "Items Given: ",
+	"stats_timesitemreceived": "Items Received: ",
+	"stats_timescardgiven": "Cards Given: ",
+	"stats_timescardreceived": "Cards Received: ",
+	"stats_timesthrown": "Cards Thrown: ",
+	"stats_timescaught": "Cards Caught: ",
+	"stats_timesprestiged": "Times Prestiged: ",
+	"stats_factory": "Remember, the Factory is watching!",
+	
+	"credits_title": "Credits",
+	
+	"logs_title": "Logs",
+	
+	"emaillogs_title": "Email Logs",
+	
+	"upgrade_prompt_1": "Will you put a **Token** into the **Terminal?** (tokens remaining: ",
+	"upgrade_prompt_2": ")",
+	
+	"donated_terminal_1": "The **Terminal** whirrs happily. A printout lets you know that ",
+	"donated_terminal_2": " tokens have been donated so far.",
+	
+	"upgrade_no_tokens": "Unfortunately, you have no **Tokens** to your name.",
+	
+	"pull_title": "PULLING CARD... ERROR!",
+	"pull_keycard": "",
+	"pull_jammed": "`ERROR: CARD PRINTER JAMMED. PLEASE WAIT.`",
+	
+	"unknown_1": "`COMMAND \"",
+	"unknown_2": "\" NOT RECOGNIZED`",
+}

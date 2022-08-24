@@ -1,14 +1,16 @@
 local command = {}
 function command.run(message, mt)
   print(message.author.name .. " did !give")
+  local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/give.json", "")
   
   if not message.guild then
-    message.channel:send("Sorry, but you cannot give cards in DMs!")
+    message.channel:send(lang.dm_message)
     return
   end
   
   if not (#mt == 2 or #mt == 3) then
-    message.channel:send("Sorry, but the c!give command expects 2 or 3 arguments. Please see c!help for more details.")
+    message.channel:send(lang.no_arguments)
     return
   end
   
@@ -32,7 +34,6 @@ function command.run(message, mt)
     return
   end
     
-  local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
   local uj2f = usernametojson(user_argument)
 
   if mt[3] == "all" then
@@ -40,14 +41,15 @@ function command.run(message, mt)
   end
   
   if not uj2f then
-    message.channel:send("Sorry, but I could not find a user named " .. user_argument .. " in the database. Make sure that you have spelled it right, and that they have at least pulled a card to register!")
+    message.channel:send(lang.no_user_1 .. user_argument .. lang.no_user_2)
     return
   end
 
   local uj2 = dpf.loadjson(uj2f, defaultjson)
+  local lang2 = dpf.loadjson("langs/" .. uj2.lang .. "/give.json","")
   
   if uj2.id == message.author.id then
-    message.channel:send("Sorry, but you cannot give something to yourself!")
+    message.channel:send(lang.same_user)
     return
   end
   
@@ -55,9 +57,9 @@ function command.run(message, mt)
   
   if not curfilename then
     if nopeeking then
-      message.channel:send("Sorry, but I either could not find the " .. thing_argument .. " card in the database, or you do not have it. Make sure that you spelled it right!")
+      message.channel:send(lang.no_item_nopeeking_1 .. thing_argument .. lang.no_item_nopeeking_2)
     else
-      message.channel:send("Sorry, but I could not find the " .. thing_argument .. " card in the database. Make sure that you spelled it right!")
+      message.channel:send(lang.no_item_1 .. thing_argument .. lang.no_item_2)
     end
     return
   end
@@ -65,16 +67,16 @@ function command.run(message, mt)
   if not uj.inventory[curfilename] then
     print("user doesnt have card")
     if nopeeking then
-      message.channel:send("Sorry, but I either could not find the " .. thing_argument .. " card in the database, or you do not have it. Make sure that you spelled it right!")
+      message.channel:send(lang.no_item_nopeeking_1 .. thing_argument .. lang.no_item_nopeeking_2)
     else
-      message.channel:send("Sorry, but you don't have the **" .. cdb[curfilename].name .. "** card in your inventory.")
+      message.channel:send(lang.dont_have_1 .. cdb[curfilename].name .. lang.dont_have_2)
     end
     return
   end
   
   if not (uj.inventory[curfilename] >= numcards) then
     print("user doesn't have enough cards")
-    message.channel:send("Sorry, but you do not have enough **" .. cdb[curfilename].name .. "** cards in your inventory.")
+    message.channel:send(lang.not_enough_1 .. cdb[curfilename].name .. lang.not_enough_2)
     return
   end
 
@@ -98,10 +100,28 @@ function command.run(message, mt)
   dpf.savejson(uj2f,uj2)
   print("saved user2 json with new card")
   
-  local isplural = numcards ~= 1 and "s" or ""
-  message.channel:send {
-    content = 'You have gifted ' .. numcards .. ' **' .. cdb[curfilename].name .. '** card' .. isplural ..' to <@' .. uj2.id .. '>.'
-  }
+  local isplural = numcards ~= 1 and lang.needs_plural_s == true and lang.plural_s or ""
+  local isplural2 = numcards ~= 1 and lang2.needs_plural_s == true and lang2.plural_s or ""
+  
+  if uj.lang == "ko" then
+    _G['giftedmessage'] = lang.gifted_message_1 .. uj2.id .. lang.gifted_message_2 .. cdb[curfilename].name .. lang.gifted_message_3 .. numcards .. lang.gifted_message_4 .. lang.gifted_message_5
+  else
+    _G['giftedmessage'] = lang.gifted_message_1 .. numcards .. lang.gifted_message_2 .. cdb[curfilename].name .. lang.gifted_message_3 .. isplural .. lang.gifted_message_4 .. uj2.id .. lang.gifted_message_5
+  end
+  if uj2.lang == "ko" then
+    _G['recievedmessage'] = lang2.recieved_message_1 .. uj.id .. lang2.recieved_message_2 .. cdb[curfilename].name .. lang2.recieved_message_3 .. numcards .. lang2.recieved_message_4 .. lang2.recieved_message_5
+  else
+    _G['recievedmessage'] = lang2.recieved_message_1 .. uj.id .. lang2.recieved_message_2 .. numcards .. lang2.recieved_message_3 .. cdb[curfilename].name .. lang2.recieved_message_4 .. isplural2 .. lang2.recieved_message_5
+  end
+  if uj.lang == uj2.lang then
+    message.channel:send {
+      content = giftedmessage
+	}
+  else
+    message.channel:send {
+      content = giftedmessage .. "\n" .. recievedmessage
+    }
+  end
 
 
 end

@@ -2,6 +2,8 @@ local command = {}
 function command.run(message, mt)
   print(message.author.name .. " did !fullinventory")
   local filename = "savedata/" .. message.author.id .. ".json"
+  local uj = dpf.loadjson(filename, defaultjson)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/fullinventory.json", "")
 
   local enableShortNames = false
   local filterSeason = false
@@ -27,7 +29,7 @@ function command.run(message, mt)
   end
 
   if not filename then
-    message.channel:send("Sorry, but I could not find a user named " .. mt[1] .. " in the database. Make sure that you have spelled it right, and that they have at least pulled a card to register!")
+    message.channel:send(lang.no_user_1 .. mt[1] .. lang.no_user_2)
     return
   end
 
@@ -245,18 +247,22 @@ function command.run(message, mt)
 	end
   end
 	
-  local embedtitle = "Full Inventory"
+  local embedtitle = lang.embed_title
   if filterSeason == true then
 	local filtertitle = ""
 	if multipleSeasons == true then
-		filtertitle = "s " .. seasonnum
+		if lang.needs_plural_s == true then
+			filtertitle = lang.plural_s .. " " .. seasonnum
+		else
+			filtertitle = " " .. seasonnum
+		end
 	else
 		filtertitle = " " .. seasonnum
 	end
-	embedtitle = "Full Inventory (Season" .. filtertitle .. ")"
+	embedtitle = lang.embed_title_season_1 .. filtertitle .. lang.embed_title_season_2
   end
   
-  local contentstring = (uj.id == message.author.id and "Your" or "<@" .. uj.id .. ">'s") .. " inventory contains:"
+  local contentstring = (uj.id == message.author.id and lang.embed_your or "<@" .. uj.id .. ">" .. lang.embed_s) .. lang.embed_contains
   local previnvstring = ''
   if filterSeason == true then
     if enableShortNames == true then
@@ -285,7 +291,7 @@ function command.run(message, mt)
       }
       invstring = invtable[i]
       contentstring = ''
-      embedtitle = embedtitle .. " (cont.)"
+      embedtitle = embedtitle .. embed_cont
     end
     previnvstring = invstring
   end

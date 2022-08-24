@@ -7,6 +7,7 @@ function command.run(message, mt)
     local ujf = ("savedata/" .. message.author.id .. ".json")
 
     local uj = dpf.loadjson(ujf, defaultjson)
+	local lang = dpf.loadjson("langs/" .. uj.lang .. "/equip.json", "")
     if not uj.equipped then
       uj.equipped = "nothing"
     end
@@ -27,21 +28,25 @@ function command.run(message, mt)
       local minutesleft = math.ceil(uj.lastequip * 60 - time:toMinutes() + 360.00)
       local durationtext = ""
       if math.floor(minutesleft / 60) > 0 then
-        durationtext = math.floor(minutesleft / 60) .. " hour"
-        if math.floor(minutesleft / 60) ~= 1 then
-          durationtext = durationtext .. "s"
-        end
+        durationtext = math.floor(minutesleft / 60) .. lang.time_hour
+        if lang.needs_plural_s == true then
+		  if math.floor(minutesleft / 60) ~= 1 then
+            durationtext = durationtext .. lang.time_plural_s
+          end
+		end
       end
       if minutesleft % 60 > 0 then
         if durationtext ~= "" then
-          durationtext = durationtext .. " and "
+          durationtext = durationtext .. lang.time_and
         end
-        durationtext = durationtext .. minutesleft % 60 .. " minute"
-        if minutesleft % 60 ~= 1 then
-          durationtext = durationtext .. "s"
-        end
+        durationtext = durationtext .. minutesleft % 60 .. lang.time_minute
+        if lang.needs_plural_s == true then
+		  if minutesleft % 60 ~= 1 then
+            durationtext = durationtext .. time_plural_s
+          end
+		end
       end
-      message.channel:send('Please wait ' .. durationtext .. ' before changing your equipped item. ')
+      message.channel:send(lang.wait_message_1 .. durationtext .. lang.wait_message_2)
       return
     end
 
@@ -50,47 +55,52 @@ function command.run(message, mt)
     
     if not curfilename then
       if nopeeking then
-        message.channel:send("Sorry, but I either could not find the " .. request .. " item in the database, or you do not have it. Make sure that you spelled it right!")
+        message.channel:send(lang.nopeeking_1 .. request .. lang.nopeeking_2)
       else
-        message.channel:send("Sorry, but I could not find the " .. request .. " item in the database. Make sure that you spelled it right!")
+        message.channel:send(lang.nodatabase_1 .. request .. lang.nodatabase_2)
       end
       return
     end
 
     if not uj.items[curfilename] then
       if nopeeking then
-        message.channel:send("Sorry, but I either could not find the " .. request .. " item in the database, or you do not have it. Make sure that you spelled it right!")
+        message.channel:send(lang.nopeeking_1 .. request .. lang.nopeeking_2)
       else
-        message.channel:send("Sorry, but you don't have the **" .. itemdb[curfilename].name .. "** item.")
+        message.channel:send(lang.donthave_1 .. itemdb[curfilename].name .. lang.donthave_2)
       end
       return
     end
 
     if uj.equipped == curfilename then
-      message.channel:send("You already have the **" .. itemdb[curfilename].name .. "** item equipped!")
+      message.channel:send(lang.already_equipped_1 .. itemdb[curfilename].name .. lang.already_equipped_2)
       return
     end
 
     --woo hoo
     print(uj.equipped)
     if not uj.skipprompts then
-      ynbuttons(message,"Would you like to change your equipped item from **" .. itemdb[uj.equipped].name .. "** to **" .. itemdb[curfilename].name .. "**? This can be done once every 6 hours.","equip",{newequip = curfilename})
+      ynbuttons(message,lang.prompt_1 .. itemdb[uj.equipped].name .. lang.prompt_2 .. itemdb[curfilename].name .. lang.prompt_3,"equip",{newequip = curfilename}, uj.id, uj.lang)
     else
       uj.equipped = curfilename
-      message.channel:send("<@" .. uj.id .. "> successfully set **" .. itemdb[curfilename].name .. "** as "..uj.pronouns["their"].." equipped item.")
-      uj.lastequip = time:toHours()
-      dpf.savejson(ujf,uj)
-      print('saved equipped as ' .. curfilename)
-
-      if uj.sodapt and uj.sodapt.equip then
+	  if uj.lang == "ko" then
+	    message.channel:send("<@" .. uj.id .. "> " .. lang.equipped_1 .. itemdb[curfilename].name .. lang.equipped_2 .. lang.equipped_3)
+      else
+	    message.channel:send("<@" .. uj.id .. "> " .. lang.equipped_1 .. itemdb[curfilename].name .. lang.equipped_2 ..uj.pronouns["their"].. lang.equipped_3)
+	  end
+	  uj.lastequip = time:toHours()
+	  
+	  if uj.sodapt and uj.sodapt.equip then
         uj.lastequip = uj.lastequip + uj.sodapt.equip
         uj.sodapt.equip = nil
         if uj.sodapt == {} then uj.sodapt = nil end
       end
+	  
+      dpf.savejson(ujf,uj)
+      print('saved equipped as ' .. curfilename)
     end
           
   else
-    message.channel:send("Sorry, but the c!equip command expects 1 argument. Please see c!help for more details.")
+    message.channel:send(lang.no_arguments)
   end
 end
 return command
