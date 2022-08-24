@@ -24,18 +24,22 @@ local time = sw:getTime()
     local minutesleft = math.ceil(uj.lastprayer * 1440 - time:toMinutes() + cooldown * 1440)
     local durationtext = ""
     if math.floor(minutesleft / 60) > 0 then
-      durationtext = math.floor(minutesleft / 60) .. " hour"
-      if math.floor(minutesleft / 60) ~= 1 then
-        durationtext = durationtext .. "s"
+      durationtext = math.floor(minutesleft / 60) .. lang.time_hour
+      if lang.needs_plural_s == true then
+        if math.floor(minutesleft / 60) ~= 1 then
+          durationtext = durationtext .. lang.time_plural_s
+        end
       end
     end
     if minutesleft % 60 > 0 then
       if durationtext ~= "" then
-        durationtext = durationtext .. " and "
+        durationtext = durationtext .. lang.time_and
       end
-      durationtext = durationtext .. minutesleft % 60 .. " minute"
-      if minutesleft % 60 ~= 1 then
-        durationtext = durationtext .. "s"
+      durationtext = durationtext .. minutesleft % 60 .. lang.time_minute
+      if lang.needs_plural_s == true then
+        if minutesleft % 60 ~= 1 then
+          durationtext = durationtext .. lang.time_plural_s
+        end
       end
     end
     message.channel:send(lang.wait_message_1 .. durationtext .. lang.wait_message_2)
