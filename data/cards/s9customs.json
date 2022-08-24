@@ -98,7 +98,7 @@
         },
         "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1007469730606612640/punchdrunk.png"
 	},
-		{
+	{
 		"chance": 2,
         "filename": "rbb",
         "name": "Reckless Battery Burns",
@@ -111,6 +111,74 @@
 			"deviltail": true
         },
         "embed": "https://media.discordapp.net/attachments/964283298140536912/1010163134570438746/recklessbatteryburns.gif"
-        }
+    },
+	{
+		"chance": 2,
+        "filename": "btwdance",
+        "name": "Bytheway Dance",
+        "type": "Super Rare",
+        "description": "(Level by Auth)",
+        "smell": "Sharks",
+        "season": 9,
+        "bonuses": {
+            "filmreel": true,
+			"rustysword": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1011795950345388113/btwdance.gif"
+    },
+	{
+		"chance": 2,
+        "filename": "grazetheroof",
+        "name": "Graze The Roof",
+        "type": "Super Rare",
+        "description": "(Level by Some J Name and Xeno)",
+        "smell": "Lawn Care",
+        "season": 9,
+        "bonuses": {
+			"rustysword": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1011802598560510063/grazetheroof.png"
+    },
+	{
+		"chance": 2,
+        "filename": "melonbread",
+        "name": "Melon Bread",
+        "type": "Super Rare",
+        "description": "(Level by DPS2004)",
+        "smell": "Lawn Care",
+        "season": 9,
+        "bonuses": {
+			"paddedstickersheet": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1011804731393441852/melonbread.png"
+    },
+	{
+		"chance": 2,
+        "filename": "diggydiggyhole",
+        "name": "Diggy Diggy Hole",
+        "type": "Super Rare",
+        "description": "(Level by Szprycha)",
+        "smell": "Jaffa Cakes",
+        "season": 9,
+        "bonuses": {
+			"paddedstickersheet": true,
+			"rustysword": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1011809261057228820/diggydiggyhole.png"
+    },
+	{
+		"chance": 2,
+        "filename": "steelmill",
+        "name": "Steel Mill (Noisemaker Remix)",
+        "type": "Super Rare",
+        "description": "(Level by notDonte and saladplainzone)",
+        "smell": "Eggplants",
+        "season": 9,
+        "bonuses": {
+			"charcoalpencil": true,
+			"cafemixtape": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1011811706349035680/steelmill.png"
+    }
     ]
 }
