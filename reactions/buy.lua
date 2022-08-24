@@ -2,6 +2,7 @@ local reaction = {}
 function reaction.run(message, interaction, data, response)
   local ujf = "savedata/" .. message.author.id .. ".json"
   local uj = dpf.loadjson(ujf, defaultjson)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/use/shop/buy.json","")
   local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
   print("Loaded uj")
 
@@ -22,13 +23,13 @@ function reaction.run(message, interaction, data, response)
     end
     
     if not checked then
-      interaction:reply("An error has occured. Please make sure that the thing you want is still in stock!")
+      interaction:reply(lang.error_not_in_stock)
       return
     end
     
     
     if uj.tokens < data.sprice then
-      interaction:reply("An error has occured. Please make sure that you have enough tokens!")
+      interaction:reply(lang.error_not_enough_tokens)
       return
     end
 
@@ -61,12 +62,12 @@ function reaction.run(message, interaction, data, response)
     
     dpf.savejson(ujf,uj)
     dpf.savejson("savedata/shop.json", sj)
-    interaction:reply("<@" .. uj.id .. "> successfully bought **" .. data.sname .. "** from the shop.")
+    interaction:reply(lang.bought_message_1 .. uj.id .. lang.bought_message_2 .. data.sname .. lang.bought_message_3)
   end
 
   if response == "no" then
     print('user1 has denied')
-    interaction:reply("You decide to not buy the **".. data.sname .."**.")
+    interaction:reply(lang.denied_message_1 .. data.sname .. lang.denied_message_2)
   end
 end
 return reaction

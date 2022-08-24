@@ -1,0 +1,36 @@
+{
+	"request_spider_1": "거미",
+	"request_spider_2": "거미줄",
+	"spider_alert": "거미를 봐도 괜찮으신가요?",
+	"using_spider": "거미를 사용하니...",
+	"use_spider": "**거미**가 당신에게 손을 흔든다. 당신은 거미에게 손을 흔든다. 둘 사이에 진정한 유대가 쌓였다!",
+	"using_spiderweb": "거미줄을 사용하니...",
+	"use_spiderweb": "**거미줄**이 있지만, **거미**는 없다. **거미**는 이 장소에 **있었던** 적도 절대 없고 **앞으로도** 절대 있지 않을 것이다.",
+	
+	"request_table": "탁자",
+	"using_table": "탁자를 사용하니...",
+	"use_table": "당신은 **탁자**의 먼지를 턴다. 하지만 당신이 다른 곳을 보자 마자, **탁자**가 다시 먼지로 뒤덮였다.",
+	
+	"request_poster_1": "포스터",
+	"request_poster_2": "고양이 포스터",
+	"request_poster_3": "고양이포스터",
+	"using_poster_before801": "무슨 포스터?",
+	"using_poster": "고양이 포스터를 사용하니...",
+	"use_poster": "**고양이 포스터**를 뜯어 내고, 옆에 다시 붙이니, **스캐너**가 드러난다.",
+	
+	"request_hole_1": "쥐구멍",
+	"request_hole_2": "쥐",
+	"request_hole_3": "마우스",
+	"using_hole": "쥐구멍을 사용하는 중...",
+	"use_hole_mouse": "님, 당신의 **Broken Mouse**를 **쥐구멍** 안에 넣으실래요?",
+	"use_hole": "**쥐구멍** 안에 넣을 것이 없다.",
+	
+	"used_hole": "**Broken Mouse**를 구멍 안에 넣으려고 마우스를 바닥에 놓지만, 두 회색 손이 마우스를 잡아서 구멍 안에 들어가 버린다. 쥐가 톱을 사용해서, 아주 위험하게 마우스를 여는 것이 들린다! 몇분간의 조립을 거쳐서, 쥐가 새로 발견된 기능이 적힌 초록색 스티커와 함께 **Fixed Mouse**를 밀어낸다. 당신은 **Fixed Mouse**를 다른 아이템들과 같이 놓는다.",
+	"denied_hole": "**Broken Mouse**를 **쥐구멍** 안에 넣지 않기로 했다.",
+	
+	"request_box_1": "기묘한 상자",
+	"request_box_2": "상자",
+	"request_box_3": "기묘한상자",
+	
+	"request_terminal": "터미널",
+}

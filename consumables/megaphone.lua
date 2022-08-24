@@ -1,6 +1,7 @@
 local item = {}
 
 function item.run(uj, ujf, message, mt, interaction)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/use/cons.json")
   local cardchannel = privatestuff.cardchannel or '793993844789870603'
   if not uj.conspt then uj.conspt = "none" end
   if #mt ~= 1 or message.attachment then
@@ -17,18 +18,18 @@ function item.run(uj, ujf, message, mt, interaction)
     if message.attachment then
       local res, body = http.request("GET", message.attachment.url)
       newmessage = client:getChannel(cardchannel):send {
-        content = "A message comes through the **Megaphone**:\n" .. text,
+        content = lang.megaphone_message .. "\n" .. text,
         file = { message.attachment.filename, body }
       }
       newmessage:hideEmbeds()
     else
-      newmessage = client:getChannel(cardchannel):send("A message comes through the **Megaphone**:\n" .. text)
+      newmessage = client:getChannel(cardchannel):send(lang.megaphone_message .. "\n" .. text)
       newmessage:hideEmbeds()
     end
     handlemessage(newmessage, text)
   else
     local replying = interaction or message
-    replying:reply("The megaphone was not used. Please attach a message with c!use megaphone/(YOUR MESSAGE HERE)")
+    replying:reply(lang.megaphone_unused)
   end
 end
 

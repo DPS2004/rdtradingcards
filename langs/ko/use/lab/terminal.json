@@ -1,0 +1,54 @@
+{
+	"using_terminal": "터미널을 사용하니...",
+	"using_terminal_upgrade": "터미널을 사용하는 중...",
+	
+	"logged_in": "`에러: 이미 로그인됨`",
+	"savedata_not_found": "`에러: 데이터를 찾을 수 없음.`",
+	"savedata_success": "`데이터 발견됨. 출력물 생성중`",
+	
+	"piss_message": "`peachy moment 😳😳😳`",
+	
+	"help_message": "`사용 가능한 명령어: ",
+	
+	"stats_message": "**터미널**이 종이 한 장을 출력한다. 아래와 같은 내용이 적혀 있다.",
+	"stats_timespulled": "뽑은 카드 수: ",
+	"stats_timesused": "사용한 횟수: ",
+	"stats_timesitemused": "사용한 아이템 수: ",
+	"stats_timeslooked": "본 횟수: ",
+	"stats_timesprayed": "기도한 횟수: ",
+	"stats_timesshredded": "찢은 카드 수: ",
+	"stats_timesstored": "저장한 카드 수: ",
+	"stats_timestraded": "교환한 횟수: ",
+	"stats_timesusedbox": "기묘한 상자를 사용한 횟수: ",
+	"stats_timesdoubleclicked": "더블클릭한 횟수: ",
+	"stats_timesdonated": "기부한 토큰 수: ",
+	"stats_timesitemgiven": "준 아이템 수: ",
+	"stats_timesitemreceived": "받은 아이템 수: ",
+	"stats_timescardgiven": "준 카드 수: ",
+	"stats_timescardreceived": "받은 카드 수: ",
+	"stats_timesthrown": "던진 카드 수: ",
+	"stats_timescaught": "잡은 카드 수: ",
+	"stats_timesprestiged": "프리스티지한 횟수: ",
+	"stats_factory": "기억하라. 카드 공장이 당신을 지켜보고 있다.",
+	
+	"credits_title": "크레딧",
+	
+	"logs_title": "로그",
+	
+	"emaillogs_title": "이메일 로그",
+	
+	"upgrade_prompt_1": "**터미널** 안에 **토큰** 1개를 넣으시겠습니까? (남은 토큰: ",
+	"upgrade_prompt_2": "개)",
+	
+	"donated_terminal_1": "**터미널**이 행복하게 윙윙거린다. 지금까지 토큰 ",
+	"donated_terminal_2": "개가 기부되었다고 터미널이 출력한다.",
+	
+	"upgrade_no_tokens": "아쉽게도, 기부할 **토큰**이 없다.",
+	
+	"pull_title": "카드를 뽑는 중... 에러!",
+	"pull_keycard": "",
+	"pull_jammed": "`에러: 카드 프린터 막힘. 기다리기 바람.`",
+	
+	"unknown_1": "`\"",
+	"unknown_2": "\" 명령어 인식되지 않음`",
+}

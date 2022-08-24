@@ -1,0 +1,14 @@
+{
+	"needs_plural_s": false,
+	"plural_s": "",
+	
+	"embed_title": "님의 저장고",
+	"embed_title_season_1": "님의 저장고 (시즌",
+	"embed_title_season_2": ")",
+	"embed_contains": "님의 저장고입니다.",
+	
+	"embed_page_1": "(",
+	"embed_page_2": "페이지 중 ",
+	"embed_page_3": "페이지)",
+	
+}

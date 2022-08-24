@@ -1,0 +1,27 @@
+{
+	"request_machine_1": "이상한 기계",
+	"request_machine_2": "기계",
+	"request_machine_3": "이상한기계",
+	
+	"request_hole": "구멍",
+	"hole_nodonations": "**구멍**은 현재 기부를 받고 있지 않는 것 같다.",
+	"using_hole": "구멍을 사용하는 중...",
+	"use_hole_1": "**구멍** 안에 **토큰** 1개을 넣으시겠습니까? (남은 토큰: ",
+	"use_hole_2": "개)",
+	"hole_notokens": "**구멍**에게 줄 토큰이 없다.",
+	
+	"request_panda": "판다",
+	"panda_ssss45": "**판다**가 당신의 **Cool Hat**을 살펴 보고, **Shaun's Server Statistics Sampling #45** 카드를 저장고에 넣어서 경의를 표한다.",
+	
+	"request_throne": "왕좌",
+	"throne_by_panda": "**왕좌**는 이미 **판다**에게 사용되고 있는 것으로 보인다.",
+	
+	"request_necklace": "목걸이",
+	"wash_necklace": "당신은 **Faithful Necklace**를 씻고, 바로 **버려진 연구소**의 더러운 바닥에 떨어뜨린다. 이런.",
+	
+	"request_ladder": "사다리",
+	"discovered_lab": "새로운 지역 발견: 연구소",
+	"using_ladder": "사다리를 사용하니...",
+	"used_ladder": "**사다리**를 타고 내려가면서, 큰 컴퓨터 소리가 들리기 시작한다. 바닥에 닿으면서, 그 정체가 드러났다. **버려진 연구소**의 중앙에 있는, 아주 큰 터미널이었다.",
+	"using_ladder_small": "당신은 **사다리**를 타고 내려가려고 한다. 불행하게도, **구멍**은 당신이 들어갈 수 있을 정도로 크지는 않다. 지금 들어가면, 구멍에서 벗어날 수 없을 것이다.",
+}

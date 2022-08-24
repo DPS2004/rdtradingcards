@@ -2,6 +2,7 @@ local reaction = {}
 function reaction.run(message, interaction, data, response)
   local ujf = "savedata/" .. message.author.id .. ".json"
   local uj = dpf.loadjson(ujf, defaultjson)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/prestige.json", "")
   print("Loaded uj")
 
   if response == "yes" then
@@ -28,13 +29,13 @@ function reaction.run(message, interaction, data, response)
     cmd.checkcollectors.run(message, nil, message.channel)
     cmd.checkmedals.run(message, nil, message.channel)
 
-    message:reply("You feel your storage getting a lot lighter. The **RDCards** card gets added to your storage.")
+    message:reply(lang.prestiged_message)
 
   end
 
   if response == "no" then
     print('user1 has denied')
-    interaction:reply("You decide not to prestige.")
+    interaction:reply(lang.denied_message)
   end
 end
 return reaction

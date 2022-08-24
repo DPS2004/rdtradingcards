@@ -1,0 +1,28 @@
+{
+	"needs_plural_s": true,
+	
+	"time_hour":  " hour",
+	"time_plural_s": "s",
+	"time_and": " and ",
+	"time_minute": " minute",
+	"wait_message_1": "Please wait ",
+	"wait_message_2": " before using the box again.",
+	
+	"embed_title": "Using Peculiar Box...",
+	"embed_no_card": "You do not have any cards to put into the **Peculiar Box**.",
+	
+	"confirm_message": ", will you put a random **Trading Card** from your inventory in the **Peculiar Box?**",
+	
+	"boxed_message_1": "<@",
+	"boxed_message_2": "> grabs a **",
+	"boxed_message_3": "** card from ",
+	"boxed_message_4": " inventory and places it inside the box. As it goes in, a **",
+	"boxed_message_5": "** card shows up in ",
+	"boxed_message_6": " pocket! The shorthand form of this card is **",
+	"boxed_message_7": "**.",
+	
+	"not_in_storage_1": "You do not have the **",
+	"not_in_storage_2": "** card in your storage!",
+	
+	"reaction_stopped": "You decide to not put a **Trading Card** in the **Peculiar Box**.",
+}

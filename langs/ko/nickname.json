@@ -1,0 +1,39 @@
+{
+	"add_nothing": "추가할 별명을 입력해 주세요.",
+	
+	"add_id": "자신의 ID를 별명으로 설정할 수는 없습니다!",
+	"add_already_1": "이미 ",
+	"add_already_2": "이(가) 별명으로 등록되어 있습니다!",
+	"add_other_user": "죄송하지만, 이미 다른 사람이 해당 별명을 사용하고 있습니다.",
+	"add_invalid": "죄송하지만, 해당 별명은 유효하지 않습니다.",
+	"add_too_many_1": "죄송하지만, 별명은 ",
+	"add_too_many_2": "개까지 등록할 수 있습니다.",
+	
+	"add_success_1": "",
+	"add_success_2": "을(를) 교환/선물 별명으로 설정했습니다!",
+	
+	"remove_nothing": "제거할 별명을 입력해 주세요.",
+	
+	"remove_least_one": "별명은 최소 1개 있어야 합니다!",
+	"remove_no_such_1": "별명에 ",
+	"remove_no_such_2": "이/가 존재하지 않습니다. 철자가 맞는지 확인해 주세요!",
+	
+	"remove_success_1": "",
+	"remove_success_2": "을(를) 교환/선물 별명에서 제거했습니다!",
+	
+	"reset_success_1": "교환/선물 별명이 ",
+	"reset_success_2": "로 재설정되었습니다!",
+	
+	"check_no_user_1": "죄송하지만, 데이터베이스에서 ",
+	"check_no_user_2": "라는 사용자를 찾을 수 없었습니다. 철자가 맞는지, 해당 사용자가 적어도 카드 한 장은 뽑았는지 확인해 주세요.",
+	
+	"check_yourself_singular": "당신의 교환/선물 별명 목록입니다.\n",
+	"check_yourself_plural": "당신의 교환/선물 별명 목록입니다.\n",
+	"check_other_singular_1": "이(가) 해당 유저의 유일한 교환/선물 별명입니다.",
+	"check_other_singular_2": "",
+	
+	"check_other_plural": "님의 교환/선물 별명 리스트입니다.\n",
+	
+	"invalid_command_1": "죄송하지만, 명령어에 ",
+	"invalid_command_2": "가 존재하지 않습니다.",
+}

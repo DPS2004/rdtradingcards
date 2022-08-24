@@ -1,0 +1,35 @@
+{
+	"needs_plural_s": true,
+	
+	"time_hour":  " hour",
+	"time_plural_s": "s",
+	"time_and": " and ",
+	"time_minute": " minute",
+	"wait_message_1": "Please wait ",
+	"wait_message_2":  " before changing your equipped item.",
+	
+	"nopeeking_1": "Sorry, but I either could not find the ",
+	"nopeeking_2": " item in the database, or you do not have it. Make sure that you spelled it right!",
+	
+	"nodatabase_1": "Sorry, but I could not find the ",
+	"nodatabase_2": " item in the database. Make sure that you spelled it right!",
+	"donthave_1": "Sorry, but you don't have the **",
+	"donthave_2": "** item.",
+	"already_equipped_1": "You already have the **",
+	"already_equipped_2": "** item equipped!",
+	
+	"prompt_1": "Would you like to change your equipped item from **",
+	"prompt_2": "** to **",
+	"prompt_3": "**? This can be done once every 6 hours.",
+	
+	"equipped_1": "successfully set **",
+	"equipped_2": "** as ",
+	"equipped_3": " equipped item.",
+	
+	"no_arguments": "Sorry, but the c!equip command expects 1 argument. Please see c!help for more details.",
+	
+	
+	"reaction_not_cooldown": "An error has occured. Please make sure that you didn't recently equip another item!",
+	"stopped_1": "has successfully stopped the changing of ",
+	"stopped_2": " equipped item."
+}

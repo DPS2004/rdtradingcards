@@ -1,0 +1,29 @@
+{
+	"needs_plural_s": true,
+	
+	"looking_at_shop": "Looking at Shop...",
+	"looking_shop": "The **Quaint Shop** is filled with cards and card accessories, all sold by the **Wolf**. It seems to be doing a pretty good job at running the business. As you look around, you also see a framed **Photo** hangning on the wall. The **Ghost** in the corner is standing guard, watching over the store.",
+	"shop_selling": "The Shop is selling:",
+	
+	"shop_token_1": " token",
+	
+	"checktoken_1": "You currently have ",
+	"checktoken_2": " **Token",
+	"checktoken_3": "**.",
+	"plural_s": "s",
+	
+	"time_hour": " hour",
+	"time_and": " and ",
+	"time_minute": " minute",
+	
+	"looking_at_wolf": "Looking at Wolf...",
+	"looking_wolf_1": "The **Wolf** looks up and gives a friendly wave. They seem quite content with where they are at, but you can see a small amount of worry in their eyes.\n\nWhen asked about the **Shop**, the **Wolf** tells you that it's going to be restocked in ",
+	"looking_wolf_2": ".",
+	
+	"looking_at_ghost": "Looking at Ghost...",
+	"looking_ghost": "The **Ghost** stands idily by, making sure the shop remains safe. You can tell it is constantly internally screaming.",
+	
+	"looking_at_photo": "Looking at Photo...",
+	"looking_photo": "As you gaze into the framed **Photo**, the dog's odd triangular shape reminds you of the Pyrowmid you've just been from.",
+	"looking_photo_ookami": " The rotated figure may have been a result from your collar.",
+}

@@ -6,6 +6,7 @@ function command.run(message, mt,mc)
   print("checking collector's drops for ".. message.author.name)
   local ujf = ("savedata/" .. message.author.id .. ".json")
   local uj = dpf.loadjson(ujf, defaultjson)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/checkcollectors.json", "")
   for i,v in ipairs(coll) do
     print("checking for " .. v.receive)
     if not uj.storage[v.receive] then
@@ -27,15 +28,15 @@ function command.run(message, mt,mc)
         if not cdb[newcard].spoiler then
           mc:send{embed = {
             color = 0x85c5ff,
-            title = "Congratulations!",
-            description = 'After collecting and storing some other cards, '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to '..uj.pronouns["their"]..' storage.',
+            title = lang.congratulations,
+            description = lang.gotcard_1 .. message.author.mentionString .. lang.gotcard_2 .. ncn .. lang.gotcard_3 .. ncn .. lang.gotcard_4 ..uj.pronouns["their"].. lang.gotcard_5,
             image = {
               url = cdb[newcard].embed
             }
           }}
         else
           mc:send{
-          content = '**Congratulations!**\nAfter collecting and storing some other cards, '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to '..uj.pronouns["their"]..' storage.',
+          content = "**" .. lang.congratulations .. "**\n" .. lang.gotcard_1 .. message.author.mentionString .. lang.gotcard_2 .. ncn .. lang.gotcard_3 .. ncn .. lang.gotcard_4 .. uj.pronouns["their"] .. lang.gotcard_5,
           file = "card_images/SPOILER_" .. newcard .. ".png"
         }
         end

@@ -2,6 +2,7 @@ local reaction = {}
 function reaction.run(message, interaction, data, response)
   local ujf = "savedata/" .. message.author.id .. ".json"
   local uj = dpf.loadjson(ujf, defaultjson)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/use/lab/lab.json")
   print("Loaded uj")
 
   if response == "yes" then
@@ -10,13 +11,13 @@ function reaction.run(message, interaction, data, response)
     uj.items.fixedmouse = true
     uj.equipped = "fixedmouse"
 
-    interaction:reply('You start to push your **Broken Mouse** into the hole, but two grey furry hands pull it in the rest of the way. You can hear the mouse using a saw to open up the **Broken Mouse**, which seems terribly unsafe! After a few minutes of tinkering, the mouse pushes out a **Fixed Mouse**, complete with a green sticker denoting its newfound functionality. You put the **Fixed Mouse** with your other items.')
+    interaction:reply(lang.used_hole)
     dpf.savejson(ujf,uj)
   end
   
   if response == "no" then
     print('user1 has denied')
-    interaction:reply("You decide to not put the **Broken Mouse** in the **Mouse Hole**.")
+    interaction:reply(lang.denied_hole)
   end
 end
 return reaction

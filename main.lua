@@ -11,6 +11,7 @@ _G["fs"] = require('fs')
 _G["tracery"] = require('libs/tracery')
 _G["dpf"] = require('libs/dpf')
 _G["inspect"] = require('libs/inspect')
+_G["prosel"] = require('libs/prosel')
 _G["vips"] = require('vips')
 _G["http"] = require('coro-http')
 

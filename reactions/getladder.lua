@@ -2,6 +2,7 @@ local reaction = {}
 function reaction.run(message, interaction, data, response)
   local ujf = "savedata/" .. message.author.id .. ".json"
   local uj = dpf.loadjson(ujf, defaultjson)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/use/pyrowmid/machine.json")
   print("Loaded uj")
   local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
 
@@ -9,20 +10,20 @@ function reaction.run(message, interaction, data, response)
     print('user1 has accepted')
 
     if uj.tokens < 4 then
-      interaction:reply("An error has occured. Please make sure that you still have enough tokens!")
+      interaction:reply(lang.error_no_tokens)
       return
     end
 
     uj.tokens = uj.tokens - 4
     wj.ws = 507 -- see setworldstate.lua
-    interaction:reply('After depositing 4 **Tokens** and turning the crank, a capsule comes out of the **Strange Machine**. Inside it is the **Ladder!**! You put the **Ladder** in the hole. In addition, the **Strange Machine** seems to have calmed down.')
+    interaction:reply(lang.used_machine_ladder)
     dpf.savejson(ujf,uj)
     dpf.savejson("savedata/worldsave.json", wj)
   end
 
   if response == "no" then
     print('user1 has denied')
-    interaction:reply("You decide to not use the **Strange Machine**.")
+    interaction:reply(lang.denied_message)
   end
 end
 return reaction

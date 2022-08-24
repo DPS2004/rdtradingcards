@@ -1,6 +1,7 @@
 local item = {}
 
 function item.run(uj, ujf, message, mt, interaction)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/use/cons.json")
   local time = sw:getTime()
   uj.consumables["caffeinatedsoda"] = uj.consumables["caffeinatedsoda"] - 1
   if uj.consumables["caffeinatedsoda"] == 0 then uj.consumables["caffeinatedsoda"] = nil end
@@ -32,7 +33,7 @@ function item.run(uj, ujf, message, mt, interaction)
   uj.lastequip = -12
   dpf.savejson(ujf, uj)
   local replying = interaction or message
-  replying:reply("Your cooldowns have been removed! For now...")
+  replying:reply(lang.caffeinatedsoda_message)
 end
 
 return item

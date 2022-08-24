@@ -58,12 +58,14 @@ function command.run(message, mt, overwrite)
       lastbox = -24,
       tokens = 0,
       pronouns = {
+		selection = "they",
         their = "their",
         them = "them",
         theirself = "themself",
         they = "they",
         theirs = "theirs"
       },
+	  lang = "en",
       room = 0,
       -- chickstats = {
       --   bodycolor = {255, 250, 0},
@@ -215,10 +217,9 @@ function command.run(message, mt, overwrite)
     _G['seasontable'] = {}
     _G['cdb'] = {}
     _G['constable'] = {}
-	
+    
     _G['ptablenc'] = {}
     _G['constablenc'] = {}
-	
     local iterateitemdb = itemdb
     iterateitemdb["aboveur"] = {}
     iterateitemdb["quantummouse"] = {}
@@ -228,8 +229,8 @@ function command.run(message, mt, overwrite)
     for k, q in pairs(iterateitemdb) do
       ptable[k] = {}
       constable[k] = {}
-	  
-	  ptablenc[k] = {}
+      
+      ptablenc[k] = {}
       constablenc[k] = {}
       for i, v in ipairs(cdata.groups) do
         for w, x in ipairs(v.cards) do
@@ -238,16 +239,16 @@ function command.run(message, mt, overwrite)
             cmult = 10 -- might tweak this??
             for y=1, (cdata.basemult * v.basechance * x.chance) do
               table.insert(constable[k],x.filename)
-			  if x.season <= 8 then
-				table.insert(constablenc[k],x.filename)
-			  end
+              if x.season <= 8 then
+                  table.insert(constablenc[k],x.filename)
+              end
             end
           end
           for y = 1, (cdata.basemult * v.basechance * x.chance * cmult) do
             table.insert(ptable[k],x.filename)
-			if x.season <= 8 then
-				table.insert(ptablenc[k],x.filename)
-			end
+            if x.season <= 8 then
+                table.insert(ptablenc[k],x.filename)
+            end
           end
           if k == "nothing" then
             if not constable["season"..x.season] then
@@ -256,7 +257,6 @@ function command.run(message, mt, overwrite)
             end
             for y = 1, (cdata.basemult * v.basechance * x.chance) do
               table.insert(constable["season"..x.season], x.filename)
-			  
             end
           end
           if k == "quantummouse" and (x.type == "Rare" or x.type == "Super Rare" or x.type == "Ultra Rare") then
@@ -514,8 +514,9 @@ function command.run(message, mt, overwrite)
       end
     end
 
-    _G['ynbuttons'] = function(message, content, etype, data, userid)
+    _G['ynbuttons'] = function(message, content, etype, data, userid, lang)
       local messagecontent, messageembed
+	  local langfile = dpf.loadjson("langs/" .. lang .. "/ynbuttons.json", "")
 
       if type(content) == "table" then
         messageembed = content
@@ -526,14 +527,14 @@ function command.run(message, mt, overwrite)
       print('making yesbutton')
       local yesbutton = discordia.Button {
         id = "yes",
-        label = "Yes",
+        label = langfile.button_yes,
         style = "success"
       }
       
       print("making nobutton")
       local nobutton = discordia.Button {
         id = "no",
-        label = "No",
+        label = langfile.button_no,
         style = "danger"
       }
 
@@ -548,7 +549,9 @@ function command.run(message, mt, overwrite)
         local reactionid = userid or message.author.id
 
         if interaction.user.id ~= reactionid then
-          interaction:reply("Sorry, but you cannot react to this button!", true)
+		  local uj2 = dpf.loadjson("savedata/" .. interaction.user.id .. ".json", defaultjson)
+		  local langfile2 = dpf.loadjson("langs/" .. uj2.lang .. "/ynbuttons.json", "")
+          interaction:reply(langfile2.cannot_interact, true)
         end
 
         return interaction.user.id == reactionid
@@ -660,11 +663,24 @@ function command.run(message, mt, overwrite)
     addcommand("togglecheck",cmd.togglecheck)
     addcommand("togglecc",cmd.togglecc)
     addcommand("piss",cmd.use,0,{"terminal", "piss"},true)
+	addcommand("language",cmd.language)
+	addcommand("lang",cmd.language)
+	addcommand("langlist",cmd.langlist)
     _G['handlemessage'] = function (message, content)
-      if message.author.id ~= client.user.id or content then
+	  if message.author.id ~= client.user.id or content then
         local messagecontent = content or message.content
         for i,v in ipairs(commands) do
           if string.trim(string.lower(string.sub(messagecontent, 0, #v.trigger+1))) == v.trigger then
+		    if not (message.author.bot == true) then
+				local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
+				if not uj.lang then
+					uj.lang = "en"
+				end
+				if not uj.pronouns["selection"] then
+					uj.pronouns["selection"] = uj.pronouns["they"]
+				end
+				dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
+			end
             print("found ".. v.trigger)
             local mt = {}
             local nmt = {}
@@ -1091,4 +1107,3 @@ function command.run(message, mt, overwrite)
   --print(message.author.name .. " did !reloaddb")
 end
 return command
-  

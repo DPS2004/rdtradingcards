@@ -1,0 +1,14 @@
+{
+	"needs_plural_s": true,
+	"plural_s": "s",
+	
+	"embed_title": "'s Inventory",
+	"embed_title_season_1": "'s Inventory (Season",
+	"embed_title_season_2": ")",
+	"embed_contains": ", your inventory contains:",
+	
+	"embed_page_1": "(Page ",
+	"embed_page_2": " of ",
+	"embed_page_3": ")",
+	
+}

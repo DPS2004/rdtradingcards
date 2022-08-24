@@ -1,18 +1,19 @@
 local command = {}
 function command.run(message, mt)
   print(message.author.name .. " did !catch")
+  local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/catch.json", "")
 
   if not message.guild then
-    message.channel:send("Sorry, but you cannot catch in DMs!")
+    message.channel:send(lang.dm_message)
     return
   end
 
   if not (#mt == 1) then
-    message.channel:send("Sorry, but the c!catch command expects 1 argument. Please see c!help for more details.")
+    message.channel:send(lang.no_arguments)
     return
   end
 
-  local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
   local tj = dpf.loadjson("savedata/thrown.json", {})
 
   local cardfilename, consfilename = texttofn(mt[1]), constexttofn(mt[1])
@@ -21,9 +22,9 @@ function command.run(message, mt)
 
   if not curfilename then
     if nopeeking then
-      message.channel:send("Sorry, but I either could not find " .. mt[1] .. " in the database, or it's not been thrown. Make sure that you spelled it right!")
+      message.channel:send(lang.nopeeking_1 .. mt[1] .. lang.nopeeking_2)
     else
-      message.channel:send("Sorry, but I could not find " .. mt[1] .. " in the database. Make sure that you spelled it right!")
+      message.channel:send(lang.nodatabase_1 .. mt[1] .. lang.nodatabase_2)
     end
     return
   end
@@ -33,9 +34,9 @@ function command.run(message, mt)
   if not (tj[curfilename]) then
     print("user doesnt have item")
     if nopeeking then
-      message.channel:send("Sorry, but I either could not find " .. mt[1] .. " in the database, or it's not been thrown. Make sure that you spelled it right!")
+      message.channel:send(lang.nopeeking_1 .. mt[1] .. lang.nopeeking_2)
     else
-      message.channel:send("Sorry, but **" .. caughtname .. "** has not been thrown!")
+      message.channel:send(lang.notthrown_1 .. caughtname .. lang.notthrown_2)
     end
     return
   end
@@ -53,11 +54,17 @@ function command.run(message, mt)
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
   dpf.savejson("savedata/thrown.json", tj)
 
-  local item = cardfilename and "card" or "item"
-  message.channel:send(message.author.mentionString .. " has caught a **" .. caughtname .. "** " .. item .. "! The **" .. caughtname .. "** " .. item .. " has been added to " .. uj.pronouns["their"] .. " inventory.")
+  local item = cardfilename and lang.card or lang.item
+  if uj.lang == "ko" then
+    local eul_leul = (item == "카드" and "를" or "을")
+	local eul_leul_2 = (item == "카드" and "가 " or "이 ")
+    message.channel:send(message.author.mentionString .. lang.caught_1 .. caughtname .. "** " .. item .. eul_leul .. lang.caught_2 .. caughtname .. "** " .. item .. eul_leul_2 .. lang.caught_3)
+  else
+    message.channel:send(message.author.mentionString .. lang.caught_1 .. caughtname .. "** " .. item .. lang.caught_2 .. caughtname .. "** " .. item .. lang.caught_3 .. uj.pronouns["their"] .. lang.caught_4)
+  end
   if not uj.togglecheckcard then
     if not uj.storage[caughtname] then
-      message.channel:send('You do not have the **' .. caughtname.. '** card in your storage!')
+      message.channel:send(lang.not_in_storage_1 .. caughtname .. lang.not_in_storage_2)
     end
   end
 end

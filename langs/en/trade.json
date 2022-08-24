@@ -1,0 +1,40 @@
+{
+	"dm_message": "Sorry, but you cannot trade cards in DMs!",
+	"no_arguments": "Sorry, but the c!trade command expects 3 arguments. Please see c!help for more details.",
+	
+	"no_user_1": "Sorry, but I could not find a user named ",
+	"no_user_2": " in the database. Make sure that you have spelled it right, and that they have at least pulled a card to register!",
+	"same_user": "Sorry, you cannot trade with yourself!",
+	
+	"no_item_nopeeking_1": "Sorry, but I either could not find the ",
+	"no_item_nopeeking_2": " card in the database, or ",
+	
+	"no_item1_nopeeking": "you do not have it. Make sure that you spelled it right!",
+	
+	"no_item_1": "Sorry, but I could not find the ",
+	"no_item_2": " card in the database. Make sure that you spelled it right!",
+	
+	"no_item2_nopeeking": " does not have it. Make sure that you spelled it right!",
+	
+	"dont_have_user1_1": "Sorry, but you don't have the **",
+	"dont_have_user1_2": "** card in your inventory.",
+	"dont_have_user2_1": "Sorry, but ",
+	"dont_have_user2_2": " doesn't have the **",
+	"dont_have_user2_3": "** card in ",
+	"dont_have_user2_4": " inventory.",
+	
+	"confirm_message_1": ">, <@",
+	"confirm_message_2": "> wants to trade ",
+	"confirm_message_3": " **",
+	"confirm_message_4": "** for your **",
+	"confirm_message_5": "**. Click the Yes button to accept and No to deny.",
+	
+	"reaction_no_card": "An error has occured. Please make sure that both parties still have the cards in their inventories!",
+	"reaction_trade_done_1": "The trade between <@",
+	"reaction_trade_done_2": "> and <@",
+	"reaction_trade_done_3": "> has completed.",
+	
+	"reaction_trade_denied_1": "<@",
+	"reaction_trade_denied_2": "> has successfully denied the trade with <@",
+	"reaction_trade_denied_3": ">.",
+}

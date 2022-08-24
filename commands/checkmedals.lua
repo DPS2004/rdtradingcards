@@ -4,6 +4,7 @@ function command.run(message)
 
   local ujf = ("savedata/" .. message.author.id .. ".json")
   local uj = dpf.loadjson(ujf, defaultjson)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/checkmedals.json")
 
   for i, v in ipairs(medalrequires) do
     print("checking " .. v.receive)
@@ -27,13 +28,13 @@ function command.run(message)
 
     message.channel:send { embed = {
       color = 0x85c5ff,
-      title = "Congratulations!",
-      description = 'After collecting and storing some cards, ' .. message.author.mentionString .. ' got the **"' .. medaldb[v.receive].name .. '"** medal!',
+      title = lang.congratulations,
+      description = lang.gotmedal_1 .. message.author.mentionString .. lang.gotmedal_2 .. medaldb[v.receive].name .. lang.gotmedal_3,
       image = { url = medaldb[v.receive].embed }
     } }
 
     if v.receive == 'cardmaestro' then
-      message.channel:send("You also unlocked the ability to use **c!prestige**.")
+      message.channel:send(gotmaestro)
     end
 
     ::continue::

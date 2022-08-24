@@ -2,6 +2,7 @@ local command = {}
 function command.run(message, mt)
   print(message.author.name .. " did !inventory")
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/inventory.json", "")
 
   local enableShortNames = false
   local enableSeason = false
@@ -269,28 +270,47 @@ function command.run(message, mt)
 	end
   end
 	
-  local embedtitle = message.author.name .. "'s Inventory"
+  local embedtitle = message.author.name .. lang.embed_title
   if filterSeason == true then
 	local filtertitle = ""
 	if multipleSeasons == true then
-		filtertitle = "s " .. seasonnum
+		if lang.needs_plural_s == true then
+			filtertitle = lang.plural_s .. seasonnum
+		else
+			filtertitle = " " .. seasonnum
+		end
 	else
 		filtertitle = " " .. seasonnum
 	end
-	embedtitle = message.author.name .. "'s Inventory (Season" .. filtertitle .. ")"
+	embedtitle = message.author.name .. lang.embed_title_season_1 .. filtertitle .. lang.embed_title_season_2
   end
 
-  message.channel:send{
-    content = message.author.mentionString .. ", your inventory contains:",
-    embed = {
-      color = 0x85c5ff,
-      title = embedtitle,
-      description = invstring,
-      footer = {
-        text =  "(Page " .. pagenumber .. " of " .. maxpn .. ")",
-        icon_url = message.author.avatarURL
+  if uj.lang == "ko" then
+    message.channel:send{
+      content = message.author.mentionString .. lang.embed_contains,
+      embed = {
+        color = 0x85c5ff,
+        title = embedtitle,
+        description = invstring,
+        footer = {
+          text =  lang.embed_page_1 .. maxpn .. lang.embed_page_2 .. pagenumber .. lang.embed_page_3,
+          icon_url = message.author.avatarURL
+        }
       }
     }
-  }
+  else
+    message.channel:send{
+      content = message.author.mentionString .. lang.embed_contains,
+      embed = {
+        color = 0x85c5ff,
+        title = message.author.name .. lang.embed_title,
+        description = invstring,
+        footer = {
+          text =  lang.embed_page_1 .. pagenumber .. lang.embed_page_2 .. maxpn .. lang.embed_page_3,
+          icon_url = message.author.avatarURL
+        }
+      }
+    }
+  end
 end
 return command

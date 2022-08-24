@@ -1,0 +1,14 @@
+{
+	"no_arguments": "Sorry, but the c!search command expects 1 argument. Please see c!help for more details.",
+	
+	"error_nopeeking_1": "Sorry, but I either could not find the ",
+	"error_nopeeking_2": " card in the database, or you do not have it. Make sure that you spelled it right!",
+	
+	"no_item_1": "Sorry, but I could not find the ",
+	"no_item_2": " card in the database. Make sure that you spelled it right!",
+	
+	"search_message_1": "Here is how many **",
+	"search_message_2": "** cards you have:\n**In your inventory:** x",
+	"search_message_3": "\n**In your storage:** x",
+	"search_message_4": "",
+}

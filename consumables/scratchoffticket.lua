@@ -1,6 +1,7 @@
 local item = {}
 
 function item.run(uj, ujf, message, mt, interaction)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/use/cons.json")
   uj.consumables.scratchoffticket = uj.consumables.scratchoffticket - 1
   if uj.consumables.scratchoffticket == 0 then
     uj.consumables.scratchoffticket = nil
@@ -11,19 +12,19 @@ function item.run(uj, ujf, message, mt, interaction)
     uj.timesitemused = uj.timesitemused + 1
   end
   local replying = interaction or message
-  replying:reply("You scratch off the marked spaces with a borrowed **Token**.")
+  replying:reply(lang.scratchoffticket_use)
   local chance = math.random(100)
   if chance <= 2 then
     local winnings = math.random(3, 6) * 10
     uj.tokens = uj.tokens + winnings
-    message:reply("**We have a winner!** <@" .. uj.id .. '> just won **' .. winnings .. ' Tokens**!')
+    message:reply(lang.scratchoffticket_won_1 .. uj.id .. lang.scratchoffticket_won_2 .. winnings .. lang.scratchoffticket_won_3)
   elseif chance == 3 then
     message:reply{
-      content = "Your ticket was not a winning one... Better luck next time!",
+      content = lang.scratchoffticket_lost,
       file = "assets/keep_gambling.jpg"
     }
   else
-    message:reply("Your ticket was not a winning one... Better luck next time!")
+    message:reply(lang.scratchoffticket_lost)
   end
   dpf.savejson(ujf, uj)
 

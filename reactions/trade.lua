@@ -6,14 +6,20 @@ function reaction.run(message, interaction, data, response)
   local item1 = data.item1
   local item2 = data.item2
   local uj = dpf.loadjson(ujf, defaultjson)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/trade.json", "")
   print("Loaded uj")
   local uj2 = dpf.loadjson(uj2f, defaultjson)
+  local lang2 = dpf.loadjson("langs/" .. uj2.lang .. "/trade.json", "")
   print("Loaded uj2")
 
   if response == "yes" then
     print('user2 has accepted')
     if not (uj.inventory[item1] and uj2.inventory[item2]) then
-      interaction:reply("An error has occured. Please make sure that both parties still have the cards in their inventories!")
+	  if uj.lang == uj2.lang then
+        interaction:reply(lang.reaction_no_card)
+	  else
+	    interaction:reply(lang.reaction_no_card .. "\n" .. lang2.reaction_no_card)
+	  end
       return
     end
 
@@ -32,14 +38,22 @@ function reaction.run(message, interaction, data, response)
     uj.timestraded = uj.timestraded and uj.timestraded + 1 or 1
     uj2.timestraded = uj2.timestraded and uj2.timestraded + 1 or 1
     
-    interaction:reply("The trade between <@".. uj2.id .."> and <@" .. uj.id .. "> has completed.")
-    dpf.savejson(uj2f,uj2)
+	if uj.lang == uj2.lang then
+      interaction:reply(lang.reaction_trade_done_1 .. uj2.id .. lang.reaction_trade_done_2 .. uj.id .. lang.reaction_trade_done_3)
+    else
+	  interaction:reply(lang.reaction_trade_done_1 .. uj2.id .. lang.reaction_trade_done_2 .. uj.id .. lang.reaction_trade_done_3 .. "\n" .. lang2.reaction_trade_done_1 .. uj2.id .. lang2.reaction_trade_done_2 .. uj.id .. lang2.reaction_trade_done_3)
+	end
+	dpf.savejson(uj2f,uj2)
     dpf.savejson(ujf,uj)
   end
 
   if response == "no" then
     print('user2 has denied')
-    interaction:reply("<@".. uj2.id .."> has successfully denied the trade with <@" .. uj.id .. ">.")
+    if uj.lang == uj2.lang then
+	  interaction:reply(lang.reaction_trade_denied_1 .. uj2.id .. lang.reaction_trade_denied_2 .. uj.id .. lang.reaction_trade_denied_3)
+    else
+	  interaction:reply(lang.reaction_trade_denied_1 .. uj2.id .. lang.reaction_trade_denied_2 .. uj.id .. lang.reaction_trade_denied_3 .. "\n" .. lang2.reaction_trade_denied_1 .. uj2.id .. lang2.reaction_trade_denied_2 .. uj.id .. lang2.reaction_trade_denied_3)
+    end
   end
 end
 return reaction

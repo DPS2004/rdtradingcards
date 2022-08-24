@@ -1,0 +1,13 @@
+{
+	"request_factory_1": "공장",
+	"request_factory_2": "카드 공장",
+	"request_factory_3": "카드공장",
+	"looking_factory": ":eye:`카드 공장이 지켜보고 있다`:eye:",
+	
+	"request_token": "토큰",
+	"looking_at_token": "토큰을 보니...",
+	"looking_token": "왠지는 모르지만, 최근, 이 **토큰**들이 많이 나타나고 있다. 만약 이것들을 **사용**할 곳이 있었다면...",
+	
+	"not_found_1": "죄송하지만, ",
+	"not_found_2": "을(를) 찾을 수 없었습니다.",
+}

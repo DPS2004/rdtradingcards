@@ -2,13 +2,15 @@ local command = {}
 function command.run(message, mt)
 local time = sw:getTime()
   print(message.author.name .. " did !pull")
+  local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/pull.json", "")
+  
   if not message.guild then
-    message.channel:send("Sorry, but you cannot pull cards in DMs!")
+    message.channel:send(lang.dm_message)
     return
   end
 
   local cooldown = 11.5
-  local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
 
   if not uj.equipped then
     uj.equipped = "nothing"
@@ -23,16 +25,20 @@ local time = sw:getTime()
     local minutesleft = math.ceil(uj.lastpull * 60 - time:toMinutes() + cooldown * 60)
     local durationtext = ""
     if math.floor(minutesleft / 60) > 0 then
-      durationtext = math.floor(minutesleft / 60) .. " hour"
-      if math.floor(minutesleft / 60) ~= 1 then durationtext = durationtext .. "s" end
-    end
+      durationtext = math.floor(minutesleft / 60) .. lang.time_hour
+	  if lang.needs_plural_s == true then
+        if math.floor(minutesleft / 60) ~= 1 then durationtext = durationtext .. lang.time_plural_s end
+      end
+	end
     if minutesleft % 60 > 0 then
-      if durationtext ~= "" then durationtext = durationtext .. " and " end
-      durationtext = durationtext .. minutesleft % 60 .. " minute"
-      if minutesleft % 60 ~= 1 then durationtext = durationtext .. "s" end
+      if durationtext ~= "" then durationtext = durationtext .. lang.time_and end
+      durationtext = durationtext .. minutesleft % 60 .. lang.time_minute
+	  if lang.needs_plural_s == true then
+        if minutesleft % 60 ~= 1 then durationtext = durationtext .. lang.time_plural_s end
+	  end
     end
     
-    message.channel:send('Please wait ' .. durationtext .. ' before pulling again.')
+    message.channel:send(lang.wait_message_1 .. durationtext .. lang.wait_message_2)
     return
   end
   
@@ -52,7 +58,7 @@ local time = sw:getTime()
   
   dpf.savejson("savedata/" .. message.author.id .. ".json", uj)
 
-  message.channel:send('Pulling card...')
+  message.channel:send(lang.pulling_card)
 
   uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
 
@@ -120,14 +126,15 @@ local time = sw:getTime()
   for i, v in ipairs(pulledcards) do
     local cardname = cdb[v].name
 
-    local title = "Woah!"
-    if uj.equipped == "okamiiscollar" then title = "Woof!" end
-    if v == "yor" or v == "yosr" or v == "your" then title = "Yo!" end
-    if i == 2 then title = "Doubleclick!!" end
-    if i == 3 then title = "Tripleclick!!!" end
+    local title = lang.pulled_woah
+    if uj.equipped == "okamiiscollar" then title = lang.pulled_woof end
+    if v == "yor" or v == "yosr" or v == "your" then title = lang.pulled_yo end
+    if i == 2 then title = lang.pulled_doubleclick end
+    if i == 3 then title = lang.pulled_tripleclick end
 
     if v == "rdnot" then
-      message.channel:send("```" .. title .. "\n@" .. message.author.name .. " got a What is RD Not? card! The What is RD Not? card has been added to " .. uj.pronouns["their"] .. " inventory. The shorthand form of this card is rdnot.\n" .. [[
+	  if uj.lang == "ko" then
+        message.channel:send("```" .. title .. "\n@" .. message.author.name .. lang.rdnot_message_1 .. lang.rdnot_message_2 .. [[
 _________________
 | SR            |
 |               |
@@ -137,23 +144,53 @@ _________________
 |     l  l      |
 |             𝅘𝅥𝅯 |
 _________________```]])
+	  else
+	    message.channel:send("```" .. title .. "\n@" .. message.author.name .. lang.rdnot_message_1 .. uj.pronouns["their"] .. lang.rdnot_message_2 .. [[
+_________________
+| SR            |
+|               |
+|    \____/     |
+|    / TT \  /  |
+|   /|____|\/   |
+|     l  l      |
+|             𝅘𝅥𝅯 |
+_________________```]])
+	  end
     elseif not cdb[v].spoiler then
+	  if uj.lang == "ko" then 
       message.channel:send{embed = {
         color = 0x85c5ff,
         title = title,
-        description = message.author.mentionString .. ' got a **' .. cardname .. '** card! The **' .. cardname .. '** card has been added to ' .. uj.pronouns["their"] .. ' inventory. The shorthand form of this card is **' .. v .. '**.',
+        description = message.author.mentionString .. lang.pulled_message_1 .. cardname .. lang.pulled_message_2 .. cardname .. lang.pulled_message_3 .. lang.pulled_message_4 .. v .. lang.pulled_message_5,
         image = {url = type(cdb[v].embed) == "table" and cdb[v].embed[math.random(#cdb[v].embed)] or cdb[v].embed}
       }}
+	  else
+	    message.channel:send{embed = {
+        color = 0x85c5ff,
+        title = title,
+        description = message.author.mentionString .. lang.pulled_message_1 .. cardname .. lang.pulled_message_2 .. cardname .. lang.pulled_message_3 .. uj.pronouns["their"] .. lang.pulled_message_4 .. v .. lang.pulled_message_5,
+        image = {url = type(cdb[v].embed) == "table" and cdb[v].embed[math.random(#cdb[v].embed)] or cdb[v].embed}
+      }}
+	  end
     else
       print("spider moments")
-      message.channel:send{
-        content = "**" .. title .. "**\n" .. message.author.mentionString .. ' got a **' .. cardname ..'** card! The **' .. cardname .. '** card has been added to ' .. uj.pronouns["their"]..' inventory. The shorthand form of this card is **' .. v .. '**.',
-        file = "card_images/SPOILER_" .. v .. ".png"
-      }
+      if uj.lang == "ko" then
+	    message.channel:send{
+          content = "**" .. title .. "**\n" .. message.author.mentionString .. lang.pulled_message_1 .. cardname .. lang.pulled_message_2 .. cardname .. lang.pulled_message_3 .. lang.pulled_message_4 .. v .. lang.pulled_message_5,
+          file = "card_images/SPOILER_" .. v .. ".png"
+        }
+	  else
+	    message.channel:send{embed = {
+        color = 0x85c5ff,
+        title = title,
+        description = message.author.mentionString .. lang.pulled_message_1 .. cardname .. lang.pulled_message_2 .. cardname .. lang.pulled_message_3 .. uj.pronouns["their"] .. lang.pulled_message_4 .. v .. lang.pulled_message_5,
+        image = {url = type(cdb[v].embed) == "table" and cdb[v].embed[math.random(#cdb[v].embed)] or cdb[v].embed}
+      }}
+	  end
     end
     if not uj.togglecheckcard then
       if not uj.storage[v] then
-        message.channel:send('You do not have the **' .. cardname.. '** card in your storage!')
+        message.channel:send(lang.not_in_storage_1 .. cardname .. lang.not_in_storage_2)
       end
     end
   end

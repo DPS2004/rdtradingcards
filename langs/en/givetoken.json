@@ -1,0 +1,38 @@
+{
+	"needs_plural_s": true,
+	
+	"dm_message": "Sorry, but you cannot give tokens in DMs!",
+	"no_arguments": "Sorry, but the c!givetoken command expects 1 or 2 arguments. Please see c!help for more details.",
+	
+	"no_user_1": "Sorry, but I could not find a user named ",
+	"no_user_2": " in the database. Make sure that you have spelled it right, and that they have at least pulled a card to register!",
+	"same_user": "Sorry, but you cannot give tokens to yourself!",
+	
+	"not_enough": "Sorry, but you do not have enough tokens to do that!",
+	
+	"plural_s": "s",
+	
+	"gifted_message_1": "You have gifted ",
+	"gifted_message_2": " **Token",
+	"gifted_message_3": "** to <@",
+	"gifted_message_4": ">.",
+	
+	"recieved_message_1": "<@",
+	"recieved_message_2": "> has gifted you ",
+	"recieved_message_3": " **Token",
+	"recieved_message_4": "**.",
+	
+	"checktoken_1": "You currently have ",
+	"checktoken_2": " **Token",
+	"checktoken_3": "** left.",
+	
+	"checktoken2g_1": "There are ",
+	"checktoken2g_2": " **Token",
+	"checktoken2g_3": "** in",
+	"checktoken2g_4": " pocket.",
+	
+	"checktoken2r_1": "There are ",
+	"checktoken2r_2": " **Token",
+	"checktoken2r_3": "** in your pocket.",
+}
+

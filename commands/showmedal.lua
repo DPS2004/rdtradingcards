@@ -1,19 +1,20 @@
 local command = {}
 function command.run(message, mt)
   print(message.author.name .. " did !showmedal")
+  local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/showmedal.json", "")
   if #mt ~= 1 then
-    message.channel:send("Sorry, but the c!showmedal command expects 1 argument. Please see c!help for more details.")
+    message.channel:send(lang.no_arguments)
     return
   end
 
-  local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
   local curfilename = medaltexttofn(mt[1])
 
   if not curfilename then
     if nopeeking then
-      message.channel:send("Sorry, but I either could not find the " .. mt[1] .. " medal in the database, or you do not have it. Make sure that you spelled it right!")
+      message.channel:send(lang.error_nopeeking_1 .. mt[1] .. lang.error_nopeeking_2)
     else
-      message.channel:send("Sorry, but I could not find the " .. mt[1] .. " medal in the database. Make sure that you spelled it right!")
+      message.channel:send(lang.no_medal_1 .. mt[1] .. lang.no_medal_2)
     end
     return
   end
@@ -21,9 +22,9 @@ function command.run(message, mt)
   if not uj.medals[curfilename] then
     print("user doesnt have medal")
     if nopeeking then
-      message.channel:send("Sorry, but I either could not find the " .. mt[1] .. " medal in the database, or you do not have it. Make sure that you spelled it right!")
+      message.channel:send(lang.error_nopeeking_1 .. mt[1] .. lang.error_nopeeking_2)
     else
-      message.channel:send("Sorry, but you don't have the **" .. medaldb[curfilename].name .. "** medal.")
+      message.channel:send(lang.dont_have_1 .. medaldb[curfilename].name .. lang.dont_have_2)
     end
     return
   end
@@ -31,8 +32,8 @@ function command.run(message, mt)
   print("user has medal")
   message.channel:send{embed = {
     color = 0x85c5ff,
-    title = "Showing medal...",
-    description = 'Here it is! Your **'.. medaldb[curfilename].name .. '** medal. The shorthand form is **' .. curfilename .. '**.\n\n*The description on the back reads:*\n> ' .. medaldb[curfilename].description,
+    title = lang.showing_medal,
+    description = lang.show_medal_1 .. medaldb[curfilename].name .. lang.show_medal_2 .. curfilename .. lang.show_medal_3 .. medaldb[curfilename].description,
     image = {
       url = medaldb[curfilename].embed
     }
