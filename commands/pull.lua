@@ -55,6 +55,13 @@ local time = sw:getTime()
     uj.sodapt.pull = nil
     if uj.sodapt == {} then uj.sodapt = nil end
   end
+
+  for i, v in ipairs({"coolhat", "nothing", "brokenmouse", "stainedgloves", "faithfulnecklace"}) do
+    if uj.equipped ~= v then
+      uj.lastequip = time:toHours()
+      break
+    end
+  end
   
   dpf.savejson("savedata/" .. message.author.id .. ".json", uj)
 

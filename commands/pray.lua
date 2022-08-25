@@ -55,6 +55,10 @@ local time = sw:getTime()
       end
     end
   end
+
+  if uj.equipped == "faithfulnecklace" then
+    uj.lastequip = time:toHours()
+  end
   
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
 

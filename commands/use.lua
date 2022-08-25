@@ -106,6 +106,7 @@ function command.run(message, mt,bypass)
         if not uj.storage.ssss45 then
           message.channel:send(lang.panda_ssss45)
           uj.storage.ssss45 = 1
+          uj.lastequip = time:toHours()
         else
           message.channel:send(':pensive:')
         end
@@ -283,6 +284,9 @@ function command.run(message, mt,bypass)
               uj.sodapt = nil
             end
           end
+        end
+        if uj.equipped == "stainedgloves" then
+          uj.lastequip = time:toHours()
         end
       end
     elseif request == "scanner" and wj.ws >= 802 then

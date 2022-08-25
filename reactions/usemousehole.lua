@@ -10,6 +10,7 @@ function reaction.run(message, interaction, data, response)
     uj.items.brokenmouse = nil
     uj.items.fixedmouse = true
     uj.equipped = "fixedmouse"
+    uj.lastequip = time:toHours()
 
     interaction:reply(lang.used_hole)
     dpf.savejson(ujf,uj)
