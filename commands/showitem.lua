@@ -15,7 +15,7 @@ function command.run(message, mt)
     if nopeeking then
       message.channel:send(lang.error_nopeeking_1 .. mt[1] .. lang.error_nopeeking_2)
     else
-      message.channel:send(lang.no_item_1 .. mt[1] .. lang.no_item_1)
+      message.channel:send(lang.no_item_1 .. mt[1] .. lang.no_item_2)
     end
     return
   end
