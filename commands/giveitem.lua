@@ -38,6 +38,11 @@ function command.run(message, mt)
   end
 
   local uj2 = dpf.loadjson(uj2f, defaultjson)
+  
+  if not uj2.lang then
+	uj2.lang = "en"
+  end
+  
   local lang2 = dpf.loadjson("langs/" .. uj2.lang .. "/giveitem.json", "")
 
   if not uj2.consumables then uj2.consumables = {} end
