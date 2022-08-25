@@ -303,7 +303,7 @@ function command.run(message, mt)
       content = message.author.mentionString .. lang.embed_contains,
       embed = {
         color = 0x85c5ff,
-        title = message.author.name .. lang.embed_title,
+        title = embedtitle,
         description = invstring,
         footer = {
           text =  lang.embed_page_1 .. pagenumber .. lang.embed_page_2 .. maxpn .. lang.embed_page_3,

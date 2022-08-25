@@ -291,7 +291,7 @@ function command.run(message, mt)
       }
       invstring = invtable[i]
       contentstring = ''
-      embedtitle = embedtitle .. embed_cont
+      embedtitle = embedtitle .. lang.embed_cont
     end
     previnvstring = invstring
   end
