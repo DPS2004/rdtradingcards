@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 if [ ! -d savedata ]; then mkdir savedata; fi
 if [ ! -d vips_out ]; then mkdir vips_out; fi
 if [ ! -d vips_out/cache ]; then mkdir vips_out/cache; fi
