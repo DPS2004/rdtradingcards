@@ -23,7 +23,7 @@ function command.run(message, mt)
   if request == "pyrowmid" or request == "the pyrowmid" or (uj.lang ~= "en" and request == lang.locations_pyrowmid) then
     success = true
     newroom = 0
-  elseif request == "lab" or request == "abandonedlab" or request == "the abandoned lab" or request == "abandoned lab" or (uj.lang ~= "en" and request == lang.request_lab_1 or request == lang.request_lab_2 or request == lang.locations_lab) then
+  elseif wj.ws >= 507 and wj.labdiscovered == true and (request == "lab" or request == "abandonedlab" or request == "the abandoned lab" or request == "abandoned lab" or (uj.lang ~= "en" and request == lang.request_lab_1 or request == lang.request_lab_2 or request == lang.locations_lab)) then
     success = true
     newroom = 1
   elseif wj.ws >= 702 and (request == "mountains" or request == "mountain" or request == "windymountains" or request == "the windy mountains" or request == "windy mountains" or (uj.lang ~= "en" and request == lang.request_mountains_1 or request == lang.request_mountains_2 or request == lang.locations_mountains)) then
