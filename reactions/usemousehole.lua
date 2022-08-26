@@ -1,5 +1,6 @@
 local reaction = {}
 function reaction.run(message, interaction, data, response)
+  local time = sw:getTime()
   local ujf = "savedata/" .. message.author.id .. ".json"
   local uj = dpf.loadjson(ujf, defaultjson)
   local lang = dpf.loadjson("langs/" .. uj.lang .. "/use/lab/lab.json")
