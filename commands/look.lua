@@ -235,8 +235,8 @@ function command.run(message, mt)
 	  
     if (string.lower(mt[1]) == "lab" or string.lower(mt[1]) == "abandoned lab" or mt[1] == "" or (uj.lang ~= "en" and mt[1] == lang.request_lab_1 or mt[1] == lang.request_lab_2 or mt[1] == lang.request_lab_3)) and wj.labdiscovered  then 
       local laburl = "https://cdn.discordapp.com/attachments/829197797789532181/862885457854726154/lab_scanner.png"
-      local labdesc = lang.looking_lab_post_801
-      if wj.ws <= 801 then
+      local labdesc = lang.looking_lab_post_901
+      if wj.ws <= 901 then
         laburl = labimages[getletterindex(string.sub(wj.lablooktext, wj.lablookindex + 1, wj.lablookindex + 1))]
         labdesc = lang.looking_lab
       end
@@ -298,7 +298,7 @@ function command.run(message, mt)
       }}
     
     elseif (string.lower(mt[1]) == "poster" or string.lower(mt[1]) == "catposter" or string.lower(mt[1]) == "cat poster" or (uj.lang ~= "en" and mt[1] == lang.request_poster_1 or mt[1] == lang.request_poster_2 or mt[1] == lang.request_poster_3)) and wj.labdiscovered  then 
-      if tonumber(wj.ws) ~= 801 then --normal cat poster
+      if tonumber(wj.ws) ~= 901 then --normal cat poster
         local postermessage = {lang.looking_poster_1, lang.looking_poster_2, lang.looking_poster_3, lang.looking_poster_4, lang.looking_poster_5, lang.looking_poster_6, lang.looking_poster_7, lang.looking_poster_8, lang.looking_poster_9, lang.looking_poster_10, lang.looking_poster_11 }
         local posterimage = {"https://cdn.discordapp.com/attachments/829197797789532181/838962876751675412/poster1.png","https://cdn.discordapp.com/attachments/829197797789532181/839214962786172928/poster3.png","https://cdn.discordapp.com/attachments/829197797789532181/838791958905618462/poster4.png","https://cdn.discordapp.com/attachments/829197797789532181/838799811813441607/poster6.png","https://cdn.discordapp.com/attachments/829197797789532181/838937070616444949/poster7.png","https://cdn.discordapp.com/attachments/829197797789532181/838819064884232233/poster8.png","https://cdn.discordapp.com/attachments/829197797789532181/838799792267067462/poster9.png","https://cdn.discordapp.com/attachments/829197797789532181/838864622878588989/poster10.png","https://cdn.discordapp.com/attachments/829197797789532181/838870206687346768/poster11.png","https://cdn.discordapp.com/attachments/829197797789532181/839214999884398612/poster12.png","https://cdn.discordapp.com/attachments/829197797789532181/839215023662039060/poster13.png"}
         local cposter = math.random(1, #postermessage)
@@ -314,7 +314,7 @@ function command.run(message, mt)
         message.channel:send{embed = {
           color = 0x85c5ff,
           title = lang.looking_at_poster,
-          description = lang.looking_poster_801,
+          description = lang.looking_poster_901,
           image = {
             url = "https://cdn.discordapp.com/attachments/829197797789532181/860703201224949780/posterpeeling.png"
           }
@@ -335,7 +335,7 @@ function command.run(message, mt)
         description = lang.looking_box,
       }}
       
-    elseif (string.lower(mt[1]) == "scanner") and wj.ws >= 802 then
+    elseif (string.lower(mt[1]) == "scanner") and wj.ws >= 902 then
       message.channel:send{embed = {
         color = 0x85c5ff,
         title = "Looking at scanner...",

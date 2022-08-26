@@ -6,7 +6,7 @@ function command.run(message, mt)
   
   if not uj.pronouns then
     uj.pronouns = {}
-	uj.pronouns["selection"] = "they"
+    uj.pronouns["selection"] = "they"
     uj.pronouns["they"] = lang.they_they
     uj.pronouns["them"] = lang.they_them
     uj.pronouns["their"] = lang.they_their

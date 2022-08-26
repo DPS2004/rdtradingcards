@@ -32,10 +32,10 @@ function command.run(message, mt)
   elseif wj.ws >= 702 and (request == "shop" or request == "quaintshop" or request == "quaint shop" or request == "the quaint shop" or (uj.lang ~= "en" and request == lang.request_shop_1 or request == lang.request_shop_2 or request == lang.request_shop_3 or request == lang.locations_shop)) then
     success = true
     newroom = 3
-  elseif wj.ws >= 804 and (request == "hallway" or request == "darkhallway" or request == "the dark hallway" or request == "dark hallway" or (uj.lang ~= "en" and request == lang.request_hallway_1 or request == lang.request_hallway_2 or request == lang.locations_hallway)) then
+  elseif wj.ws >= 904 and (request == "hallway" or request == "darkhallway" or request == "the dark hallway" or request == "dark hallway" or (uj.lang ~= "en" and request == lang.request_hallway_1 or request == lang.request_hallway_2 or request == lang.locations_hallway)) then
     success = true
     newroom = 4
-  elseif wj.ws >= 805 and (request == "casino" or request == "shadycasino" or request == "the shady casino" or request == "shady casino" or (uj.lang ~= "en" and request == lang.request_casino_1 or request == lang.request_casino_2 or request == lang.locations_casino)) then
+  elseif wj.ws >= 905 and (request == "casino" or request == "shadycasino" or request == "the shady casino" or request == "shady casino" or (uj.lang ~= "en" and request == lang.request_casino_1 or request == lang.request_casino_2 or request == lang.locations_casino)) then
     success = true
     newroom = 5
   end
