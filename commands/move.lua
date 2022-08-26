@@ -46,20 +46,19 @@ function command.run(message, mt)
     if newroom == uj.room then
       message.channel:send(lang.already_in_1 .. locations[newroom+1] .. lang.already_in_2)
       return
-	else
+    else
       uj.room = newroom
-	  if uj.lang == "ko" and newroom == 2 then
-		message.channel:send(lang.room_changed_1 .. locations[newroom+1] .. lang.room_changed_2 .. lang.eu .. lang.room_changed_3)
-	  else
-      message.channel:send(lang.room_changed_1 .. locations[newroom+1] .. lang.room_changed_2 .. lang.room_changed_3)
-	  end
+      if uj.lang == "ko" and newroom == 2 then
+        message.channel:send(lang.room_changed_1 .. locations[newroom+1] .. lang.room_changed_2 .. lang.eu .. lang.room_changed_3)
+      else
+        message.channel:send(lang.room_changed_1 .. locations[newroom+1] .. lang.room_changed_2 .. lang.room_changed_3)
+      end
       dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
       return uj
-	end
+    end
   else
     message.channel:send(lang.no_room_1 .. mt[1] .. lang.no_room_2)
   end
 
 end
 return command
-  
