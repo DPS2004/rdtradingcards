@@ -51,6 +51,11 @@ function command.run(message, mt)
   end
 
   local uj2 = dpf.loadjson(uj2f, defaultjson)
+  
+  if not uj2.lang then
+	uj2.lang = "en"
+  end
+  
   local lang2 = dpf.loadjson("langs/" .. uj2.lang .. "/trade.json", "")
   
   print("checking if u1 has i1")
