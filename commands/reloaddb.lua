@@ -1,12 +1,14 @@
 local command = {}
 function command.run(message, mt, overwrite)
   local authcheck
+  
   if overwrite then
     authcheck = true
   elseif message.guild then
     local cmember = message.guild:getMember(message.author)
     authcheck = cmember:hasRole(privatestuff.modroleid)
   end
+  
   if authcheck then
     print("authcheck passed")
     _G["privatestuff"] = dofile('privatestuff.lua')
@@ -20,28 +22,24 @@ function command.run(message, mt, overwrite)
       local filename = string.sub(v, 1, -5)
       cmd[filename] = dofile('commands/' .. v)
     end
-    
     print("done loading commands")
 
     for i, v in ipairs(scandir("reactions")) do
       local filename = string.sub(v, 1, -5)
       cmdre[filename] = dofile('reactions/' .. v)
     end
-
     print("done loading reactions")
 
     for i, v in ipairs(scandir("consumables")) do
       local filename = string.sub(v, 1, -5)
       cmdcons[filename] = dofile('consumables/' .. v)
     end
-
     print("done loading consumables")
 
     for i, v in ipairs(scandir("data/tracery")) do
       local filename = string.sub(v, 1, -6)
       tr[filename] = dpf.loadtracery('data/tracery/' .. v)
     end
-
     print("done loading tracery")
 
     _G['defaultjson'] = {
@@ -58,14 +56,14 @@ function command.run(message, mt, overwrite)
       lastbox = -24,
       tokens = 0,
       pronouns = {
-		selection = "they",
+        selection = "they",
         their = "their",
         them = "them",
         theirself = "themself",
         they = "they",
         theirs = "theirs"
       },
-	  lang = "en",
+      lang = "en",
       room = 0,
       -- chickstats = {
       --   bodycolor = {255, 250, 0},
@@ -86,7 +84,6 @@ function command.run(message, mt, overwrite)
       boxpool = {"ssss45", "roomsdc_ur", "roomsdc_r", "underworld", "enchantedlove", "wallclockur", "rhythmdogtor", "moai", "coolbird", "beanshopper", "cardboardworld", "acofoi", "rollermobster", "inimaur", "fhottour", "superstrongcavity", "soundsr", "pancakefever", "nicoleur", "feedthemachine", "retrofunky", "heartchickalt"},
       lablookindex = 0,
       lablooktext = "abcdefghijklmnopqrstuvwxyz",
-      worldstate = "prehole",
       ws = 0,
     }
     
@@ -138,10 +135,11 @@ function command.run(message, mt, overwrite)
     
     
     _G['amtable'] = {
-      pyrowmid = {"strange machine", "machine","panda"},
-      lab = {"mouse hole","mouse","mousehole","peculiar box","box","peculiarbox","terminal"},
+      pyrowmid = {"strange machine", "machine", "panda"},
+      lab = {"mouse hole", "mouse", "mousehole", "peculiar box", "box", "peculiarbox", "terminal"},
       shop = {"shop"}
     }
+    
     _G['amids'] = {}
     amids[0] = "pyrowmid"
     amids[1] = "lab"
@@ -172,39 +170,39 @@ function command.run(message, mt, overwrite)
 	
     --_G['cdata'] = dpf.loadjson("data/cards.json", defaultjson)
 	
-	_G['cdata'] = {basemult = 4, groups = {}}
+    _G['cdata'] = {basemult = 4, groups = {}}
 	
-	_G['jsonfiles']	= {}
+    _G['jsonfiles']	= {}
 	
-	for i, v in ipairs(scandir("data/cards")) do --TODO: replace with something that supports subdirectories
-		if string.sub(v, -4, -1) == 'json' then
-			--print('loading json '..v)
-			local groupdata = dpf.loadjson("data/cards/"..v, defaultjson)
-			local groupname = string.sub(v, 1, -6)
-			jsonfiles[groupname] = groupdata
-			
-		end
+    for i, v in ipairs(scandir("data/cards")) do --TODO: replace with something that supports subdirectories
+      if string.sub(v, -4, -1) == 'json' then
+        --print('loading json '..v)
+        local groupdata = dpf.loadjson("data/cards/"..v, defaultjson)
+        local groupname = string.sub(v, 1, -6)
+        jsonfiles[groupname] = groupdata
+      end
     end
-	_G['jsongroups'] = {}
-	for k,v in pairs(jsonfiles) do
-		if jsongroups[k] then
-			print('adding existing')
-			for _i,_v in ipairs(v.cards) do
-				table.insert(jsongroups[k].cards, _v)
-			end
-		else
-			jsongroups[k] = v
-			print('adding new')
-		end
-	end
+  
+    _G['jsongroups'] = {}
+    
+    for k,v in pairs(jsonfiles) do
+      if jsongroups[k] then
+        print('adding existing')
+        for _i,_v in ipairs(v.cards) do
+          table.insert(jsongroups[k].cards, _v)
+        end
+      else
+        jsongroups[k] = v
+        print('adding new')
+      end
+    end
 	
-	for k,v in pairs(jsongroups) do
-		print('added group '..k)
-		table.insert(cdata.groups,v)
-	end
+    for k,v in pairs(jsongroups) do
+      print('added group '..k)
+      table.insert(cdata.groups,v)
+    end
 	
-	
-	--dpf.savejson('outcards.json',cdata)
+    --dpf.savejson('outcards.json',cdata)
     
     print('loading itemdb')    
     _G['itemdb'] = dpf.loadjson("data/items.json", defaultjson)
@@ -217,7 +215,6 @@ function command.run(message, mt, overwrite)
     _G['seasontable'] = {}
     _G['cdb'] = {}
     _G['constable'] = {}
-    
     _G['ptablenc'] = {}
     _G['constablenc'] = {}
     local iterateitemdb = itemdb
@@ -229,7 +226,6 @@ function command.run(message, mt, overwrite)
     for k, q in pairs(iterateitemdb) do
       ptable[k] = {}
       constable[k] = {}
-      
       ptablenc[k] = {}
       constablenc[k] = {}
       for i, v in ipairs(cdata.groups) do
@@ -277,9 +273,7 @@ function command.run(message, mt, overwrite)
         table.insert(seasontable[x.season], x.filename)
       end
     end
-    
-    
-    
+
     -- print("here is cdb")
     -- print(inspect(cdb))
     -- print("here is seasontable")
@@ -300,8 +294,10 @@ function command.run(message, mt, overwrite)
 
     print("loading collector's info")
     _G['coll'] = dpf.loadjson("data/coll.json", defaultjson)
+    
     print("loading medaldb")
     _G['medaldb'] = dpf.loadjson("data/medals.json", defaultjson)
+    
     print('loading itemdb')    
     _G['itemdb'] = dpf.loadjson("data/items.json", defaultjson)
     
@@ -515,21 +511,21 @@ function command.run(message, mt, overwrite)
     end
 
     _G['ynbuttons'] = function(message, content, etype, data, userid, lang)
-      local messagecontent, messageembed
+    local messagecontent, messageembed
 	  local langfile = dpf.loadjson("langs/" .. lang .. "/ynbuttons.json", "")
 
-      if type(content) == "table" then
-        messageembed = content
-      else
-        messagecontent = content
-      end
+    if type(content) == "table" then
+      messageembed = content
+    else
+      messagecontent = content
+    end
 
-      print('making yesbutton')
-      local yesbutton = discordia.Button {
-        id = "yes",
-        label = langfile.button_yes,
-        style = "success"
-      }
+    print('making yesbutton')
+    local yesbutton = discordia.Button {
+      id = "yes",
+      label = langfile.button_yes,
+      style = "success"
+    }
       
       print("making nobutton")
       local nobutton = discordia.Button {
@@ -663,53 +659,54 @@ function command.run(message, mt, overwrite)
     addcommand("togglecheck",cmd.togglecheck)
     addcommand("togglecc",cmd.togglecc)
     addcommand("piss",cmd.use,0,{"terminal", "piss"},true)
-	addcommand("language",cmd.language)
-	addcommand("lang",cmd.language)
-	addcommand("langlist",cmd.langlist)
+    addcommand("language",cmd.language)
+    addcommand("lang",cmd.language)
+    addcommand("langlist",cmd.langlist)
+    
     _G['handlemessage'] = function (message, content)
 	  if message.author.id ~= client.user.id or content then
-        local messagecontent = content or message.content
-        for i,v in ipairs(commands) do
-          if string.trim(string.lower(string.sub(messagecontent, 0, #v.trigger+1))) == v.trigger then
-		    if not (message.author.bot == true) then
-				local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
-				if not uj.lang then
-					uj.lang = "en"
-				end
-				if not uj.pronouns["selection"] then
-					uj.pronouns["selection"] = uj.pronouns["they"]
-				end
-				dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
-			end
-            print("found ".. v.trigger)
-            local mt = {}
-            local nmt = {}
-            if v.expectedargs == 0 then
-              mt = string.split(string.sub(messagecontent, #v.trigger+1),"/")
-              for a,b in ipairs(mt) do
-                b = string.trim(b)
-                nmt[a]=b
-              end
-            elseif v.expectedargs == 1 then
-              nmt = {string.trim(string.sub(messagecontent, #v.trigger+1))}
-            end --might have to expand later?
-            if v.force then
-              for c,d in ipairs(v.force) do
-                table.insert(nmt,c,d)
-              end
+      local messagecontent = content or message.content
+      for i,v in ipairs(commands) do
+        if string.trim(string.lower(string.sub(messagecontent, 0, #v.trigger+1))) == v.trigger then
+          if not (message.author.bot == true) then
+          local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
+            if not uj.lang then
+              uj.lang = "en"
             end
-            print("nmt: " .. inspect(nmt))
-            local status, err = pcall(function ()
-              v.commandfunction.run(message,nmt,v.usebypass,content)
-            end)
-            if not status then
-              print("uh oh")
-              message.channel:send("Oops! An error has occured! Error message: ```" .. err .. "``` (<@290582109750427648> <@298722923626364928> please fix this thanks)")
+            if not uj.pronouns["selection"] then
+              uj.pronouns["selection"] = uj.pronouns["they"]
             end
-            break
+          dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
           end
+          print("found ".. v.trigger)
+          local mt = {}
+          local nmt = {}
+          if v.expectedargs == 0 then
+            mt = string.split(string.sub(messagecontent, #v.trigger+1),"/")
+            for a,b in ipairs(mt) do
+              b = string.trim(b)
+              nmt[a]=b
+            end
+          elseif v.expectedargs == 1 then
+            nmt = {string.trim(string.sub(messagecontent, #v.trigger+1))}
+          end --might have to expand later?
+          if v.force then
+            for c,d in ipairs(v.force) do
+              table.insert(nmt,c,d)
+            end
+          end
+          print("nmt: " .. inspect(nmt))
+          local status, err = pcall(function ()
+            v.commandfunction.run(message,nmt,v.usebypass,content)
+          end)
+          if not status then
+            print("uh oh")
+            message.channel:send("Oops! An error has occured! Error message: ```" .. err .. "``` (<@290582109750427648> <@298722923626364928> please fix this thanks)")
+          end
+          break
         end
       end
+    end
     end
     
     _G['getitemthumb'] = function(item,cons)
@@ -728,6 +725,7 @@ function command.run(message, mt, overwrite)
       end
       return "vips_out/cache/items/"..item..".png"
     end
+    
     _G['getcardthumb'] = function(card)
       local cf = io.open("vips_out/cache/cards/"..card..".png", "r")
       if not cf then --check if file exists
@@ -738,7 +736,6 @@ function command.run(message, mt, overwrite)
         end
         local cardimg = vips.Image.new_from_file("card_images/"..card..".png") -- load item image
         cardimg = cardimg:resize(96 / cardimg:height()) --TODO: force nearest neighbor scaling?
-        
         cardimg:write_to_file("vips_out/cache/cards/"..card..".png")
         print("done cachin'")
       end
@@ -751,7 +748,6 @@ function command.run(message, mt, overwrite)
     _G['getshopimage'] = function()
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
       local osj = dpf.loadjson("vips_out/cache/shop/lastshop.json", {})
-      
       
       if json.encode(sj) ~= json.encode(osj) then--holy shit why
         local darkener = vips.Image.new_from_file("assets/darkener.png")
@@ -831,12 +827,10 @@ function command.run(message, mt, overwrite)
         sj.lastrefresh = cooldown * math.floor(days / cooldown)
         dpf.savejson("savedata/shop.json", sj)
       end
-      
     end
     
     _G['stockshop'] = function()
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
-      
       local newcards = {{name="",stock=0,price=0},{name="",stock=0,price=0},{name="",stock=0,price=0},{name="",stock=0,price=0}}
       for i,v in ipairs(sj.cards) do--------------------cards
         print("stocking" .. i)
@@ -923,14 +917,9 @@ function command.run(message, mt, overwrite)
       end
       sj.consumables = newconsumables
         
-      
-      
-      
       dpf.savejson("savedata/shop.json", sj)
-      
-      
-      
     end
+    
     _G['shophas'] = function (x)
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
       local found = false
@@ -1087,11 +1076,8 @@ function command.run(message, mt, overwrite)
           end
         end
       end
-      
       return chickimg
     end
-  
-    
     
     print("done loading")
     
@@ -1099,9 +1085,7 @@ function command.run(message, mt, overwrite)
       message.channel:send('All commands have been reloaded.')
     end
     
-
   else
-    
     message.channel:send('Sorry, but only moderators can use this command!')
   end
   --print(message.author.name .. " did !reloaddb")
