@@ -1,23 +1,23 @@
 {
-	"they_they": "유저",
-	"they_them": "유저",
-	"they_their": "유저의",
-	"they_theirs": "유저의 것",
-	"they_theirself": "유저 자신",
+	"they_they": "they",
+	"they_them": "them",
+	"they_their": "their",
+	"they_theirs": "theirs",
+	"they_theirself": "theirself",
 	"they_changed": "당신은 이제부터 they/them으로 호칭됩니다.",
 	
-	"he_they": "그",
-	"he_them": "그",
-	"he_their": "그의",
-	"he_theirs": "그의 것",
-	"he_theirself": "그 자신",
+	"he_they": "he",
+	"he_them": "him",
+	"he_their": "his",
+	"he_theirs": "his",
+	"he_theirself": "himself",
 	"he_changed": "당신은 이제부터 he/him으로 호칭됩니다.",
 	
-	"she_they": "그녀",
-	"she_them": "그녀",
-	"she_their": "그녀의",
-	"she_theirs": "그녀의 것",
-	"she_theirself": "그녀",
+	"she_they": "she",
+	"she_them": "her",
+	"she_their": "her",
+	"she_theirs": "hers",
+	"she_theirself": "herself",
 	"she_changed": "당신은 이제부터 she/her로 호칭됩니다.",
 	
 	"it_they": "it",
@@ -59,7 +59,7 @@
 	"no_database_1": "죄송하지만, ",
 	"no_database_2": "라는 대명사를 찾을 수 없었습니다. 철자가 맞는지, 또는 c!pronounlist에 원하시는 대명사가 있는지 확인해 주세요. 만약 원하시는 대명사가 없다면, c!pronounform을 통해서 추가를 요청하실 수도 있습니다.", 
 	
-	"pronounlist_message": "**Common Pronouns:**\nHe, She, They, It\n\n**Neopronouns:**\nXe, Ze, Sta, Vee\n\n*If your pronouns are not included, please use c!pronounform",
+	"pronounlist_message": "**일반 대명사:**\nHe, She, They, It\n\n**성 중립 대명사:**\nXe, Ze, Sta, Vee\n\n*원하시는 대명사가 없다면, c!pronounform을 사용해 주세요.",
 	
-	"pronounform_message": "Your pronouns not on the RDCard bot? Put your pronouns in this google form and we will look over them!\n**https://forms.gle/nG57xLc8DPHc5G8m9**",
+	"pronounform_message": "원하시는 대명사가 RDCard 봇에 없나요? 구글 설문지에 원하시는 대명사를 기입하면 확인해 보겠습니다!\n**https://forms.gle/nG57xLc8DPHc5G8m9**",
 }
