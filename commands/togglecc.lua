@@ -2,12 +2,13 @@ local command = {}
 function command.run(message, mt)
   print(message.author.name .. " did !togglecc")
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/togglecc.json","")
     
 	uj.disablecommunity = not uj.disablecommunity
 	if uj.disablecommunity then
-	  message.channel:send("You will now only be able to pull cards from Season 1 to Season 8.")
+	  message.channel:send(lang.disabled_message)
 	else
-	  message.channel:send("You will now be able to pull all cards.")
+	  message.channel:send(lang.enabled_message)
 	end
 	
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
