@@ -26,19 +26,37 @@ function command.run(message, mt,mc)
         end
         local ncn = cdb[newcard].name
         if not cdb[newcard].spoiler then
-          mc:send{embed = {
-            color = 0x85c5ff,
-            title = lang.congratulations,
-            description = lang.gotcard_1 .. message.author.mentionString .. lang.gotcard_2 .. ncn .. lang.gotcard_3 .. ncn .. lang.gotcard_4 ..uj.pronouns["their"].. lang.gotcard_5,
-            image = {
-              url = cdb[newcard].embed
-            }
-          }}
+          if uj.lang == "ko" then
+            mc:send{embed = {
+              color = 0x85c5ff,
+              title = lang.congratulations,
+              description = lang.gotcard_1 .. message.author.mentionString .. lang.gotcard_2 .. ncn .. lang.gotcard_3 .. ncn .. lang.gotcard_4 .. lang.gotcard_5,
+              image = {
+                url = cdb[newcard].embed
+              }
+            }}
+          else 
+            mc:send{embed = {
+              color = 0x85c5ff,
+              title = lang.congratulations,
+              description = lang.gotcard_1 .. message.author.mentionString .. lang.gotcard_2 .. ncn .. lang.gotcard_3 .. ncn .. lang.gotcard_4 ..uj.pronouns["their"].. lang.gotcard_5,
+              image = {
+                url = cdb[newcard].embed
+              }
+            }}
+          end
         else
+          if uj.lang == "ko" then
           mc:send{
-          content = "**" .. lang.congratulations .. "**\n" .. lang.gotcard_1 .. message.author.mentionString .. lang.gotcard_2 .. ncn .. lang.gotcard_3 .. ncn .. lang.gotcard_4 .. uj.pronouns["their"] .. lang.gotcard_5,
-          file = "card_images/SPOILER_" .. newcard .. ".png"
-        }
+            content = "**" .. lang.congratulations .. "**\n" .. lang.gotcard_1 .. message.author.mentionString .. lang.gotcard_2 .. ncn .. lang.gotcard_3 .. ncn .. lang.gotcard_4 .. lang.gotcard_5,
+            file = "card_images/SPOILER_" .. newcard .. ".png"
+          }
+          else
+          mc:send{
+            content = "**" .. lang.congratulations .. "**\n" .. lang.gotcard_1 .. message.author.mentionString .. lang.gotcard_2 .. ncn .. lang.gotcard_3 .. ncn .. lang.gotcard_4 .. uj.pronouns["their"] .. lang.gotcard_5,
+            file = "card_images/SPOILER_" .. newcard .. ".png"
+          }
+          end
         end
       else
         print("no card for you lol")

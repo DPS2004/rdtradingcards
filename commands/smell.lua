@@ -3,7 +3,7 @@ function command.run(message, mt)
   print(message.author.name .. " did !smell")
   if #mt == 1 then
     local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
-	local lang = dpf.loadjson("langs/" .. uj.lang .. "/smell.json")
+    local lang = dpf.loadjson("langs/" .. uj.lang .. "/smell.json")
     local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
     local request = string.lower(mt[1])
     print(request)
@@ -57,11 +57,10 @@ function command.run(message, mt)
       driftingmetronome = lang.smell_driftingmetronome,
       filmreel = lang.smell_filmreel,
       swirlymarbles = lang.smell_swirlymarbles,
-	  
-	  granolabar = lang.smell_granolabar,
-	  hauntedgrass = lang.smell_hauntedgrass, --unsure if this is the right usage but whatevs
-	  --cryopod
-	  subwayticket = lang.smell_subwayticket
+      granolabar = lang.smell_granolabar,
+      hauntedgrass = lang.smell_hauntedgrass, --unsure if this is the right usage but whatevs
+      --cryopod
+      subwayticket = lang.smell_subwayticket
     }
     local consumablesmells = {
       caffeinatedsoda = lang.smell_caffeinatedsoda,
@@ -95,25 +94,25 @@ function command.run(message, mt)
 
     if uj.lang ~= "en" and request == lang.request_panda then
       request = "panda"
-	elseif uj.lang ~= "en" and request == lang.request_pyrowmid then
+    elseif uj.lang ~= "en" and request == lang.request_pyrowmid then
       request = "pyrowmid"
-	elseif uj.lang ~= "en" and request == lang.request_throne then
+    elseif uj.lang ~= "en" and request == lang.request_throne then
       request = "throne"
-	elseif request == "strange machine" or (uj.lang ~= "en" and request == lang.request_machine_1 or request == lang.request_machine_2 or request == lang.request_machine_3) then
+    elseif request == "strange machine" or (uj.lang ~= "en" and request == lang.request_machine_1 or request == lang.request_machine_2 or request == lang.request_machine_3) then
       request = "machine"
-	elseif uj.lang ~= "en" and request == lang.request_token then
+    elseif uj.lang ~= "en" and request == lang.request_token then
       request = "token"
-	elseif request == "card factory" or request == "cardfactory" or (uj.lang ~= "en" and request == lang.request_factory_1 or request == lang.request_factory_2 or request == lang.request_factory_3) then
+    elseif request == "card factory" or request == "cardfactory" or (uj.lang ~= "en" and request == lang.request_factory_1 or request == lang.request_factory_2 or request == lang.request_factory_3) then
       request = "factory"
-	elseif uj.lang ~= "en" and request == lang.request_ladder then
+    elseif uj.lang ~= "en" and request == lang.request_ladder then
       request = "ladder"
-	elseif uj.lang ~= "en" and request == lang.request_hole then
+    elseif uj.lang ~= "en" and request == lang.request_hole then
       request = "hole"
     elseif request == "abandoned lab" or (uj.lang ~= "en" and request == lang.request_lab_1 or request == lang.request_lab_2 or request == lang.request_lab_3) then
       request = "lab"
     elseif request == "database" or (uj.lang ~= "en" and request == lang.request_terminal_1 or request == lang.request_terminal_2) then
       request = "terminal"
-	elseif uj.lang ~= "en" and request == lang.request_table then
+    elseif uj.lang ~= "en" and request == lang.request_table then
       request = "table"
     elseif request == "cat poster" or (uj.lang ~= "en" and request == lang.request_poster_1 or request == lang.request_poster_2 or request == lang.request_poster_3) then
       request = "poster"
@@ -123,42 +122,40 @@ function command.run(message, mt)
       request = "box"
     elseif request == "windymountains" or request == "windy mountains" or (uj.lang ~= "en" and request == lang.request_mountains_1 or request == lang.request_mountains_2 or request == lang.request_mountains_3) then
       request = "mountains"
-	elseif uj.lang ~= "en" and request == lang.request_bridge then
+    elseif uj.lang ~= "en" and request == lang.request_bridge then
       request = "bridge"
     elseif request == "quaintshop" or request == "quaint shop" or (uj.lang ~= "en" and request == lang.request_shop_1 or request == lang.request_shop_2 or request == lang.request_shop_3 or request == lang.request_shop_4) then
       request = "shop"
-	elseif uj.lang ~= "en" and request == lang.request_barrels then
+    elseif uj.lang ~= "en" and request == lang.request_barrels then
       request = "barrels"
-	elseif uj.lang ~= "en" and request == lang.request_panda then
+    elseif uj.lang ~= "en" and request == lang.request_panda then
       request = "clouds"
-	elseif uj.lang ~= "en" and request == lang.request_wolf then
+    elseif uj.lang ~= "en" and request == lang.request_wolf then
       request = "wolf"
-	elseif uj.lang ~= "en" and request == lang.request_ghost then
+    elseif uj.lang ~= "en" and request == lang.request_ghost then
       request = "ghost"
-	elseif uj.lang ~= "en" and request == lang.request_photo then
+    elseif uj.lang ~= "en" and request == lang.request_photo then
       request = "photo"
     end
-    
-    
     
     print(curfilename)
     if curfilename ~= nil then
       if uj.inventory[curfilename] or uj.storage[curfilename] or shophas(curfilename) then
         print("user has card")
         local smell = cdb[curfilename].smell
-		if uj.lang == "ko" then
-		  local take = {"뽑은", "옮긴", "꺼낸", "빼낸"}
-		  local ctake = math.random(1, #take)
-		  local action = {"냄새를 맡았다. ", "냄새를 들이마셨다. ", "당신의 코에 올렸다. ", "당신의 얼굴에 두었다. "}
-		  local caction = math.random(1, #action)
-		  local desc = {"그 냄새는 ",  "", "사실 당신은 맛을 봤다. 카드의 맛은 ", "외부의 목소리가 당신의 머릿속에 들어온다. ", "", "당신은 갑자기 ", "그 카드는 "}
-		  local desc2 = {"을(를) 떠올리게 한다.", " 냄새가 난다.",  " 같다.", "에 대해 말하고 있다.", "에 대한 그리운 기억이 당신을 스쳐 지나간다.", "에 대한 극심한 갈망을 느낀다.", "을(를) 떠올리게 하는 강렬한 향취를 내뿜는다."}
-		  local cdesc = math.random(1, #desc)
-		  local trfstring = "당신은 **" .. cdb[curfilename].name .. "** 카드를 " .. take[ctake] .. " 뒤 " .. action[caction] .. "\n" .. desc[cdesc] .. "**" .. smell .. "**" .. desc2[cdesc]
+        if uj.lang == "ko" then
+          local take = {"뽑은", "옮긴", "꺼낸", "빼낸"}
+          local ctake = math.random(1, #take)
+          local action = {"냄새를 맡았다. ", "냄새를 들이마셨다. ", "당신의 코에 올렸다. ", "당신의 얼굴에 두었다. "}
+          local caction = math.random(1, #action)
+          local desc = {"그 냄새는 ",  "", "사실 당신은 맛을 봤다. 카드의 맛은 ", "외부의 목소리가 당신의 머릿속에 들어온다. ", "", "당신은 갑자기 ", "그 카드는 "}
+          local desc2 = {"을(를) 떠올리게 한다.", " 냄새가 난다.",  " 같다.", "에 대해 말하고 있다.", "에 대한 그리운 기억이 당신을 스쳐 지나간다.", "에 대한 극심한 갈망을 느낀다.", "을(를) 떠올리게 하는 강렬한 향취를 내뿜는다."}
+          local cdesc = math.random(1, #desc)
+          local trfstring = "당신은 **" .. cdb[curfilename].name .. "** 카드를 " .. take[ctake] .. " 뒤 " .. action[caction] .. "\n" .. desc[cdesc] .. "**" .. smell .. "**" .. desc2[cdesc]
           message.channel:send(trfstring)
-		else
-		  message.channel:send(trf("smell", {card = cdb[curfilename].name, smell = smell}))
-		end
+        else
+          message.channel:send(trf("smell", {card = cdb[curfilename].name, smell = smell}))
+        end
       else
         print("user doesnt have card")
         if nopeeking then

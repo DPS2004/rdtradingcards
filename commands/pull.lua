@@ -26,18 +26,23 @@ local time = sw:getTime()
     local durationtext = ""
     if math.floor(minutesleft / 60) > 0 then
       durationtext = math.floor(minutesleft / 60) .. lang.time_hour
-	  if lang.needs_plural_s == true then
-        if math.floor(minutesleft / 60) ~= 1 then durationtext = durationtext .. lang.time_plural_s end
-      end
-	end
-    if minutesleft % 60 > 0 then
-      if durationtext ~= "" then durationtext = durationtext .. lang.time_and end
-      durationtext = durationtext .. minutesleft % 60 .. lang.time_minute
-	  if lang.needs_plural_s == true then
-        if minutesleft % 60 ~= 1 then durationtext = durationtext .. lang.time_plural_s end
-	  end
+        if lang.needs_plural_s == true then
+          if math.floor(minutesleft / 60) ~= 1 then 
+            durationtext = durationtext .. lang.time_plural_s 
+          end
+        end
     end
-    
+    if minutesleft % 60 > 0 then
+      if durationtext ~= "" then
+        durationtext = durationtext .. lang.time_and
+      end
+      durationtext = durationtext .. minutesleft % 60 .. lang.time_minute
+      if lang.needs_plural_s == true then
+        if minutesleft % 60 ~= 1 then
+          durationtext = durationtext .. lang.time_plural_s
+        end
+      end
+    end
     message.channel:send(lang.wait_message_1 .. durationtext .. lang.wait_message_2)
     return
   end
@@ -75,11 +80,11 @@ local time = sw:getTime()
   if uj.conspt == "none" then
     if uj.equipped == "fixedmouse" and math.random(6) == 1 then
 	
-	  if uj.disablecommunity then
-		  table.insert(pulledcards, ptablenc[uj.equipped][math.random(#ptablenc[uj.equipped])])
-	  else
-		  table.insert(pulledcards, ptable[uj.equipped][math.random(#ptable[uj.equipped])])
-	  end
+      if uj.disablecommunity then
+        table.insert(pulledcards, ptablenc[uj.equipped][math.random(#ptablenc[uj.equipped])])
+      else
+        table.insert(pulledcards, ptable[uj.equipped][math.random(#ptable[uj.equipped])])
+      end
       uj.timesdoubleclicked = uj.timesdoubleclicked and uj.timesdoubleclicked + 1 or 1
     end
   else
@@ -133,7 +138,7 @@ local time = sw:getTime()
     if i == 3 then title = lang.pulled_tripleclick end
 
     if v == "rdnot" then
-	  if uj.lang == "ko" then
+      if uj.lang == "ko" then
         message.channel:send("```" .. title .. "\n@" .. message.author.name .. lang.rdnot_message_1 .. lang.rdnot_message_2 .. [[
 _________________
 | SR            |
@@ -144,8 +149,8 @@ _________________
 |     l  l      |
 |             𝅘𝅥𝅯 |
 _________________```]])
-	  else
-	    message.channel:send("```" .. title .. "\n@" .. message.author.name .. lang.rdnot_message_1 .. uj.pronouns["their"] .. lang.rdnot_message_2 .. [[
+      else
+        message.channel:send("```" .. title .. "\n@" .. message.author.name .. lang.rdnot_message_1 .. uj.pronouns["their"] .. lang.rdnot_message_2 .. [[
 _________________
 | SR            |
 |               |
@@ -155,38 +160,38 @@ _________________
 |     l  l      |
 |             𝅘𝅥𝅯 |
 _________________```]])
-	  end
+      end
     elseif not cdb[v].spoiler then
-	  if uj.lang == "ko" then 
-      message.channel:send{embed = {
-        color = 0x85c5ff,
-        title = title,
-        description = message.author.mentionString .. lang.pulled_message_1 .. cardname .. lang.pulled_message_2 .. cardname .. lang.pulled_message_3 .. lang.pulled_message_4 .. v .. lang.pulled_message_5,
-        image = {url = type(cdb[v].embed) == "table" and cdb[v].embed[math.random(#cdb[v].embed)] or cdb[v].embed}
-      }}
-	  else
-	    message.channel:send{embed = {
-        color = 0x85c5ff,
-        title = title,
-        description = message.author.mentionString .. lang.pulled_message_1 .. cardname .. lang.pulled_message_2 .. cardname .. lang.pulled_message_3 .. uj.pronouns["their"] .. lang.pulled_message_4 .. v .. lang.pulled_message_5,
-        image = {url = type(cdb[v].embed) == "table" and cdb[v].embed[math.random(#cdb[v].embed)] or cdb[v].embed}
-      }}
-	  end
+      if uj.lang == "ko" then 
+        message.channel:send{embed = {
+          color = 0x85c5ff,
+          title = title,
+          description = message.author.mentionString .. lang.pulled_message_1 .. cardname .. lang.pulled_message_2 .. cardname .. lang.pulled_message_3 .. lang.pulled_message_4 .. v .. lang.pulled_message_5,
+          image = {url = type(cdb[v].embed) == "table" and cdb[v].embed[math.random(#cdb[v].embed)] or cdb[v].embed}
+        }}
+      else
+        message.channel:send{embed = {
+          color = 0x85c5ff,
+          title = title,
+          description = message.author.mentionString .. lang.pulled_message_1 .. cardname .. lang.pulled_message_2 .. cardname .. lang.pulled_message_3 .. uj.pronouns["their"] .. lang.pulled_message_4 .. v .. lang.pulled_message_5,
+          image = {url = type(cdb[v].embed) == "table" and cdb[v].embed[math.random(#cdb[v].embed)] or cdb[v].embed}
+        }}
+      end
     else
       print("spider moments")
       if uj.lang == "ko" then
-	    message.channel:send{
+        message.channel:send{
           content = "**" .. title .. "**\n" .. message.author.mentionString .. lang.pulled_message_1 .. cardname .. lang.pulled_message_2 .. cardname .. lang.pulled_message_3 .. lang.pulled_message_4 .. v .. lang.pulled_message_5,
           file = "card_images/SPOILER_" .. v .. ".png"
         }
-	  else
-	    message.channel:send{embed = {
-        color = 0x85c5ff,
-        title = title,
-        description = message.author.mentionString .. lang.pulled_message_1 .. cardname .. lang.pulled_message_2 .. cardname .. lang.pulled_message_3 .. uj.pronouns["their"] .. lang.pulled_message_4 .. v .. lang.pulled_message_5,
-        image = {url = type(cdb[v].embed) == "table" and cdb[v].embed[math.random(#cdb[v].embed)] or cdb[v].embed}
-      }}
-	  end
+      else
+        message.channel:send{embed = {
+          color = 0x85c5ff,
+          title = title,
+          description = message.author.mentionString .. lang.pulled_message_1 .. cardname .. lang.pulled_message_2 .. cardname .. lang.pulled_message_3 .. uj.pronouns["their"] .. lang.pulled_message_4 .. v .. lang.pulled_message_5,
+          image = {url = type(cdb[v].embed) == "table" and cdb[v].embed[math.random(#cdb[v].embed)] or cdb[v].embed}
+        }}
+      end
     end
     if not uj.togglecheckcard then
       if not uj.storage[v] then
