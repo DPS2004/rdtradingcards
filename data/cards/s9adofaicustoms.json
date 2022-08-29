@@ -114,7 +114,7 @@
           "name": "dynam",
           "type": "Super Rare",
           "description": "(Level by moplo)",
-          "smell": "",
+          "smell": "test",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -127,7 +127,7 @@
           "name": "Escal'ater",
           "type": "Super Rare",
           "description": "(Level by Xeno)",
-          "smell": "",
+          "smell": "test",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -140,7 +140,7 @@
           "name": "Factory Floor",
           "type": "Ultra Rare",
           "description": "(Level by Firestix)",
-          "smell": "",
+          "smell": "test",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -153,7 +153,7 @@
           "name": "Sommarfågel",
           "type": "Super Rare",
           "description": "(Level by ABorinGuy)",
-          "smell": "",
+          "smell": "test",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -166,7 +166,7 @@
           "name": "Turbo Strawberry",
           "type": "Super Rare",
           "description": "(Level by Rikri)",
-          "smell": "",
+          "smell": "test",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -179,7 +179,7 @@
           "name": "Moon Patrol De-Rastered",
           "type": "Ultra Rare",
           "description": "(Level by Firestix)",
-          "smell": "",
+          "smell": "tets",
           "season": 9,
           "bonuses": {
             "filmreel": true,
@@ -193,7 +193,7 @@
           "name": "Celestial Lights",
           "type": "Super Rare",
           "description": "(Level by megaminerzero)",
-          "smell": "",
+          "smell": "test",
           "season": 9,
           "bonuses": {
             "filmreel": true,
@@ -207,7 +207,7 @@
           "name": "Fog sees it",
           "type": "Super Rare",
           "description": "(Level by Plant Guy)",
-          "smell": "",
+          "smell": "test",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -220,7 +220,7 @@
           "name": "Arcade Punk",
           "type": "Ultra Rare",
           "description": "(Level by Firestix)",
-          "smell": "",
+          "smell": "test",
           "season": 9,
           "bonuses": {
             "filmreel": true,
@@ -234,7 +234,7 @@
           "name": "A Man in the GREAT Hall",
           "type": "Super Rare",
           "description": "(Level by Strode)",
-          "smell": "",
+          "smell": "test",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -247,7 +247,7 @@
           "name": "Holy War",
           "type": "Ultra Rare",
           "description": "(Level by Ashino)",
-          "smell": "",
+          "smell": "test",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -260,7 +260,7 @@
           "name": "Party of Spirits",
           "type": "Ultra Rare",
           "description": "(Level by NumbEr07 & Lumi)",
-          "smell": "",
+          "smell": "test",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
