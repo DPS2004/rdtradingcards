@@ -174,7 +174,7 @@
           "embed": ""
         },
         {
-          "chance": 2,
+          "chance": 1,
           "filename": "moonpatrol",
           "name": "Moon Patrol De-Rastered",
           "type": "Ultra Rare",
@@ -187,11 +187,11 @@
           "embed": ""
         },
         {
-          "chance": 2,
+          "chance": 1,
           "filename": "celestiallights",
           "name": "Celestial Lights",
-          "type": "Super Rare",
-          "description": "(Level by moplo)",
+          "type": "Ultra Rare",
+          "description": "(Level by megaminerzero)",
           "smell": "",
           "season": 9,
           "bonuses": {
