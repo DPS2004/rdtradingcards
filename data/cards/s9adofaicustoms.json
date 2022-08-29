@@ -182,15 +182,16 @@
           "smell": "",
           "season": 9,
           "bonuses": {
+            "filmreel": true,
             "swirlymarbles": true
           },
           "embed": ""
         },
         {
-          "chance": 1,
+          "chance": 2,
           "filename": "celestiallights",
           "name": "Celestial Lights",
-          "type": "Ultra Rare",
+          "type": "Super Rare",
           "description": "(Level by megaminerzero)",
           "smell": "",
           "season": 9,
@@ -222,6 +223,7 @@
           "smell": "",
           "season": 9,
           "bonuses": {
+            "filmreel": true,
             "swirlymarbles": true
           },
           "embed": ""
