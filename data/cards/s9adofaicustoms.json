@@ -238,6 +238,32 @@
             "swirlymarbles": true
           },
           "embed": ""
+        },
+        {
+          "chance": 1,
+          "filename": "holywar",
+          "name": "Holy War",
+          "type": "Ultra Rare",
+          "description": "(Level by Ashino)",
+          "smell": "",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": ""
+        },
+        {
+          "chance": 1,
+          "filename": "partofspirits",
+          "name": "Party of Spirits",
+          "type": "Ultra Rare",
+          "description": "(Level by NumbEr07 & Lumi)",
+          "smell": "",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": ""
         }
       ]
     }
