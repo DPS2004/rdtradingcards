@@ -49,7 +49,7 @@
           "smell": "Candy Canes",
           "season": 9,
           "bonuses": {
-		    "filmreel": true,
+		        "filmreel": true,
             "swirlymarbles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/1006816961046519819/1006817056362070016/jazzcandy.gif"
@@ -63,7 +63,7 @@
           "smell": "Tutorials",
           "season": 9,
           "bonuses": {
-		    "duncecap": true,
+		        "duncecap": true,
             "swirlymarbles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1010406533433139240/carefree.png"
@@ -80,6 +80,164 @@
             "swirlymarbles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1010409275564236830/starship.png"
+        },
+        {
+          "chance": 2,
+          "filename": "vista",
+          "name": "Vista",
+          "type": "Super Rare",
+          "description": "(Level by Econ, YeetYote)",
+          "smell": "Lag",
+          "season": 9,
+          "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+          },
+          "embed": ""
+        },
+        {
+          "chance": 2,
+          "filename": "power5",
+          "name": "Power of 5",
+          "type": "Super Rare",
+          "description": "(Level by KirbyCreep)",
+          "smell": "5s",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": ""
+        },
+        {
+          "chance": 2,
+          "filename": "dynam",
+          "name": "dynam",
+          "type": "Super Rare",
+          "description": "(Level by moplo)",
+          "smell": "",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": ""
+        },
+        {
+          "chance": 2,
+          "filename": "escalater",
+          "name": "Escal'ater",
+          "type": "Super Rare",
+          "description": "(Level by Xeno)",
+          "smell": "",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": ""
+        },
+        {
+          "chance": 1,
+          "filename": "factoryfloor",
+          "name": "Factory Floor",
+          "type": "Ultra Rare",
+          "description": "(Level by Firestix)",
+          "smell": "",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": ""
+        },
+        {
+          "chance": 2,
+          "filename": "sommarfagel",
+          "name": "Sommarfågel",
+          "type": "Super Rare",
+          "description": "(Level by Big Guy)",
+          "smell": "",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": ""
+        },
+        {
+          "chance": 2,
+          "filename": "turbostrawberry",
+          "name": "Turbo Strawberry",
+          "type": "Super Rare",
+          "description": "(Level by Rikri)",
+          "smell": "",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": ""
+        },
+        {
+          "chance": 2,
+          "filename": "moonpatrol",
+          "name": "Moon Patrol De-Rastered",
+          "type": "Ultra Rare",
+          "description": "(Level by Firestix)",
+          "smell": "",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": ""
+        },
+        {
+          "chance": 2,
+          "filename": "celestiallights",
+          "name": "Celestial Lights",
+          "type": "Super Rare",
+          "description": "(Level by moplo)",
+          "smell": "",
+          "season": 9,
+          "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+          },
+          "embed": ""
+        },
+        {
+          "chance": 2,
+          "filename": "fogseesit",
+          "name": "Fog sees it",
+          "type": "Super Rare",
+          "description": "(Level by Plant Guy)",
+          "smell": "",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": ""
+        },
+        {
+          "chance": 1,
+          "filename": "arcadepunk",
+          "name": "Arcade Punk",
+          "type": "Ultra Rare",
+          "description": "(Level by Firestix)",
+          "smell": "",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": ""
+        },
+        {
+          "chance": 2,
+          "filename": "greathall",
+          "name": "A Man in the GREAT Hall",
+          "type": "Super Rare",
+          "description": "(Level by Strode)",
+          "smell": "",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": ""
         }
       ]
     }
