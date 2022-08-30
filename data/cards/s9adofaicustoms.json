@@ -399,8 +399,8 @@
         },
         {
           "chance": 2,
-          "filename": "treasurekeeeper",
-          "name": "Treasure keeeper",
+          "filename": "treasurekeeper",
+          "name": "Treasure keeper",
           "type": "Super Rare",
           "description": "(Level by Plant Guy)",
           "smell": "test",
