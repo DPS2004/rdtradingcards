@@ -517,7 +517,7 @@
         {
           "chance": 2,
           "filename": "mycapacitance",
-          "name": "My Capacitance",
+          "name": "My Capacitance (Short)",
           "type": "Super Rare",
           "description": "(Level by Daming)",
           "smell": "test",
@@ -530,7 +530,7 @@
         {
           "chance": 2,
           "filename": "dubwoofersubstep",
-          "name": "Dubwoofer Substep",
+          "name": "Dubwoofer Substep (Short)",
           "type": "Super Rare",
           "description": "(Level by Axeras)",
           "smell": "test",
@@ -570,7 +570,7 @@
         {
           "chance": 2,
           "filename": "vly",
-          "name": "Vigor Lines Yoked",
+          "name": "Vigor Lines Yoked (Short)",
           "type": "Super Rare",
           "description": "(Level by Daming)",
           "smell": "test",
