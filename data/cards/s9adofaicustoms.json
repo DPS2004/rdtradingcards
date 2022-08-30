@@ -272,7 +272,7 @@
           "filename": "flyofbeelzebub",
           "name": "Fly of Beelzebub",
           "type": "Ultra Rare",
-          "description": "(Level by NumbEr07 & Lumi)",
+          "description": "(Level by PizzaLovers007)",
           "smell": "test",
           "season": 9,
           "bonuses": {
@@ -285,7 +285,7 @@
           "filename": "intruder",
           "name": "Intruder",
           "type": "Ultra Rare",
-          "description": "(Level by NumbEr07 & Lumi)",
+          "description": "(Level by Ssimille)",
           "smell": "test",
           "season": 9,
           "bonuses": {
@@ -298,7 +298,7 @@
           "filename": "Pomodoro",
           "name": "Pomodoro",
           "type": "Ultra Rare",
-          "description": "(Level by NumbEr07 & Lumi)",
+          "description": "(Level by XiZnYng)",
           "smell": "test",
           "season": 9,
           "bonuses": {
@@ -311,7 +311,7 @@
           "filename": "mindpulse",
           "name": "Mind/ /Pulse",
           "type": "Ultra Rare",
-          "description": "(Level by NumbEr07 & Lumi)",
+          "description": "(Level by KAERRA)",
           "smell": "test",
           "season": 9,
           "bonuses": {
@@ -324,7 +324,7 @@
           "filename": "timeleaper",
           "name": "Time Leaper",
           "type": "Ultra Rare",
-          "description": "(Level by NumbEr07 & Lumi)",
+          "description": "(Level by //TNTz)",
           "smell": "test",
           "season": 9,
           "bonuses": {
@@ -350,7 +350,7 @@
           "filename": "themassacre",
           "name": "The Massacre",
           "type": "Ultra Rare",
-          "description": "(Level by NumbEr07 & Lumi)",
+          "description": "(Level by prodzpod)",
           "smell": "test",
           "season": 9,
           "bonuses": {
@@ -363,7 +363,7 @@
           "filename": "strawberrysoldier",
           "name": "Strawberry Soldier",
           "type": "Super Rare",
-          "description": "(Level by Strode)",
+          "description": "(Level by PizzaLovers007)",
           "smell": "test",
           "season": 9,
           "bonuses": {
@@ -376,7 +376,7 @@
           "filename": "oldclock",
           "name": "Old clock",
           "type": "Super Rare",
-          "description": "(Level by Strode)",
+          "description": "(Level by Plant Guy)",
           "smell": "test",
           "season": 9,
           "bonuses": {
@@ -389,7 +389,7 @@
           "filename": "wbutterflies",
           "name": "Wakeboarding Butterflies",
           "type": "Super Rare",
-          "description": "(Level by Strode)",
+          "description": "(Level by Chartardos)",
           "smell": "test",
           "season": 9,
           "bonuses": {
@@ -402,7 +402,7 @@
           "filename": "treasurekeeeper",
           "name": "Treasure keeeper",
           "type": "Super Rare",
-          "description": "(Level by Strode)",
+          "description": "(Level by Plant Guy)",
           "smell": "test",
           "season": 9,
           "bonuses": {
@@ -415,7 +415,7 @@
           "filename": "dimension",
           "name": "Dimension",
           "type": "Super Rare",
-          "description": "(Level by Strode)",
+          "description": "(Level by -K)",
           "smell": "test",
           "season": 9,
           "bonuses": {
@@ -428,7 +428,7 @@
           "filename": "falseparadise",
           "name": "false paradise",
           "type": "Super Rare",
-          "description": "(Level by Strode)",
+          "description": "(Level by DM DOKURO)",
           "smell": "test",
           "season": 9,
           "bonuses": {
@@ -441,7 +441,7 @@
           "filename": "mountainoftraining",
           "name": "Mountain of Training",
           "type": "Super Rare",
-          "description": "(Level by Strode)",
+          "description": "(Level by Plant Guy)",
           "smell": "test",
           "season": 9,
           "bonuses": {
@@ -467,7 +467,7 @@
           "filename": "helloworld",
           "name": "hello world",
           "type": "Super Rare",
-          "description": "(Level by Strode)",
+          "description": "(Level by okaynova)",
           "smell": "test",
           "season": 9,
           "bonuses": {
@@ -480,7 +480,7 @@
           "filename": "luminousflower",
           "name": "Luminous Flower",
           "type": "Super Rare",
-          "description": "(Level by Strode)",
+          "description": "(Level by GreenApple)",
           "smell": "test",
           "season": 9,
           "bonuses": {
@@ -490,10 +490,10 @@
         },
         {
           "chance": 2,
-          "filename": "Snow",
+          "filename": "snow",
           "name": "Snow!",
           "type": "Super Rare",
-          "description": "(Level by Strode)",
+          "description": "(Level by XiZnYng)",
           "smell": "test",
           "season": 9,
           "bonuses": {
@@ -506,7 +506,7 @@
           "filename": "goodnight",
           "name": "Have A Good Night",
           "type": "Super Rare",
-          "description": "(Level by Strode)",
+          "description": "(Level by Daming)",
           "smell": "test",
           "season": 9,
           "bonuses": {
@@ -519,7 +519,7 @@
           "filename": "mycapacitance",
           "name": "My Capacitance",
           "type": "Super Rare",
-          "description": "(Level by Strode)",
+          "description": "(Level by Daming)",
           "smell": "test",
           "season": 9,
           "bonuses": {
@@ -532,7 +532,7 @@
           "filename": "dubwoofersubstep",
           "name": "Dubwoofer Substep",
           "type": "Super Rare",
-          "description": "(Level by Strode)",
+          "description": "(Level by Axeras)",
           "smell": "test",
           "season": 9,
           "bonuses": {
@@ -545,10 +545,11 @@
           "filename": "fourcolors",
           "name": "Four Colors",
           "type": "Super Rare",
-          "description": "(Level by Strode)",
+          "description": "(Level by Rikri, 파랑이, Econ)",
           "smell": "test",
           "season": 9,
           "bonuses": {
+            "filmreel": true,
             "swirlymarbles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013922209036763146/greathall.png"
@@ -558,7 +559,7 @@
           "filename": "snowfall",
           "name": "Snowfall",
           "type": "Super Rare",
-          "description": "(Level by Strode)",
+          "description": "(Level by ABorinGuy, Axeras, Econ, loser, Purple0702, snomii, TriPizza, YeetYote)",
           "smell": "test",
           "season": 9,
           "bonuses": {
@@ -571,7 +572,7 @@
           "filename": "vly",
           "name": "Vigor Lines Yoked",
           "type": "Super Rare",
-          "description": "(Level by Strode)",
+          "description": "(Level by Daming)",
           "smell": "test",
           "season": 9,
           "bonuses": {
@@ -584,7 +585,7 @@
           "filename": "chronojoust",
           "name": "Chrono Joust",
           "type": "Super Rare",
-          "description": "(Level by Strode)",
+          "description": "(Level by Econ, TriPizza)",
           "smell": "test",
           "season": 9,
           "bonuses": {
@@ -597,7 +598,7 @@
           "filename": "zenith",
           "name": "Zenith",
           "type": "Super Rare",
-          "description": "(Level by Strode)",
+          "description": "(Level by yoshikirby26)",
           "smell": "test",
           "season": 9,
           "bonuses": {
@@ -610,7 +611,7 @@
           "filename": "papsimple",
           "name": "Pictured As Perfect (Simple)",
           "type": "Super Rare",
-          "description": "(Level by Strode)",
+          "description": "(Level by NumbEr07, HanB)",
           "smell": "test",
           "season": 9,
           "bonuses": {
