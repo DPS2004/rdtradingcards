@@ -87,7 +87,7 @@
           "name": "Vista",
           "type": "Super Rare",
           "description": "(Level by Econ, YeetYote)",
-          "smell": "Lag",
+          "smell": "Frozen",
           "season": 9,
           "bonuses": {
             "filmreel": true,
@@ -101,7 +101,7 @@
           "name": "Power of 5",
           "type": "Super Rare",
           "description": "(Level by KirbyCreep)",
-          "smell": "5s",
+          "smell": "Pentagons",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -114,7 +114,7 @@
           "name": "dynam",
           "type": "Super Rare",
           "description": "(Level by moplo)",
-          "smell": "test",
+          "smell": "Parallel Lines",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -127,7 +127,7 @@
           "name": "Escal'ater",
           "type": "Super Rare",
           "description": "(Level by Xeno)",
-          "smell": "test",
+          "smell": "Stairs",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -140,7 +140,7 @@
           "name": "Factory Floor",
           "type": "Ultra Rare",
           "description": "(Level by Firestix)",
-          "smell": "test",
+          "smell": "Machine Press",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -153,7 +153,7 @@
           "name": "Sommarfågel",
           "type": "Super Rare",
           "description": "(Level by ABorinGuy)",
-          "smell": "test",
+          "smell": "Music Box",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -166,7 +166,7 @@
           "name": "Turbo Strawberry",
           "type": "Super Rare",
           "description": "(Level by Rikri)",
-          "smell": "test",
+          "smell": "Big Squares",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -179,7 +179,7 @@
           "name": "Moon Patrol De-Rastered",
           "type": "Ultra Rare",
           "description": "(Level by Firestix)",
-          "smell": "tets",
+          "smell": "Vector Game",
           "season": 9,
           "bonuses": {
             "filmreel": true,
@@ -193,7 +193,7 @@
           "name": "Celestial Lights",
           "type": "Super Rare",
           "description": "(Level by megaminerzero)",
-          "smell": "test",
+          "smell": "Star Lights",
           "season": 9,
           "bonuses": {
             "filmreel": true,
@@ -207,7 +207,7 @@
           "name": "Fog sees it",
           "type": "Super Rare",
           "description": "(Level by Plant Guy)",
-          "smell": "test",
+          "smell": "Fog",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -220,7 +220,7 @@
           "name": "Arcade Punk",
           "type": "Ultra Rare",
           "description": "(Level by Firestix)",
-          "smell": "test",
+          "smell": "Boss Fights",
           "season": 9,
           "bonuses": {
             "filmreel": true,
@@ -234,7 +234,7 @@
           "name": "A Man in the GREAT Hall",
           "type": "Super Rare",
           "description": "(Level by Strode)",
-          "smell": "test",
+          "smell": "Big Halls",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -247,7 +247,7 @@
           "name": "Holy War",
           "type": "Ultra Rare",
           "description": "(Level by Ashino)",
-          "smell": "pyramids",
+          "smell": "Pyramids",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -260,7 +260,7 @@
           "name": "Party of Spirits",
           "type": "Ultra Rare",
           "description": "(Level by NumbEr07 & Lumi)",
-          "smell": "test",
+          "smell": "Ghosts",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -273,7 +273,7 @@
           "name": "Fly of Beelzebub",
           "type": "Ultra Rare",
           "description": "(Level by PizzaLovers007)",
-          "smell": "test",
+          "smell": "Bugs",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -286,7 +286,7 @@
           "name": "Intruder",
           "type": "Ultra Rare",
           "description": "(Level by Ssimille)",
-          "smell": "test",
+          "smell": "Security Camera",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -299,7 +299,7 @@
           "name": "Pomodoro",
           "type": "Ultra Rare",
           "description": "(Level by XiZnYng)",
-          "smell": "test",
+          "smell": "Tomatoes",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -312,7 +312,7 @@
           "name": "Mind/ /Pulse",
           "type": "Ultra Rare",
           "description": "(Level by KAERRA)",
-          "smell": "test",
+          "smell": "Mind Paths",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -325,7 +325,7 @@
           "name": "Time Leaper",
           "type": "Ultra Rare",
           "description": "(Level by //TNTz)",
-          "smell": "test",
+          "smell": "Geometry",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -338,7 +338,7 @@
           "name": "Underground Party",
           "type": "Ultra Rare",
           "description": "(Level by NumbEr07 & Lumi)",
-          "smell": "test",
+          "smell": "Sweat",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -351,7 +351,7 @@
           "name": "The Massacre",
           "type": "Ultra Rare",
           "description": "(Level by prodzpod)",
-          "smell": "test",
+          "smell": "Ninjas",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -364,7 +364,7 @@
           "name": "Strawberry Soldier",
           "type": "Super Rare",
           "description": "(Level by PizzaLovers007)",
-          "smell": "test",
+          "smell": "Strawberries",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -377,7 +377,7 @@
           "name": "Old clock",
           "type": "Super Rare",
           "description": "(Level by Plant Guy)",
-          "smell": "test",
+          "smell": "Rust Machinery",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -390,7 +390,7 @@
           "name": "Wakeboarding Butterflies",
           "type": "Super Rare",
           "description": "(Level by Chartardos)",
-          "smell": "test",
+          "smell": "Fresh Air",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -403,7 +403,7 @@
           "name": "Treasure keeper",
           "type": "Super Rare",
           "description": "(Level by Plant Guy)",
-          "smell": "test",
+          "smell": "Coins",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -416,7 +416,7 @@
           "name": "Dimension",
           "type": "Super Rare",
           "description": "(Level by -K)",
-          "smell": "test",
+          "smell": "Black Snow",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -429,7 +429,7 @@
           "name": "false paradise",
           "type": "Super Rare",
           "description": "(Level by DM DOKURO)",
-          "smell": "test",
+          "smell": "3rd Dimension",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -442,7 +442,7 @@
           "name": "Mountain of Training",
           "type": "Super Rare",
           "description": "(Level by Plant Guy)",
-          "smell": "test",
+          "smell": "Big Triangles",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -455,7 +455,7 @@
           "name": "Lanterns",
           "type": "Super Rare",
           "description": "(Level by Strode)",
-          "smell": "test",
+          "smell": "Chinese New Year",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -468,7 +468,7 @@
           "name": "hello world",
           "type": "Super Rare",
           "description": "(Level by okaynova)",
-          "smell": "test",
+          "smell": "Small Robots",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -481,7 +481,7 @@
           "name": "Luminous Flower",
           "type": "Super Rare",
           "description": "(Level by GreenApple)",
-          "smell": "test",
+          "smell": "Gameboy",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -494,7 +494,7 @@
           "name": "Snow!",
           "type": "Super Rare",
           "description": "(Level by XiZnYng)",
-          "smell": "test",
+          "smell": "Christmas Presents",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -507,7 +507,7 @@
           "name": "Have A Good Night",
           "type": "Super Rare",
           "description": "(Level by Daming)",
-          "smell": "test",
+          "smell": "Lofi Sleep",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -520,7 +520,7 @@
           "name": "My Capacitance (Short)",
           "type": "Super Rare",
           "description": "(Level by Daming)",
-          "smell": "test",
+          "smell": "Tilted Boxes",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -533,7 +533,7 @@
           "name": "Dubwoofer Substep (Short)",
           "type": "Super Rare",
           "description": "(Level by Axeras)",
-          "smell": "test",
+          "smell": "Extreme Amount of Bass",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -546,7 +546,7 @@
           "name": "Four Colors",
           "type": "Super Rare",
           "description": "(Level by Rikri, 파랑이, Econ)",
-          "smell": "test",
+          "smell": "Red, Blue, Yellow, Magenta",
           "season": 9,
           "bonuses": {
             "filmreel": true,
@@ -560,7 +560,7 @@
           "name": "Snowfall",
           "type": "Super Rare",
           "description": "(Level by ABorinGuy, Axeras, Econ, loser, Purple0702, snomii, TriPizza, YeetYote)",
-          "smell": "test",
+          "smell": "Burger",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -573,7 +573,7 @@
           "name": "Vigor Lines Yoked (Short)",
           "type": "Super Rare",
           "description": "(Level by Daming)",
-          "smell": "test",
+          "smell": "Extreme Grayscale",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -586,7 +586,7 @@
           "name": "Chrono Joust",
           "type": "Super Rare",
           "description": "(Level by Econ, TriPizza)",
-          "smell": "test",
+          "smell": "Circle of Swords",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -599,7 +599,7 @@
           "name": "Zenith",
           "type": "Super Rare",
           "description": "(Level by yoshikirby26)",
-          "smell": "test",
+          "smell": "Ice Tiles",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -612,7 +612,7 @@
           "name": "Pictured As Perfect (Simple)",
           "type": "Super Rare",
           "description": "(Level by NumbEr07, HanB)",
-          "smell": "test",
+          "smell": "Flesh",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
