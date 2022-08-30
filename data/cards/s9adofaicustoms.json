@@ -247,7 +247,7 @@
           "name": "Holy War",
           "type": "Ultra Rare",
           "description": "(Level by Ashino)",
-          "smell": "test",
+          "smell": "pyramids",
           "season": 9,
           "bonuses": {
             "swirlymarbles": true
@@ -266,6 +266,357 @@
             "swirlymarbles": true
           },
           "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013910469528014898/partyofspirits.png"
+        },
+        {
+          "chance": 1,
+          "filename": "flyofbeelzebub",
+          "name": "Fly of Beelzebub",
+          "type": "Ultra Rare",
+          "description": "(Level by NumbEr07 & Lumi)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013910469528014898/partyofspirits.png"
+        },
+        {
+          "chance": 1,
+          "filename": "intruder",
+          "name": "Intruder",
+          "type": "Ultra Rare",
+          "description": "(Level by NumbEr07 & Lumi)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013910469528014898/partyofspirits.png"
+        },
+        {
+          "chance": 1,
+          "filename": "Pomodoro",
+          "name": "Pomodoro",
+          "type": "Ultra Rare",
+          "description": "(Level by NumbEr07 & Lumi)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013910469528014898/partyofspirits.png"
+        },
+        {
+          "chance": 1,
+          "filename": "mindpulse",
+          "name": "Mind/ /Pulse",
+          "type": "Ultra Rare",
+          "description": "(Level by NumbEr07 & Lumi)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013910469528014898/partyofspirits.png"
+        },
+        {
+          "chance": 1,
+          "filename": "timeleaper",
+          "name": "Time Leaper",
+          "type": "Ultra Rare",
+          "description": "(Level by NumbEr07 & Lumi)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013910469528014898/partyofspirits.png"
+        },
+        {
+          "chance": 1,
+          "filename": "undergroundparty",
+          "name": "Underground Party",
+          "type": "Ultra Rare",
+          "description": "(Level by NumbEr07 & Lumi)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013910469528014898/partyofspirits.png"
+        },
+        {
+          "chance": 1,
+          "filename": "themassacre",
+          "name": "The Massacre",
+          "type": "Ultra Rare",
+          "description": "(Level by NumbEr07 & Lumi)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013910469528014898/partyofspirits.png"
+        },
+        {
+          "chance": 2,
+          "filename": "strawberrysoldier",
+          "name": "Strawberry Soldier",
+          "type": "Super Rare",
+          "description": "(Level by Strode)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013922209036763146/greathall.png"
+        },
+        {
+          "chance": 2,
+          "filename": "oldclock",
+          "name": "Old clock",
+          "type": "Super Rare",
+          "description": "(Level by Strode)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013922209036763146/greathall.png"
+        },
+        {
+          "chance": 2,
+          "filename": "wbutterflies",
+          "name": "Wakeboarding Butterflies",
+          "type": "Super Rare",
+          "description": "(Level by Strode)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013922209036763146/greathall.png"
+        },
+        {
+          "chance": 2,
+          "filename": "treasurekeeeper",
+          "name": "Treasure keeeper",
+          "type": "Super Rare",
+          "description": "(Level by Strode)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013922209036763146/greathall.png"
+        },
+        {
+          "chance": 2,
+          "filename": "dimension",
+          "name": "Dimension",
+          "type": "Super Rare",
+          "description": "(Level by Strode)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013922209036763146/greathall.png"
+        },
+        {
+          "chance": 2,
+          "filename": "falseparadise",
+          "name": "false paradise",
+          "type": "Super Rare",
+          "description": "(Level by Strode)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013922209036763146/greathall.png"
+        },
+        {
+          "chance": 2,
+          "filename": "mountainoftraining",
+          "name": "Mountain of Training",
+          "type": "Super Rare",
+          "description": "(Level by Strode)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013922209036763146/greathall.png"
+        },
+        {
+          "chance": 2,
+          "filename": "lanterns",
+          "name": "Lanterns",
+          "type": "Super Rare",
+          "description": "(Level by Strode)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013922209036763146/greathall.png"
+        },
+        {
+          "chance": 2,
+          "filename": "helloworld",
+          "name": "hello world",
+          "type": "Super Rare",
+          "description": "(Level by Strode)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013922209036763146/greathall.png"
+        },
+        {
+          "chance": 2,
+          "filename": "luminousflower",
+          "name": "Luminous Flower",
+          "type": "Super Rare",
+          "description": "(Level by Strode)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013922209036763146/greathall.png"
+        },
+        {
+          "chance": 2,
+          "filename": "Snow",
+          "name": "Snow!",
+          "type": "Super Rare",
+          "description": "(Level by Strode)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013922209036763146/greathall.png"
+        },
+        {
+          "chance": 2,
+          "filename": "goodnight",
+          "name": "Have A Good Night",
+          "type": "Super Rare",
+          "description": "(Level by Strode)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013922209036763146/greathall.png"
+        },
+        {
+          "chance": 2,
+          "filename": "mycapacitance",
+          "name": "My Capacitance",
+          "type": "Super Rare",
+          "description": "(Level by Strode)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013922209036763146/greathall.png"
+        },
+        {
+          "chance": 2,
+          "filename": "dubwoofersubstep",
+          "name": "Dubwoofer Substep",
+          "type": "Super Rare",
+          "description": "(Level by Strode)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013922209036763146/greathall.png"
+        },
+        {
+          "chance": 2,
+          "filename": "fourcolors",
+          "name": "Four Colors",
+          "type": "Super Rare",
+          "description": "(Level by Strode)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013922209036763146/greathall.png"
+        },
+        {
+          "chance": 2,
+          "filename": "snowfall",
+          "name": "Snowfall",
+          "type": "Super Rare",
+          "description": "(Level by Strode)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013922209036763146/greathall.png"
+        },
+        {
+          "chance": 2,
+          "filename": "vly",
+          "name": "Vigor Lines Yoked",
+          "type": "Super Rare",
+          "description": "(Level by Strode)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013922209036763146/greathall.png"
+        },
+        {
+          "chance": 2,
+          "filename": "chronojoust",
+          "name": "Chrono Joust",
+          "type": "Super Rare",
+          "description": "(Level by Strode)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013922209036763146/greathall.png"
+        },
+        {
+          "chance": 2,
+          "filename": "zenith",
+          "name": "Zenith",
+          "type": "Super Rare",
+          "description": "(Level by Strode)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013922209036763146/greathall.png"
+        },
+        {
+          "chance": 2,
+          "filename": "papsimple",
+          "name": "Pictured As Perfect (Simple)",
+          "type": "Super Rare",
+          "description": "(Level by Strode)",
+          "smell": "test",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1013922209036763146/greathall.png"
         }
       ]
     }
