@@ -9,7 +9,7 @@ function reaction.run(message, interaction, data, response)
     print('user1 has accepted')
 
     for k, v in pairs(uj.storage) do
-      if k ~= "rdcards" then
+      if k ~= "rdcards" and cdb[k].season <= 8 then
         uj.storage[k] = uj.storage[k] - 1
         if uj.storage[k] == 0 then uj.storage[k] = nil end
       end
