@@ -76,8 +76,13 @@
   },
   "cardmaestro": {
     "name": "Card Maestro",
-    "description": "Collect every single card that's currently available! This medal is not permanent, and will be removed every time new cards are added.",
+    "description": "Collect every card from Season 1 to Season 8!",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/840574153060778034/cardmaestro.png"
+  },
+  "s9maestro": {
+    "name": "Season 9 Maestro",
+    "description": "Collect every single Season 9 card!",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1015290684229562449/season9maestro.png"
   },
   "pyramidal": {
     "name": "Pyramidal",
