@@ -42,7 +42,7 @@ function command.run(message, mt)
         durationtext = durationtext .. minutesleft % 60 .. lang.time_minute
         if lang.needs_plural_s == true then
 		  if minutesleft % 60 ~= 1 then
-            durationtext = durationtext .. time_plural_s
+            durationtext = durationtext .. lang.time_plural_s
           end
 		end
       end
