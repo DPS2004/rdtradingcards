@@ -2,6 +2,7 @@ local command = {}
 function command.run(message, mt)
   print(message.author.name .. " did !showitem")
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
+  local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
   local lang = dpf.loadjson("langs/" .. uj.lang .. "/showitem.json","")
   if #mt ~= 1 then
     message.channel:send(lang.no_arguments)
@@ -24,7 +25,7 @@ function command.run(message, mt)
   local name = itemdb[curfilename] and itemdb[curfilename].name or consdb[curfilename].name
   local embedurl = itemdb[curfilename] and itemdb[curfilename].embed or consdb[curfilename].embed
 
-  if not (uj.items[curfilename] or uj.consumables[curfilename] or shophas(curfilename)) then
+  if not (uj.items[curfilename] or uj.consumables[curfilename] or (shophas(curfilename) and not (uj.lastrob + 3 > sj.stocknum and uj.lastrob ~= 0))) then
     print("user doesnt have item")
     if nopeeking then
       message.channel:send(lang.error_nopeeking_1 .. mt[1] .. lang.error_nopeeking_2)

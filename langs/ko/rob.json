@@ -1,0 +1,77 @@
+{
+    "needs_plural_s": false,
+    "plural_s": "",
+
+    "dm_message": "죄송하지만, DM에서는 물건을 훔치실 수 없습니다!",
+    
+	"more_restock_1": "재입고 ",
+    "more_restock_2": "번",
+    "time_hour": "시간",
+	"time_and": " ",
+	"time_minute": "분",
+
+	"blacklist_next_1": "다음 재입고 뒤 **진기한 가게**를 다시 사용하실 수 있습니다. 가게는 ",
+	"blacklist_next_2": " 뒤에 재입고됩니다.",
+	"blacklist_1": "",
+	"blacklist_2": " 동안 **진기한 가게**에서 출입금지되셨습니다.",
+	
+	"out_of_stock_1": "현재 **",
+	"out_of_stock_2": "** 아이템의 잔고가 없다.",
+	
+	"too_many_requested_1": "**",
+	"too_many_requested_2": "** 아이템은 최대 ",
+	"too_many_requested_3": "개까지 요청할 수 있다.",
+	
+	"nopeeking_error_1": "**진기한 가게**가 ",
+	"nopeeking_error_2": "을(를) 팔고 있지 않거나, 당신이 이름을 잘못 입력한 것 같다.",
+	
+	"donthave_1": "**진기한 가게**는 **",
+	"donthave_2": "**을(를) 팔고 있지 않다.",
+	
+	"alreadyhave_1": "이미 **",
+	"alreadyhave_2": "** 아이템을 갖고 있다.",
+	
+	"hasfixedmouse": "이미 마우스를 갖고 있다.",
+	
+	"oneitemonly": "장착 가능한 아이템은 1종류당 1개씩만 갖고 있을 수 있다.",
+	
+	"unknownrequest_1": "데이터베이스에서 ",
+	"unknownrequest_2": "을(를) 찾을 수 없었습니다. 철자가 맞는지 확인해 주세요.",
+
+	"rob_random_nothing": "가게에서 훔칠 것이 없다.",
+	"robbing_shop_random": "진기한 가게를 훔치는 중...",
+	"rob_shop_random": "정말로 **진기한 가게**에서 뭔가를 훔치시겠습니까? 며칠 간 **가게에서 출입금지될** 수 있습니다!",
+
+	"robbing_shop_1": "",
+	"robbing_shop_2": "을(를) 훔치는 중...",
+	"rob_shop_desc": "뒷면에 설명이 적혀 있다.",
+
+	"rob_shop_1": "정말로 **진기한 가게**에서 **",
+	"rob_shop_2": "** ",
+	"rob_shop_3": " 훔치시겠습니까? 며칠 간 **가게에서 출입금지될** 수 있습니다!",
+
+	"rob_shop_item_1": "정말로 **진기한 가게**에서 **",
+	"rob_shop_item_2": "**을(를) 훔치시겠습니까? 며칠 간 **가게에서 출입금지될** 수 있습니다!",
+
+	"error_already_robbed": "에러가 발생했습니다. 최근 가게에서 무엇인가를 훔쳤는지 확인해 주세요!",
+
+	"card_unit": "장을",
+	"cons_unit": "개를",
+
+	"rob_succeeded_1": "당신은 **진기한 가게**에 들어갔다. 당신은 **늑대**에게 **",
+	"rob_succeeded_2": "** ",
+	"rob_succeeded_3": " 요구했다. 늑대는 그에 응했다.",
+
+	"rob_succeeded_item_1": "당신은 **진기한 가게**에 들어갔다. 당신은 **늑대**에게 **",
+	"rob_succeeded_item_2": "**을(를) 요구했다. **늑대**는 그에 응했다.",
+
+	"rob_failed_1": "당신은 **진기한 가게**에 들어갔다. 당신은 **늑대**에게 **",
+	"rob_failed_2": "** ",
+	"rob_failed_3": " 요구했다. **늑대는** 대신 경찰을 불렀다. 당신은 재입고 3번 동안 가게에서 출입금지되었다.",
+
+	"rob_failed_item_1": "당신은 **진기한 가게**에 들어갔다. 당신은 **늑대**에게 **",
+	"rob_failed_item_2": "**을(를) 요구했다. **늑대는** 대신 경찰을 불렀다. 당신은 재입고 3번 동안 가게에서 출입금지되었다.",
+
+	"rob_cancelled_1": "<@",
+	"rob_cancelled_2": ">님이 **진기한 가게**에서 뭔가를 훔치는 것을 그만두었습니다. 지금은 말이죠...",
+}
