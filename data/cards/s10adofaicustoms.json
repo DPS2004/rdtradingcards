@@ -3,6 +3,32 @@
     "basechance": 3,
     "cards": [
       {
+        "chance": 2,
+        "filename": "diefire",
+        "name": "Die in a Fire",
+        "type": "Super Rare",
+        "description": "(Level by zedwards)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1020781110994665553/diefire.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "jackbox",
+        "name": "Jack in the Box",
+        "type": "Super Rare",
+        "description": "(Level by robotups)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1020769352368267295/jackbox.gif"
       }
     ]
 }
