@@ -1,7 +1,8 @@
 {
     "groupname": "s10 adofai customs",
     "basechance": 3,
-    "cards": [
+    "cards": 
+    [
       {
         "chance": 2,
         "filename": "diefire",
@@ -29,6 +30,48 @@
             "swirlymarbles": true
         },
         "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1020769352368267295/jackbox.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "tshadows",
+        "name": "Twisted Shadows",
+        "type": "Ultra Rare",
+        "description": "(Level by lyoug)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "moonraiders",
+        "name": "Moon Raiders",
+        "type": "Super Rare",
+        "description": "(Level by CyanAqua)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "reddits",
+        "name": "Reddits",
+        "type": "Super Rare",
+        "description": "(Level by KAERRA)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
       }
     ]
 }
