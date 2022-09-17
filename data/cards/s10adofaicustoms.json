@@ -72,6 +72,20 @@
             "swirlymarbles": true
         },
         "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "hiasobiadofai",
+        "name": "Play With Fire (ADOFAI)",
+        "type": "Ultra Rare",
+        "description": "(Level by zedwards)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
       }
     ]
 }
