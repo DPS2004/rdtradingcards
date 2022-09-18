@@ -86,6 +86,74 @@
             "swirlymarbles": true
         },
         "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "anotherme",
+        "name": "Another Me",
+        "type": "Super Rare",
+        "description": "(Level by Team P.A.L.)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "jampancake",
+        "name": "Jam with Pancake",
+        "type": "Ultra Rare",
+        "description": "(Level by Daming or Cijan Gaming, not sure which one)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "polygons",
+        "name": "Polygons",
+        "type": "Super Rare",
+        "description": "(Level by Riya)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "wanttorun",
+        "name": "We Want to Run",
+        "type": "Ultra Rare",
+        "description": "(Level by Daming)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "19zz",
+        "name": "19ZZ",
+        "type": "Ultra Rare",
+        "description": "(Level by YeetYote)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
       }
     ]
 }
