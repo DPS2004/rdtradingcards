@@ -154,6 +154,115 @@
             "swirlymarbles": true
         },
         "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "insertname", 
+        "name": "なまえ を いれてください▼",
+        "type": "Super Rare",
+        "description": "(Level by zedwards)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "praystation",
+        "name": "PrayStation",
+        "type": "Ultra Rare",
+        "description": "(Level by Team Vega)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "fragormagnus",
+        "name": "Fragor Magnus",
+        "type": "Super Rare",
+        "description": "(Level by Hawkyrious)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "hom",
+        "name": "Hall of Mirrors",
+        "type": "Super Rare",
+        "description": "(Level by Star4th)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "module",
+        "name": "Module",
+        "type": "Super Rare",
+        "description": "(Level by Onslayet)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "wicked",
+        "name": "Wicked",
+        "type": "Super Rare",
+        "description": "(Level by PAPER_PPT)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "spinbottle",
+        "name": "Spin Ye Bottle",
+        "type": "Ultra Rare",
+        "description": "(Level by Firestix)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "ikasu",
+        "name": "ikasu",
+        "type": "Super Rare",
+        "description": "(Level by HanB)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
       }
     ]
 }
