@@ -263,6 +263,100 @@
             "swirlymarbles": true
         },
         "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "ofnanother",
+        "name": "One Forgotten Night (Another)",
+        "type": "Super Rare",
+        "description": "(Level by Star4th)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "jumper",
+        "name": "Jumper",
+        "type": "Super Rare",
+        "description": "(Level by Zisos)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "heracles-ex",
+        "name": "Heracles EXtended",
+        "type": "Super Rare",
+        "description": "(Level by Samario)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "forever",
+        "name": "Forever",
+        "type": "Super Rare",
+        "description": "(Level by Misoguy)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "starlighttree",
+        "name": "Starlight Tree",
+        "type": "Super Rare",
+        "description": "(Level by Misoguy)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "destroyinggarden",
+        "name": "Destroying Garden",
+        "type": "Super Rare",
+        "description": "(Level by Ssimille)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "sos",
+        "name": "SOS",
+        "type": "Ultra Rare",
+        "description": "(Level by Rikri, Kin, LUMI)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
       }
     ]
 }
