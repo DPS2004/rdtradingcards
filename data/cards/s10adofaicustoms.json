@@ -357,6 +357,129 @@
             "swirlymarbles": true
         },
         "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "skyrealm",
+        "name": "Sky Realm",
+        "type": "Super Rare",
+        "description": "(Level by Misoguy)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "winterswalk",
+        "name": "Winter's Walk",
+        "type": "Super Rare",
+        "description": "(Level by Xeno)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "lyricalbusy",
+        "name": "Lyrical Busy",
+        "type": "Ultra Rare",
+        "description": "(Level by Plant Guy)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "delaypedal2",
+        "name": "Delay Pedal (ADOFAI)",
+        "type": "Super Rare",
+        "description": "(Level by Daming)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "cupofcoffee",
+        "name": "A Cup of Coffee",
+        "type": "Super Rare",
+        "description": "(Level by hotduck)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "mysterygarden",
+        "name": "Mystery Garden",
+        "type": "Super Rare",
+        "description": "(Level by BluPen)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "ppsong",
+        "name": "PeePee Song",
+        "type": "Ultra Rare",
+        "description": "(Level by Colon)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "sos",
+        "name": "Into the Zone",
+        "type": "Super Rare",
+        "description": "(Level by Klyzx)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "wildsgreenery",
+        "name": "Wilds greenery",
+        "type": "Super Rare",
+        "description": "(Level by Plant Guy)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
       }
     ]
 }
