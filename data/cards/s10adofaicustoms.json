@@ -480,6 +480,118 @@
             "swirlymarbles": true
         },
         "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "bluesprobably",
+        "name": "Blues, Probably",
+        "type": "Super Rare",
+        "description": "(Level by Xeno)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "sstation",
+        "name": "sleepwalk station",
+        "type": "Ultra Rare",
+        "description": "(Level by yoshikirby26)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "ifchicken",
+        "name": "If I had a Chicken",
+        "type": "Ultra Rare",
+        "description": "(Level by Strode)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "rainbowtylenol",
+        "name": "Rainbow Tylenol",
+        "type": "Ultra Rare",
+        "description": "(Level by Econ, prod)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "storm",
+        "name": "storm",
+        "type": "Super Rare",
+        "description": "(Level by Tripizza)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "lab18",
+        "name": "Laboratory-018",
+        "type": "Super Rare",
+        "description": "(Level by PAPER_PPT)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "3-",
+        "name": "The Wind-Up (prod remix)",
+        "type": "Super Rare",
+        "description": "(Level by Plant Guy)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "cantremebername",
+        "name": "I can't even remeber my own name",
+        "type": "Super Rare",
+        "description": "(Level by Daming)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
       }
     ]
 }
