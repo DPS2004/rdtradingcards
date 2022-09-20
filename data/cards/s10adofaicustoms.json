@@ -32,7 +32,7 @@
         "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1020769352368267295/jackbox.gif"
       },
       {
-        "chance": 2,
+        "chance": 1,
         "filename": "tshadows",
         "name": "Twisted Shadows",
         "type": "Ultra Rare",
@@ -74,7 +74,7 @@
         "embed": "(NOTDONE)"
       },
       {
-        "chance": 2,
+        "chance": 1,
         "filename": "hiasobiadofai",
         "name": "Play With Fire (ADOFAI)",
         "type": "Ultra Rare",
@@ -102,7 +102,7 @@
         "embed": "(NOTDONE)"
       },
       {
-        "chance": 2,
+        "chance": 1,
         "filename": "jampancake",
         "name": "Jam with Pancake",
         "type": "Ultra Rare",
@@ -169,7 +169,7 @@
         "embed": "(NOTDONE)"
       },
       {
-        "chance": 2,
+        "chance": 1,
         "filename": "praystation",
         "name": "PrayStation",
         "type": "Ultra Rare",
@@ -238,7 +238,7 @@
         "embed": "(NOTDONE)"
       },
       {
-        "chance": 2,
+        "chance": 1,
         "filename": "spinbottle",
         "name": "Spin Ye Bottle",
         "type": "Ultra Rare",
@@ -345,7 +345,7 @@
         "embed": "(NOTDONE)"
       },
       {
-        "chance": 2,
+        "chance": 1,
         "filename": "sos",
         "name": "SOS",
         "type": "Ultra Rare",
@@ -388,7 +388,7 @@
         "chance": 2,
         "filename": "lyricalbusy",
         "name": "Lyrical Busy",
-        "type": "Ultra Rare",
+        "type": "Super Rare",
         "description": "(Level by Plant Guy)",
         "smell": "(NOTYET)",
         "season": 10,
@@ -444,7 +444,7 @@
         "chance": 2,
         "filename": "ppsong",
         "name": "PeePee Song",
-        "type": "Ultra Rare",
+        "type": "Super Rare",
         "description": "(Level by Colon)",
         "smell": "(NOTYET)",
         "season": 10,
@@ -496,7 +496,7 @@
         "embed": "(NOTDONE)"
       },
       {
-        "chance": 2,
+        "chance": 1,
         "filename": "sstation",
         "name": "sleepwalk station",
         "type": "Ultra Rare",
@@ -510,7 +510,7 @@
         "embed": "(NOTDONE)"
       },
       {
-        "chance": 2,
+        "chance": 1,
         "filename": "ifchicken",
         "name": "If I had a Chicken",
         "type": "Ultra Rare",
@@ -524,7 +524,7 @@
         "embed": "(NOTDONE)"
       },
       {
-        "chance": 2,
+        "chance": 1,
         "filename": "rainbowtylenol",
         "name": "Rainbow Tylenol",
         "type": "Ultra Rare",
