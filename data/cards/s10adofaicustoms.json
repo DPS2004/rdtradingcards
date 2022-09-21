@@ -592,6 +592,48 @@
             "swirlymarbles": true
         },
         "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 1,
+        "filename": "endless.reaility",
+        "name": "endless.reaility",
+        "type": "Ultra Rare",
+        "description": "(Level by Rikri)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "lettertobw",
+        "name": "黒塗り世界宛て書簡",
+        "type": "Super Rare",
+        "description": "(Level by Xeno)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
+      },
+      {
+        "chance": 2,
+        "filename": "hotmilkadofai",
+        "name": "hot milk (ADOFAI)",
+        "type": "Super Rare",
+        "description": "(Level by Econ)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "(NOTDONE)"
       }
     ]
 }
