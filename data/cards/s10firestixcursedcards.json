@@ -15,6 +15,61 @@
                 "swirlymarbles": true
             },
             "embed": "(NOTDONE)"
-            }
+        },
+        {
+            "chance": 2,
+            "filename": "2-xf",
+            "name": "Offbeats but it's a little longer",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "(NOTDONE)",
+            "season": 10,
+            "bonuses": {
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "(NOTDONE)"
+        },
+        {
+            "chance": 2,
+            "filename": "3-xf",
+            "name": "THE WIND-UP but it keeps rewinding",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "(NOTDONE)",
+            "season": 10,
+            "bonuses": {
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "(NOTDONE)"
+        },
+        {
+            "chance": 2,
+            "filename": "4-xf",
+            "name": "Love Letters but I keep having nightmares about Classic Pursuit",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "(NOTDONE)",
+            "season": 10,
+            "bonuses": {
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "(NOTDONE)"
+        },
+        {
+            "chance": 2,
+            "filename": "5-xf",
+            "name": "The Midnight Train but something is wrong with the train",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "(NOTDONE)",
+            "season": 10,
+            "bonuses": {
+                "swirlymarbles": true
+            },
+            "embed": "(NOTDONE)"
+        }
     ]
 }
