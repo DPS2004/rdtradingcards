@@ -272,6 +272,32 @@
                 "swirlymarbles": true
             },
             "embed": "(NOTDONE)"
+        },
+        {
+            "chance": 2,
+            "filename": "mn-xf",
+            "name": "Night Wander (cnsouka Remix) but it's a crossover",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "(NOTDONE)",
+            "season": 10,
+            "bonuses": {
+                "swirlymarbles": true
+            },
+            "embed": "(NOTDONE)"
+        },
+        {
+            "chance": 2,
+            "filename": "ml-xf",
+            "name": "La nuit de vif but the bpm drift is getting worse",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "(NOTDONE)",
+            "season": 10,
+            "bonuses": {
+                "swirlymarbles": true
+            },
+            "embed": "(NOTDONE)"
         }
     ]
 }
