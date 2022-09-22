@@ -1,0 +1,20 @@
+{
+    "groupname": "firestix cursed adofai cards",
+    "basechance": 3,
+    "cards": 
+    [
+        {
+            "chance": 2,
+            "filename": "1-xf",
+            "name": "A Dance of Fire and Ice but the music is cursed",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "(NOTDONE)",
+            "season": 10,
+            "bonuses": {
+                "swirlymarbles": true
+            },
+            "embed": "(NOTDONE)"
+            }
+    ]
+}
