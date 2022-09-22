@@ -70,6 +70,100 @@
                 "swirlymarbles": true
             },
             "embed": "(NOTDONE)"
+        },
+        {
+            "chance": 1,
+            "filename": "6-xf",
+            "name": "PULSE but every time you go up or down it gets faster",
+            "type": "Ultra Rare",
+            "description": "(Level by Firestix)",
+            "smell": "(NOTDONE)",
+            "season": 10,
+            "bonuses": {
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "(NOTDONE)"
+        },
+        {
+            "chance": 2,
+            "filename": "7-xf",
+            "name": "Spin 2 Win but there's no fun allowed",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "(NOTDONE)",
+            "season": 10,
+            "bonuses": {
+                "swirlymarbles": true
+            },
+            "embed": "(NOTDONE)"
+        },
+        {
+            "chance": 1,
+            "filename": "b-xf",
+            "name": "Please Stop Playing My Levels",
+            "type": "Ultra Rare",
+            "description": "(Level by Firestix)",
+            "smell": "(NOTDONE)",
+            "season": 10,
+            "bonuses": {
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "(NOTDONE)"
+        },
+        {
+            "chance": 2,
+            "filename": "8-xf",
+            "name": "Jungle City but the angled sections have an extra beat",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "(NOTDONE)",
+            "season": 10,
+            "bonuses": {
+                "swirlymarbles": true
+            },
+            "embed": "(NOTDONE)"
+        },
+        {
+            "chance": 2,
+            "filename": "10-xf",
+            "name": "Butterfly Planet but I didn't chart the swing",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "(NOTDONE)",
+            "season": 10,
+            "bonuses": {
+                "swirlymarbles": true
+            },
+            "embed": "(NOTDONE)"
+        },
+        {
+            "chance": 2,
+            "filename": "11-xf",
+            "name": "Heracles but there's a twirl on every tile",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "(NOTDONE)",
+            "season": 10,
+            "bonuses": {
+                "swirlymarbles": true
+            },
+            "embed": "(NOTDONE)"
+        },
+        {
+            "chance": 2,
+            "filename": "12-xf",
+            "name": "Artificial Chariot but each unique loop repeats for every time it's been played before",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "(NOTDONE)",
+            "season": 10,
+            "bonuses": {
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "(NOTDONE)"
         }
     ]
 }
