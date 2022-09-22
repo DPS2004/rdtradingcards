@@ -230,6 +230,48 @@
                 "swirlymarbles": true
             },
             "embed": "(NOTDONE)"
+        },
+        {
+            "chance": 1,
+            "filename": "xr-xf",
+            "name": "Rose Garden but each triangle makes you more tired",
+            "type": "Ultra Rare",
+            "description": "(Level by Firestix)",
+            "smell": "(NOTDONE)",
+            "season": 10,
+            "bonuses": {
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "(NOTDONE)"
+        },
+        {
+            "chance": 1,
+            "filename": "xo-xf",
+            "name": "One Forgotten Meme",
+            "type": "Ultra Rare",
+            "description": "(Level by Firestix)",
+            "smell": "(NOTDONE)",
+            "season": 10,
+            "bonuses": {
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "(NOTDONE)"
+        },
+        {
+            "chance": 1,
+            "filename": "xt-xf",
+            "name": "Stoptions",
+            "type": "Ultra Rare",
+            "description": "(Level by Firestix)",
+            "smell": "(NOTDONE)",
+            "season": 10,
+            "bonuses": {
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "(NOTDONE)"
         }
     ]
 }
