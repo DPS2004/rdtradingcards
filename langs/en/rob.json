@@ -40,7 +40,7 @@
 
 	"rob_random_nothing": "The shop has nothing to rob.",
 	"robbing_shop_random": "Robbing Quaint Shop...",
-	"rob_shop_random": "Are you sure you want to rob something from the **Quaint Shop**? This may **blacklist you from the shop** for a few days!",
+	"rob_shop_random": "Are you sure you want to rob something random from the **Quaint Shop**? This has a higher chance of success, but still may **blacklist you from the shop** for a few days!",
 
 	"robbing_shop_1": "Robbing ",
 	"robbing_shop_2": "...",

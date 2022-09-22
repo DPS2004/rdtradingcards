@@ -85,7 +85,9 @@ function reaction.run(message, interaction, data, response)
         --print("shoprobtime")
       end
     end
-
+	
+	
+	
     if data.itemtype == "consumable" then
       local robchance = math.random(1,2*(data.sprice+data.numrequest))
       if robchance < 4 then
@@ -154,6 +156,13 @@ function reaction.run(message, interaction, data, response)
           robsucceed = true
         end
       end
+	  
+	  if (not robsucceed) and data.random then
+		if math.random(1,3) == 1 then
+		  robsucceed = true
+		end
+	  end
+	  
       if robsucceed == true then
         print("rob succeded")
         sj.cards[data.sindex].stock = sj.cards[data.sindex].stock - data.numrequest
