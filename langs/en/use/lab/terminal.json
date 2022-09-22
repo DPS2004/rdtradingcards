@@ -28,6 +28,9 @@
 	"stats_timesthrown": "Cards Thrown: ",
 	"stats_timescaught": "Cards Caught: ",
 	"stats_timesprestiged": "Times Prestiged: ",
+	"stats_timesrobbed": "Times Robbed: ",
+	"stats_timesrobsucceeded": "Times Succeeded Robbing: ",
+	"stats_timesrobfailed": "Times Failed Robbing: ",
 	"stats_factory": "Remember, the Factory is watching!",
 	
 	"credits_title": "Credits",
