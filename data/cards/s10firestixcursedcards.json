@@ -12,6 +12,7 @@
             "smell": "(NOTDONE)",
             "season": 10,
             "bonuses": {
+                "filmreel": true,
                 "swirlymarbles": true
             },
             "embed": "(NOTDONE)"
@@ -67,6 +68,7 @@
             "smell": "(NOTDONE)",
             "season": 10,
             "bonuses": {
+                "filmreel": true,
                 "swirlymarbles": true
             },
             "embed": "(NOTDONE)"
@@ -121,6 +123,7 @@
             "smell": "(NOTDONE)",
             "season": 10,
             "bonuses": {
+                "filmreel": true,
                 "swirlymarbles": true
             },
             "embed": "(NOTDONE)"
@@ -134,6 +137,7 @@
             "smell": "(NOTDONE)",
             "season": 10,
             "bonuses": {
+                "filmreel": true,
                 "swirlymarbles": true
             },
             "embed": "(NOTDONE)"
