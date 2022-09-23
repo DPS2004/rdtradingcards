@@ -260,6 +260,7 @@
         "smell": "(NOTYET)",
         "season": 10,
         "bonuses": {
+            "filmreel": true,
             "swirlymarbles": true
         },
         "embed": "(NOTDONE)"
@@ -273,6 +274,7 @@
         "smell": "(NOTYET)",
         "season": 10,
         "bonuses": {
+            "filmreel": true,
             "swirlymarbles": true
         },
         "embed": "(NOTDONE)"
@@ -286,6 +288,7 @@
         "smell": "(NOTYET)",
         "season": 10,
         "bonuses": {
+            "filmreel": true,
             "swirlymarbles": true
         },
         "embed": "(NOTDONE)"
@@ -299,6 +302,7 @@
         "smell": "(NOTYET)",
         "season": 10,
         "bonuses": {
+            "filmreel": true,
             "swirlymarbles": true
         },
         "embed": "(NOTDONE)"
@@ -340,6 +344,7 @@
         "smell": "(NOTYET)",
         "season": 10,
         "bonuses": {
+            "filmreel": true,
             "swirlymarbles": true
         },
         "embed": "(NOTDONE)"
@@ -367,6 +372,7 @@
         "smell": "(NOTYET)",
         "season": 10,
         "bonuses": {
+            "filmreel": true,
             "swirlymarbles": true
         },
         "embed": "(NOTDONE)"
@@ -380,6 +386,7 @@
         "smell": "(NOTYET)",
         "season": 10,
         "bonuses": {
+            "filmreel": true,
             "swirlymarbles": true
         },
         "embed": "(NOTDONE)"
@@ -449,6 +456,7 @@
         "smell": "(NOTYET)",
         "season": 10,
         "bonuses": {
+            "filmreel": true,
             "swirlymarbles": true
         },
         "embed": "(NOTDONE)"
