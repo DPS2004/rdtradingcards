@@ -92,7 +92,18 @@ function reaction.run(message, interaction, data, response)
 
     if data.itemtype == "consumable" then
       local robchance = math.random(1,2*(data.sprice+data.numrequest))
+      local robsucceed = false
       if robchance < 4 then
+        robsucceed = true
+      end
+      
+      if (not robsucceed) and data.random then
+        if math.random(1,3) == 1 then
+          robsucceed = true
+        end
+      end
+    
+      if robsucceed then
         print("rob succeeded")
         sj.consumables[data.sindex].stock = sj.consumables[data.sindex].stock - data.numrequest
         if not uj.consumables then uj.consumables = {} end
@@ -159,14 +170,14 @@ function reaction.run(message, interaction, data, response)
         end
       end
 	  
-	  if (not robsucceed) and data.random then
-		if math.random(1,3) == 1 then
-		  robsucceed = true
-		end
-	  end
+      if (not robsucceed) and data.random then
+        if math.random(1,3) == 1 then
+          robsucceed = true
+        end
+      end
 	  
       if robsucceed == true then
-        print("rob succeded")
+        print("rob succeeded")
         sj.cards[data.sindex].stock = sj.cards[data.sindex].stock - data.numrequest
         if not uj.inventory then uj.inventory = {} end
         if not uj.inventory[data.srequest] then
@@ -194,8 +205,19 @@ function reaction.run(message, interaction, data, response)
     end
     if data.itemtype == "item" then
       local robchance = math.random(1,2*data.sprice)
-      if robchance < 4 then
-        print("rob succeded")
+      local robsucceed = false
+      if robchance <= 3 then
+        robsucceed = true
+      end
+      
+      if (not robsucceed) and data.random then
+        if math.random(1,3) == 1 then
+          robsucceed = true
+        end
+      end
+      
+      if robsucceed then
+        print("rob succeeded")
         sj.itemstock = sj.itemstock - 1
         uj.items[data.srequest] = true
         interaction:reply(lang.rob_succeeded_item_1 .. data.sname .. lang.rob_succeeded_item_2)
