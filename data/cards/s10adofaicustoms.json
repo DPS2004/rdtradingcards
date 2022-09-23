@@ -43,7 +43,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022803710717472778/tshadows.gif"
       },
       {
         "chance": 2,
@@ -57,7 +57,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022821864441135104/moonraiders.gif"
       },
       {
         "chance": 2,
@@ -71,7 +71,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022821865493905428/reddits.gif"
       },
       {
         "chance": 1,
@@ -85,13 +85,13 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022821863405125712/hiasobiadofai.gif"
       },
       {
         "chance": 2,
         "filename": "anotherme",
         "name": "Another Me",
-        "type": "Super Rare",
+        "type": "Ultra Rare",
         "description": "(Level by Team P.A.L.)",
         "smell": "(NOTYET)",
         "season": 10,
@@ -99,20 +99,20 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022821862885048413/anotherme.gif"
       },
       {
         "chance": 1,
         "filename": "jampancake",
         "name": "Jam with Pancake",
         "type": "Ultra Rare",
-        "description": "(Level by Daming or Cijan Gaming, not sure which one)",
-        "smell": "(NOTYET)",
+        "description": "(Level by Cijan Gaming)",
+        "smell": "",
         "season": 10,
         "bonuses": {
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022821863925223454/jampancake.png"
       },
       {
         "chance": 2,
@@ -126,7 +126,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022821864944447518/polygons.gif"
       },
       {
         "chance": 2,
