@@ -1,0 +1,218 @@
+{
+    "groupname": "fanmade customs (realer)",
+    "basechance": 3,
+    "cards": [
+	
+	{
+ 	    "chance":2,
+	    "filename": "ablixa",
+          "name": "Ablixa",
+          "type": "Super Rare",
+          "description": "(Level by MarcoSezUwU)",
+          "smell": "Grey Goo",
+          "season": 10,
+          "bonuses": {
+            "valentinesdaycard": true,
+			"rustysword":true,
+			"spicymintgum":true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/898799052748128266/1022496365571489852/ablixa.png"
+    },
+	{
+ 	    "chance":2,
+	    "filename": "artistlemonade",
+          "name": "ARTIST LEMONADE",
+          "type": "Super Rare",
+          "description": "(Level by Healion123 and 04_1008)",
+          "smell": "Envy",
+          "season": 10,
+          "bonuses": {
+            "cafemixtape": true,
+			"deviltail": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/898799052748128266/1022498309912395846/artistlemonade.png"
+    },
+	{
+ 	    "chance":2,
+	    "filename": "cheval",
+          "name": "ARTIST LEMONADE",
+          "type": "Super Rare",
+          "description": "(Level by Healion123 and 04_1008)",
+          "smell": "Horses",
+          "season": 10,
+          "bonuses": {
+            "valentinesdaycard": true,
+			"deviltail": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/898799052748128266/1022513436237770772/cheval.png"
+    },
+	{
+ 	    "chance":2,
+	    "filename": "coquetterie",
+          "name": "Coquetterie Dancer",
+          "type": "Super Rare",
+          "description": "(Level by Timeshark)",
+          "smell": "Feathers",
+          "season": 10,
+          "bonuses": {
+            "deluxebirdseed": true,
+			"deviltail": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/898799052748128266/1022514917133267056/coquetterie.png"
+    },
+	{
+ 	    "chance":2,
+	    "filename": "dropout",
+          "name": "::DROPOUT::",
+          "type": "Super Rare",
+          "description": "(Level by NekoRaita)",
+          "smell": "Runes",
+          "season": 10,
+          "bonuses": {
+            "filmreel": true,
+			"deviltail": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/944009293856919662/1022688789866487839/dropout.gif"
+    },
+	{
+ 	    "chance":2,
+	    "filename": "fortuneteller",
+          "name": "Fortune Teller",
+          "type": "Super Rare",
+          "description": "(Level by MarioMak967 and Shareoff)",
+          "smell": "Tarot",
+          "season": 10,
+          "bonuses": {
+            "filmreel": true,
+			"deluxebirdseed": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/944009293856919662/1022688831515934731/fortuneteller.gif"
+    },
+	{
+ 	    "chance":2,
+	    "filename": "fruitingbodies",
+          "name": "Fruiting Bodies",
+          "type": "Super Rare",
+          "description": "(Level by Nocallia and Symphony)",
+          "smell": "Mycelium",
+          "season": 10,
+          "bonuses": {
+            "cafemixtape": true,
+			"deviltail": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/898799052748128266/1022519765568344084/fruitingbodies.png"
+    },
+	{
+ 	    "chance":2,
+	    "filename": "hex",
+          "name": "H E X",
+          "type": "Super Rare",
+          "description": "(Level by 吾夜犹明 and 3q4a)",
+          "smell": "Solitaire",
+          "season": 10,
+          "bonuses": {
+			"deviltail": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/898799052748128266/1022520869500756029/hex.png"
+    },
+	{
+ 	    "chance":2,
+	    "filename": "hits",
+          "name": "Hidden in the Sand",
+          "type": "Super Rare",
+          "description": "(Level by yoshikirby26)",
+          "smell": "Driftwood",
+          "season": 10,
+          "bonuses": {
+			"valentinesdaycard":true,
+			"deviltail": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/898799052748128266/1022525492718481469/hits.png"
+    },
+	{
+ 	    "chance":2,
+	    "filename": "mindbending",
+          "name": "A Mind-Bending Discovery",
+          "type": "Super Rare",
+          "description": "(Level by Poppers)",
+          "smell": "Starch",
+          "season": 10,
+          "bonuses": {
+			"valentinesdaycard":true,
+			"oversizedstethoscope": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/898799052748128266/1022526032160497674/mindbending.png"
+    },
+	{
+ 	    "chance":2,
+	    "filename": "random",
+          "name": "Random",
+          "type": "Super Rare",
+          "description": "(Level by Provolone)",
+          "smell": "bGVvQmTJPrzKYMIp",
+          "season": 10,
+          "bonuses": {
+			"valentinesdaycard":true,
+			"rustysword": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/898799052748128266/1022528285990735923/random.png"
+    },
+	{
+ 	    "chance":2,
+	    "filename": "rolypolys",
+          "name": "Roly-Polys no Nanakorobi Yaoki",
+          "type": "Super Rare",
+          "description": "(Level by Willow)",
+          "smell": "Lost Media",
+          "season": 10,
+          "bonuses": {
+			"deluxebirdseed":true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/898799052748128266/1022528877639258163/rolypolys.png"
+    },
+	{
+ 	    "chance":2,
+	    "filename": "sodangdark",
+          "name": "So Dang Dark",
+          "type": "Super Rare",
+          "description": "(Level by 9thCore and saladplainzone)",
+          "smell": "Mythicality",
+          "season": 10,
+          "bonuses": {
+			"oversizedstethoscope":true,
+			"valentinesdaycard":true,
+			"paddedstickersheet":true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/898799052748128266/1022529676134068304/sodangdark.png"
+    },
+	{
+ 	    "chance":2,
+	    "filename": "starinn",
+          "name": "ようこそ星のお宿",
+          "type": "Super Rare",
+          "description": "(Level by TatonSlice)",
+          "smell": "The Afterlife",
+          "season": 10,
+          "bonuses": {
+			"rustysword":true,
+			"valentinesdaycard":true,
+			"paddedstickersheet":true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/898799052748128266/1022531226332037120/starinn.png"
+    },
+	{
+ 	    "chance":2,
+	    "filename": "timetraveler",
+          "name": "Time Traveler",
+          "type": "Super Rare",
+          "description": "(Level by 3T and Diagamma)",
+          "smell": "Shifts in Perspective",
+          "season": 10,
+          "bonuses": {
+			"filmreel":true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/944009293856919662/1022688852508418068/timetraveler.gif"
+    },
+	
+    ]
+}

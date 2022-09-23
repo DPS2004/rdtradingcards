@@ -673,6 +673,11 @@ function command.run(message, mt, overwrite)
         if string.trim(string.lower(string.sub(messagecontent, 0, #v.trigger+1))) == v.trigger then
           if not (message.author.bot == true) then
           local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
+          local sj = dpf.loadjson("savedata/shop.json",defaultshopsave)
+          if not sj.stocknum then
+            sj.stocknum = 1
+            dpf.savejson("savedata/shop.json",sj)
+          end
             if not uj.lang then
               uj.lang = "en"
             end
