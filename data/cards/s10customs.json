@@ -72,7 +72,7 @@
             "filmreel": true,
 			"deviltail": true
           },
-          "embed": "TODO"
+          "embed": "https://cdn.discordapp.com/attachments/944009293856919662/1022688789866487839/dropout.gif"
     },
 	{
  	    "chance":2,
@@ -86,21 +86,7 @@
             "filmreel": true,
 			"deluxebirdseed": true
           },
-          "embed": "TODO"
-    },
-	{
- 	    "chance":2,
-	    "filename": "fruitingbodies",
-          "name": "Fruiting Bodies",
-          "type": "Super Rare",
-          "description": "(Level by Nocallia and Symphony)",
-          "smell": "Mycelium",
-          "season": 10,
-          "bonuses": {
-            "cafemixtape": true,
-			"deviltail": true
-          },
-          "embed": "https://cdn.discordapp.com/attachments/898799052748128266/1022519765568344084/fruitingbodies.png"
+          "embed": "https://cdn.discordapp.com/attachments/944009293856919662/1022688831515934731/fortuneteller.gif"
     },
 	{
  	    "chance":2,
@@ -173,20 +159,6 @@
     },
 	{
  	    "chance":2,
-	    "filename": "random",
-          "name": "Random",
-          "type": "Super Rare",
-          "description": "(Level by Provolone)",
-          "smell": "bGVvQmTJPrzKYMIp",
-          "season": 10,
-          "bonuses": {
-			"valentinesdaycard":true,
-			"rustysword": true
-          },
-          "embed": "https://cdn.discordapp.com/attachments/898799052748128266/1022528285990735923/random.png"
-    },
-	{
- 	    "chance":2,
 	    "filename": "rolypolys",
           "name": "Roly-Polys no Nanakorobi Yaoki",
           "type": "Super Rare",
@@ -239,7 +211,7 @@
           "bonuses": {
 			"filmreel":true
           },
-          "embed": "TODO"
+          "embed": "https://cdn.discordapp.com/attachments/944009293856919662/1022688852508418068/timetraveler.gif"
     },
 	
     ]
