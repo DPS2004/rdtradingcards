@@ -288,7 +288,7 @@ function command.run(message, mt)
       }
       storestring = storetable[i]
       contentstring = ''
-      embedtitle = embedtitle --.. lang.embed_cont
+      embedtitle = embedtitle .. lang.embed_cont
     end
     prevstorestring = storestring
   end
