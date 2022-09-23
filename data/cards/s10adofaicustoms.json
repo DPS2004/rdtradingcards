@@ -263,7 +263,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939433273671781/ikasu.gif"
       },
       {
         "chance": 2,
@@ -277,7 +277,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939799767748718/ofnanother.gif"
       },
       {
         "chance": 2,
@@ -291,7 +291,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939798341697618/jumper.gif"
       },
       {
         "chance": 2,
@@ -305,7 +305,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939074002157568/heracles-ex.gif"
       },
       {
         "chance": 2,
@@ -319,7 +319,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939072957792267/forever.gif"
       },
       {
         "chance": 2,
@@ -333,11 +333,11 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022940047177158677/starlighttree.gif"
       },
       {
         "chance": 2,
-        "filename": "destroyinggarden",
+        "filename": "dgarden",
         "name": "Destroying Garden",
         "type": "Super Rare",
         "description": "(Level by Ssimille)",
@@ -347,7 +347,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939072471240845/dgarden.gif"
       },
       {
         "chance": 1,
@@ -361,7 +361,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022940046812266566/sos.gif"
       },
       {
         "chance": 2,
@@ -375,7 +375,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939796001275986/skyrealm.gif"
       },
       {
         "chance": 2,
@@ -389,7 +389,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022940045990170684/winterwalk.gif"
       },
       {
         "chance": 2,
@@ -403,7 +403,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022899407454216294/lyricalbusy.gif"
       },
       {
         "chance": 2,
@@ -417,7 +417,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939072047632405/delaypedal2.gif"
       },
       {
         "chance": 2,
@@ -431,12 +431,12 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939071632375818/cupofcoffee.gif"
       },
       {
         "chance": 2,
-        "filename": "mysterygarden",
-        "name": "Mystery Garden",
+        "filename": "mysteryvillage",
+        "name": "Mystery Village",
         "type": "Super Rare",
         "description": "(Level by BluPen)",
         "smell": "(NOTYET)",
@@ -445,7 +445,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939799390273636/mysteryvillage.gif"
       },
       {
         "chance": 2,
@@ -459,11 +459,11 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939800132661248/ppsong.gif"
       },
       {
         "chance": 2,
-        "filename": "intothezone",
+        "filename": "intozone",
         "name": "Into the Zone",
         "type": "Super Rare",
         "description": "(Level by Klyzx)",
@@ -473,11 +473,11 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939797846773781/intozone.gif"
       },
       {
         "chance": 2,
-        "filename": "wildsgreenery",
+        "filename": "wgreenery",
         "name": "Wilds greenery",
         "type": "Super Rare",
         "description": "(Level by Plant Guy)",
@@ -487,11 +487,11 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022940048020217947/wgreenery.gif"
       },
       {
         "chance": 2,
-        "filename": "bluesprobably",
+        "filename": "bluesp",
         "name": "Blues, Probably",
         "type": "Super Rare",
         "description": "(Level by Xeno)",
@@ -501,11 +501,11 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939071166820352/bluesp.gif"
       },
       {
         "chance": 1,
-        "filename": "sstation",
+        "filename": "sleepstation",
         "name": "sleepwalk station",
         "type": "Ultra Rare",
         "description": "(Level by yoshikirby26)",
@@ -515,7 +515,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022940046422179980/sleepstation.gif"
       },
       {
         "chance": 1,
@@ -529,7 +529,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939432841650226/ifchicken.gif"
       },
       {
         "chance": 1,
@@ -543,7 +543,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939795443421254/rtylenol.gif"
       },
       {
         "chance": 2,
@@ -557,7 +557,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022940047642742834/storm.gif"
       },
       {
         "chance": 2,
@@ -571,7 +571,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939798824046662/lab18.gif"
       },
       {
         "chance": 2,
@@ -585,11 +585,11 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939070248271964/3-ex.gif"
       },
       {
         "chance": 2,
-        "filename": "cantremebername",
+        "filename": "remebername",
         "name": "I can't even remeber my own name",
         "type": "Super Rare",
         "description": "(Level by Daming)",
@@ -599,7 +599,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022931984823091200/remembername.gif"
       },
       {
         "chance": 1,
@@ -617,7 +617,7 @@
       },
       {
         "chance": 2,
-        "filename": "lettertobw",
+        "filename": "blackworld",
         "name": "黒塗り世界宛て書簡",
         "type": "Super Rare",
         "description": "(Level by Xeno)",
@@ -627,11 +627,11 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939070772547705/blackworld.gif"
       },
       {
         "chance": 2,
-        "filename": "hotmilkadofai",
+        "filename": "hotmilk2",
         "name": "hot milk (ADOFAI)",
         "type": "Super Rare",
         "description": "(Level by Econ)",
@@ -641,7 +641,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939069866577920/hotmilk2.gif"
       }
     ]
 }
