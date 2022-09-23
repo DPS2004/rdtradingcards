@@ -578,7 +578,7 @@
         "filename": "3-ex",
         "name": "The Wind-Up (prod remix)",
         "type": "Super Rare",
-        "description": "(Level by Plant Guy)",
+        "description": "(Level by ron_sa, 김화성, halfsell)",
         "smell": "(NOTYET)",
         "season": 10,
         "bonuses": {
@@ -603,7 +603,7 @@
       },
       {
         "chance": 1,
-        "filename": "endless.reaility",
+        "filename": "ereality",
         "name": "endless.reaility",
         "type": "Ultra Rare",
         "description": "(Level by Rikri)",
@@ -613,7 +613,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "(NOTDONE)"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023004262051102740/ereality.gif"
       },
       {
         "chance": 2,
