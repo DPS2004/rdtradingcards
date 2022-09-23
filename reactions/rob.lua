@@ -89,7 +89,7 @@ function reaction.run(message, interaction, data, response)
     end
 	
 	
-	
+
     if data.itemtype == "consumable" then
       local robchance = math.random(1,2*(data.sprice+data.numrequest))
       if robchance < 4 then

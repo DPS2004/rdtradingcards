@@ -29,6 +29,9 @@
 	"stats_timesthrown": "던진 카드 수: ",
 	"stats_timescaught": "잡은 카드 수: ",
 	"stats_timesprestiged": "프리스티지한 횟수: ",
+	"stats_timesrobbed": "도둑질한 횟수: ",
+	"stats_timesrobsucceeded": "도둑질에 성공한 횟수: ",
+	"stats_timesrobfailed": "도둑질에 실패한 횟수: ",
 	"stats_factory": "기억하라. 카드 공장이 당신을 지켜보고 있다.",
 	
 	"credits_title": "크레딧",

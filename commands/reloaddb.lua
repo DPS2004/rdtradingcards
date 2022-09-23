@@ -54,6 +54,7 @@ function command.run(message, mt, overwrite)
       lastprayer = -7,
       lastequip = -24,
       lastbox = -24,
+      lastrob = 0,
       tokens = 0,
       pronouns = {
         selection = "they",
@@ -89,6 +90,7 @@ function command.run(message, mt, overwrite)
     
     _G['defaultshopsave'] = {
       lastrefresh = 0,
+      stocknum = 0,
       consumables = {
         {
           name = "caffeinatedsoda",
@@ -137,7 +139,7 @@ function command.run(message, mt, overwrite)
     _G['amtable'] = {
       pyrowmid = {"strange machine", "machine", "panda"},
       lab = {"mouse hole", "mouse", "mousehole", "peculiar box", "box", "peculiarbox", "terminal"},
-      shop = {"shop"}
+      shop = {"shop", "rob"}
     }
     
     _G['amids'] = {}
@@ -662,6 +664,7 @@ function command.run(message, mt, overwrite)
     addcommand("language",cmd.language)
     addcommand("lang",cmd.language)
     addcommand("langlist",cmd.langlist)
+    addcommand("rob",cmd.rob)
     
     _G['handlemessage'] = function (message, content)
 	  if message.author.id ~= client.user.id or content then
@@ -670,11 +673,19 @@ function command.run(message, mt, overwrite)
         if string.trim(string.lower(string.sub(messagecontent, 0, #v.trigger+1))) == v.trigger then
           if not (message.author.bot == true) then
           local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
+          local sj = dpf.loadjson("savedata/shop.json",defaultshopsave)
+          if not sj.stocknum then
+            sj.stocknum = 1
+            dpf.savejson("savedata/shop.json",sj)
+          end
             if not uj.lang then
               uj.lang = "en"
             end
             if not uj.pronouns["selection"] then
               uj.pronouns["selection"] = uj.pronouns["they"]
+            end
+            if not uj.lastrob then
+              uj.lastrob = 0
             end
           dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
           end
@@ -831,6 +842,9 @@ function command.run(message, mt, overwrite)
     
     _G['stockshop'] = function()
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
+      if not sj.stocknum then
+        sj.stocknum = 0
+      end
       local newcards = {{name="",stock=0,price=0},{name="",stock=0,price=0},{name="",stock=0,price=0},{name="",stock=0,price=0}}
       for i,v in ipairs(sj.cards) do--------------------cards
         print("stocking" .. i)
@@ -916,7 +930,9 @@ function command.run(message, mt, overwrite)
         
       end
       sj.consumables = newconsumables
-        
+      
+      sj.stocknum = sj.stocknum + 1
+      
       dpf.savejson("savedata/shop.json", sj)
     end
     
