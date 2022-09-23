@@ -18,13 +18,14 @@ function command.run(message, mt)
   local filterSeason7 = false
   local filterSeason8 = false
   local filterSeason9 = false
+  local filterSeason10 = false
 
   args = {}
   for substring in mt[1]:gmatch("%S+") do
     table.insert(args, substring)
   end
 
-  if not (args[1] == nil or args[1] == "-s" or args[1] == "-season0" or args[1] == "-season1" or args[1] == "-season2" or args[1] == "-season3" or args[1] == "-season4" or args[1] == "-season5" or args[1] == "-season6" or args[1] == "-season7" or args[1] == "-season8" or args[1] == "-season9") then
+  if not (args[1] == nil or args[1] == "-s" or args[1] == "-season0" or args[1] == "-season1" or args[1] == "-season2" or args[1] == "-season3" or args[1] == "-season4" or args[1] == "-season5" or args[1] == "-season6" or args[1] == "-season7" or args[1] == "-season8" or args[1] == "-season9" or args[1] == "-season10") then
     filename = usernametojson(args[1])
   end
 
@@ -79,6 +80,10 @@ function command.run(message, mt)
 	  filterSeason = true
 	  filterSeason9 = true
 	  print("-season9 enabled")
+	elseif value == "-season10" then
+	  filterSeason = true
+	  filterSeason10 = true
+	  print("-season10 enabled")
     end
   end
 
@@ -156,6 +161,13 @@ function command.run(message, mt)
   if filterSeason9 == true then
     for k,v in pairs(uj.inventory) do
 	  if cdb[k].season == 9 then
+	    invfilter[k] = v
+	  end
+	end
+  end
+  if filterSeason10 then
+    for k,v in pairs(uj.inventory) do
+	  if cdb[k].season == 10 then
 	    invfilter[k] = v
 	  end
 	end
@@ -243,6 +255,14 @@ function command.run(message, mt)
 			multipleSeasons = true
 		else
 			seasonnum = "9"
+		end
+	end
+	if filterSeason10 == true then
+		if seasonnum ~= "" then
+			seasonnum = seasonnum .. ", 10"
+			multipleSeasons = true
+		else
+			seasonnum = "10"
 		end
 	end
   end
