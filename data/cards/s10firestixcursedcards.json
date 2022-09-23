@@ -197,7 +197,7 @@
         },
         {
             "chance": 2,
-            "filename": "12-xf",
+            "filename": "xh-xf",
             "name": "Final Hope but every enclosed shape has an additional side",
             "type": "Super Rare",
             "description": "(Level by Firestix)",
@@ -217,20 +217,6 @@
             "smell": "(NOTDONE)",
             "season": 10,
             "bonuses": {
-                "swirlymarbles": true
-            },
-            "embed": "(NOTDONE)"
-        },
-        {
-            "chance": 1,
-            "filename": "xr-xf",
-            "name": "Rose Garden but each triangle makes you more tired",
-            "type": "Ultra Rare",
-            "description": "(Level by Firestix)",
-            "smell": "(NOTDONE)",
-            "season": 10,
-            "bonuses": {
-                "filmreel": true,
                 "swirlymarbles": true
             },
             "embed": "(NOTDONE)"
