@@ -2,6 +2,7 @@ local command = {}
 function command.run(message, mt)
   print(message.author.name .. " did !show")
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
+  local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
   local lang = dpf.loadjson("langs/" .. uj.lang .. "/show.json","")
   if #mt ~= 1 then
     message.channel:send(lang.no_arguments)
@@ -19,7 +20,7 @@ function command.run(message, mt)
     return
   end
 
-  if not ((uj.inventory[curfilename] or uj.storage[curfilename])) and (not shophas(curfilename)) then
+  if not ((uj.inventory[curfilename] or uj.storage[curfilename])) and not (shophas(curfilename) and not (uj.lastrob + 3 > sj.stocknum and uj.lastrob ~= 0)) then
     print("user doesnt have card")
     if nopeeking then
       message.channel:send(lang.error_nopeeking_1 .. mt[1] .. lang.error_nopeeking_2)

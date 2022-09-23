@@ -392,7 +392,10 @@ o-''|\\_____/)
           if not uj.timesitemgiven then uj.timesitemgiven = 0 end
           if not uj.timesitemreceived then uj.timesitemreceived = 0 end
           if not uj.timesprestiged then uj.timesprestiged = 0 end
-          embeddescription = lang.stats_message .. "\n`" .. lang.stats_timespulled .. uj.timespulled .. "\n" .. lang.stats_timesused .. uj.timesused .. "\n" .. lang.stats_timesitemused .. uj.timesitemused .. "\n" .. lang.stats_timeslooked .. uj.timeslooked .. "\n" .. lang.stats_timesprayed .. uj.timesprayed .. "\n" .. lang.stats_timesshredded .. uj.timesshredded .. "\n" .. lang.stats_timesstored .. uj.timesstored .. "\n" .. lang.stats_timestraded .. uj.timestraded .. "\n" .. lang.stats_timesusedbox .. uj.timesusedbox .. "\n" .. lang.stats_timesdoubleclicked .. uj.timesdoubleclicked .. "\n" .. lang.stats_timesdonated .. uj.tokensdonated .. "\n" .. lang.stats_timesitemgiven .. uj.timesitemgiven .. "\n" .. lang.stats_timesitemreceived .. uj.timesitemreceived .. "\n" .. lang.stats_timescardgiven .. uj.timescardgiven .. "\n" .. lang.stats_timescardreceived .. uj.timescardreceived .. "\n" .. lang.stats_timesthrown .. uj.timesthrown .. "\n" .. lang.stats_timescaught .. uj.timescaught .. "\n" .. lang.stats_timesprestiged .. uj.timesprestiged ..(math.random(100) == 1 and "\n" .. lang.stats_factory or "") .. "`"
+          if not uj.timesrobbed then uj.timesrobbed = 0 end
+          if not uj.timesrobsucceeded then uj.timesrobsucceeded = 0 end
+          if not uj.timesrobfailed then uj.timesrobfailed = 0 end
+          embeddescription = lang.stats_message .. "\n`" .. lang.stats_timespulled .. uj.timespulled .. "\n" .. lang.stats_timesused .. uj.timesused .. "\n" .. lang.stats_timesitemused .. uj.timesitemused .. "\n" .. lang.stats_timeslooked .. uj.timeslooked .. "\n" .. lang.stats_timesprayed .. uj.timesprayed .. "\n" .. lang.stats_timesshredded .. uj.timesshredded .. "\n" .. lang.stats_timesstored .. uj.timesstored .. "\n" .. lang.stats_timestraded .. uj.timestraded .. "\n" .. lang.stats_timesusedbox .. uj.timesusedbox .. "\n" .. lang.stats_timesdoubleclicked .. uj.timesdoubleclicked .. "\n" .. lang.stats_timesdonated .. uj.tokensdonated .. "\n" .. lang.stats_timesitemgiven .. uj.timesitemgiven .. "\n" .. lang.stats_timesitemreceived .. uj.timesitemreceived .. "\n" .. lang.stats_timescardgiven .. uj.timescardgiven .. "\n" .. lang.stats_timescardreceived .. uj.timescardreceived .. "\n" .. lang.stats_timesthrown .. uj.timesthrown .. "\n" .. lang.stats_timescaught .. uj.timescaught .. "\n" .. lang.stats_timesprestiged .. uj.timesprestiged .. "\n" .. lang.stats_timesrobbed .. uj.timesrobbed .. "\n" .. lang.stats_timesrobsucceeded .. uj.timesrobsucceeded .. "\n" .. lang.stats_timesrobfailed .. uj.timesrobfailed ..(math.random(100) == 1 and "\n" .. lang.stats_factory or "") .. "`"
         elseif string.lower(mt[2]) == "credits" then
           embedtitle = lang.credits_title
           embeddescription = 'https://docs.google.com/document/d/1WgUqA8HNlBtjaM4Gpp4vTTEZf9t60EuJ34jl2TleThQ/edit?usp=sharing'
@@ -484,10 +487,49 @@ o-''|\\_____/)
       }}
       
     elseif (request == "shop" or request == "quaintshop" or request == "quaint shop" or (uj.lang ~= "en" and request == lang.request_shop_1 or request == lang.request_shop_2 or request == lang.request_shop_3 or request == lang.request_shop_4))  then 
-      message.channel:send(lang.use_shop)
-      uj.room = 3
-      dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
-    
+      local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
+      if uj.lastrob + 4 > sj.stocknum and uj.lastrob ~= 0 then
+        lang = dpf.loadjson("langs/" .. uj.lang .. "/rob.json")
+        local stocksleft = uj.lastrob + 3 - sj.stocknum
+        local stockstring = lang.more_restock_1 .. stocksleft .. lang.more_restock_2
+        if lang.needs_plural_s == true then
+          if stocksleft > 1 then
+            stockstring = stockstring .. lang.plural_s
+          end
+        end
+        if uj.lastrob + 3 == sj.stocknum then
+          local minutesleft = math.ceil((26/24 - time:toDays() + sj.lastrefresh) * 24 * 60)
+          print(minutesleft)
+          local durationtext = ""
+          if math.floor(minutesleft / 60) > 0 then
+            durationtext = math.floor(minutesleft / 60) .. lang.time_hour
+            if lang.needs_plural_s == true then
+              if math.floor(minutesleft / 60) ~= 1 then 
+                durationtext = durationtext .. lang.plural_s 
+              end
+            end
+          end
+          if minutesleft % 60 > 0 then
+            if durationtext ~= "" then
+              durationtext = durationtext .. lang.time_and
+            end
+            durationtext = durationtext .. minutesleft % 60 .. lang.time_minute
+            if lang.needs_plural_s == true then
+              if minutesleft % 60 ~= 1 then
+                durationtext = durationtext .. lang.plural_s 
+              end
+            end
+          end
+          message.channel:send(lang.blacklist_next_1 .. durationtext .. lang.blacklist_next_2)
+        else
+          message.channel:send(lang.blacklist_1 .. stockstring .. lang.blacklist_2)
+        end
+        return
+      else
+        message.channel:send(lang.use_shop)
+        uj.room = 3
+        dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
+      end
     elseif (request == "barrels" or (uj.lang ~= "en" and request == lang.request_barrels)) then 
       message.channel:send{embed = {
         color = 0x85c5ff,
@@ -509,6 +551,45 @@ o-''|\\_____/)
   
   if (uj.room == 3) then ----------------------------------------------------------SHOP
     local lang = dpf.loadjson("langs/" .. uj.lang .. "/use/shop/pet.json", "") -- fallback when request is not shop
+    local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
+    if uj.lastrob + 4 > sj.stocknum and uj.lastrob ~= 0 then
+      lang = dpf.loadjson("langs/" .. uj.lang .. "/rob.json")
+      local stocksleft = uj.lastrob + 3 - sj.stocknum
+      local stockstring = lang.more_restock_1 .. stocksleft .. lang.more_restock_2
+      if lang.needs_plural_s == true then
+        if stocksleft > 1 then
+          stockstring = stockstring .. lang.plural_s
+        end
+      end
+      if uj.lastrob + 3 == sj.stocknum then
+        local minutesleft = math.ceil((26/24 - time:toDays() + sj.lastrefresh) * 24 * 60)
+        print(minutesleft)
+        local durationtext = ""
+        if math.floor(minutesleft / 60) > 0 then
+          durationtext = math.floor(minutesleft / 60) .. lang.time_hour
+          if lang.needs_plural_s == true then
+            if math.floor(minutesleft / 60) ~= 1 then 
+              durationtext = durationtext .. lang.plural_s 
+            end
+          end
+        end
+        if minutesleft % 60 > 0 then
+          if durationtext ~= "" then
+            durationtext = durationtext .. lang.time_and
+          end
+          durationtext = durationtext .. minutesleft % 60 .. lang.time_minute
+          if lang.needs_plural_s == true then
+            if minutesleft % 60 ~= 1 then
+              durationtext = durationtext .. lang.plural_s 
+            end
+          end
+        end
+        message.channel:send(lang.blacklist_next_1 .. durationtext .. lang.blacklist_next_2)
+      else
+        message.channel:send(lang.blacklist_1 .. stockstring .. lang.blacklist_2)
+      end
+      return
+    end
     if request == "shop" or (uj.lang ~= "en" and request == lang.request_shop_1 or request == lang.request_shop_2 or request == lang.request_shop_3 or request == lang.request_shop_4) then
       local lang = dpf.loadjson("langs/" .. uj.lang .. "/use/shop/buy.json", "")
       checkforreload(time:toDays())
