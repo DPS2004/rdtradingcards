@@ -151,7 +151,7 @@ function reaction.run(message, interaction, data, response)
         if robchance < 90 - 5 * (data.numrequest > 18 and 17 or data.numrequest - 1) then
           robsucceed = true
         end
-      elseif cdb[data.srequest].type == "Super Rare" then
+      elseif cdb[data.srequest].type == "Super Rare" or cdb[data.srequest].type == "PICO-8" then
         blackpm = -1
         local robchance = math.random(1,100)
         if robchance < 70 - 5 * (data.numrequest > 14 and 13 or data.numrequest - 1) then
