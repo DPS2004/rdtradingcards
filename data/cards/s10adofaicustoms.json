@@ -646,6 +646,19 @@
             "swirlymarbles": true
         },
         "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939069866577920/hotmilk2.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "module",
+        "name": "Module",
+        "type": "Super Rare",
+        "description": "(Level by Onslayet)",
+        "smell": "(NOTYET)",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022858863818580049/module.png"
       }
     ]
 }
