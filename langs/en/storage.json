@@ -3,8 +3,10 @@
 	"plural_s": "s",
 	
 	"embed_title": "'s Storage",
-	"embed_title_season_1": "'s Storage (Season",
-	"embed_title_season_2": ")",
+	"season_1": " (Season",
+	"season_2": ")",
+	"rarity_1": " (",
+	"rarity_2": " Cards)",
 	"embed_contains": ", your storage contains:",
 	
 	"embed_page_1": "(Page ",

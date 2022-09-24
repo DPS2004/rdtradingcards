@@ -6,8 +6,10 @@
 	"no_user_2": " in the database. Make sure that you have spelled it right, and that they have at least pulled a card to register!",
 	
 	"embed_title": "Full Inventory",
-	"embed_title_season_1": "Full Inventory (Season",
-	"embed_title_season_2": ")",
+	"season_1": " (Season",
+	"season_2": ")",
+	"rarity_1": " (",
+	"rarity_2": " Cards)",
 	"embed_your": "Your",
 	"embed_s": "'s",
 	"embed_contains": " inventory contains:",
