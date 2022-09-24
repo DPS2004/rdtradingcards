@@ -9,7 +9,7 @@
             "name": "A Dance of Fire and Ice but the music is cursed",
             "type": "Super Rare",
             "description": "(Level by Firestix)",
-            "smell": "(NOTDONE)",
+            "smell": "Adofai",
             "season": 10,
             "bonuses": {
                 "duncecap": true,
@@ -24,7 +24,7 @@
             "name": "Offbeats but it's a little longer",
             "type": "Super Rare",
             "description": "(Level by Firestix)",
-            "smell": "(NOTDONE)",
+            "smell": "Very Long Beanstalks",
             "season": 10,
             "bonuses": {
                 "duncecap": true,
@@ -39,7 +39,7 @@
             "name": "THE WIND-UP but it keeps rewinding",
             "type": "Super Rare",
             "description": "(Level by Firestix)",
-            "smell": "(NOTDONE)",
+            "smell": "Rewinding",
             "season": 10,
             "bonuses": {
                 "duncecap": true,
@@ -54,7 +54,7 @@
             "name": "Love Letters but I keep having nightmares about Classic Pursuit",
             "type": "Super Rare",
             "description": "(Level by Firestix)",
-            "smell": "(NOTDONE)",
+            "smell": "Classic Pursuit",
             "season": 10,
             "bonuses": {
                 "duncecap": true,
@@ -69,7 +69,7 @@
             "name": "The Midnight Train but something is wrong with the train",
             "type": "Super Rare",
             "description": "(Level by Firestix)",
-            "smell": "(NOTDONE)",
+            "smell": "Opposite Day",
             "season": 10,
             "bonuses": {
                 "duncecap": true,
@@ -84,7 +84,7 @@
             "name": "PULSE but every time you go up or down it gets faster",
             "type": "Ultra Rare",
             "description": "(Level by Firestix)",
-            "smell": "(NOTDONE)",
+            "smell": "Pulse Acceleration",
             "season": 10,
             "bonuses": {
                 "duncecap": true,
@@ -99,7 +99,7 @@
             "name": "Spin 2 Win but there's no fun allowed",
             "type": "Super Rare",
             "description": "(Level by Firestix)",
-            "smell": "(NOTDONE)",
+            "smell": ":(",
             "season": 10,
             "bonuses": {
                 "duncecap": true,
@@ -113,7 +113,7 @@
             "name": "Please Stop Playing My Levels",
             "type": "Ultra Rare",
             "description": "(Level by Firestix)",
-            "smell": "(NOTDONE)",
+            "smell": "Crabo-finality",
             "season": 10,
             "bonuses": {
                 "duncecap": true,
@@ -128,7 +128,7 @@
             "name": "Jungle City but the angled sections have an extra beat",
             "type": "Super Rare",
             "description": "(Level by Firestix)",
-            "smell": "(NOTDONE)",
+            "smell": "Time Signature Mess",
             "season": 10,
             "bonuses": {
                 "duncecap": true,
@@ -143,7 +143,7 @@
             "name": "Butterfly Planet but I didn't chart the swing",
             "type": "Super Rare",
             "description": "(Level by Firestix)",
-            "smell": "(NOTDONE)",
+            "smell": "Unswung",
             "season": 10,
             "bonuses": {
                 "duncecap": true,
@@ -158,7 +158,7 @@
             "name": "Heracles but there's a twirl on every tile",
             "type": "Super Rare",
             "description": "(Level by Firestix)",
-            "smell": "(NOTDONE)",
+            "smell": "Too much twirling",
             "season": 10,
             "bonuses": {
                 "duncecap": true,
@@ -172,7 +172,7 @@
             "name": "Artificial Chariot but each unique loop repeats for every time it's been played before",
             "type": "Super Rare",
             "description": "(Level by Firestix)",
-            "smell": "(NOTDONE)",
+            "smell": "Loopception",
             "season": 10,
             "bonuses": {
                 "duncecap": true,
@@ -187,7 +187,7 @@
             "name": "Third Wave Flip-Flop but whoever made this level was drunk",
             "type": "Super Rare",
             "description": "(Level by Firestix)",
-            "smell": "(NOTDONE)",
+            "smell": "Alcohols",
             "season": 10,
             "bonuses": {
                 "duncecap": true,
@@ -202,7 +202,7 @@
             "name": "Credits but the twirls are missing",
             "type": "Super Rare",
             "description": "(Level by Firestix)",
-            "smell": "(NOTDONE)",
+            "smell": "Lack of Rotation",
             "season": 10,
             "bonuses": {
                 "duncecap": true,
@@ -217,7 +217,7 @@
             "name": "Final Hope but every enclosed shape has an additional side",
             "type": "Super Rare",
             "description": "(Level by Firestix)",
-            "smell": "(NOTDONE)",
+            "smell": "Extra Shapes",
             "season": 10,
             "bonuses": {
                 "duncecap": true,
@@ -232,7 +232,7 @@
             "name": "Distance but there's way too many midspins",
             "type": "Super Rare",
             "description": "(Level by Firestix)",
-            "smell": "(NOTDONE)",
+            "smell": "Midspin Overload",
             "season": 10,
             "bonuses": {
                 "duncecap": true,
@@ -247,7 +247,7 @@
             "name": "Rose Garden but each triangle makes you more tired",
             "type": "Ultra Rare",
             "description": "(Level by Firestix)",
-            "smell": "(NOTDONE)",
+            "smell": "Exhausted",
             "season": 10,
             "bonuses": {
                 "duncecap": true,
@@ -262,7 +262,7 @@
             "name": "One Forgotten Meme",
             "type": "Ultra Rare",
             "description": "(Level by Firestix)",
-            "smell": "(NOTDONE)",
+            "smell": "",
             "season": 10,
             "bonuses": {
                 "duncecap": true,
@@ -277,7 +277,7 @@
             "name": "Stoptions",
             "type": "Ultra Rare",
             "description": "(Level by Firestix)",
-            "smell": "(NOTDONE)",
+            "smell": "",
             "season": 10,
             "bonuses": {
                 "duncecap": true,
@@ -292,7 +292,7 @@
             "name": "Night Wander (cnsouka Remix) but it's a crossover",
             "type": "Super Rare",
             "description": "(Level by Firestix)",
-            "smell": "(NOTDONE)",
+            "smell": "Rhythm Doctor",
             "season": 10,
             "bonuses": {
                 "duncecap": true,
@@ -307,7 +307,7 @@
             "name": "La nuit de vif but the bpm drift is getting worse",
             "type": "Super Rare",
             "description": "(Level by Firestix)",
-            "smell": "(NOTDONE)",
+            "smell": "BPM Changes",
             "season": 10,
             "bonuses": {
                 "duncecap": true,

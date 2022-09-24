@@ -9,7 +9,7 @@
         "name": "Die in a Fire",
         "type": "Super Rare",
         "description": "(Level by zedwards)",
-        "smell": "(NOTYET)",
+        "smell": "Arson",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -23,7 +23,7 @@
         "name": "Jack in the Box",
         "type": "Super Rare",
         "description": "(Level by robotups)",
-        "smell": "(NOTYET)",
+        "smell": "Child Boxes",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -37,7 +37,7 @@
         "name": "Twisted Shadows",
         "type": "Ultra Rare",
         "description": "(Level by lyoug)",
-        "smell": "(NOTYET)",
+        "smell": "Red Shadows",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -51,7 +51,7 @@
         "name": "Moon Raiders",
         "type": "Super Rare",
         "description": "(Level by CyanAqua)",
-        "smell": "(NOTYET)",
+        "smell": "Moon Landers",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -65,7 +65,7 @@
         "name": "Reddits",
         "type": "Super Rare",
         "description": "(Level by KAERRA)",
-        "smell": "(NOTYET)",
+        "smell": "Vister",
         "season": 10,
         "bonuses": {
             "duncecap": true,
@@ -80,7 +80,7 @@
         "name": "Play With Fire (ADOFAI)",
         "type": "Ultra Rare",
         "description": "(Level by zedwards)",
-        "smell": "(NOTYET)",
+        "smell": "Double Fire",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -94,7 +94,7 @@
         "name": "Another Me",
         "type": "Ultra Rare",
         "description": "(Level by Team P.A.L.)",
-        "smell": "(NOTYET)",
+        "smell": "",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -108,7 +108,7 @@
         "name": "Jam with Pancake",
         "type": "Ultra Rare",
         "description": "(Level by Cijan Gaming)",
-        "smell": "",
+        "smell": "Jam",
         "season": 10,
         "bonuses": {
             "swirlymarbles": true
@@ -121,7 +121,7 @@
         "name": "Polygons",
         "type": "Super Rare",
         "description": "(Level by Riya)",
-        "smell": "(NOTYET)",
+        "smell": "Triangles",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -135,7 +135,7 @@
         "name": "We Want to Run",
         "type": "Super Rare",
         "description": "(Level by Daming)",
-        "smell": "(NOTYET)",
+        "smell": "Running",
         "season": 10,
         "bonuses": {
             "swirlymarbles": true
@@ -148,7 +148,7 @@
         "name": "19ZZ",
         "type": "Super Rare",
         "description": "(Level by YeetYote)",
-        "smell": "(NOTYET)",
+        "smell": "Zzz",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -162,7 +162,7 @@
         "name": "なまえ を いれてください▼",
         "type": "Super Rare",
         "description": "(Level by zedwards)",
-        "smell": "(NOTYET)",
+        "smell": "",
         "season": 10,
         "bonuses": {
             "swirlymarbles": true
@@ -175,7 +175,7 @@
         "name": "PrayStation",
         "type": "Ultra Rare",
         "description": "(Level by Team Vega)",
-        "smell": "(NOTYET)",
+        "smell": "PlayStation",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -189,7 +189,7 @@
         "name": "Fragor Magnus",
         "type": "Super Rare",
         "description": "(Level by Hawkyrious)",
-        "smell": "(NOTYET)",
+        "smell": "Fragrance",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -203,7 +203,7 @@
         "name": "Hall of Mirrors",
         "type": "Super Rare",
         "description": "(Level by Star4th)",
-        "smell": "(NOTYET)",
+        "smell": "Mirrors",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -217,7 +217,7 @@
         "name": "Hot Chocolate",
         "type": "Super Rare",
         "description": "(Level by Daming)",
-        "smell": "(NOTYET)",
+        "smell": "Cacao",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -231,7 +231,7 @@
         "name": "Wicked",
         "type": "Super Rare",
         "description": "(Level by PAPER_PPT)",
-        "smell": "(NOTYET)",
+        "smell": "Quintuplets",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -245,7 +245,7 @@
         "name": "Spin Ye Bottle",
         "type": "Ultra Rare",
         "description": "(Level by Firestix)",
-        "smell": "(NOTYET)",
+        "smell": "Bottles",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -259,7 +259,7 @@
         "name": "ikasu",
         "type": "Super Rare",
         "description": "(Level by HanB)",
-        "smell": "(NOTYET)",
+        "smell": "Sushi",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -273,7 +273,7 @@
         "name": "One Forgotten Night (Another)",
         "type": "Super Rare",
         "description": "(Level by Star4th)",
-        "smell": "(NOTYET)",
+        "smell": "Speialess",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -287,7 +287,7 @@
         "name": "Jumper",
         "type": "Super Rare",
         "description": "(Level by Zisos)",
-        "smell": "(NOTYET)",
+        "smell": "Jumping",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -301,7 +301,7 @@
         "name": "Heracles EXtended",
         "type": "Super Rare",
         "description": "(Level by Samario)",
-        "smell": "(NOTYET)",
+        "smell": "Big Circuses",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -315,7 +315,7 @@
         "name": "Forever",
         "type": "Super Rare",
         "description": "(Level by Misoguy)",
-        "smell": "(NOTYET)",
+        "smell": "Love",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -329,7 +329,7 @@
         "name": "Starlight Tree",
         "type": "Super Rare",
         "description": "(Level by Misoguy)",
-        "smell": "(NOTYET)",
+        "smell": "Christmas",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -343,7 +343,7 @@
         "name": "Destroying Garden",
         "type": "Super Rare",
         "description": "(Level by Ssimille)",
-        "smell": "(NOTYET)",
+        "smell": "Gardens",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -357,7 +357,7 @@
         "name": "SOS",
         "type": "Ultra Rare",
         "description": "(Level by Rikri, Kin, LUMI)",
-        "smell": "(NOTYET)",
+        "smell": "Three Dots, Three Lines, Three Dots",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -371,7 +371,7 @@
         "name": "Sky Realm",
         "type": "Super Rare",
         "description": "(Level by Misoguy)",
-        "smell": "(NOTYET)",
+        "smell": "Sky",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -385,7 +385,7 @@
         "name": "Winter's Walk",
         "type": "Super Rare",
         "description": "(Level by Xeno)",
-        "smell": "(NOTYET)",
+        "smell": "Candies",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -399,7 +399,7 @@
         "name": "Lyrical Busy",
         "type": "Super Rare",
         "description": "(Level by Plant Guy)",
-        "smell": "(NOTYET)",
+        "smell": "Nest",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -413,7 +413,7 @@
         "name": "Delay Pedal (ADOFAI)",
         "type": "Super Rare",
         "description": "(Level by Daming)",
-        "smell": "(NOTYET)",
+        "smell": "Memories",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -427,7 +427,7 @@
         "name": "A Cup of Coffee",
         "type": "Super Rare",
         "description": "(Level by hotduck)",
-        "smell": "(NOTYET)",
+        "smell": "Coffee",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -441,7 +441,7 @@
         "name": "Mystery Village",
         "type": "Super Rare",
         "description": "(Level by BluPen)",
-        "smell": "(NOTYET)",
+        "smell": "Silence",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -455,7 +455,7 @@
         "name": "PeePee Song",
         "type": "Super Rare",
         "description": "(Level by Colon)",
-        "smell": "(NOTYET)",
+        "smell": "Urine",
         "season": 10,
         "bonuses": {
             "duncecap": true,
@@ -470,7 +470,7 @@
         "name": "Into the Zone",
         "type": "Super Rare",
         "description": "(Level by Klyzx)",
-        "smell": "(NOTYET)",
+        "smell": "Arcade Games",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -484,7 +484,7 @@
         "name": "Wilds greenery",
         "type": "Super Rare",
         "description": "(Level by Plant Guy)",
-        "smell": "(NOTYET)",
+        "smell": "Wild Grass",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -498,7 +498,7 @@
         "name": "Blues, Probably",
         "type": "Super Rare",
         "description": "(Level by Xeno)",
-        "smell": "(NOTYET)",
+        "smell": "Saxophone",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -512,7 +512,7 @@
         "name": "sleepwalk station",
         "type": "Ultra Rare",
         "description": "(Level by yoshikirby26)",
-        "smell": "(NOTYET)",
+        "smell": "Sleep",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -526,7 +526,7 @@
         "name": "If I had a Chicken",
         "type": "Ultra Rare",
         "description": "(Level by Strode)",
-        "smell": "(NOTYET)",
+        "smell": "Chicken",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -540,7 +540,7 @@
         "name": "Rainbow Tylenol",
         "type": "Ultra Rare",
         "description": "(Level by Econ, prod)",
-        "smell": "(NOTYET)",
+        "smell": "Gay Medicine",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -554,7 +554,7 @@
         "name": "storm",
         "type": "Super Rare",
         "description": "(Level by Tripizza)",
-        "smell": "(NOTYET)",
+        "smell": "Rain",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -568,7 +568,7 @@
         "name": "Laboratory-018",
         "type": "Super Rare",
         "description": "(Level by PAPER_PPT)",
-        "smell": "(NOTYET)",
+        "smell": "Experiment",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -582,7 +582,7 @@
         "name": "The Wind-Up (prod remix)",
         "type": "Super Rare",
         "description": "(Level by ron_sa, 김화성, halfsell)",
-        "smell": "(NOTYET)",
+        "smell": "Cog Wheels",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -596,7 +596,7 @@
         "name": "I can't even remeber my own name",
         "type": "Super Rare",
         "description": "(Level by Daming)",
-        "smell": "(NOTYET)",
+        "smell": "Dementia",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -610,7 +610,7 @@
         "name": "endless.reaility",
         "type": "Ultra Rare",
         "description": "(Level by Rikri)",
-        "smell": "(NOTYET)",
+        "smell": "Realities",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -624,7 +624,7 @@
         "name": "黒塗り世界宛て書簡",
         "type": "Super Rare",
         "description": "(Level by Xeno)",
-        "smell": "(NOTYET)",
+        "smell": "Black Paint",
         "season": 10,
         "bonuses": {
             "filmreel": true,
@@ -638,7 +638,7 @@
         "name": "hot milk (ADOFAI)",
         "type": "Super Rare",
         "description": "(Level by Econ)",
-        "smell": "(NOTYET)",
+        "smell": "Ball Cake",
         "season": 10,
         "bonuses": {
             "duncecap": true,
@@ -653,7 +653,7 @@
         "name": "Module",
         "type": "Super Rare",
         "description": "(Level by Onslayet)",
-        "smell": "(NOTYET)",
+        "smell": "Computer",
         "season": 10,
         "bonuses": {
             "swirlymarbles": true
