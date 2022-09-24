@@ -39,7 +39,7 @@
             "name": "THE WIND-UP but it keeps rewinding",
             "type": "Super Rare",
             "description": "(Level by Firestix)",
-            "smell": "Rewinding",
+            "smell": "TV Remote",
             "season": 10,
             "bonuses": {
                 "duncecap": true,
@@ -262,7 +262,7 @@
             "name": "One Forgotten Meme",
             "type": "Ultra Rare",
             "description": "(Level by Firestix)",
-            "smell": "",
+            "smell": "Loss",
             "season": 10,
             "bonuses": {
                 "duncecap": true,
@@ -277,7 +277,7 @@
             "name": "Stoptions",
             "type": "Ultra Rare",
             "description": "(Level by Firestix)",
-            "smell": "",
+            "smell": "Craboformation",
             "season": 10,
             "bonuses": {
                 "duncecap": true,
