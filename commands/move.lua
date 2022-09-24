@@ -83,7 +83,7 @@ function command.run(message, mt)
       else
         message.channel:send(lang.blacklist_1 .. stockstring .. lang.blacklist_2)
       end
-      return
+      return "blacklisted"
     else
       uj.room = newroom
       if uj.lang == "ko" and newroom == 2 then

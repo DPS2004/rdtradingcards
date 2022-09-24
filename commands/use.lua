@@ -16,8 +16,12 @@ function command.run(message, mt,bypass)
   if request == "shop" and uj.room == 2 then
   else
 	  local newuj = automove(uj.room,request,message)
-	  if newuj then
-		  uj = newuj
+    if newuj then
+      if newuj == "blacklisted" then
+        return
+      else
+		    uj = newuj
+      end
 	  end
   end
   
