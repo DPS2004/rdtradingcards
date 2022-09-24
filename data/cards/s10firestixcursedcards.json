@@ -296,9 +296,10 @@
             "season": 10,
             "bonuses": {
                 "duncecap": true,
+                "filmreel": true,
                 "swirlymarbles": true
             },
-            "embed": "(NOTDONE)"
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023170057674686464/mn-xf.gif"
         },
         {
             "chance": 2,
@@ -312,7 +313,7 @@
                 "duncecap": true,
                 "swirlymarbles": true
             },
-            "embed": "(NOTDONE)"
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023170058098315364/ml-xf.png"
         }
     ]
 }
