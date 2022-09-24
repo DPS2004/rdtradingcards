@@ -659,6 +659,20 @@
             "swirlymarbles": true
         },
         "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022858863818580049/module.png"
+      },
+      {
+        "chance": 2,
+        "filename": "rapids",
+        "name": "Rapid Spectrum",
+        "type": "Super Rare",
+        "description": "(Level by XiZnYng)",
+        "smell": "Prism",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023336368061042789/rapids.gif"
       }
     ]
 }
