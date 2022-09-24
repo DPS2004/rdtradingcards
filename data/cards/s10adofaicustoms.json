@@ -68,6 +68,7 @@
         "smell": "(NOTYET)",
         "season": 10,
         "bonuses": {
+            "duncecap": true,
             "filmreel": true,
             "swirlymarbles": true
         },
@@ -456,6 +457,7 @@
         "smell": "(NOTYET)",
         "season": 10,
         "bonuses": {
+            "duncecap": true,
             "filmreel": true,
             "swirlymarbles": true
         },
@@ -638,6 +640,7 @@
         "smell": "(NOTYET)",
         "season": 10,
         "bonuses": {
+            "duncecap": true,
             "filmreel": true,
             "swirlymarbles": true
         },
