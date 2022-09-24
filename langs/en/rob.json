@@ -64,10 +64,12 @@
 
 	"rob_failed_1": "You entered the **Quaint Shop**. You demanded the **Wolf** give you ",
 	"rob_failed_2": " **",
-	"rob_failed_3": "**. He calls the police instead. You are blacklisted from the shop for the next 3 restocks.",
+	"rob_failed_3": "**. He calls the police instead. You are blacklisted from the shop for the next ",
+	"rob_failed_4": " restocks.",
 
 	"rob_failed_item_1": "You entered the **Quaint Shop**. You demanded the **Wolf** give you a **",
-	"rob_failed_item_2": "**. The **Wolf** calls the police instead. You are blacklisted from the shop for the next 3 restocks.",
+	"rob_failed_item_2": "**. The **Wolf** calls the police instead. You are blacklisted from the shop for the next ",
+	"rob_failed_item_3": " restocks.",
 
 	"rob_cancelled_1": "<@",
 	"rob_cancelled_2": "> has stopped robbing the **Quaint Shop**. For now...",
