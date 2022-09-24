@@ -191,9 +191,10 @@
             "season": 10,
             "bonuses": {
                 "duncecap": true,
+                "filmreel": true,
                 "swirlymarbles": true
             },
-            "embed": "(NOTDONE)"
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023165116151242822/xf-xf.gif"
         },
         {
             "chance": 2,
@@ -205,9 +206,10 @@
             "season": 10,
             "bonuses": {
                 "duncecap": true,
+                "filmreel": true,
                 "swirlymarbles": true
             },
-            "embed": "(NOTDONE)"
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023165115811495987/xc-xf.gif"
         },
         {
             "chance": 2,
@@ -219,9 +221,10 @@
             "season": 10,
             "bonuses": {
                 "duncecap": true,
+                "filmreel": true,
                 "swirlymarbles": true
             },
-            "embed": "(NOTDONE)"
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023165116516143125/xh-xf.gif"
         },
         {
             "chance": 2,
@@ -233,9 +236,10 @@
             "season": 10,
             "bonuses": {
                 "duncecap": true,
+                "filmreel": true,
                 "swirlymarbles": true
             },
-            "embed": "(NOTDONE)"
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023165115379499008/pa-xf.gif"
         },
         {
             "chance": 1,
@@ -250,7 +254,7 @@
                 "filmreel": true,
                 "swirlymarbles": true
             },
-            "embed": "(NOTDONE)"
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023165114700005437/xr-xf.gif"
         },
         {
             "chance": 1,
@@ -280,7 +284,7 @@
                 "filmreel": true,
                 "swirlymarbles": true
             },
-            "embed": "(NOTDONE)"
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023165115060736000/xt-xf.gif"
         },
         {
             "chance": 2,
