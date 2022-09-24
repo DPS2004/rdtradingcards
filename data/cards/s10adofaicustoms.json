@@ -213,16 +213,17 @@
       },
       {
         "chance": 2,
-        "filename": "module",
-        "name": "Module",
+        "filename": "hotchoco",
+        "name": "Hot Chocolate",
         "type": "Super Rare",
-        "description": "(Level by Onslayet)",
+        "description": "(Level by Daming)",
         "smell": "(NOTYET)",
         "season": 10,
         "bonuses": {
+            "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022858863818580049/module.png"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023192864617934879/hotchoco.gif"
       },
       {
         "chance": 2,
