@@ -13,7 +13,8 @@
 	"blacklist_next_1": "You will be able to access the **Quaint Shop** after the next restock. The shop will be restocked in ",
 	"blacklist_next_2": ".",
 	"blacklist_1": "You are blacklisted from the **Quaint Shop** for ",
-	"blacklist_2": ".",
+	"blacklist_2": ". The next restock will be in ",
+	"blacklist_3": ".",
 	
 	"out_of_stock_1": "The **Quaint Shop** is currently out of stock of **",
 	"out_of_stock_2": "**.",
@@ -64,10 +65,12 @@
 
 	"rob_failed_1": "You entered the **Quaint Shop**. You demanded the **Wolf** give you ",
 	"rob_failed_2": " **",
-	"rob_failed_3": "**. He calls the police instead. You are blacklisted from the shop for the next 3 restocks.",
+	"rob_failed_3": "**. He calls the police instead. You are blacklisted from the shop for the next ",
+	"rob_failed_4": " restocks.",
 
 	"rob_failed_item_1": "You entered the **Quaint Shop**. You demanded the **Wolf** give you a **",
-	"rob_failed_item_2": "**. The **Wolf** calls the police instead. You are blacklisted from the shop for the next 3 restocks.",
+	"rob_failed_item_2": "**. The **Wolf** calls the police instead. You are blacklisted from the shop for the next ",
+	"rob_failed_item_3": " restocks.",
 
 	"rob_cancelled_1": "<@",
 	"rob_cancelled_2": "> has stopped robbing the **Quaint Shop**. For now...",

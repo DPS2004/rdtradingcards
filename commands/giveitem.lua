@@ -105,14 +105,14 @@ function command.run(message, mt)
   local isplural2 = numitems ~= 1 and lang2.needs_plural_s == true and "s" or ""
   
   if uj.lang == "ko" then
-    _G['giftedmessage'] = lang.gifted_message_1 .. uj2.id .. lang.gifted_message_2 .. cdb[curfilename].name .. lang.gifted_message_3 .. numitems .. lang.gifted_message_4 .. lang.gifted_message_5
+    _G['giftedmessage'] = lang.gifted_message_1 .. uj2.id .. lang.gifted_message_2 .. consdb[curfilename].name .. lang.gifted_message_3 .. numitems .. lang.gifted_message_4 .. lang.gifted_message_5
   else
-    _G['giftedmessage'] = lang.gifted_message_1 .. numitems .. lang.gifted_message_2 .. cdb[curfilename].name .. lang.gifted_message_3 .. isplural .. lang.gifted_message_4 .. uj2.id .. lang.gifted_message_5
+    _G['giftedmessage'] = lang.gifted_message_1 .. numitems .. lang.gifted_message_2 .. consdb[curfilename].name .. lang.gifted_message_3 .. isplural .. lang.gifted_message_4 .. uj2.id .. lang.gifted_message_5
   end
   if uj2.lang == "ko" then
-    _G['recievedmessage'] = lang2.recieved_message_1 .. uj.id .. lang2.recieved_message_2 .. cdb[curfilename].name .. lang2.recieved_message_3 .. numitems .. lang2.recieved_message_4 .. lang2.recieved_message_5
+    _G['recievedmessage'] = lang2.recieved_message_1 .. uj.id .. lang2.recieved_message_2 .. consdb[curfilename].name .. lang2.recieved_message_3 .. numitems .. lang2.recieved_message_4 .. lang2.recieved_message_5
   else
-    _G['recievedmessage'] = lang2.recieved_message_1 .. uj.id .. lang2.recieved_message_2 .. numitems .. lang2.recieved_message_3 .. cdb[curfilename].name .. lang2.recieved_message_4 .. isplural2 .. lang2.recieved_message_5
+    _G['recievedmessage'] = lang2.recieved_message_1 .. uj.id .. lang2.recieved_message_2 .. numitems .. lang2.recieved_message_3 .. consdb[curfilename].name .. lang2.recieved_message_4 .. isplural2 .. lang2.recieved_message_5
   end
   if uj.lang == uj2.lang then
     message.channel:send {

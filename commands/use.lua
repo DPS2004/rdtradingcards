@@ -16,8 +16,12 @@ function command.run(message, mt,bypass)
   if request == "shop" and uj.room == 2 then
   else
 	  local newuj = automove(uj.room,request,message)
-	  if newuj then
-		  uj = newuj
+    if newuj then
+      if newuj == "blacklisted" then
+        return
+      else
+		    uj = newuj
+      end
 	  end
   end
   
@@ -497,32 +501,32 @@ o-''|\\_____/)
             stockstring = stockstring .. lang.plural_s
           end
         end
+        local minutesleft = math.ceil((26/24 - time:toDays() + sj.lastrefresh) * 24 * 60)
+        
+        local durationtext = ""
+        if math.floor(minutesleft / 60) > 0 then
+          durationtext = math.floor(minutesleft / 60) .. lang.time_hour
+          if lang.needs_plural_s == true then
+            if math.floor(minutesleft / 60) ~= 1 then 
+              durationtext = durationtext .. lang.plural_s 
+            end
+          end
+        end
+        if minutesleft % 60 > 0 then
+          if durationtext ~= "" then
+            durationtext = durationtext .. lang.time_and
+          end
+          durationtext = durationtext .. minutesleft % 60 .. lang.time_minute
+          if lang.needs_plural_s == true then
+            if minutesleft % 60 ~= 1 then
+              durationtext = durationtext .. lang.plural_s 
+            end
+          end
+        end
         if uj.lastrob + 3 == sj.stocknum then
-          local minutesleft = math.ceil((26/24 - time:toDays() + sj.lastrefresh) * 24 * 60)
-          print(minutesleft)
-          local durationtext = ""
-          if math.floor(minutesleft / 60) > 0 then
-            durationtext = math.floor(minutesleft / 60) .. lang.time_hour
-            if lang.needs_plural_s == true then
-              if math.floor(minutesleft / 60) ~= 1 then 
-                durationtext = durationtext .. lang.plural_s 
-              end
-            end
-          end
-          if minutesleft % 60 > 0 then
-            if durationtext ~= "" then
-              durationtext = durationtext .. lang.time_and
-            end
-            durationtext = durationtext .. minutesleft % 60 .. lang.time_minute
-            if lang.needs_plural_s == true then
-              if minutesleft % 60 ~= 1 then
-                durationtext = durationtext .. lang.plural_s 
-              end
-            end
-          end
           message.channel:send(lang.blacklist_next_1 .. durationtext .. lang.blacklist_next_2)
         else
-          message.channel:send(lang.blacklist_1 .. stockstring .. lang.blacklist_2)
+          message.channel:send(lang.blacklist_1 .. stockstring .. lang.blacklist_2 .. durationtext .. lang.blacklist_3)
         end
         return
       else
@@ -561,32 +565,32 @@ o-''|\\_____/)
           stockstring = stockstring .. lang.plural_s
         end
       end
+      local minutesleft = math.ceil((26/24 - time:toDays() + sj.lastrefresh) * 24 * 60)
+      
+      local durationtext = ""
+      if math.floor(minutesleft / 60) > 0 then
+        durationtext = math.floor(minutesleft / 60) .. lang.time_hour
+        if lang.needs_plural_s == true then
+          if math.floor(minutesleft / 60) ~= 1 then 
+            durationtext = durationtext .. lang.plural_s 
+          end
+        end
+      end
+      if minutesleft % 60 > 0 then
+        if durationtext ~= "" then
+          durationtext = durationtext .. lang.time_and
+        end
+        durationtext = durationtext .. minutesleft % 60 .. lang.time_minute
+        if lang.needs_plural_s == true then
+          if minutesleft % 60 ~= 1 then
+            durationtext = durationtext .. lang.plural_s 
+          end
+        end
+      end
       if uj.lastrob + 3 == sj.stocknum then
-        local minutesleft = math.ceil((26/24 - time:toDays() + sj.lastrefresh) * 24 * 60)
-        print(minutesleft)
-        local durationtext = ""
-        if math.floor(minutesleft / 60) > 0 then
-          durationtext = math.floor(minutesleft / 60) .. lang.time_hour
-          if lang.needs_plural_s == true then
-            if math.floor(minutesleft / 60) ~= 1 then 
-              durationtext = durationtext .. lang.plural_s 
-            end
-          end
-        end
-        if minutesleft % 60 > 0 then
-          if durationtext ~= "" then
-            durationtext = durationtext .. lang.time_and
-          end
-          durationtext = durationtext .. minutesleft % 60 .. lang.time_minute
-          if lang.needs_plural_s == true then
-            if minutesleft % 60 ~= 1 then
-              durationtext = durationtext .. lang.plural_s 
-            end
-          end
-        end
         message.channel:send(lang.blacklist_next_1 .. durationtext .. lang.blacklist_next_2)
       else
-        message.channel:send(lang.blacklist_1 .. stockstring .. lang.blacklist_2)
+        message.channel:send(lang.blacklist_1 .. stockstring .. lang.blacklist_2 .. durationtext .. lang.blacklist_3)
       end
       return
     end

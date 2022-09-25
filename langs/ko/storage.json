@@ -3,8 +3,10 @@
 	"plural_s": "",
 	
 	"embed_title": "님의 저장고",
-	"embed_title_season_1": "님의 저장고 (시즌",
-	"embed_title_season_2": ")",
+	"season_1": " (시즌",
+	"season_2": ")",
+	"rarity_1": " (",
+	"rarity_2": " 카드)",
 	"embed_contains": "님의 저장고입니다.",
 	
 	"embed_page_1": "(",
