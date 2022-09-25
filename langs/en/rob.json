@@ -13,7 +13,8 @@
 	"blacklist_next_1": "You will be able to access the **Quaint Shop** after the next restock. The shop will be restocked in ",
 	"blacklist_next_2": ".",
 	"blacklist_1": "You are blacklisted from the **Quaint Shop** for ",
-	"blacklist_2": ".",
+	"blacklist_2": ". The next restock will be in ",
+	"blacklist_3": ".",
 	
 	"out_of_stock_1": "The **Quaint Shop** is currently out of stock of **",
 	"out_of_stock_2": "**.",

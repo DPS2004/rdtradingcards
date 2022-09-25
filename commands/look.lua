@@ -404,8 +404,6 @@ function command.run(message, mt)
     local lang = dpf.loadjson("langs/" .. uj.lang .. "/look/shop.json")
     local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
     if uj.lastrob + 4 > sj.stocknum and uj.lastrob ~= 0 then
-      --lang = dpf.loadjson("langs/" .. uj.lang .. "/rob.json")
-      lang = dpf.loadjson("langs/en/rob.json")
       local stocksleft = uj.lastrob + 3 - sj.stocknum
       local stockstring = lang.more_restock_1 .. stocksleft .. lang.more_restock_2
       if lang.needs_plural_s == true then
@@ -413,34 +411,33 @@ function command.run(message, mt)
           stockstring = stockstring .. lang.plural_s
         end
       end
+      local minutesleft = math.ceil((26/24 - time:toDays() + sj.lastrefresh) * 24 * 60)
+      
+      local durationtext = ""
+      if math.floor(minutesleft / 60) > 0 then
+        durationtext = math.floor(minutesleft / 60) .. lang.time_hour
+        if lang.needs_plural_s == true then
+          if math.floor(minutesleft / 60) ~= 1 then 
+            durationtext = durationtext .. lang.plural_s 
+          end
+        end
+      end
+      if minutesleft % 60 > 0 then
+        if durationtext ~= "" then
+          durationtext = durationtext .. lang.time_and
+        end
+        durationtext = durationtext .. minutesleft % 60 .. lang.time_minute
+        if lang.needs_plural_s == true then
+          if minutesleft % 60 ~= 1 then
+            durationtext = durationtext .. lang.plural_s 
+          end
+        end
+      end
       if uj.lastrob + 3 == sj.stocknum then
-        local minutesleft = math.ceil((26/24 - time:toDays() + sj.lastrefresh) * 24 * 60)
-        print(minutesleft)
-        local durationtext = ""
-        if math.floor(minutesleft / 60) > 0 then
-          durationtext = math.floor(minutesleft / 60) .. lang.time_hour
-          if lang.needs_plural_s == true then
-            if math.floor(minutesleft / 60) ~= 1 then 
-              durationtext = durationtext .. lang.plural_s 
-            end
-          end
-        end
-        if minutesleft % 60 > 0 then
-          if durationtext ~= "" then
-            durationtext = durationtext .. lang.time_and
-          end
-          durationtext = durationtext .. minutesleft % 60 .. lang.time_minute
-          if lang.needs_plural_s == true then
-            if minutesleft % 60 ~= 1 then
-              durationtext = durationtext .. lang.plural_s 
-            end
-          end
-        end
         message.channel:send(lang.blacklist_next_1 .. durationtext .. lang.blacklist_next_2)
       else
-        message.channel:send(lang.blacklist_1 .. stockstring .. lang.blacklist_2)
+        message.channel:send(lang.blacklist_1 .. stockstring .. lang.blacklist_2 .. durationtext .. lang.blacklist_3)
       end
-      uj.room = 2
       return
     end
     args = {}
