@@ -47,7 +47,7 @@ function command.run(message, mt)
     if newroom == uj.room then
       message.channel:send(lang.already_in_1 .. locations[newroom+1] .. lang.already_in_2)
       return
-    elseif uj.lastrob + 4 > sj.stocknum and uj.lastrob ~= 0 then
+    elseif newroom == 3 and uj.lastrob + 4 > sj.stocknum and uj.lastrob ~= 0 then
       lang = dpf.loadjson("langs/" .. uj.lang .. "/rob.json")
       local time = sw:getTime()
       local stocksleft = uj.lastrob + 3 - sj.stocknum
