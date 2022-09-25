@@ -404,6 +404,8 @@ function command.run(message, mt)
     local lang = dpf.loadjson("langs/" .. uj.lang .. "/look/shop.json")
     local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
     if uj.lastrob + 4 > sj.stocknum and uj.lastrob ~= 0 then
+      lang = dpf.loadjson("langs/" .. uj.lang .. "/rob.json")
+      local time = sw:getTime()
       local stocksleft = uj.lastrob + 3 - sj.stocknum
       local stockstring = lang.more_restock_1 .. stocksleft .. lang.more_restock_2
       if lang.needs_plural_s == true then
