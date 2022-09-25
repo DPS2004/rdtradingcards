@@ -136,7 +136,7 @@ function reaction.run(message, interaction, data, response)
         else
           interaction:reply(lang.rob_failed_1 .. data.numrequest .. lang.rob_failed_2 .. data.sname .. lang.rob_failed_3 .. 3 + finalpm .. lang.rob_failed_4)
         end
-        uj.lastrob = sj.stocknum - 1
+        uj.lastrob = sj.stocknum + finalpm
         uj.room = 2
         if not uj.timesrobfailed then uj.timesrobfailed = 1 else uj.timesrobfailed = uj.timesrobfailed + 1 end
       end
@@ -263,7 +263,7 @@ function reaction.run(message, interaction, data, response)
         end
         
         interaction:reply(lang.rob_failed_item_1 .. data.sname .. lang.rob_failed_item_2 .. 3 + finalpm .. lang.rob_failed_item_3)
-        uj.lastrob = sj.stocknum
+        uj.lastrob = sj.stocknum + finalpm
         uj.room = 2
         if not uj.timesrobfailed then uj.timesrobfailed = 1 else uj.timesrobfailed = uj.timesrobfailed + 1 end
       end
