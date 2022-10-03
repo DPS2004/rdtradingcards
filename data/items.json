@@ -118,6 +118,16 @@
     "name": "Swirly Marbles",
     "description": "Makes ADOFAI cards more likely to be pulled.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981025409921585192/swirlymarbles.png"
+  },
+  "mustache": {
+    "name": "Fake Mustache",
+    "description": "Decreases the percentage of success of robbing, but gets a shorter time of getting blacklisted.",
+    "embed": "https://media.discordapp.net/attachments/786203629756481539/1026600813172371496/mustache.png"
+  },
+  "doubleedge": {
+    "name": "Double Edged Sword",
+    "description": "Increases the percentage of success of robbing, but gets a longer time of getting blacklisted.",
+    "embed": "https://media.discordapp.net/attachments/786203629756481539/1026599162243985518/doubleedge.png"
   }
 
 }

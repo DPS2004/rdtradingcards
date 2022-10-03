@@ -148,20 +148,50 @@ function reaction.run(message, interaction, data, response)
       if cdb[data.srequest].type == "Rare" then
         blackpm = -2
         local robchance = math.random(1,100)
-        if robchance < 90 - 5 * (data.numrequest > 18 and 17 or data.numrequest - 1) then
-          robsucceed = true
+        if uj.equipped == "mustache" then
+          if robchance < 85 - 5 * (data.numrequest > 18 and 17 or data.numrequest - 1) then
+            robsucceed = true
+          end
+        elseif uj.equipped == "doubleedge" then
+          if robchance < 95 - 5 * (data.numrequest > 18 and 17 or data.numrequest - 1) then
+            robsucceed = true
+          end
+        else
+          if robchance < 90 - 5 * (data.numrequest > 18 and 17 or data.numrequest - 1) then
+            robsucceed = true
+          end
         end
       elseif cdb[data.srequest].type == "Super Rare" or cdb[data.srequest].type == "PICO-8" then
         blackpm = -1
         local robchance = math.random(1,100)
-        if robchance < 70 - 5 * (data.numrequest > 14 and 13 or data.numrequest - 1) then
-          robsucceed = true
+        if uj.equipped == "mustache" then
+          if robchance < 65 - 5 * (data.numrequest > 18 and 17 or data.numrequest - 1) then
+            robsucceed = true
+          end
+        elseif uj.equipped == "doubleedge" then
+          if robchance < 75 - 5 * (data.numrequest > 18 and 17 or data.numrequest - 1) then
+            robsucceed = true
+          end
+        else
+          if robchance < 70 - 5 * (data.numrequest > 18 and 17 or data.numrequest - 1) then
+            robsucceed = true
+          end
         end
       elseif cdb[data.srequest].type == "Ultra Rare" then
         blackpm = -1
         local robchance = math.random(1,100)
-        if robchance < 50 - 5 * (data.numrequest > 10 and 9 or data.numrequest - 1) then
-          robsucceed = true
+        if uj.equipped == "mustache" then
+          if robchance < 45 - 5 * (data.numrequest > 18 and 17 or data.numrequest - 1) then
+            robsucceed = true
+          end
+        elseif uj.equipped == "doubleedge" then
+          if robchance < 55 - 5 * (data.numrequest > 18 and 17 or data.numrequest - 1) then
+            robsucceed = true
+          end
+        else
+          if robchance < 50 - 5 * (data.numrequest > 18 and 17 or data.numrequest - 1) then
+            robsucceed = true
+          end
         end
       elseif cdb[data.srequest].type == "Alternate" or cdb[data.srequest].type == "Discontinued" then
         local robchance = math.random(1,100)
@@ -169,24 +199,64 @@ function reaction.run(message, interaction, data, response)
         end
       elseif cdb[data.srequest].type == "Discontinued Rare" then
         local robchance = math.random(1,100)
-        if robchance < 20 - 3 * (data.numrequest > 7 and 6 or data.numrequest - 1) then
+        if uj.equipped == "mustache" then
+          if robchance < 15 - 5 * (data.numrequest > 18 and 17 or data.numrequest - 1) then
             robsucceed = true
+          end
+        elseif uj.equipped == "doubleedge" then
+          if robchance < 25 - 5 * (data.numrequest > 18 and 17 or data.numrequest - 1) then
+            robsucceed = true
+          end
+        else
+          if robchance < 20 - 5 * (data.numrequest > 18 and 17 or data.numrequest - 1) then
+            robsucceed = true
+          end
         end
       elseif cdb[data.srequest].type == "Discontinued Super Rare" then
         local robchance = math.random(1,100)
-        if robchance < 15 - 2 * (data.numrequest > 8 and 7 or data.numrequest - 1) then
-          robsucceed = true
+        if uj.equipped == "mustache" then
+          if robchance < 10 - 5 * (data.numrequest > 18 and 17 or data.numrequest - 1) then
+            robsucceed = true
+          end
+        elseif uj.equipped == "doubleedge" then
+          if robchance < 20 - 5 * (data.numrequest > 18 and 17 or data.numrequest - 1) then
+            robsucceed = true
+          end
+        else
+          if robchance < 15 - 5 * (data.numrequest > 18 and 17 or data.numrequest - 1) then
+            robsucceed = true
+          end
         end
       elseif cdb[data.srequest].type == "Discontinued Ultra Rare" or cdb[data.srequest].type == "Discontinued Alternate" or cdb[data.srequest].type == "Alternate Alternate" then
         local robchance = math.random(1,100)
-        if robchance < 10 - 1 * (data.numrequest > 10 and 9 or data.numrequest - 1) then
-          robsucceed = true
+        if uj.equipped == "mustache" then
+          if robchance < 5 - 5 * (data.numrequest > 18 and 17 or data.numrequest - 1) then
+            robsucceed = true
+          end
+        elseif uj.equipped == "doubleedge" then
+          if robchance < 15 - 5 * (data.numrequest > 18 and 17 or data.numrequest - 1) then
+            robsucceed = true
+          end
+        else
+          if robchance < 10 - 5 * (data.numrequest > 18 and 17 or data.numrequest - 1) then
+            robsucceed = true
+          end
         end
       end
 	  
       if (not robsucceed) and data.random then
-        if math.random(1,3) == 1 then
-          robsucceed = true
+        if uj.equipped == "mustache" then
+          if math.random(1,4) == 1 then
+            robsucceed = true
+          end
+        elseif uj.equipped == "doubleedge" then
+          if math.random(1,5) == 1 or 2 then
+            robsucceed = true
+          end
+        else
+          if math.random(1,3) == 1 then
+            robsucceed = true
+          end
         end
       end
 	  
@@ -226,7 +296,17 @@ function reaction.run(message, interaction, data, response)
         else
           interaction:reply(lang.rob_failed_1 .. data.numrequest .. lang.rob_failed_2 .. data.sname .. lang.rob_failed_3 .. 3 + finalpm .. lang.rob_failed_4)
         end
-        uj.lastrob = sj.stocknum + finalpm
+        if uj.equipped == "mustache" then
+          if finalpm == -1 then
+            uj.lastrob = sj.stocknum + finalpm
+          else
+            uj.lastrob = sj.stocknum + finalpm - 1
+          end
+        elseif uj.equipped = "doubleedge" then
+          uj.lastrob = sj.stocknum + finalpm + 1
+        else
+          uj.lastrob = sj.stocknum + finalpm
+        end
         uj.room = 2
         if not uj.timesrobfailed then uj.timesrobfailed = 1 else uj.timesrobfailed = uj.timesrobfailed + 1 end
       end
