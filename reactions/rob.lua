@@ -124,9 +124,10 @@ function reaction.run(message, interaction, data, response)
         
         local finalpm = 0
         if data.sprice <= 2 then
-          finalpm = -2
+          finalpm = -3
         elseif data.sprice <= 5 then
           finalpm = -1
+
         else
           finalpm = 0
         end
@@ -146,7 +147,7 @@ function reaction.run(message, interaction, data, response)
       local blackpm
       local randompm = false
       if cdb[data.srequest].type == "Rare" then
-        blackpm = -2
+        blackpm = -3
         local robchance = math.random(1,100)
         if robchance < 90 - 5 * (data.numrequest > 18 and 17 or data.numrequest - 1) then
           robsucceed = true
@@ -255,7 +256,7 @@ function reaction.run(message, interaction, data, response)
         
         local finalpm = 0
         if data.sprice <= 2 then
-          finalpm = -2
+          finalpm = -3
         elseif data.sprice <= 5 then
           finalpm = -1
         else
