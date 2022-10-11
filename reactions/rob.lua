@@ -250,7 +250,7 @@ function reaction.run(message, interaction, data, response)
             robsucceed = true
           end
         elseif uj.equipped == "doubleedge" then
-          if math.random(1,5) == 1 or 2 then
+          if math.random(1,5) == 1 or math.random(1,5) == 2 then
             robsucceed = true
           end
         else
@@ -302,7 +302,7 @@ function reaction.run(message, interaction, data, response)
           else
             uj.lastrob = sj.stocknum + finalpm - 1
           end
-        elseif uj.equipped = "doubleedge" then
+        elseif uj.equipped == "doubleedge" then
           uj.lastrob = sj.stocknum + finalpm + 1
         else
           uj.lastrob = sj.stocknum + finalpm
