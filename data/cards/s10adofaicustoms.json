@@ -1,0 +1,678 @@
+{
+    "groupname": "s10 adofai customs",
+    "basechance": 3,
+    "cards": 
+    [
+      {
+        "chance": 2,
+        "filename": "diefire",
+        "name": "Die in a Fire",
+        "type": "Super Rare",
+        "description": "(Level by zedwards)",
+        "smell": "Arson",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1020781110994665553/diefire.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "jackbox",
+        "name": "Jack in the Box",
+        "type": "Super Rare",
+        "description": "(Level by robotups)",
+        "smell": "Child Boxes",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1020769352368267295/jackbox.gif"
+      },
+      {
+        "chance": 1,
+        "filename": "tshadows",
+        "name": "Twisted Shadows",
+        "type": "Ultra Rare",
+        "description": "(Level by lyoug)",
+        "smell": "Red Shadows",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022803710717472778/tshadows.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "moonraiders",
+        "name": "Moon Raiders",
+        "type": "Super Rare",
+        "description": "(Level by CyanAqua)",
+        "smell": "Moon Landers",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022821864441135104/moonraiders.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "reddits",
+        "name": "Reddits",
+        "type": "Super Rare",
+        "description": "(Level by KAERRA)",
+        "smell": "Vister",
+        "season": 10,
+        "bonuses": {
+            "duncecap": true,
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022821865493905428/reddits.gif"
+      },
+      {
+        "chance": 1,
+        "filename": "hiasobiadofai",
+        "name": "Play With Fire (ADOFAI)",
+        "type": "Ultra Rare",
+        "description": "(Level by zedwards)",
+        "smell": "Double Fire",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022821863405125712/hiasobiadofai.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "anotherme",
+        "name": "Another Me",
+        "type": "Ultra Rare",
+        "description": "(Level by Team P.A.L.)",
+        "smell": "Lunar Eclipse",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022821862885048413/anotherme.gif"
+      },
+      {
+        "chance": 1,
+        "filename": "jampancake",
+        "name": "Jam with Pancake",
+        "type": "Ultra Rare",
+        "description": "(Level by Cijan Gaming)",
+        "smell": "Starwberry Jam",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022821863925223454/jampancake.png"
+      },
+      {
+        "chance": 2,
+        "filename": "polygons",
+        "name": "Polygons",
+        "type": "Super Rare",
+        "description": "(Level by Riya)",
+        "smell": "Triangles",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022821864944447518/polygons.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "wanttorun",
+        "name": "We Want to Run",
+        "type": "Super Rare",
+        "description": "(Level by Daming)",
+        "smell": "Running",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022858865060085800/wanttorun.png"
+      },
+      {
+        "chance": 2,
+        "filename": "19zz",
+        "name": "19ZZ",
+        "type": "Super Rare",
+        "description": "(Level by YeetYote)",
+        "smell": "Zzz",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022858866037366864/19zz.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "insertname", 
+        "name": "なまえ を いれてください▼",
+        "type": "Super Rare",
+        "description": "(Level by zedwards)",
+        "smell": "aaaa",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022858863302692975/insertname.png"
+      },
+      {
+        "chance": 1,
+        "filename": "praystation",
+        "name": "PrayStation",
+        "type": "Ultra Rare",
+        "description": "(Level by Team Vega)",
+        "smell": "4k Sized Pixels",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022858864191864842/praystation.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "fragormagnus",
+        "name": "Fragor Magnus",
+        "type": "Super Rare",
+        "description": "(Level by Hawkyrious)",
+        "smell": "Fragrance",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022858866511315074/fragormagnus.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "hom",
+        "name": "Hall of Mirrors",
+        "type": "Super Rare",
+        "description": "(Level by Star4th)",
+        "smell": "Mirrors",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022858867027226624/hom.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "hotchoco",
+        "name": "Hot Chocolate",
+        "type": "Super Rare",
+        "description": "(Level by Daming)",
+        "smell": "Cacao",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023192864617934879/hotchoco.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "wicked",
+        "name": "Wicked",
+        "type": "Super Rare",
+        "description": "(Level by PAPER_PPT)",
+        "smell": "Quintuplets",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022858865437589544/wicked.gif"
+      },
+      {
+        "chance": 1,
+        "filename": "spinbottle",
+        "name": "Spin Ye Bottle",
+        "type": "Ultra Rare",
+        "description": "(Level by Firestix)",
+        "smell": "Bottles",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022858864623894618/spinbottle.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "ikasu",
+        "name": "ikasu",
+        "type": "Super Rare",
+        "description": "(Level by HanB)",
+        "smell": "Sushi",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939433273671781/ikasu.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "ofnanother",
+        "name": "One Forgotten Night (Another)",
+        "type": "Super Rare",
+        "description": "(Level by Star4th)",
+        "smell": "Speialess",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939799767748718/ofnanother.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "jumper",
+        "name": "Jumper",
+        "type": "Super Rare",
+        "description": "(Level by Zisos)",
+        "smell": "Jumping",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939798341697618/jumper.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "heracles-ex",
+        "name": "Heracles EXtended",
+        "type": "Super Rare",
+        "description": "(Level by Samario)",
+        "smell": "Big Circuses",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939074002157568/heracles-ex.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "forever",
+        "name": "Forever",
+        "type": "Super Rare",
+        "description": "(Level by Misoguy)",
+        "smell": "Carved Diamonds",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939072957792267/forever.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "starlighttree",
+        "name": "Starlight Tree",
+        "type": "Super Rare",
+        "description": "(Level by Misoguy)",
+        "smell": "Christmas Trees",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022940047177158677/starlighttree.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "dgarden",
+        "name": "Destroying Garden",
+        "type": "Super Rare",
+        "description": "(Level by Ssimille)",
+        "smell": "Bird Cages",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939072471240845/dgarden.gif"
+      },
+      {
+        "chance": 1,
+        "filename": "sos",
+        "name": "SOS",
+        "type": "Ultra Rare",
+        "description": "(Level by Rikri, Kin, LUMI)",
+        "smell": "Three Dots, Three Lines, Three Dots",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022940046812266566/sos.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "skyrealm",
+        "name": "Sky Realm",
+        "type": "Super Rare",
+        "description": "(Level by Misoguy)",
+        "smell": "Love",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939796001275986/skyrealm.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "winterswalk",
+        "name": "Winter's Walk",
+        "type": "Super Rare",
+        "description": "(Level by Xeno)",
+        "smell": "Candy Canes",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022940045990170684/winterwalk.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "lyricalbusy",
+        "name": "Lyrical Busy",
+        "type": "Super Rare",
+        "description": "(Level by Plant Guy)",
+        "smell": "Company Nest",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022899407454216294/lyricalbusy.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "delaypedal2",
+        "name": "Delay Pedal (ADOFAI)",
+        "type": "Super Rare",
+        "description": "(Level by Daming)",
+        "smell": "Memories",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939072047632405/delaypedal2.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "cupofcoffee",
+        "name": "A Cup of Coffee",
+        "type": "Super Rare",
+        "description": "(Level by hotduck)",
+        "smell": "Coffee",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939071632375818/cupofcoffee.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "mysteryvillage",
+        "name": "Mystery Village",
+        "type": "Super Rare",
+        "description": "(Level by BluPen)",
+        "smell": "Silence",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939799390273636/mysteryvillage.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "ppsong",
+        "name": "PeePee Song",
+        "type": "Super Rare",
+        "description": "(Level by Colon)",
+        "smell": "Urine",
+        "season": 10,
+        "bonuses": {
+            "duncecap": true,
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939800132661248/ppsong.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "intozone",
+        "name": "Into the Zone",
+        "type": "Super Rare",
+        "description": "(Level by Klyzx)",
+        "smell": "Arcade Games",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939797846773781/intozone.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "wgreenery",
+        "name": "Wilds greenery",
+        "type": "Super Rare",
+        "description": "(Level by Plant Guy)",
+        "smell": "Wild Grass",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022940048020217947/wgreenery.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "bluesp",
+        "name": "Blues, Probably",
+        "type": "Super Rare",
+        "description": "(Level by Xeno)",
+        "smell": "Saxophones",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939071166820352/bluesp.gif"
+      },
+      {
+        "chance": 1,
+        "filename": "sleepstation",
+        "name": "sleepwalk station",
+        "type": "Ultra Rare",
+        "description": "(Level by yoshikirby26)",
+        "smell": "Sleeping",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022940046422179980/sleepstation.gif"
+      },
+      {
+        "chance": 1,
+        "filename": "ifchicken",
+        "name": "If I had a Chicken",
+        "type": "Ultra Rare",
+        "description": "(Level by Strode)",
+        "smell": "Chickens",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939432841650226/ifchicken.gif"
+      },
+      {
+        "chance": 1,
+        "filename": "rainbowtylenol",
+        "name": "Rainbow Tylenol",
+        "type": "Ultra Rare",
+        "description": "(Level by Econ, prod)",
+        "smell": "Gay Medicines",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939795443421254/rtylenol.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "storm",
+        "name": "storm",
+        "type": "Super Rare",
+        "description": "(Level by Tripizza)",
+        "smell": "Rain",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022940047642742834/storm.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "lab18",
+        "name": "Laboratory-018",
+        "type": "Super Rare",
+        "description": "(Level by PAPER_PPT)",
+        "smell": "Experiments",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939798824046662/lab18.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "3-ex",
+        "name": "The Wind-Up (prod remix)",
+        "type": "Super Rare",
+        "description": "(Level by ron_sa, 김화성, halfsell)",
+        "smell": "Cog Wheels",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939070248271964/3-ex.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "remebername",
+        "name": "I can't even remeber my own name",
+        "type": "Super Rare",
+        "description": "(Level by Daming)",
+        "smell": "Dementia",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022931984823091200/remembername.gif"
+      },
+      {
+        "chance": 1,
+        "filename": "ereality",
+        "name": "endless.reaility",
+        "type": "Ultra Rare",
+        "description": "(Level by Rikri)",
+        "smell": "Realities",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023004262051102740/ereality.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "blackworld",
+        "name": "黒塗り世界宛て書簡",
+        "type": "Super Rare",
+        "description": "(Level by Xeno)",
+        "smell": "Black Paint",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939070772547705/blackworld.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "hotmilk2",
+        "name": "hot milk (ADOFAI)",
+        "type": "Super Rare",
+        "description": "(Level by Econ)",
+        "smell": "Balls Cake",
+        "season": 10,
+        "bonuses": {
+            "duncecap": true,
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022939069866577920/hotmilk2.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "module",
+        "name": "Module",
+        "type": "Super Rare",
+        "description": "(Level by Onslayet)",
+        "smell": "Computers",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022858863818580049/module.png"
+      },
+      {
+        "chance": 2,
+        "filename": "rapids",
+        "name": "Rapid Spectrum",
+        "type": "Super Rare",
+        "description": "(Level by XiZnYng)",
+        "smell": "Prism",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023336368061042789/rapids.gif"
+      }
+    ]
+}
