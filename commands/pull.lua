@@ -136,6 +136,7 @@ local time = sw:getTime()
     if v == "yor" or v == "yosr" or v == "your" then title = lang.pulled_yo end
     if i == 2 then title = lang.pulled_doubleclick end
     if i == 3 then title = lang.pulled_tripleclick end
+	if v == "samarrrai" then title = "Ahoy Matey!" end
 
     if v == "rdnot" then
       if uj.lang == "ko" then
