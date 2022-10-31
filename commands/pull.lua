@@ -116,7 +116,10 @@ local time = sw:getTime()
     end
     uj.conspt = "none"
   end
-
+	if forcepull ~= nil then
+		pulledcards = { forcepull }
+		forcepull = nil
+	end
   for i, v in ipairs(pulledcards) do
     uj.inventory[v] = uj.inventory[v] and uj.inventory[v] + 1 or 1
     uj.timespulled = uj.timespulled and uj.timespulled + 1 or 1
