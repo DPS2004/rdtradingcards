@@ -6,10 +6,18 @@ function reaction.run(message, interaction, data, response)
   local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
   print("Loaded uj")
 
+  function send_robmessage(interaction, message, string)
+    if interaction ~= nil then
+      interaction:reply(string)
+    elseif message ~= nil then
+      message.channel:send(string)
+    end
+  end
+
   if response == "yes" then
     print('user1 has accepted')
     if uj.lastrob + 3 > sj.stocknum and uj.lastrob ~= 0 then
-      interaction:reply(lang.error_already_robbed)
+      send_robmessage(interaction, message, lang.error_already_robbed)
       return
     end
 
@@ -114,9 +122,9 @@ function reaction.run(message, interaction, data, response)
           uj.consumables[data.srequest] = uj.consumables[data.srequest] + adding
         end
         if uj.lang == "ko" then
-          interaction:reply(lang.rob_succeeded_1 .. data.sname .. lang.rob_succeeded_2 .. data.numrequest .. lang.cons_unit .. lang.rob_succeeded_3)
+          send_robmessage(interaction, message, lang.rob_succeeded_1 .. data.sname .. lang.rob_succeeded_2 .. data.numrequest .. lang.cons_unit .. lang.rob_succeeded_3)
         else
-          interaction:reply(lang.rob_succeeded_1 .. data.numrequest .. lang.rob_succeeded_2 .. data.sname .. lang.rob_succeeded_3)
+          send_robmessage(interaction, message, lang.rob_succeeded_1 .. data.numrequest .. lang.rob_succeeded_2 .. data.sname .. lang.rob_succeeded_3)
         end
         if not uj.timesrobsucceeded then uj.timesrobsucceeded = 1 else uj.timesrobsucceeded = uj.timesrobsucceeded + 1 end
       else
@@ -133,9 +141,9 @@ function reaction.run(message, interaction, data, response)
         end
         
         if uj.lang == "ko" then
-          interaction:reply(lang.rob_failed_1 .. data.sname .. lang.rob_failed_2 .. data.numrequest .. lang.cons_unit .. lang.rob_failed_3 .. 3 + finalpm .. lang.rob_failed_4)
+          send_robmessage(interaction, message, lang.rob_failed_1 .. data.sname .. lang.rob_failed_2 .. data.numrequest .. lang.cons_unit .. lang.rob_failed_3 .. 4 + finalpm .. lang.rob_failed_4)
         else
-          interaction:reply(lang.rob_failed_1 .. data.numrequest .. lang.rob_failed_2 .. data.sname .. lang.rob_failed_3 .. 3 + finalpm .. lang.rob_failed_4)
+          send_robmessage(interaction, message, lang.rob_failed_1 .. data.numrequest .. lang.rob_failed_2 .. data.sname .. lang.rob_failed_3 .. 4 + finalpm .. lang.rob_failed_4)
         end
         uj.lastrob = sj.stocknum + finalpm
         uj.room = 2
@@ -201,9 +209,9 @@ function reaction.run(message, interaction, data, response)
           uj.inventory[data.srequest] = uj.inventory[data.srequest] + data.numrequest
         end
         if uj.lang == "ko" then
-          interaction:reply(lang.rob_succeeded_1 .. data.sname .. lang.rob_succeeded_2 .. data.numrequest .. lang.card_unit .. lang.rob_succeeded_3)
+          send_robmessage(interaction, message, lang.rob_succeeded_1 .. data.sname .. lang.rob_succeeded_2 .. data.numrequest .. lang.card_unit .. lang.rob_succeeded_3)
         else
-          interaction:reply(lang.rob_succeeded_1 .. data.numrequest .. lang.rob_succeeded_2 .. data.sname .. lang.rob_succeeded_3)
+          send_robmessage(interaction, message, lang.rob_succeeded_1 .. data.numrequest .. lang.rob_succeeded_2 .. data.sname .. lang.rob_succeeded_3)
         end
         if not uj.timesrobsucceeded then uj.timesrobsucceeded = 1 else uj.timesrobsucceeded = uj.timesrobsucceeded + 1 end
       else
@@ -223,9 +231,9 @@ function reaction.run(message, interaction, data, response)
         end
         
         if uj.lang == "ko" then
-          interaction:reply(lang.rob_failed_1 .. data.sname .. lang.rob_failed_2 .. data.numrequest .. lang.card_unit .. lang.rob_failed_3 .. 3 + finalpm .. lang.rob_failed_4)
+          send_robmessage(interaction, message, lang.rob_failed_1 .. data.sname .. lang.rob_failed_2 .. data.numrequest .. lang.card_unit .. lang.rob_failed_3 .. 4 + finalpm .. lang.rob_failed_4)
         else
-          interaction:reply(lang.rob_failed_1 .. data.numrequest .. lang.rob_failed_2 .. data.sname .. lang.rob_failed_3 .. 3 + finalpm .. lang.rob_failed_4)
+          send_robmessage(interaction, message, lang.rob_failed_1 .. data.numrequest .. lang.rob_failed_2 .. data.sname .. lang.rob_failed_3 .. 4 + finalpm .. lang.rob_failed_4)
         end
         uj.lastrob = sj.stocknum + finalpm
         uj.room = 2
@@ -249,7 +257,7 @@ function reaction.run(message, interaction, data, response)
         print("rob succeeded")
         sj.itemstock = sj.itemstock - 1
         uj.items[data.srequest] = true
-        interaction:reply(lang.rob_succeeded_item_1 .. data.sname .. lang.rob_succeeded_item_2)
+        send_robmessage(interaction, message, lang.rob_succeeded_item_1 .. data.sname .. lang.rob_succeeded_item_2)
         if not uj.timesrobsucceeded then uj.timesrobsucceeded = 1 else uj.timesrobsucceeded = uj.timesrobsucceeded + 1 end
       else
         print("rob failed")
@@ -263,20 +271,25 @@ function reaction.run(message, interaction, data, response)
           finalpm = 0
         end
         
-        interaction:reply(lang.rob_failed_item_1 .. data.sname .. lang.rob_failed_item_2 .. 3 + finalpm .. lang.rob_failed_item_3)
+        send_robmessage(interaction, message, lang.rob_failed_item_1 .. data.sname .. lang.rob_failed_item_2 .. 4 + finalpm .. lang.rob_failed_item_3)
         uj.lastrob = sj.stocknum + finalpm
         uj.room = 2
         if not uj.timesrobfailed then uj.timesrobfailed = 1 else uj.timesrobfailed = uj.timesrobfailed + 1 end
       end
     end
     
+    if uj.skipprompts and not uj.skiprob then
+      send_robmessage(nil, message, lang.rob_skipenabled)
+      uj.skiprob = true
+    end
+
     dpf.savejson(ujf, uj)
     dpf.savejson("savedata/shop.json", sj)
   end
 
   if response == "no" then
     print('user1 has denied')
-    interaction:reply(lang.rob_cancelled_1 .. uj.id .. lang.rob_cancelled_2)
+    send_robmessage(interaction, message, lang.rob_cancelled_1 .. uj.id .. lang.rob_cancelled_2)
   end
 end
 return reaction
