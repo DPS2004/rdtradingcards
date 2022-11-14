@@ -4,6 +4,7 @@ function reaction.run(message, interaction, data, response)
   local uj = dpf.loadjson(ujf, defaultjson)
   local lang = dpf.loadjson("langs/" .. uj.lang .. "/rob.json", "")
   local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
+  local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
   print("Loaded uj")
 
   function send_robmessage(interaction, message, string)
@@ -278,9 +279,10 @@ function reaction.run(message, interaction, data, response)
       end
     end
     
-    if uj.skipprompts and not uj.skiprob then
+    if uj.skipprompts and not wj.skiprob then
       send_robmessage(nil, message, lang.rob_skipenabled)
-      uj.skiprob = true
+      wj.skiprob = true
+      dpf.loadjson("savedata/worldsave.json", wj)
     end
 
     dpf.savejson(ujf, uj)
