@@ -851,21 +851,25 @@ o-''|\\_____/)
       end
       request = constexttofn(request)
       if uj.consumables[request] then
-        if not uj.skipprompts then
-          ynbuttons(message,{
-            color = 0x85c5ff,
-            title = lang.using_1 .. consdb[request].name .. lang.using_2,
-            description = lang.use_confirm_1 .. consdb[request].name .. lang.use_confirm_2,
-          },"useconsumable",{crequest=request,mt=mt},uj.id,uj.lang)
-          return
-        else
-          local fn = request
-          if consdb[request].command then
-            request = consdb[request].command
-          end
-          cmdcons[request].run(uj, "savedata/" .. message.author.id .. ".json", message, mt, nil , fn)
-          return
-        end
+		if not consdb[request].unusable then
+			if not uj.skipprompts then
+			  ynbuttons(message,{
+				color = 0x85c5ff,
+				title = lang.using_1 .. consdb[request].name .. lang.using_2,
+				description = lang.use_confirm_1 .. consdb[request].name .. lang.use_confirm_2,
+			  },"useconsumable",{crequest=request,mt=mt},uj.id,uj.lang)
+			  return
+			else
+			  local fn = request
+			  if consdb[request].command then
+				request = consdb[request].command
+			  end
+			  cmdcons[request].run(uj, "savedata/" .. message.author.id .. ".json", message, mt, nil , fn)
+			  return
+			end
+		else
+			message.channel:send('You cannot use this item!')
+		end
       else
         message.channel:send(lang.donthave_1 .. consdb[request].name .. lang.donthave_2)
       end

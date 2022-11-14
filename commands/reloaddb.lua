@@ -665,6 +665,7 @@ function command.run(message, mt, overwrite)
     addcommand("lang",cmd.language)
     addcommand("langlist",cmd.langlist)
     addcommand("rob",cmd.rob)
+    addcommand("rtsitem",cmd.rtsitem)
     
     _G['handlemessage'] = function (message, content)
 	  if message.author.id ~= client.user.id or content then
