@@ -4,7 +4,8 @@ function command.run(message, mt)
   checkforreload(time:toDays())
   print(message.author.name .. " did !rob")
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
-  local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)  
+  local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
+  local wj = dpf.loadjson("savedata/worldsave.json", defaultworldsave)
   local lang = dpf.loadjson("langs/" .. uj.lang .. "/rob.json", "")
   
   if not message.guild then
@@ -29,9 +30,9 @@ function command.run(message, mt)
     dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
   end
 
-  if not uj.skiprob then
-    uj.skiprob = false
-    dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
+  if not wj.skiprob then
+    wj.skiprob = false
+    dpf.savejson("savedata/worldsave.json",wj)
   end
 
   if uj.lastrob + 4 > sj.stocknum and uj.lastrob ~= 0 then
@@ -144,7 +145,7 @@ function command.run(message, mt)
       message.channel:send(lang.rob_random_nothing)
       return
     end
-    if uj.skipprompts and uj.skiprob then
+    if uj.skipprompts and wj.skiprob then
       cmdre["rob"].run(message, nil, {random=true}, "yes")
     else
       ynbuttons(message,{
@@ -184,7 +185,7 @@ function command.run(message, mt)
       end
     
       -- can rob consumable
-      if uj.skipprompts and uj.skiprob then
+      if uj.skipprompts and wj.skiprob then
         cmdre["rob"].run(message, nil, {itemtype = "consumable",sname=sname,sindex=sindex,srequest=srequest,sprice=sprice,numrequest=numrequest, random=false}, "yes")
       else
         if uj.lang == "ko" then
@@ -235,7 +236,7 @@ function command.run(message, mt)
       end
 
       --can buy item
-      if uj.skipprompts and uj.skiprob then
+      if uj.skipprompts and wj.skiprob then
         cmdre["rob"].run(message, nil, {itemtype = "item",sname=sname,srequest=srequest,sprice=sprice,random=false}, "yes")
       else
         ynbuttons(message,{
@@ -276,7 +277,7 @@ function command.run(message, mt)
       end
 
       --can buy card
-      if uj.skipprompts and uj.skiprob then
+      if uj.skipprompts and wj.skiprob then
         cmdre["rob"].run(message, nil, {itemtype = "card",sname=sname,sindex=sindex,srequest=srequest,numrequest=numrequest, random=false}, "yes")
       else
         if uj.lang == "ko" then
