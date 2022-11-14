@@ -212,7 +212,33 @@
 			"filmreel":true
           },
           "embed": "https://cdn.discordapp.com/attachments/944009293856919662/1022688852508418068/timetraveler.gif"
+    },
+	{
+ 	    "chance":2,
+	    "filename": "1234",
+          "name": "1,2,3,4!",
+          "type": "Super Rare",
+          "description": "(Level by Teennis)",
+          "smell": "Calculator",
+          "season": 10,
+          "bonuses": {
+			"valentinesday":true
+          },
+          "embed": "https://media.discordapp.net/attachments/786203629756481539/1041702395085848576/1234.png"
+    },
+	{
+ 	    "chance":2,
+	    "filename": "pap",
+          "name": "Pictured as Perfect",
+          "type": "Super Rare",
+          "description": "(Level by Teennis)",
+          "smell": "Perfection",
+          "season": 10,
+          "bonuses": {
+			"rustysword":true
+          },
+          "embed": "https://media.discordapp.net/attachments/786203629756481539/1041713082742878218/pap.png"
     }
-	
+
     ]
 }
