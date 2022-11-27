@@ -189,12 +189,10 @@ _________________```]])
           file = "card_images/SPOILER_" .. v .. ".png"
         }
       else
-        message.channel:send{embed = {
-          color = 0x85c5ff,
-          title = title,
-          description = message.author.mentionString .. lang.pulled_message_1 .. cardname .. lang.pulled_message_2 .. cardname .. lang.pulled_message_3 .. uj.pronouns["their"] .. lang.pulled_message_4 .. v .. lang.pulled_message_5,
-          image = {url = type(cdb[v].embed) == "table" and cdb[v].embed[math.random(#cdb[v].embed)] or cdb[v].embed}
-        }}
+        message.channel:send{
+          content = "**" .. title .. "**\n" .. message.author.mentionString .. lang.pulled_message_1 .. cardname .. lang.pulled_message_2 .. cardname .. lang.pulled_message_3 .. uj.pronouns["their"] .. lang.pulled_message_4 .. v .. lang.pulled_message_5,
+          file = "card_images/SPOILER_" .. v .. ".png"
+        }
       end
     end
     if not uj.togglecheckcard then
