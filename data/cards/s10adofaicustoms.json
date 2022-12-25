@@ -346,6 +346,7 @@
         "smell": "Bird Cages",
         "season": 10,
         "bonuses": {
+            "deluxebirdseed": true,
             "filmreel": true,
             "swirlymarbles": true
         },
@@ -402,6 +403,7 @@
         "smell": "Company Nest",
         "season": 10,
         "bonuses": {
+            "deluxebirdseed": true,
             "filmreel": true,
             "swirlymarbles": true
         },
@@ -529,6 +531,7 @@
         "smell": "Chickens",
         "season": 10,
         "bonuses": {
+            "deluxebirdseed": true,
             "filmreel": true,
             "swirlymarbles": true
         },
