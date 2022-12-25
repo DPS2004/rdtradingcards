@@ -664,10 +664,10 @@
         "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022858863818580049/module.png"
       },
       {
-        "chance": 2,
+        "chance": 1,
         "filename": "rapids",
         "name": "Rapid Spectrum",
-        "type": "Super Rare",
+        "type": "Ultra Rare",
         "description": "(Level by XiZnYng)",
         "smell": "Prism",
         "season": 10,
@@ -676,6 +676,254 @@
             "swirlymarbles": true
         },
         "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023336368061042789/rapids.gif"
+      },
+      {
+        "chance": 1,
+        "filename": "machinegun",
+        "name": "Machine Gun",
+        "type": "Ultra Rare",
+        "description": "(Level by TNTzx, glasses)",
+        "smell": "Bullets",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": ""
+      },
+      {
+        "chance": 2,
+        "filename": "7-ex",
+        "name": "Spin 2 Win (Ssimille, NumbEr07 Remix)",
+        "type": "Super Rare",
+        "description": "(Level by yhld120, 텅빈박스, PowerFactory)",
+        "smell": "Cats",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": ""
+      },
+      {
+        "chance": 2,
+        "filename": "injam2",
+        "name": "Up In My Jam (All of A Sudden)",
+        "type": "Super Rare",
+        "description": "(Level by Kin)",
+        "smell": "Steam Jam",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": ""
+      },
+      {
+        "chance": 2,
+        "filename": "wheelofconfusion",
+        "name": "A Wheel of Confusion",
+        "type": "Super Rare",
+        "description": "(Level by PowerFactory)",
+        "smell": "Mechanical Wheel",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": ""
+      },
+      {
+        "chance": 2,
+        "filename": "nulctrl",
+        "name": "NULLCTRL",
+        "type": "Super Rare",
+        "description": "(Level by YeetYote, kernby, Team P.A.L.)",
+        "smell": "Clubs",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": ""
+      },
+      {
+        "chance": 2,
+        "filename": "2anyfirst",
+        "name": "2AnyFirst",
+        "type": "Super Rare",
+        "description": "(Level by kernby)",
+        "smell": "Adventures",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": ""
+      },
+      {
+        "chance": 2,
+        "filename": "marenol",
+        "name": "MARENOL",
+        "type": "Super Rare",
+        "description": "(Level by zedwards)",
+        "smell": "Nightmares",
+        "season": 10,
+        "bonuses": {
+            "deviltail": true,
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": ""
+      },
+      {
+        "chance": 1,
+        "filename": "apocaliptix",
+        "name": "Apocaliptix",
+        "type": "Ultra Rare",
+        "description": "(Level by kernby)",
+        "smell": "Apocalypse",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": ""
+      },
+      {
+        "chance": 1,
+        "filename": "wnight",
+        "name": "Walpurgis Night",
+        "type": "Ultra Rare",
+        "description": "(Level by Astral Overseer)",
+        "smell": "Spooky Night",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": ""
+      },
+      {
+        "chance": 2,
+        "filename": "coffeeshop",
+        "name": "ユメの喫茶店",
+        "type": "Super Rare",
+        "description": "(Level by CyanAqua)",
+        "smell": "Morning Coffee",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": ""
+      },
+      {
+        "chance": 2,
+        "filename": "finaltheory",
+        "name": "Final Theory",
+        "type": "Super Rare",
+        "description": "(Level by CyanAqua)",
+        "smell": "Theories",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": ""
+      },
+      {
+        "chance": 2,
+        "filename": "worldrace",
+        "name": "The Race Around the World",
+        "type": "Super Rare",
+        "description": "(Level by Team Ω)",
+        "smell": "Racing",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": ""
+      },
+      {
+        "chance": 2,
+        "filename": "steampunkengines",
+        "name": "Compute It With Some Devilish Alcoholic SteamPunk Engines",
+        "type": "Ultra Rare",
+        "description": "(Level by zedwards)",
+        "smell": "Steam Engines",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": ""
+      },
+      {
+        "chance": 2,
+        "filename": "holdground",
+        "name": "Hold Your Ground",
+        "type": "Super Rare",
+        "description": "(Level by M1n3c4rt)",
+        "smell": "Mines",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": ""
+      },
+      {
+        "chance": 2,
+        "filename": "overcastskies",
+        "name": "雨模様",
+        "type": "Super Rare",
+        "description": "(Level by CyanAqua)",
+        "smell": "Rainy Day",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": ""
+      },
+      {
+        "chance": 2,
+        "filename": "ytilaere",
+        "name": "ytilaer.sseldne",
+        "type": "Ultra Rare",
+        "description": "(Level by Rikri)",
+        "smell": "dnE ehT",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "deviltail": true,
+            "duncecap": true,
+            "swirlymarbles": true
+        },
+        "embed": ""
+      },
+      {
+        "chance": 2,
+        "filename": "guryvsr",
+        "name": "gur yvsr",
+        "type": "Ultra Rare",
+        "description": "(Level by Star4th)",
+        "smell": "Sneaky",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": ""
+      },
+      {
+        "chance": 2,
+        "filename": "frozentime",
+        "name": "Frozen Time",
+        "type": "Super Rare",
+        "description": "(Level by Editor AlriC)",
+        "smell": "Frozen",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": ""
       }
     ]
 }
