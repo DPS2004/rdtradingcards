@@ -841,7 +841,7 @@
         "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356152112955473/worldrace.png"
       },
       {
-        "chance": 2,
+        "chance": 1,
         "filename": "steampunkengines",
         "name": "Compute It With Some Devilish Alcoholic SteamPunk Engines",
         "type": "Ultra Rare",
@@ -923,6 +923,21 @@
             "swirlymarbles": true
         },
         "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356079987695698/frozentime.gif"
+      },
+      {
+        "chance": 1,
+        "filename": "vistadc",
+        "name": "Vista (Discontinued)",
+        "type": "Discontinued",
+        "description": "(Level by Econ, YeetYote)",
+        "smell": "Vister",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "duncecap": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057420687205212210/vistadc.gif"
       }
     ]
 }
