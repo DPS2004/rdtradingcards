@@ -689,7 +689,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": ""
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356080730099793/machinegun.gif"
       },
       {
         "chance": 2,
@@ -702,7 +702,7 @@
         "bonuses": {
             "swirlymarbles": true
         },
-        "embed": ""
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356443885510766/7-ex.png"
       },
       {
         "chance": 2,
@@ -729,7 +729,7 @@
         "bonuses": {
             "swirlymarbles": true
         },
-        "embed": ""
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356151320232078/wheelofconfusion.png"
       },
       {
         "chance": 2,
@@ -743,7 +743,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": ""
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356077932499035/nulctrl.gif"
       },
       {
         "chance": 2,
@@ -756,13 +756,13 @@
         "bonuses": {
             "swirlymarbles": true
         },
-        "embed": ""
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356077584351232/2anyfirst.png"
       },
       {
-        "chance": 2,
+        "chance": 1,
         "filename": "marenol",
         "name": "MARENOL",
-        "type": "Super Rare",
+        "type": "Ultra Rare",
         "description": "(Level by zedwards)",
         "smell": "Nightmares",
         "season": 10,
@@ -771,7 +771,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": ""
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356081174683678/marenol.gif"
       },
       {
         "chance": 1,
@@ -784,7 +784,7 @@
         "bonuses": {
             "swirlymarbles": true
         },
-        "embed": ""
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356078679085186/apocaliptix.png"
       },
       {
         "chance": 1,
@@ -797,7 +797,7 @@
         "bonuses": {
             "swirlymarbles": true
         },
-        "embed": ""
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356151706095656/wnight.png"
       },
       {
         "chance": 2,
@@ -811,7 +811,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": ""
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356079064948848/coffeeshop.gif"
       },
       {
         "chance": 2,
@@ -825,7 +825,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": ""
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356079530528868/finaltheory.gif"
       },
       {
         "chance": 2,
@@ -838,7 +838,7 @@
         "bonuses": {
             "swirlymarbles": true
         },
-        "embed": ""
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356152112955473/worldrace.png"
       },
       {
         "chance": 2,
@@ -865,7 +865,7 @@
         "bonuses": {
             "swirlymarbles": true
         },
-        "embed": ""
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057357205512409289/holdground.png"
       },
       {
         "chance": 2,
@@ -879,26 +879,25 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": ""
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356078276419645/overcastskies.gif"
       },
       {
-        "chance": 2,
+        "chance": 1,
         "filename": "ytilaere",
         "name": "ytilaer.sseldne",
         "type": "Ultra Rare",
-        "description": "(Level by Rikri)",
+        "description": "(irkiR yb leveL)",
         "smell": "dnE ehT",
         "season": 10,
         "bonuses": {
-            "filmreel": true,
             "deviltail": true,
             "duncecap": true,
             "swirlymarbles": true
         },
-        "embed": ""
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356150833680384/ytilaere.png"
       },
       {
-        "chance": 2,
+        "chance": 1,
         "filename": "guryvsr",
         "name": "gur yvsr",
         "type": "Ultra Rare",
@@ -909,7 +908,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": ""
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356080377757827/guryvsr.gif"
       },
       {
         "chance": 2,
@@ -923,7 +922,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": ""
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356079987695698/frozentime.gif"
       }
     ]
 }
