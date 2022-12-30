@@ -706,17 +706,16 @@
       },
       {
         "chance": 2,
-        "filename": "injam2",
-        "name": "Up In My Jam (All of A Sudden)",
+        "filename": "polaris",
+        "name": "Polaris",
         "type": "Super Rare",
-        "description": "(Level by Kin)",
-        "smell": "Steam Jam",
+        "description": "(Level by 🧱🔊)",
+        "smell": "Aurora Borealis",
         "season": 10,
         "bonuses": {
-            "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": ""
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1058471373560872960/polaris.png"
       },
       {
         "chance": 2,
@@ -842,17 +841,16 @@
       },
       {
         "chance": 1,
-        "filename": "steampunkengines",
-        "name": "Compute It With Some Devilish Alcoholic SteamPunk Engines",
+        "filename": "valentine",
+        "name": "Valentine",
         "type": "Ultra Rare",
-        "description": "(Level by zedwards)",
-        "smell": "Steam Engines",
+        "description": "(Level by ABorinGuy)",
+        "smell": "31st December",
         "season": 10,
         "bonuses": {
-            "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": ""
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1058471374101954761/valentine.png"
       },
       {
         "chance": 2,
