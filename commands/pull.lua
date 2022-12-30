@@ -20,31 +20,62 @@ local time = sw:getTime()
     cooldown = 10
   end
 
+  if not uj.storedpulls then
+    uj.storedpulls = 0
+  end
+
+  local maxcryopodstorage = 3
+  
+  if uj.equipped == "sparecryopod" then
+    local missedpulls = math.floor((time:toHours() - uj.lastpull)/cooldown)-1
+    if missedpulls > 0 then
+			--TODO: translated strings (also i really need to hurry up on implementing the upgrade to languages)
+      local resultmessage = "You missed "..missedpulls.." opportunities to pull since last pull,  "
+      if uj.storedpulls == maxcryopodstorage then
+        resultmessage = resultmessage.."but your **Spare Cryopod** is full, because it has already "..maxcryopodstorage.." pulls in it."
+      elseif missedpulls + uj.storedpulls > maxcryopodstorage then
+        resultmessage = resultmessage.."however your **Spare Cryopod** was able to store "..(math.min(uj.storedpulls + missedpulls, maxcryopodstorage)-uj.storedpulls).." of them."
+      else
+        resultmessage = resultmessage.."however your **Spare Cryopod** was able to store all "..missedpulls.." of them, bringing your total stored pulls to "..uj.storedpulls+missedpulls.."."
+      end
+      message.channel:send(resultmessage)
+      uj.storedpulls = math.min(uj.storedpulls + missedpulls, maxcryopodstorage)
+    end
+  elseif uj.storedpulls > 0 then
+    uj.storedpulls = 0
+  end
+
   if uj.lastpull + cooldown > time:toHours() then
-    --extremely jank implementation, please make this cleaner if possible
-    local minutesleft = math.ceil(uj.lastpull * 60 - time:toMinutes() + cooldown * 60)
-    local durationtext = ""
-    if math.floor(minutesleft / 60) > 0 then
-      durationtext = math.floor(minutesleft / 60) .. lang.time_hour
+    if uj.storedpulls > 0 then -- use a pull stored in the freezer (the spare cryopod)
+      uj.storedpulls = uj.storedpulls - 1
+      message.channel:send("You're on cooldown, but however, you have spare pulls stored in your **Spare Cryopod**, which means you can pull anyways!")
+    else
+      --extremely jank implementation, please make this cleaner if possible
+      local minutesleft = math.ceil(uj.lastpull * 60 - time:toMinutes() + cooldown * 60)
+      local durationtext = ""
+      if math.floor(minutesleft / 60) > 0 then
+        durationtext = math.floor(minutesleft / 60) .. lang.time_hour
+          if lang.needs_plural_s == true then
+            if math.floor(minutesleft / 60) ~= 1 then 
+              durationtext = durationtext .. lang.time_plural_s 
+            end
+          end
+      end
+      if minutesleft % 60 > 0 then
+        if durationtext ~= "" then
+          durationtext = durationtext .. lang.time_and
+        end
+        durationtext = durationtext .. minutesleft % 60 .. lang.time_minute
         if lang.needs_plural_s == true then
-          if math.floor(minutesleft / 60) ~= 1 then 
-            durationtext = durationtext .. lang.time_plural_s 
+          if minutesleft % 60 ~= 1 then
+            durationtext = durationtext .. lang.time_plural_s
           end
         end
-    end
-    if minutesleft % 60 > 0 then
-      if durationtext ~= "" then
-        durationtext = durationtext .. lang.time_and
       end
-      durationtext = durationtext .. minutesleft % 60 .. lang.time_minute
-      if lang.needs_plural_s == true then
-        if minutesleft % 60 ~= 1 then
-          durationtext = durationtext .. lang.time_plural_s
-        end
-      end
+
+      message.channel:send(formatstring(lang.wait_message, {durationtext}))
+      return
     end
-    message.channel:send(lang.wait_message_1 .. durationtext .. lang.wait_message_2)
-    return
   end
   
   if not uj.names then
