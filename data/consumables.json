@@ -289,5 +289,14 @@
 	  "basestock": 9999,
 	  "chance": 0,
 	  "unusable": true
+  },
+  "essenceofsparecryopod" : {
+	  "name": "Essence of Spare Cryopod",
+	  "description": "Cannot be used. Marks your participation in an event.",
+	  "embed": "https://cdn.discordapp.com/attachments/865407207021215755/1058516643468279818/image.png",
+	  "baseprice": 9999,
+	  "basestock": 9999,
+	  "chance": 0,
+	  "unusable": true
   }
 }
