@@ -108,6 +108,32 @@ return {
     end
   },
   {
+    receive = "adofaimememaestro",
+    require = function(uj)
+      return uj.storage['1-xf'] and
+          uj.storage['2-xf'] and
+          uj.storage['3-xf'] and
+          uj.storage['4-xf'] and
+          uj.storage['5-xf'] and
+          uj.storage['6-xf'] and
+          uj.storage['7-xf'] and
+          uj.storage['8-xf'] and
+          uj.storage['10-xf'] and
+          uj.storage['11-xf'] and
+          uj.storage['12-xf'] and
+          uj.storage['xf-xf'] and
+          uj.storage['b-xf'] and
+          uj.storage['xc-xf'] and
+          uj.storage['xh-xf'] and
+          uj.storage['pa-xf'] and
+          uj.storage['xr-xf']and
+          uj.storage['xo-xf']and
+          uj.storage['xt-xf']and
+          uj.storage['mn-xf']and
+          uj.storage['ml-xf']
+    end
+  },
+  {
     receive = "s1maestro",
     require = function(uj)
       for i, v in ipairs(seasontable[1]) do

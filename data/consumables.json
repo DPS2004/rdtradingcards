@@ -268,5 +268,26 @@
     "baseprice": 1,
     "basestock": 20,
     "chance": 0
+  },
+  
+  
+  
+  "essenceofgranolabar" : {
+	  "name": "Essence of Granola Bar",
+	  "description": "Cannot be used. Marks your participation in an event.",
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1041528604942663782/essenceofgranolabar.png",
+	  "baseprice": 9999,
+	  "basestock": 9999,
+	  "chance": 0,
+	  "unusable": true
+  },
+  "essenceofhauntedgrass" : {
+	  "name": "Essence of Haunted Grass",
+	  "description": "Cannot be used. Marks your participation in an event.",
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1049768524513542185/essenceofhauntedgrass.png",
+	  "baseprice": 9999,
+	  "basestock": 9999,
+	  "chance": 0,
+	  "unusable": true
   }
 }

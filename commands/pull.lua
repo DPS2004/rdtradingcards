@@ -116,7 +116,10 @@ local time = sw:getTime()
     end
     uj.conspt = "none"
   end
-
+	if forcepull ~= nil then
+		pulledcards = { forcepull }
+		forcepull = nil
+	end
   for i, v in ipairs(pulledcards) do
     uj.inventory[v] = uj.inventory[v] and uj.inventory[v] + 1 or 1
     uj.timespulled = uj.timespulled and uj.timespulled + 1 or 1
@@ -136,6 +139,7 @@ local time = sw:getTime()
     if v == "yor" or v == "yosr" or v == "your" then title = lang.pulled_yo end
     if i == 2 then title = lang.pulled_doubleclick end
     if i == 3 then title = lang.pulled_tripleclick end
+	if v == "samarrrai" then title = "Ahoy Matey!" end
 
     if v == "rdnot" then
       if uj.lang == "ko" then
@@ -185,12 +189,10 @@ _________________```]])
           file = "card_images/SPOILER_" .. v .. ".png"
         }
       else
-        message.channel:send{embed = {
-          color = 0x85c5ff,
-          title = title,
-          description = message.author.mentionString .. lang.pulled_message_1 .. cardname .. lang.pulled_message_2 .. cardname .. lang.pulled_message_3 .. uj.pronouns["their"] .. lang.pulled_message_4 .. v .. lang.pulled_message_5,
-          image = {url = type(cdb[v].embed) == "table" and cdb[v].embed[math.random(#cdb[v].embed)] or cdb[v].embed}
-        }}
+        message.channel:send{
+          content = "**" .. title .. "**\n" .. message.author.mentionString .. lang.pulled_message_1 .. cardname .. lang.pulled_message_2 .. cardname .. lang.pulled_message_3 .. uj.pronouns["their"] .. lang.pulled_message_4 .. v .. lang.pulled_message_5,
+          file = "card_images/SPOILER_" .. v .. ".png"
+        }
       end
     end
     if not uj.togglecheckcard then

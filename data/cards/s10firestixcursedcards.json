@@ -1,0 +1,319 @@
+{
+    "groupname": "firestix cursed adofai cards",
+    "basechance": 3,
+    "cards": 
+    [
+        {
+            "chance": 2,
+            "filename": "1-xf",
+            "name": "A Dance of Fire and Ice but the music is cursed",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "Adofai",
+            "season": 10,
+            "bonuses": {
+                "duncecap": true,
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023002321426333789/1-xf.gif"
+        },
+        {
+            "chance": 2,
+            "filename": "2-xf",
+            "name": "Offbeats but it's a little longer",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "Very Long Beanstalks",
+            "season": 10,
+            "bonuses": {
+                "duncecap": true,
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023002321828970506/2-xf.gif"
+        },
+        {
+            "chance": 2,
+            "filename": "3-xf",
+            "name": "THE WIND-UP but it keeps rewinding",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "TV Remote",
+            "season": 10,
+            "bonuses": {
+                "duncecap": true,
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023002325763231794/3-xf.gif"
+        },
+        {
+            "chance": 2,
+            "filename": "4-xf",
+            "name": "Love Letters but I keep having nightmares about Classic Pursuit",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "Classic Pursuit",
+            "season": 10,
+            "bonuses": {
+                "duncecap": true,
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023002326182670407/4-xf.gif"
+        },
+        {
+            "chance": 2,
+            "filename": "5-xf",
+            "name": "The Midnight Train but something is wrong with the train",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "Opposite Day",
+            "season": 10,
+            "bonuses": {
+                "duncecap": true,
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023002327008944178/5-xf.gif"
+        },
+        {
+            "chance": 1,
+            "filename": "6-xf",
+            "name": "PULSE but every time you go up or down it gets faster",
+            "type": "Ultra Rare",
+            "description": "(Level by Firestix)",
+            "smell": "Pulse Acceleration",
+            "season": 10,
+            "bonuses": {
+                "duncecap": true,
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023002327596154890/6-xf.gif"
+        },
+        {
+            "chance": 2,
+            "filename": "7-xf",
+            "name": "Spin 2 Win but there's no fun allowed",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": ":(",
+            "season": 10,
+            "bonuses": {
+                "duncecap": true,
+                "swirlymarbles": true
+            },
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023002328011374593/7-xf.png"
+        },
+        {
+            "chance": 1,
+            "filename": "b-xf",
+            "name": "Please Stop Playing My Levels",
+            "type": "Ultra Rare",
+            "description": "(Level by Firestix)",
+            "smell": "Crabo-finality",
+            "season": 10,
+            "bonuses": {
+                "duncecap": true,
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023002800956907540/b-x.gif"
+        },
+        {
+            "chance": 2,
+            "filename": "8-xf",
+            "name": "Jungle City but the angled sections have an extra beat",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "Time Signature Mess",
+            "season": 10,
+            "bonuses": {
+                "duncecap": true,
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023002328430809160/8-xf.gif"
+        },
+        {
+            "chance": 2,
+            "filename": "10-xf",
+            "name": "Butterfly Planet but I didn't chart the swing",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "Unswung",
+            "season": 10,
+            "bonuses": {
+                "duncecap": true,
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023002320692326490/10-xf.gif"
+        },
+        {
+            "chance": 2,
+            "filename": "11-xf",
+            "name": "Heracles but there's a twirl on every tile",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "Too much twirling",
+            "season": 10,
+            "bonuses": {
+                "duncecap": true,
+                "swirlymarbles": true
+            },
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023002775715594342/11-xf.png"
+        },
+        {
+            "chance": 2,
+            "filename": "12-xf",
+            "name": "Artificial Chariot but each unique loop repeats for every time it's been played before",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "Loopception",
+            "season": 10,
+            "bonuses": {
+                "duncecap": true,
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023002321065611294/12-x.gif"
+        },
+        {
+            "chance": 2,
+            "filename": "xf-xf",
+            "name": "Third Wave Flip-Flop but whoever made this level was drunk",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "Alcohols",
+            "season": 10,
+            "bonuses": {
+                "duncecap": true,
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023165116151242822/xf-xf.gif"
+        },
+        {
+            "chance": 2,
+            "filename": "xc-xf",
+            "name": "Credits but the twirls are missing",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "Lack of Rotation",
+            "season": 10,
+            "bonuses": {
+                "duncecap": true,
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023165115811495987/xc-xf.gif"
+        },
+        {
+            "chance": 2,
+            "filename": "xh-xf",
+            "name": "Final Hope but every enclosed shape has an additional side",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "Extra Shapes",
+            "season": 10,
+            "bonuses": {
+                "duncecap": true,
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023165116516143125/xh-xf.gif"
+        },
+        {
+            "chance": 2,
+            "filename": "pa-xf",
+            "name": "Distance but there's way too many midspins",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "Midspin Overload",
+            "season": 10,
+            "bonuses": {
+                "duncecap": true,
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023165115379499008/pa-xf.gif"
+        },
+        {
+            "chance": 1,
+            "filename": "xr-xf",
+            "name": "Rose Garden but each triangle makes you more tired",
+            "type": "Ultra Rare",
+            "description": "(Level by Firestix)",
+            "smell": "Exhausted",
+            "season": 10,
+            "bonuses": {
+                "duncecap": true,
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023165114700005437/xr-xf.gif"
+        },
+        {
+            "chance": 1,
+            "filename": "xo-xf",
+            "name": "One Forgotten Meme",
+            "type": "Ultra Rare",
+            "description": "(Level by Firestix)",
+            "smell": "Loss",
+            "season": 10,
+            "bonuses": {
+                "duncecap": true,
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "https://cdn.discordapp.com/attachments/724744491495587901/1023203240390709288/output8.gif"
+        },
+        {
+            "chance": 1,
+            "filename": "xt-xf",
+            "name": "Stoptions",
+            "type": "Ultra Rare",
+            "description": "(Level by Firestix)",
+            "smell": "Craboformation",
+            "season": 10,
+            "bonuses": {
+                "duncecap": true,
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023165115060736000/xt-xf.gif"
+        },
+        {
+            "chance": 2,
+            "filename": "mn-xf",
+            "name": "Night Wander (cnsouka Remix) but it's a crossover",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "Rhythm Doctor",
+            "season": 10,
+            "bonuses": {
+                "duncecap": true,
+                "filmreel": true,
+                "swirlymarbles": true
+            },
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023170057674686464/mn-xf.gif"
+        },
+        {
+            "chance": 2,
+            "filename": "ml-xf",
+            "name": "La nuit de vif but the bpm drift is getting worse",
+            "type": "Super Rare",
+            "description": "(Level by Firestix)",
+            "smell": "BPM Changes",
+            "season": 10,
+            "bonuses": {
+                "duncecap": true,
+                "swirlymarbles": true
+            },
+            "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023170058098315364/ml-xf.png"
+        }
+    ]
+}

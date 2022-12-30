@@ -34,6 +34,11 @@
     "description": "Collect all 12 meme cards!",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203516270182430/mememaestro.png"
   },
+  "adofaimememaestro": {
+    "name": "ADOFAI Meme Maestro",
+    "description": "Collect all 21 cursed ADOFAI level cards!",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1031668955556892772/adofaimememaestro.png"
+  },
   "s1maestro": {
     "name": "Season 1 Maestro",
     "description": "Collect every single Season 1 card!",
