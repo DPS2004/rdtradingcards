@@ -122,7 +122,7 @@
   "sparecryopod": {
     "name": "Spare Cryopod",
     "description": "Allows storing up to three pulls, which can be used in succession. Stored pulls are removed when the item is taken off.",
-    "embed": "https://cdn.discordapp.com/emojis/925111212008681492.webp?size=96&quality=lossless"
+    "embed": "https://cdn.discordapp.com/attachments/865407207021215755/1058508500642304010/image.png"
   }
 
 }
