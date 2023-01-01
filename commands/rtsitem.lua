@@ -18,7 +18,7 @@ function command.run(message, mt)
   local uj2 = dpf.loadjson(uj2f, defaultjson)
   
   local item = 'sparecryopod'
-  local itemtype = 'cons'
+  local itemtype = ''
   
   if mt[3] == 'granolabar' then
 	item = 'granolabar'
@@ -28,7 +28,7 @@ function command.run(message, mt)
 	itemtype = 'cons'
   elseif mt[3] == 'sparecryopod' then --add other items as needed
 	item = 'sparecryopod'
-	itemtype = 'cons'
+	itemtype = ''
   end
 
   local numitems = 1
