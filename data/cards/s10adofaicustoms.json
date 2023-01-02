@@ -679,8 +679,8 @@
       },
       {
         "chance": 1,
-        "filename": "machinegun",
-        "name": "Machine Gun",
+        "filename": "machinegun1",
+        "name": "Machine Gun (ADOFAI)",
         "type": "Ultra Rare",
         "description": "(Level by TNTzx, glasses)",
         "smell": "Bullets",
@@ -689,7 +689,7 @@
             "filmreel": true,
             "swirlymarbles": true
         },
-        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356080730099793/machinegun.gif"
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1059259698664198195/machinegun1.gif"
       },
       {
         "chance": 2,
@@ -936,6 +936,19 @@
             "swirlymarbles": true
         },
         "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1058010017741160458/vistadc.gif"
+      },
+      {
+        "chance": 1,
+        "filename": "steampunkengines",
+        "name": "Compute It With Some Devilish Alcoholic Steampunk Engines",
+        "type": "Ultra Rare",
+        "description": "(Level by zedwards)",
+        "smell": "Steampunk",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1059264932627095602/steampunkengines.png"
       }
     ]
 }
