@@ -26,7 +26,9 @@ local time = sw:getTime()
 
   local maxcryopodstorage = 3
   
-  if uj.equipped == "sparecryopod" then
+  
+  ----TEMP DISABLE OF FEATURE SO THE ITEM CAN BE GIVEN OUT TO PPL-----
+  if false then--uj.equipped == "sparecryopod" then
     local missedpulls = math.floor((time:toHours() - uj.lastpull)/cooldown)-1
     if missedpulls > 0 then
 			--TODO: translated strings (also i really need to hurry up on implementing the upgrade to languages)
