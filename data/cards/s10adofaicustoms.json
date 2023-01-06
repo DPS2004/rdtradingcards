@@ -346,6 +346,7 @@
         "smell": "Bird Cages",
         "season": 10,
         "bonuses": {
+            "deluxebirdseed": true,
             "filmreel": true,
             "swirlymarbles": true
         },
@@ -402,6 +403,7 @@
         "smell": "Company Nest",
         "season": 10,
         "bonuses": {
+            "deluxebirdseed": true,
             "filmreel": true,
             "swirlymarbles": true
         },
@@ -529,6 +531,7 @@
         "smell": "Chickens",
         "season": 10,
         "bonuses": {
+            "deluxebirdseed": true,
             "filmreel": true,
             "swirlymarbles": true
         },
@@ -661,10 +664,10 @@
         "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1022858863818580049/module.png"
       },
       {
-        "chance": 2,
+        "chance": 1,
         "filename": "rapids",
         "name": "Rapid Spectrum",
-        "type": "Super Rare",
+        "type": "Ultra Rare",
         "description": "(Level by XiZnYng)",
         "smell": "Prism",
         "season": 10,
@@ -673,6 +676,279 @@
             "swirlymarbles": true
         },
         "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1023336368061042789/rapids.gif"
+      },
+      {
+        "chance": 1,
+        "filename": "machinegun1",
+        "name": "Machine Gun (ADOFAI)",
+        "type": "Ultra Rare",
+        "description": "(Level by TNTzx, glasses)",
+        "smell": "Bullets",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1059259698664198195/machinegun1.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "7-ex",
+        "name": "Spin 2 Win (Ssimille, NumbEr07 Remix)",
+        "type": "Super Rare",
+        "description": "(Level by yhld120, 텅빈박스, PowerFactory)",
+        "smell": "Cats",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356443885510766/7-ex.png"
+      },
+      {
+        "chance": 2,
+        "filename": "polaris",
+        "name": "Polaris",
+        "type": "Super Rare",
+        "description": "(Level by 🧱🔊)",
+        "smell": "Aurora Borealis",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1058471373560872960/polaris.png"
+      },
+      {
+        "chance": 2,
+        "filename": "wheelofconfusion",
+        "name": "A Wheel of Confusion",
+        "type": "Super Rare",
+        "description": "(Level by PowerFactory)",
+        "smell": "Mechanical Wheel",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356151320232078/wheelofconfusion.png"
+      },
+      {
+        "chance": 2,
+        "filename": "nulctrl",
+        "name": "NULLCTRL",
+        "type": "Super Rare",
+        "description": "(Level by YeetYote, kernby, Team P.A.L.)",
+        "smell": "Clubs",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356077932499035/nulctrl.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "2anyfirst",
+        "name": "2AnyFirst",
+        "type": "Super Rare",
+        "description": "(Level by kernby)",
+        "smell": "Adventures",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356077584351232/2anyfirst.png"
+      },
+      {
+        "chance": 1,
+        "filename": "marenol",
+        "name": "MARENOL",
+        "type": "Ultra Rare",
+        "description": "(Level by zedwards)",
+        "smell": "Nightmares",
+        "season": 10,
+        "bonuses": {
+            "deviltail": true,
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356081174683678/marenol.gif"
+      },
+      {
+        "chance": 1,
+        "filename": "apocaliptix",
+        "name": "Apocaliptix",
+        "type": "Ultra Rare",
+        "description": "(Level by kernby)",
+        "smell": "Apocalypse",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356078679085186/apocaliptix.png"
+      },
+      {
+        "chance": 1,
+        "filename": "wnight",
+        "name": "Walpurgis Night",
+        "type": "Ultra Rare",
+        "description": "(Level by Astral Overseer)",
+        "smell": "Spooky Night",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356151706095656/wnight.png"
+      },
+      {
+        "chance": 2,
+        "filename": "coffeeshop",
+        "name": "ユメの喫茶店",
+        "type": "Super Rare",
+        "description": "(Level by CyanAqua)",
+        "smell": "Morning Coffee",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356079064948848/coffeeshop.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "finaltheory",
+        "name": "Final Theory",
+        "type": "Super Rare",
+        "description": "(Level by CyanAqua)",
+        "smell": "Theories",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356079530528868/finaltheory.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "worldrace",
+        "name": "The Race Around the World",
+        "type": "Super Rare",
+        "description": "(Level by Team Ω)",
+        "smell": "Racing",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356152112955473/worldrace.png"
+      },
+      {
+        "chance": 1,
+        "filename": "valentine",
+        "name": "Valentine",
+        "type": "Ultra Rare",
+        "description": "(Level by ABorinGuy)",
+        "smell": "31st December",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1058471374101954761/valentine.png"
+      },
+      {
+        "chance": 2,
+        "filename": "holdground",
+        "name": "Hold Your Ground",
+        "type": "Super Rare",
+        "description": "(Level by M1n3c4rt)",
+        "smell": "Mines",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057357205512409289/holdground.png"
+      },
+      {
+        "chance": 2,
+        "filename": "overcastskies",
+        "name": "雨模様",
+        "type": "Super Rare",
+        "description": "(Level by CyanAqua)",
+        "smell": "Rainy Day",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356078276419645/overcastskies.gif"
+      },
+      {
+        "chance": 1,
+        "filename": "ytilaere",
+        "name": "ytilaer.sseldne",
+        "type": "Ultra Rare",
+        "description": "(irkiR yb leveL)",
+        "smell": "dnE ehT",
+        "season": 10,
+        "bonuses": {
+            "deviltail": true,
+            "duncecap": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356150833680384/ytilaere.png"
+      },
+      {
+        "chance": 1,
+        "filename": "guryvsr",
+        "name": "gur yvsr",
+        "type": "Ultra Rare",
+        "description": "(Level by Star4th)",
+        "smell": "Sneaky",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356080377757827/guryvsr.gif"
+      },
+      {
+        "chance": 2,
+        "filename": "frozentime",
+        "name": "Frozen Time",
+        "type": "Super Rare",
+        "description": "(Level by Editor AlriC)",
+        "smell": "Frozen",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057356079987695698/frozentime.gif"
+      },
+      {
+        "chance": 1,
+        "filename": "vistadc",
+        "name": "Vista (Discontinued)",
+        "type": "Discontinued",
+        "description": "(Level by Econ, YeetYote)",
+        "smell": "Vister",
+        "season": 10,
+        "bonuses": {
+            "filmreel": true,
+            "duncecap": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1058010017741160458/vistadc.gif"
+      },
+      {
+        "chance": 1,
+        "filename": "steampunkengines",
+        "name": "Compute It With Some Devilish Alcoholic Steampunk Engines",
+        "type": "Ultra Rare",
+        "description": "(Level by zedwards)",
+        "smell": "Steampunk",
+        "season": 10,
+        "bonuses": {
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1059264932627095602/steampunkengines.png"
       }
     ]
 }
