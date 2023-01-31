@@ -212,7 +212,72 @@
 			"filmreel":true
           },
           "embed": "https://cdn.discordapp.com/attachments/944009293856919662/1022688852508418068/timetraveler.gif"
+    },
+	{
+ 	    "chance":2,
+	    "filename": "1234",
+          "name": "1,2,3,4!",
+          "type": "Super Rare",
+          "description": "(Level by Teennis)",
+          "smell": "Calculator",
+          "season": 10,
+          "bonuses": {
+			"valentinesday":true
+          },
+          "embed": "https://media.discordapp.net/attachments/757793115204616287/1042089131175583774/1234.png"
+    },
+	{
+ 	    "chance":2,
+	    "filename": "pap",
+          "name": "Pictured as Perfect",
+          "type": "Super Rare",
+          "description": "(Level by Teennis)",
+          "smell": "Perfection",
+          "season": 10,
+          "bonuses": {
+			"rustysword":true
+          },
+          "embed": "https://media.discordapp.net/attachments/786203629756481539/1041713082742878218/pap.png"
+    },
+	{
+ 	    "chance":1,
+	    "filename": "1234overclock",
+          "name": "1,2,3,4! Overclocked Edition",
+          "type": "Ultra Rare",
+          "description": "(Level by Teennis)",
+          "smell": "Scientific Calculator",
+          "season": 10,
+          "bonuses": {
+			"valentinesday":true,
+			"cafemixtape":true
+          },
+          "embed": "https://media.discordapp.net/attachments/786203629756481539/1042086275311751218/1234overclock.gif"
+    },
+	{
+ 	    "chance":2,
+	    "filename": "rakkanliar",
+          "name": "ラッカンライア",
+          "type": "Super Rare",
+          "description": "(Level by Xeno)",
+          "smell": "Lie",
+          "season": 10,
+          "bonuses": {
+			"valentinesday":true,
+			"charcoalpencil":true
+          },
+          "embed": "https://media.discordapp.net/attachments/786203629756481539/1042087125295824986/rakkanliar.png"
+    },
+	{
+ 	    "chance":2,
+	    "filename": "heavensbug",
+          "name": "ヘブンズバグ",
+          "type": "Super Rare",
+          "description": "(Level by Xeno and Kin)",
+          "smell": "Thread",
+          "season": 10,
+          "bonuses": {},
+          "embed": "https://media.discordapp.net/attachments/1007577917926158336/1042086785196494948/heavensbug.gif"
     }
-	
+
     ]
 }
