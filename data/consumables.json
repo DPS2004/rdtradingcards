@@ -298,5 +298,14 @@
 	  "basestock": 9999,
 	  "chance": 0,
 	  "unusable": true
+  },
+  "essenceofaceofhearts" : {
+	  "name": "Essence of Ace of Hearts",
+	  "description": "Cannot be used. Marks your participation in an event.",
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1070033980625268816/essenceofaceofhearts.png",
+	  "baseprice": 9999,
+	  "basestock": 9999,
+	  "chance": 0,
+	  "unusable": true
   }
 }

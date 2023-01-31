@@ -123,6 +123,11 @@
     "name": "Spare Cryopod",
     "description": "Allows storing up to three pulls, which can be used in succession. Stored pulls are removed when the item is taken off.",
     "embed": "https://cdn.discordapp.com/attachments/865407207021215755/1058508500642304010/image.png"
+  },
+  "aceofhearts": {
+    "name": "Ace of Hearts",
+    "description": "Every 21 pulls, automatically gain 10 tokens. The pull counter is reset when a consumable is used or the item is taken off.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1070033934966079590/aceofhearts.png"
   }
 
 }

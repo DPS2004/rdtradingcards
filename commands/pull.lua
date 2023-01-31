@@ -23,6 +23,10 @@ local time = sw:getTime()
   if not uj.storedpulls then
     uj.storedpulls = 0
   end
+  
+  if not uj.acepulls then
+	uj.acepulls = 0
+  end
 
   local maxcryopodstorage = 3
   
@@ -155,6 +159,19 @@ local time = sw:getTime()
   for i, v in ipairs(pulledcards) do
     uj.inventory[v] = uj.inventory[v] and uj.inventory[v] + 1 or 1
     uj.timespulled = uj.timespulled and uj.timespulled + 1 or 1
+	if uj.equipped == 'aceofhearts' then
+		uj.acepulls = uj.acepulls + 1
+	else
+		uj.acepulls = 0
+	end
+  end
+  
+  local showacemessage = false
+  
+  if uj.acepulls >= 21 and uj.equipped == 'aceofhearts' then
+	uj.acepulls = 0
+	uj.tokens = uj.tokens + 10 or 10
+	showacemessage = true
   end
 
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
@@ -232,6 +249,9 @@ _________________```]])
         message.channel:send(lang.not_in_storage_1 .. cardname .. lang.not_in_storage_2)
       end
     end
+  end
+  if showacemessage then
+	message.channel:send('Because of '..uj.pronouns['their']..' **Ace of Hearts**, '..message.author.mentionString.. ' also got **10 tokens**!')
   end
 end
 return command

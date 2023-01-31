@@ -17,18 +17,21 @@ function command.run(message, mt)
 
   local uj2 = dpf.loadjson(uj2f, defaultjson)
   
-  local item = 'sparecryopod'
-  local itemtype = ''
+  local item = 'aceofhearts'
+  local itemtype = 'item'
   
   if mt[3] == 'granolabar' then
 	item = 'granolabar'
 	itemtype = 'cons'
-  elseif mt[3] == 'hauntedgrass' then --add other items as needed
+  elseif mt[3] == 'hauntedgrass' then
 	item = 'hauntedgrass'
 	itemtype = 'cons'
-  elseif mt[3] == 'sparecryopod' then --add other items as needed
+  elseif mt[3] == 'sparecryopod' then 
 	item = 'sparecryopod'
-	itemtype = ''
+	itemtype = 'item'
+  elseif mt[3] == 'aceofhearts' then --add other items as needed
+	item = 'aceofhearts'
+	itemtype = 'item'
   end
 
   local numitems = 1

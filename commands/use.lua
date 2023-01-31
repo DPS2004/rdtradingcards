@@ -860,6 +860,12 @@ o-''|\\_____/)
 			  },"useconsumable",{crequest=request,mt=mt},uj.id,uj.lang)
 			  return
 			else
+			if uj.equipped == 'aceofhearts' then
+				if uj.acepulls ~= 0 then
+					message.channel:send('The pulls stored in your **Ace of Hearts** disappear...')
+					uj.acepulls = 0
+				end
+			end
 			  local fn = request
 			  if consdb[request].command then
 				request = consdb[request].command
