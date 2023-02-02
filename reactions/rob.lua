@@ -282,7 +282,7 @@ function reaction.run(message, interaction, data, response)
     if uj.skipprompts and not wj.skiprob then
       send_robmessage(nil, message, lang.rob_skipenabled)
       wj.skiprob = true
-      dpf.loadjson("savedata/worldsave.json", wj)
+      dpf.savejson("savedata/worldsave.json", wj)
     end
 
     dpf.savejson(ujf, uj)
