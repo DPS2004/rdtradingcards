@@ -267,6 +267,7 @@
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/990822635485138964/subwayticket.png",
     "baseprice": 1,
     "basestock": 20,
+    "quantity": 3,
     "chance": 0
   },
   
@@ -303,6 +304,15 @@
 	  "name": "Essence of Ace of Hearts",
 	  "description": "Cannot be used. Marks your participation in an event.",
 	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1070033980625268816/essenceofaceofhearts.png",
+	  "baseprice": 9999,
+	  "basestock": 9999,
+	  "chance": 0,
+	  "unusable": true
+  },
+  "essenceofsubwayticket" : {
+	  "name": "Essence of Subway Ticket",
+	  "description": "Cannot be used. Marks your participation in an event.",
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1076676836303581214/essenceofsubwayticket.png",
 	  "baseprice": 9999,
 	  "basestock": 9999,
 	  "chance": 0,

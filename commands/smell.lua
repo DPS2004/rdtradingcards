@@ -58,7 +58,6 @@ function command.run(message, mt)
       filmreel = lang.smell_filmreel,
       swirlymarbles = lang.smell_swirlymarbles,
       --cryopod
-      subwayticket = lang.smell_subwayticket
     }
     local consumablesmells = {
       caffeinatedsoda = lang.smell_caffeinatedsoda,
@@ -89,7 +88,8 @@ function command.run(message, mt)
       s6booster = lang.smell_s6booster,
       s7booster = lang.smell_s7booster,
       granolabar = lang.smell_granolabar,
-      hauntedgrass = lang.smell_hauntedgrass
+      hauntedgrass = lang.smell_hauntedgrass,
+      subwayticket = lang.smell_subwayticket
     }
 
     if uj.lang ~= "en" and request == lang.request_panda then
