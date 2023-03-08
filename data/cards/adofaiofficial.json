@@ -591,6 +591,47 @@
 		"swirlymarbles": true
 	  },
 	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/983025558302621777/minesweeper.png"
-	}
+	},{
+		"chance": 1,
+		"filename": "xi-x",
+		"name": "It Go",
+		"type": "Ultra Rare",
+		"description": "(Level by 7th Beat Games)",
+		"smell": "Animatronics",
+		"season": 10,
+		"bonuses": {
+			"filmreel": true,
+		  	"swirlymarbles": true
+		},
+		"embed": "https://cdn.discordapp.com/attachments/829197797789532181/1058050708462649435/xi-x.gif"
+	  },{
+		"chance": 1,
+		"filename": "xi-xdc",
+		"name": "It Go (Discontinued)",
+		"type": "Discontinued",
+		"description": "(Level by Rikri)",
+		"smell": "Blackouts",
+		"season": 10,
+		"bonuses": {
+			"filmreel": true,
+		  	"oldfiles": true,
+		  	"swirlymarbles": true,
+			"duncecap": true
+		},
+		"embed": "https://cdn.discordapp.com/attachments/1012694244676345886/1057358155916513340/xi-xdc.gif"
+	  },
+	  {
+		"chance": 2,
+		"filename": "xn-x",
+		"name": "Trans-Neptunian Object",
+		"type": "Super Rare",
+		"description": "(Level by 7th Beat Games)",
+		"smell": "Jellyfishes",
+		"season": 10,
+		"bonuses": {
+		  "swirlymarbles": true
+		},
+		"embed": "https://cdn.discordapp.com/attachments/829197797789532181/1039132367803133972/xn-x.png"
+	  }
   ]
 }

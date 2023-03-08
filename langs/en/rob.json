@@ -72,6 +72,8 @@
 	"rob_failed_item_2": "**. The **Wolf** calls the police instead. You are blacklisted from the shop for the next ",
 	"rob_failed_item_3": " restocks.",
 
+	"rob_skipenabled": "**__REAL__** **WARNING**: Button prompts for robbing will be skipped for **EVERYONE** from now on for while users set to skip prompts.",
+
 	"rob_cancelled_1": "<@",
 	"rob_cancelled_2": "> has stopped robbing the **Quaint Shop**. For now...",
 }

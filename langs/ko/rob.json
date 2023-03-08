@@ -75,6 +75,8 @@
 	"rob_failed_item_2": "**을(를) 요구했다. **늑대는** 대신 경찰을 불렀다. 당신은 재입고 ",
 	"rob_failed_item_3": "번 동안 가게에서 출입금지되었다.",
 
+	"rob_skipenabled": "__**진짜**__ **경고**: 사용자가 건너뛰기 않게 하지 않는 한, 지금부터 **모든 유저의** 도둑질에 대한 버튼 확인은 건너뛰어집니다.\n**__REAL__** **WARNING**: Button prompts for robbing will be skipped for **EVERYONE** from now on for while users set to skip prompts.",
+
 	"rob_cancelled_1": "<@",
 	"rob_cancelled_2": ">님이 **진기한 가게**에서 뭔가를 훔치는 것을 그만두었습니다. 지금은 말이죠...",
 }

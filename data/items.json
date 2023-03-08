@@ -118,6 +118,16 @@
     "name": "Swirly Marbles",
     "description": "Makes ADOFAI cards more likely to be pulled.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981025409921585192/swirlymarbles.png"
+  }
+  "sparecryopod": {
+    "name": "Spare Cryopod",
+    "description": "Allows storing up to three pulls, which can be used in succession. Stored pulls are removed when the item is taken off.",
+    "embed": "https://cdn.discordapp.com/attachments/865407207021215755/1058508500642304010/image.png"
+  },
+  "aceofhearts": {
+    "name": "Ace of Hearts",
+    "description": "Every 21 pulls, automatically gain 10 tokens. The pull counter is reset when a consumable is used or the item is taken off.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1070033934966079590/aceofhearts.png"
   },
   "mustache": {
     "name": "Fake Mustache",
@@ -129,5 +139,4 @@
     "description": "Increases the percentage of success of robbing, but gets a longer time of getting blacklisted.",
     "embed": "https://media.discordapp.net/attachments/786203629756481539/1026599162243985518/doubleedge.png"
   }
-
 }

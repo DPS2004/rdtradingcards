@@ -494,7 +494,7 @@ o-''|\\_____/)
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
       if uj.lastrob + 4 > sj.stocknum and uj.lastrob ~= 0 then
         lang = dpf.loadjson("langs/" .. uj.lang .. "/rob.json")
-        local stocksleft = uj.lastrob + 3 - sj.stocknum
+        local stocksleft = uj.lastrob + 4 - sj.stocknum
         local stockstring = lang.more_restock_1 .. stocksleft .. lang.more_restock_2
         if lang.needs_plural_s == true then
           if stocksleft > 1 then
@@ -558,7 +558,7 @@ o-''|\\_____/)
     local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
     if uj.lastrob + 4 > sj.stocknum and uj.lastrob ~= 0 then
       lang = dpf.loadjson("langs/" .. uj.lang .. "/rob.json")
-      local stocksleft = uj.lastrob + 3 - sj.stocknum
+      local stocksleft = uj.lastrob + 4 - sj.stocknum
       local stockstring = lang.more_restock_1 .. stocksleft .. lang.more_restock_2
       if lang.needs_plural_s == true then
         if stocksleft > 1 then
@@ -851,21 +851,31 @@ o-''|\\_____/)
       end
       request = constexttofn(request)
       if uj.consumables[request] then
-        if not uj.skipprompts then
-          ynbuttons(message,{
-            color = 0x85c5ff,
-            title = lang.using_1 .. consdb[request].name .. lang.using_2,
-            description = lang.use_confirm_1 .. consdb[request].name .. lang.use_confirm_2,
-          },"useconsumable",{crequest=request,mt=mt},uj.id,uj.lang)
-          return
-        else
-          local fn = request
-          if consdb[request].command then
-            request = consdb[request].command
-          end
-          cmdcons[request].run(uj, "savedata/" .. message.author.id .. ".json", message, mt, nil , fn)
-          return
-        end
+		if not consdb[request].unusable then
+			if not uj.skipprompts then
+			  ynbuttons(message,{
+				color = 0x85c5ff,
+				title = lang.using_1 .. consdb[request].name .. lang.using_2,
+				description = lang.use_confirm_1 .. consdb[request].name .. lang.use_confirm_2,
+			  },"useconsumable",{crequest=request,mt=mt},uj.id,uj.lang)
+			  return
+			else
+			if uj.equipped == 'aceofhearts' then
+				if uj.acepulls ~= 0 then
+					message.channel:send('The pulls stored in your **Ace of Hearts** disappear...')
+					uj.acepulls = 0
+				end
+			end
+			  local fn = request
+			  if consdb[request].command then
+				request = consdb[request].command
+			  end
+			  cmdcons[request].run(uj, "savedata/" .. message.author.id .. ".json", message, mt, nil , fn)
+			  return
+			end
+		else
+			message.channel:send('You cannot use this item!')
+		end
       else
         message.channel:send(lang.donthave_1 .. consdb[request].name .. lang.donthave_2)
       end
