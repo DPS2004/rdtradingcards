@@ -118,7 +118,7 @@
     "name": "Swirly Marbles",
     "description": "Makes ADOFAI cards more likely to be pulled.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981025409921585192/swirlymarbles.png"
-  }
+  },
   "sparecryopod": {
     "name": "Spare Cryopod",
     "description": "Allows storing up to three pulls, which can be used in succession. Stored pulls are removed when the item is taken off.",
