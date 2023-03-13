@@ -170,6 +170,7 @@ function reaction.run(message, interaction, data, response)
         elseif cdb[data.srequest].type == "Alternate" or cdb[data.srequest].type == "Discontinued" then
           local robchance = math.random(1,100)
           if robchance == robchance then
+              robsucceed = true
           end
         elseif cdb[data.srequest].type == "Discontinued Rare" then
           local robchance = math.random(1,100)
@@ -204,10 +205,14 @@ function reaction.run(message, interaction, data, response)
             uj.inventory[data.srequest] = uj.inventory[data.srequest] + data.numrequest
           end
           local finalpm = 0
-          if data.sprice <= 2 then
-            finalpm = -3
-          elseif data.sprice <= 5 then
-            finalpm = -1
+          if data.random then
+            if blackpm ~= nil then
+              finalpm = blackpm
+            else
+              finalpm = -1
+            end
+          elseif blackpm ~= nil then
+            finalpm = blackpm
           else
             finalpm = 0
           end
