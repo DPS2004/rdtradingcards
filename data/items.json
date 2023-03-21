@@ -128,6 +128,15 @@
     "name": "Ace of Hearts",
     "description": "Every 21 pulls, automatically gain 10 tokens. The pull counter is reset when a consumable is used or the item is taken off.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1070033934966079590/aceofhearts.png"
+  },
+  "mustache": {
+    "name": "Fake Mustache",
+    "description": "Decreases the percentage of success of robbing, but gets a shorter time of getting blacklisted.",
+    "embed": "https://media.discordapp.net/attachments/786203629756481539/1026600813172371496/mustache.png"
+  },
+  "doubleedge": {
+    "name": "Double Edged Sword",
+    "description": "Increases the percentage of success of robbing, but gets a longer time of getting blacklisted.",
+    "embed": "https://media.discordapp.net/attachments/786203629756481539/1026599162243985518/doubleedge.png"
   }
-
 }
