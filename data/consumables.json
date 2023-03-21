@@ -244,6 +244,18 @@
     "text_en": "You tear open the **Animal Booster.** Inside is some fur and a sheet of economics homework.",
 	"text_ko": "당신은 **Animal Booster**의 봉지를 열었다. 털과 경제학 숙제 한 장이 들어 있다."
   },
+  "s8booster": {
+    "name": "Planetary Booster",
+    "description": "Guarantees a **Triple Click** with cards from Season 8. Does not reduce pull cooldowns. You can only use one item of this type at a time.",
+    "embed": "https://cdn.discordapp.com/attachments/881795785811963915/1012191993939628062/s8booster.png",
+    "baseprice": 9,
+    "basestock": 8,
+    "chance": 5,
+    "command": "seasonbooster",
+    "season": 8,
+    "text_en": "You tear open the **Planetary Booster.** Inside is some space dust. A lot of space dust, actually.",
+    "text_ko": "당신은 **Planetary Booster**의 봉지를 열었다. 안에는 소량의 우주 먼지가 들어있다. 다시 보니, 매우 다량의 우주 먼지다."
+  },
   "granolabar" : {
     "name": "Granola Bar",
     "description": "Decreases all of your cooldowns by 3 hours.",
