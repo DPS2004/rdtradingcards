@@ -282,6 +282,16 @@
     "quantity": 3,
     "chance": 0
   },
+
+  "..." : {
+    "name": "...",
+    "description": "i wish someone changes this, probably",
+    "embed": "https://media.discordapp.net/attachments/1013392483931136020/1086183529899098193/ddd.png",
+    "baseprice": 1,
+    "basestock": 20,
+    "quantity": 3,
+    "chance": 0
+  },
   
   
   

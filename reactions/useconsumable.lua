@@ -25,7 +25,12 @@ function reaction.run(message, interaction, data, response)
       request = consdb[request].command
     end
 
-    cmdcons[request].run(uj, ujf, message, data.mt, interaction, fn)
+    if request == "..." then
+      request = "ddd"
+      cmdcons[request].run(uj, ujf, message, data.mt, interaction, fn)
+    else
+      cmdcons[request].run(uj, ujf, message, data.mt, interaction, fn)
+    end
   end
 
   if response == "no" then
