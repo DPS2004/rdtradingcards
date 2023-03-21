@@ -283,13 +283,12 @@
     "chance": 0
   },
 
-  "..." : {
+  "ddd" : {
     "name": "...",
-    "description": "i wish someone changes this, probably",
-    "embed": "https://media.discordapp.net/attachments/1013392483931136020/1086183529899098193/ddd.png",
-    "baseprice": 1,
-    "basestock": 20,
-    "quantity": 3,
+    "description": "Allows you to unstore a single card with c!use .../(CARD)",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1087586038022688831/ddd.gif",
+    "baseprice": 10,
+    "basestock": 10,
     "chance": 0
   },
   
@@ -335,6 +334,15 @@
 	  "name": "Essence of Subway Ticket",
 	  "description": "Cannot be used. Marks your participation in an event.",
 	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1076676836303581214/essenceofsubwayticket.png",
+	  "baseprice": 9999,
+	  "basestock": 9999,
+	  "chance": 0,
+	  "unusable": true
+  },
+  "essenceofddd" : {
+	  "name": "Essence of...",
+	  "description": "Cannot be used. Marks your participation in an event.",
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1087586238053240912/essenceofddd.gif",
 	  "baseprice": 9999,
 	  "basestock": 9999,
 	  "chance": 0,

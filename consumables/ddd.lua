@@ -6,8 +6,8 @@ function item.run(uj, ujf, message, mt, interaction)
   local uj = dpf.loadjson(ujf, defaultjson)
   if not uj.conspt then uj.conspt = "none" end
   if #mt ~= 1 or message.attachment then
-    uj.consumables["..."] = uj.consumables["..."] - 1
-    if uj.consumables["..."] == 0 then uj.consumables["..."] = nil end
+    uj.consumables["ddd"] = uj.consumables["ddd"] - 1
+    if uj.consumables["ddd"] == 0 then uj.consumables["ddd"] = nil end
     uj.timesitemused = uj.timesitemused and uj.timesitemused + 1 or 1
     dpf.savejson(ujf, uj)
 

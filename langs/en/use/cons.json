@@ -53,7 +53,7 @@
 	"ddd_use_2": "> has successfully unstored the **",
 	"ddd_use_3": "** card from ",
 	"ddd_use_4": " storage.",
-	"ddd_unused": "... was not used. Please attach a message with c!use .../(CARD)",
+	"ddd_unused": "... was not used. Please send a message with c!use .../(CARD) to use this item.",
 	"ddd_no_item_1": "Sorry, but I could not find the ",
 	"ddd_no_item_2": " card in the database. Make sure that you spelled it right!",
 	"ddd_dont_have_1": "Sorry, but you don't have the **",
