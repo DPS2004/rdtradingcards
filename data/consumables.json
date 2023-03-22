@@ -244,6 +244,18 @@
     "text_en": "You tear open the **Animal Booster.** Inside is some fur and a sheet of economics homework.",
 	"text_ko": "당신은 **Animal Booster**의 봉지를 열었다. 털과 경제학 숙제 한 장이 들어 있다."
   },
+  "s8booster": {
+    "name": "Planetary Booster",
+    "description": "Guarantees a **Triple Click** with cards from Season 8. Does not reduce pull cooldowns. You can only use one item of this type at a time.",
+    "embed": "https://cdn.discordapp.com/attachments/881795785811963915/1012191993939628062/s8booster.png",
+    "baseprice": 9,
+    "basestock": 8,
+    "chance": 5,
+    "command": "seasonbooster",
+    "season": 8,
+    "text_en": "You tear open the **Planetary Booster.** Inside is some space dust. A lot of space dust, actually.",
+    "text_ko": "당신은 **Planetary Booster**의 봉지를 열었다. 안에는 소량의 우주 먼지가 들어있다. 다시 보니, 매우 다량의 우주 먼지다."
+  },
   "gun" : {
     "name": "Toy Gun",
     "description": "The next rob you commit is guaranteed to succeed, but gets blacklisted for 2 more restocks.",
@@ -276,6 +288,15 @@
     "baseprice": 1,
     "basestock": 20,
     "quantity": 3,
+    "chance": 0
+  },
+
+  "ddd" : {
+    "name": "...",
+    "description": "Allows you to unstore a single card with c!use .../(CARD)",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1087586038022688831/ddd.gif",
+    "baseprice": 10,
+    "basestock": 10,
     "chance": 0
   },
   
@@ -321,6 +342,15 @@
 	  "name": "Essence of Subway Ticket",
 	  "description": "Cannot be used. Marks your participation in an event.",
 	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1076676836303581214/essenceofsubwayticket.png",
+	  "baseprice": 9999,
+	  "basestock": 9999,
+	  "chance": 0,
+	  "unusable": true
+  },
+  "essenceofddd" : {
+	  "name": "Essence of...",
+	  "description": "Cannot be used. Marks your participation in an event.",
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1087586238053240912/essenceofddd.gif",
 	  "baseprice": 9999,
 	  "basestock": 9999,
 	  "chance": 0,
