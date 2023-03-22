@@ -246,8 +246,8 @@
   },
   "gun" : {
     "name": "Toy Gun",
-    "description": "The next rob you commit is guaranteed to succeed, but gets blacklisted for 5 more restocks.",
-    "embed": "https://media.discordapp.net/attachments/1013392483931136020/1083345988430868551/gun.png",
+    "description": "The next rob you commit is guaranteed to succeed, but gets blacklisted for 2 more restocks.",
+    "embed": "https://media.discordapp.net/attachments/1013392483931136020/1087655351396089866/gun.png",
     "baseprice": 6,
     "basestock": 10,
     "chance": 10

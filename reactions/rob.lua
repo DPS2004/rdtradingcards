@@ -25,7 +25,10 @@ function reaction.run(message, interaction, data, response)
     if not uj.timesrobbed then uj.timesrobbed = 1 else uj.timesrobbed = uj.timesrobbed + 1 end
 
     if uj.robconspt == "gun" then
-      if data.random == true then
+      if data.numrequest > 1 then
+        send_robmessage(interaction, message, lang.rob_gun_many)
+      else
+        if data.random == true then
         local itemtypes = {}
         if sj.itemstock > 0 then
           if not uj.items[sj.item] then
@@ -133,14 +136,14 @@ function reaction.run(message, interaction, data, response)
             finalpm = 0
           end
           if uj.lang == "ko" then
-            send_robmessage(interaction, message, lang.rob_gun_1 .. data.sname .. lang.rob_gun_2 .. data.numrequest .. lang.cons_unit .. lang.rob_gun_3 .. 9 + finalpm .. lang.rob_gun_4)
+            send_robmessage(interaction, message, lang.rob_gun_1 .. data.sname .. lang.rob_gun_2 .. data.numrequest .. lang.cons_unit .. lang.rob_gun_3 .. 6 + finalpm .. lang.rob_gun_4)
             uj.robconspt = "none"
           else
-            send_robmessage(interaction, message, lang.rob_gun_1 .. data.numrequest .. lang.rob_gun_2 .. data.sname .. lang.rob_gun_3 .. 9 + finalpm .. lang.rob_gun_4)
+            send_robmessage(interaction, message, lang.rob_gun_1 .. data.numrequest .. lang.rob_gun_2 .. data.sname .. lang.rob_gun_3 .. 6 + finalpm .. lang.rob_gun_4)
             uj.robconspt = "none"
           end
           if not uj.timesrobsucceeded then uj.timesrobsucceeded = 1 else uj.timesrobsucceeded = uj.timesrobsucceeded + 1 end
-          uj.lastrob = sj.stocknum + finalpm + 5
+          uj.lastrob = sj.stocknum + finalpm + 2
           uj.room = 2
           uj.robconspt = "none"
         end
@@ -217,12 +220,12 @@ function reaction.run(message, interaction, data, response)
             finalpm = 0
           end
           if uj.lang == "ko" then
-            send_robmessage(interaction, message, lang.rob_gun_1 .. data.sname .. lang.rob_gun_2 .. data.numrequest .. lang.cons_unit .. lang.rob_gun_3 .. 9 + finalpm .. lang.rob_gun_4)
+            send_robmessage(interaction, message, lang.rob_gun_1 .. data.sname .. lang.rob_gun_2 .. data.numrequest .. lang.cons_unit .. lang.rob_gun_3 .. 6 + finalpm .. lang.rob_gun_4)
           else
-            send_robmessage(interaction, message, lang.rob_gun_1 .. data.numrequest .. lang.rob_gun_2 .. data.sname .. lang.rob_gun_3 .. 9 + finalpm .. lang.rob_gun_4)
+            send_robmessage(interaction, message, lang.rob_gun_1 .. data.numrequest .. lang.rob_gun_2 .. data.sname .. lang.rob_gun_3 .. 6 + finalpm .. lang.rob_gun_4)
           end
           if not uj.timesrobsucceeded then uj.timesrobsucceeded = 1 else uj.timesrobsucceeded = uj.timesrobsucceeded + 1 end
-          uj.lastrob = sj.stocknum + finalpm + 5
+          uj.lastrob = sj.stocknum + finalpm + 2
           uj.room = 2
           uj.robconspt = "none"
         end
@@ -252,12 +255,13 @@ function reaction.run(message, interaction, data, response)
           else
             finalpm = 0
           end
-          send_robmessage(interaction, message, lang.rob_gun_item_1 .. data.sname .. lang.rob_gun_item_2 .. 9 + finalpm .. lang.rob_gun_item_3)
+          send_robmessage(interaction, message, lang.rob_gun_item_1 .. data.sname .. lang.rob_gun_item_2 .. 6 + finalpm .. lang.rob_gun_item_3)
           if not uj.timesrobsucceeded then uj.timesrobsucceeded = 1 else uj.timesrobsucceeded = uj.timesrobsucceeded + 1 end
-          uj.lastrob = sj.stocknum + finalpm + 5
+          uj.lastrob = sj.stocknum + finalpm + 2
           uj.room = 2
           uj.robconspt = "none"
         end
+      end
       end
       
       if uj.skipprompts and not wj.skiprob then
