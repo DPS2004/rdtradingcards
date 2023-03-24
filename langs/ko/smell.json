@@ -46,10 +46,15 @@
 	"smell_driftingmetronome": "**Drifting Metronome**에서 약간 어긋난 냄새가 난다.",
 	"smell_filmreel": "**Film Reel**에서 *아주* 오래된 비디오 포맷 냄새가 난다. 왜 아직도 이걸 쓰는 거지?",
 	"smell_swirlymarbles": "당신은 **Swirly Marbles**에서 천체적 물체 냄새가 나는 것을 100% 확신할 수 있다.",
+	"smell_sparecryopod": "**Spare Cryopod**는 얼어붙은 토끼 냄새가 난다.",
+	"smell_aceofhearts": "**Ace of Hearts**는 무료 토큰 생성기 1.5.4 냄새가 난다.",
+	"smell_doubleedge": "**Double Edged Sword**는 살인 냄새가 난다.",
+	"smell_fakemustache": "**Fake Mustache**는 진짜, 진짜 나쁜 냄새가 난다. 이것을 정말로 착용하시겠습니까?",
 	
 	"smell_granolabar": "**Granola Bar**에서 모래 냄새가 난다.",
 	"smell_hauntedgrass": "**Haunted Grass**에서는 빗물 냄새가 난다.",
 	"smell_subwayticket": "**Subway Ticket**에서 냄새가 난다.",
+	"smell_ddd": "**...**는 손상된 파일 냄새가 난다. 여기로 어떻게 왔지?",
 	
 	"smell_caffeinatedsoda": "**Caffeinated Soda**의 냄새를 맡으려고 하지만, 거품이 당신의 코를 간지럽힌다.",
 	"smell_decaf": "**Decaf Coffee**에서 실망의 냄새가 난다.",
@@ -78,6 +83,14 @@
 	"smell_s5booster": "**Alternative Booster**에서 플라스틱 패키지와 고양이 포스터 냄새가 난다.",
 	"smell_s6booster": "**Diverse Booster**에서 플라스틱 패키지와 대명사 냄새가 난다.",
 	"smell_s7booster": "**Animal Booster**에서 플라스틱 패키지와 가게 주인 늑대 냄새가 난다.",
+	"smell_s8booster": "**Planetary Booster**는 플라스틱 포장과 우주적 신들 냄새가 난다.",
+
+	"smell_essenceofgranolabar": "**Essence of Granola Bar**는 주유소를 상기시켜준다.",
+	"smell_essenceofhauntedgrass": "**Essence of Haunted Grass**는 숲을 상기시켜준다.",
+	"smell_essenceofsparecryopod": "**Essence of Spare Cryopod**는 극저온 연구소를 상기시켜준다.",
+	"smell_essenceofaceofhearts": "**Essence of Ace of Hearts**는 카지노를 상기시켜준다.",
+	"smell_essenceofsubwayticket": "**Essence of Subway Ticket**은 도시를 상기시켜준다.",
+	"smell_essenceofddd": "**Essence of...**는 공허를 상기시켜준다.",
 	
 	"request_panda": "판다",
 	"request_pyrowmid": "행라미드",
