@@ -297,7 +297,7 @@ function command.run(message, mt,bypass)
         end
 
         if not uj.storage[getcard] then
-          if not uj.checkcard then
+          if not uj.togglecheckcard then
             message.channel:send(lang.not_in_storage_1 .. cdb[getcard].name .. lang.not_in_storage_2)
           end
         end
@@ -860,12 +860,15 @@ o-''|\\_____/)
 			  },"useconsumable",{crequest=request,mt=mt},uj.id,uj.lang)
 			  return
 			else
-			if uj.equipped == 'aceofhearts' then
-				if uj.acepulls ~= 0 then
-					message.channel:send('The pulls stored in your **Ace of Hearts** disappear...')
-					uj.acepulls = 0
-				end
-			end
+      if request == "..." then request = "ddd" end
+        if request ~= "ddd" then
+          if uj.equipped == 'aceofhearts' then
+            if uj.acepulls ~= 0 then
+                message.channel:send('The pulls stored in your **Ace of Hearts** disappear...')
+                uj.acepulls = 0
+            end    
+        end
+      end
 			  local fn = request
 			  if consdb[request].command then
 				request = consdb[request].command

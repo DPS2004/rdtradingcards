@@ -30,12 +30,18 @@ function item.run(uj, ujf, message, mt, interaction)
       if uj.storage[item1] == 0 then uj.storage[item1] = nil end
       uj.inventory[item1] = uj.inventory[item1] and uj.inventory[item1] + numcards or numcards
 
+      if uj.equipped == 'aceofhearts' then
+        if uj.acepulls ~= 0 then
+            message.channel:send('The pulls stored in your **Ace of Hearts** disappear...')
+            uj.acepulls = 0
+          end    
+      end
 
       if uj.lang == "ko" then
         message.channel:send(lang.ddd_use_1 .. uj.id .. lang.ddd_use_2 .. cdb[item1].name .. lang.ddd_use_3)
       else
         message.channel:send(lang.ddd_use_1 .. uj.id .. lang.ddd_use_2 .. cdb[item1].name .. lang.ddd_use_3 .. uj.pronouns["their"] .. lang.ddd_use_4)
-        end
+      end
       dpf.savejson(ujf, uj)
         cmd.checkcollectors.run(message, mt)
         cmd.checkmedals.run(message, mt)
