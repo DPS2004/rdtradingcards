@@ -347,5 +347,14 @@
 	  "basestock": 9999,
 	  "chance": 0,
 	  "unusable": true
+  },
+  "essenceofoldfriend" : {
+	  "name": "Essence of Old Friend",
+	  "description": "Cannot be used. Marks your participation in an event.",
+	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1106683152828739584/essenceofoldfriend.png",
+	  "baseprice": 9999,
+	  "basestock": 9999,
+	  "chance": 0,
+	  "unusable": true
   }
 }

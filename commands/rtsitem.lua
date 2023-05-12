@@ -17,8 +17,8 @@ function command.run(message, mt)
 
   local uj2 = dpf.loadjson(uj2f, defaultjson)
   
-  local item = 'ddd'
-  local itemtype = 'cons'
+  local item = 'oldfriend'
+  local itemtype = 'item'
   
   if mt[2] == 'granolabar' then
 	item = 'granolabar'
@@ -35,9 +35,12 @@ function command.run(message, mt)
   elseif mt[2] == 'subwayticket' then 
 	item = 'subwayticket'
 	itemtype = 'cons'
-  elseif mt[2] == 'ddd' then --add other items as needed
+  elseif mt[2] == 'ddd' then
 	item = 'ddd'
 	itemtype = 'cons'
+  elseif mt[2] == 'oldfriend' then
+	item = 'oldfriend'
+	itemtype = 'item'
   end
 
   local numitems = 1

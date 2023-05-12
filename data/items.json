@@ -129,6 +129,11 @@
     "description": "Every 21 pulls, automatically gain 10 tokens. The pull counter is reset when a consumable is used or the item is taken off.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1070033934966079590/aceofhearts.png"
   },
+  "oldfriend": {
+    "name": "Old Friend",
+    "description": "A doll made in the likeness of an old friend. It does nothing, but has sentimental value.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1106683105030459442/oldfriend.png"
+  },
   "mustache": {
     "name": "Fake Mustache",
     "description": "Decreases the percentage of success of robbing, but gets a shorter time of getting blacklisted.",
