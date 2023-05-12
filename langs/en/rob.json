@@ -63,6 +63,17 @@
 	"rob_succeeded_item_1": "You entered the **Quaint Shop**. You demanded the **Wolf** give you a **",
 	"rob_succeeded_item_2": "**. The **Wolf** complies.",
 
+	"rob_gun_many": "Sorry, but you can't rob more than 1 item if you have a rob affecting item in use!",
+
+	"rob_gun_1": "You entered the **Quaint Shop**. You demanded the **Wolf** give you ",
+	"rob_gun_2": " **",
+	"rob_gun_3": "**. He complies, but as you turn around, the **Wolf** called the police. You are blacklisted from the shop for the next ",
+	"rob_gun_4": " restocks.",
+
+	"rob_gun_item_1": "You entered the **Quaint Shop**. You demanded the **Wolf** give you a **",
+	"rob_gun_item_2": "**. The **Wolf** complies, but as you turn around, he called the police. You are blacklisted from the shop for the next ",
+	"rob_gun_item_3": " restocks.",
+
 	"rob_failed_1": "You entered the **Quaint Shop**. You demanded the **Wolf** give you ",
 	"rob_failed_2": " **",
 	"rob_failed_3": "**. He calls the police instead. You are blacklisted from the shop for the next ",

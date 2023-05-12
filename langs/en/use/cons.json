@@ -44,6 +44,8 @@
 	"quantummouse_conspt": "You already have a pull affecting item in use! You decide against using the **Quantum Mouse** for now.",
 	"seasonbooster_conspt_1": "You already have a pull affecting item in use! You decide against using the **",
 	"seasonbooster_conspt_2": "** for now.",
+	"gun_message": "You reload the **Toy Gun** with a small marble. This will surely make you look much dangerous.",
+	"gun_robconspt": "You already have a rob affecting item in use! You decided against using the **Toy Gun** at this time.",
 	"granolabar_message": "Your cooldowns have been reduced by 3 hours!",
 	"hauntedgrass_message": "You plant the **Haunted Grass** in your garden. This will surely attract the attention of some spooky things!",
 	"hauntedgrass_conspt": "You already have a pull affecting item in use! You decide against using the **Haunted Grass** for now.",

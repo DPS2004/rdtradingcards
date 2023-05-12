@@ -256,6 +256,14 @@
     "text_en": "You tear open the **Planetary Booster.** Inside is some space dust. A lot of space dust, actually.",
     "text_ko": "당신은 **Planetary Booster**의 봉지를 열었다. 안에는 소량의 우주 먼지가 들어있다. 다시 보니, 매우 다량의 우주 먼지다."
   },
+  "gun" : {
+    "name": "Toy Gun",
+    "description": "The next rob you commit is guaranteed to succeed, but gets blacklisted for 2 more restocks.",
+    "embed": "https://media.discordapp.net/attachments/1013392483931136020/1087655351396089866/gun.png",
+    "baseprice": 6,
+    "basestock": 10,
+    "chance": 10
+  },
   "granolabar" : {
     "name": "Granola Bar",
     "description": "Decreases all of your cooldowns by 3 hours.",

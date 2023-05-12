@@ -44,6 +44,8 @@
 	"quantummouse_conspt": "You already have a pull affecting item in use! You decide against using the **Quantum Mouse**를 사용하지 않기로 한다.",
 	"seasonbooster_conspt_1": "이미 카드 뽑기에 영향을 주는 아이템을 사용하고 있습니다! 지금은 **",
 	"seasonbooster_conspt_2": "**를 사용하지 않기로 한다.",
+	"gun_message": "당신은 **Toy Gun**을 작은 구슬로 장전시킵니다. 확실히 더욱 위험해 보일 것이다.",
+	"gun_robconspt": "이미 털기에 영향을 주는 아이템을 사용하고 있습니다! 지금은 **Toy Gun**을 사용하지 않기로 한다.",
 	"granolabar_message": "당신의 쿨타임이 3시간 줄어들었다!",
 	"hauntedgrass_message": "당신은 정원에 **Haunted Grass**를 놓았다. 확실히 무서운 것들의 관심을 끌 것이다!",
 	"hauntedgrass_conspt": "이미 카드 뽑기에 영향을 주는 아이템을 사용하고 있습니다! 지금은 **Haunted Grass**를 사용하지 않기로 한다.",
