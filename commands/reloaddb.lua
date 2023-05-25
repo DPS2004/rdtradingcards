@@ -927,7 +927,7 @@ function command.run(message, mt, overwrite)
           end
         end
 
-        newconsumables[i] = {name = nc,stock = consdb[nc].basestock + math.random(0, 4), price = consdb[nc].baseprice + math.random(-1,1)}
+        newconsumables[i] = {name = nc,stock = consdb[nc].basestock + math.random(0, 4), price = math.max(1, consdb[nc].baseprice + math.random(-1,1))}
         
       end
       sj.consumables = newconsumables
