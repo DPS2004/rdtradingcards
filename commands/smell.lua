@@ -59,8 +59,9 @@ function command.run(message, mt)
       swirlymarbles = lang.smell_swirlymarbles,
       sparecryopod = lang.smell_sparecryopod,
       aceofhearts = lang.smell_aceofhearts,
+      oldfriend = lang.smell_oldfriend,
       doubleedge = lang.smell_doubleedge,
-      fakemustache = lang.smell_fakemustache,
+      mustache = lang.smell_mustache,
     }
     local consumablesmells = {
       caffeinatedsoda = lang.smell_caffeinatedsoda,
@@ -102,6 +103,7 @@ function command.run(message, mt)
       essenceofaceofhearts = lang.smell_essenceofaceofhearts,
       essenceofsubwayticket = lang.smell_essenceofsubwayticket,
       essenceofddd = lang.smell_essenceofddd,
+      essenceofoldfriend = lang.smell_essenceofoldfriend,
     }
 
     if uj.lang ~= "en" and request == lang.request_panda then
