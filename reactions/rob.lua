@@ -17,6 +17,7 @@ function reaction.run(message, interaction, data, response)
 
   if response == "yes" then
     print('user1 has accepted')
+	data.numrequest = data.numrequest or 0 --bug fix
     if uj.lastrob + 3 > sj.stocknum and uj.lastrob ~= 0 then
       send_robmessage(interaction, message, lang.error_already_robbed)
       return
