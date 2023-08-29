@@ -816,14 +816,14 @@ function command.run(message, mt, overwrite)
 
       print(output)
       
-      for index, value in ipairs(objectsToAdd) do
-        output = output:gsub("{"..tostring(index).."}",tostring(value))
+      for key, value in pairs(objectsToAdd) do
+        output = output:gsub("{"..tostring(key).."}",tostring(value))
       end
 
 
       -- Replace the {Xs}
       if plural_s ~= nil and plural_s ~= "" then
-        for index, value in ipairs(objectsToAdd) do
+        for key, value in pairs(objectsToAdd) do
           if type(value) == "number" and value ~= 1 then
             output = output:gsub("{"..tostring(index).."s}",plural_s)
           else
