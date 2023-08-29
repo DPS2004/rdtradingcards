@@ -825,9 +825,9 @@ function command.run(message, mt, overwrite)
       if plural_s ~= nil and plural_s ~= "" then
         for key, value in pairs(objectsToAdd) do
           if type(value) == "number" and value ~= 1 then
-            output = output:gsub("{"..tostring(index).."s}",plural_s)
+            output = output:gsub("{"..tostring(key).."s}",plural_s)
           else
-            output = output:gsub("{"..tostring(index).."s}","")
+            output = output:gsub("{"..tostring(key).."s}","")
           end
         end
       end
