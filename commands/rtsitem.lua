@@ -17,20 +17,41 @@ function command.run(message, mt)
 
   local uj2 = dpf.loadjson(uj2f, defaultjson)
   
-  local item = 'hauntedgrass'
-  local itemtype = 'cons'
+  local item = 'oldfriend'
+  local itemtype = 'item'
   
-  if mt[3] == 'granolabar' then
+  if mt[2] == 'granolabar' then
 	item = 'granolabar'
 	itemtype = 'cons'
-  elseif mt[3] == 'hauntedgrass' then --add other items as needed
+  elseif mt[2] == 'hauntedgrass' then
 	item = 'hauntedgrass'
 	itemtype = 'cons'
+  elseif mt[2] == 'sparecryopod' then 
+	item = 'sparecryopod'
+	itemtype = 'item'
+  elseif mt[2] == 'aceofhearts' then
+	item = 'aceofhearts'
+	itemtype = 'item'
+  elseif mt[2] == 'subwayticket' then 
+	item = 'subwayticket'
+	itemtype = 'cons'
+  elseif mt[2] == 'ddd' then
+	item = 'ddd'
+	itemtype = 'cons'
+  elseif mt[2] == 'oldfriend' then
+	item = 'oldfriend'
+	itemtype = 'item'
   end
 
   local numitems = 1
+  
+
   if tonumber(mt[3]) then
     if tonumber(mt[3]) > 1 then numitems = math.floor(mt[3]) end
+  end
+  
+  if item == 'subwayticket' then
+	numitems = numitems * 3
   end
 
   if itemtype == 'cons' then
@@ -43,6 +64,10 @@ function command.run(message, mt)
     uj2.items[item] = true
   end
   --add essence as well
+  
+  if item == 'subwayticket' then
+	numitems = numitems / 3
+  end
   
   if not uj2.consumables['essenceof'..item] then
 	uj2.consumables['essenceof'..item] = numitems

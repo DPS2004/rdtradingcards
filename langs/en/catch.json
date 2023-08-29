@@ -10,11 +10,11 @@
 	"card": "card",
 	"item": "item",
 	
-	"caught_1":  "has caught a **",
+	"caught_1":  " has caught a **",
 	"caught_2": "! The **",
 	"caught_3": " has been added to ",
 	"caught_4": " inventory.",
 	
 	"not_in_storage_1": "You do not have the **",
-	"not_in_storage_2": "** card in your storage!",
+	"not_in_storage_2": "** card in your storage!"
 }

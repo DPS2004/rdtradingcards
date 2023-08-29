@@ -13,7 +13,14 @@ function reaction.run(message, interaction, data, response)
       interaction:reply(lang.reaction_not_cooldown)
       return
     end
-
+	
+	if uj.equipped == 'aceofhearts' then
+		if uj.acepulls ~= 0 then
+			message.channel:send('The pulls stored in your **Ace of Hearts** disappear...')
+			uj.acepulls = 0
+		end
+	end
+	
     uj.equipped = newequip
     if uj.lang == "ko" then
 	    message.channel:send("<@" .. uj.id .. "> " .. lang.equipped_1 .. itemdb[newequip].name .. lang.equipped_2 .. lang.equipped_3)
