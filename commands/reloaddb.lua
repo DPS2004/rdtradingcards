@@ -79,6 +79,13 @@ function command.run(message, mt, overwrite)
       --   others = {}
       -- }
     }
+
+    local errorping
+    if privatestuff.errorping then
+      errorping = true
+    else
+      errorping = false
+    end
     
     _G['defaultworldsave'] = {
       tokensdonated = 0,
@@ -570,7 +577,11 @@ function command.run(message, mt, overwrite)
 
       if not status then
         print("uh oh")
-        message.channel:send("Oops! An error has occured! Error message: ```" .. err .. "``` (<@290582109750427648> <@298722923626364928> please fix this thanks)")
+        if errorping then
+          message.channel:send("Oops! An error has occured! Error message: ```" .. err .. "``` (" .. privatestuff.errorping .. " please fix this thanks)")
+        else
+          message.channel:send("Oops! An error has occured! Error message: ```" .. err .. "``` (please fix this thanks)")
+        end
       end
 
     end
@@ -713,7 +724,11 @@ function command.run(message, mt, overwrite)
           end)
           if not status then
             print("uh oh")
-            message.channel:send("Oops! An error has occured! Error message: ```" .. err .. "``` (<@290582109750427648> <@298722923626364928> please fix this thanks)")
+            if errorping then
+              message.channel:send("Oops! An error has occured! Error message: ```" .. err .. "``` (" .. privatestuff.errorping .. " please fix this thanks)")
+            else
+              message.channel:send("Oops! An error has occured! Error message: ```" .. err .. "``` (please fix this thanks)")
+            end
           end
           break
         end
