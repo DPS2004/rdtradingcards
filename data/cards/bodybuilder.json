@@ -10,6 +10,7 @@
 	  "smell": "Protein Shakes",
 	  "season": 7,
 	  "bonuses": {
+		"sportsplaceholder": true,
 		"okamiiscollar": true
 	  },
 	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872161240066187275/bodybuilderr.png"
@@ -22,7 +23,9 @@
 	  "description": "(Art by Peachy6206)",
 	  "smell": "Protein Shakes",
 	  "season": 7,
-	  "bonuses": {},
+	  "bonuses": {
+		"sportsplaceholder": true
+	  },
 	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872153740638031912/bodybuildersr.png"
 	},
 	{
@@ -33,7 +36,9 @@
 	  "description": "(Art by Time)",
 	  "smell": "Protein Shakes",
 	  "season": 7,
-	  "bonuses": {},
+	  "bonuses": {
+		"sportsplaceholder": true
+	  },
 	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/873788559251873792/bodybuilderur.png"
 	},
 	{
@@ -44,7 +49,9 @@
 	  "description": "Requires the Rare, Super Rare, and Ultra Rare variants of Bodybuilder (Art by Pseuu)",
 	  "smell": "Protein Shakes",
 	  "season": 7,
-	  "bonuses": {},
+	  "bonuses": {
+		"sportsplaceholder": true
+	  },
 	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/872153740323479572/bodybuilderc.png"
 	}
   ]

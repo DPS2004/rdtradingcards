@@ -1,0 +1,19 @@
+{
+  "groupname": "lucky",
+  "basechance": 12,
+  "cards": [{
+	"chance": 3,
+	"filename": "luckyr",
+	"name": "Maximo \"Lucky\" Jonronero (Rare)",
+	"type": "Rare",
+	"description": "(Art by Winston Lee)",
+	"smell": "Bubblegum",
+	"season": 11,
+	"spoiler": true,
+	"bonuses": {
+	  "sportsplaceholder": true,
+	  "okamiiscollar": true
+	},
+	"embed": "https://media.discordapp.net/attachments/1170130183286706246/1170208258003308604/luckyr.png"
+  }]
+}

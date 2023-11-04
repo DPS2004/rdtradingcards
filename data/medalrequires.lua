@@ -224,6 +224,16 @@ return {
     end
   },
   {
+    receive = "s10maestro",
+    require = function(uj)
+      for i, v in ipairs(seasontable[10]) do
+        if not uj.storage[v] then return false end
+      end
+
+      return true
+    end
+  },
+  {
     receive = "cardmaestro",
     require = function(uj)
       local excludedcards = { "rdcards", "key" }

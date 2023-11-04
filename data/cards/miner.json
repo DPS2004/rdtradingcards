@@ -13,7 +13,7 @@
 		"okamiiscollar": true,
 		"charcoalpencil": true
 	  },
-	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839170156877447198/minerr.png"
+	  "embed": "https://media.discordapp.net/attachments/1170130183286706246/1170143433566990427/minerr.png"
 	},
 	{
 	  "chance": 2,
@@ -54,6 +54,21 @@
 		"oldfiles": true
 	  },
 	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839162170129514506/minerdc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "mineralt",
+	  "name": "Miner (Alternate)",
+	  "type": "Alternate",
+	  "description": "(Art by Winston Lee)",
+	  "smell": "Renewable Energy",
+	  "season": 11,
+	  "spoiler": true,
+	  "bonuses": {
+		"charcoalpencil": true,
+        "pocketdimension": true
+	  },
+	  "embed": "https://media.discordapp.net/attachments/1170130183286706246/1170144153829650564/mineralt.png"
 	},
 	{
 	  "chance": 0,

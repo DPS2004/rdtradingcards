@@ -1,0 +1,128 @@
+{
+  "groupname": "act 5 update",
+  "basechance": 12,
+  "cards": [
+  	{
+	  "chance": 1,
+	  "filename": "knowyoudc",
+	  "name": "Know You (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Level by lugi)",
+	  "smell": "The Cosmos",
+	  "season": 11,
+	  "bonuses": {
+		"valentinesdaycard": true,
+		"cafemixtape": true,
+		"oldfiles": true
+	  },
+	  "embed": "https://media.discordapp.net/attachments/1170130183286706246/1170138254633345076/knowyoudc.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "murmursdc",
+	  "name": "Murmurs (Discontinued)",
+	  "type": "Discontinued",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Urban Pop Beats",
+	  "season": 11,
+	  "bonuses": {
+		"cafemixtape": true,
+		"rustysword": true,
+		"oldfiles": true
+	  },
+	  "embed": "https://cdn.discordapp.com/attachments/1170130183286706246/1170141848833118288/murmursdc.png"
+	},
+	
+	{
+	  "chance": 2,
+	  "filename": "luckybreak",
+	  "name": "Lucky Break",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Plaster and Fiberglass",
+	  "season": 11,
+	  "spoiler": true,
+	  "bonuses": {
+		"sportsplaceholder": true
+	  },
+	  "embed": "https://media.discordapp.net/attachments/1170130183286706246/1170156674447851550/luckybreak.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "onesliptoolate",
+	  "name": "One Slip Too Late",
+	  "type": "Ultra Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Crackerjacks",
+	  "season": 11,
+	  "spoiler": true,
+	  "bonuses": {
+		"sportsplaceholder": true,
+		"rustysword": true
+	  },
+	  "embed": "https://media.discordapp.net/attachments/1170130183286706246/1170160875609530428/onesliptoolate.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "lofichill",
+	  "name": "Lofi Beats For Patients To Chill To",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Overexertion",
+	  "season": 11,
+	  "spoiler": true,
+	  "bonuses": {
+		"sportsplaceholder": true
+	  },
+	  "embed": "https://media.discordapp.net/attachments/1170130183286706246/1170163443895107624/lofichill.png"
+	},
+	{
+	  "chance": 1,
+	  "filename": "unsustainable",
+	  "name": "Unsustainable Inconsolable",
+	  "type": "Ultra Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Hippocratic Oath Violations",
+	  "season": 11,
+	  "spoiler": true,
+	  "bonuses": {
+		"sportsplaceholder": true
+	  },
+	  "embed": "https://media.discordapp.net/attachments/1170130183286706246/1170176402432213023/unsustainable.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "sistretch",
+	  "name": "Seventh-Inning Stretch",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Wrapped-Up Loose Ends",
+	  "season": 11,
+	  "spoiler": true,
+	  "bonuses": {
+		"sportsplaceholder": true,
+		"rustysword": true,
+		"charcoalpencil": true
+	  },
+	  "embed": "https://media.discordapp.net/attachments/1170130183286706246/1170176165596647464/sistretch.png"
+	},
+	{
+	  "chance": 2,
+	  "filename": "dreamsdontstop",
+	  "name": "Dreams Don't Stop",
+	  "type": "Super Rare",
+	  "description": "(Level by 7th Beat Games)",
+	  "smell": "Team Spirit",
+	  "season": 11,
+	  "spoiler": true,
+	  "bonuses": {
+		"sportsplaceholder": true,
+		"rustysword": true,
+		"valentinesdaycard": true,
+		"cafemixtape": true
+	  },
+	  "embed": "https://media.discordapp.net/attachments/1170130183286706246/1170168689035841536/dreamsdontstop.png"
+	},
+	
+  ]
+}

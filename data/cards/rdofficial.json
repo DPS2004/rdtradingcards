@@ -380,7 +380,7 @@
 		"valentinesdaycard": true,
 		"cafemixtape": true
 	  },
-	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829201891489349692/knowyou.png"
+	  "embed": "https://media.discordapp.net/attachments/1170130183286706246/1170137767133589656/knowyou.png"
 	},
 	{
 	  "chance": 2,
@@ -789,11 +789,12 @@
 	  "description": "(Level by 7th Beat Games)",
 	  "smell": "Urban Pop Beats",
 	  "season": 8,
+	  "spoiler": true,
 	  "bonuses": {
 		"cafemixtape": true,
-		"rustysword": true
+		"valentinesdaycard": true
 	  },
-	  "embed": "https://cdn.discordapp.com/attachments/829197797789532181/967978434749943889/murmurs.png"
+	  "embed": "https://media.discordapp.net/attachments/1170130183286706246/1170141775625723974/murmurs.png"
 	},
 	{
 	  "chance": 2,

@@ -10,6 +10,7 @@
 	"smell": "Scurvy",
 	"season": 10,
 	"bonuses": {
+      "rustysword": true,
 	  "okamiiscollar": true
 	},
 	"embed": "https://cdn.discordapp.com/attachments/829197797789532181/1036504795642593340/samarrrai.png"

@@ -897,7 +897,7 @@ function command.run(message, mt, overwrite)
           price = math.random(13, 17)
         end
 
-        if cdb[nc].season == 10 then
+        if cdb[nc].season == 11 then
           price = price + 1
         end
 

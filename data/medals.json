@@ -89,6 +89,11 @@
     "description": "Collect every single Season 9 card!",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1015290684229562449/season9maestro.png"
   },
+  "s10maestro": {
+    "name": "Season 10 Maestro",
+    "description": "Collect every single Season 10 card!",
+    "embed": "https://cdn.discordapp.com/attachments/1170130183286706246/1170135735408529488/season10maestro.png"
+  },
   "pyramidal": {
     "name": "Pyramidal",
     "description": "Collect 50 exact copies of a card!",
