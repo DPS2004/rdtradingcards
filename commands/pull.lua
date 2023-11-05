@@ -29,6 +29,11 @@ local time = sw:getTime()
   end
 
   local maxcryopodstorage = 3
+
+  if math.ceil(time:toSeconds() - uj.lastpull * 3600) <= 3 then
+    message.channel:send("Please wait a bit before pulling again.")
+    return
+  end
   
   
   if uj.equipped == "sparecryopod" then
