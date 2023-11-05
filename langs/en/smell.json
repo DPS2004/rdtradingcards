@@ -25,7 +25,7 @@
 	"smell_nothing": "It smells like the **Peculiar Box**.",
 	"smell_rustysword": "The **Rusty Sword**, unsurprisingly, smells like rust.",
 	"smell_cafemixtape": "The **Cafe Mixtape** smells like outdated audio formats.",
-	"smell_oversizedstythoscope": "The **Oversized Stethoscope** smells like medical school.",
+	"smell_oversizedstethoscope": "The **Oversized Stethoscope** smells like medical school.",
 	"smell_valentinesdaycard": "The **Valentines Day Card** smells like glitter.",
 	"smell_hardcandy": "The **Hard Candy** smells like a retirement home.",
 	"smell_deluxebirdseed": "The **Deluxe Birdseed** smells like something a squirrel would enjoy.",
@@ -46,10 +46,11 @@
 	"smell_driftingmetronome": "The **Drifting Metronome** smells slightly out of sync.",
 	"smell_filmreel": "The **Film Reel** smells like *really* outdated video formats. Why are we still using these?",
 	"smell_swirlymarbles": "You can almost swear the **Swirly Marbles** smell like celestial objects.",
-	"smell_sparecryopod": "The **Spare Cryopod** smells like frozen rabbits.",
+	"smell_sparecryopod": "The **Spare Cryopod** smells like a vat of liquid nitrogen.",
 	"smell_aceofhearts": "The **Ace of Hearts** smells like FREE TOKEN GENERATOR (WORKING 20XX) (NOT CLICKBAIT).",
+	"smell_oldfriend": "The **Old Friend** smells like a marketable plushie.",
 	"smell_doubleedge": "The **Doubled Edged Sword** smells like murder.",
-	"smell_fakemustache": "The **Fake Mustache** smells really, really bad. Are you sure you want to wear this?",
+	"smell_mustache": "The **Fake Mustache** smells really, really bad. Are you sure you want to wear this?",
 	
 	"smell_granolabar": "The **Granola Bar** smells like sand.",
 	"smell_hauntedgrass": "The **Haunted Grass** smells very petrichor.",
@@ -87,10 +88,11 @@
 
 	"smell_essenceofgranolabar": "The **Essence of Granola Bar** reminds you of the Gas Station.",
 	"smell_essenceofhauntedgrass": "The **Essence of Haunted Grass** reminds you of the Forest.",
-	"smell_essenceofsparecryopod": "The **Essence of Spare Cryopod** reminds you of the Cryogenic Labatory.",
+	"smell_essenceofsparecryopod": "The **Essence of Spare Cryopod** reminds you of the Cryogenic Laboratory.",
 	"smell_essenceofaceofhearts": "The **Essence of Ace of Hearts** reminds you of the Casino.",
 	"smell_essenceofsubwayticket": "The **Essence of Subway Ticket** reminds you of the City.",
 	"smell_essenceofddd": "The **Essence of...** reminds you of the Void.",
+	"smell_essenceofoldfriend": "The **Essence of Old Friend** reminds you of the Airship.",
 	
 	"spider_alert": "Are you okay with smelling a spider?",
 	"smell_spider": "The **Spider** smells like a small friend!",
@@ -109,5 +111,5 @@
 	"no_card_1": "Sorry, but I could not find the ",
 	"no_card_2": " card in the database. Make sure that you spelled it right!",
 	
-	"no_arguments": "Sorry, but the c!smell command expects 1 argument. Please see c!help for more details.",
+	"no_arguments": "Sorry, but the c!smell command expects 1 argument. Please see c!help for more details."
 }
