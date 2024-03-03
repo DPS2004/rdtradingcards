@@ -1,0 +1,20 @@
+{
+  "groupname": "chair",
+  "basechance": 3,
+  "cards": [
+	{
+          "chance": 3,
+          "filename": "chairr",
+          "name": "Hospital Chair (Rare)",
+          "type": "Rare",
+          "description": "(Art by Winston Lee)",
+          "smell": "People",
+          "season": 0,
+          "bonuses": {
+            "okamiiscollar": true,
+            "duncecap": true
+          },
+          "embed": "https://media.discordapp.net/attachments/1013392483931136020/1091899378391851008/chairr.png"
+        }
+  ]
+}
