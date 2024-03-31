@@ -1,0 +1,35 @@
+{
+	"looking_at_pyrowmid": "Looking at Pyrowmid...",
+
+	"looking_pre_501": "The **Pyrowmid** has recently opened itself, revealing a **Panda** and a **Strange Machine** inside. The walls are made of Rows (Rare) cards.",
+	"looking_501": "A very small **Hole** has appeared next to the **Pyrowmid**. The **Panda** is looking at it with a worried look on his face. The **Strange Machine** continues to be strange.",
+	"looking_502": "A small **Hole** has appeared next to the **Pyrowmid**. The **Panda** is looking at it with a worried look on his face. The **Strange Machine** continues to be strange.",
+	"looking_503": "A **Hole** has appeared next to the **Pyrowmid**. The **Panda** is looking at it with a very worried look on his face. The **Strange Machine** seems normal in comparison to all this.",
+	"looking_504": "A somewhat large **Hole** has appeared next to the **Pyrowmid**. The **Panda** is looking at it with a very worried look on his face. The **Strange Machine** seems normal in comparison to all this.",
+	"looking_505": "A large **Hole** has appeared next to the **Pyrowmid**. The **Panda** is looking at it with an extremely worried look on his face. The **Strange Machine** is making a strange noise.",
+	"looking_506": "A very large **Hole** has appeared next to the **Pyrowmid**. It looks large enough to go in, but you have no way of doing so. The **Panda** is looking at it with an extremely worried look on his face. The **Strange Machine** is vibrating intensely.",
+	"looking_507": "A very large **Hole** has appeared next to the **Pyrowmid**. If you **Used** the ladder propped up inside it, you could probably climb down it. The **Panda** is looking at it with a worried look on his face. The **Strange Machine** is being strange.",
+	
+	"looking_at_panda": "Looking at Panda...",
+	"looking_panda": "The **Panda** looks confused, and probably would rather not be here in the **Pyrowmid**. That **Throne** he is sitting on sure does look comfortable, though.",
+	
+	"looking_at_throne": "Looking at Throne...",
+	"looking_throne": "The **Throne**, like the walls of the **Pyrowmid** are made of Rows (Rare) cards. It is unknown how it is being held together.",
+	
+	"looking_at_machine": "Looking at Strange Machine...",
+	"looking_machine_506": "The **Strange Machine** appears to have a slot for four **Tokens**, and a crank. The crank is worn, as if it has been **Used** many times. The machine is shaking vigorously.",
+	"looking_machine": "The **Strange Machine** appears to have a slot for three **Tokens**, and a crank. The crank is worn, as if it has been **Used** many times.",
+	
+	"looking_at_hole": "Looking at Hole...",
+	"looking_hole_pre_501": "what hole?",
+	"looking_hole_501": "A very small **Hole** has appeared next to the **Pyrowmid**. A **Token** could probably fit in it, but just barely.",
+	"looking_hole_502": "A small **Hole** has appeared next to the **Pyrowmid**. A **Token** would definitely fit in.",
+	"looking_hole_503": "A **Hole** has appeared next to the **Pyrowmid**. It craves more **Tokens**.",
+	"looking_hole_504": "A somewhat large **Hole** has appeared next to the **Pyrowmid**. It craves yet more **Tokens**.",
+	"looking_hole_505": "A large **Hole** has appeared next to the **Pyrowmid**. It is vibrating very slightly from its proximity to the **Strange Machine**.",
+	"looking_hole_506": "A very large **Hole** has appeared next to the **Pyrowmid**. It looks large enough to go in, but you have no way of doing so. It is vibrating intensely from its proximity to the **Strange Machine**.",
+	"looking_hole_507": "A very large **Hole** has appeared next to the **Pyrowmid**. If you **Used** the ladder propped up inside it, you could probably climb down it.",
+
+	"looking_at_ladder": "Looking at Ladder...",
+	"looking_ladder": "The **Ladder** feels too big to fit in a capsule, but that\"s where it came from. It is currently propped up in the **Hole**.",
+}

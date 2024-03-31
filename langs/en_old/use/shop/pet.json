@@ -1,0 +1,10 @@
+{
+	"petting_wolf": "Petting Wolf...",
+	"petted_wolf": "The **Wolf** liked being pet!",
+	
+	"petting_ghost": "Petting Ghost...",
+	"petted_ghost": "As you move your hand closer, an unknown force prevents you from petting the **Ghost**.",
+	
+	"petting_dog": "Petting Dog...",
+	"petted_dog": "You try to pet the **Dog**, but it's unfortunately stuck in a two-dimensional **Photo**.",
+}

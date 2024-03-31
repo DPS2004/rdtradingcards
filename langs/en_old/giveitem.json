@@ -1,0 +1,36 @@
+{
+	"needs_plural_s": true,
+	
+	"dm_message": "Sorry, but you cannot give items in DMs!",
+	"no_arguments": "Sorry, but the c!giveitem command expects 2 or 3 arguments. Please see c!help for more details.",
+	
+	"no_user_1": "Sorry, but I could not find a user named ",
+	"no_user_2": " in the database. Make sure that you have spelled it right, and that they have at least pulled a card to register!",
+	"same_user": "Sorry, you cannot give something to yourself!",
+	
+	"equippable_item": "Sorry, but you cannot gift equippable items!",
+	
+	"no_item_nopeeking_1": "Sorry, but I either could not find the ",
+	"no_item_nopeeking_2": " item in the database, or you do not have it. Make sure that you spelled it right!",
+	
+	"no_item_1": "Sorry, but I could not find the ",
+	"no_item_2": " item in the database. Make sure that you spelled it right!",
+	
+	"dont_have_1": "Sorry, but you don't have the **",
+	"dont_have_2": "** item.",
+	
+	"not_enough_1": "Sorry, but you do not have enough **",
+	"not_enough_2": "** items.",
+	
+	"gifted_message_1": "You have gifted ",
+	"gifted_message_2": " **",
+	"gifted_message_3": "** item",
+	"gifted_message_4": " to <@",
+	"gifted_message_5": ">.",
+	
+	"recieved_message_1": "<@",
+	"recieved_message_2": "> has gifted you ",
+	"recieved_message_3": " **",
+	"recieved_message_4": "** item",
+	"recieved_message_5": ".",
+}

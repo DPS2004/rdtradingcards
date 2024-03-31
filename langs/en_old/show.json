@@ -1,0 +1,18 @@
+{
+	"no_arguments": "Sorry, but the c!show command expects 1 argument. Please see c!help for more details.",
+	
+	"error_nopeeking_1": "Sorry, but I either could not find the ",
+	"error_nopeeking_2": " card in the database, or you do not have it. Make sure that you spelled it right!",
+	
+	"no_item_1": "Sorry, but I could not find the ",
+	"no_item_2": " card in the database. Make sure that you spelled it right!",
+	"dont_have_1": "Sorry, but you don't have the **",
+	"dont_have_2": "** card in your inventory or your storage.",
+	
+	"embeddescription": "The description on the back reads:",
+	
+	"showing_card": "Showing card...",
+	"show_card_1": "Here it is! Your **",
+	"show_card_2": "** card. The shorthand form is **",
+	"show_card_3": "**.",
+}

@@ -1,0 +1,16 @@
+{
+	"no_arguments": "Sorry, but the c!showitem command expects 1 argument. Please see c!help for more details.",
+	
+	"error_nopeeking_1": "Sorry, but I either could not find the ",
+	"error_nopeeking_2": " item in the database, or you do not have it. Make sure that you spelled it right!",
+	
+	"no_item_1": "Sorry, but I could not find the ",
+	"no_item_2": " item in the database. Make sure that you spelled it right!",
+	"dont_have_1": "Sorry, but you don't have the **",
+	"dont_have_2": "** item.",
+	
+	"showing_item": "Showing item...",
+	"show_item_1": "Here it is! Your **",
+	"show_item_2": "** item. The shorthand form is **",
+	"show_item_3": "**.\n\n*The description on the back reads:*\n> ",
+}

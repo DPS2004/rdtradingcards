@@ -1,0 +1,39 @@
+{
+	"add_nothing": "Please input a nickname to add.",
+	
+	"add_id": "You cannot set your ID as a nickname!",
+	"add_already_1": "You already have ",
+	"add_already_2": " as a nickname!",
+	"add_other_user": "Sorry, but someone else is already using that name.",
+	"add_invalid": "Sorry, but that is not a valid nickname.",
+	"add_too_many_1": "Sorry, but you cannot have more than ",
+	"add_too_many_2": " nicknames.",
+	
+	"add_success_1": "You have added ",
+	"add_success_2": " as your trading and gifting nickname!",
+	
+	"remove_nothing": "Please input a nickname to remove.",
+	
+	"remove_least_one": "You need to have at least 1 nickname!",
+	"remove_no_such_1": "You do not have ",
+	"remove_no_such_2": " as a nickname. Make sure that you spelled it right!",
+	
+	"remove_success_1": "You have removed ",
+	"remove_success_2": " as a trading and gifting nickname!",
+	
+	"reset_success_1": "Your nickname for trading and gifting has been reset to ",
+	"reset_success_2": "!",
+	
+	"check_no_user_1": "Sorry, but I could not find a user named ",
+	"check_no_user_2": " in the database. Make sure that you have spelled it right, and that they have at least pulled a card to register!",
+	
+	"check_yourself_singular": "Your nickname for trading and gifting is ",
+	"check_yourself_plural": "Your nicknames for trading and gifting are ",
+	"check_other_singular_1": " is ",
+	"check_other_singular_2": " only name for trading and gifting.",
+	
+	"check_other_plural": "'s nicknames for trading and gifting are ",
+	
+	"invalid_command_1": "Sorry, but I do not recognize ",
+	"invalid_command_2": " as a valid nickname command.",
+}

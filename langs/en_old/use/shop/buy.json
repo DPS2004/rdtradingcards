@@ -1,0 +1,65 @@
+{
+	"needs_plural_s": true,
+	"no_tokens_1": "The **Wolf** frowns. You don't have the ",
+	"no_tokens_2": " **Tokens** required to buy the **",
+	"no_tokens_3": "**!",
+	
+	"out_of_stock_1": "The **Wolf** frowns. It is currently out of stock of **",
+	"out_of_stock_2": "**.",
+	
+	"too_many_requested_1": "The **Wolf** frowns. You can only buy ",
+	"too_many_requested_2": " **",
+	"too_many_requested_3": "** at most.",
+	
+	"nopeeking_error_1": "The **Wolf** looks at you with confusion. It might not be selling ",
+	"nopeeking_error_2": ", or it might have misunderstood your request.",
+	
+	"donthave_1": "The **Wolf** looks at you with confusion. It doesn't seem to be selling **",
+	"donthave_2": "**.",
+	
+	"alreadyhave_1": "The **Wolf** looks at you with confusion. You already have the **",
+	"alreadyhave_2": "** item.",
+	
+	"hasfixedmouse": "The **Wolf** frowns. You already own a Mouse.",
+	
+	"oneitemonly": "The **Wolf** frowns. You can only own one of each equippable item.",
+	
+	"unknownrequest_1": "The **Wolf** looks at you with confusion. It does not appear to know what ",
+	"unknownrequest_2": " is.",
+	
+	"buying_item_1": "Buying ",
+	"buying_item_2": "...",
+	
+	"consumable_desc": "The description for this item reads: ",
+	"consumable_buy_1": "<@",
+	"consumable_buy_2": ">, will you buy ",
+	"consumable_buy_3": " of them for ",
+	"consumable_buy_4": " **Token",
+	"consumable_buy_5": "**?",
+	"plural_s": "s",
+	
+	"item_desc": "The description for this item reads: ",
+	"item_buy_1": "<@",
+	"item_buy_2": ">, will you buy it for ",
+	"item_buy_3": " **Tokens**?",
+
+	"buying_card_1": "Buying ",
+	"buying_card_2": "...",
+	
+	"card_desc": "The description for this card reads: ",
+	"card_buy_1": "<@",
+	"card_buy_2": ">, will you buy ",
+	"card_buy_3": " of them for ",
+	"card_buy_4": " **Token",
+	"card_buy_5": "**?",
+	
+	"error_not_in_stock": "An error has occured. Please make sure that the thing you want is still in stock!",
+	"error_not_enough_tokens": "An error has occured. Please make sure that you have enough tokens!",
+	
+	"bought_message_1": "<@",
+	"bought_message_2": "> successfully bought **",
+	"bought_message_3": "** from the shop.",
+	
+	"denied_message_1": "You decide to not buy the **",
+	"denied_message_2": "**.",
+}

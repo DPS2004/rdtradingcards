@@ -1,0 +1,19 @@
+{
+	"looking_at_mountains": "Looking at Mountains...",
+	"looking_mountains": "The **Windy Mountains** can be found near the **Pyrowmid.** Across a **Bridge** is a **Quaint Shop**, which seems to have some **Barrels** next to it. The sky is filled with **Clouds.**",
+	
+	"looking_at_pyrowmid": "Looking at Pyrowmid...",
+	"looking_pyrowmid": "From up here, the **Pyrowmid** looks absolutely tiny! Next to it is an absolutely bog-standard pyramid.",
+	
+	"looking_at_bridge": "Looking at Bridge...",
+	"looking_bridge": "The **Bridge** looks safe to walk over, but you might not want to do any fancy jumps on it or anything.",
+	
+	"looking_at_shop": "Looking at Quaint Shop...",
+	"looking_shop": "The **Quaint Shop** has a sign outside of it, marking that it sells \"Cards And Things\". If you need cards and/or things, it might be worth checking out.",
+	
+	"looking_at_barrels": "Looking at Barrels...",
+	"looking_barrels": "The **Barrels** are propped up next to the **Quaint Shop.** Probably best not to touch them...",
+	
+	"looking_at_clouds": "Looking at Clouds...",
+	"looking_clouds": "Ooh! Pretty!",
+}

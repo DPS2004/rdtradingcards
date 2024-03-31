@@ -1,16 +1,1 @@
-{
-	"needs_plural_s": true,
-	"plural_s": "s",
-	
-	"embed_title": "'s Inventory",
-	"season_1": " (Season",
-	"season_2": ")",
-	"rarity_1": " (",
-	"rarity_2": " Cards)",
-	"embed_contains": ", your inventory contains:",
-	
-	"embed_page_1": "(Page ",
-	"embed_page_2": " of ",
-	"embed_page_3": ")",
-	
-}
+{"needs_plural_s":true,"plural_s":"s","embed_title":"\u0027s Inventory","season_1":" (Season","season_2":")","rarity_1":" (","rarity_2":" Baseball Cards)","embed_contains":", your inventory contains:","embed_page_1":"(Page ","embed_page_2":" of ","embed_page_3":")"}

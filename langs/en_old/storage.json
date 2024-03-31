@@ -1,0 +1,16 @@
+{
+	"needs_plural_s": true,
+	"plural_s": "s",
+	
+	"embed_title": "'s Storage",
+	"season_1": " (Season",
+	"season_2": ")",
+	"rarity_1": " (",
+	"rarity_2": " Cards)",
+	"embed_contains": ", your storage contains:",
+	
+	"embed_page_1": "(Page ",
+	"embed_page_2": " of ",
+	"embed_page_3": ")",
+	
+}

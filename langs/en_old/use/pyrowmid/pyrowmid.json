@@ -1,0 +1,18 @@
+{
+	"hole_nodonations": "The **Hole** is not accepting donations at this time.",
+	"using_hole": "Using Hole...",
+	"use_hole_1": "Will you put a **Token** into the **Hole?** (tokens remaining: ",
+	"use_hole_2": ")",
+	"hole_notokens": "You have no **Tokens** to offer to the **Hole.**",
+	
+	"panda_ssss45": "The **Panda** takes one look at your **Cool Hat**, and puts a **Shaun's Server Statistics Sampling #45** card into your storage out of respect.",
+	
+	"throne_by_panda": "It appears that the **Throne** is already in use by the **Panda**.",
+	
+	"wipe_necklace": "You wash off the **Faithful Necklace**, and then immediately drop it on the grimy floor of the **Abandoned Lab**. Whoops.",
+	
+	"discovered_lab": "NEW AREA DISCOVERED: LAB",
+	"using_ladder": "Using the ladder...",
+	"used_ladder": "As you climb down the **Ladder**, you begin to hear the sound of a large computer whirring. Reaching the bottom reveals the source, a huge terminal, in the middle of an **Abandoned Lab.**",
+	"using_ladder_small": "You attempt to climb down the **Ladder**. Unfortunately, the **Hole** is still too small for you to fit through. You cannot wiggle your way out of it.",
+}

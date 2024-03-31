@@ -1,0 +1,11 @@
+{
+	"dm_message": "Sorry, but you cannot prestige in DMs!",
+	
+	"missingcards_1": "You are still missing ",
+	"missingcards_2": " cards.",
+	
+	"prestige_confirm": ", Are you sure you want to prestige? **This will erase one of every non-prestige card in your storage and reset your medal progress.**",
+	
+	"prestiged_message": "You feel your storage getting a lot lighter. The **RDCards** card gets added to your storage.",
+	"denied_message": "You decide not to prestige.",
+}

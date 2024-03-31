@@ -1,18 +1,1 @@
-{
-	"locations_pyrowmid": "Pyrowmid",
-	"locations_lab": "Abandoned Lab",
-	"locations_mountains": "Windy Mountains",
-	"locations_shop": "Quaint Shop",
-	"locations_hallway": "Dark Hallway",
-	"locations_casino": "Shady Casino",
-	
-	"already_in_1": "You are already in the **",
-	"already_in_2": "**!",
-	
-	"room_changed_1": "Your location is now the **",
-	"room_changed_2": "**.",
-	"room_changed_3": "",
-	
-	"no_room_1": "Sorry, but I could not find ",
-	"no_room_2": ". Make sure that you spelled it right!",
-}
+{"locations_pyrowmid":"Pyrowmid","locations_lab":"Abandoned Lab","locations_mountains":"Windy Mountains","locations_shop":"Quaint Shop","locations_hallway":"Dark Hallway","locations_casino":"Shady Casino","already_in_1":"You are already in the **","already_in_2":"**!","room_changed_1":"Your location is now the **","room_changed_2":"**.","room_changed_3":"","no_room_1":"Sorry, but I could not find ","no_room_2":". Make sure that you spelled it right!"}

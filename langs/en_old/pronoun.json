@@ -1,0 +1,65 @@
+{
+	"they_they": "they",
+	"they_them": "them",
+	"they_their": "their",
+	"they_theirs": "theirs",
+	"they_theirself": "theirself",
+	"they_changed": "You will now be referred to with they/them.",
+	
+	"he_they": "he",
+	"he_them": "him",
+	"he_their": "his",
+	"he_theirs": "his",
+	"he_theirself": "himself",
+	"he_changed": "You will now be referred to with he/him.",
+	
+	"she_they": "she",
+	"she_them": "her",
+	"she_their": "her",
+	"she_theirs": "hers",
+	"she_theirself": "herself",
+	"she_changed": "You will now be reffered to with she/her.",
+	
+	"it_they": "it",
+	"it_them": "its",
+	"it_their": "its",
+	"it_theirs": "its",
+	"it_theirself": "itself",
+	"it_changed": "You will now be reffered to with it/its.",
+	
+	"xe_they": "xe",
+	"xe_them": "xem",
+	"xe_their": "xir",
+	"xe_theirs": "xirs",
+	"xe_theirself": "xirself",
+	"xe_changed": "You will now be reffered to with xe/xem.",
+	
+	"sta_they": "sta",
+	"sta_them": "star",
+	"sta_their": "star",
+	"sta_theirs": "stars",
+	"sta_theirself": "starself",
+	"sta_changed": "You will now be reffered to with sta/star.",
+	
+	"ze_they": "ze",
+	"ze_them": "zir",
+	"ze_their": "zir",
+	"ze_theirs": "zirs",
+	"ze_theirself": "zirself",
+	"ze_changed": "You will now be reffered to with ze/zir.",
+	
+	"vee_they": "vee",
+	"vee_them": "veem",
+	"vee_their": "veems",
+	"vee_theirs": "veem's",
+	"vee_theirself": "veeself",
+	"vee_changed": "You will now be reffered to with vee/veem.",
+	
+	"no_value": "Please enter your pronouns.",
+	"no_database_1": "Sorry, but I could not find ",
+	"no_database_2": " pronouns. See if you mispelled, or if your pronouns are in c!pronounlist. If they are not there, you may use c!pronounform to suggest adding them.", 
+	
+	"pronounlist_message": "**Common Pronouns:**\nHe, She, They, It\n\n**Neopronouns:**\nXe, Ze, Sta, Vee\n\n*If your pronouns are not included, please use c!pronounform",
+	
+	"pronounform_message": "Your pronouns not on the RDCard bot? Put your pronouns in this google form and we will look over them!\n**https://forms.gle/nG57xLc8DPHc5G8m9**",
+}

@@ -1,0 +1,12 @@
+{
+	"no_arguments": "Sorry, but the c!togglecheck command expects 1 argument. You can either set to check **cards** or **tokens**.",
+	
+	"card_disabled_message": "Getting a card that you have none of in your storage will no longer be notified!",
+	"card_enabled_message": "Getting a card that you have none of in your storage will now be notified!",
+	
+	"token_disabled_message": "How many tokens you have after receiving or giving will no longer be notified!",
+	"token_enabled_message": "How many tokens you have after receiving or giving will now be notified!",
+	
+	"no_database_1": "Sorry, but I cannot find ",
+	"no_database_2": ". You can either set to check **cards** or **tokens**." 
+}

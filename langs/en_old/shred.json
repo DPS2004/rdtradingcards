@@ -1,0 +1,40 @@
+{
+	"needs_plural_s": true,
+	"plural_s": "s",
+	
+	"no_arguments": "Sorry, but the c!shred command expects 1 or 2 arguments. Please see c!help for more details.",
+	
+	"error_nopeeking_1": "Sorry, but I either could not find the ",
+	"error_nopeeking_2": " card in the database, or you do not have it. Make sure that you spelled it right!",
+	
+	"no_item_1": "Sorry, but I could not find the ",
+	"no_item_2": " card in the database. Make sure that you spelled it right!",
+	"dont_have_1": "Sorry, but you don't have the **",
+	"dont_have_2": "** card in your inventory.",
+	
+	"not_enough_1": "Sorry, but you do not have enough **",
+	"not_enough_2": "** cards in your inventory.",
+	
+	"shred_confirm_1": "<@",
+	"shred_confirm_2": ">, do you want to shred your ",
+	"shred_confirm_3": " **",
+	"shred_confirm_4": "** card",
+	"shred_confirm_5": "? **This cannot be undone.** Click the Yes button to confirm and No to deny.",
+	
+	"reaction_dont_have": "An error has occured. Please make sure that you still have the card in your inventory!",
+	"reaction_not_enough_1": "An error has occured. Please make sure that you still have enough **",
+	"reaction_not_enough_2": "** cards in your inventory!",
+	
+	"shredded_message_1": "<@",
+	"shredded_message_2": "> successfully shredded ",
+	"shredded_message_3": " ",
+	"shredded_message_4": " **",
+	"shredded_message_5": "** card",
+	"shredded_message_6": ".",
+	
+	"denied_message_1": "<@",
+	"denied_message_2": "> has successfully stopped the shredding of ",
+	"denied_message_3": " **",
+	"denied_message_4": "** card",
+	"denied_message_5": ".",
+}
