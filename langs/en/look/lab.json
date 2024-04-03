@@ -1,1 +1,41 @@
-{"looking_at_lab":"Looking at Lab...","looking_lab_post_801":"The **Abandoned Lab** was revealed after a **Hole** appeared next to the **Pyrowmid**. Judging by the presence of a **Spider Web**, it has not been used for quite some time, but the technology here looks relatively modern. The **Database** and the connected **Terminal** juxtapose the cheery **Cat Poster**, which was recently moved to reveal the **Scanner**. The **Table** on the other side of the room is caked in dust.","looking_lab":"The **Abandoned Lab** was revealed after a **Hole** appeared next to the **Pyrowmid**. Judging by the presence of a **Spider Web**, it has not been used for quite some time, but the technology here looks relatively modern. The **Database** and the connected **Terminal** juxtapose the cheery **Cat Poster**. The **Table** on the other side of the room is caked in dust.","spider_alert":"Are you okay with seeing a spider?","looking_at_spider":"Looking at Spider...","looking_spider":"It\u0027s a spider! How cute!","looking_at_spiderweb":"Looking at Spiderweb...","looking_spider_nospider":"There is a **Spiderweb** here, but there is no **Spider**. There never **was** and there never **will** be a **Spider** in this location.","looking_at_terminal":"Looking at Terminal...","looking_terminal_pre_508":"The monitor of the **Terminal** is currently on. It is asking for a password.","looking_terminal":"The monitor of the **Terminal** is currently on. A command prompt is freely available.","looking_at_database":"Looking at Database...","looking_database":"The **Database** towers over you, its lights constantly flashing. What could they mean?","looking_at_table":"Looking at Table...","looking_table":"The dusty **Table** has a **Peculiar Box** on it, emitting a soft hum. Underneath the table is a **Mouse Hole**, with a sign reading \"I.T.\" above it.","looking_at_mousehole":"Looking at Mouse Hole...","looking_mousehole":"The **Mouse Hole** is directly underneath a yellow sign that says \"I.T.\". The hole is just about wide enough to fit a computer mouse into.","looking_at_box":"Looking at Peculiar Box...","looking_box":"The **Peculiar Box** rests on top of the **Table**. The opening on the top of it almost beckons for a **Baseball Card** to be placed inside.","looking_at_poster":"Looking at Cat Poster...","looking_poster_1":"The **Cat Poster** depicts a cat hanging from a branch. It looks quite pleased to be there.","looking_poster_2":"The **Cat Poster**, despite its name, contains no cats. There never was a cat here.","looking_poster_3":"The **Cat Poster** looks back.","looking_poster_4":"The **Cat Poster** is really less of a poster and more of an anatomical image of a cat. It would not look out of place in a vet\u0027s office.","looking_poster_5":"The **Cat Poster** looks very worn out. You can barely make out the cat and the branch.","looking_poster_6":"The **Cat Poster** contains a map of the area with certain spots marked on it. Once could only presume that cats could be found at these locations.","looking_poster_7":"The **Cat Poster** is a sheet of A4 paper that says \"cat\" on it. The letters are in the most plain and boring font imaginable.","looking_poster_8":"The `cat` **Poster** is a printout of the wikipedia article on the Unix `cat` command. How Informative!","looking_poster_9":"The **CATS Poster** is a poster of a very outdated meme. It still makes you chuckle, though.","looking_poster_10":"The Cat Poster features a photo of a resting cat. She appears to be well-loved. The photo makes you feel nice.","looking_poster_11":"The Cat Poster has an image of a strange-looking cat, but at least the cat looks happy.","looking_poster_801":"The **Cat Poster** looks a little different. The center of it is slightly warm to the touch."}
+{
+	"looking_at_lab": "Looking at Lab...",
+	"looking_lab_post_801": "The **Abandoned Lab** was revealed after a **Hole** appeared next to the **Pyrowmid**. Judging by the presence of a **Spider Web**, it has not been used for quite some time, but the technology here looks relatively modern. The **Database** and the connected **Terminal** juxtapose the cheery **Cat Poster**, which was recently moved to reveal the **Scanner**. The **Table** on the other side of the room is caked in dust.",
+	"looking_lab": "The **Abandoned Lab** was revealed after a **Hole** appeared next to the **Pyrowmid**. Judging by the presence of a **Spider Web**, it has not been used for quite some time, but the technology here looks relatively modern. The **Database** and the connected **Terminal** juxtapose the cheery **Cat Poster**. The **Table** on the other side of the room is caked in dust.",
+
+	"spider_alert": "Are you okay with seeing a spider?",
+	"looking_at_spider": "Looking at Spider...",
+	"looking_spider": "It's a spider! How cute!",
+	"looking_at_spiderweb": "Looking at Spiderweb...",
+	"looking_spider_nospider": "There is a **Spiderweb** here, but there is no **Spider**. There never **was** and there never **will** be a **Spider** in this location.",
+
+	"looking_at_terminal": "Looking at Terminal...",
+	"looking_terminal_pre_508": "The monitor of the **Terminal** is currently on. It is asking for a password.",
+	"looking_terminal": "The monitor of the **Terminal** is currently on. A command prompt is freely available.",
+	
+	"looking_at_database": "Looking at Database...",
+	"looking_database": "The **Database** towers over you, its lights constantly flashing. What could they mean?",
+	
+	"looking_at_table": "Looking at Table...",
+	"looking_table": "The dusty **Table** has a **Peculiar Box** on it, emitting a soft hum. Underneath the table is a **Mouse Hole**, with a sign reading \"I.T.\" above it.",
+	
+	"looking_at_mousehole": "Looking at Mouse Hole...",
+	"looking_mousehole": "The **Mouse Hole** is directly underneath a yellow sign that says \"I.T.\". The hole is just about wide enough to fit a computer mouse into.",
+	
+	"looking_at_box": "Looking at Peculiar Box...",
+	"looking_box": "The **Peculiar Box** rests on top of the **Table**. The opening on the top of it almost beckons for a **Trading Card** to be placed inside.",
+	
+	"looking_at_poster": "Looking at Cat Poster...",
+	"looking_poster_1": "The **Cat Poster** depicts a cat hanging from a branch. It looks quite pleased to be there.",
+	"looking_poster_2": "The **Cat Poster**, despite its name, contains no cats. There never was a cat here.",
+	"looking_poster_3": "The **Cat Poster** looks back.",
+	"looking_poster_4": "The **Cat Poster** is really less of a poster and more of an anatomical image of a cat. It would not look out of place in a vet's office.",
+	"looking_poster_5": "The **Cat Poster** looks very worn out. You can barely make out the cat and the branch.",
+	"looking_poster_6": "The **Cat Poster** contains a map of the area with certain spots marked on it. Once could only presume that cats could be found at these locations.",
+	"looking_poster_7": "The **Cat Poster** is a sheet of A4 paper that says \"cat\" on it. The letters are in the most plain and boring font imaginable.",
+	"looking_poster_8": "The `cat` **Poster** is a printout of the wikipedia article on the Unix `cat` command. How Informative!",
+	"looking_poster_9": "The **CATS Poster** is a poster of a very outdated meme. It still makes you chuckle, though.",
+	"looking_poster_10": "The Cat Poster features a photo of a resting cat. She appears to be well-loved. The photo makes you feel nice.",
+	"looking_poster_11": "The Cat Poster has an image of a strange-looking cat, but at least the cat looks happy.",
+	"looking_poster_801": "The **Cat Poster** looks a little different. The center of it is slightly warm to the touch.",
+}

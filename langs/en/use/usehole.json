@@ -1,1 +1,18 @@
-{"error_no_tokens":"An error has occured. Please make sure that you still have a token!","donated_hole":"A **Token** has been dropped into the **Hole.** Thank you for your generosity!","using_terminal":"Using Terminal...","donated_terminal_1":"The **Terminal** whirrs happily. A printout lets you know that ","donated_terminal_2":" tokens have been donated so far.","donated_hole_ws_1":"***The ground rumbles...","donated_hole_ws_506":" and so does the Strange Machine***","donated_hole_ws_2":"***","donated_terminal_smell":"***The Database lets out a loud BEEP, before the Hole above you closes off. The Terminal begins spewing a noxious gas. ***\n.\n..\n...\n***When you wake up, the Hole has opened again, and your sense of Smell feels much more potent.***","denied_hole":"You decide to not put a **Token** into the **Hole.** (how rude!)","denied_terminal":"You decide to not put a **Token** into the **Terminal.** (how rude!)"}
+{
+	"error_no_tokens": "An error has occured. Please make sure that you still have a token!",
+	
+	"donated_hole": "A **Token** has been dropped into the **Hole.** Thank you for your generosity!",
+	
+	"using_terminal": "Using Terminal...",
+	"donated_terminal_1": "The **Terminal** whirrs happily. A printout lets you know that ",
+	"donated_terminal_2": " tokens have been donated so far.",
+	
+	"donated_hole_ws_1": "***The ground rumbles...",
+	"donated_hole_ws_506": " and so does the Strange Machine***",
+	"donated_hole_ws_2": "***",
+	
+	"donated_terminal_smell": "***The Database lets out a loud BEEP, before the Hole above you closes off. The Terminal begins spewing a noxious gas. ***\n.\n..\n...\n***When you wake up, the Hole has opened again, and your sense of Smell feels much more potent.***",
+
+	"denied_hole": "You decide to not put a **Token** into the **Hole.** (how rude!)",
+	"denied_terminal": "You decide to not put a **Token** into the **Terminal.** (how rude!)",
+}

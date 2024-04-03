@@ -1,1 +1,4 @@
-{"uptime_message_1":"This bot has been running for ","uptime_message_2":" minutes."}
+{
+	"uptime_message_1": "This bot has been running for ",
+	"uptime_message_2": " minutes.",
+}

@@ -1,1 +1,90 @@
-{"needs_plural_s":true,"plural_s":"s","dm_message":"Sorry, but you can\u0027t rob in DMs!","more_restock_1":"","more_restock_2":" more restock","time_hour":" hour","time_and":" and ","time_minute":" minute","blacklist_next_1":"You will be able to access the **Quaint Shop** after the next restock. The shop will be restocked in ","blacklist_next_2":".","blacklist_1":"You are blacklisted from the **Quaint Shop** for ","blacklist_2":". The next restock will be in ","blacklist_3":".","out_of_stock_1":"The **Quaint Shop** is currently out of stock of **","out_of_stock_2":"**.","too_many_requested_1":"You can only request ","too_many_requested_2":" **","too_many_requested_3":"** at most.","nopeeking_error_1":"The **Quaint Shop** might not be selling ","nopeeking_error_2":", or you may have mistyped the name.","donthave_1":"The **Quaint Shop** is not selling **","donthave_2":"**.","alreadyhave_1":"You already have the **","alreadyhave_2":"** item.","hasfixedmouse":"You already own a Mouse.","oneitemonly":"You can only own one of each equippable item.","unknownrequest_1":"I could not find ","unknownrequest_2":" from the database. Make sure that you have spelled it right.","rob_random_nothing":"The shop has nothing to rob.","robbing_shop_random":"Robbing Quaint Shop...","rob_shop_random":"Are you sure you want to rob something random from the **Quaint Shop**? This has a higher chance of success, but still may **blacklist you from the shop** for a few days!","robbing_shop_1":"Robbing ","robbing_shop_2":"...","rob_shop_desc":"The description on the back reads:","rob_shop_1":"Are you sure you want to rob ","rob_shop_2":" **","rob_shop_3":"** from the **Quaint Shop**? This may **blacklist you from the shop** for a few days!","rob_shop_item_1":"Are you sure you want to rob the **","rob_shop_item_2":"** from the **Quaint Shop**? This may **blacklist you from the shop** for a few days!","error_already_robbed":"An error has occured. Make sure you recently haven\u0027t robbed the shop!","rob_succeeded_1":"You entered the **Quaint Shop**. You demanded the **Wolf** give you ","rob_succeeded_2":" **","rob_succeeded_3":"**. He complies.","rob_succeeded_item_1":"You entered the **Quaint Shop**. You demanded the **Wolf** give you a **","rob_succeeded_item_2":"**. The **Wolf** complies.","rob_gun_many":"Sorry, but you can\u0027t rob more than 1 item if you have a rob affecting item in use!","rob_gun_1":"You entered the **Quaint Shop**. You demanded the **Wolf** give you ","rob_gun_2":" **","rob_gun_3":"**. He complies, but as you turn around, the **Wolf** called the police. You are blacklisted from the shop for the next ","rob_gun_4":" restocks.","rob_gun_item_1":"You entered the **Quaint Shop**. You demanded the **Wolf** give you a **","rob_gun_item_2":"**. The **Wolf** complies, but as you turn around, he called the police. You are blacklisted from the shop for the next ","rob_gun_item_3":" restocks.","rob_failed_1":"You entered the **Quaint Shop**. You demanded the **Wolf** give you ","rob_failed_2":" **","rob_failed_3":"**. He calls the police instead. You are blacklisted from the shop for the next ","rob_failed_4":" restocks.","rob_failed_item_1":"You entered the **Quaint Shop**. You demanded the **Wolf** give you a **","rob_failed_item_2":"**. The **Wolf** calls the police instead. You are blacklisted from the shop for the next ","rob_failed_item_3":" restocks.","rob_skipenabled":"**__REAL__** **WARNING**: Button prompts for robbing will be skipped for **EVERYONE** from now on for while users set to skip prompts.","rob_cancelled_1":"\u003c@","rob_cancelled_2":"\u003e has stopped robbing the **Quaint Shop**. For now..."}
+{
+    "needs_plural_s": true,
+    "plural_s": "s",
+
+    "dm_message": "Sorry, but you can't rob in DMs!",
+    
+	"more_restock_1": "",
+    "more_restock_2": " more restock",
+    "time_hour": " hour",
+	"time_and": " and ",
+	"time_minute": " minute",
+
+	"blacklist_next_1": "You will be able to access the **Quaint Shop** after the next restock. The shop will be restocked in ",
+	"blacklist_next_2": ".",
+	"blacklist_1": "You are blacklisted from the **Quaint Shop** for ",
+	"blacklist_2": ". The next restock will be in ",
+	"blacklist_3": ".",
+	
+	"out_of_stock_1": "The **Quaint Shop** is currently out of stock of **",
+	"out_of_stock_2": "**.",
+	
+	"too_many_requested_1": "You can only request ",
+	"too_many_requested_2": " **",
+	"too_many_requested_3": "** at most.",
+	
+	"nopeeking_error_1": "The **Quaint Shop** might not be selling ",
+	"nopeeking_error_2": ", or you may have mistyped the name.",
+	
+	"donthave_1": "The **Quaint Shop** is not selling **",
+	"donthave_2": "**.",
+	
+	"alreadyhave_1": "You already have the **",
+	"alreadyhave_2": "** item.",
+	
+	"hasfixedmouse": "You already own a Mouse.",
+	
+	"oneitemonly": "You can only own one of each equippable item.",
+	
+	"unknownrequest_1": "I could not find ",
+	"unknownrequest_2": " from the database. Make sure that you have spelled it right.",
+
+	"rob_random_nothing": "The shop has nothing to rob.",
+	"robbing_shop_random": "Robbing Quaint Shop...",
+	"rob_shop_random": "Are you sure you want to rob something random from the **Quaint Shop**? This has a higher chance of success, but still may **blacklist you from the shop** for a few days!",
+
+	"robbing_shop_1": "Robbing ",
+	"robbing_shop_2": "...",
+	"rob_shop_desc": "The description on the back reads:",
+
+	"rob_shop_1": "Are you sure you want to rob ",
+	"rob_shop_2": " **",
+	"rob_shop_3": "** from the **Quaint Shop**? This may **blacklist you from the shop** for a few days!",
+
+	"rob_shop_item_1": "Are you sure you want to rob the **",
+	"rob_shop_item_2": "** from the **Quaint Shop**? This may **blacklist you from the shop** for a few days!",
+
+	"error_already_robbed": "An error has occured. Make sure you recently haven't robbed the shop!",
+
+	"rob_succeeded_1": "You entered the **Quaint Shop**. You demanded the **Wolf** give you ",
+	"rob_succeeded_2": " **",
+	"rob_succeeded_3": "**. He complies.",
+
+	"rob_succeeded_item_1": "You entered the **Quaint Shop**. You demanded the **Wolf** give you a **",
+	"rob_succeeded_item_2": "**. The **Wolf** complies.",
+
+	"rob_gun_many": "Sorry, but you can't rob more than 1 item if you have a rob affecting item in use!",
+
+	"rob_gun_1": "You entered the **Quaint Shop**. You demanded the **Wolf** give you ",
+	"rob_gun_2": " **",
+	"rob_gun_3": "**. He complies, but as you turn around, the **Wolf** called the police. You are blacklisted from the shop for the next ",
+	"rob_gun_4": " restocks.",
+
+	"rob_gun_item_1": "You entered the **Quaint Shop**. You demanded the **Wolf** give you a **",
+	"rob_gun_item_2": "**. The **Wolf** complies, but as you turn around, he called the police. You are blacklisted from the shop for the next ",
+	"rob_gun_item_3": " restocks.",
+
+	"rob_failed_1": "You entered the **Quaint Shop**. You demanded the **Wolf** give you ",
+	"rob_failed_2": " **",
+	"rob_failed_3": "**. He calls the police instead. You are blacklisted from the shop for the next ",
+	"rob_failed_4": " restocks.",
+
+	"rob_failed_item_1": "You entered the **Quaint Shop**. You demanded the **Wolf** give you a **",
+	"rob_failed_item_2": "**. The **Wolf** calls the police instead. You are blacklisted from the shop for the next ",
+	"rob_failed_item_3": " restocks.",
+
+	"rob_skipenabled": "**__REAL__** **WARNING**: Button prompts for robbing will be skipped for **EVERYONE** from now on for while users set to skip prompts.",
+
+	"rob_cancelled_1": "<@",
+	"rob_cancelled_2": "> has stopped robbing the **Quaint Shop**. For now...",
+}

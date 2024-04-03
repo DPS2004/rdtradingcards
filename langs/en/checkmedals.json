@@ -1,1 +1,7 @@
-{"congratulations":"Congratulations!","gotmedal_1":"After collecting and storing some baseball cards, ","gotmedal_2":" got the **\"","gotmedal_3":"\"** medal!","gotmaestro":"You also unlocked the ability to use **c!prestige**."}
+{
+	"congratulations": "Congratulations!",
+	"gotmedal_1": "After collecting and storing some cards, ",
+	"gotmedal_2": " got the **\"",
+	"gotmedal_3": "\"** medal!",
+	"gotmaestro": "You also unlocked the ability to use **c!prestige**."
+}
