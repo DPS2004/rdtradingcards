@@ -285,9 +285,8 @@
     "name": "Subway Ticket",
     "description": "The next card you pull is guaranteed. You can only use one item of this type at a time.",
     "embed": "https://cdn.discordapp.com/attachments/829197797789532181/990822635485138964/subwayticket.png",
-    "baseprice": 1,
-    "basestock": 20,
-    "quantity": 3,
+    "baseprice": 0,
+    "basestock": 8,
     "chance": 10
   },
 
