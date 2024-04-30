@@ -824,6 +824,32 @@ function command.run(message, mt, overwrite)
       return "vips_out/shop.png"
     end
     -- getshopimage()
+		
+	_G['formatstring'] = function (baseString, objectsToAdd, plural_s)
+      -- Replace the base {X}
+      local output = baseString
+
+      print(output)
+      
+      for key, value in pairs(objectsToAdd) do
+        output = output:gsub("{"..tostring(key).."}",tostring(value))
+      end
+
+
+      -- Replace the {Xs}
+      if plural_s ~= nil and plural_s ~= "" then
+        for key, value in pairs(objectsToAdd) do
+          if type(value) == "number" and value ~= 1 then
+            output = output:gsub("{"..tostring(key).."s}",plural_s)
+          else
+            output = output:gsub("{"..tostring(key).."s}","")
+          end
+        end
+      end
+
+
+      return output
+    end
 
     _G['clearcache'] = function()
       os.remove("test.txt")
